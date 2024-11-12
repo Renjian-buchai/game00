@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.30.0)
+
+if (!MSVC)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wfloat-equal -Werror -Wformat=2 -Wno-missing-declarations -Wmissing-include-dirs -Wcast-qual 
+                       -Wpointer-arith -Wsequence-point -Wshadow -Wsign-conversion -Wextra -Wcast-align -Wswitch -Wundef -Wunreachable-code 
+                       -Wno-format-extra-args -Wno-unused-function -Wno-unused-parameter -Wwrite-strings -Wstrict-aliasing -Wpedantic")
+endif()
+
+set(CMAKE_CXX_STANDARD_REQUIRED 17)
+set(CMAKE_C_COMPILER_WORKS 1)
+set(CMAKE_CXX_COMPILER_WORKS 1)
+
+find_package(SDL2 CONFIG REQUIRED) 
+
+project(gameJam)
+
+file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.cc)
+
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+target_include_directories(${PROJECT_NAME} PRIVATE "${PROJECT_SOURCE_DIR}/include/SDL2")
+
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2 SDL2::SDL2main)
