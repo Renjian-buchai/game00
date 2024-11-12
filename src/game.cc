@@ -1,5 +1,7 @@
 #include "../include/game.hh"
 
+#include "SDL_image.h"
+
 game::game() {
   if (int err = SDL_GetDisplayBounds(0, &dispBounds)) {
     std::cerr << SDL_GetError() << "\n";
@@ -48,4 +50,37 @@ game::~game() {
   return;
 }
 
-void game::gameplay() {}
+void game::gameplay() {
+  SDL_Surface* surface = IMG_Load("../res/noose.png");
+  textures.emplace_back(SDL_CreateTextureFromSurface(mainRenderer, surface));
+
+  SDL_SetTextureBlendMode(textures[0], SDL_BLENDMODE_BLEND);
+  SDL_SetTextureAlphaMod(textures[0], 0);
+
+  size_t startTime = SDL_GetTicks64();
+
+  for (size_t deltaTime = SDL_GetTicks64() - startTime;
+       state != gameState::terminating and deltaTime < 5000;
+       deltaTime = SDL_GetTicks64() - startTime) {
+    SDL_SetRenderDrawColor(mainRenderer, 0x00, 0x00, 0x00, 0xFF);
+    SDL_RenderClear(mainRenderer);
+
+    SDL_SetTextureAlphaMod(textures[0], 255 - (deltaTime >> 4));
+    SDL_RenderCopy(mainRenderer, textures[0], nullptr, nullptr);
+    SDL_RenderPresent(mainRenderer);
+
+    std::cout << 312 - (deltaTime >> 4) << "\n";
+
+    SDL_Event event;
+    while (SDL_PollEvent(&event)) {
+      switch (event.type) {
+        case SDL_QUIT:
+          state = gameState::terminating;
+          break;
+
+        default:
+          break;
+      }
+    }
+  }
+}

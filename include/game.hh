@@ -8,7 +8,10 @@
 #include "SDL.h"
 
 struct game {
-  enum class gameState : uint8_t { gameplay };
+  enum class gameState : uint8_t {
+    terminating,
+    gameplay,
+  };
 
   gameState state = gameState::gameplay;
 

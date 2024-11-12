@@ -2,16 +2,26 @@
 #include <vector>
 
 #include "SDL.h"
+#include "SDL_image.h"
 #include "game.hh"
 
 int main(int argc, char** argv) {
   (void)argc, (void)argv;
 
-  if (int err = SDL_Init(SDL_INIT_EVERYTHING)) {
+  int err;
+
+  if (err = SDL_Init(SDL_INIT_EVERYTHING)) {
     std::cerr << SDL_GetError() << "\n";
     exit(err);
   }
   std::atexit(SDL_Quit);
+
+  err = IMG_Init(IMG_INIT_PNG);
+  if (err != IMG_INIT_PNG) {
+    std::cerr << IMG_GetError() << "\n";
+    exit(-1);
+  }
+  std::atexit(IMG_Quit);
 
   game game;
 
