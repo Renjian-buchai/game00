@@ -51,25 +51,29 @@ game::~game() {
 }
 
 void game::gameplay() {
-  SDL_Surface* surface = IMG_Load("../res/noose.png");
-  textures.emplace_back(SDL_CreateTextureFromSurface(mainRenderer, surface));
+  {
+    SDL_Surface* surface = IMG_Load("../res/noose.png");
+    textures.emplace_back(SDL_CreateTextureFromSurface(mainRenderer, surface));
+    SDL_SetTextureBlendMode(textures[0], SDL_BLENDMODE_BLEND);
+    slideQueue.emplace_back(0, 2000, 500, textures[0]);
 
-  SDL_SetTextureBlendMode(textures[0], SDL_BLENDMODE_BLEND);
-  SDL_SetTextureAlphaMod(textures[0], 0);
+    SDL_FreeSurface(surface);
+  }
 
   size_t startTime = SDL_GetTicks64();
 
   for (size_t deltaTime = SDL_GetTicks64() - startTime;
-       state != gameState::terminating and deltaTime < 5000;
+       state != gameState::terminating and deltaTime < 10000;
        deltaTime = SDL_GetTicks64() - startTime) {
     SDL_SetRenderDrawColor(mainRenderer, 0x00, 0x00, 0x00, 0xFF);
     SDL_RenderClear(mainRenderer);
 
-    SDL_SetTextureAlphaMod(textures[0], 255 - (deltaTime >> 4));
-    SDL_RenderCopy(mainRenderer, textures[0], nullptr, nullptr);
+    slideShow(SDL_GetTicks64());
     SDL_RenderPresent(mainRenderer);
 
-    std::cout << 312 - (deltaTime >> 4) << "\n";
+    // uint8_t alpha;
+    // SDL_GetTextureAlphaMod(textures[0], &alpha);
+    // std::cout << static_cast<int>(alpha) << "\n";
 
     SDL_Event event;
     while (SDL_PollEvent(&event)) {
@@ -81,6 +85,33 @@ void game::gameplay() {
         default:
           break;
       }
+    }
+  }
+}
+
+void game::slideShow(size_t time) {
+  static size_t lastTime = time;
+
+  if (!slideQueue.empty()) {
+    slide& head = slideQueue[0];
+
+    if (time - lastTime < head.fadeIn) {
+      SDL_SetTextureAlphaMod(head.texture,
+                             255 * (time - lastTime) / head.fadeIn);
+      SDL_RenderCopy(mainRenderer, head.texture, nullptr, nullptr);
+    } else if (time - lastTime < head.fadeIn + head.duration) {
+      SDL_SetTextureAlphaMod(head.texture, 255);
+      SDL_RenderCopy(mainRenderer, head.texture, nullptr, nullptr);
+    } else if (time - lastTime < head.fadeIn + head.duration + head.fadeOut) {
+      SDL_SetTextureAlphaMod(
+          head.texture,
+          255 - (255 * (time - lastTime - head.fadeIn - head.duration) /
+                 head.fadeOut));
+      SDL_RenderCopy(mainRenderer, head.texture, nullptr, nullptr);
+    } else {
+      lastTime = time;
+      slideQueue.erase(slideQueue.begin());
+      head = slideQueue[0];
     }
   }
 }
