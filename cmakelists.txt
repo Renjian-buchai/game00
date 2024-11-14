@@ -11,9 +11,11 @@ set(CMAKE_C_COMPILER_WORKS 1)
 set(CMAKE_CXX_COMPILER_WORKS 1)
 
 project(gameJam)
+set(version 0.0)
 
-find_package(SDL2 CONFIG REQUIRED) 
+find_package(SDL2 2.30 CONFIG REQUIRED)
 find_package(SDL2_image CONFIG REQUIRED)
+find_package(SDL2_ttf CONFIG REQUIRED)
 
 file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.cc)
 
@@ -24,3 +26,4 @@ target_include_directories(${PROJECT_NAME} PRIVATE "${INCLUDE_DIR}")
 
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2main SDL2::SDL2)
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL2_image::SDL2_image)
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL2_ttf::SDL2_ttf)

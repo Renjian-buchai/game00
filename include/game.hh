@@ -46,7 +46,7 @@ struct game {
 
   void gameplay();
 
-  void slideShow(size_t time);
+  void slideShow(size_t time, bool& click);
 };
 
 #endif

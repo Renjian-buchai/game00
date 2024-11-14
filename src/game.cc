@@ -56,11 +56,16 @@ void game::gameplay() {
     textures.emplace_back(SDL_CreateTextureFromSurface(mainRenderer, surface));
     SDL_SetTextureBlendMode(textures[0], SDL_BLENDMODE_BLEND);
     slideQueue.emplace_back(0, 2000, 500, textures[0]);
+    slideQueue.emplace_back(0, 2000, 500, textures[0]);
+    slideQueue.emplace_back(0, 2000, 500, textures[0]);
+    slideQueue.emplace_back(0, 2000, 500, textures[0]);
 
     SDL_FreeSurface(surface);
   }
 
   size_t startTime = SDL_GetTicks64();
+
+  bool slideshowing = false;
 
   for (size_t deltaTime = SDL_GetTicks64() - startTime;
        state != gameState::terminating and deltaTime < 10000;
@@ -68,7 +73,7 @@ void game::gameplay() {
     SDL_SetRenderDrawColor(mainRenderer, 0x00, 0x00, 0x00, 0xFF);
     SDL_RenderClear(mainRenderer);
 
-    slideShow(SDL_GetTicks64());
+    slideShow(SDL_GetTicks64(), slideshowing);
     SDL_RenderPresent(mainRenderer);
 
     // uint8_t alpha;
@@ -82,6 +87,17 @@ void game::gameplay() {
           state = gameState::terminating;
           break;
 
+        case SDL_KEYDOWN:
+          switch (event.key.keysym.sym) {
+            case SDLK_SPACE:
+              slideshowing = true;
+              break;
+
+            default:
+              break;
+          }
+          break;
+
         default:
           break;
       }
@@ -89,11 +105,19 @@ void game::gameplay() {
   }
 }
 
-void game::slideShow(size_t time) {
+void game::slideShow(size_t time, bool& click) {
   static size_t lastTime = time;
 
   if (!slideQueue.empty()) {
     slide& head = slideQueue[0];
+
+    if (click) {
+      lastTime = time;
+      slideQueue.erase(slideQueue.begin());
+      head = slideQueue[0];
+      click = false;
+      return;
+    }
 
     if (time - lastTime < head.fadeIn) {
       SDL_SetTextureAlphaMod(head.texture,
