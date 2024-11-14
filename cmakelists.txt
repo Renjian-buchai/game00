@@ -14,8 +14,8 @@ project(gameJam)
 set(version 0.0)
 
 find_package(SDL2 2.30 CONFIG REQUIRED)
-find_package(SDL2_image CONFIG REQUIRED)
-find_package(SDL2_ttf CONFIG REQUIRED)
+find_package(SDL2_image 2.8 CONFIG REQUIRED)
+find_package(SDL2_ttf 2.22 CONFIG REQUIRED)
 
 file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.cc)
 
