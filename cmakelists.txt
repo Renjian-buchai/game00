@@ -17,7 +17,8 @@ find_package(SDL2 2.30 CONFIG REQUIRED)
 find_package(SDL2_image 2.8 CONFIG REQUIRED)
 find_package(SDL2_ttf 2.22 CONFIG REQUIRED)
 
-file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.cc)
+file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.cc)
+# file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.cc)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 

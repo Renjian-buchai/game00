@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "SDL.h"
+#include "SDL_ttf.h"
 
 struct game {
   enum class gameState : uint8_t {
@@ -16,16 +17,13 @@ struct game {
  private:
   struct slide {
     slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
-          SDL_Texture* _texture)
-        : fadeIn(_fadeIn),
-          duration(_duration),
-          fadeOut(_fadeOut),
-          texture(_texture) {}
+          SDL_Texture* _texture, SDL_Rect _dest = {});
 
     size_t fadeIn;
     size_t duration;
     size_t fadeOut;
     SDL_Texture* texture;
+    SDL_Rect dest;
   };
 
  public:
@@ -35,6 +33,8 @@ struct game {
   SDL_Window* mainWindow = nullptr;
   SDL_Renderer* mainRenderer = nullptr;
   std::vector<SDL_Texture*> textures{};
+
+  TTF_Font* font;
 
  private:
   std::vector<slide> slideQueue;

@@ -3,6 +3,7 @@
 
 #include "SDL.h"
 #include "SDL_image.h"
+#include "SDL_ttf.h"
 #include "game.hh"
 
 int main(int argc, char** argv) {
@@ -19,9 +20,15 @@ int main(int argc, char** argv) {
   err = IMG_Init(IMG_INIT_PNG);
   if (err != IMG_INIT_PNG) {
     std::cerr << IMG_GetError() << "\n";
-    exit(-1);
+    exit(err);
   }
   std::atexit(IMG_Quit);
+
+  if (err = TTF_Init()) {
+    std::cerr << TTF_GetError() << "\n";
+    exit(err);
+  }
+  std::atexit(TTF_Quit);
 
   game game;
 
