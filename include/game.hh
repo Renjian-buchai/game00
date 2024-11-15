@@ -12,6 +12,8 @@ struct game {
   enum class gameState : uint8_t {
     terminating,
     intro,
+    gameplay,
+    paused,
   };
 
  private:
@@ -33,8 +35,8 @@ struct game {
   gameState state = gameState::intro;
 
   SDL_Rect dispBounds;
-  SDL_Window* mainWindow = nullptr;
-  SDL_Renderer* mainRenderer = nullptr;
+  SDL_Window* mainWindow;
+  SDL_Renderer* mainRenderer;
   std::vector<SDL_Texture*> textures{};
 
   TTF_Font* font;
@@ -48,6 +50,7 @@ struct game {
   ~game();
 
   void intro();
+  void gameplay();
 
  private:
   void slideShow(size_t time, bool& click, size_t skipGrace = 1000);
@@ -55,7 +58,7 @@ struct game {
                 size_t fadeOut, SDL_Rect dest = SDL_Rect{}, bool centred = true,
                 bool skippable = true);
 
-  void centreRect(SDL_Rect& rect, game::centre centre = centre::BOTH);
+  void centreRect(SDL_Rect& rect, game::centre centre = centre::BOTH) const;
 };
 
 #endif

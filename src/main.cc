@@ -37,6 +37,9 @@ int main(int argc, char** argv) {
       game.intro();
       break;
 
+    case game::gameState::gameplay:
+      game.gameplay();
+
     default:
       break;
   }
