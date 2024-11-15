@@ -33,8 +33,8 @@ int main(int argc, char** argv) {
   game game;
 
   switch (game.state) {
-    case game::gameState::gameplay:
-      game.gameplay();
+    case game::gameState::intro:
+      game.intro();
       break;
 
     default:
