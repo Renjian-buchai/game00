@@ -4,42 +4,23 @@
 #include "SDL_image.h"
 
 void game::paused() {
-  SDL_Surface* surface;
-  auto loadTexture = [&](std::string filePath) -> SDL_Texture* {
-    SDL_Surface* surface = IMG_Load(filePath.c_str());
-    if (surface == nullptr) {
-      std::cerr << IMG_GetError();
-      // Safe because SDL guarantees that all functions can take nullptr as
-      // textures.
-      return nullptr;
-    }
-
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(mainRenderer, surface);
-    if (texture == nullptr) {
-      std::cerr << SDL_GetError();
-      return nullptr;
-    }
-
-    textures.emplace_back(texture);
-    SDL_FreeSurface(surface);
-    return texture;
-  };
-
+  // Whyyyyyyyy
   SDL_Texture* overlay = loadTexture("../res/UI/PauseOverlay.png");
 
   SDL_Texture* resume = loadTexture("../res/UI/PauseBTResume.png");
   SDL_Texture* resumeHover = loadTexture("../res/UI/PauseBTResumeHover.png");
-  SDL_Rect resumePos = {
-      static_cast<int>(219 * pixelSize), static_cast<int>(169 * pixelSize),
-      static_cast<int>(201 * pixelSize), static_cast<int>(63 * pixelSize)};
   SDL_Texture* resumeState = resume;
 
   SDL_Texture* exit = loadTexture("../res/UI/PauseBTExit.png");
   SDL_Texture* exitHover = loadTexture("../res/UI/PauseBTExitHover.png");
+  SDL_Texture* exitState = exit;
+
+  SDL_Rect resumePos = {
+      static_cast<int>(219 * pixelSize), static_cast<int>(169 * pixelSize),
+      static_cast<int>(201 * pixelSize), static_cast<int>(63 * pixelSize)};
   SDL_Rect exitPos = {
       static_cast<int>(219 * pixelSize), static_cast<int>(235 * pixelSize),
       static_cast<int>(201 * pixelSize), static_cast<int>(63 * pixelSize)};
-  SDL_Texture* exitState = exit;
 
   SDL_SetRenderDrawBlendMode(mainRenderer, SDL_BLENDMODE_MUL);
   SDL_Point mousePosition;

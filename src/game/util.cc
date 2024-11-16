@@ -1,4 +1,25 @@
 #include "../../include/game.hh"
+#include "SDL_image.h"
+
+SDL_Texture* game::loadTexture(std::string path) {
+  SDL_Surface* surface = IMG_Load(path.c_str());
+  if (surface == nullptr) {
+    std::cerr << IMG_GetError();
+    // Safe because SDL guarantees that all functions can take nullptr as
+    // textures.
+    return nullptr;
+  }
+
+  SDL_Texture* texture = SDL_CreateTextureFromSurface(mainRenderer, surface);
+  if (texture == nullptr) {
+    std::cerr << SDL_GetError();
+    return nullptr;
+  }
+
+  textures.emplace_back(texture);
+  SDL_FreeSurface(surface);
+  return texture;
+}
 
 game::slide::slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
                    SDL_Texture* _texture, SDL_Rect _dest, bool _skippable)

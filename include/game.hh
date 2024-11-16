@@ -3,6 +3,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 #include <vector>
 
 #include "SDL.h"
@@ -56,6 +57,8 @@ struct game {
   void paused();
 
  private:
+  SDL_Texture* loadTexture(std::string path);
+
   void slideShow(size_t time, bool& click, size_t skipGrace = 1000);
   void addSlide(SDL_Surface* surface, size_t fadeIn, size_t duration,
                 size_t fadeOut, SDL_Rect dest = SDL_Rect{}, bool centred = true,
