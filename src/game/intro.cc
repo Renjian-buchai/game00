@@ -36,7 +36,7 @@ void game::intro() {
   bool skip = false;
 
   for (size_t deltaTime = SDL_GetTicks64() - startTime;
-       state == gameState::intro and deltaTime < 15000;
+       state == gameState::intro and deltaTime < 1000;
        deltaTime = SDL_GetTicks64() - startTime) {
     SDL_SetRenderDrawColor(mainRenderer, 0x00, 0x00, 0x00, 0xFF);
     SDL_RenderClear(mainRenderer);

@@ -1,17 +1,39 @@
+#include <string>
+
 #include "../../include/game.hh"
 #include "SDL_image.h"
 
 void game::paused() {
   SDL_Surface* surface;
-  surface = IMG_Load("../res/UI/PauseOverlay.png");
-  SDL_Texture* overlay = SDL_CreateTextureFromSurface(mainRenderer, surface);
-  textures.emplace_back(overlay);
-  SDL_FreeSurface(surface);
+  auto loadTexture = [&](std::string filePath) -> SDL_Texture* {
+    SDL_Surface* surface = IMG_Load(filePath.c_str());
+    if (surface == nullptr) {
+      std::cerr << IMG_GetError();
+      // Safe because SDL guarantees that all functions can take nullptr as
+      // textures.
+      return nullptr;
+    }
 
-  SDL_RenderDrawRect(mainRenderer, &dispBounds);
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(mainRenderer, surface);
+    if (texture == nullptr) {
+      std::cerr << SDL_GetError();
+      return nullptr;
+    }
 
+    textures.emplace_back(texture);
+    SDL_FreeSurface(surface);
+    return texture;
+  };
+
+  SDL_Texture* overlay = loadTexture("../res/UI/PauseOverlay.png");
+  SDL_Texture* resume = loadTexture("../res/UI/PauseBTResume.png");
+  SDL_Texture* exit = loadTexture("../res/UI/PauseBTExit.png");
+
+  SDL_SetRenderDrawBlendMode(mainRenderer, SDL_BLENDMODE_MUL);
   while (state == gameState::paused) {
     SDL_RenderCopy(mainRenderer, overlay, nullptr, nullptr);
+    SDL_RenderCopy(mainRenderer, resume, nullptr, nullptr);
+    SDL_RenderCopy(mainRenderer, exit, nullptr, nullptr);
 
     SDL_RenderPresent(mainRenderer);
 

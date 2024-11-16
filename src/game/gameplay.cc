@@ -5,7 +5,11 @@ void game::gameplay() {
   {}
   SDL_Event event;
   while (state == gameState::gameplay) {
-    (void)0;
+    SDL_SetRenderDrawColor(mainRenderer, 0xff, 0xff, 0xff, SDL_ALPHA_OPAQUE);
+    SDL_RenderClear(mainRenderer);
+
+    SDL_RenderDrawRect(mainRenderer, &dispBounds);
+    SDL_RenderPresent(mainRenderer);
 
     while (SDL_PollEvent(&event)) {
       switch (event.type) {
