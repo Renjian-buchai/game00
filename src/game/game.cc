@@ -1,5 +1,7 @@
 #include "../include/game.hh"
 
+#include <iostream>
+
 #include "SDL_image.h"
 
 game::game() {
@@ -40,12 +42,14 @@ game::game() {
     }
   }
 
-  font = TTF_OpenFont("../res/fonts/arial.ttf", 64);
+  font = TTF_OpenFont("../res/UI/fonts/arial.ttf", 64);
   if (font == nullptr) {
     std::cerr << TTF_GetError();
     this->~game();
     exit(-1);
   }
+
+  pixelSize = static_cast<double>(dispBounds.w) / 640.0f;
 
   return;
 }

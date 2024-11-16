@@ -41,6 +41,8 @@ struct game {
 
   TTF_Font* font;
 
+  double pixelSize;
+
  private:
   std::vector<slide> slideQueue;
 
@@ -51,6 +53,7 @@ struct game {
 
   void intro();
   void gameplay();
+  void paused();
 
  private:
   void slideShow(size_t time, bool& click, size_t skipGrace = 1000);

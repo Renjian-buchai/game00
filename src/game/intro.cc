@@ -3,7 +3,7 @@
 
 void game::intro() {
   {
-    addSlide(IMG_Load("../res/images/noose.png"), 0, 1500, 500);
+    addSlide(IMG_Load("../res/images/0001.png"), 0, 1500, 500);
 
     SDL_Surface* surface = TTF_RenderText_Solid_Wrapped(
         font, "Ah, but I'll be causing trouble for my family, won't I?",
@@ -33,15 +33,15 @@ void game::intro() {
 
   size_t startTime = SDL_GetTicks64();
 
-  bool slideshowing = false;
+  bool skip = false;
 
   for (size_t deltaTime = SDL_GetTicks64() - startTime;
-       state != gameState::terminating and deltaTime < 15000;
+       state == gameState::intro and deltaTime < 15000;
        deltaTime = SDL_GetTicks64() - startTime) {
     SDL_SetRenderDrawColor(mainRenderer, 0x00, 0x00, 0x00, 0xFF);
     SDL_RenderClear(mainRenderer);
 
-    slideShow(SDL_GetTicks64(), slideshowing);
+    slideShow(SDL_GetTicks64(), skip);
     SDL_RenderPresent(mainRenderer);
 
     SDL_Event event;
@@ -54,7 +54,7 @@ void game::intro() {
         case SDL_KEYDOWN:
           switch (event.key.keysym.sym) {
             case SDLK_SPACE:
-              slideshowing = true;
+              skip = true;
               break;
 
             default:
@@ -68,8 +68,10 @@ void game::intro() {
     }
   }
 
-  for (size_t i = textures.size() - 1; i >= 0; --i) {
-    SDL_DestroyTexture(textures[i]);
-    textures.pop_back();
+  for (SDL_Texture* texture : textures) {
+    SDL_DestroyTexture(texture);
   }
+  textures.clear();
+
+  state = gameState::gameplay;
 }

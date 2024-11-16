@@ -32,16 +32,23 @@ int main(int argc, char** argv) {
 
   game game;
 
-  switch (game.state) {
-    case game::gameState::intro:
-      game.intro();
-      break;
+  while (game.state != game::gameState::terminating) {
+    switch (game.state) {
+      case game::gameState::intro:
+        game.intro();
+        break;
 
-    case game::gameState::gameplay:
-      game.gameplay();
+      case game::gameState::gameplay:
+        game.gameplay();
+        break;
 
-    default:
-      break;
+      case game::gameState::paused:
+        game.paused();
+        break;
+
+      default:
+        break;
+    }
   }
 
   return 0;
