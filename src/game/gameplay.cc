@@ -1,41 +1,36 @@
+#include <memory>
+#include <variant>
+
 #include "../../include/game.hh"
+#include "../../include/scenes/explorer.hh"
+#include "../../include/scenes/scene.hh"
 #include "SDL_image.h"
 
 void game::gameplay() {
-  {}
+  // Generate scene
+  std::variant<explorer> currentScene = explorer(this);
+
   SDL_Event event;
   while (state == gameState::gameplay) {
-    SDL_SetRenderDrawColor(mainRenderer, 0xff, 0xff, 0xff, SDL_ALPHA_OPAQUE);
-    SDL_RenderClear(mainRenderer);
-
-    SDL_RenderDrawRect(mainRenderer, &dispBounds);
+    std::visit([](auto& scene) { scene.render(); }, currentScene);
     SDL_RenderPresent(mainRenderer);
 
     while (SDL_PollEvent(&event)) {
-      switch (event.type) {
-        case SDL_QUIT:
-          state = gameState::terminating;
-          break;
+      if (event.type == SDL_QUIT) {
+        state = gameState::terminating;
+        return;
+      }
 
-        case SDL_KEYDOWN:
-          switch (event.key.keysym.sym) {
-            case SDLK_ESCAPE:
-              state = gameState::paused;
-              goto pause;
-              break;
-
-            default:
-              break;
-          }
-          break;
-
-        default:
-          break;
+      if (std::visit([&](auto& scene) -> bool { return scene.handle(event); },
+                     currentScene) == 1) {
+        state = gameState::paused;
+        return;  // All clean-up should be done by the scene's destructor if
+                 // scene control changes
       }
     }
 
-    (void)0;
+    std::visit([](auto& scene) { scene.update(); }, currentScene);
   }
-pause:
+
   return;
 }
