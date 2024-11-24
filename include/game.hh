@@ -8,6 +8,7 @@
 
 #include "SDL.h"
 #include "SDL_ttf.h"
+#include "scenes/scene.hh"
 
 struct game {
   enum class gameState : uint8_t {
@@ -39,6 +40,8 @@ struct game {
   SDL_Window* mainWindow;
   SDL_Renderer* mainRenderer;
   std::vector<SDL_Texture*> textures{};
+
+  std::vector<std::unique_ptr<scene>> scenes{};
 
   TTF_Font* font;
 

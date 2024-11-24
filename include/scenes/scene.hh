@@ -1,18 +1,21 @@
 #if !defined(SCENE_HH)
 #define SCENE_HH
 
+#include <memory>
+
 #include "SDL.h"
-#include "game.hh"
+
+struct game;
 
 // Just to make sure everything has the same interface
 struct scene {
   game* context;
 
-  scene(game*);
+  scene(game* gameContext);
 
   virtual ~scene();
 
-  virtual void update() = 0;
+  virtual std::unique_ptr<scene> update() = 0;
 
   virtual void render() = 0;
 
