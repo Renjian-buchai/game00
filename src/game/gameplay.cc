@@ -8,11 +8,11 @@
 
 void game::gameplay() {
   // Generate scene
-  std::variant<explorer> currentScene = explorer(this);
+  std::unique_ptr<scene> currentScene = std::make_unique<explorer>(this);
 
   SDL_Event event;
   while (state == gameState::gameplay) {
-    std::visit([](auto& scene) { scene.render(); }, currentScene);
+    currentScene->render();
     SDL_RenderPresent(mainRenderer);
 
     while (SDL_PollEvent(&event)) {
@@ -21,15 +21,17 @@ void game::gameplay() {
         return;
       }
 
-      if (std::visit([&](auto& scene) -> bool { return scene.handle(event); },
-                     currentScene) == 1) {
+      if (currentScene->handle(event)) {
         state = gameState::paused;
         return;  // All clean-up should be done by the scene's destructor if
                  // scene control changes
       }
     }
 
-    std::visit([](auto& scene) { scene.update(); }, currentScene);
+    std::unique_ptr<scene> next = currentScene->update();
+    if (currentScene.get() == nullptr) {
+      currentScene.swap(next);
+    }
   }
 
   return;
