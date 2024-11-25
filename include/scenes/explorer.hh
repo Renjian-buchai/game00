@@ -6,18 +6,15 @@
 #include "SDL.h"
 #include "scene.hh"
 
-enum class explorerSave {
-  init,
-  first,
-};
+enum class explorerSave { init, first, aoeu, boeu, coeu };
 static explorerSave saveData;
 
 struct explorer : public scene {
   explorer(game* context);
   ~explorer();
-  std::unique_ptr<scene> update() override;
+  void update() override;
   void render() override;
-  bool handle(SDL_Event& event) override;
+  std::unique_ptr<scene> handle(SDL_Event& event) override;
 
   SDL_Texture* OS;
   const SDL_Rect pauseBounds;

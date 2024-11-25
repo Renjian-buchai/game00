@@ -15,12 +15,12 @@ struct scene {
 
   virtual ~scene();
 
-  virtual std::unique_ptr<scene> update() = 0;
+  virtual void update() = 0;
 
   virtual void render() = 0;
 
   // Return 1 if pause is hit
-  virtual bool handle(SDL_Event&) = 0;
+  virtual std::unique_ptr<scene> handle(SDL_Event&) = 0;
 };
 
 #endif

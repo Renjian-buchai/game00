@@ -26,17 +26,17 @@ void game::gameplay() {
         return;
       }
 
-      if (currentScene->handle(event)) {
-        state = gameState::paused;
-        return;  // All clean-up should be done by the scene's destructor if
-                 // scene control changes
+      std::unique_ptr<scene> next = currentScene->handle(event);
+      if (currentScene.get() == nullptr) {
+        currentScene.swap(next);
       }
+
+      // All clean-up should be done by the scene's destructor if
+      // scene control changes
+      if (state == gameState::paused) return;
     }
 
-    std::unique_ptr<scene> next = currentScene->update();
-    if (currentScene.get() == nullptr) {
-      currentScene.swap(next);
-    }
+    currentScene->update();
   }
 
   return;

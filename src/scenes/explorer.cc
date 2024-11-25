@@ -1,9 +1,18 @@
 #include "../../include/scenes/explorer.hh"
 
+#include <functional>
+
 #include "../../include/game.hh"
 #include "SDL_image.h"
 
 #define pix(val) static_cast<int>(val * context->pixelSize)
+
+explorerSave operator++(explorerSave& save) {
+  using IntType = typename std::underlying_type<explorerSave>::type;
+  save = static_cast<explorerSave>(static_cast<IntType>(save) + 1);
+
+  return save;
+}
 
 explorer::explorer(game* context)
     : scene(context),
@@ -25,9 +34,9 @@ explorer::explorer(game* context)
       std::cout << IMG_GetError();
       std::exit(-1);
     }
+    SDL_BlitScaled(os, nullptr, explorer, nullptr);
     SDL_FreeSurface(os);
 
-    SDL_BlitScaled(os, nullptr, explorer, nullptr);
     this->OS = SDL_CreateTextureFromSurface(context->mainRenderer, explorer);
     if (this->OS == nullptr) {
       std::cout << SDL_GetError();
@@ -43,28 +52,49 @@ explorer::~explorer() {
   // TODO Idk, probably don't free stuff? Not sure
 }
 
-std::unique_ptr<scene> explorer::update() {
+void explorer::update() {
   // TODO gameplay loop
 
-  return std::unique_ptr<scene>(nullptr);
+  // return std::unique_ptr<scene>(nullptr);
 }
 
 void explorer::render() {
-  for (auto [texture, position] : this->items) {
-    SDL_RenderCopy(context->mainRenderer, texture, nullptr, &position);
-  }
+  SDL_RenderCopy(context->mainRenderer, this->OS, nullptr, nullptr);
 
   // Render everything else here
 
-  SDL_RenderCopy(context->mainRenderer, this->OS, nullptr, nullptr);
+  for (auto [texture, position] : this->items) {
+    SDL_RenderCopy(context->mainRenderer, texture, nullptr, &position);
+  }
   return;
 }
 
-bool explorer::handle(SDL_Event& event) {
+std::unique_ptr<scene> explorer::handle(SDL_Event& event) {
+  SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:
       switch (event.key.keysym.sym) {}
+      break;
+
+    case SDL_MOUSEBUTTONDOWN:
+      point.x = event.button.x;
+      point.y = event.button.y;
+
+      if (SDL_PointInRect(&point, &downloadBounds)) {
+        std::cout << static_cast<int>(++saveData);
+      }
+
+      if (SDL_PointInRect(&point, &pauseBounds)) {
+        std::cout << "Pausing";
+        context->state = game::gameState::paused;
+        return std::unique_ptr<scene>(nullptr);
+      }
+
+      break;
+
+    default:
+      break;
   }
 
-  return false;
+  return std::unique_ptr<scene>(nullptr);
 }
