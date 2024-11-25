@@ -12,9 +12,31 @@ explorer::explorer(game* context)
       downloadBounds(SDL_Rect{0, 0, pix(40), pix(24)}),
       explorerBounds(SDL_Rect{pix(24), pix(376), pix(24), pix(24)}) {
   saveData = explorerSave::init;
-  SDL_Surface* surface = IMG_Load("../res/images/OSExplorer.png");
-  SDL_BlitScaled(IMG_Load("../res/images/OS.png"), nullptr, surface, nullptr);
-  this->OS = SDL_CreateTextureFromSurface(context->mainRenderer, surface);
+
+  {
+    SDL_Surface* explorer = IMG_Load("../res/images/OSExplorer.png");
+    if (explorer == nullptr) {
+      std::cout << IMG_GetError();
+      std::exit(-1);
+    }
+
+    SDL_Surface* os = IMG_Load("../res/images/OS.png");
+    if (os == nullptr) {
+      std::cout << IMG_GetError();
+      std::exit(-1);
+    }
+    SDL_FreeSurface(os);
+
+    SDL_BlitScaled(os, nullptr, explorer, nullptr);
+    this->OS = SDL_CreateTextureFromSurface(context->mainRenderer, explorer);
+    if (this->OS == nullptr) {
+      std::cout << SDL_GetError();
+      std::exit(-1);
+    }
+    SDL_FreeSurface(explorer);
+  }
+
+  return;
 }
 
 explorer::~explorer() {
@@ -41,7 +63,7 @@ void explorer::render() {
 bool explorer::handle(SDL_Event& event) {
   switch (event.type) {
     case SDL_KEYDOWN:
-      (void)0;
+      switch (event.key.keysym.sym) {}
   }
 
   return false;

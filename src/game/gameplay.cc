@@ -21,6 +21,11 @@ void game::gameplay() {
         return;
       }
 
+      if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
+        state = gameState::paused;
+        return;
+      }
+
       if (currentScene->handle(event)) {
         state = gameState::paused;
         return;  // All clean-up should be done by the scene's destructor if
