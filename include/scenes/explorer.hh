@@ -20,6 +20,10 @@ struct explorer : public scene {
   bool handle(SDL_Event& event) override;
 
   SDL_Texture* OS;
+  const SDL_Rect pauseBounds;
+  const SDL_Rect downloadBounds;
+  const SDL_Rect explorerBounds;
+
   std::vector<std::pair<SDL_Texture*, SDL_Rect>> items;
 
   const int nameWrapLength;

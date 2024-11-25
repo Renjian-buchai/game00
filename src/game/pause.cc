@@ -3,6 +3,8 @@
 #include "../../include/game.hh"
 #include "SDL_image.h"
 
+#define pix(val) static_cast<int>(val * this->pixelSize)
+
 void game::paused() {
   // Whyyyyyyyy
   SDL_Texture* overlay = loadTexture("../res/UI/PauseOverlay.png");
@@ -15,12 +17,8 @@ void game::paused() {
   SDL_Texture* exitHover = loadTexture("../res/UI/PauseBTExitHover.png");
   SDL_Texture* exitState = exit;
 
-  SDL_Rect resumePos = {
-      static_cast<int>(219 * pixelSize), static_cast<int>(169 * pixelSize),
-      static_cast<int>(201 * pixelSize), static_cast<int>(63 * pixelSize)};
-  SDL_Rect exitPos = {
-      static_cast<int>(219 * pixelSize), static_cast<int>(235 * pixelSize),
-      static_cast<int>(201 * pixelSize), static_cast<int>(63 * pixelSize)};
+  SDL_Rect resumePos = {pix(219), pix(169), pix(201), pix(63)};
+  SDL_Rect exitPos = {pix(219), pix(235), pix(201), pix(63)};
 
   SDL_SetRenderDrawBlendMode(mainRenderer, SDL_BLENDMODE_MUL);
   SDL_Point mousePosition;
