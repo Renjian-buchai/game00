@@ -1,6 +1,6 @@
 #include "../../include/scenes/explorer.hh"
 
-#include <functional>
+#include <fstream>
 
 #include "../../include/game.hh"
 #include "SDL_image.h"
@@ -20,16 +20,14 @@ explorer::explorer(game* context)
       pauseBounds(SDL_Rect{pix(600), 0, pix(39), pix(24)}),
       downloadBounds(SDL_Rect{0, 0, pix(40), pix(24)}),
       explorerBounds(SDL_Rect{pix(24), pix(376), pix(24), pix(24)}) {
-  saveData = explorerSave::init;
-
   {
-    SDL_Surface* explorer = IMG_Load("../res/images/OSExplorer.png");
+    SDL_Surface* explorer = IMG_Load("res/images/OSExplorer.png");
     if (explorer == nullptr) {
       std::cout << IMG_GetError();
       std::exit(-1);
     }
 
-    SDL_Surface* os = IMG_Load("../res/images/OS.png");
+    SDL_Surface* os = IMG_Load("res/images/OS.png");
     if (os == nullptr) {
       std::cout << IMG_GetError();
       std::exit(-1);
@@ -37,39 +35,65 @@ explorer::explorer(game* context)
     SDL_BlitScaled(os, nullptr, explorer, nullptr);
     SDL_FreeSurface(os);
 
-    this->OS = SDL_CreateTextureFromSurface(context->mainRenderer, explorer);
-    if (this->OS == nullptr) {
+    OS = SDL_CreateTextureFromSurface(context->mainRenderer, explorer);
+    if (OS == nullptr) {
       std::cout << SDL_GetError();
       std::exit(-1);
     }
     SDL_FreeSurface(explorer);
   }
 
+  if (saveData == explorerSave::init) {
+    SDL_Surface* text = TTF_RenderUTF8_Blended_Wrapped(
+        context->font,
+        "↑ His files have been deleted. Let's download them from the cloud.",
+        {0x80, 0x87, 0x7d, SDL_ALPHA_OPAQUE}, pix(300));
+    if (text == nullptr) {
+      std::cout << TTF_GetError();
+      exit(-1);
+    }
+
+    items.emplace_back(
+        SDL_CreateTextureFromSurface(context->mainRenderer, text),
+        SDL_Rect{pix(8), pix(56), text->w, text->h});
+
+    SDL_FreeSurface(text);
+  }
+
   return;
 }
 
 explorer::~explorer() {
-  // TODO Idk, probably don't free stuff? Not sure
+  for (size_t i = 0; i < items.size(); ++i) {
+    SDL_DestroyTexture(items[0].first);
+    items.erase(items.begin());
+  }
 }
 
 void explorer::update() {
-  // TODO gameplay loop
+  // Technically, assigned too much space, but better than finding off-by-1 bugs
+  static std::vector<bool> first(static_cast<size_t>(explorerSave::size), 1);
 
-  // return std::unique_ptr<scene>(nullptr);
+  if (saveData == explorerSave::entry1) {
+    if (first[static_cast<size_t>(explorerSave::entry1)]) {
+      first[static_cast<size_t>(explorerSave::entry1)] = 0;
+      auto [texture, position] = items.back();
+      SDL_DestroyTexture(texture);
+      items.pop_back();
+    }
+  }
 }
 
 void explorer::render() {
-  SDL_RenderCopy(context->mainRenderer, this->OS, nullptr, nullptr);
+  SDL_RenderCopy(context->mainRenderer, OS, nullptr, nullptr);
 
-  // Render everything else here
-
-  for (auto [texture, position] : this->items) {
+  for (auto [texture, position] : items) {
     SDL_RenderCopy(context->mainRenderer, texture, nullptr, &position);
   }
   return;
 }
 
-std::unique_ptr<scene> explorer::handle(SDL_Event& event) {
+scene* explorer::handle(SDL_Event& event) {
   SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:
@@ -81,13 +105,15 @@ std::unique_ptr<scene> explorer::handle(SDL_Event& event) {
       point.y = event.button.y;
 
       if (SDL_PointInRect(&point, &downloadBounds)) {
-        std::cout << static_cast<int>(++saveData);
+        if (saveData != explorerSave::init) {
+          // return std::move(context->scenes[1]);
+        }
+        ++saveData;
       }
 
       if (SDL_PointInRect(&point, &pauseBounds)) {
-        std::cout << "Pausing";
         context->state = game::gameState::paused;
-        return std::unique_ptr<scene>(nullptr);
+        return this;
       }
 
       break;
@@ -96,5 +122,5 @@ std::unique_ptr<scene> explorer::handle(SDL_Event& event) {
       break;
   }
 
-  return std::unique_ptr<scene>(nullptr);
+  return this;
 }

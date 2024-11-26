@@ -7,14 +7,14 @@
 
 void game::paused() {
   // Whyyyyyyyy
-  SDL_Texture* overlay = loadTexture("../res/UI/PauseOverlay.png");
+  SDL_Texture* overlay = loadTexture("res/UI/PauseOverlay.png");
 
-  SDL_Texture* resume = loadTexture("../res/UI/PauseBTResume.png");
-  SDL_Texture* resumeHover = loadTexture("../res/UI/PauseBTResumeHover.png");
+  SDL_Texture* resume = loadTexture("res/UI/PauseBTResume.png");
+  SDL_Texture* resumeHover = loadTexture("res/UI/PauseBTResumeHover.png");
   SDL_Texture* resumeState = resume;
 
-  SDL_Texture* exit = loadTexture("../res/UI/PauseBTExit.png");
-  SDL_Texture* exitHover = loadTexture("../res/UI/PauseBTExitHover.png");
+  SDL_Texture* exit = loadTexture("res/UI/PauseBTExit.png");
+  SDL_Texture* exitHover = loadTexture("res/UI/PauseBTExitHover.png");
   SDL_Texture* exitState = exit;
 
   SDL_Rect resumePos = {pix(219), pix(169), pix(201), pix(63)};

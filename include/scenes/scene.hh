@@ -20,7 +20,7 @@ struct scene {
   virtual void render() = 0;
 
   // Return 1 if pause is hit
-  virtual std::unique_ptr<scene> handle(SDL_Event&) = 0;
+  virtual scene* handle(SDL_Event&) = 0;
 };
 
 #endif

@@ -26,9 +26,9 @@ void game::gameplay() {
         return;
       }
 
-      std::unique_ptr<scene> next = currentScene->handle(event);
-      if (currentScene.get() == nullptr) {
-        currentScene.swap(next);
+      scene* next = currentScene->handle(event);
+      if (currentScene.get() != next) {
+        currentScene.reset(next);
       }
 
       // All clean-up should be done by the scene's destructor if

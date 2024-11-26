@@ -4,7 +4,7 @@
 void game::intro() {
   {
     // 1.5s
-    addSlide(IMG_Load("../res/images/0001.png"), 0, 1500, 500);
+    addSlide(IMG_Load("res/images/0001.png"), 0, 1500, 500);
 
     SDL_Colour white{0xff, 0xff, 0xff, SDL_ALPHA_OPAQUE};
 
@@ -21,7 +21,12 @@ void game::intro() {
 
     // 1.5s
     surface =
-        TTF_RenderText_Solid_Wrapped(font, "Live on my behalf.", white, 0);
+        TTF_RenderText_Solid_Wrapped(font, "Live on my behalf...", white, 0);
+    addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h});
+
+    // 1.5s
+    surface = TTF_RenderText_Solid_Wrapped(font, "So that I don't have to.",
+                                           white, 0);
     addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h});
 
     // 2.0s
@@ -65,7 +70,7 @@ void game::intro() {
   for (size_t deltaTime = SDL_GetTicks64() - startTime;
        // 15000, because I know that I'm going to be changing this value to
        // something else
-       state == gameState::intro and deltaTime < 17500;
+       state == gameState::intro and deltaTime < 19000;
        deltaTime = SDL_GetTicks64() - startTime) {
     SDL_SetRenderDrawColor(mainRenderer, 0x00, 0x00, 0x00, 0xFF);
     SDL_RenderClear(mainRenderer);

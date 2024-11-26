@@ -42,7 +42,7 @@ game::game() {
     }
   }
 
-  font = TTF_OpenFont("../res/UI/fonts/arial.ttf", 64);
+  font = TTF_OpenFont("res/UI/fonts/arial.ttf", 64);
   if (font == nullptr) {
     std::cerr << TTF_GetError();
     this->~game();
