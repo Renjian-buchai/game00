@@ -2,17 +2,15 @@
 #include <variant>
 
 #include "../../include/game.hh"
-#include "../../include/scenes/explorer.hh"
-#include "../../include/scenes/scene.hh"
+#include "../../include/wm.hh"
 #include "SDL_image.h"
 
 void game::gameplay() {
-  // Generate scene
-  std::unique_ptr<scene> currentScene = std::make_unique<explorer>(this);
+  wm winMan(this);
 
   SDL_Event event;
   while (state == gameState::gameplay) {
-    currentScene->render();
+    winMan.render();
     SDL_RenderPresent(mainRenderer);
 
     while (SDL_PollEvent(&event)) {
@@ -21,22 +19,10 @@ void game::gameplay() {
         return;
       }
 
-      if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
-        state = gameState::paused;
-        return;
-      }
-
-      scene* next = currentScene->handle(event);
-      if (currentScene.get() != next) {
-        currentScene.reset(next);
-      }
-
-      // All clean-up should be done by the scene's destructor if
-      // scene control changes
-      if (state == gameState::paused) return;
+      winMan.handle(event);
     }
 
-    currentScene->update();
+    winMan.update();
   }
 
   return;

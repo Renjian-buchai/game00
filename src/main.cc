@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 
   int err;
 
-  if (err = SDL_Init(SDL_INIT_EVERYTHING)) {
+  if ((err = SDL_Init(SDL_INIT_EVERYTHING))) {
     std::cerr << SDL_GetError() << "\n";
     exit(err);
   }
@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
   }
   std::atexit(IMG_Quit);
 
-  if (err = TTF_Init()) {
+  if ((err = TTF_Init())) {
     std::cerr << TTF_GetError() << "\n";
     exit(err);
   }

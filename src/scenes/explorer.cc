@@ -14,38 +14,30 @@ explorerSave operator++(explorerSave& save) {
   return save;
 }
 
-explorer::explorer(game* context)
-    : scene(context),
-      nameWrapLength(260 * context->pixelSize),
+explorer::explorer(game* _context)
+    : scene(_context),
+      nameWrapLength(260 * _context->pixelSize),
       pauseBounds(SDL_Rect{pix(600), 0, pix(39), pix(24)}),
       downloadBounds(SDL_Rect{0, 0, pix(40), pix(24)}),
       explorerBounds(SDL_Rect{pix(24), pix(376), pix(24), pix(24)}) {
   {
-    SDL_Surface* explorer = IMG_Load("res/images/OSExplorer.png");
-    if (explorer == nullptr) {
+    SDL_Surface* surface = IMG_Load("res/images/OSExplorer.png");
+    if (surface == nullptr) {
       std::cout << IMG_GetError();
       std::exit(-1);
     }
 
-    SDL_Surface* os = IMG_Load("res/images/OS.png");
-    if (os == nullptr) {
-      std::cout << IMG_GetError();
-      std::exit(-1);
-    }
-    SDL_BlitScaled(os, nullptr, explorer, nullptr);
-    SDL_FreeSurface(os);
-
-    OS = SDL_CreateTextureFromSurface(context->mainRenderer, explorer);
+    OS = SDL_CreateTextureFromSurface(_context->mainRenderer, surface);
     if (OS == nullptr) {
       std::cout << SDL_GetError();
       std::exit(-1);
     }
-    SDL_FreeSurface(explorer);
+    SDL_FreeSurface(surface);
   }
 
   if (saveData == explorerSave::init) {
     SDL_Surface* text = TTF_RenderUTF8_Blended_Wrapped(
-        context->font,
+        _context->font,
         "↑ His files have been deleted. Let's download them from the cloud.",
         {0x80, 0x87, 0x7d, SDL_ALPHA_OPAQUE}, pix(300));
     if (text == nullptr) {
@@ -54,7 +46,7 @@ explorer::explorer(game* context)
     }
 
     items.emplace_back(
-        SDL_CreateTextureFromSurface(context->mainRenderer, text),
+        SDL_CreateTextureFromSurface(_context->mainRenderer, text),
         SDL_Rect{pix(8), pix(56), text->w, text->h});
 
     SDL_FreeSurface(text);

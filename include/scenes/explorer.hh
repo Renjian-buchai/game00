@@ -11,7 +11,7 @@ enum class explorerSave {
   entry1,
   size,
 };
-static explorerSave saveData = explorerSave::init;
+static explorerSave saveData [[maybe_unused]] = explorerSave::init;
 static std::vector<std::pair<SDL_Texture*, SDL_Rect>> items;
 
 struct explorer : public scene {
@@ -22,11 +22,10 @@ struct explorer : public scene {
   scene* handle(SDL_Event& event) override;
 
   SDL_Texture* OS;
+  const int nameWrapLength;
   const SDL_Rect pauseBounds;
   const SDL_Rect downloadBounds;
   const SDL_Rect explorerBounds;
-
-  const int nameWrapLength;
 };
 
 #endif

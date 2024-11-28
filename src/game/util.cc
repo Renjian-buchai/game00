@@ -81,11 +81,11 @@ void game::addSlide(SDL_Surface* surface, size_t fadeIn, size_t duration,
   if (centred) game::centreRect(slideQueue.rbegin()->dest);
 }
 
-void game::centreRect(SDL_Rect& rect, game::centre centre) const {
-  if (centre == centre::BOTH) {
+void game::centreRect(SDL_Rect& rect, game::centre _centre) const {
+  if (_centre == centre::BOTH) {
     rect.x = (dispBounds.w - rect.w) / 2;
     rect.y = (dispBounds.h - rect.h) / 2;
-  } else if (centre == centre::HORIZONTAL) {
+  } else if (_centre == centre::HORIZONTAL) {
     rect.x = (dispBounds.w - rect.w) / 2;
   } else {
     rect.y = (dispBounds.h - rect.h) / 2;
