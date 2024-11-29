@@ -9,7 +9,7 @@ enum class notepadSave {
 
 static notepadSave notepadSaveData [[maybe_unused]] = notepadSave::none;
 
-struct notepad : public scene {
+struct notepad_t : public scene {
   constexpr static int scale = 2;
 
  public:
@@ -19,8 +19,8 @@ struct notepad : public scene {
   const int lineWrapLength;
 
  public:
-  notepad(game* context);
-  ~notepad();
+  notepad_t(game* context);
+  ~notepad_t();
   void update() override;
   void render() override;
   scene* handle(SDL_Event& event) override;

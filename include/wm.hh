@@ -11,6 +11,7 @@ struct game;
 
 #include "scenes/explorer.hh"
 #include "scenes/notepad.hh"
+#include "scenes/pause.hh"
 
 struct wm {
   std::vector<scene*> scenes;
@@ -26,11 +27,15 @@ struct wm {
 
   game* context;
 
+  SDL_Rect pauseBounds;
+
   // So that it will delete itself when wm terminates
-  std::unique_ptr<explorer> expl;
-  std::unique_ptr<notepad> note;
+  std::unique_ptr<explorer_t> expl;
+  std::unique_ptr<notepad_t> note;
+  std::unique_ptr<pause_t> pause;
 
   scene* current;
+  scene* resume;
 };
 
 #endif

@@ -1,19 +1,17 @@
 #include "../../include/scenes/notepad.hh"
 
-#define pix(val) static_cast<int>(val * context->pixelSize)
-
 #include "../../include/game.hh"
 
-notepad::notepad(game* _context)
+notepad_t::notepad_t(game* _context)
     : scene(_context),
       pauseBounds(SDL_Rect{pix(600), 0, pix(39), pix(24)}),
       lineWrapLength(scale *
                      static_cast<double>(context->dispBounds.w - pix(16))) {}
 
-notepad::~notepad() {}
+notepad_t::~notepad_t() {}
 
-void notepad::update() {}
+void notepad_t::update() {}
 
-void notepad::render() {}
+void notepad_t::render() {}
 
-scene* notepad::handle(SDL_Event& event) { return this; }
+scene* notepad_t::handle(SDL_Event& event) { return this; }

@@ -5,22 +5,19 @@
 #include "../../include/game.hh"
 #include "SDL_image.h"
 
-#define pix(val) static_cast<int>(val * context->pixelSize)
-
-explorerSave operator++(explorerSave& save) {
-  using IntType = typename std::underlying_type<explorerSave>::type;
-  save = static_cast<explorerSave>(static_cast<IntType>(save) + 1);
+explorer_t::saveState operator++(explorer_t::saveState& save) {
+  using IntType = typename std::underlying_type<explorer_t::saveState>::type;
+  save = static_cast<explorer_t::saveState>(static_cast<IntType>(save) + 1);
 
   return save;
 }
 
-explorer::explorer(game* _context)
+explorer_t::explorer_t(game* _context)
     : scene(_context),
       nameWrapLength(260 * _context->pixelSize),
-      pauseBounds(SDL_Rect{pix(600), 0, pix(39), pix(24)}),
-      downloadBounds(SDL_Rect{0, 0, pix(40), pix(24)}),
-      explorerBounds(SDL_Rect{pix(24), pix(376), pix(24), pix(24)}) {
+      downloadBounds(SDL_Rect{0, 0, pix(40), pix(24)}) {
   {
+    saveData = saveState::init;
     SDL_Surface* surface = IMG_Load("res/images/OSExplorer.png");
     if (surface == nullptr) {
       std::cout << IMG_GetError();
@@ -35,7 +32,7 @@ explorer::explorer(game* _context)
     SDL_FreeSurface(surface);
   }
 
-  if (saveData == explorerSave::init) {
+  if (saveData == saveState::init) {
     SDL_Surface* text = TTF_RenderUTF8_Blended_Wrapped(
         _context->font,
         "↑ His files have been deleted. Let's download them from the cloud.",
@@ -55,20 +52,20 @@ explorer::explorer(game* _context)
   return;
 }
 
-explorer::~explorer() {
+explorer_t::~explorer_t() {
   for (size_t i = 0; i < items.size(); ++i) {
     SDL_DestroyTexture(items[0].first);
     items.erase(items.begin());
   }
 }
 
-void explorer::update() {
+void explorer_t::update() {
   // Technically, assigned too much space, but better than finding off-by-1 bugs
-  static std::vector<bool> first(static_cast<size_t>(explorerSave::size), 1);
+  static std::vector<bool> first(static_cast<size_t>(saveState::size), 1);
 
-  if (saveData == explorerSave::entry1) {
-    if (first[static_cast<size_t>(explorerSave::entry1)]) {
-      first[static_cast<size_t>(explorerSave::entry1)] = 0;
+  if (saveData == saveState::entry1) {
+    if (first[static_cast<size_t>(saveState::entry1)]) {
+      first[static_cast<size_t>(saveState::entry1)] = 0;
       auto [texture, position] = items.back();
       SDL_DestroyTexture(texture);
       items.pop_back();
@@ -76,7 +73,7 @@ void explorer::update() {
   }
 }
 
-void explorer::render() {
+void explorer_t::render() {
   SDL_RenderCopy(context->mainRenderer, OS, nullptr, nullptr);
 
   for (auto [texture, position] : items) {
@@ -85,7 +82,7 @@ void explorer::render() {
   return;
 }
 
-scene* explorer::handle(SDL_Event& event) {
+scene* explorer_t::handle(SDL_Event& event) {
   SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:
@@ -97,15 +94,7 @@ scene* explorer::handle(SDL_Event& event) {
       point.y = event.button.y;
 
       if (SDL_PointInRect(&point, &downloadBounds)) {
-        if (saveData != explorerSave::init) {
-          // return std::move(context->scenes[1]);
-        }
         ++saveData;
-      }
-
-      if (SDL_PointInRect(&point, &pauseBounds)) {
-        context->state = game::gameState::paused;
-        return this;
       }
 
       break;

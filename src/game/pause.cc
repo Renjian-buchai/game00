@@ -1,85 +1,45 @@
-#include <string>
+#include "../../include/scenes/pause.hh"
 
 #include "../../include/game.hh"
 #include "SDL_image.h"
 
-#define pix(val) static_cast<int>(val * this->pixelSize)
+pause_t::pause_t(game* _context)
+    : scene(_context),
+      resumePos({pix(219), pix(169), pix(201), pix(63)}),
+      exitPos({pix(219), pix(235), pix(201), pix(63)}) {
+  overlay = loadTexture("res/UI/PauseOverlay.png");
+  resume = loadTexture("res/UI/PauseBTResume.png");
+  resumeHover = loadTexture("res/UI/PauseBTResumeHover.png");
+  resumeState = resume;
 
-void game::paused() {
-  // Whyyyyyyyy
-  SDL_Texture* overlay = loadTexture("res/UI/PauseOverlay.png");
+  exit = loadTexture("res/UI/PauseBTExit.png");
+  exitHover = loadTexture("res/UI/PauseBTExitHover.png");
+  exitState = exit;
+}
 
-  SDL_Texture* resume = loadTexture("res/UI/PauseBTResume.png");
-  SDL_Texture* resumeHover = loadTexture("res/UI/PauseBTResumeHover.png");
-  SDL_Texture* resumeState = resume;
+pause_t::~pause_t() {
+  SDL_DestroyTexture(overlay);
+  SDL_DestroyTexture(resume);
+  SDL_DestroyTexture(resumeHover);
+  SDL_DestroyTexture(exit);
+  SDL_DestroyTexture(exitHover);
+}
 
-  SDL_Texture* exit = loadTexture("res/UI/PauseBTExit.png");
-  SDL_Texture* exitHover = loadTexture("res/UI/PauseBTExitHover.png");
-  SDL_Texture* exitState = exit;
+void pause_t::update() {}
 
-  SDL_Rect resumePos = {pix(219), pix(169), pix(201), pix(63)};
-  SDL_Rect exitPos = {pix(219), pix(235), pix(201), pix(63)};
+void pause_t::render() {
+  SDL_RenderCopy(context->mainRenderer, overlay, nullptr, nullptr);
+  SDL_RenderCopy(context->mainRenderer, resumeState, nullptr, nullptr);
+  SDL_RenderCopy(context->mainRenderer, exitState, nullptr, nullptr);
+}
 
-  SDL_SetRenderDrawBlendMode(mainRenderer, SDL_BLENDMODE_MUL);
-  SDL_Point mousePosition;
-  while (state == gameState::paused) {
-    SDL_RenderCopy(mainRenderer, overlay, nullptr, nullptr);
-    SDL_RenderCopy(mainRenderer, resumeState, nullptr, nullptr);
-    SDL_RenderCopy(mainRenderer, exitState, nullptr, nullptr);
+scene* pause_t::handle(SDL_Event& event) {
+  SDL_Point mousePosition = {event.motion.x, event.motion.y};
 
-    SDL_RenderPresent(mainRenderer);
+  resumeState =
+      SDL_PointInRect(&mousePosition, &resumePos) ? resumeHover : resume;
 
-    SDL_Event event;
-    while (SDL_PollEvent(&event)) {
-      switch (event.type) {
-        case SDL_QUIT:
-          state = gameState::terminating;
-          break;
+  exitState = SDL_PointInRect(&mousePosition, &exitPos) ? exitHover : exit;
 
-        case SDL_KEYDOWN:
-          switch (event.key.keysym.sym) {
-            case SDLK_ESCAPE:
-              state = gameState::gameplay;
-              break;
-
-            default:
-              break;
-          }
-          break;
-
-        case SDL_MOUSEBUTTONDOWN:
-          mousePosition = {event.button.x, event.button.y};
-
-          if (event.button.button == SDL_BUTTON_LEFT) {
-            if (SDL_PointInRect(&mousePosition, &resumePos)) {
-              state = gameState::gameplay;
-            }
-
-            // TODO: make it go to main menu instead
-            if (SDL_PointInRect(&mousePosition, &exitPos)) {
-              state = gameState::terminating;
-            }
-            break;
-          }
-          break;
-
-        case SDL_MOUSEMOTION:
-          mousePosition = {event.motion.x, event.motion.y};
-
-          resumeState = SDL_PointInRect(&mousePosition, &resumePos)
-                            ? resumeHover
-                            : resume;
-
-          exitState =
-              SDL_PointInRect(&mousePosition, &exitPos) ? exitHover : exit;
-
-          break;
-
-        default:
-          break;
-      }
-    }
-  }
-
-  return;
+  return nullptr;
 }

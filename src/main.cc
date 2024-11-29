@@ -47,10 +47,6 @@ int main(int argc, char** argv) {
         game.gameplay();
         break;
 
-      case game::gameState::paused:
-        game.paused();
-        break;
-
       case game::gameState::terminating:
         // It should never reach this point anyways
         break;

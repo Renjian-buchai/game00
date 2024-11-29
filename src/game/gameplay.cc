@@ -9,7 +9,7 @@ void game::gameplay() {
   wm winMan(this);
 
   SDL_Event event;
-  while (state == gameState::gameplay) {
+  while (state != gameState::terminating) {
     winMan.render();
     SDL_RenderPresent(mainRenderer);
 
