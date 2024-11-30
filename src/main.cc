@@ -1,9 +1,3 @@
-#include <iostream>
-#include <vector>
-
-#include "SDL.h"
-#include "SDL_image.h"
-#include "SDL_ttf.h"
 #include "game.hh"
 
 int main(int argc, char** argv) {
@@ -35,7 +29,7 @@ int main(int argc, char** argv) {
   while (game.state != game::gameState::terminating) {
     switch (game.state) {
       case game::gameState::intro:
-#define skipIntro
+// #define skipIntro
 #ifdef skipIntro
         game.state = game::gameState::gameplay;
 #else

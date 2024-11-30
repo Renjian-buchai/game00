@@ -1,14 +1,8 @@
 #if !defined(game_GAME_HH)
 #define game_GAME_HH
 
-#include <cstdlib>
-#include <iostream>
-#include <string>
-#include <vector>
-
-#include "SDL.h"
-#include "SDL_ttf.h"
-#include "scenes/scene.hh"
+#include "pch.hh"
+#include "wm.hh"
 
 struct game {
   enum class gameState : uint8_t {
@@ -41,11 +35,12 @@ struct game {
   SDL_Renderer* mainRenderer;
   std::vector<SDL_Texture*> textures{};
 
-  std::vector<std::unique_ptr<scene>> scenes{};
-
   TTF_Font* font;
 
   double pixelSize;
+
+  wm winMan;
+  SDL_Thread* loadThread;
 
  private:
   std::vector<slide> slideQueue;

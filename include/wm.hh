@@ -1,11 +1,7 @@
 #if !defined(WM_HH)
 #define WM_HH
 
-#include <memory>
-#include <utility>
-#include <vector>
-
-#include "SDL.h"
+#include "pch.hh"
 
 struct game;
 
@@ -14,11 +10,11 @@ struct game;
 #include "scenes/pause.hh"
 
 struct wm {
-  std::vector<scene*> scenes;
   std::vector<std::pair<SDL_Texture*, SDL_Rect>> icons;
 
   SDL_Texture* OSOverlay;
 
+  wm() = default;
   wm(game* context);
 
   void render();

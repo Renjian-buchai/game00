@@ -1,5 +1,4 @@
 #include "../../include/game.hh"
-#include "SDL_image.h"
 
 void game::intro() {
   {

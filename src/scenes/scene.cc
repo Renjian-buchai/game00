@@ -1,9 +1,5 @@
 #include "../../include/scenes/scene.hh"
 
-#include <SDL_image.h>
-
-#include <iostream>
-
 #include "../../include/game.hh"
 
 scene::scene(game* _context) : context(_context) {}

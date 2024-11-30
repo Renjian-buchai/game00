@@ -1,9 +1,6 @@
 #if !defined(EXPLORER_HH)
 #define EXPLORER_HH
 
-#include <vector>
-
-#include "SDL.h"
 #include "scene.hh"
 
 struct explorer_t : public scene {

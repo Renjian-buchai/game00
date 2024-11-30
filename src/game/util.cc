@@ -1,5 +1,4 @@
 #include "../../include/game.hh"
-#include "SDL_image.h"
 
 game::slide::slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
                    SDL_Texture* _texture, SDL_Rect _dest, bool _skippable)

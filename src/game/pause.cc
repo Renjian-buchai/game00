@@ -1,7 +1,6 @@
 #include "../../include/scenes/pause.hh"
 
 #include "../../include/game.hh"
-#include "SDL_image.h"
 
 pause_t::pause_t(game* _context)
     : scene(_context),

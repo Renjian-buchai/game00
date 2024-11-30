@@ -1,9 +1,7 @@
 #if !defined(SCENE_HH)
 #define SCENE_HH
 
-#include <memory>
-
-#include "SDL.h"
+#include "../../include/pch.hh"
 
 #define pix(val) static_cast<int>(val * context->pixelSize)
 

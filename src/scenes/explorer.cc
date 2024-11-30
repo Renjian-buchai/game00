@@ -3,7 +3,6 @@
 #include <fstream>
 
 #include "../../include/game.hh"
-#include "SDL_image.h"
 
 explorer_t::saveState operator++(explorer_t::saveState& save) {
   using IntType = typename std::underlying_type<explorer_t::saveState>::type;
@@ -59,19 +58,7 @@ explorer_t::~explorer_t() {
   }
 }
 
-void explorer_t::update() {
-  // Technically, assigned too much space, but better than finding off-by-1 bugs
-  static std::vector<bool> first(static_cast<size_t>(saveState::size), 1);
-
-  if (saveData == saveState::entry1) {
-    if (first[static_cast<size_t>(saveState::entry1)]) {
-      first[static_cast<size_t>(saveState::entry1)] = 0;
-      auto [texture, position] = items.back();
-      SDL_DestroyTexture(texture);
-      items.pop_back();
-    }
-  }
-}
+void explorer_t::update() {}
 
 void explorer_t::render() {
   SDL_RenderCopy(context->mainRenderer, OS, nullptr, nullptr);
@@ -79,6 +66,18 @@ void explorer_t::render() {
   for (auto [texture, position] : items) {
     SDL_RenderCopy(context->mainRenderer, texture, nullptr, &position);
   }
+
+  switch (saveData) {
+    case saveState::entry1:
+
+      [[fallthrough]];
+
+    case saveState::init:
+      break;
+    default:
+      break;
+  }
+
   return;
 }
 
@@ -94,6 +93,11 @@ scene* explorer_t::handle(SDL_Event& event) {
       point.y = event.button.y;
 
       if (SDL_PointInRect(&point, &downloadBounds)) {
+        if (saveData == saveState::init) {
+          auto [texture, position] = items.back();
+          SDL_DestroyTexture(texture);
+          items.pop_back();
+        }
         ++saveData;
       }
 

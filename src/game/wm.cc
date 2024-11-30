@@ -5,9 +5,6 @@
 #include "../../include/scenes/notepad.hh"
 #include "../../include/scenes/pause.hh"
 #include "../../include/scenes/scene.hh"
-#include "SDL_image.h"
-
-#define pix(val) static_cast<int>(val * context->pixelSize)
 
 wm::wm(game* _context)
     : context(_context),

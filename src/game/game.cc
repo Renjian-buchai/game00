@@ -1,8 +1,18 @@
 #include "../include/game.hh"
 
-#include <iostream>
+struct wmInitData {
+  wm *winMan;
+  game *context;
+};
 
-#include "SDL_image.h"
+int function(void *data) {
+  // We only need to copy the addresses.
+  wmInitData *initData = reinterpret_cast<wmInitData *>(data);
+
+  *initData->winMan = wm(initData->context);
+
+  return 0;
+}
 
 game::game() {
   if (int err = SDL_GetDisplayBounds(0, &dispBounds)) {
@@ -51,6 +61,10 @@ game::game() {
 
   pixelSize = static_cast<double>(dispBounds.w) / 640.0f;
 
+  loadThread = SDL_CreateThread(
+      function, "WM initialiser",
+      reinterpret_cast<void *>(new wmInitData{&this->winMan, this}));
+
   return;
 }
 
@@ -58,7 +72,7 @@ game::~game() {
   SDL_DestroyRenderer(mainRenderer);
   SDL_DestroyWindow(mainWindow);
 
-  for (SDL_Texture* texture : textures) {
+  for (SDL_Texture *texture : textures) {
     SDL_DestroyTexture(texture);
   }
 

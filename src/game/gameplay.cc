@@ -1,13 +1,8 @@
-#include <memory>
-#include <variant>
-
 #include "../../include/game.hh"
 #include "../../include/wm.hh"
-#include "SDL_image.h"
 
 void game::gameplay() {
-  wm winMan(this);
-
+  SDL_WaitThread(loadThread, nullptr);
   SDL_Event event;
   while (state != gameState::terminating) {
     winMan.render();
