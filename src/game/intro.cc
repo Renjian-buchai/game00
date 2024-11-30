@@ -1,6 +1,7 @@
 #include "../../include/game.hh"
 
 void game::intro() {
+  std::vector<SDL_Texture*> textures;
   {
     // 1.5s
     addSlide(IMG_Load("res/images/0001.png"), 0, 1500, 500);
@@ -8,29 +9,34 @@ void game::intro() {
     SDL_Colour white{0xff, 0xff, 0xff, SDL_ALPHA_OPAQUE};
 
     // 1.5s
-    SDL_Surface* surface = TTF_RenderText_Solid_Wrapped(
-        font, "Ah, but I'll be causing trouble for my family, won't I?", white,
-        0);
-    addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h});
+    SDL_Surface* surface = TTF_RenderText_Solid(
+        font, "Ah, but I'll be causing trouble for my family, won't I?", white);
+    std::cout << surface << "\n" << TTF_GetError();
+    textures.emplace_back(
+        addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h}));
 
     // 1.5s
     surface = TTF_RenderText_Solid_Wrapped(
         font, "If only someone else could just...", white, 0);
-    addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h});
+    textures.emplace_back(
+        addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h}));
 
     // 1.5s
     surface =
         TTF_RenderText_Solid_Wrapped(font, "Live on my behalf...", white, 0);
-    addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h});
+    textures.emplace_back(
+        addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h}));
 
     // 1.5s
     surface = TTF_RenderText_Solid_Wrapped(font, "So that I don't have to.",
                                            white, 0);
-    addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h});
+    textures.emplace_back(
+        addSlide(surface, 250, 1000, 250, {0, 0, surface->w, surface->h}));
 
     // 2.0s
     surface = TTF_RenderText_Solid_Wrapped(font, "", {}, 0);
-    addSlide(surface, 0, 2000, 0, SDL_Rect{}, true, false);
+    textures.emplace_back(
+        addSlide(surface, 0, 2000, 0, SDL_Rect{}, true, false));
 
     // 1.0s
     surface = TTF_RenderText_Solid_Wrapped(font,
@@ -38,7 +44,8 @@ void game::intro() {
                                            "the experiences of the creator.\n"
                                            "See: The Beginner's Guide",
                                            white, 0);
-    addSlide(surface, 250, 500, 250, {0, 0, surface->w, surface->h});
+    textures.emplace_back(
+        addSlide(surface, 250, 500, 250, {0, 0, surface->w, surface->h}));
 
     // 1.0s
     surface = TTF_RenderText_Solid_Wrapped(font,
@@ -46,20 +53,22 @@ void game::intro() {
                                            "asking about my mental health"
                                            "\nlike last time.",
                                            white, 0);
-    addSlide(surface, 250, 500, 250, {0, 0, surface->w, surface->h});
+    textures.emplace_back(
+        addSlide(surface, 250, 500, 250, {0, 0, surface->w, surface->h}));
 
     // 2.0s
     surface = TTF_RenderText_Solid_Wrapped(font, "", {}, 0);
-    addSlide(surface, 0, 2000, 0, SDL_Rect{}, true, false);
+    textures.emplace_back(
+        addSlide(surface, 0, 2000, 0, SDL_Rect{}, true, false));
 
     // 5s
     surface = TTF_RenderText_Solid_Wrapped(
         font, "Loading...", {0xbb, 0xbb, 0xbb, SDL_ALPHA_OPAQUE}, 0);
-    addSlide(
+    textures.emplace_back(addSlide(
         surface, 250, 5000, 250,
         {dispBounds.w - surface->w - dispBounds.h / 40,
          dispBounds.h - surface->h - dispBounds.h / 40, surface->w, surface->h},
-        false, false);
+        false, false));
   }
 
   size_t startTime = SDL_GetTicks64();

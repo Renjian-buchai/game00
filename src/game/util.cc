@@ -48,16 +48,15 @@ void game::slideShow(size_t time, bool& click, size_t skipGrace) {
   }
 }
 
-void game::addSlide(SDL_Surface* surface, size_t fadeIn, size_t duration,
-                    size_t fadeOut, SDL_Rect dest, bool centred,
-                    bool skippable) {
-  textures.emplace_back(SDL_CreateTextureFromSurface(mainRenderer, surface));
-  SDL_SetTextureBlendMode(textures.back(), SDL_BLENDMODE_BLEND);
-  slideQueue.emplace_back(fadeIn, fadeOut, duration, textures.back(), dest,
-                          skippable);
+SDL_Texture* game::addSlide(SDL_Surface* surface, size_t fadeIn,
+                            size_t duration, size_t fadeOut, SDL_Rect dest,
+                            bool centred, bool skippable) {
+  SDL_Texture* texture = SDL_CreateTextureFromSurface(mainRenderer, surface);
+  slideQueue.emplace_back(fadeIn, fadeOut, duration, texture, dest, skippable);
   SDL_FreeSurface(surface);
 
   if (centred) game::centreRect(slideQueue.rbegin()->dest);
+  return texture;
 }
 
 void game::centreRect(SDL_Rect& rect, game::centre _centre) const {

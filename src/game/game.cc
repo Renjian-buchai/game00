@@ -72,10 +72,6 @@ game::~game() {
   SDL_DestroyRenderer(mainRenderer);
   SDL_DestroyWindow(mainWindow);
 
-  for (SDL_Texture *texture : textures) {
-    SDL_DestroyTexture(texture);
-  }
-
   TTF_CloseFont(font);
 
   return;

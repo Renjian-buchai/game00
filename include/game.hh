@@ -33,7 +33,6 @@ struct game {
   SDL_Rect dispBounds;
   SDL_Window* mainWindow;
   SDL_Renderer* mainRenderer;
-  std::vector<SDL_Texture*> textures{};
 
   TTF_Font* font;
 
@@ -55,9 +54,9 @@ struct game {
 
  private:
   void slideShow(size_t time, bool& click, size_t skipGrace = 1000);
-  void addSlide(SDL_Surface* surface, size_t fadeIn, size_t duration,
-                size_t fadeOut, SDL_Rect dest = SDL_Rect{}, bool centred = true,
-                bool skippable = true);
+  SDL_Texture* addSlide(SDL_Surface* surface, size_t fadeIn, size_t duration,
+                        size_t fadeOut, SDL_Rect dest = SDL_Rect{},
+                        bool centred = true, bool skippable = true);
 
   void centreRect(SDL_Rect& rect, game::centre centre = centre::BOTH) const;
 };
