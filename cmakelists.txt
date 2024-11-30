@@ -36,6 +36,8 @@ else()
                   ${CMAKE_CURRENT_BINARY_DIR}/res)
 endif()
 
+target_precompile_headers(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/include/pch.hh)
+
 target_include_directories(${PROJECT_NAME} PRIVATE "${PROJECT_SOURCE_DIR}/include")
 target_include_directories(${PROJECT_NAME} PRIVATE "${INCLUDE_DIR}")
 
