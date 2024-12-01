@@ -3,7 +3,16 @@
 struct wmInitData {
   wm *winMan;
   game *context;
+
+ private:
   SDL_mutex *mutex;
+
+ public:
+  wmInitData(wm *_winMan, game *_context, SDL_mutex *_mutex)
+      : winMan(_winMan), context(_context), mutex(_mutex) {}
+  ~wmInitData() { SDL_DestroyMutex(mutex); }
+  void lock() { SDL_LockMutex(mutex); }
+  void unlock() { SDL_UnlockMutex(mutex); }
 };
 
 game::game() {
@@ -59,16 +68,16 @@ game::game() {
     // We only need to copy the addresses.
     wmInitData *initData = reinterpret_cast<wmInitData *>(data);
 
-    SDL_LockMutex(initData->mutex);
+    initData->lock();
     *initData->winMan = wm(initData->context);
-    SDL_UnlockMutex(initData->mutex);
+    initData->unlock();
 
     return 0;
   };
 
   loadThread = SDL_CreateThread(
       wmInit, "WM initialiser",
-      reinterpret_cast<void *>(new wmInitData{&this->winMan, this, mutex}));
+      (new wmInitData{&this->winMan, this, SDL_CreateMutex()}));
 }
 
 game::~game() {
