@@ -5,7 +5,7 @@ struct wmInitData {
   game *context;
 };
 
-int function(void *data) {
+int wmInit(void *data) {
   // We only need to copy the addresses.
   wmInitData *initData = reinterpret_cast<wmInitData *>(data);
 
@@ -62,7 +62,7 @@ game::game() {
   pixelSize = static_cast<double>(dispBounds.w) / 640.0f;
 
   loadThread = SDL_CreateThread(
-      function, "WM initialiser",
+      wmInit, "WM initialiser",
       reinterpret_cast<void *>(new wmInitData{&this->winMan, this}));
 
   return;

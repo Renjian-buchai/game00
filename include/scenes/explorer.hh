@@ -19,9 +19,9 @@ struct explorer_t : public scene {
 
   explorer_t(game* context);
   ~explorer_t();
-  void update() override;
+  scenes update() override;
   void render() override;
-  scene* handle(SDL_Event& event) override;
+  scenes handle(SDL_Event& event) override;
 };
 
 #endif

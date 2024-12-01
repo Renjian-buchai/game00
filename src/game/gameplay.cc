@@ -3,6 +3,7 @@
 
 void game::gameplay() {
   SDL_WaitThread(loadThread, nullptr);
+
   SDL_Event event;
   while (state != gameState::terminating) {
     winMan.render();
@@ -14,10 +15,40 @@ void game::gameplay() {
         return;
       }
 
-      winMan.handle(event);
+      switch (winMan.handle(event)) {
+        case scene::scenes::explorer:
+          winMan.current = winMan.expl.get();
+          break;
+
+        case scene::scenes::notepad:
+          winMan.current = winMan.note.get();
+          break;
+
+        case scene::scenes::intro:
+          winMan.current = winMan.intro.get();
+          break;
+
+        case scene::scenes::pause:
+          winMan.current = winMan.pause.get();
+      }
     }
 
-    winMan.update();
+    switch (winMan.update()) {
+      case scene::scenes::explorer:
+        winMan.current = winMan.expl.get();
+        break;
+
+      case scene::scenes::notepad:
+        winMan.current = winMan.note.get();
+        break;
+
+      case scene::scenes::intro:
+        winMan.current = winMan.intro.get();
+        break;
+
+      case scene::scenes::pause:
+        winMan.current = winMan.pause.get();
+    }
   }
 
   return;

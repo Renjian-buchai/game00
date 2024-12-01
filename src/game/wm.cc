@@ -1,10 +1,6 @@
 #include "../../include/wm.hh"
 
 #include "../../include/game.hh"
-#include "../../include/scenes/explorer.hh"
-#include "../../include/scenes/notepad.hh"
-#include "../../include/scenes/pause.hh"
-#include "../../include/scenes/scene.hh"
 
 wm::wm(game* _context)
     : context(_context),
@@ -12,7 +8,8 @@ wm::wm(game* _context)
       expl(std::make_unique<explorer_t>(context)),
       note(std::make_unique<notepad_t>(context)),
       pause(std::make_unique<pause_t>(context)),
-      current(expl.get()) {
+      intro(std::make_unique<init_t>(context)),
+      current(intro.get()) {
   SDL_Surface* surface = IMG_Load("res/UI/OS.png");
   if (surface == nullptr) {
     std::cout << IMG_GetError();
@@ -36,40 +33,49 @@ wm::wm(game* _context)
 
 void wm::render() {
   current->render();
-  SDL_RenderCopy(context->mainRenderer, OSOverlay, nullptr, nullptr);
-  for (auto& [texture, position] : icons) {
-    SDL_RenderCopy(context->mainRenderer, texture, nullptr, &position);
+  if (current != intro.get()) {
+    SDL_RenderCopy(context->mainRenderer, OSOverlay, nullptr, nullptr);
+    for (auto& [texture, position] : icons) {
+      SDL_RenderCopy(context->mainRenderer, texture, nullptr, &position);
+    }
   }
 }
 
-void wm::update() { current->update(); }
+scene::scenes wm::update() { return current->update(); }
 
-void wm::handle(SDL_Event& event) {
-  static auto pauseSeq = [&]() {
-    context->state = game::gameState::paused;
-    resume = current;
-    current = pause.get();
-  };
-  static auto resumeSeq = [&]() {
-    context->state = game::gameState::gameplay;
-    current = resume;
-    resume = nullptr;
-  };
-
+scene::scenes wm::handle(SDL_Event& event) {
   if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
-    if (context->state == game::gameState::paused) {
-      resumeSeq();
+    if (current == pause.get()) {
+      if (resume == expl.get()) {
+        return scene::scenes::explorer;
+      } else if (resume == note.get()) {
+        return scene::scenes::notepad;
+      } else if (resume == pause.get()) {
+        return scene::scenes::pause;
+      } else if (resume == intro.get()) {
+        return scene::scenes::intro;
+      }
     } else {
-      pauseSeq();
+      resume = current;
+
+      return scene::scenes::pause;
     }
   }
 
   if (event.type == SDL_MOUSEBUTTONDOWN &&
       event.button.button == SDL_BUTTON_LEFT) {
     SDL_Point point = {event.button.x, event.button.y};
-    if (context->state == game::gameState::paused) {
+    if (current == pause.get()) {
       if (SDL_PointInRect(&point, &pause->resumePos)) {
-        resumeSeq();
+        if (resume == expl.get()) {
+          return scene::scenes::explorer;
+        } else if (resume == note.get()) {
+          return scene::scenes::notepad;
+        } else if (resume == pause.get()) {
+          return scene::scenes::pause;
+        } else if (resume == intro.get()) {
+          return scene::scenes::intro;
+        }
       }
 
       if (SDL_PointInRect(&point, &pause->exitPos)) {
@@ -78,10 +84,12 @@ void wm::handle(SDL_Event& event) {
       }
     } else {
       if (SDL_PointInRect(&point, &pauseBounds)) {
-        pauseSeq();
+        resume = current;
+
+        return scene::scenes::pause;
       }
     }
   }
 
-  current->handle(event);
+  return current->handle(event);
 }

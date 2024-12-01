@@ -9,6 +9,8 @@ struct game;
 
 // Just to make sure everything has the same interface
 struct scene {
+  enum class scenes : uint8_t { intro, explorer, notepad, pause };
+
   SDL_Texture* loadTexture(const char* path);
 
   game* context;
@@ -17,12 +19,12 @@ struct scene {
 
   virtual ~scene();
 
-  virtual void update() = 0;
+  virtual scenes update() = 0;
 
   virtual void render() = 0;
 
   // Return 1 if pause is hit
-  virtual scene* handle(SDL_Event&) = 0;
+  virtual scenes handle(SDL_Event&) = 0;
 };
 
 #endif

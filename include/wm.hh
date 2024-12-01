@@ -6,6 +6,7 @@
 struct game;
 
 #include "scenes/explorer.hh"
+#include "scenes/init.hh"
 #include "scenes/notepad.hh"
 #include "scenes/pause.hh"
 
@@ -18,8 +19,8 @@ struct wm {
   wm(game* context);
 
   void render();
-  void handle(SDL_Event& event);
-  void update();
+  scene::scenes handle(SDL_Event& event);
+  scene::scenes update();
 
   game* context;
 
@@ -29,6 +30,7 @@ struct wm {
   std::unique_ptr<explorer_t> expl;
   std::unique_ptr<notepad_t> note;
   std::unique_ptr<pause_t> pause;
+  std::unique_ptr<init_t> intro;
 
   scene* current;
   scene* resume;

@@ -58,7 +58,7 @@ explorer_t::~explorer_t() {
   }
 }
 
-void explorer_t::update() {}
+scene::scenes explorer_t::update() { return scenes::explorer; }
 
 void explorer_t::render() {
   SDL_RenderCopy(context->mainRenderer, OS, nullptr, nullptr);
@@ -77,11 +77,9 @@ void explorer_t::render() {
     default:
       break;
   }
-
-  return;
 }
 
-scene* explorer_t::handle(SDL_Event& event) {
+scene::scenes explorer_t::handle(SDL_Event& event) {
   SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:
@@ -107,5 +105,5 @@ scene* explorer_t::handle(SDL_Event& event) {
       break;
   }
 
-  return this;
+  return scenes::explorer;
 }
