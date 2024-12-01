@@ -1,6 +1,7 @@
 #include "../../include/scenes/explorer.hh"
 
 #include <fstream>
+#include <thread>
 
 #include "../../include/game.hh"
 

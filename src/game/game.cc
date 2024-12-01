@@ -3,16 +3,8 @@
 struct wmInitData {
   wm *winMan;
   game *context;
+  SDL_mutex *mutex;
 };
-
-int wmInit(void *data) {
-  // We only need to copy the addresses.
-  wmInitData *initData = reinterpret_cast<wmInitData *>(data);
-
-  *initData->winMan = wm(initData->context);
-
-  return 0;
-}
 
 game::game() {
   if (int err = SDL_GetDisplayBounds(0, &dispBounds)) {
@@ -61,11 +53,22 @@ game::game() {
 
   pixelSize = static_cast<double>(dispBounds.w) / 640.0f;
 
+  mutex = SDL_CreateMutex();
+
+  int (*wmInit)(void *) = [](void *data) -> int {
+    // We only need to copy the addresses.
+    wmInitData *initData = reinterpret_cast<wmInitData *>(data);
+
+    SDL_LockMutex(initData->mutex);
+    *initData->winMan = wm(initData->context);
+    SDL_UnlockMutex(initData->mutex);
+
+    return 0;
+  };
+
   loadThread = SDL_CreateThread(
       wmInit, "WM initialiser",
-      reinterpret_cast<void *>(new wmInitData{&this->winMan, this}));
-
-  return;
+      reinterpret_cast<void *>(new wmInitData{&this->winMan, this, mutex}));
 }
 
 game::~game() {

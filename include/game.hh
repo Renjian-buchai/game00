@@ -25,6 +25,7 @@ struct game {
   double pixelSize;
 
   wm winMan;
+  SDL_mutex* mutex;
   SDL_Thread* loadThread;
 
  public:
