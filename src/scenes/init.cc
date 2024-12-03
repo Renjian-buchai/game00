@@ -151,9 +151,9 @@ init_t::~init_t() {
 std::pair<scene::scenes, sceneData> init_t::update() {
   size_t deltaTime = SDL_GetTicks64() - startTime;
   if (deltaTime > 19000) {
-    return {scenes::explorer, nullptr};
+    return {scenes::explorer, std::monostate()};
   }
-  return {scenes::intro, nullptr};
+  return {scenes::intro, std::monostate()};
 }
 
 void init_t::render() {
@@ -163,5 +163,5 @@ void init_t::render() {
 
 std::pair<scene::scenes, sceneData> init_t::handle(SDL_Event& event) {
   skip = event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE;
-  return {scenes::intro, nullptr};
+  return {scenes::intro, std::monostate()};
 }

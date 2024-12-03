@@ -48,18 +48,18 @@ std::pair<scene::scenes, sceneData> wm::handle(SDL_Event& event) {
   if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
     if (current == pause.get()) {
       if (resume == expl.get()) {
-        return {scene::scenes::explorer, nullptr};
+        return {scene::scenes::explorer, std::monostate()};
       } else if (resume == note.get()) {
-        return {scene::scenes::notepad, nullptr};
+        return {scene::scenes::notepad, std::monostate()};
       } else if (resume == pause.get()) {
-        return {scene::scenes::pause, nullptr};
+        return {scene::scenes::pause, std::monostate()};
       } else if (resume == intro.get()) {
-        return {scene::scenes::intro, nullptr};
+        return {scene::scenes::intro, std::monostate()};
       }
     } else {
       resume = current;
 
-      return {scene::scenes::pause, nullptr};
+      return {scene::scenes::pause, std::monostate()};
     }
   }
 
@@ -69,13 +69,13 @@ std::pair<scene::scenes, sceneData> wm::handle(SDL_Event& event) {
     if (current == pause.get()) {
       if (SDL_PointInRect(&point, &pause->resumePos)) {
         if (resume == expl.get()) {
-          return {scene::scenes::explorer, nullptr};
+          return {scene::scenes::explorer, std::monostate()};
         } else if (resume == note.get()) {
-          return {scene::scenes::notepad, nullptr};
+          return {scene::scenes::notepad, std::monostate()};
         } else if (resume == pause.get()) {
-          return {scene::scenes::pause, nullptr};
+          return {scene::scenes::pause, std::monostate()};
         } else if (resume == intro.get()) {
-          return {scene::scenes::intro, nullptr};
+          return {scene::scenes::intro, std::monostate()};
         }
       }
 
@@ -87,7 +87,7 @@ std::pair<scene::scenes, sceneData> wm::handle(SDL_Event& event) {
       if (SDL_PointInRect(&point, &pauseBounds)) {
         resume = current;
 
-        return {scene::scenes::pause, nullptr};
+        return {scene::scenes::pause, std::monostate()};
       }
     }
   }

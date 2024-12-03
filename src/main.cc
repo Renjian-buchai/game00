@@ -51,5 +51,7 @@ int main(int argc, char** argv) {
     }
   }
 
-  return 0;
+  // Just returning 0 doesn't give a success flag when alt+F4ing, for unknown
+  // reasons
+  std::exit(0);
 }

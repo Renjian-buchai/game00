@@ -25,7 +25,7 @@ pause_t::~pause_t() {
 }
 
 std::pair<scene::scenes, sceneData> pause_t::update() {
-  return {scenes::pause, nullptr};
+  return {scenes::pause, std::monostate()};
 }
 
 void pause_t::render() {
@@ -42,5 +42,5 @@ std::pair<scene::scenes, sceneData> pause_t::handle(SDL_Event& event) {
 
   exitState = SDL_PointInRect(&mousePosition, &exitPos) ? exitHover : exit;
 
-  return {scenes::pause, nullptr};
+  return {scenes::pause, std::monostate()};
 }

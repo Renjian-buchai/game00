@@ -13,6 +13,13 @@ struct notepad_t : public scene {
   constexpr static int scale = 2;
 
  public:
+  enum class notepadData : uint8_t {
+    empty,
+    entry1,
+    entry2,
+  };
+  notepadData currentData = notepadData::empty;
+
   SDL_Texture* OS;
   const SDL_Rect pauseBounds;
 

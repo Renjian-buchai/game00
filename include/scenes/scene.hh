@@ -9,7 +9,7 @@ struct game;
 
 enum class notepadData : uint8_t;
 
-using sceneData = std::variant<notepadData>;
+using sceneData = std::variant<std::monostate, notepadData>;
 
 // Just to make sure everything has the same interface
 struct scene {

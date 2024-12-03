@@ -11,11 +11,11 @@ notepad_t::notepad_t(game* _context)
 notepad_t::~notepad_t() {}
 
 std::pair<scene::scenes, sceneData> notepad_t::update() {
-  return {scenes::notepad, nullptr};
+  return {scenes::notepad, std::monostate()};
 }
 
 void notepad_t::render() {}
 
 std::pair<scene::scenes, sceneData> notepad_t::handle(SDL_Event& event) {
-  return {scenes::notepad, nullptr};
+  return {scenes::notepad, std::monostate()};
 }

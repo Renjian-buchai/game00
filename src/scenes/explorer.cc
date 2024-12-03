@@ -89,7 +89,7 @@ explorer_t::~explorer_t() {
 }
 
 std::pair<scene::scenes, sceneData> explorer_t::update() {
-  return {scenes::explorer, nullptr};
+  return {scenes::explorer, std::monostate()};
 }
 
 void explorer_t::render() {
@@ -136,7 +136,7 @@ std::pair<scene::scenes, sceneData> explorer_t::handle(SDL_Event& event) {
 
         for (size_t i = 0; i < items.size(); ++i) {
           if (SDL_PointInRect(&point, &items[i].second)) {
-            return {scene::scenes::notepad, nullptr};
+            return {scene::scenes::notepad, std::monostate()};
           }
         }
       }
@@ -147,5 +147,5 @@ std::pair<scene::scenes, sceneData> explorer_t::handle(SDL_Event& event) {
       break;
   }
 
-  return {scenes::explorer, nullptr};
+  return {scenes::explorer, std::monostate()};
 }

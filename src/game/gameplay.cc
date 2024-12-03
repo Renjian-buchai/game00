@@ -5,8 +5,8 @@ void game::gameplay() {
   SDL_WaitThread(loadThread, nullptr);
 
   SDL_Event event;
-  std::pair<scene::scenes, sceneData> sceneData = {scene::scenes::intro,
-                                                   nullptr};
+  std::pair<scene::scenes, sceneData> sceneChangeData = {scene::scenes::intro,
+                                                         std::monostate()};
 
   while (state != gameState::terminating) {
     winMan.render();
@@ -18,8 +18,8 @@ void game::gameplay() {
         return;
       }
 
-      sceneData = winMan.handle(event);
-      switch (sceneData.first) {
+      sceneChangeData = winMan.handle(event);
+      switch (sceneChangeData.first) {
         case scene::scenes::explorer:
           winMan.current = winMan.expl.get();
           break;
@@ -37,8 +37,8 @@ void game::gameplay() {
       }
     }
 
-    sceneData = winMan.update();
-    switch (sceneData.first) {
+    sceneChangeData = winMan.update();
+    switch (sceneChangeData.first) {
       case scene::scenes::explorer:
         winMan.current = winMan.expl.get();
         break;
