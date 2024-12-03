@@ -23,9 +23,9 @@ struct init_t : public scene {
 
   init_t(game* context);
   ~init_t();
-  scenes update() override;
+  std::pair<scenes, void*> update() override;
   void render() override;
-  scenes handle(SDL_Event& event) override;
+  std::pair<scenes, void*> handle(SDL_Event& event) override;
 
   void slideShow(size_t time, bool& click, size_t skipGrace = 1000);
   void addSlide(SDL_Surface* surface, size_t fadeIn, size_t duration,

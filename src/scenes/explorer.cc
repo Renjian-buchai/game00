@@ -24,8 +24,8 @@ SDL_Texture* explorer_t::createFilesystemEntry(const char* text,
   SDL_RenderCopy(renderer, newTexture, nullptr, &rect);
   SDL_DestroyTexture(newTexture);
 
-  thingSurface = TTF_RenderUTF8_Blended_Wrapped(
-      context->font, size, {0xe0, 0xe1, 0xcc, SDL_ALPHA_OPAQUE}, pix(60));
+  thingSurface = TTF_RenderUTF8_Solid_Wrapped(
+      context->font, size, {0xe0, 0xe1, 0xcc, SDL_ALPHA_OPAQUE}, pix(0));
   newTexture = SDL_CreateTextureFromSurface(renderer, thingSurface);
   SDL_FreeSurface(thingSurface);
 
@@ -88,7 +88,9 @@ explorer_t::~explorer_t() {
   SDL_DestroyTexture(background);
 }
 
-scene::scenes explorer_t::update() { return scenes::explorer; }
+std::pair<scene::scenes, void*> explorer_t::update() {
+  return {scenes::explorer, nullptr};
+}
 
 void explorer_t::render() {
   SDL_RenderCopy(context->mainRenderer, background, nullptr, nullptr);
@@ -98,7 +100,7 @@ void explorer_t::render() {
   }
 }
 
-scene::scenes explorer_t::handle(SDL_Event& event) {
+std::pair<scene::scenes, void*> explorer_t::handle(SDL_Event& event) {
   SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:
@@ -110,20 +112,32 @@ scene::scenes explorer_t::handle(SDL_Event& event) {
       point.y = event.button.y;
 
       if (SDL_PointInRect(&point, &downloadBounds)) {
-        ++saveData;
-
         switch (saveData) {
+          case saveState::entry2:
+            items.emplace_back(createFilesystemEntry("2024/6/15", "921B"),
+                               SDL_Rect{pix(1), pix(72), pix(320), pix(24)});
+            break;
+
+          case saveState::init:
+            ++saveData;
+            [[fallthrough]];
+
           case saveState::entry1:
             SDL_DestroyTexture(items.front().first);
             items.erase(items.begin());
 
-            // items.emplace_back();
-
-          case saveState::init:
+            items.emplace_back(createFilesystemEntry("2024/7/20", "1.3K"),
+                               SDL_Rect{pix(1), pix(48), pix(320), pix(24)});
             break;
 
           default:
             break;
+        }
+
+        for (size_t i = 0; i < items.size(); ++i) {
+          if (SDL_PointInRect(&point, &items[i].second)) {
+            return {scene::scenes::notepad, nullptr};
+          }
         }
       }
 
@@ -133,5 +147,5 @@ scene::scenes explorer_t::handle(SDL_Event& event) {
       break;
   }
 
-  return scenes::explorer;
+  return {scenes::explorer, nullptr};
 }

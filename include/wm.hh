@@ -19,8 +19,8 @@ struct wm {
   wm(game* context);
 
   void render();
-  scene::scenes handle(SDL_Event& event);
-  scene::scenes update();
+  std::pair<scene::scenes, void*> handle(SDL_Event& event);
+  std::pair<scene::scenes, void*> update();
 
   game* context;
 

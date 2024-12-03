@@ -10,8 +10,12 @@ notepad_t::notepad_t(game* _context)
 
 notepad_t::~notepad_t() {}
 
-scene::scenes notepad_t::update() { return scenes::notepad; }
+std::pair<scene::scenes, void*> notepad_t::update() {
+  return {scenes::notepad, nullptr};
+}
 
 void notepad_t::render() {}
 
-scene::scenes notepad_t::handle(SDL_Event& event) { return scenes::notepad; }
+std::pair<scene::scenes, void*> notepad_t::handle(SDL_Event& event) {
+  return {scenes::notepad, nullptr};
+}

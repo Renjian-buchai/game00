@@ -24,7 +24,9 @@ pause_t::~pause_t() {
   SDL_DestroyTexture(exitHover);
 }
 
-scene::scenes pause_t::update() { return scenes::pause; }
+std::pair<scene::scenes, void*> pause_t::update() {
+  return {scenes::pause, nullptr};
+}
 
 void pause_t::render() {
   SDL_RenderCopy(context->mainRenderer, overlay, nullptr, nullptr);
@@ -32,7 +34,7 @@ void pause_t::render() {
   SDL_RenderCopy(context->mainRenderer, exitState, nullptr, nullptr);
 }
 
-scene::scenes pause_t::handle(SDL_Event& event) {
+std::pair<scene::scenes, void*> pause_t::handle(SDL_Event& event) {
   SDL_Point mousePosition = {event.motion.x, event.motion.y};
 
   resumeState =
@@ -40,5 +42,5 @@ scene::scenes pause_t::handle(SDL_Event& event) {
 
   exitState = SDL_PointInRect(&mousePosition, &exitPos) ? exitHover : exit;
 
-  return scenes::pause;
+  return {scenes::pause, nullptr};
 }

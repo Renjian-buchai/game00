@@ -21,9 +21,9 @@ struct notepad_t : public scene {
  public:
   notepad_t(game* context);
   ~notepad_t();
-  scenes update() override;
+  std::pair<scenes, void*> update() override;
   void render() override;
-  scenes handle(SDL_Event& event) override;
+  std::pair<scenes, void*> handle(SDL_Event& event) override;
 };
 
 #endif

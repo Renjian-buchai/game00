@@ -8,6 +8,7 @@ struct explorer_t : public scene {
   enum class saveState : uint8_t {
     init,
     entry1,
+    entry2,
     size,
   };
 
@@ -19,9 +20,9 @@ struct explorer_t : public scene {
 
   explorer_t(game* context);
   ~explorer_t();
-  scenes update() override;
+  std::pair<scenes, void*> update() override;
   void render() override;
-  scenes handle(SDL_Event& event) override;
+  std::pair<scenes, void*> handle(SDL_Event& event) override;
   SDL_Texture* createFilesystemEntry(const char* text, const char* size);
 };
 

@@ -19,12 +19,12 @@ struct scene {
 
   virtual ~scene();
 
-  virtual scenes update() = 0;
+  virtual std::pair<scenes, void*> update() = 0;
 
   virtual void render() = 0;
 
   // Return 1 if pause is hit
-  virtual scenes handle(SDL_Event&) = 0;
+  virtual std::pair<scenes, void*> handle(SDL_Event&) = 0;
 };
 
 #endif

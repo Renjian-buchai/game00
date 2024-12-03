@@ -148,12 +148,12 @@ init_t::~init_t() {
   }
 }
 
-scene::scenes init_t::update() {
+std::pair<scene::scenes, void*> init_t::update() {
   size_t deltaTime = SDL_GetTicks64() - startTime;
   if (deltaTime > 19000) {
-    return scenes::explorer;
+    return {scenes::explorer, nullptr};
   }
-  return scenes::intro;
+  return {scenes::intro, nullptr};
 }
 
 void init_t::render() {
@@ -161,7 +161,7 @@ void init_t::render() {
   slideShow(SDL_GetTicks64(), skip);
 }
 
-scene::scenes init_t::handle(SDL_Event& event) {
+std::pair<scene::scenes, void*> init_t::handle(SDL_Event& event) {
   skip = event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE;
-  return scenes::intro;
+  return {scenes::intro, nullptr};
 }
