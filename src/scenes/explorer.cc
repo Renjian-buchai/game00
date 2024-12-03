@@ -1,8 +1,5 @@
 #include "../../include/scenes/explorer.hh"
 
-#include <fstream>
-#include <thread>
-
 #include "../../include/game.hh"
 
 explorer_t::saveState operator++(explorer_t::saveState& save) {
@@ -10,6 +7,37 @@ explorer_t::saveState operator++(explorer_t::saveState& save) {
   save = static_cast<explorer_t::saveState>(static_cast<IntType>(save) + 1);
 
   return save;
+}
+
+SDL_Texture* explorer_t::createFilesystemEntry(const char* text,
+                                               const char* size) {
+  SDL_Surface* surface = IMG_Load("res/UI/file.png");
+  SDL_Renderer* renderer = SDL_CreateSoftwareRenderer(surface);
+  SDL_Texture* newTexture = nullptr;
+
+  SDL_Surface* thingSurface = TTF_RenderUTF8_Solid_Wrapped(
+      context->font, text, {0xe0, 0xe1, 0xcc, SDL_ALPHA_OPAQUE}, pix(0));
+  newTexture = SDL_CreateTextureFromSurface(renderer, thingSurface);
+  SDL_FreeSurface(thingSurface);
+
+  SDL_Rect rect = {11, 6, thingSurface->w * 40 / thingSurface->h, 40};
+  SDL_RenderCopy(renderer, newTexture, nullptr, &rect);
+  SDL_DestroyTexture(newTexture);
+
+  thingSurface = TTF_RenderUTF8_Blended_Wrapped(
+      context->font, size, {0xe0, 0xe1, 0xcc, SDL_ALPHA_OPAQUE}, pix(60));
+  newTexture = SDL_CreateTextureFromSurface(renderer, thingSurface);
+  SDL_FreeSurface(thingSurface);
+
+  rect = {550, 6, thingSurface->w * 40 / thingSurface->h, 40};
+  SDL_RenderCopy(renderer, newTexture, nullptr, &rect);
+  SDL_DestroyTexture(newTexture);
+
+  SDL_Texture* texture =
+      SDL_CreateTextureFromSurface(context->mainRenderer, surface);
+  SDL_FreeSurface(surface);
+
+  return texture;
 }
 
 explorer_t::explorer_t(game* _context)
@@ -24,8 +52,8 @@ explorer_t::explorer_t(game* _context)
       std::exit(-1);
     }
 
-    OS = SDL_CreateTextureFromSurface(_context->mainRenderer, surface);
-    if (OS == nullptr) {
+    background = SDL_CreateTextureFromSurface(_context->mainRenderer, surface);
+    if (background == nullptr) {
       std::cout << SDL_GetError();
       std::exit(-1);
     }
@@ -57,26 +85,16 @@ explorer_t::~explorer_t() {
     SDL_DestroyTexture(items[0].first);
     items.erase(items.begin());
   }
+  SDL_DestroyTexture(background);
 }
 
 scene::scenes explorer_t::update() { return scenes::explorer; }
 
 void explorer_t::render() {
-  SDL_RenderCopy(context->mainRenderer, OS, nullptr, nullptr);
+  SDL_RenderCopy(context->mainRenderer, background, nullptr, nullptr);
 
   for (auto [texture, position] : items) {
     SDL_RenderCopy(context->mainRenderer, texture, nullptr, &position);
-  }
-
-  switch (saveData) {
-    case saveState::entry1:
-
-      [[fallthrough]];
-
-    case saveState::init:
-      break;
-    default:
-      break;
   }
 }
 
@@ -92,12 +110,21 @@ scene::scenes explorer_t::handle(SDL_Event& event) {
       point.y = event.button.y;
 
       if (SDL_PointInRect(&point, &downloadBounds)) {
-        if (saveData == saveState::init) {
-          auto [texture, position] = items.back();
-          SDL_DestroyTexture(texture);
-          items.pop_back();
-        }
         ++saveData;
+
+        switch (saveData) {
+          case saveState::entry1:
+            SDL_DestroyTexture(items.front().first);
+            items.erase(items.begin());
+
+            // items.emplace_back();
+
+          case saveState::init:
+            break;
+
+          default:
+            break;
+        }
       }
 
       break;

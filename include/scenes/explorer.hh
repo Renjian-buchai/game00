@@ -5,7 +5,7 @@
 
 struct explorer_t : public scene {
  public:
-  enum class saveState {
+  enum class saveState : uint8_t {
     init,
     entry1,
     size,
@@ -13,7 +13,7 @@ struct explorer_t : public scene {
 
   saveState saveData;
   std::vector<std::pair<SDL_Texture*, SDL_Rect>> items;
-  SDL_Texture* OS;
+  SDL_Texture* background;
   const int nameWrapLength;
   const SDL_Rect downloadBounds;
 
@@ -22,6 +22,7 @@ struct explorer_t : public scene {
   scenes update() override;
   void render() override;
   scenes handle(SDL_Event& event) override;
+  SDL_Texture* createFilesystemEntry(const char* text, const char* size);
 };
 
 #endif

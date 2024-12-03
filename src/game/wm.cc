@@ -9,7 +9,8 @@ wm::wm(game* _context)
       note(std::make_unique<notepad_t>(context)),
       pause(std::make_unique<pause_t>(context)),
       intro(std::make_unique<init_t>(context)),
-      current(intro.get()) {
+      // current(intro.get()) {
+      current(expl.get()) {
   SDL_Surface* surface = IMG_Load("res/UI/OS.png");
   if (surface == nullptr) {
     std::cout << IMG_GetError();

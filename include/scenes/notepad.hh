@@ -7,7 +7,7 @@ enum class notepadSave {
   none,
 };
 
-static notepadSave notepadSaveData [[maybe_unused]] = notepadSave::none;
+// static notepadSave notepadSaveData  = notepadSave::none;
 
 struct notepad_t : public scene {
   constexpr static int scale = 2;
