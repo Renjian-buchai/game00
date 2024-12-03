@@ -5,8 +5,8 @@ void game::gameplay() {
   SDL_WaitThread(loadThread, nullptr);
 
   SDL_Event event;
-  std::pair<scene::scenes, sceneData> sceneChangeData = {scene::scenes::intro,
-                                                         std::monostate()};
+  std::pair<scenes, sceneData> sceneChangeData =
+      std::make_pair(scenes::intro, std::monostate());
 
   while (state != gameState::terminating) {
     winMan.render();
@@ -20,38 +20,38 @@ void game::gameplay() {
 
       sceneChangeData = winMan.handle(event);
       switch (sceneChangeData.first) {
-        case scene::scenes::explorer:
-          winMan.current = winMan.expl.get();
+        case scenes::explorer:
+          winMan.current = winMan.explorer.get();
           break;
 
-        case scene::scenes::notepad:
-          winMan.current = winMan.note.get();
+        case scenes::notepad:
+          winMan.current = winMan.notepad.get();
           break;
 
-        case scene::scenes::intro:
+        case scenes::intro:
           winMan.current = winMan.intro.get();
           break;
 
-        case scene::scenes::pause:
+        case scenes::pause:
           winMan.current = winMan.pause.get();
       }
     }
 
     sceneChangeData = winMan.update();
     switch (sceneChangeData.first) {
-      case scene::scenes::explorer:
-        winMan.current = winMan.expl.get();
+      case scenes::explorer:
+        winMan.current = winMan.explorer.get();
         break;
 
-      case scene::scenes::notepad:
-        winMan.current = winMan.note.get();
+      case scenes::notepad:
+        winMan.current = winMan.notepad.get();
         break;
 
-      case scene::scenes::intro:
+      case scenes::intro:
         winMan.current = winMan.intro.get();
         break;
 
-      case scene::scenes::pause:
+      case scenes::pause:
         winMan.current = winMan.pause.get();
     }
   }

@@ -88,8 +88,8 @@ explorer_t::~explorer_t() {
   SDL_DestroyTexture(background);
 }
 
-std::pair<scene::scenes, sceneData> explorer_t::update() {
-  return {scenes::explorer, std::monostate()};
+std::pair<scenes, sceneData> explorer_t::update() {
+  return std::make_pair(scenes::explorer, std::monostate());
 }
 
 void explorer_t::render() {
@@ -100,7 +100,7 @@ void explorer_t::render() {
   }
 }
 
-std::pair<scene::scenes, sceneData> explorer_t::handle(SDL_Event& event) {
+std::pair<scenes, sceneData> explorer_t::handle(SDL_Event& event) {
   SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:
@@ -136,7 +136,7 @@ std::pair<scene::scenes, sceneData> explorer_t::handle(SDL_Event& event) {
 
         for (size_t i = 0; i < items.size(); ++i) {
           if (SDL_PointInRect(&point, &items[i].second)) {
-            return {scene::scenes::notepad, std::monostate()};
+            return std::make_pair(scenes::notepad, notepadData::empty);
           }
         }
       }
@@ -147,5 +147,5 @@ std::pair<scene::scenes, sceneData> explorer_t::handle(SDL_Event& event) {
       break;
   }
 
-  return {scenes::explorer, std::monostate()};
+  return std::make_pair(scenes::explorer, std::monostate());
 }

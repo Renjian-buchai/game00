@@ -3,7 +3,7 @@
 
 #include "scene.hh"
 
-struct init_t : public scene {
+struct intro_t : public scene {
   enum class centre : uint8_t { HORIZONTAL, VERTICAL, BOTH };
   struct slide {
     slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
@@ -21,8 +21,8 @@ struct init_t : public scene {
   size_t startTime;
   bool skip;
 
-  init_t(game* context);
-  ~init_t();
+  intro_t(game* context);
+  ~intro_t();
   std::pair<scenes, sceneData> update() override;
   void render() override;
   std::pair<scenes, sceneData> handle(SDL_Event& event) override;

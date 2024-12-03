@@ -4,18 +4,32 @@
 
 notepad_t::notepad_t(game* _context)
     : scene(_context),
-      pauseBounds(SDL_Rect{pix(600), 0, pix(39), pix(24)}),
       lineWrapLength(scale *
-                     static_cast<double>(context->dispBounds.w - pix(16))) {}
+                     static_cast<double>(context->dispBounds.w - pix(16))),
+      currentData(notepadData::empty) {
+  SDL_Surface* surface = IMG_Load("res/images/notepad.png");
+  if (surface == nullptr) {
+    std::cout << IMG_GetError();
+    exit(-1);
+  }
+  background = SDL_CreateTextureFromSurface(context->mainRenderer, surface);
+  SDL_FreeSurface(surface);
+  if (background == nullptr) {
+    std::cout << SDL_GetError();
+    exit(-1);
+  }
+}
 
 notepad_t::~notepad_t() {}
 
-std::pair<scene::scenes, sceneData> notepad_t::update() {
-  return {scenes::notepad, std::monostate()};
+std::pair<scenes, sceneData> notepad_t::update() {
+  return std::make_pair(scenes::notepad, std::monostate());
 }
 
-void notepad_t::render() {}
+void notepad_t::render() {
+  SDL_RenderCopy(context->mainRenderer, background, nullptr, nullptr);
+}
 
-std::pair<scene::scenes, sceneData> notepad_t::handle(SDL_Event& event) {
-  return {scenes::notepad, std::monostate()};
+std::pair<scenes, sceneData> notepad_t::handle(SDL_Event& event) {
+  return std::make_pair(scenes::notepad, std::monostate());
 }

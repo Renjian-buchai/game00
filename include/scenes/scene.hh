@@ -2,19 +2,14 @@
 #define SCENE_HH
 
 #include "../../include/pch.hh"
+#include "../enum.hh"
 
 #define pix(val) static_cast<int>(val * context->pixelSize)
 
 struct game;
 
-enum class notepadData : uint8_t;
-
-using sceneData = std::variant<std::monostate, notepadData>;
-
 // Just to make sure everything has the same interface
 struct scene {
-  enum class scenes : uint8_t { intro, explorer, notepad, pause };
-
   SDL_Texture* loadTexture(const char* path);
 
   game* context;

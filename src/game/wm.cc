@@ -1,16 +1,20 @@
 #include "../../include/wm.hh"
 
 #include "../../include/game.hh"
+#include "../../include/scenes/explorer.hh"
+#include "../../include/scenes/init.hh"
+#include "../../include/scenes/notepad.hh"
+#include "../../include/scenes/pause.hh"
 
 wm::wm(game* _context)
     : context(_context),
       pauseBounds(SDL_Rect{pix(600), 0, pix(39), pix(24)}),
-      expl(std::make_unique<explorer_t>(context)),
-      note(std::make_unique<notepad_t>(context)),
+      explorer(std::make_unique<explorer_t>(context)),
+      notepad(std::make_unique<notepad_t>(context)),
       pause(std::make_unique<pause_t>(context)),
-      intro(std::make_unique<init_t>(context)),
+      intro(std::make_unique<intro_t>(context)),
       // current(intro.get()) {
-      current(expl.get()) {
+      current(explorer.get()) {
   SDL_Surface* surface = IMG_Load("res/UI/OS.png");
   if (surface == nullptr) {
     std::cout << IMG_GetError();
@@ -42,24 +46,24 @@ void wm::render() {
   }
 }
 
-std::pair<scene::scenes, sceneData> wm::update() { return current->update(); }
+std::pair<scenes, sceneData> wm::update() { return current->update(); }
 
-std::pair<scene::scenes, sceneData> wm::handle(SDL_Event& event) {
+std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
   if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
     if (current == pause.get()) {
-      if (resume == expl.get()) {
-        return {scene::scenes::explorer, std::monostate()};
-      } else if (resume == note.get()) {
-        return {scene::scenes::notepad, std::monostate()};
+      if (resume == explorer.get()) {
+        return std::make_pair(scenes::explorer, std::monostate());
+      } else if (resume == notepad.get()) {
+        return std::make_pair(scenes::notepad, std::monostate());
       } else if (resume == pause.get()) {
-        return {scene::scenes::pause, std::monostate()};
+        return std::make_pair(scenes::pause, std::monostate());
       } else if (resume == intro.get()) {
-        return {scene::scenes::intro, std::monostate()};
+        return std::make_pair(scenes::intro, std::monostate());
       }
     } else {
       resume = current;
 
-      return {scene::scenes::pause, std::monostate()};
+      return std::make_pair(scenes::pause, std::monostate());
     }
   }
 
@@ -68,14 +72,14 @@ std::pair<scene::scenes, sceneData> wm::handle(SDL_Event& event) {
     SDL_Point point = {event.button.x, event.button.y};
     if (current == pause.get()) {
       if (SDL_PointInRect(&point, &pause->resumePos)) {
-        if (resume == expl.get()) {
-          return {scene::scenes::explorer, std::monostate()};
-        } else if (resume == note.get()) {
-          return {scene::scenes::notepad, std::monostate()};
+        if (resume == explorer.get()) {
+          return std::make_pair(scenes::explorer, std::monostate());
+        } else if (resume == notepad.get()) {
+          return std::make_pair(scenes::notepad, std::monostate());
         } else if (resume == pause.get()) {
-          return {scene::scenes::pause, std::monostate()};
+          return std::make_pair(scenes::pause, std::monostate());
         } else if (resume == intro.get()) {
-          return {scene::scenes::intro, std::monostate()};
+          return std::make_pair(scenes::intro, std::monostate());
         }
       }
 
@@ -87,7 +91,7 @@ std::pair<scene::scenes, sceneData> wm::handle(SDL_Event& event) {
       if (SDL_PointInRect(&point, &pauseBounds)) {
         resume = current;
 
-        return {scene::scenes::pause, std::monostate()};
+        return std::make_pair(scenes::pause, std::monostate());
       }
     }
   }

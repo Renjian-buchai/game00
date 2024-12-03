@@ -2,8 +2,8 @@
 
 #include "../../include/game.hh"
 
-init_t::slide::slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
-                     SDL_Texture* _texture, SDL_Rect _dest, bool _skippable)
+intro_t::slide::slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
+                      SDL_Texture* _texture, SDL_Rect _dest, bool _skippable)
     : fadeIn(_fadeIn),
       duration(_duration),
       fadeOut(_fadeOut),
@@ -11,7 +11,7 @@ init_t::slide::slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
       dest(_dest),
       skippable(_skippable) {}
 
-void init_t::slideShow(size_t time, bool& click, size_t skipGrace) {
+void intro_t::slideShow(size_t time, bool& click, size_t skipGrace) {
   static size_t lastTime = time;
   static size_t currentSlide;
 
@@ -49,19 +49,19 @@ void init_t::slideShow(size_t time, bool& click, size_t skipGrace) {
                  SDL_RectEmpty(&head.dest) ? nullptr : &head.dest);
 }
 
-void init_t::addSlide(SDL_Surface* surface, size_t fadeIn, size_t duration,
-                      size_t fadeOut, SDL_Rect dest, bool centred,
-                      bool skippable) {
+void intro_t::addSlide(SDL_Surface* surface, size_t fadeIn, size_t duration,
+                       size_t fadeOut, SDL_Rect dest, bool centred,
+                       bool skippable) {
   slides.emplace_back(
       fadeIn, fadeOut, duration,
       SDL_CreateTextureFromSurface(context->mainRenderer, surface), dest,
       skippable);
   SDL_FreeSurface(surface);
 
-  if (centred) init_t::centreRect(slides.rbegin()->dest);
+  if (centred) intro_t::centreRect(slides.rbegin()->dest);
 }
 
-void init_t::centreRect(SDL_Rect& rect, centre _centre) const {
+void intro_t::centreRect(SDL_Rect& rect, centre _centre) const {
   if (_centre == centre::BOTH) {
     rect.x = (context->dispBounds.w - rect.w) / 2;
     rect.y = (context->dispBounds.h - rect.h) / 2;
@@ -74,7 +74,8 @@ void init_t::centreRect(SDL_Rect& rect, centre _centre) const {
   return;
 }
 
-init_t::init_t(game* _context) : scene(_context), startTime(SDL_GetTicks64()) {
+intro_t::intro_t(game* _context)
+    : scene(_context), startTime(SDL_GetTicks64()) {
   addSlide(IMG_Load("res/images/0001.png"), 0, 1500, 500);
 
   SDL_Colour white{0xff, 0xff, 0xff, SDL_ALPHA_OPAQUE};
@@ -142,26 +143,26 @@ init_t::init_t(game* _context) : scene(_context), startTime(SDL_GetTicks64()) {
            false, false);
 }
 
-init_t::~init_t() {
+intro_t::~intro_t() {
   for (slide& _slide : slides) {
     SDL_DestroyTexture(_slide.texture);
   }
 }
 
-std::pair<scene::scenes, sceneData> init_t::update() {
+std::pair<scenes, sceneData> intro_t::update() {
   size_t deltaTime = SDL_GetTicks64() - startTime;
   if (deltaTime > 19000) {
-    return {scenes::explorer, std::monostate()};
+    return std::make_pair(scenes::explorer, std::monostate());
   }
-  return {scenes::intro, std::monostate()};
+  return std::make_pair(scenes::intro, std::monostate());
 }
 
-void init_t::render() {
+void intro_t::render() {
   SDL_RenderClear(context->mainRenderer);
   slideShow(SDL_GetTicks64(), skip);
 }
 
-std::pair<scene::scenes, sceneData> init_t::handle(SDL_Event& event) {
+std::pair<scenes, sceneData> intro_t::handle(SDL_Event& event) {
   skip = event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE;
-  return {scenes::intro, std::monostate()};
+  return std::make_pair(scenes::intro, std::monostate());
 }
