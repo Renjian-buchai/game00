@@ -5,7 +5,8 @@ void game::gameplay() {
   SDL_WaitThread(loadThread, nullptr);
 
   SDL_Event event;
-  std::pair<scene::scenes, void*> sceneData = {scene::scenes::intro, nullptr};
+  std::pair<scene::scenes, sceneData> sceneData = {scene::scenes::intro,
+                                                   nullptr};
 
   while (state != gameState::terminating) {
     winMan.render();

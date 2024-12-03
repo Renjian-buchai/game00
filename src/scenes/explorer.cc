@@ -88,7 +88,7 @@ explorer_t::~explorer_t() {
   SDL_DestroyTexture(background);
 }
 
-std::pair<scene::scenes, void*> explorer_t::update() {
+std::pair<scene::scenes, sceneData> explorer_t::update() {
   return {scenes::explorer, nullptr};
 }
 
@@ -100,7 +100,7 @@ void explorer_t::render() {
   }
 }
 
-std::pair<scene::scenes, void*> explorer_t::handle(SDL_Event& event) {
+std::pair<scene::scenes, sceneData> explorer_t::handle(SDL_Event& event) {
   SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:

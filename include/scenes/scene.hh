@@ -7,6 +7,10 @@
 
 struct game;
 
+enum class notepadData : uint8_t;
+
+using sceneData = std::variant<notepadData>;
+
 // Just to make sure everything has the same interface
 struct scene {
   enum class scenes : uint8_t { intro, explorer, notepad, pause };
@@ -19,12 +23,12 @@ struct scene {
 
   virtual ~scene();
 
-  virtual std::pair<scenes, void*> update() = 0;
+  virtual std::pair<scenes, sceneData> update() = 0;
 
   virtual void render() = 0;
 
   // Return 1 if pause is hit
-  virtual std::pair<scenes, void*> handle(SDL_Event&) = 0;
+  virtual std::pair<scenes, sceneData> handle(SDL_Event&) = 0;
 };
 
 #endif

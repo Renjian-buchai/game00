@@ -24,7 +24,7 @@ pause_t::~pause_t() {
   SDL_DestroyTexture(exitHover);
 }
 
-std::pair<scene::scenes, void*> pause_t::update() {
+std::pair<scene::scenes, sceneData> pause_t::update() {
   return {scenes::pause, nullptr};
 }
 
@@ -34,7 +34,7 @@ void pause_t::render() {
   SDL_RenderCopy(context->mainRenderer, exitState, nullptr, nullptr);
 }
 
-std::pair<scene::scenes, void*> pause_t::handle(SDL_Event& event) {
+std::pair<scene::scenes, sceneData> pause_t::handle(SDL_Event& event) {
   SDL_Point mousePosition = {event.motion.x, event.motion.y};
 
   resumeState =

@@ -20,9 +20,9 @@ struct explorer_t : public scene {
 
   explorer_t(game* context);
   ~explorer_t();
-  std::pair<scenes, void*> update() override;
+  std::pair<scenes, sceneData> update() override;
   void render() override;
-  std::pair<scenes, void*> handle(SDL_Event& event) override;
+  std::pair<scenes, sceneData> handle(SDL_Event& event) override;
   SDL_Texture* createFilesystemEntry(const char* text, const char* size);
 };
 

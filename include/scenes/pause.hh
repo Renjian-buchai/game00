@@ -18,8 +18,8 @@ struct pause_t : public scene {
 
   pause_t(game* context);
   ~pause_t();
-  std::pair<scene::scenes, void*> update() override;
+  std::pair<scene::scenes, sceneData> update() override;
   void render() override;
-  std::pair<scene::scenes, void*> handle(SDL_Event& event) override;
+  std::pair<scene::scenes, sceneData> handle(SDL_Event& event) override;
 };
 #endif

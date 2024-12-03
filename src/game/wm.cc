@@ -42,9 +42,9 @@ void wm::render() {
   }
 }
 
-std::pair<scene::scenes, void*> wm::update() { return current->update(); }
+std::pair<scene::scenes, sceneData> wm::update() { return current->update(); }
 
-std::pair<scene::scenes, void*> wm::handle(SDL_Event& event) {
+std::pair<scene::scenes, sceneData> wm::handle(SDL_Event& event) {
   if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
     if (current == pause.get()) {
       if (resume == expl.get()) {
