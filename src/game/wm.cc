@@ -29,10 +29,19 @@ wm::wm(game* _context)
     std::cout << IMG_GetError();
     std::exit(-1);
   }
-
   icons.emplace_back(
       SDL_CreateTextureFromSurface(context->mainRenderer, surface),
       SDL_Rect{pix(24), pix(376), pix(surface->w), pix(surface->h)});
+  SDL_FreeSurface(surface);
+
+  surface = IMG_Load("res/UI/notepadIcon.png");
+  if (surface == nullptr) {
+    std::cout << IMG_GetError();
+    std::exit(-1);
+  }
+  icons.emplace_back(
+      SDL_CreateTextureFromSurface(context->mainRenderer, surface),
+      SDL_Rect{pix(48), pix(376), pix(surface->w), pix(surface->h)});
   SDL_FreeSurface(surface);
 }
 
@@ -54,7 +63,7 @@ std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
       if (resume == explorer.get()) {
         return std::make_pair(scenes::explorer, std::monostate());
       } else if (resume == notepad.get()) {
-        return std::make_pair(scenes::notepad, std::monostate());
+        return std::make_pair(scenes::notepad, notepad->currentData);
       } else if (resume == pause.get()) {
         return std::make_pair(scenes::pause, std::monostate());
       } else if (resume == intro.get()) {
@@ -70,12 +79,14 @@ std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
   if (event.type == SDL_MOUSEBUTTONDOWN &&
       event.button.button == SDL_BUTTON_LEFT) {
     SDL_Point point = {event.button.x, event.button.y};
+
+    // Only for pausing
     if (current == pause.get()) {
       if (SDL_PointInRect(&point, &pause->resumePos)) {
         if (resume == explorer.get()) {
           return std::make_pair(scenes::explorer, std::monostate());
         } else if (resume == notepad.get()) {
-          return std::make_pair(scenes::notepad, std::monostate());
+          return std::make_pair(scenes::notepad, notepad->currentData);
         } else if (resume == pause.get()) {
           return std::make_pair(scenes::pause, std::monostate());
         } else if (resume == intro.get()) {
@@ -92,6 +103,23 @@ std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
         resume = current;
 
         return std::make_pair(scenes::pause, std::monostate());
+      }
+    }
+
+    for (auto& [icon, bound] : icons) {
+      if (SDL_PointInRect(&point, &bound)) {
+        // Rounds down when converting from pixel to sceen, so need to round up
+        // to compensate
+        switch (static_cast<int>(bound.x / context->pixelSize) + 1) {
+          case 24:
+            return std::make_pair(scenes::explorer, std::monostate());
+
+          case 48:
+            return std::make_pair(scenes::notepad, notepad->currentData);
+
+          default:
+            break;
+        }
       }
     }
   }

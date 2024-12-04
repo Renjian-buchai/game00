@@ -5,14 +5,7 @@
 
 struct explorer_t : public scene {
  public:
-  enum class saveState : uint8_t {
-    init,
-    entry1,
-    entry2,
-    size,
-  };
-
-  saveState saveData;
+  explorerData saveData;
   std::vector<std::pair<SDL_Texture*, SDL_Rect>> items;
   SDL_Texture* background;
   const int nameWrapLength;

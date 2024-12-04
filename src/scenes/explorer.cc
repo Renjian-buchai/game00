@@ -2,9 +2,9 @@
 
 #include "../../include/game.hh"
 
-explorer_t::saveState operator++(explorer_t::saveState& save) {
-  using IntType = typename std::underlying_type<explorer_t::saveState>::type;
-  save = static_cast<explorer_t::saveState>(static_cast<IntType>(save) + 1);
+explorerData operator++(explorerData& save) {
+  using IntType = typename std::underlying_type<explorerData>::type;
+  save = static_cast<explorerData>(static_cast<IntType>(save) + 1);
 
   return save;
 }
@@ -45,7 +45,7 @@ explorer_t::explorer_t(game* _context)
       nameWrapLength(260 * _context->pixelSize),
       downloadBounds(SDL_Rect{0, 0, pix(40), pix(24)}) {
   {
-    saveData = saveState::init;
+    saveData = explorerData::init;
     SDL_Surface* surface = IMG_Load("res/images/OSExplorer.png");
     if (surface == nullptr) {
       std::cout << IMG_GetError();
@@ -60,7 +60,7 @@ explorer_t::explorer_t(game* _context)
     SDL_FreeSurface(surface);
   }
 
-  if (saveData == saveState::init) {
+  if (saveData == explorerData::init) {
     SDL_Surface* text = TTF_RenderUTF8_Blended_Wrapped(
         _context->font,
         "↑ His files have been deleted. Let's download them from the cloud.",
@@ -113,16 +113,16 @@ std::pair<scenes, sceneData> explorer_t::handle(SDL_Event& event) {
 
       if (SDL_PointInRect(&point, &downloadBounds)) {
         switch (saveData) {
-          case saveState::entry2:
+          case explorerData::entry2:
             items.emplace_back(createFilesystemEntry("2024/6/15", "921B"),
                                SDL_Rect{pix(1), pix(72), pix(320), pix(24)});
             break;
 
-          case saveState::init:
+          case explorerData::init:
             ++saveData;
             [[fallthrough]];
 
-          case saveState::entry1:
+          case explorerData::entry1:
             SDL_DestroyTexture(items.front().first);
             items.erase(items.begin());
 
@@ -137,7 +137,6 @@ std::pair<scenes, sceneData> explorer_t::handle(SDL_Event& event) {
 
       for (size_t i = 0; i < items.size(); ++i) {
         if (SDL_PointInRect(&point, &items[i].second)) {
-          std::cout << "Files";
           return std::make_pair(scenes::notepad, notepadData::entry1);
         }
       }

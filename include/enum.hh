@@ -16,6 +16,13 @@ enum class scenes : uint8_t {
   pause,
 };
 
+enum class explorerData : uint8_t {
+  init,
+  entry1,
+  entry2,
+  size,
+};
+
 using sceneData = std::variant<std::monostate, notepadData>;
 
 #endif
