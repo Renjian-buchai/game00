@@ -9,7 +9,7 @@ set(CMAKE_C_COMPILER_WORKS 1)
 set(CMAKE_CXX_COMPILER_WORKS 1)
 
 project(gameJam)
-set(version 0.0)
+set(version 0.1)
 
 find_package(SDL2 2.30 CONFIG REQUIRED)
 find_package(SDL2_image 2.8 CONFIG REQUIRED)
