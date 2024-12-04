@@ -26,6 +26,8 @@ void game::gameplay() {
 
         case scenes::notepad:
           winMan.current = winMan.notepad.get();
+          winMan.notepad->currentData =
+              std::get<notepadData>(sceneChangeData.second);
           break;
 
         case scenes::intro:
@@ -45,6 +47,8 @@ void game::gameplay() {
 
       case scenes::notepad:
         winMan.current = winMan.notepad.get();
+        winMan.notepad->currentData =
+            std::get<notepadData>(sceneChangeData.second);
         break;
 
       case scenes::intro:

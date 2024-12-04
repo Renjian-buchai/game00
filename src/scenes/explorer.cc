@@ -133,11 +133,12 @@ std::pair<scenes, sceneData> explorer_t::handle(SDL_Event& event) {
           default:
             break;
         }
+      }
 
-        for (size_t i = 0; i < items.size(); ++i) {
-          if (SDL_PointInRect(&point, &items[i].second)) {
-            return std::make_pair(scenes::notepad, notepadData::empty);
-          }
+      for (size_t i = 0; i < items.size(); ++i) {
+        if (SDL_PointInRect(&point, &items[i].second)) {
+          std::cout << "Files";
+          return std::make_pair(scenes::notepad, notepadData::entry1);
         }
       }
 

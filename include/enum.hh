@@ -5,8 +5,8 @@
 
 enum class notepadData : uint8_t {
   empty,
-  entry1,
-  entry2,
+  entry1 = 1,
+  entry2 = 2,
 };
 
 enum class scenes : uint8_t {
