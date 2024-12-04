@@ -1,5 +1,10 @@
-*.exe
+# Configuration 
 .vscode/
+.cache/
+
+# Output files
 build/
 prod/
-.cache/
+
+# Copyrighted code
+lib/bass24/
