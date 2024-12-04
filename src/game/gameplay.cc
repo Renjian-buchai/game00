@@ -3,6 +3,7 @@
 
 void game::gameplay() {
   SDL_WaitThread(loadThread, nullptr);
+  Mix_PlayMusic(bgm[0], 0);
 
   SDL_Event event;
   std::pair<scenes, sceneData> sceneChangeData =

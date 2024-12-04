@@ -25,6 +25,13 @@ int main(int argc, char** argv) {
   }
   std::atexit(TTF_Quit);
 
+  err = Mix_Init(MIX_INIT_MP3);
+  if (err != MIX_INIT_MP3) {
+    std::cerr << Mix_GetError() << "\n";
+    exit(err);
+  }
+  std::atexit(Mix_Quit);
+
   game game;
 
   while (game.state != game::gameState::terminating) {

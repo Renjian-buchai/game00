@@ -28,6 +28,8 @@ struct wm {
 
   SDL_Rect pauseBounds;
 
+  bool wasSilence = 0;
+
   // So that it will delete itself when wm terminates
   std::unique_ptr<explorer_t> explorer;
   std::unique_ptr<notepad_t> notepad;

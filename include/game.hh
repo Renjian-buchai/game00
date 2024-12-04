@@ -20,6 +20,9 @@ struct game {
   SDL_Window* mainWindow;
   SDL_Renderer* mainRenderer;
 
+  std::array<Mix_Music*, 4> bgm;
+  std::array<Mix_Music*, 6> silence;
+
   TTF_Font* font;
 
   double pixelSize;

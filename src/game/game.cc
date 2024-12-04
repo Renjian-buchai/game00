@@ -78,11 +78,53 @@ game::game() {
   loadThread = SDL_CreateThread(
       wmInit, "WM initialiser",
       (new wmInitData{&this->winMan, this, SDL_CreateMutex()}));
+
+  if (Mix_OpenAudio(48000, MIX_DEFAULT_FORMAT, 2, 2048)) {
+    std::cout << Mix_GetError();
+    exit(-1);
+  }
+
+  bgm[0] = Mix_LoadMUS("res/audio/OST/how.mp3");
+  bgm[1] = Mix_LoadMUS("res/audio/OST/what.mp3");
+  bgm[2] = Mix_LoadMUS("res/audio/OST/when.mp3");
+  bgm[3] = Mix_LoadMUS("res/audio/OST/where.mp3");
+  for (uint8_t i = 0; i < 4; ++i) {
+    if (bgm[i] == nullptr) {
+      std::cout << "BGM " << std::to_string(i) << ": " << Mix_GetError()
+                << "\n";
+      exit(-1);
+    }
+  }
+
+  silence[0] = Mix_LoadMUS("res/audio/sfx/silent5.mp3");
+  silence[1] = Mix_LoadMUS("res/audio/sfx/silent20.mp3");
+  silence[2] = Mix_LoadMUS("res/audio/sfx/silent45.mp3");
+  silence[3] = Mix_LoadMUS("res/audio/sfx/silent60.mp3");
+  silence[4] = Mix_LoadMUS("res/audio/sfx/silent75.mp3");
+  silence[5] = Mix_LoadMUS("res/audio/sfx/silent120.mp3");
+  for (uint8_t i = 0; i < 6; ++i) {
+    if (silence[i] == nullptr) {
+      std::cout << "BGM " << std::to_string(i) << ": " << Mix_GetError()
+                << "\n";
+      exit(-1);
+    }
+  }
+
+  Mix_VolumeMusic(48);
 }
 
 game::~game() {
   SDL_DestroyRenderer(mainRenderer);
   SDL_DestroyWindow(mainWindow);
+
+  Mix_CloseAudio();
+  for (Mix_Music *music : bgm) {
+    Mix_FreeMusic(music);
+  }
+
+  for (Mix_Music *music : silence) {
+    Mix_FreeMusic(music);
+  }
 
   TTF_CloseFont(font);
 

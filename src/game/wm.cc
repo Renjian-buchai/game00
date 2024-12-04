@@ -43,6 +43,12 @@ wm::wm(game* _context)
       SDL_CreateTextureFromSurface(context->mainRenderer, surface),
       SDL_Rect{pix(48), pix(376), pix(surface->w), pix(surface->h)});
   SDL_FreeSurface(surface);
+
+  {
+    time_t rtime;
+    time(&rtime);
+    std::srand(rtime);
+  }
 }
 
 void wm::render() {
@@ -55,7 +61,19 @@ void wm::render() {
   }
 }
 
-std::pair<scenes, sceneData> wm::update() { return current->update(); }
+std::pair<scenes, sceneData> wm::update() {
+  if (!Mix_PlayingMusic()) {
+    if (wasSilence) {
+      Mix_PlayMusic(context->bgm[std::rand() % 4], 0);
+      wasSilence = 0;
+    } else {
+      Mix_PlayMusic(context->silence[std::rand() % 6], 0);
+      wasSilence = 1;
+    }
+  }
+
+  return current->update();
+}
 
 std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
   if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
