@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="df/d1c/classwm" kind="class" language="C++" prot="public">
+    <compoundname>wm</compoundname>
+    <includes refid="d3/d51/wm_8hh" local="no">wm.hh</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d1c/classwm_1aab22b0e4971405b7fe57e8409e68793b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; SDL_Texture *, SDL_Rect &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;SDL_Texture*, SDL_Rect&gt; &gt; wm::icons</definition>
+        <argsstring></argsstring>
+        <name>icons</name>
+        <qualifiedname>wm::icons</qualifiedname>
+        <briefdescription>
+<para>Icons for the task bar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="21" column="15" bodyfile="include/wm.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1a718f320271041e9c08cdfbdc58cc3a64" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* wm::OSOverlay</definition>
+        <argsstring></argsstring>
+        <name>OSOverlay</name>
+        <qualifiedname>wm::OSOverlay</qualifiedname>
+        <briefdescription>
+<para>Task bar overlay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="27" column="15" bodyfile="include/wm.hh" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+        <definition>game* wm::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>wm::context</qualifiedname>
+        <briefdescription>
+<para>game context </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="33" column="8" bodyfile="include/wm.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1a50c97d11917956cf0abb63be275faddc" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect wm::pauseBounds</definition>
+        <argsstring></argsstring>
+        <name>pauseBounds</name>
+        <qualifiedname>wm::pauseBounds</qualifiedname>
+        <briefdescription>
+<para>Position of the pause button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="39" column="12" bodyfile="include/wm.hh" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1a205790bf574b52cabae2bca77b17c262" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool wm::wasSilence</definition>
+        <argsstring></argsstring>
+        <name>wasSilence</name>
+        <qualifiedname>wm::wasSilence</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Stores whether the last music track was silent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="45" column="8" bodyfile="include/wm.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d5/db0/classexplorer__t" kindref="compound">explorer_t</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;explorer_t&gt; wm::explorer</definition>
+        <argsstring></argsstring>
+        <name>explorer</name>
+        <qualifiedname>wm::explorer</qualifiedname>
+        <briefdescription>
+<para>Scenes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unique pointers so that they&apos;ll kill themselves once wm terminates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="53" column="19" bodyfile="include/wm.hh" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d9/d03/classnotepad__t" kindref="compound">notepad_t</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;notepad_t&gt; wm::notepad</definition>
+        <argsstring></argsstring>
+        <name>notepad</name>
+        <qualifiedname>wm::notepad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="54" column="19" bodyfile="include/wm.hh" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="dc/daa/classpause__t" kindref="compound">pause_t</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;pause_t&gt; wm::pause</definition>
+        <argsstring></argsstring>
+        <name>pause</name>
+        <qualifiedname>wm::pause</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="55" column="19" bodyfile="include/wm.hh" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d9/dea/classintro__t" kindref="compound">intro_t</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;intro_t&gt; wm::intro</definition>
+        <argsstring></argsstring>
+        <name>intro</name>
+        <qualifiedname>wm::intro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="56" column="19" bodyfile="include/wm.hh" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" prot="public" static="no" mutable="no">
+        <type><ref refid="df/db1/classscene" kindref="compound">scene</ref> *</type>
+        <definition>scene* wm::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <qualifiedname>wm::current</qualifiedname>
+        <briefdescription>
+<para>Current scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="62" column="9" bodyfile="include/wm.hh" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1c/classwm_1aeedc8b11c2b96839e921b7f82840656e" prot="public" static="no" mutable="no">
+        <type><ref refid="df/db1/classscene" kindref="compound">scene</ref> *</type>
+        <definition>scene* wm::resume</definition>
+        <argsstring></argsstring>
+        <name>resume</name>
+        <qualifiedname>wm::resume</qualifiedname>
+        <briefdescription>
+<para>Scene to resume on. Only used for unpausing purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="67" column="9" bodyfile="include/wm.hh" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d1c/classwm_1ae80ff7518d15add5e8a639bc1b509ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>wm::wm</definition>
+        <argsstring>()=default</argsstring>
+        <name>wm</name>
+        <qualifiedname>wm::wm</qualifiedname>
+        <briefdescription>
+<para>Construct a new wm object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Just to placate the warnings </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="74" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1c/classwm_1a963abfdd7d229db5869e59a97a301f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>wm::wm</definition>
+        <argsstring>(game *context)</argsstring>
+        <name>wm</name>
+        <qualifiedname>wm::wm</qualifiedname>
+        <param>
+          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new wm object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs all the scenes, too</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>game context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="82" column="3" bodyfile="src/game/wm.cc" bodystart="9" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm::render</definition>
+        <argsstring>()</argsstring>
+        <name>render</name>
+        <qualifiedname>wm::render</qualifiedname>
+        <briefdescription>
+<para>Renders the current scene, icons, and the overlay. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Does not render if the current scene is the intro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="89" column="8" bodyfile="src/game/wm.cc" bodystart="54" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1c/classwm_1a7f282167450e97df5792d589c9ced058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>std::pair&lt; scenes, sceneData &gt; wm::handle</definition>
+        <argsstring>(SDL_Event &amp;event)</argsstring>
+        <name>handle</name>
+        <qualifiedname>wm::handle</qualifiedname>
+        <param>
+          <type>SDL_Event &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Handles events and scene switches via task bar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event to be handled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="97" column="13" bodyfile="src/game/wm.cc" bodystart="78" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>std::pair&lt; scenes, sceneData &gt; wm::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>wm::update</qualifiedname>
+        <briefdescription>
+<para>Updates scene data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wm.hh" line="104" column="13" bodyfile="src/game/wm.cc" bodystart="64" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>game</label>
+        <link refid="d0/d51/classgame"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>winMan</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>wm</label>
+        <link refid="df/d1c/classwm"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>current</edgelabel>
+          <edgelabel>resume</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/wm.hh" line="15" column="1" bodyfile="include/wm.hh" bodystart="15" bodyend="105"/>
+    <listofallmembers>
+      <member refid="df/d1c/classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3" prot="public" virt="non-virtual"><scope>wm</scope><name>context</name></member>
+      <member refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" prot="public" virt="non-virtual"><scope>wm</scope><name>current</name></member>
+      <member refid="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" prot="public" virt="non-virtual"><scope>wm</scope><name>explorer</name></member>
+      <member refid="df/d1c/classwm_1a7f282167450e97df5792d589c9ced058" prot="public" virt="non-virtual"><scope>wm</scope><name>handle</name></member>
+      <member refid="df/d1c/classwm_1aab22b0e4971405b7fe57e8409e68793b" prot="public" virt="non-virtual"><scope>wm</scope><name>icons</name></member>
+      <member refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" prot="public" virt="non-virtual"><scope>wm</scope><name>intro</name></member>
+      <member refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" prot="public" virt="non-virtual"><scope>wm</scope><name>notepad</name></member>
+      <member refid="df/d1c/classwm_1a718f320271041e9c08cdfbdc58cc3a64" prot="public" virt="non-virtual"><scope>wm</scope><name>OSOverlay</name></member>
+      <member refid="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" prot="public" virt="non-virtual"><scope>wm</scope><name>pause</name></member>
+      <member refid="df/d1c/classwm_1a50c97d11917956cf0abb63be275faddc" prot="public" virt="non-virtual"><scope>wm</scope><name>pauseBounds</name></member>
+      <member refid="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" prot="public" virt="non-virtual"><scope>wm</scope><name>render</name></member>
+      <member refid="df/d1c/classwm_1aeedc8b11c2b96839e921b7f82840656e" prot="public" virt="non-virtual"><scope>wm</scope><name>resume</name></member>
+      <member refid="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" prot="public" virt="non-virtual"><scope>wm</scope><name>update</name></member>
+      <member refid="df/d1c/classwm_1a205790bf574b52cabae2bca77b17c262" prot="public" virt="non-virtual"><scope>wm</scope><name>wasSilence</name></member>
+      <member refid="df/d1c/classwm_1ae80ff7518d15add5e8a639bc1b509ed4" prot="public" virt="non-virtual"><scope>wm</scope><name>wm</name></member>
+      <member refid="df/d1c/classwm_1a963abfdd7d229db5869e59a97a301f47" prot="public" virt="non-virtual"><scope>wm</scope><name>wm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

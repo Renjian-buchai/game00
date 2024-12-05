@@ -1,0 +1,189 @@
+.TH "notepad_t" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+notepad_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <notepad\&.hh>\fP
+.PP
+Inherits \fBscene\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBnotepad_t\fP (\fBgame\fP *\fBcontext\fP)"
+.br
+.RI "Construct a new notepad t object\&. "
+.ti -1c
+.RI "\fB~notepad_t\fP ()"
+.br
+.RI "Destroy the notepad t object\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.br
+.RI "Checks if the current data is the same as the data stored previously\&. "
+.ti -1c
+.RI "void \fBrender\fP () override"
+.br
+.RI "Renders notepad, and entry\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
+.br
+.RI "Handles event\&. "
+.in -1c
+
+Public Member Functions inherited from \fBscene\fP
+.in +1c
+.ti -1c
+.RI "SDL_Texture * \fBloadTexture\fP (const char *path)"
+.br
+.RI "Loads texture based on path\&. "
+.ti -1c
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
+.br
+.RI "Construct a new scene object\&. "
+.ti -1c
+.RI "virtual \fB~scene\fP ()"
+.br
+.RI "Destroy the scene object\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "SDL_Texture * \fBbackground\fP"
+.br
+.RI "Background of the notepad as a texture\&. "
+.ti -1c
+.RI "SDL_Texture * \fBentry\fP"
+.br
+.RI "Text of the notepad, as a texture\&. "
+.ti -1c
+.RI "const int \fBlineWrapLength\fP"
+.br
+.RI "Length before the note wraps the length\&. "
+.ti -1c
+.RI "\fBnotepadData\fP \fBcurrentData\fP"
+.br
+.RI "The current entry\&. "
+.ti -1c
+.RI "\fBnotepadData\fP \fBprevData\fP"
+.br
+.RI "The last entry that was there when notepad was exited\&. "
+.ti -1c
+.RI "SDL_Rect \fBentryRect\fP"
+.br
+.RI "Position of the entry\&. "
+.in -1c
+
+Public Attributes inherited from \fBscene\fP
+.in +1c
+.ti -1c
+.RI "\fBgame\fP * \fBcontext\fP"
+.br
+.RI "Game context\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static constexpr double \fBscale\fP = 1\&.7"
+.br
+.RI "The multiplier by which the text is scaled \fBdown\fP "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "notepad_t::notepad_t (\fBgame\fP * context)"
+
+.PP
+Construct a new notepad t object\&. Called only once when WM is initialised
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI_context\fP game context 
+.RE
+.PP
+
+.SS "notepad_t::~notepad_t ()"
+
+.PP
+Destroy the notepad t object\&. Called only when the wm is destroyed 
+.SH "Member Function Documentation"
+.PP 
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > notepad_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Handles event\&. Realistically, does nothing unless I add scrolling\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIevent\fP Event to be handled 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.PP
+Implements \fBscene\fP\&.
+.SS "void notepad_t::render ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Renders notepad, and entry\&. 
+.PP
+Implements \fBscene\fP\&.
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > notepad_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Checks if the current data is the same as the data stored previously\&. Does nothing if it's the same\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> 
+.RE
+.PP
+
+.PP
+Implements \fBscene\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "SDL_Texture* notepad_t::background"
+
+.PP
+Background of the notepad as a texture\&. 
+.SS "\fBnotepadData\fP notepad_t::currentData"
+
+.PP
+The current entry\&. 
+.SS "SDL_Texture* notepad_t::entry"
+
+.PP
+Text of the notepad, as a texture\&. 
+.SS "SDL_Rect notepad_t::entryRect"
+
+.PP
+Position of the entry\&. 
+.SS "const int notepad_t::lineWrapLength"
+
+.PP
+Length before the note wraps the length\&. 
+.SS "\fBnotepadData\fP notepad_t::prevData"
+
+.PP
+The last entry that was there when notepad was exited\&. 
+.SS "double notepad_t::scale = 1\&.7\fR [static]\fP, \fR [constexpr]\fP"
+
+.PP
+The multiplier by which the text is scaled \fBdown\fP 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

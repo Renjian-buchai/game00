@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classintro__t_1_1slide" xml:lang="en-US">
+<title>intro_t::slide Class Reference</title>
+<indexterm><primary>intro_t::slide</primary></indexterm>
+<para>
+
+<para>Contains all the information required for a functional slideshow. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;init.hh&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552">slide</link> (size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture *_texture, SDL_Rect _dest={}, bool <link linkend="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467">skippable</link>=true)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>size_t <link linkend="_classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb">fadeIn</link></para>
+</listitem>
+            <listitem><para>size_t <link linkend="_classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b">duration</link></para>
+</listitem>
+            <listitem><para>size_t <link linkend="_classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe">fadeOut</link></para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0">texture</link></para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf">dest</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467">skippable</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains all the information required for a functional slideshow. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552"/><section>
+    <title>slide()</title>
+<indexterm><primary>slide</primary><secondary>intro_t::slide</secondary></indexterm>
+<indexterm><primary>intro_t::slide</primary><secondary>slide</secondary></indexterm>
+<para><computeroutput>intro_t::slide::slide (size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture * _texture, SDL_Rect _dest = <computeroutput>{}</computeroutput>
+, bool skippable = <computeroutput>true</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf"/><section>
+    <title>dest</title>
+<indexterm><primary>dest</primary><secondary>intro_t::slide</secondary></indexterm>
+<indexterm><primary>intro_t::slide</primary><secondary>dest</secondary></indexterm>
+<para><computeroutput>SDL_Rect intro_t::slide::dest</computeroutput></para></section>
+<anchor xml:id="_classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b"/><section>
+    <title>duration</title>
+<indexterm><primary>duration</primary><secondary>intro_t::slide</secondary></indexterm>
+<indexterm><primary>intro_t::slide</primary><secondary>duration</secondary></indexterm>
+<para><computeroutput>size_t intro_t::slide::duration</computeroutput></para></section>
+<anchor xml:id="_classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb"/><section>
+    <title>fadeIn</title>
+<indexterm><primary>fadeIn</primary><secondary>intro_t::slide</secondary></indexterm>
+<indexterm><primary>intro_t::slide</primary><secondary>fadeIn</secondary></indexterm>
+<para><computeroutput>size_t intro_t::slide::fadeIn</computeroutput></para></section>
+<anchor xml:id="_classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe"/><section>
+    <title>fadeOut</title>
+<indexterm><primary>fadeOut</primary><secondary>intro_t::slide</secondary></indexterm>
+<indexterm><primary>intro_t::slide</primary><secondary>fadeOut</secondary></indexterm>
+<para><computeroutput>size_t intro_t::slide::fadeOut</computeroutput></para></section>
+<anchor xml:id="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467"/><section>
+    <title>skippable</title>
+<indexterm><primary>skippable</primary><secondary>intro_t::slide</secondary></indexterm>
+<indexterm><primary>intro_t::slide</primary><secondary>skippable</secondary></indexterm>
+<para><computeroutput>bool intro_t::slide::skippable</computeroutput></para></section>
+<anchor xml:id="_classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0"/><section>
+    <title>texture</title>
+<indexterm><primary>texture</primary><secondary>intro_t::slide</secondary></indexterm>
+<indexterm><primary>intro_t::slide</primary><secondary>texture</secondary></indexterm>
+<para><computeroutput>SDL_Texture* intro_t::slide::texture</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/scenes/<link linkend="_init_8hh">init.hh</link>src/scenes/<link linkend="_init_8cc">init.cc</link></section>
+</section>

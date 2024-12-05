@@ -1,0 +1,174 @@
+.TH "wm" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+wm
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <wm\&.hh>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBwm\fP ()=default"
+.br
+.RI "Construct a new wm object\&. "
+.ti -1c
+.RI "\fBwm\fP (\fBgame\fP *\fBcontext\fP)"
+.br
+.RI "Construct a new wm object\&. "
+.ti -1c
+.RI "void \fBrender\fP ()"
+.br
+.RI "Renders the current scene, icons, and the overlay\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event)"
+.br
+.RI "Handles events and scene switches via task bar\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP ()"
+.br
+.RI "Updates scene data\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< std::pair< SDL_Texture *, SDL_Rect > > \fBicons\fP"
+.br
+.RI "Icons for the task bar\&. "
+.ti -1c
+.RI "SDL_Texture * \fBOSOverlay\fP"
+.br
+.RI "Task bar overlay\&. "
+.ti -1c
+.RI "\fBgame\fP * \fBcontext\fP"
+.br
+.RI "game context "
+.ti -1c
+.RI "SDL_Rect \fBpauseBounds\fP"
+.br
+.RI "Position of the pause button\&. "
+.ti -1c
+.RI "bool \fBwasSilence\fP = 0"
+.br
+.RI "Stores whether the last music track was silent\&. "
+.ti -1c
+.RI "std::unique_ptr< \fBexplorer_t\fP > \fBexplorer\fP"
+.br
+.RI "Scenes\&. "
+.ti -1c
+.RI "std::unique_ptr< \fBnotepad_t\fP > \fBnotepad\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBpause_t\fP > \fBpause\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBintro_t\fP > \fBintro\fP"
+.br
+.ti -1c
+.RI "\fBscene\fP * \fBcurrent\fP"
+.br
+.RI "Current scene\&. "
+.ti -1c
+.RI "\fBscene\fP * \fBresume\fP"
+.br
+.RI "Scene to resume on\&. Only used for unpausing purposes\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "wm::wm ()\fR [default]\fP"
+
+.PP
+Construct a new wm object\&. Just to placate the warnings 
+.SS "wm::wm (\fBgame\fP * context)"
+
+.PP
+Construct a new wm object\&. Constructs all the scenes, too
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIcontext\fP game context 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > wm::handle (SDL_Event & event)"
+
+.PP
+Handles events and scene switches via task bar\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevent\fP Event to be handled\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.SS "void wm::render ()"
+
+.PP
+Renders the current scene, icons, and the overlay\&. Does not render if the current scene is the intro\&. 
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > wm::update ()"
+
+.PP
+Updates scene data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBgame\fP* wm::context"
+
+.PP
+game context 
+.SS "\fBscene\fP* wm::current"
+
+.PP
+Current scene\&. 
+.SS "std::unique_ptr<\fBexplorer_t\fP> wm::explorer"
+
+.PP
+Scenes\&. Unique pointers so that they'll kill themselves once wm terminates 
+.SS "std::vector<std::pair<SDL_Texture*, SDL_Rect> > wm::icons"
+
+.PP
+Icons for the task bar\&. 
+.SS "std::unique_ptr<\fBintro_t\fP> wm::intro"
+
+.SS "std::unique_ptr<\fBnotepad_t\fP> wm::notepad"
+
+.SS "SDL_Texture* wm::OSOverlay"
+
+.PP
+Task bar overlay\&. 
+.SS "std::unique_ptr<\fBpause_t\fP> wm::pause"
+
+.SS "SDL_Rect wm::pauseBounds"
+
+.PP
+Position of the pause button\&. 
+.SS "\fBscene\fP* wm::resume"
+
+.PP
+Scene to resume on\&. Only used for unpausing purposes\&. 
+.SS "bool wm::wasSilence = 0"
+
+.PP
+Stores whether the last music track was silent\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

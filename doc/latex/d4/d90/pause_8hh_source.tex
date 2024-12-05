@@ -1,0 +1,32 @@
+\doxysection{pause.\+hh}
+\label{pause_8hh_source}\index{include/scenes/pause.hh@{include/scenes/pause.hh}}
+\mbox{\hyperlink{pause_8hh}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#if\ !defined(PAUSE\_HH)}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PAUSE\_HH}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}scene.hh"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }pause\_t\ :\ \textcolor{keyword}{public}\ scene\ \{}
+\DoxyCodeLine{00007\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ SDL\_Texture*\ overlay;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \ \ SDL\_Texture*\ resume;}
+\DoxyCodeLine{00020\ \ \ SDL\_Texture*\ resumeHover;}
+\DoxyCodeLine{00024\ \ \ SDL\_Texture*\ resumeState;}
+\DoxyCodeLine{00026\ \ \ SDL\_Rect\ resumePos;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ SDL\_Texture*\ exit;}
+\DoxyCodeLine{00035\ \ \ SDL\_Texture*\ exitHover;}
+\DoxyCodeLine{00039\ \ \ SDL\_Texture*\ exitState;}
+\DoxyCodeLine{00043\ \ \ SDL\_Rect\ exitPos;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00052\ \ \ pause\_t(game*\ context);}
+\DoxyCodeLine{00058\ \ \ \string~pause\_t();}
+\DoxyCodeLine{00067\ \ \ std::pair<scenes,\ sceneData>\ update()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{void}\ render()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00079\ \ \ std::pair<scenes,\ sceneData>\ handle(SDL\_Event\&\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

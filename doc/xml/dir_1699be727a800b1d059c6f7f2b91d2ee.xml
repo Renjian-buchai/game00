@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_1699be727a800b1d059c6f7f2b91d2ee" kind="dir">
+    <compoundname>src/game</compoundname>
+    <innerfile refid="da/d5e/game_8cc">game.cc</innerfile>
+    <innerfile refid="de/d8a/gameplay_8cc">gameplay.cc</innerfile>
+    <innerfile refid="df/d0b/pause_8cc">pause.cc</innerfile>
+    <innerfile refid="df/d17/wm_8cc">wm.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/game/"/>
+  </compounddef>
+</doxygen>

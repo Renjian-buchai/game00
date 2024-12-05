@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classscene" xml:lang="en-US">
+<title>scene Class Reference</title>
+<indexterm><primary>scene</primary></indexterm>
+<para>
+
+<para>Interface class for scenes. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;scene.hh&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for scene:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/db1/classscene.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>SDL_Texture * <link linkend="_classscene_1a5d4681a41f14704a05c4f84569888061">loadTexture</link> (const char *path)</para>
+
+<para>Loads texture based on path. </para>
+</listitem>
+            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+
+<para>Construct a new scene object. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496">~scene</link> ()</para>
+
+<para>Destroy the scene object. </para>
+</listitem>
+            <listitem><para>virtual std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</link> ()=0</para>
+
+<para>Updates scene logic. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">render</link> ()=0</para>
+
+<para>Renders textures. </para>
+</listitem>
+            <listitem><para>virtual std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">handle</link> (SDL_Event &amp;)=0</para>
+
+<para>Handles events. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+
+<para>Game context. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Interface class for scenes. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classscene_1a1012571c9524a29524b8b9d680715e90"/><section>
+    <title>scene()</title>
+<indexterm><primary>scene</primary><secondary>scene</secondary></indexterm>
+<indexterm><primary>scene</primary><secondary>scene</secondary></indexterm>
+<para><computeroutput>scene::scene (<link linkend="_classgame">game</link> * gameContext)</computeroutput></para><para>
+
+<para>Construct a new scene object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gameContext</entry><entry>
+<para>game context </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496"/><section>
+    <title>~scene()</title>
+<indexterm><primary>~scene</primary><secondary>scene</secondary></indexterm>
+<indexterm><primary>scene</primary><secondary>~scene</secondary></indexterm>
+<para><computeroutput>scene::~scene ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Destroy the scene object. </para>
+</para>
+
+<para>Usually called only when wm is destroyed </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classscene_1a56dec35146b15669e3cf054ced2f4be2"/><section>
+    <title>handle()</title>
+<indexterm><primary>handle</primary><secondary>scene</secondary></indexterm>
+<indexterm><primary>scene</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>virtual std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; scene::handle (SDL_Event &amp; )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Handles events. </para>
+</para>
+
+<para>Called in <link linkend="_classwm_1a7f282167450e97df5792d589c9ced058">wm::handle()</link></para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">explorer_t</link>, <link linkend="_classintro__t_1adda2b278aae9bae71b89194313bc23a9">intro_t</link>, <link linkend="_classnotepad__t_1ad98a24e386e2a0363a44e67054988160">notepad_t</link>, and <link linkend="_classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac">pause_t</link>.</para>
+</section>
+<anchor xml:id="_classscene_1a5d4681a41f14704a05c4f84569888061"/><section>
+    <title>loadTexture()</title>
+<indexterm><primary>loadTexture</primary><secondary>scene</secondary></indexterm>
+<indexterm><primary>scene</primary><secondary>loadTexture</secondary></indexterm>
+<para><computeroutput>SDL_Texture * scene::loadTexture (const char * path)</computeroutput></para><para>
+
+<para>Loads texture based on path. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para>File path </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>SDL_Texture* Loaded texture </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classscene_1a7c218380f822d46bee781520e855a7de"/><section>
+    <title>render()</title>
+<indexterm><primary>render</primary><secondary>scene</secondary></indexterm>
+<indexterm><primary>scene</primary><secondary>render</secondary></indexterm>
+<para><computeroutput>virtual void scene::render ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Renders textures. </para>
+</para>
+
+<para>Called in <link linkend="_classwm_1aa9731642bc561de498bc559f0d5ab84e">wm::render()</link> </para>
+<para>
+Implemented in <link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">explorer_t</link>, <link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">intro_t</link>, <link linkend="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a">notepad_t</link>, and <link linkend="_classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">pause_t</link>.</para>
+</section>
+<anchor xml:id="_classscene_1a34b71ea2aea3fd3c007786e75be817c7"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>scene</secondary></indexterm>
+<indexterm><primary>scene</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>virtual std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; scene::update ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Updates scene logic. </para>
+</para>
+
+<para>Called in <link linkend="_classwm_1a54115bce16818acb350825256b11b2ce">wm::update()</link></para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">explorer_t</link>, <link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">intro_t</link>, <link linkend="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">notepad_t</link>, and <link linkend="_classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca">pause_t</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classscene_1ae9987da046dc0255632015f0e42a546c"/><section>
+    <title>context</title>
+<indexterm><primary>context</primary><secondary>scene</secondary></indexterm>
+<indexterm><primary>scene</primary><secondary>context</secondary></indexterm>
+<para><computeroutput><link linkend="_classgame">game</link>* scene::context</computeroutput></para><para>
+
+<para>Game context. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/scenes/<link linkend="_scene_8hh">scene.hh</link>src/scenes/<link linkend="_scene_8cc">scene.cc</link></section>
+</section>

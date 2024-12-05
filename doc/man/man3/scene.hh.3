@@ -1,0 +1,40 @@
+.TH "include/scenes/scene.hh" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/scenes/scene.hh
+.SH SYNOPSIS
+.br
+.PP
+\fR#include '\&.\&./\&.\&./include/pch\&.hh'\fP
+.br
+\fR#include '\&.\&./enum\&.hh'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBscene\fP"
+.br
+.RI "Interface class for scenes\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBpix\fP(val)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define pix( val)"
+\fBValue:\fP
+.nf
+static_cast<int>(val * context\->pixelSize)
+.PP
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

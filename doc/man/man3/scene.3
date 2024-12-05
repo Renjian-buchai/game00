@@ -1,0 +1,131 @@
+.TH "scene" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+scene \- Interface class for scenes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <scene\&.hh>\fP
+.PP
+Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "SDL_Texture * \fBloadTexture\fP (const char *path)"
+.br
+.RI "Loads texture based on path\&. "
+.ti -1c
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
+.br
+.RI "Construct a new scene object\&. "
+.ti -1c
+.RI "virtual \fB~scene\fP ()"
+.br
+.RI "Destroy the scene object\&. "
+.ti -1c
+.RI "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP ()=0"
+.br
+.RI "Updates scene logic\&. "
+.ti -1c
+.RI "virtual void \fBrender\fP ()=0"
+.br
+.RI "Renders textures\&. "
+.ti -1c
+.RI "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &)=0"
+.br
+.RI "Handles events\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBgame\fP * \fBcontext\fP"
+.br
+.RI "Game context\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface class for scenes\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "scene::scene (\fBgame\fP * gameContext)"
+
+.PP
+Construct a new scene object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgameContext\fP game context 
+.RE
+.PP
+
+.SS "scene::~scene ()\fR [virtual]\fP"
+
+.PP
+Destroy the scene object\&. Usually called only when wm is destroyed 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > scene::handle (SDL_Event & )\fR [pure virtual]\fP"
+
+.PP
+Handles events\&. Called in \fBwm::handle()\fP
+
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.PP
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+.SS "SDL_Texture * scene::loadTexture (const char * path)"
+
+.PP
+Loads texture based on path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP File path 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+SDL_Texture* Loaded texture 
+.RE
+.PP
+
+.SS "virtual void scene::render ()\fR [pure virtual]\fP"
+
+.PP
+Renders textures\&. Called in \fBwm::render()\fP 
+.PP
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+.SS "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > scene::update ()\fR [pure virtual]\fP"
+
+.PP
+Updates scene logic\&. Called in \fBwm::update()\fP
+
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.PP
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBgame\fP* scene::context"
+
+.PP
+Game context\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

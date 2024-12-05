@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_wm_8cc" xml:lang="en-US">
+<title>src/game/wm.cc File Reference</title>
+<indexterm><primary>src/game/wm.cc</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;../../include/wm.hh&quot;<?linebreak?>#include &quot;../../include/game.hh&quot;<?linebreak?>#include &quot;../../include/scenes/explorer.hh&quot;<?linebreak?>#include &quot;../../include/scenes/init.hh&quot;<?linebreak?>#include &quot;../../include/scenes/notepad.hh&quot;<?linebreak?>#include &quot;../../include/scenes/pause.hh&quot;<?linebreak?></programlisting></section>

@@ -1,0 +1,746 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a0439809e2c67c40ea20757ffed70968c"><param name="Name" value="addSlide(SDL_Surface *surface, size_t fadeIn, size_t duration, size_t fadeOut, SDL_Rect dest=SDL_Rect{}, bool centred=true, bool skippable=true)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a29be9f9a5ec3090c4998f9cb7277cc93"><param name="Name" value="background"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a29be9f9a5ec3090c4998f9cb7277cc93"><param name="Name" value="explorer_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a4416b91e1e20a180f9a00855b6f9c459"><param name="Name" value="background"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a4416b91e1e20a180f9a00855b6f9c459"><param name="Name" value="notepad_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9e8b656712b1f8d16290abd3d21b2331"><param name="Name" value="bgm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"><param name="Name" value="BOTH"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6"><param name="Name" value="centre"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a427b58b3e041bb4672278b9e422b8292"><param name="Name" value="centreRect(SDL_Rect &amp;rect, centre centre=centre::BOTH) const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"><param name="Name" value="context"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"><param name="Name" value="scene"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#af9afae9fdbb9db6fdb6d62bf934ab5c3"><param name="Name" value="context"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#af9afae9fdbb9db6fdb6d62bf934ab5c3"><param name="Name" value="wm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a8b40ddc033a30ca9233002d0b965f8e8"><param name="Name" value="context"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a8b40ddc033a30ca9233002d0b965f8e8"><param name="Name" value="wmInitData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a37bd5f0b908b0c66a411c873733e3f5a"><param name="Name" value="createFilesystemEntry(const char *text, const char *size)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a2abf8c7eedd04f896cbf0ef50358f1c7"><param name="Name" value="current"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a71add6ff4e2c0947e3043df553695bd1"><param name="Name" value="currentData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a7c36e704b33011d1088d093f88e436bf"><param name="Name" value="dest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a2de268c0ae822e5ac4b5d1bb2199f2d6"><param name="Name" value="dispBounds"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#ab134139610d2267ca833abcd44b39aac"><param name="Name" value="downloadBounds"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a0a4846e82f88facedf50da06b6dd061b"><param name="Name" value="duration"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9"><param name="Name" value="empty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d"><param name="Name" value="entry1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d"><param name="Name" value="entry1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd"><param name="Name" value="entry2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"><param name="Name" value="entry2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a6766a5c1170ee8fab7ecdb209f0d2076"><param name="Name" value="entry"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#af6ff2f6dffb32c3fd6edc955c4b0dfba"><param name="Name" value="entryRect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9"><param name="Name" value="empty"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d"><param name="Name" value="entry1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d"><param name="Name" value="entry1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd"><param name="Name" value="entry2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"><param name="Name" value="entry2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"><param name="Name" value="explorer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587a"><param name="Name" value="explorerData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9"><param name="Name" value="init"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb"><param name="Name" value="intro"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"><param name="Name" value="notepad"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6"><param name="Name" value="notepadData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"><param name="Name" value="pause"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab"><param name="Name" value="sceneData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a"><param name="Name" value="scenes"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"><param name="Name" value="size"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a148437ac9cfb0970822384f99c03ac77"><param name="Name" value="exit"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a3e67f3211198db082a0ac245dad42212"><param name="Name" value="exitHover"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a9034485c8caf7cd1dfddf7f300542747"><param name="Name" value="exitPos"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ae058f8bee107894a18b483c2433b719e"><param name="Name" value="exitState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/d14/explorer_8cc.html#aa3c2bd85b3a50c8377042bf30c9b0331"><param name="Name" value="explorer.cc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"><param name="Name" value="explorer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#adbe11e0ba621af1815bf54fde8244645"><param name="Name" value="explorer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#adbe11e0ba621af1815bf54fde8244645"><param name="Name" value="wm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a75961f78eebb4030c1f2d7b78929a2b6"><param name="Name" value="explorer_t(game *context)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a29be9f9a5ec3090c4998f9cb7277cc93"><param name="Name" value="background"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a37bd5f0b908b0c66a411c873733e3f5a"><param name="Name" value="createFilesystemEntry(const char *text, const char *size)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#ab134139610d2267ca833abcd44b39aac"><param name="Name" value="downloadBounds"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a75961f78eebb4030c1f2d7b78929a2b6"><param name="Name" value="explorer_t(game *context)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#add68d9bf9c0e52805f4bb714b1133882"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#aea965f72ccf4510850fc844e97c51c19"><param name="Name" value="items"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a9cb2c4b54f466e5535c38cdac94ea0b4"><param name="Name" value="nameWrapLength"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#aeeb2aa5c58317a29463ce527b2ade757"><param name="Name" value="render() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a40830fddee0e376a60dba4876b7bc7e3"><param name="Name" value="saveData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a099b72112db6de2a3d8f6ea0b724fae5"><param name="Name" value="update() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html"><param name="Name" value="explorer_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a44fc2dcde828c85abf707bb5ff024b50"><param name="Name" value="~explorer_t()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587a"><param name="Name" value="explorerData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"><param name="Name" value="fadeIn"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a409eb856ae821b07dd66f76cbb6a3dbe"><param name="Name" value="fadeOut"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a63c1e94224ab226955bba8717c64bdc0"><param name="Name" value="font"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#ad9c102127b5038f880067ad6c9198d38"><param name="Name" value="game()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d5e/game_8cc.html#a99ac6b71536a9029028ea49afd42fab0"><param name="Name" value="game.cc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9e8b656712b1f8d16290abd3d21b2331"><param name="Name" value="bgm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a2de268c0ae822e5ac4b5d1bb2199f2d6"><param name="Name" value="dispBounds"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a63c1e94224ab226955bba8717c64bdc0"><param name="Name" value="font"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#ad9c102127b5038f880067ad6c9198d38"><param name="Name" value="game()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"><param name="Name" value="gameplay"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#abf967ec7fa712fde980d9c399e4f778d"><param name="Name" value="gameplay()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61"><param name="Name" value="gameState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"><param name="Name" value="intro"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a4f416f46f79adaa51c134ecce60adae2"><param name="Name" value="loadThread"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a7d010ea5627621067a7686f330d5e104"><param name="Name" value="mainRenderer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#acc01740eae91dd462ec52a9d7a3ec974"><param name="Name" value="mainWindow"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#ac71bfd4415fdd0075d2115aa0ffe2bf6"><param name="Name" value="mutex"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"><param name="Name" value="paused"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a392ea9253c1a69cd42b0d45547568eb0"><param name="Name" value="pixelSize"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a74c272eea906013e6af7480d8d31f431"><param name="Name" value="silence"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a66a0e69c41270ee22849d56d12e12749"><param name="Name" value="state"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"><param name="Name" value="terminating"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a149df5bc9d648f2b400d3f03f8aa139d"><param name="Name" value="winMan"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html"><param name="Name" value="game"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07"><param name="Name" value="~game()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#abf967ec7fa712fde980d9c399e4f778d"><param name="Name" value="gameplay()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"><param name="Name" value="gameplay"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61"><param name="Name" value="gameState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2"><param name="Name" value="handle(SDL_Event &amp;)=0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#add68d9bf9c0e52805f4bb714b1133882"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#add68d9bf9c0e52805f4bb714b1133882"><param name="Name" value="explorer_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#adda2b278aae9bae71b89194313bc23a9"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#adda2b278aae9bae71b89194313bc23a9"><param name="Name" value="intro_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ad98a24e386e2a0363a44e67054988160"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ad98a24e386e2a0363a44e67054988160"><param name="Name" value="notepad_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"><param name="Name" value="pause_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"><param name="Name" value="handle(SDL_Event &amp;event)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e"><param name="Name" value="HORIZONTAL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aab22b0e4971405b7fe57e8409e68793b"><param name="Name" value="icons"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9"><param name="Name" value="init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb"><param name="Name" value="intro"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"><param name="Name" value="intro"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"><param name="Name" value="game"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a139e824c013da025cafc10d68b73aa34"><param name="Name" value="intro"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a139e824c013da025cafc10d68b73aa34"><param name="Name" value="wm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ad12e48028d1cc4b1c288dab77dbe193d"><param name="Name" value="intro_t(game *context)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html"><param name="Name" value="intro_t::slide"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html"><param name="Name" value="intro_t::slide"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a7c36e704b33011d1088d093f88e436bf"><param name="Name" value="dest"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html"><param name="Name" value="intro_t::slide"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a0a4846e82f88facedf50da06b6dd061b"><param name="Name" value="duration"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html"><param name="Name" value="intro_t::slide"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"><param name="Name" value="fadeIn"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html"><param name="Name" value="intro_t::slide"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a409eb856ae821b07dd66f76cbb6a3dbe"><param name="Name" value="fadeOut"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html"><param name="Name" value="intro_t::slide"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#ac153b105d5a7b6639822e2beb06f3467"><param name="Name" value="skippable"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html"><param name="Name" value="intro_t::slide"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"><param name="Name" value="slide(size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture *_texture, SDL_Rect _dest={}, bool skippable=true)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html"><param name="Name" value="intro_t::slide"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#ae876137be1a25a3ac7dfb65802306ad0"><param name="Name" value="texture"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a0439809e2c67c40ea20757ffed70968c"><param name="Name" value="addSlide(SDL_Surface *surface, size_t fadeIn, size_t duration, size_t fadeOut, SDL_Rect dest=SDL_Rect{}, bool centred=true, bool skippable=true)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"><param name="Name" value="BOTH"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6"><param name="Name" value="centre"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a427b58b3e041bb4672278b9e422b8292"><param name="Name" value="centreRect(SDL_Rect &amp;rect, centre centre=centre::BOTH) const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#adda2b278aae9bae71b89194313bc23a9"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e"><param name="Name" value="HORIZONTAL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ad12e48028d1cc4b1c288dab77dbe193d"><param name="Name" value="intro_t(game *context)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#add93912d666cc242e170f15e7e03a808"><param name="Name" value="render() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a1543b2b845c6999165123b34608fcf25"><param name="Name" value="skip"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a97b511d587ca8e05515e35e6418cf1d0"><param name="Name" value="slides"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a104f915a0a592c0db524a70ffc666a60"><param name="Name" value="slideShow(size_t time, bool &amp;click, size_t skipGrace=500)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a6db4493f9b8695a1bed2f16f3af45870"><param name="Name" value="startTime"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a09c3876e890a37be7a17dbbb0084d4da"><param name="Name" value="update() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc"><param name="Name" value="VERTICAL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html"><param name="Name" value="intro_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a56e63618edf895c263cda8a8c8ef45e6"><param name="Name" value="~intro_t()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#aea965f72ccf4510850fc844e97c51c19"><param name="Name" value="items"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a312b35908588ed45384a73e3ad7f4992"><param name="Name" value="lineWrapLength"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061"><param name="Name" value="loadTexture(const char *path)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a4f416f46f79adaa51c134ecce60adae2"><param name="Name" value="loadThread"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a2d7a4173fc868770359b717479f39b3f"><param name="Name" value="lock()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d0f/main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="main(int argc, char **argv)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d0f/main_8cc.html"><param name="Name" value="main.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d0f/main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="main(int argc, char **argv)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d0f/main_8cc.html"><param name="Name" value="main.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d0f/main_8cc.html#a70fa023bb5d371dac47448b690c83581"><param name="Name" value="skipIntro"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a7d010ea5627621067a7686f330d5e104"><param name="Name" value="mainRenderer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#acc01740eae91dd462ec52a9d7a3ec974"><param name="Name" value="mainWindow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#ac71bfd4415fdd0075d2115aa0ffe2bf6"><param name="Name" value="mutex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a9cb2c4b54f466e5535c38cdac94ea0b4"><param name="Name" value="nameWrapLength"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"><param name="Name" value="notepad"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a041f88bc8a008ca3baca643fb12a1004"><param name="Name" value="notepad"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a041f88bc8a008ca3baca643fb12a1004"><param name="Name" value="wm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#aca34ffdf14d61518257d5ff32cbda77f"><param name="Name" value="notepad_t(game *context)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a4416b91e1e20a180f9a00855b6f9c459"><param name="Name" value="background"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a71add6ff4e2c0947e3043df553695bd1"><param name="Name" value="currentData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a6766a5c1170ee8fab7ecdb209f0d2076"><param name="Name" value="entry"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#af6ff2f6dffb32c3fd6edc955c4b0dfba"><param name="Name" value="entryRect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ad98a24e386e2a0363a44e67054988160"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a312b35908588ed45384a73e3ad7f4992"><param name="Name" value="lineWrapLength"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#aca34ffdf14d61518257d5ff32cbda77f"><param name="Name" value="notepad_t(game *context)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ade41e5a025182a3a851e078e8fbbe4af"><param name="Name" value="prevData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a08c6c7349f0912c9f547b25fa8189f9a"><param name="Name" value="render() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a6af0111089b6735d3e21cdfb1b198e65"><param name="Name" value="scale"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ab177e5696b0a4925d4309ce90e5f66aa"><param name="Name" value="update() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html"><param name="Name" value="notepad_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ac047cc39e7ff3f954057314e6298d6b1"><param name="Name" value="~notepad_t()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6"><param name="Name" value="notepadData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/d14/explorer_8cc.html#aa3c2bd85b3a50c8377042bf30c9b0331"><param name="Name" value="operator++(explorerData &amp;save)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a718f320271041e9c08cdfbdc58cc3a64"><param name="Name" value="OSOverlay"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#abc176f557fb1f594687017c268bbdfe4"><param name="Name" value="overlay"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"><param name="Name" value="pause"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"><param name="Name" value="pause"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"><param name="Name" value="wm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a840256e71d9ff0f489090fff8f07c946"><param name="Name" value="pause_t(game *context)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a148437ac9cfb0970822384f99c03ac77"><param name="Name" value="exit"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a3e67f3211198db082a0ac245dad42212"><param name="Name" value="exitHover"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a9034485c8caf7cd1dfddf7f300542747"><param name="Name" value="exitPos"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ae058f8bee107894a18b483c2433b719e"><param name="Name" value="exitState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#abc176f557fb1f594687017c268bbdfe4"><param name="Name" value="overlay"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a840256e71d9ff0f489090fff8f07c946"><param name="Name" value="pause_t(game *context)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"><param name="Name" value="render() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a3e20af849346bcd336f939865a270c5c"><param name="Name" value="resume"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a0c32a4f98b58aa3806699382970ec491"><param name="Name" value="resumeHover"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ae945e4a533d1de46870bffe0e838d8ae"><param name="Name" value="resumePos"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#af9103128c6bc5af691f2fc46209e3217"><param name="Name" value="resumeState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"><param name="Name" value="update() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html"><param name="Name" value="pause_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a8e6961a2a9fb61c99e92face62126593"><param name="Name" value="~pause_t()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"><param name="Name" value="pauseBounds"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"><param name="Name" value="paused"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/dd8/scene_8hh.html#a65ce2d414e762882854d47ab28016bb4"><param name="Name" value="pix(val)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a392ea9253c1a69cd42b0d45547568eb0"><param name="Name" value="pixelSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ade41e5a025182a3a851e078e8fbbe4af"><param name="Name" value="prevData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#aeeb2aa5c58317a29463ce527b2ade757"><param name="Name" value="render() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#aeeb2aa5c58317a29463ce527b2ade757"><param name="Name" value="explorer_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#add93912d666cc242e170f15e7e03a808"><param name="Name" value="render() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#add93912d666cc242e170f15e7e03a808"><param name="Name" value="intro_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a08c6c7349f0912c9f547b25fa8189f9a"><param name="Name" value="render() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a08c6c7349f0912c9f547b25fa8189f9a"><param name="Name" value="notepad_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"><param name="Name" value="render() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"><param name="Name" value="pause_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a7c218380f822d46bee781520e855a7de"><param name="Name" value="render()=0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"><param name="Name" value="render()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a3e20af849346bcd336f939865a270c5c"><param name="Name" value="resume"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a3e20af849346bcd336f939865a270c5c"><param name="Name" value="pause_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"><param name="Name" value="resume"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"><param name="Name" value="wm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a0c32a4f98b58aa3806699382970ec491"><param name="Name" value="resumeHover"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ae945e4a533d1de46870bffe0e838d8ae"><param name="Name" value="resumePos"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#af9103128c6bc5af691f2fc46209e3217"><param name="Name" value="resumeState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a40830fddee0e376a60dba4876b7bc7e3"><param name="Name" value="saveData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#a6af0111089b6735d3e21cdfb1b198e65"><param name="Name" value="scale"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html"><param name="Name" value="scene"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90"><param name="Name" value="scene(game *gameContext)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/dd8/scene_8hh.html#a65ce2d414e762882854d47ab28016bb4"><param name="Name" value="scene.hh"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html"><param name="Name" value="scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"><param name="Name" value="context"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html"><param name="Name" value="scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2"><param name="Name" value="handle(SDL_Event &amp;)=0"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html"><param name="Name" value="scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061"><param name="Name" value="loadTexture(const char *path)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html"><param name="Name" value="scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a7c218380f822d46bee781520e855a7de"><param name="Name" value="render()=0"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html"><param name="Name" value="scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90"><param name="Name" value="scene(game *gameContext)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html"><param name="Name" value="scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"><param name="Name" value="update()=0"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html"><param name="Name" value="scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496"><param name="Name" value="~scene()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab"><param name="Name" value="sceneData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a"><param name="Name" value="scenes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a74c272eea906013e6af7480d8d31f431"><param name="Name" value="silence"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"><param name="Name" value="size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a1543b2b845c6999165123b34608fcf25"><param name="Name" value="skip"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d0f/main_8cc.html#a70fa023bb5d371dac47448b690c83581"><param name="Name" value="skipIntro"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#ac153b105d5a7b6639822e2beb06f3467"><param name="Name" value="skippable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"><param name="Name" value="slide(size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture *_texture, SDL_Rect _dest={}, bool skippable=true)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a97b511d587ca8e05515e35e6418cf1d0"><param name="Name" value="slides"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a104f915a0a592c0db524a70ffc666a60"><param name="Name" value="slideShow(size_t time, bool &amp;click, size_t skipGrace=500)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a6db4493f9b8695a1bed2f16f3af45870"><param name="Name" value="startTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a66a0e69c41270ee22849d56d12e12749"><param name="Name" value="state"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"><param name="Name" value="terminating"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#ae876137be1a25a3ac7dfb65802306ad0"><param name="Name" value="texture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#af86a2de615bbeee89fc31586b8875296"><param name="Name" value="unlock()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a099b72112db6de2a3d8f6ea0b724fae5"><param name="Name" value="update() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a099b72112db6de2a3d8f6ea0b724fae5"><param name="Name" value="explorer_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a09c3876e890a37be7a17dbbb0084d4da"><param name="Name" value="update() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a09c3876e890a37be7a17dbbb0084d4da"><param name="Name" value="intro_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ab177e5696b0a4925d4309ce90e5f66aa"><param name="Name" value="update() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ab177e5696b0a4925d4309ce90e5f66aa"><param name="Name" value="notepad_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"><param name="Name" value="update() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"><param name="Name" value="pause_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"><param name="Name" value="update()=0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"><param name="Name" value="update()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc"><param name="Name" value="VERTICAL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"><param name="Name" value="wasSilence"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a149df5bc9d648f2b400d3f03f8aa139d"><param name="Name" value="winMan"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a149df5bc9d648f2b400d3f03f8aa139d"><param name="Name" value="game"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a23c6b2179ddaad3cde159dd42e163beb"><param name="Name" value="winMan"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a23c6b2179ddaad3cde159dd42e163beb"><param name="Name" value="wmInitData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#ae80ff7518d15add5e8a639bc1b509ed4"><param name="Name" value="wm()=default"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a963abfdd7d229db5869e59a97a301f47"><param name="Name" value="wm(game *context)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#af9afae9fdbb9db6fdb6d62bf934ab5c3"><param name="Name" value="context"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a2abf8c7eedd04f896cbf0ef50358f1c7"><param name="Name" value="current"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#adbe11e0ba621af1815bf54fde8244645"><param name="Name" value="explorer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"><param name="Name" value="handle(SDL_Event &amp;event)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aab22b0e4971405b7fe57e8409e68793b"><param name="Name" value="icons"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a139e824c013da025cafc10d68b73aa34"><param name="Name" value="intro"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a041f88bc8a008ca3baca643fb12a1004"><param name="Name" value="notepad"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a718f320271041e9c08cdfbdc58cc3a64"><param name="Name" value="OSOverlay"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"><param name="Name" value="pause"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"><param name="Name" value="pauseBounds"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"><param name="Name" value="render()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"><param name="Name" value="resume"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"><param name="Name" value="update()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"><param name="Name" value="wasSilence"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#ae80ff7518d15add5e8a639bc1b509ed4"><param name="Name" value="wm()=default"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a963abfdd7d229db5869e59a97a301f47"><param name="Name" value="wm(game *context)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d5e/game_8cc.html#a99ac6b71536a9029028ea49afd42fab0"><param name="Name" value="wmInit(void *data)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html"><param name="Name" value="wmInitData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#ac7929391314691a337cafde524d5acfc"><param name="Name" value="wmInitData(wm *_winMan, game *_context, SDL_mutex *_mutex)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html"><param name="Name" value="wmInitData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a8b40ddc033a30ca9233002d0b965f8e8"><param name="Name" value="context"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html"><param name="Name" value="wmInitData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a2d7a4173fc868770359b717479f39b3f"><param name="Name" value="lock()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html"><param name="Name" value="wmInitData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#af86a2de615bbeee89fc31586b8875296"><param name="Name" value="unlock()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html"><param name="Name" value="wmInitData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a23c6b2179ddaad3cde159dd42e163beb"><param name="Name" value="winMan"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html"><param name="Name" value="wmInitData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#ac7929391314691a337cafde524d5acfc"><param name="Name" value="wmInitData(wm *_winMan, game *_context, SDL_mutex *_mutex)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html"><param name="Name" value="wmInitData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a1333b79b5c832494ebc67333cd1b30a6"><param name="Name" value="~wmInitData()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a44fc2dcde828c85abf707bb5ff024b50"><param name="Name" value="~explorer_t()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07"><param name="Name" value="~game()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a56e63618edf895c263cda8a8c8ef45e6"><param name="Name" value="~intro_t()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ac047cc39e7ff3f954057314e6298d6b1"><param name="Name" value="~notepad_t()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a8e6961a2a9fb61c99e92face62126593"><param name="Name" value="~pause_t()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496"><param name="Name" value="~scene()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a1333b79b5c832494ebc67333cd1b30a6"><param name="Name" value="~wmInitData()"></OBJECT>
+</UL>
+</BODY>
+</HTML>

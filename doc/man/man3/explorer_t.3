@@ -1,0 +1,190 @@
+.TH "explorer_t" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+explorer_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <explorer\&.hh>\fP
+.PP
+Inherits \fBscene\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBexplorer_t\fP (\fBgame\fP *\fBcontext\fP)"
+.br
+.RI "Construct a new explorer t object\&. "
+.ti -1c
+.RI "\fB~explorer_t\fP ()"
+.br
+.RI "Destroy the explorer t object\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.br
+.RI "Update logic for the explorer t object\&. "
+.ti -1c
+.RI "void \fBrender\fP () override"
+.br
+.RI "Renders explorer, and files\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
+.br
+.RI "Handles mouse movement and file selection\&. "
+.ti -1c
+.RI "SDL_Texture * \fBcreateFilesystemEntry\fP (const char *text, const char *\fBsize\fP)"
+.br
+.RI "Creates texture to display in filesystem\&. "
+.in -1c
+
+Public Member Functions inherited from \fBscene\fP
+.in +1c
+.ti -1c
+.RI "SDL_Texture * \fBloadTexture\fP (const char *path)"
+.br
+.RI "Loads texture based on path\&. "
+.ti -1c
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
+.br
+.RI "Construct a new scene object\&. "
+.ti -1c
+.RI "virtual \fB~scene\fP ()"
+.br
+.RI "Destroy the scene object\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBexplorerData\fP \fBsaveData\fP"
+.br
+.RI "Information of game state\&. "
+.ti -1c
+.RI "std::vector< std::pair< SDL_Texture *, SDL_Rect > > \fBitems\fP"
+.br
+.RI "Explorer items to be rendered\&. "
+.ti -1c
+.RI "SDL_Texture * \fBbackground\fP"
+.br
+.RI "Background of explorer\&. "
+.ti -1c
+.RI "const int \fBnameWrapLength\fP"
+.br
+.RI "Maximum length of the name in texture\&. "
+.ti -1c
+.RI "const SDL_Rect \fBdownloadBounds\fP"
+.br
+.RI "Position of the download button\&. "
+.in -1c
+
+Public Attributes inherited from \fBscene\fP
+.in +1c
+.ti -1c
+.RI "\fBgame\fP * \fBcontext\fP"
+.br
+.RI "Game context\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "explorer_t::explorer_t (\fBgame\fP * context)"
+
+.PP
+Construct a new explorer t object\&. Called only once when WM is initialised
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI_context\fP game context 
+.RE
+.PP
+
+.SS "explorer_t::~explorer_t ()"
+
+.PP
+Destroy the explorer t object\&. Called only when the wm is destroyed 
+.SH "Member Function Documentation"
+.PP 
+.SS "SDL_Texture * explorer_t::createFilesystemEntry (const char * text, const char * size)"
+
+.PP
+Creates texture to display in filesystem\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP Text to be inserted as name 
+.br
+\fIsize\fP Text to be inserted in size 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+SDL_Texture* Texture at size width x 40 to make the text itself more readable 
+.RE
+.PP
+
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Handles mouse movement and file selection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevent\fP Event to be handled 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.PP
+Implements \fBscene\fP\&.
+.SS "void explorer_t::render ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Renders explorer, and files\&. 
+.PP
+Implements \fBscene\fP\&.
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Update logic for the explorer t object\&. Realistically, does absolutely nothing\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.PP
+Implements \fBscene\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "SDL_Texture* explorer_t::background"
+
+.PP
+Background of explorer\&. 
+.SS "const SDL_Rect explorer_t::downloadBounds"
+
+.PP
+Position of the download button\&. 
+.SS "std::vector<std::pair<SDL_Texture*, SDL_Rect> > explorer_t::items"
+
+.PP
+Explorer items to be rendered\&. 
+.SS "const int explorer_t::nameWrapLength"
+
+.PP
+Maximum length of the name in texture\&. 
+.SS "\fBexplorerData\fP explorer_t::saveData"
+
+.PP
+Information of game state\&. Stores what entries are available to the player 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classnotepad__t" xml:lang="en-US">
+<title>notepad_t Class Reference</title>
+<indexterm><primary>notepad_t</primary></indexterm>
+<para>
+<computeroutput>#include &lt;notepad.hh&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for notepad_t:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d03/classnotepad__t.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f">notepad_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>)</para>
+
+<para>Construct a new notepad t object. </para>
+</listitem>
+            <listitem><para><link linkend="_classnotepad__t_1ac047cc39e7ff3f954057314e6298d6b1">~notepad_t</link> ()</para>
+
+<para>Destroy the notepad t object. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">update</link> () override</para>
+
+<para>Checks if the current data is the same as the data stored previously. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a">render</link> () override</para>
+
+<para>Renders notepad, and entry. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classnotepad__t_1ad98a24e386e2a0363a44e67054988160">handle</link> (SDL_Event &amp;event) override</para>
+
+<para>Handles event. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
+            <listitem><para>SDL_Texture * <link linkend="_classscene_1a5d4681a41f14704a05c4f84569888061">loadTexture</link> (const char *path)</para>
+
+<para>Loads texture based on path. </para>
+</listitem>
+            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+
+<para>Construct a new scene object. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496">~scene</link> ()</para>
+
+<para>Destroy the scene object. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>SDL_Texture * <link linkend="_classnotepad__t_1a4416b91e1e20a180f9a00855b6f9c459">background</link></para>
+
+<para>Background of the notepad as a texture. </para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classnotepad__t_1a6766a5c1170ee8fab7ecdb209f0d2076">entry</link></para>
+
+<para>Text of the notepad, as a texture. </para>
+</listitem>
+            <listitem><para>const int <link linkend="_classnotepad__t_1a312b35908588ed45384a73e3ad7f4992">lineWrapLength</link></para>
+
+<para>Length before the note wraps the length. </para>
+</listitem>
+            <listitem><para><link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link> <link linkend="_classnotepad__t_1a71add6ff4e2c0947e3043df553695bd1">currentData</link></para>
+
+<para>The current entry. </para>
+</listitem>
+            <listitem><para><link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link> <link linkend="_classnotepad__t_1ade41e5a025182a3a851e078e8fbbe4af">prevData</link></para>
+
+<para>The last entry that was there when notepad was exited. </para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classnotepad__t_1af6ff2f6dffb32c3fd6edc955c4b0dfba">entryRect</link></para>
+
+<para>Position of the entry. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+
+<para>Game context. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static constexpr double <link linkend="_classnotepad__t_1a6af0111089b6735d3e21cdfb1b198e65">scale</link> = 1.7</para>
+
+<para>The multiplier by which the text is scaled <emphasis role="bold">down</emphasis> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f"/><section>
+    <title>notepad_t()</title>
+<indexterm><primary>notepad_t</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>notepad_t</secondary></indexterm>
+<para><computeroutput>notepad_t::notepad_t (<link linkend="_classgame">game</link> * context)</computeroutput></para><para>
+
+<para>Construct a new notepad t object. </para>
+</para>
+
+<para>Called only once when WM is initialised</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>_context</entry><entry>
+<para>game context </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classnotepad__t_1ac047cc39e7ff3f954057314e6298d6b1"/><section>
+    <title>~notepad_t()</title>
+<indexterm><primary>~notepad_t</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>~notepad_t</secondary></indexterm>
+<para><computeroutput>notepad_t::~notepad_t ( )</computeroutput></para><para>
+
+<para>Destroy the notepad t object. </para>
+</para>
+
+<para>Called only when the wm is destroyed </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classnotepad__t_1ad98a24e386e2a0363a44e67054988160"/><section>
+    <title>handle()</title>
+<indexterm><primary>handle</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; notepad_t::handle (SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Handles event. </para>
+</para>
+
+<para>Realistically, does nothing unless I add scrolling.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>event</entry><entry>
+<para>Event to be handled </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene</link>.</para>
+</section>
+<anchor xml:id="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a"/><section>
+    <title>render()</title>
+<indexterm><primary>render</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>render</secondary></indexterm>
+<para><computeroutput>void notepad_t::render ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Renders notepad, and entry. </para>
+</para>
+<para>
+Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene</link>.</para>
+</section>
+<anchor xml:id="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; notepad_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Checks if the current data is the same as the data stored previously. </para>
+</para>
+
+<para>Does nothing if it&apos;s the same.</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">scene</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classnotepad__t_1a4416b91e1e20a180f9a00855b6f9c459"/><section>
+    <title>background</title>
+<indexterm><primary>background</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>background</secondary></indexterm>
+<para><computeroutput>SDL_Texture* notepad_t::background</computeroutput></para><para>
+
+<para>Background of the notepad as a texture. </para>
+</para>
+</section>
+<anchor xml:id="_classnotepad__t_1a71add6ff4e2c0947e3043df553695bd1"/><section>
+    <title>currentData</title>
+<indexterm><primary>currentData</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>currentData</secondary></indexterm>
+<para><computeroutput><link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link> notepad_t::currentData</computeroutput></para><para>
+
+<para>The current entry. </para>
+</para>
+</section>
+<anchor xml:id="_classnotepad__t_1a6766a5c1170ee8fab7ecdb209f0d2076"/><section>
+    <title>entry</title>
+<indexterm><primary>entry</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>entry</secondary></indexterm>
+<para><computeroutput>SDL_Texture* notepad_t::entry</computeroutput></para><para>
+
+<para>Text of the notepad, as a texture. </para>
+</para>
+</section>
+<anchor xml:id="_classnotepad__t_1af6ff2f6dffb32c3fd6edc955c4b0dfba"/><section>
+    <title>entryRect</title>
+<indexterm><primary>entryRect</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>entryRect</secondary></indexterm>
+<para><computeroutput>SDL_Rect notepad_t::entryRect</computeroutput></para><para>
+
+<para>Position of the entry. </para>
+</para>
+</section>
+<anchor xml:id="_classnotepad__t_1a312b35908588ed45384a73e3ad7f4992"/><section>
+    <title>lineWrapLength</title>
+<indexterm><primary>lineWrapLength</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>lineWrapLength</secondary></indexterm>
+<para><computeroutput>const int notepad_t::lineWrapLength</computeroutput></para><para>
+
+<para>Length before the note wraps the length. </para>
+</para>
+</section>
+<anchor xml:id="_classnotepad__t_1ade41e5a025182a3a851e078e8fbbe4af"/><section>
+    <title>prevData</title>
+<indexterm><primary>prevData</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>prevData</secondary></indexterm>
+<para><computeroutput><link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link> notepad_t::prevData</computeroutput></para><para>
+
+<para>The last entry that was there when notepad was exited. </para>
+</para>
+</section>
+<anchor xml:id="_classnotepad__t_1a6af0111089b6735d3e21cdfb1b198e65"/><section>
+    <title>scale</title>
+<indexterm><primary>scale</primary><secondary>notepad_t</secondary></indexterm>
+<indexterm><primary>notepad_t</primary><secondary>scale</secondary></indexterm>
+<para><computeroutput>double notepad_t::scale = 1.7<computeroutput>[static]</computeroutput>, <computeroutput>[constexpr]</computeroutput></computeroutput></para><para>
+
+<para>The multiplier by which the text is scaled <emphasis role="bold">down</emphasis> </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/scenes/<link linkend="_notepad_8hh">notepad.hh</link>src/scenes/<link linkend="_notepad_8cc">notepad.cc</link></section>
+</section>

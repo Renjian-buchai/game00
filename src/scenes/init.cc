@@ -147,11 +147,13 @@ intro_t::~intro_t() {
   for (slide& _slide : slides) {
     SDL_DestroyTexture(_slide.texture);
   }
+  slides.clear();
 }
 
 std::pair<scenes, sceneData> intro_t::update() {
   size_t deltaTime = SDL_GetTicks64() - startTime;
   if (deltaTime > 19000) {
+    this->~intro_t();
     return std::make_pair(scenes::explorer, std::monostate());
   }
   return std::make_pair(scenes::intro, std::monostate());

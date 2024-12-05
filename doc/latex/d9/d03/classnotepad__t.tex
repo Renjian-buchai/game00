@@ -1,0 +1,228 @@
+\doxysection{notepad\+\_\+t Class Reference}
+\label{classnotepad__t}\index{notepad\_t@{notepad\_t}}
+
+
+{\ttfamily \#include $<$notepad.\+hh$>$}
+
+Inheritance diagram for notepad\+\_\+t\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/d03/classnotepad__t}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnotepad__t_aca34ffdf14d61518257d5ff32cbda77f}{notepad\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}})
+\begin{DoxyCompactList}\small\item\em Construct a new notepad t object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classnotepad__t_ac047cc39e7ff3f954057314e6298d6b1}{\texorpdfstring{$\sim$}{\string~}notepad\+\_\+t}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the notepad t object. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classnotepad__t_ab177e5696b0a4925d4309ce90e5f66aa}{update}} () override
+\begin{DoxyCompactList}\small\item\em Checks if the current data is the same as the data stored previously. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classnotepad__t_a08c6c7349f0912c9f547b25fa8189f9a}{render}} () override
+\begin{DoxyCompactList}\small\item\em Renders notepad, and entry. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classnotepad__t_ad98a24e386e2a0363a44e67054988160}{handle}} (SDL\+\_\+\+Event \&event) override
+\begin{DoxyCompactList}\small\item\em Handles event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classscene}{scene}}}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
+\begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classscene_a1012571c9524a29524b8b9d680715e90}{scene}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classnotepad__t_a4416b91e1e20a180f9a00855b6f9c459}{background}}
+\begin{DoxyCompactList}\small\item\em Background of the notepad as a texture. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classnotepad__t_a6766a5c1170ee8fab7ecdb209f0d2076}{entry}}
+\begin{DoxyCompactList}\small\item\em Text of the notepad, as a texture. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classnotepad__t_a312b35908588ed45384a73e3ad7f4992}{line\+Wrap\+Length}}
+\begin{DoxyCompactList}\small\item\em Length before the note wraps the length. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{enum_8hh_ac37de80148c8c914ee47baccc98c59e6}{notepad\+Data}} \mbox{\hyperlink{classnotepad__t_a71add6ff4e2c0947e3043df553695bd1}{current\+Data}}
+\begin{DoxyCompactList}\small\item\em The current entry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{enum_8hh_ac37de80148c8c914ee47baccc98c59e6}{notepad\+Data}} \mbox{\hyperlink{classnotepad__t_ade41e5a025182a3a851e078e8fbbe4af}{prev\+Data}}
+\begin{DoxyCompactList}\small\item\em The last entry that was there when notepad was exited. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classnotepad__t_af6ff2f6dffb32c3fd6edc955c4b0dfba}{entry\+Rect}}
+\begin{DoxyCompactList}\small\item\em Position of the entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classscene}{scene}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}}
+\begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr double \mbox{\hyperlink{classnotepad__t_a6af0111089b6735d3e21cdfb1b198e65}{scale}} = 1.\+7
+\begin{DoxyCompactList}\small\item\em The multiplier by which the text is scaled {\bfseries{down}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{notepad\_t@{notepad\_t}!notepad\_t@{notepad\_t}}
+\index{notepad\_t@{notepad\_t}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{notepad\_t()}{notepad\_t()}}
+{\footnotesize\ttfamily \label{classnotepad__t_aca34ffdf14d61518257d5ff32cbda77f} 
+notepad\+\_\+t\+::notepad\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new notepad t object. 
+
+Called only once when WM is initialised
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+context} & game context \\
+\hline
+\end{DoxyParams}
+\index{notepad\_t@{notepad\_t}!````~notepad\_t@{\texorpdfstring{$\sim$}{\string~}notepad\_t}}
+\index{````~notepad\_t@{\texorpdfstring{$\sim$}{\string~}notepad\_t}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}notepad\_t()}{\string~notepad\_t()}}
+{\footnotesize\ttfamily \label{classnotepad__t_ac047cc39e7ff3f954057314e6298d6b1} 
+notepad\+\_\+t\+::\texorpdfstring{$\sim$}{\string~}notepad\+\_\+t (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destroy the notepad t object. 
+
+Called only when the wm is destroyed 
+
+\doxysubsection{Member Function Documentation}
+\index{notepad\_t@{notepad\_t}!handle@{handle}}
+\index{handle@{handle}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classnotepad__t_ad98a24e386e2a0363a44e67054988160} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ notepad\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles event. 
+
+Realistically, does nothing unless I add scrolling.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classscene_a56dec35146b15669e3cf054ced2f4be2}{scene}}.
+
+\index{notepad\_t@{notepad\_t}!render@{render}}
+\index{render@{render}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classnotepad__t_a08c6c7349f0912c9f547b25fa8189f9a} 
+void notepad\+\_\+t\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders notepad, and entry. 
+
+
+
+Implements \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{scene}}.
+
+\index{notepad\_t@{notepad\_t}!update@{update}}
+\index{update@{update}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classnotepad__t_ab177e5696b0a4925d4309ce90e5f66aa} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ notepad\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the current data is the same as the data stored previously. 
+
+Does nothing if it\textquotesingle{}s the same.
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{scene}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\index{notepad\_t@{notepad\_t}!background@{background}}
+\index{background@{background}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \label{classnotepad__t_a4416b91e1e20a180f9a00855b6f9c459} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} notepad\+\_\+t\+::background}
+
+
+
+Background of the notepad as a texture. 
+
+\index{notepad\_t@{notepad\_t}!currentData@{currentData}}
+\index{currentData@{currentData}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{currentData}{currentData}}
+{\footnotesize\ttfamily \label{classnotepad__t_a71add6ff4e2c0947e3043df553695bd1} 
+\mbox{\hyperlink{enum_8hh_ac37de80148c8c914ee47baccc98c59e6}{notepad\+Data}} notepad\+\_\+t\+::current\+Data}
+
+
+
+The current entry. 
+
+\index{notepad\_t@{notepad\_t}!entry@{entry}}
+\index{entry@{entry}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{entry}{entry}}
+{\footnotesize\ttfamily \label{classnotepad__t_a6766a5c1170ee8fab7ecdb209f0d2076} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} notepad\+\_\+t\+::entry}
+
+
+
+Text of the notepad, as a texture. 
+
+\index{notepad\_t@{notepad\_t}!entryRect@{entryRect}}
+\index{entryRect@{entryRect}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{entryRect}{entryRect}}
+{\footnotesize\ttfamily \label{classnotepad__t_af6ff2f6dffb32c3fd6edc955c4b0dfba} 
+SDL\+\_\+\+Rect notepad\+\_\+t\+::entry\+Rect}
+
+
+
+Position of the entry. 
+
+\index{notepad\_t@{notepad\_t}!lineWrapLength@{lineWrapLength}}
+\index{lineWrapLength@{lineWrapLength}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{lineWrapLength}{lineWrapLength}}
+{\footnotesize\ttfamily \label{classnotepad__t_a312b35908588ed45384a73e3ad7f4992} 
+const int notepad\+\_\+t\+::line\+Wrap\+Length}
+
+
+
+Length before the note wraps the length. 
+
+\index{notepad\_t@{notepad\_t}!prevData@{prevData}}
+\index{prevData@{prevData}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{prevData}{prevData}}
+{\footnotesize\ttfamily \label{classnotepad__t_ade41e5a025182a3a851e078e8fbbe4af} 
+\mbox{\hyperlink{enum_8hh_ac37de80148c8c914ee47baccc98c59e6}{notepad\+Data}} notepad\+\_\+t\+::prev\+Data}
+
+
+
+The last entry that was there when notepad was exited. 
+
+\index{notepad\_t@{notepad\_t}!scale@{scale}}
+\index{scale@{scale}!notepad\_t@{notepad\_t}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \label{classnotepad__t_a6af0111089b6735d3e21cdfb1b198e65} 
+double notepad\+\_\+t\+::scale = 1.\+7\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+The multiplier by which the text is scaled {\bfseries{down}} 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/scenes/\mbox{\hyperlink{notepad_8hh}{notepad.\+hh}}\item 
+src/scenes/\mbox{\hyperlink{notepad_8cc}{notepad.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,158 @@
+.TH "game" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+game
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <game\&.hh>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum class \fBgameState\fP : uint8_t { \fBterminating\fP, \fBintro\fP, \fBgameplay\fP, \fBpaused\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBgame\fP ()"
+.br
+.RI "Construct a new game object\&. "
+.ti -1c
+.RI "\fB~game\fP ()"
+.br
+.RI "Destroy the game object\&. "
+.ti -1c
+.RI "void \fBgameplay\fP ()"
+.br
+.RI "Runs the WM\&. Waits for the WM to be initialised, first\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBgameState\fP \fBstate\fP = \fBgameState::intro\fP"
+.br
+.RI "State that the game is in\&. "
+.ti -1c
+.RI "SDL_Rect \fBdispBounds\fP"
+.br
+.RI "Rect containing the screen height and width\&. "
+.ti -1c
+.RI "SDL_Window * \fBmainWindow\fP"
+.br
+.RI "Main window to render to\&. "
+.ti -1c
+.RI "SDL_Renderer * \fBmainRenderer\fP"
+.br
+.RI "Main renderer that renders to mainWindow\&. "
+.ti -1c
+.RI "std::array< Mix_Music *, 4 > \fBbgm\fP"
+.br
+.RI "Background music\&. Randomly selected\&. "
+.ti -1c
+.RI "std::array< Mix_Music *, 6 > \fBsilence\fP"
+.br
+.RI "Different lengths of silence\&. Randomly selected\&. "
+.ti -1c
+.RI "TTF_Font * \fBfont\fP"
+.br
+.RI "Font used for text\&. "
+.ti -1c
+.RI "double \fBpixelSize\fP"
+.br
+.ti -1c
+.RI "\fBwm\fP \fBwinMan\fP"
+.br
+.RI "Windows manager\&. "
+.ti -1c
+.RI "SDL_mutex * \fBmutex\fP"
+.br
+.ti -1c
+.RI "SDL_Thread * \fBloadThread\fP"
+.br
+.RI "Thread that loads winMan\&. "
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum class \fBgame::gameState\fP : uint8_t\fR [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIterminating \fP
+.TP
+\f(BIintro \fP
+.TP
+\f(BIgameplay \fP
+.TP
+\f(BIpaused \fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "game::game ()"
+
+.PP
+Construct a new game object\&. WM will be loaded in a thread\&. 
+.SS "game::~game ()"
+
+.PP
+Destroy the game object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void game::gameplay ()"
+
+.PP
+Runs the WM\&. Waits for the WM to be initialised, first\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "std::array<Mix_Music*, 4> game::bgm"
+
+.PP
+Background music\&. Randomly selected\&. 
+.SS "SDL_Rect game::dispBounds"
+
+.PP
+Rect containing the screen height and width\&. 
+.SS "TTF_Font* game::font"
+
+.PP
+Font used for text\&. 
+.SS "SDL_Thread* game::loadThread"
+
+.PP
+Thread that loads winMan\&. 
+.SS "SDL_Renderer* game::mainRenderer"
+
+.PP
+Main renderer that renders to mainWindow\&. 
+.SS "SDL_Window* game::mainWindow"
+
+.PP
+Main window to render to\&. 
+.SS "SDL_mutex* game::mutex"
+
+.SS "double game::pixelSize"
+Size of virtual pixels per real pixel\&. 
+.br
+ 
+.SS "std::array<Mix_Music*, 6> game::silence"
+
+.PP
+Different lengths of silence\&. Randomly selected\&. 
+.SS "\fBgameState\fP game::state = \fBgameState::intro\fP"
+
+.PP
+State that the game is in\&. 
+.SS "\fBwm\fP game::winMan"
+
+.PP
+Windows manager\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

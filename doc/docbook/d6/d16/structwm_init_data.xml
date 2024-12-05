@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structwm_init_data" xml:lang="en-US">
+<title>wmInitData Struct Reference</title>
+<indexterm><primary>wmInitData</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structwm_init_data_1ac7929391314691a337cafde524d5acfc">wmInitData</link> (<link linkend="_classwm">wm</link> *_winMan, <link linkend="_classgame">game</link> *_context, SDL_mutex *_mutex)</para>
+</listitem>
+            <listitem><para><link linkend="_structwm_init_data_1a1333b79b5c832494ebc67333cd1b30a6">~wmInitData</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_structwm_init_data_1a2d7a4173fc868770359b717479f39b3f">lock</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_structwm_init_data_1af86a2de615bbeee89fc31586b8875296">unlock</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classwm">wm</link> * <link linkend="_structwm_init_data_1a23c6b2179ddaad3cde159dd42e163beb">winMan</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_structwm_init_data_1a8b40ddc033a30ca9233002d0b965f8e8">context</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_structwm_init_data_1ac7929391314691a337cafde524d5acfc"/><section>
+    <title>wmInitData()</title>
+<indexterm><primary>wmInitData</primary><secondary>wmInitData</secondary></indexterm>
+<indexterm><primary>wmInitData</primary><secondary>wmInitData</secondary></indexterm>
+<para><computeroutput>wmInitData::wmInitData (<link linkend="_classwm">wm</link> * _winMan, <link linkend="_classgame">game</link> * _context, SDL_mutex * _mutex)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_structwm_init_data_1a1333b79b5c832494ebc67333cd1b30a6"/><section>
+    <title>~wmInitData()</title>
+<indexterm><primary>~wmInitData</primary><secondary>wmInitData</secondary></indexterm>
+<indexterm><primary>wmInitData</primary><secondary>~wmInitData</secondary></indexterm>
+<para><computeroutput>wmInitData::~wmInitData ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_structwm_init_data_1a2d7a4173fc868770359b717479f39b3f"/><section>
+    <title>lock()</title>
+<indexterm><primary>lock</primary><secondary>wmInitData</secondary></indexterm>
+<indexterm><primary>wmInitData</primary><secondary>lock</secondary></indexterm>
+<para><computeroutput>void wmInitData::lock ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_structwm_init_data_1af86a2de615bbeee89fc31586b8875296"/><section>
+    <title>unlock()</title>
+<indexterm><primary>unlock</primary><secondary>wmInitData</secondary></indexterm>
+<indexterm><primary>wmInitData</primary><secondary>unlock</secondary></indexterm>
+<para><computeroutput>void wmInitData::unlock ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structwm_init_data_1a8b40ddc033a30ca9233002d0b965f8e8"/><section>
+    <title>context</title>
+<indexterm><primary>context</primary><secondary>wmInitData</secondary></indexterm>
+<indexterm><primary>wmInitData</primary><secondary>context</secondary></indexterm>
+<para><computeroutput><link linkend="_classgame">game</link>* wmInitData::context</computeroutput></para></section>
+<anchor xml:id="_structwm_init_data_1a23c6b2179ddaad3cde159dd42e163beb"/><section>
+    <title>winMan</title>
+<indexterm><primary>winMan</primary><secondary>wmInitData</secondary></indexterm>
+<indexterm><primary>wmInitData</primary><secondary>winMan</secondary></indexterm>
+<para><computeroutput><link linkend="_classwm">wm</link>* wmInitData::winMan</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/game/<link linkend="_game_8cc">game.cc</link></section>
+</section>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_scene_8hh" xml:lang="en-US">
+<title>include/scenes/scene.hh File Reference</title>
+<indexterm><primary>include/scenes/scene.hh</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;../../include/pch.hh&quot;<?linebreak?>#include &quot;../enum.hh&quot;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classscene">scene</link></para>
+
+<para>Interface class for scenes. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_scene_8hh_1a65ce2d414e762882854d47ab28016bb4">pix</link>(val)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_scene_8hh_1a65ce2d414e762882854d47ab28016bb4"/><section>
+    <title>pix</title>
+<indexterm><primary>pix</primary><secondary>scene.hh</secondary></indexterm>
+<indexterm><primary>scene.hh</primary><secondary>pix</secondary></indexterm>
+<para><computeroutput>#define pix( val)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="keyword">static_cast&lt;</emphasis><emphasis role="keywordtype">int</emphasis><emphasis role="keyword">&gt;</emphasis>(val&#32;*&#32;context-&gt;pixelSize)
+</programlisting></section>
+</section>
+</section>

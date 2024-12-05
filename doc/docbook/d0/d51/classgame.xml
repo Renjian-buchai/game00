@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame" xml:lang="en-US">
+<title>game Class Reference</title>
+<indexterm><primary>game</primary></indexterm>
+<para>
+<computeroutput>#include &lt;game.hh&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum class <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">gameState</link> : uint8_t { <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db">terminating</link>
+, <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">intro</link>
+, <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057">gameplay</link>
+, <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2">paused</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1ad9c102127b5038f880067ad6c9198d38">game</link> ()</para>
+
+<para>Construct a new game object. </para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1ae87abd20c4d8a7906fa48e690a5f1d07">~game</link> ()</para>
+
+<para>Destroy the game object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classgame_1abf967ec7fa712fde980d9c399e4f778d">gameplay</link> ()</para>
+
+<para>Runs the WM. Waits for the WM to be initialised, first. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">gameState</link> <link linkend="_classgame_1a66a0e69c41270ee22849d56d12e12749">state</link> = <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">gameState::intro</link></para>
+
+<para>State that the game is in. </para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6">dispBounds</link></para>
+
+<para>Rect containing the screen height and width. </para>
+</listitem>
+            <listitem><para>SDL_Window * <link linkend="_classgame_1acc01740eae91dd462ec52a9d7a3ec974">mainWindow</link></para>
+
+<para>Main window to render to. </para>
+</listitem>
+            <listitem><para>SDL_Renderer * <link linkend="_classgame_1a7d010ea5627621067a7686f330d5e104">mainRenderer</link></para>
+
+<para>Main renderer that renders to mainWindow. </para>
+</listitem>
+            <listitem><para>std::array&lt; Mix_Music *, 4 &gt; <link linkend="_classgame_1a9e8b656712b1f8d16290abd3d21b2331">bgm</link></para>
+
+<para>Background music. Randomly selected. </para>
+</listitem>
+            <listitem><para>std::array&lt; Mix_Music *, 6 &gt; <link linkend="_classgame_1a74c272eea906013e6af7480d8d31f431">silence</link></para>
+
+<para>Different lengths of silence. Randomly selected. </para>
+</listitem>
+            <listitem><para>TTF_Font * <link linkend="_classgame_1a63c1e94224ab226955bba8717c64bdc0">font</link></para>
+
+<para>Font used for text. </para>
+</listitem>
+            <listitem><para>double <link linkend="_classgame_1a392ea9253c1a69cd42b0d45547568eb0">pixelSize</link></para>
+</listitem>
+            <listitem><para><link linkend="_classwm">wm</link> <link linkend="_classgame_1a149df5bc9d648f2b400d3f03f8aa139d">winMan</link></para>
+
+<para>Windows manager. </para>
+</listitem>
+            <listitem><para>SDL_mutex * <link linkend="_classgame_1ac71bfd4415fdd0075d2115aa0ffe2bf6">mutex</link></para>
+</listitem>
+            <listitem><para>SDL_Thread * <link linkend="_classgame_1a4f416f46f79adaa51c134ecce60adae2">loadThread</link></para>
+
+<para>Thread that loads winMan. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61"/><section>
+    <title>gameState</title>
+<indexterm><primary>gameState</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>gameState</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">game::gameState</link> : uint8_t<computeroutput>[strong]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>terminating</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>terminating</secondary></indexterm>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"/>terminating</entry><entry></entry></row><row><entry><indexterm><primary>intro</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>intro</secondary></indexterm>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"/>intro</entry><entry></entry></row><row><entry><indexterm><primary>gameplay</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>gameplay</secondary></indexterm>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"/>gameplay</entry><entry></entry></row><row><entry><indexterm><primary>paused</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>paused</secondary></indexterm>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"/>paused</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1ad9c102127b5038f880067ad6c9198d38"/><section>
+    <title>game()</title>
+<indexterm><primary>game</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>game</secondary></indexterm>
+<para><computeroutput>game::game ( )</computeroutput></para><para>
+
+<para>Construct a new game object. </para>
+</para>
+
+<para>WM will be loaded in a thread. </para>
+</section>
+<anchor xml:id="_classgame_1ae87abd20c4d8a7906fa48e690a5f1d07"/><section>
+    <title>~game()</title>
+<indexterm><primary>~game</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>~game</secondary></indexterm>
+<para><computeroutput>game::~game ( )</computeroutput></para><para>
+
+<para>Destroy the game object. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1abf967ec7fa712fde980d9c399e4f778d"/><section>
+    <title>gameplay()</title>
+<indexterm><primary>gameplay</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>gameplay</secondary></indexterm>
+<para><computeroutput>void game::gameplay ( )</computeroutput></para><para>
+
+<para>Runs the WM. Waits for the WM to be initialised, first. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1a9e8b656712b1f8d16290abd3d21b2331"/><section>
+    <title>bgm</title>
+<indexterm><primary>bgm</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>bgm</secondary></indexterm>
+<para><computeroutput>std::array&lt;Mix_Music*, 4&gt; game::bgm</computeroutput></para><para>
+
+<para>Background music. Randomly selected. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6"/><section>
+    <title>dispBounds</title>
+<indexterm><primary>dispBounds</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>dispBounds</secondary></indexterm>
+<para><computeroutput>SDL_Rect game::dispBounds</computeroutput></para><para>
+
+<para>Rect containing the screen height and width. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1a63c1e94224ab226955bba8717c64bdc0"/><section>
+    <title>font</title>
+<indexterm><primary>font</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>font</secondary></indexterm>
+<para><computeroutput>TTF_Font* game::font</computeroutput></para><para>
+
+<para>Font used for text. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1a4f416f46f79adaa51c134ecce60adae2"/><section>
+    <title>loadThread</title>
+<indexterm><primary>loadThread</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>loadThread</secondary></indexterm>
+<para><computeroutput>SDL_Thread* game::loadThread</computeroutput></para><para>
+
+<para>Thread that loads winMan. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1a7d010ea5627621067a7686f330d5e104"/><section>
+    <title>mainRenderer</title>
+<indexterm><primary>mainRenderer</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>mainRenderer</secondary></indexterm>
+<para><computeroutput>SDL_Renderer* game::mainRenderer</computeroutput></para><para>
+
+<para>Main renderer that renders to mainWindow. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1acc01740eae91dd462ec52a9d7a3ec974"/><section>
+    <title>mainWindow</title>
+<indexterm><primary>mainWindow</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>mainWindow</secondary></indexterm>
+<para><computeroutput>SDL_Window* game::mainWindow</computeroutput></para><para>
+
+<para>Main window to render to. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1ac71bfd4415fdd0075d2115aa0ffe2bf6"/><section>
+    <title>mutex</title>
+<indexterm><primary>mutex</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>mutex</secondary></indexterm>
+<para><computeroutput>SDL_mutex* game::mutex</computeroutput></para></section>
+<anchor xml:id="_classgame_1a392ea9253c1a69cd42b0d45547568eb0"/><section>
+    <title>pixelSize</title>
+<indexterm><primary>pixelSize</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>pixelSize</secondary></indexterm>
+<para><computeroutput>double game::pixelSize</computeroutput></para>
+<para>Size of virtual pixels per real pixel. <?linebreak?> </para>
+</section>
+<anchor xml:id="_classgame_1a74c272eea906013e6af7480d8d31f431"/><section>
+    <title>silence</title>
+<indexterm><primary>silence</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>silence</secondary></indexterm>
+<para><computeroutput>std::array&lt;Mix_Music*, 6&gt; game::silence</computeroutput></para><para>
+
+<para>Different lengths of silence. Randomly selected. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1a66a0e69c41270ee22849d56d12e12749"/><section>
+    <title>state</title>
+<indexterm><primary>state</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>state</secondary></indexterm>
+<para><computeroutput><link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">gameState</link> game::state = <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">gameState::intro</link></computeroutput></para><para>
+
+<para>State that the game is in. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1a149df5bc9d648f2b400d3f03f8aa139d"/><section>
+    <title>winMan</title>
+<indexterm><primary>winMan</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>winMan</secondary></indexterm>
+<para><computeroutput><link linkend="_classwm">wm</link> game::winMan</computeroutput></para><para>
+
+<para>Windows manager. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/<link linkend="_game_8hh">game.hh</link>src/game/<link linkend="_game_8cc">game.cc</link>src/game/<link linkend="_gameplay_8cc">gameplay.cc</link></section>
+</section>

@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="df/db1/classscene" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>scene</compoundname>
+    <derivedcompoundref refid="d5/db0/classexplorer__t" prot="public" virt="non-virtual">explorer_t</derivedcompoundref>
+    <derivedcompoundref refid="d9/dea/classintro__t" prot="public" virt="non-virtual">intro_t</derivedcompoundref>
+    <derivedcompoundref refid="d9/d03/classnotepad__t" prot="public" virt="non-virtual">notepad_t</derivedcompoundref>
+    <derivedcompoundref refid="dc/daa/classpause__t" prot="public" virt="non-virtual">pause_t</derivedcompoundref>
+    <includes refid="d5/dd8/scene_8hh" local="no">scene.hh</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+        <definition>game* scene::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>scene::context</qualifiedname>
+        <briefdescription>
+<para>Game context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/scene.hh" line="27" column="8" bodyfile="include/scenes/scene.hh" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture * scene::loadTexture</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>loadTexture</name>
+        <qualifiedname>scene::loadTexture</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Loads texture based on path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File path </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SDL_Texture* Loaded texture </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/scene.hh" line="22" column="15" bodyfile="src/scenes/scene.cc" bodystart="9" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>scene::scene</definition>
+        <argsstring>(game *gameContext)</argsstring>
+        <name>scene</name>
+        <qualifiedname>scene::scene</qualifiedname>
+        <param>
+          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <declname>gameContext</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new scene object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>game context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/scene.hh" line="34" column="3" bodyfile="src/scenes/scene.cc" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>scene::~scene</definition>
+        <argsstring>()</argsstring>
+        <name>~scene</name>
+        <qualifiedname>scene::~scene</qualifiedname>
+        <briefdescription>
+<para>Destroy the scene object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usually called only when wm is destroyed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/scene.hh" line="41" column="11" bodyfile="src/scenes/scene.cc" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>virtual std::pair&lt; scenes, sceneData &gt; scene::update</definition>
+        <argsstring>()=0</argsstring>
+        <name>update</name>
+        <qualifiedname>scene::update</qualifiedname>
+        <reimplementedby refid="d5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">update</reimplementedby>
+        <reimplementedby refid="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">update</reimplementedby>
+        <reimplementedby refid="d9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">update</reimplementedby>
+        <reimplementedby refid="dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca">update</reimplementedby>
+        <briefdescription>
+<para>Updates scene logic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called in <ref refid="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" kindref="member">wm::update()</ref></para>
+<para><simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/scene.hh" line="51" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="df/db1/classscene_1a7c218380f822d46bee781520e855a7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void scene::render</definition>
+        <argsstring>()=0</argsstring>
+        <name>render</name>
+        <qualifiedname>scene::render</qualifiedname>
+        <reimplementedby refid="d5/db0/classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">render</reimplementedby>
+        <reimplementedby refid="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808">render</reimplementedby>
+        <reimplementedby refid="d9/d03/classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a">render</reimplementedby>
+        <reimplementedby refid="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">render</reimplementedby>
+        <briefdescription>
+<para>Renders textures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called in <ref refid="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" kindref="member">wm::render()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/scene.hh" line="58" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>virtual std::pair&lt; scenes, sceneData &gt; scene::handle</definition>
+        <argsstring>(SDL_Event &amp;)=0</argsstring>
+        <name>handle</name>
+        <qualifiedname>scene::handle</qualifiedname>
+        <reimplementedby refid="d5/db0/classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">handle</reimplementedby>
+        <reimplementedby refid="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9">handle</reimplementedby>
+        <reimplementedby refid="d9/d03/classnotepad__t_1ad98a24e386e2a0363a44e67054988160">handle</reimplementedby>
+        <reimplementedby refid="dc/daa/classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac">handle</reimplementedby>
+        <param>
+          <type>SDL_Event &amp;</type>
+        </param>
+        <briefdescription>
+<para>Handles events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called in <ref refid="df/d1c/classwm_1a7f282167450e97df5792d589c9ced058" kindref="member">wm::handle()</ref></para>
+<para><simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/scene.hh" line="68" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Interface class for scenes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>explorer_t</label>
+        <link refid="d5/db0/classexplorer__t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>intro_t</label>
+        <link refid="d9/dea/classintro__t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>notepad_t</label>
+        <link refid="d9/d03/classnotepad__t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pause_t</label>
+        <link refid="dc/daa/classpause__t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>game</label>
+        <link refid="d0/d51/classgame"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>winMan</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>wm</label>
+        <link refid="df/d1c/classwm"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>current</edgelabel>
+          <edgelabel>resume</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/scenes/scene.hh" line="14" column="1" bodyfile="include/scenes/scene.hh" bodystart="14" bodyend="69"/>
+    <listofallmembers>
+      <member refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" prot="public" virt="non-virtual"><scope>scene</scope><name>context</name></member>
+      <member refid="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2" prot="public" virt="pure-virtual"><scope>scene</scope><name>handle</name></member>
+      <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" virt="non-virtual"><scope>scene</scope><name>loadTexture</name></member>
+      <member refid="df/db1/classscene_1a7c218380f822d46bee781520e855a7de" prot="public" virt="pure-virtual"><scope>scene</scope><name>render</name></member>
+      <member refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" prot="public" virt="non-virtual"><scope>scene</scope><name>scene</name></member>
+      <member refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7" prot="public" virt="pure-virtual"><scope>scene</scope><name>update</name></member>
+      <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" virt="virtual"><scope>scene</scope><name>~scene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

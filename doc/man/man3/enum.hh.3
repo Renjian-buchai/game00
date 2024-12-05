@@ -1,0 +1,86 @@
+.TH "include/enum.hh" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/enum.hh
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <cstdint>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "using \fBsceneData\fP = std::variant<std::monostate, \fBnotepadData\fP>"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum class \fBnotepadData\fP : uint8_t { \fBempty\fP, \fBentry1\fP = 1, \fBentry2\fP = 2 }"
+.br
+.RI "Entry currently stored in notepad\&. "
+.ti -1c
+.RI "enum class \fBexplorerData\fP : uint8_t { \fBinit\fP, \fBentry1\fP, \fBentry2\fP, \fBsize\fP }"
+.br
+.RI "Entries list\&. "
+.ti -1c
+.RI "enum class \fBscenes\fP : uint8_t { \fBintro\fP, \fBexplorer\fP, \fBnotepad\fP, \fBpause\fP }"
+.br
+.RI "Scenes list\&. "
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "using \fBsceneData\fP = std::variant<std::monostate, \fBnotepadData\fP>"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum class \fBexplorerData\fP : uint8_t\fR [strong]\fP"
+
+.PP
+Entries list\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIinit \fP
+.TP
+\f(BIentry1 \fP
+.TP
+\f(BIentry2 \fP
+.TP
+\f(BIsize \fP
+.SS "enum class \fBnotepadData\fP : uint8_t\fR [strong]\fP"
+
+.PP
+Entry currently stored in notepad\&. Enumerated continuously and in order to make file name queries convenient 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIempty \fP
+.TP
+\f(BIentry1 \fP
+.TP
+\f(BIentry2 \fP
+.SS "enum class \fBscenes\fP : uint8_t\fR [strong]\fP"
+
+.PP
+Scenes list\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIintro \fP
+.TP
+\f(BIexplorer \fP
+.TP
+\f(BInotepad \fP
+.TP
+\f(BIpause \fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_9551f21d874a3950d142803a40139414" kind="dir">
+    <compoundname>include/scenes</compoundname>
+    <innerfile refid="d4/d7c/explorer_8hh">explorer.hh</innerfile>
+    <innerfile refid="dd/d82/init_8hh">init.hh</innerfile>
+    <innerfile refid="d4/d54/notepad_8hh">notepad.hh</innerfile>
+    <innerfile refid="d4/d90/pause_8hh">pause.hh</innerfile>
+    <innerfile refid="d5/dd8/scene_8hh">scene.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/scenes/"/>
+  </compounddef>
+</doxygen>

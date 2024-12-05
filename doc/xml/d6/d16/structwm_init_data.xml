@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d6/d16/structwm_init_data" kind="struct" language="C++" prot="public">
+    <compoundname>wmInitData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/d16/structwm_init_data_1a23c6b2179ddaad3cde159dd42e163beb" prot="public" static="no" mutable="no">
+        <type><ref refid="df/d1c/classwm" kindref="compound">wm</ref> *</type>
+        <definition>wm* wmInitData::winMan</definition>
+        <argsstring></argsstring>
+        <name>winMan</name>
+        <qualifiedname>wmInitData::winMan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/game/game.cc" line="4" column="6" bodyfile="src/game/game.cc" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d16/structwm_init_data_1a8b40ddc033a30ca9233002d0b965f8e8" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+        <definition>game* wmInitData::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>wmInitData::context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/game/game.cc" line="5" column="8" bodyfile="src/game/game.cc" bodystart="5" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d16/structwm_init_data_1a3cc884818469631e7c4b46a7c7f1dd69" prot="private" static="no" mutable="no">
+        <type>SDL_mutex *</type>
+        <definition>SDL_mutex* wmInitData::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <qualifiedname>wmInitData::mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/game/game.cc" line="8" column="13" bodyfile="src/game/game.cc" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d16/structwm_init_data_1ac7929391314691a337cafde524d5acfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>wmInitData::wmInitData</definition>
+        <argsstring>(wm *_winMan, game *_context, SDL_mutex *_mutex)</argsstring>
+        <name>wmInitData</name>
+        <qualifiedname>wmInitData::wmInitData</qualifiedname>
+        <param>
+          <type><ref refid="df/d1c/classwm" kindref="compound">wm</ref> *</type>
+          <declname>_winMan</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <declname>_context</declname>
+        </param>
+        <param>
+          <type>SDL_mutex *</type>
+          <declname>_mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/game/game.cc" line="11" column="3" bodyfile="src/game/game.cc" bodystart="11" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d16/structwm_init_data_1a1333b79b5c832494ebc67333cd1b30a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>wmInitData::~wmInitData</definition>
+        <argsstring>()</argsstring>
+        <name>~wmInitData</name>
+        <qualifiedname>wmInitData::~wmInitData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/game/game.cc" line="13" column="3" bodyfile="src/game/game.cc" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d16/structwm_init_data_1a2d7a4173fc868770359b717479f39b3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void wmInitData::lock</definition>
+        <argsstring>()</argsstring>
+        <name>lock</name>
+        <qualifiedname>wmInitData::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/game/game.cc" line="14" column="8" bodyfile="src/game/game.cc" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d16/structwm_init_data_1af86a2de615bbeee89fc31586b8875296" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void wmInitData::unlock</definition>
+        <argsstring>()</argsstring>
+        <name>unlock</name>
+        <qualifiedname>wmInitData::unlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/game/game.cc" line="15" column="8" bodyfile="src/game/game.cc" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>game</label>
+        <link refid="d0/d51/classgame"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>winMan</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wm</label>
+        <link refid="df/d1c/classwm"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>current</edgelabel>
+          <edgelabel>resume</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>wmInitData</label>
+        <link refid="d6/d16/structwm_init_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>winMan</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/game/game.cc" line="3" column="1" bodyfile="src/game/game.cc" bodystart="3" bodyend="16"/>
+    <listofallmembers>
+      <member refid="d6/d16/structwm_init_data_1a8b40ddc033a30ca9233002d0b965f8e8" prot="public" virt="non-virtual"><scope>wmInitData</scope><name>context</name></member>
+      <member refid="d6/d16/structwm_init_data_1a2d7a4173fc868770359b717479f39b3f" prot="public" virt="non-virtual"><scope>wmInitData</scope><name>lock</name></member>
+      <member refid="d6/d16/structwm_init_data_1a3cc884818469631e7c4b46a7c7f1dd69" prot="private" virt="non-virtual"><scope>wmInitData</scope><name>mutex</name></member>
+      <member refid="d6/d16/structwm_init_data_1af86a2de615bbeee89fc31586b8875296" prot="public" virt="non-virtual"><scope>wmInitData</scope><name>unlock</name></member>
+      <member refid="d6/d16/structwm_init_data_1a23c6b2179ddaad3cde159dd42e163beb" prot="public" virt="non-virtual"><scope>wmInitData</scope><name>winMan</name></member>
+      <member refid="d6/d16/structwm_init_data_1ac7929391314691a337cafde524d5acfc" prot="public" virt="non-virtual"><scope>wmInitData</scope><name>wmInitData</name></member>
+      <member refid="d6/d16/structwm_init_data_1a1333b79b5c832494ebc67333cd1b30a6" prot="public" virt="non-virtual"><scope>wmInitData</scope><name>~wmInitData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

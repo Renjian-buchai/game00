@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="da/dec/classintro__t_1_1slide" kind="class" language="C++" prot="public">
+    <compoundname>intro_t::slide</compoundname>
+    <includes refid="dd/d82/init_8hh" local="no">init.hh</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t intro_t::slide::fadeIn</definition>
+        <argsstring></argsstring>
+        <name>fadeIn</name>
+        <qualifiedname>intro_t::slide::fadeIn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="18" column="12" bodyfile="include/scenes/init.hh" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t intro_t::slide::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>intro_t::slide::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="19" column="12" bodyfile="include/scenes/init.hh" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t intro_t::slide::fadeOut</definition>
+        <argsstring></argsstring>
+        <name>fadeOut</name>
+        <qualifiedname>intro_t::slide::fadeOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="20" column="12" bodyfile="include/scenes/init.hh" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* intro_t::slide::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <qualifiedname>intro_t::slide::texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="21" column="17" bodyfile="include/scenes/init.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect intro_t::slide::dest</definition>
+        <argsstring></argsstring>
+        <name>dest</name>
+        <qualifiedname>intro_t::slide::dest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="22" column="14" bodyfile="include/scenes/init.hh" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool intro_t::slide::skippable</definition>
+        <argsstring></argsstring>
+        <name>skippable</name>
+        <qualifiedname>intro_t::slide::skippable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="23" column="10" bodyfile="include/scenes/init.hh" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>intro_t::slide::slide</definition>
+        <argsstring>(size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture *_texture, SDL_Rect _dest={}, bool skippable=true)</argsstring>
+        <name>slide</name>
+        <qualifiedname>intro_t::slide::slide</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>_fadeIn</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_fadeOut</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_duration</declname>
+        </param>
+        <param>
+          <type>SDL_Texture *</type>
+          <declname>_texture</declname>
+        </param>
+        <param>
+          <type>SDL_Rect</type>
+          <declname>_dest</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skippable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="15" column="5" bodyfile="src/scenes/init.cc" bodystart="5" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Contains all the information required for a functional slideshow. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/scenes/init.hh" line="13" column="3" bodyfile="include/scenes/init.hh" bodystart="13" bodyend="24"/>
+    <listofallmembers>
+      <member refid="da/dec/classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>dest</name></member>
+      <member refid="da/dec/classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>duration</name></member>
+      <member refid="da/dec/classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>fadeIn</name></member>
+      <member refid="da/dec/classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>fadeOut</name></member>
+      <member refid="da/dec/classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>skippable</name></member>
+      <member refid="da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>slide</name></member>
+      <member refid="da/dec/classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>texture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

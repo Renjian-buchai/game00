@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d3/d51/wm_8hh" kind="file" language="C++">
+    <compoundname>wm.hh</compoundname>
+    <includes refid="d9/d05/enum_8hh" local="yes">enum.hh</includes>
+    <includes refid="d0/d8b/pch_8hh" local="yes">pch.hh</includes>
+    <includes refid="d4/d7c/explorer_8hh" local="yes">scenes/explorer.hh</includes>
+    <includes refid="dd/d82/init_8hh" local="yes">scenes/init.hh</includes>
+    <includes refid="d4/d54/notepad_8hh" local="yes">scenes/notepad.hh</includes>
+    <includes refid="d4/d90/pause_8hh" local="yes">scenes/pause.hh</includes>
+    <includedby refid="d3/d0e/game_8hh" local="yes">include/game.hh</includedby>
+    <includedby refid="de/d8a/gameplay_8cc" local="yes">src/game/gameplay.cc</includedby>
+    <includedby refid="df/d17/wm_8cc" local="yes">src/game/wm.cc</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>SDL.h</label>
+      </node>
+      <node id="13">
+        <label>SDL_image.h</label>
+      </node>
+      <node id="14">
+        <label>SDL_mixer.h</label>
+      </node>
+      <node id="15">
+        <label>SDL_ttf.h</label>
+      </node>
+      <node id="2">
+        <label>enum.hh</label>
+        <link refid="d9/d05/enum_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pch.hh</label>
+        <link refid="d0/d8b/pch_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>scenes/explorer.hh</label>
+        <link refid="d4/d7c/explorer_8hh"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>scenes/init.hh</label>
+        <link refid="dd/d82/init_8hh"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>scenes/notepad.hh</label>
+        <link refid="d4/d54/notepad_8hh"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>scenes/pause.hh</label>
+        <link refid="d4/d90/pause_8hh"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>scene.hh</label>
+        <link refid="d5/dd8/scene_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/wm.hh</label>
+        <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>utility</label>
+      </node>
+      <node id="10">
+        <label>variant</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/game.hh</label>
+        <link refid="d3/d0e/game_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/wm.hh</label>
+        <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/game/gameplay.cc</label>
+        <link refid="de/d8a/gameplay_8cc"/>
+      </node>
+      <node id="4">
+        <label>src/game/pause.cc</label>
+        <link refid="df/d0b/pause_8cc"/>
+      </node>
+      <node id="5">
+        <label>src/game/wm.cc</label>
+        <link refid="df/d17/wm_8cc"/>
+      </node>
+      <node id="6">
+        <label>src/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
+      </node>
+      <node id="7">
+        <label>src/scenes/explorer.cc</label>
+        <link refid="d5/d14/explorer_8cc"/>
+      </node>
+      <node id="8">
+        <label>src/scenes/init.cc</label>
+        <link refid="d0/ddc/init_8cc"/>
+      </node>
+      <node id="9">
+        <label>src/scenes/notepad.cc</label>
+        <link refid="d0/d31/notepad_8cc"/>
+      </node>
+      <node id="10">
+        <label>src/scenes/scene.cc</label>
+        <link refid="d4/d11/scene_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d1c/classwm" prot="public">wm</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#if<sp/>!defined(WM_HH)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d05/enum_8hh" kindref="compound">enum.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d8b/pch_8hh" kindref="compound">pch.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d7c/explorer_8hh" kindref="compound">scenes/explorer.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/d82/init_8hh" kindref="compound">scenes/init.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d54/notepad_8hh" kindref="compound">scenes/notepad.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d90/pause_8hh" kindref="compound">scenes/pause.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d51/classgame" kindref="compound">game</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/db1/classscene" kindref="compound">scene</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="df/d1c/classwm" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/d1c/classwm" kindref="compound">wm</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="df/d1c/classwm_1aab22b0e4971405b7fe57e8409e68793b" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::pair&lt;SDL_Texture*,<sp/>SDL_Rect&gt;&gt;<sp/><ref refid="df/d1c/classwm_1aab22b0e4971405b7fe57e8409e68793b" kindref="member">icons</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="df/d1c/classwm_1a718f320271041e9c08cdfbdc58cc3a64" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="df/d1c/classwm_1a718f320271041e9c08cdfbdc58cc3a64" kindref="member">OSOverlay</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="df/d1c/classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/><ref refid="df/d1c/classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3" kindref="member">context</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="df/d1c/classwm_1a50c97d11917956cf0abb63be275faddc" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/><ref refid="df/d1c/classwm_1a50c97d11917956cf0abb63be275faddc" kindref="member">pauseBounds</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="df/d1c/classwm_1a205790bf574b52cabae2bca77b17c262" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="df/d1c/classwm_1a205790bf574b52cabae2bca77b17c262" kindref="member">wasSilence</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;explorer_t&gt;<sp/><ref refid="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" kindref="member">explorer</ref>;</highlight></codeline>
+<codeline lineno="54" refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;notepad_t&gt;<sp/><ref refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kindref="member">notepad</ref>;</highlight></codeline>
+<codeline lineno="55" refid="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;pause_t&gt;<sp/><ref refid="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" kindref="member">pause</ref>;</highlight></codeline>
+<codeline lineno="56" refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;intro_t&gt;<sp/><ref refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" kindref="member">intro</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>*<sp/><ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref>;</highlight></codeline>
+<codeline lineno="67" refid="df/d1c/classwm_1aeedc8b11c2b96839e921b7f82840656e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>*<sp/><ref refid="df/d1c/classwm_1aeedc8b11c2b96839e921b7f82840656e" kindref="member">resume</ref>;</highlight></codeline>
+<codeline lineno="74" refid="df/d1c/classwm_1ae80ff7518d15add5e8a639bc1b509ed4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="df/d1c/classwm_1ae80ff7518d15add5e8a639bc1b509ed4" kindref="member">wm</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="df/d1c/classwm_1ae80ff7518d15add5e8a639bc1b509ed4" kindref="member">wm</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/><ref refid="df/d1c/classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3" kindref="member">context</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" kindref="member">render</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="df/d1c/classwm_1a7f282167450e97df5792d589c9ced058" kindref="member">handle</ref>(SDL_Event&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/wm.hh"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,243 @@
+.TH "intro_t" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+intro_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <init\&.hh>\fP
+.PP
+Inherits \fBscene\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBslide\fP"
+.br
+.RI "Contains all the information required for a functional slideshow\&. "
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum class \fBcentre\fP : uint8_t { \fBHORIZONTAL\fP, \fBVERTICAL\fP, \fBBOTH\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBintro_t\fP (\fBgame\fP *\fBcontext\fP)"
+.br
+.RI "Construct a new intro t object\&. "
+.ti -1c
+.RI "\fB~intro_t\fP ()"
+.br
+.RI "Destroy the intro t object\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.br
+.RI "Updates scene info\&. "
+.ti -1c
+.RI "void \fBrender\fP () override"
+.br
+.RI "Renders slides\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
+.br
+.ti -1c
+.RI "void \fBslideShow\fP (size_t time, bool &click, size_t skipGrace=500)"
+.br
+.RI "Performs the slideshow logic\&. "
+.ti -1c
+.RI "void \fBaddSlide\fP (SDL_Surface *surface, size_t fadeIn, size_t duration, size_t fadeOut, SDL_Rect dest=SDL_Rect{}, bool centred=true, bool skippable=true)"
+.br
+.RI "Adds slides to slideshow\&. "
+.ti -1c
+.RI "void \fBcentreRect\fP (SDL_Rect &rect, \fBcentre\fP \fBcentre\fP=\fBcentre::BOTH\fP) const"
+.br
+.RI "Centres rect\&. "
+.in -1c
+
+Public Member Functions inherited from \fBscene\fP
+.in +1c
+.ti -1c
+.RI "SDL_Texture * \fBloadTexture\fP (const char *path)"
+.br
+.RI "Loads texture based on path\&. "
+.ti -1c
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
+.br
+.RI "Construct a new scene object\&. "
+.ti -1c
+.RI "virtual \fB~scene\fP ()"
+.br
+.RI "Destroy the scene object\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBslide\fP > \fBslides\fP"
+.br
+.RI "Slides to be slideshowed\&. "
+.ti -1c
+.RI "size_t \fBstartTime\fP"
+.br
+.RI "The time at which each slide starts\&. "
+.ti -1c
+.RI "bool \fBskip\fP"
+.br
+.RI "Whether a skip is requested by the event handler\&. "
+.in -1c
+
+Public Attributes inherited from \fBscene\fP
+.in +1c
+.ti -1c
+.RI "\fBgame\fP * \fBcontext\fP"
+.br
+.RI "Game context\&. "
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum class \fBintro_t::centre\fP : uint8_t\fR [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIHORIZONTAL \fP
+.TP
+\f(BIVERTICAL \fP
+.TP
+\f(BIBOTH \fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "intro_t::intro_t (\fBgame\fP * context)"
+
+.PP
+Construct a new intro t object\&. Called only once when WM is initialised
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIcontext\fP Game context 
+.RE
+.PP
+
+.SS "intro_t::~intro_t ()"
+
+.PP
+Destroy the intro t object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void intro_t::addSlide (SDL_Surface * surface, size_t fadeIn, size_t duration, size_t fadeOut, SDL_Rect dest = \fRSDL_Rect{}\fP, bool centred = \fRtrue\fP, bool skippable = \fRtrue\fP)"
+
+.PP
+Adds slides to slideshow\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsurface\fP Surface to be converted into a slideshow\&. Will be converted into a texture, then freed\&. 
+.br
+\fIfadeIn\fP Fade in duration 
+.br
+\fIduration\fP Full brightness duration 
+.br
+\fIfadeOut\fP Fade out duration 
+.br
+\fIdest\fP Destination for where to render the slide 
+.br
+\fIcentred\fP Whether the slide is centred\&. 
+.br
+\fIskippable\fP Whether it is permissible to skip the slide 
+.RE
+.PP
+
+.SS "void intro_t::centreRect (SDL_Rect & rect, \fBcentre\fP centre = \fR\fBcentre::BOTH\fP\fP) const"
+
+.PP
+Centres rect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrect\fP Rect to centre 
+.br
+\fIcentre\fP Stores how the rect will be centred 
+.RE
+.PP
+
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > intro_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIevent\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> 
+.RE
+.PP
+
+.PP
+Implements \fBscene\fP\&.
+.SS "void intro_t::render ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Renders slides\&. 
+.PP
+Implements \fBscene\fP\&.
+.SS "void intro_t::slideShow (size_t time, bool & click, size_t skipGrace = \fR500\fP)"
+
+.PP
+Performs the slideshow logic\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItime\fP Current time 
+.br
+\fIclick\fP Whether a click happened in the past n seconds 
+.br
+\fIskipGrace\fP Grace period for skipping\&. Default: 500 
+.RE
+.PP
+
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > intro_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Updates scene info\&. Makes the call on when to move on to explorer\&.
+
+.PP
+When it moves on, it calls its own destructor to minimise its size and effect on memory usage\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.PP
+Implements \fBscene\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool intro_t::skip"
+
+.PP
+Whether a skip is requested by the event handler\&. 
+.SS "std::vector<\fBslide\fP> intro_t::slides"
+
+.PP
+Slides to be slideshowed\&. 
+.SS "size_t intro_t::startTime"
+
+.PP
+The time at which each slide starts\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

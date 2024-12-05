@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_enum_8hh_source" xml:lang="en-US">
+<title>enum.hh</title>
+<indexterm><primary>include/enum.hh</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(ENUM_HH)</emphasis>
+2 <emphasis role="preprocessor">#define&#32;ENUM_HH</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
+10 <emphasis role="keyword">enum&#32;class</emphasis>&#32;<link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link>&#32;:&#32;uint8_t&#32;{
+11 &#32;&#32;<link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9">empty</link>,
+12 &#32;&#32;<link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d">entry1</link>&#32;=&#32;1,
+13 &#32;&#32;<link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd">entry2</link>&#32;=&#32;2,
+14 };
+18 <emphasis role="keyword">enum&#32;class</emphasis>&#32;<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link>&#32;:&#32;uint8_t&#32;{
+19 &#32;&#32;<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9">init</link>,
+20 &#32;&#32;<link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d">entry1</link>,
+21 &#32;&#32;<link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd">entry2</link>,
+22 &#32;&#32;<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24">size</link>,
+23 };
+24 
+28 <emphasis role="keyword">enum&#32;class</emphasis>&#32;<link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>&#32;:&#32;uint8_t&#32;{
+29 &#32;&#32;<link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb">intro</link>,
+30 &#32;&#32;<link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162">explorer</link>,
+31 &#32;&#32;<link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf">notepad</link>,
+32 &#32;&#32;<link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9">pause</link>,
+33 };
+34 
+35 <emphasis role="keyword">using&#32;</emphasis><link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link>&#32;=&#32;std::variant&lt;std::monostate,&#32;notepadData&gt;;
+36 
+37 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

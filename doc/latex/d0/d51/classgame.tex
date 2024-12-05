@@ -1,0 +1,225 @@
+\doxysection{game Class Reference}
+\label{classgame}\index{game@{game}}
+
+
+{\ttfamily \#include $<$game.\+hh$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61}{game\+State}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db}{terminating}}
+, \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb}{intro}}
+, \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057}{gameplay}}
+, \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2}{paused}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_ad9c102127b5038f880067ad6c9198d38}{game}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new game object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgame_ae87abd20c4d8a7906fa48e690a5f1d07}{\texorpdfstring{$\sim$}{\string~}game}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the game object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_abf967ec7fa712fde980d9c399e4f778d}{gameplay}} ()
+\begin{DoxyCompactList}\small\item\em Runs the WM. Waits for the WM to be initialised, first. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61}{game\+State}} \mbox{\hyperlink{classgame_a66a0e69c41270ee22849d56d12e12749}{state}} = \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb}{game\+State\+::intro}}
+\begin{DoxyCompactList}\small\item\em State that the game is in. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classgame_a2de268c0ae822e5ac4b5d1bb2199f2d6}{disp\+Bounds}}
+\begin{DoxyCompactList}\small\item\em Rect containing the screen height and width. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_acc01740eae91dd462ec52a9d7a3ec974}{main\+Window}}
+\begin{DoxyCompactList}\small\item\em Main window to render to. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_a7d010ea5627621067a7686f330d5e104}{main\+Renderer}}
+\begin{DoxyCompactList}\small\item\em Main renderer that renders to main\+Window. \end{DoxyCompactList}\item 
+std\+::array$<$ Mix\+\_\+\+Music \texorpdfstring{$\ast$}{*}, 4 $>$ \mbox{\hyperlink{classgame_a9e8b656712b1f8d16290abd3d21b2331}{bgm}}
+\begin{DoxyCompactList}\small\item\em Background music. Randomly selected. \end{DoxyCompactList}\item 
+std\+::array$<$ Mix\+\_\+\+Music \texorpdfstring{$\ast$}{*}, 6 $>$ \mbox{\hyperlink{classgame_a74c272eea906013e6af7480d8d31f431}{silence}}
+\begin{DoxyCompactList}\small\item\em Different lengths of silence. Randomly selected. \end{DoxyCompactList}\item 
+TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_a63c1e94224ab226955bba8717c64bdc0}{font}}
+\begin{DoxyCompactList}\small\item\em Font used for text. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classgame_a392ea9253c1a69cd42b0d45547568eb0}{pixel\+Size}}
+\item 
+\mbox{\hyperlink{classwm}{wm}} \mbox{\hyperlink{classgame_a149df5bc9d648f2b400d3f03f8aa139d}{win\+Man}}
+\begin{DoxyCompactList}\small\item\em Windows manager. \end{DoxyCompactList}\item 
+SDL\+\_\+mutex \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_ac71bfd4415fdd0075d2115aa0ffe2bf6}{mutex}}
+\item 
+SDL\+\_\+\+Thread \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_a4f416f46f79adaa51c134ecce60adae2}{load\+Thread}}
+\begin{DoxyCompactList}\small\item\em Thread that loads win\+Man. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\index{game@{game}!gameState@{gameState}}
+\index{gameState@{gameState}!game@{game}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+enum class \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61}{game\+::game\+State}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{terminating@{terminating}!game@{game}}\index{game@{game}!terminating@{terminating}}}\label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+terminating&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{intro@{intro}!game@{game}}\index{game@{game}!intro@{intro}}}\label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+intro&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gameplay@{gameplay}!game@{game}}\index{game@{game}!gameplay@{gameplay}}}\label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+gameplay&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{paused@{paused}!game@{game}}\index{game@{game}!paused@{paused}}}\label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+paused&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{game@{game}!game@{game}}
+\index{game@{game}!game@{game}}
+\doxysubsubsection{\texorpdfstring{game()}{game()}}
+{\footnotesize\ttfamily \label{classgame_ad9c102127b5038f880067ad6c9198d38} 
+game\+::game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new game object. 
+
+WM will be loaded in a thread. \index{game@{game}!````~game@{\texorpdfstring{$\sim$}{\string~}game}}
+\index{````~game@{\texorpdfstring{$\sim$}{\string~}game}!game@{game}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}game()}{\string~game()}}
+{\footnotesize\ttfamily \label{classgame_ae87abd20c4d8a7906fa48e690a5f1d07} 
+game\+::\texorpdfstring{$\sim$}{\string~}game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destroy the game object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\index{game@{game}!gameplay@{gameplay}}
+\index{gameplay@{gameplay}!game@{game}}
+\doxysubsubsection{\texorpdfstring{gameplay()}{gameplay()}}
+{\footnotesize\ttfamily \label{classgame_abf967ec7fa712fde980d9c399e4f778d} 
+void game\+::gameplay (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Runs the WM. Waits for the WM to be initialised, first. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\index{game@{game}!bgm@{bgm}}
+\index{bgm@{bgm}!game@{game}}
+\doxysubsubsection{\texorpdfstring{bgm}{bgm}}
+{\footnotesize\ttfamily \label{classgame_a9e8b656712b1f8d16290abd3d21b2331} 
+std\+::array$<$Mix\+\_\+\+Music\texorpdfstring{$\ast$}{*}, 4$>$ game\+::bgm}
+
+
+
+Background music. Randomly selected. 
+
+\index{game@{game}!dispBounds@{dispBounds}}
+\index{dispBounds@{dispBounds}!game@{game}}
+\doxysubsubsection{\texorpdfstring{dispBounds}{dispBounds}}
+{\footnotesize\ttfamily \label{classgame_a2de268c0ae822e5ac4b5d1bb2199f2d6} 
+SDL\+\_\+\+Rect game\+::disp\+Bounds}
+
+
+
+Rect containing the screen height and width. 
+
+\index{game@{game}!font@{font}}
+\index{font@{font}!game@{game}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{classgame_a63c1e94224ab226955bba8717c64bdc0} 
+TTF\+\_\+\+Font\texorpdfstring{$\ast$}{*} game\+::font}
+
+
+
+Font used for text. 
+
+\index{game@{game}!loadThread@{loadThread}}
+\index{loadThread@{loadThread}!game@{game}}
+\doxysubsubsection{\texorpdfstring{loadThread}{loadThread}}
+{\footnotesize\ttfamily \label{classgame_a4f416f46f79adaa51c134ecce60adae2} 
+SDL\+\_\+\+Thread\texorpdfstring{$\ast$}{*} game\+::load\+Thread}
+
+
+
+Thread that loads win\+Man. 
+
+\index{game@{game}!mainRenderer@{mainRenderer}}
+\index{mainRenderer@{mainRenderer}!game@{game}}
+\doxysubsubsection{\texorpdfstring{mainRenderer}{mainRenderer}}
+{\footnotesize\ttfamily \label{classgame_a7d010ea5627621067a7686f330d5e104} 
+SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} game\+::main\+Renderer}
+
+
+
+Main renderer that renders to main\+Window. 
+
+\index{game@{game}!mainWindow@{mainWindow}}
+\index{mainWindow@{mainWindow}!game@{game}}
+\doxysubsubsection{\texorpdfstring{mainWindow}{mainWindow}}
+{\footnotesize\ttfamily \label{classgame_acc01740eae91dd462ec52a9d7a3ec974} 
+SDL\+\_\+\+Window\texorpdfstring{$\ast$}{*} game\+::main\+Window}
+
+
+
+Main window to render to. 
+
+\index{game@{game}!mutex@{mutex}}
+\index{mutex@{mutex}!game@{game}}
+\doxysubsubsection{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily \label{classgame_ac71bfd4415fdd0075d2115aa0ffe2bf6} 
+SDL\+\_\+mutex\texorpdfstring{$\ast$}{*} game\+::mutex}
+
+\index{game@{game}!pixelSize@{pixelSize}}
+\index{pixelSize@{pixelSize}!game@{game}}
+\doxysubsubsection{\texorpdfstring{pixelSize}{pixelSize}}
+{\footnotesize\ttfamily \label{classgame_a392ea9253c1a69cd42b0d45547568eb0} 
+double game\+::pixel\+Size}
+
+Size of virtual pixels per real pixel. ~\newline
+ \index{game@{game}!silence@{silence}}
+\index{silence@{silence}!game@{game}}
+\doxysubsubsection{\texorpdfstring{silence}{silence}}
+{\footnotesize\ttfamily \label{classgame_a74c272eea906013e6af7480d8d31f431} 
+std\+::array$<$Mix\+\_\+\+Music\texorpdfstring{$\ast$}{*}, 6$>$ game\+::silence}
+
+
+
+Different lengths of silence. Randomly selected. 
+
+\index{game@{game}!state@{state}}
+\index{state@{state}!game@{game}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \label{classgame_a66a0e69c41270ee22849d56d12e12749} 
+\mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61}{game\+State}} game\+::state = \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb}{game\+State\+::intro}}}
+
+
+
+State that the game is in. 
+
+\index{game@{game}!winMan@{winMan}}
+\index{winMan@{winMan}!game@{game}}
+\doxysubsubsection{\texorpdfstring{winMan}{winMan}}
+{\footnotesize\ttfamily \label{classgame_a149df5bc9d648f2b400d3f03f8aa139d} 
+\mbox{\hyperlink{classwm}{wm}} game\+::win\+Man}
+
+
+
+Windows manager. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{game_8hh}{game.\+hh}}\item 
+src/game/\mbox{\hyperlink{game_8cc}{game.\+cc}}\item 
+src/game/\mbox{\hyperlink{gameplay_8cc}{gameplay.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_init_8hh" xml:lang="en-US">
+<title>include/scenes/init.hh File Reference</title>
+<indexterm><primary>include/scenes/init.hh</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;scene.hh&quot;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classintro__t">intro_t</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classintro__t_1_1slide">intro_t::slide</link></para>
+
+<para>Contains all the information required for a functional slideshow. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

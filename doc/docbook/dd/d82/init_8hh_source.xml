@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_init_8hh_source" xml:lang="en-US">
+<title>init.hh</title>
+<indexterm><primary>include/scenes/init.hh</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(INIT_HH)</emphasis>
+2 <emphasis role="preprocessor">#define&#32;INIT_HH</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_scene_8hh">scene.hh</link>&quot;</emphasis>
+5 
+6 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classintro__t">intro_t</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classscene">scene</link>&#32;{
+7 &#32;<emphasis role="keyword">public</emphasis>:
+8 &#32;&#32;<emphasis role="keyword">enum&#32;class</emphasis>&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link>&#32;:&#32;uint8_t&#32;{&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e">HORIZONTAL</link>,&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc">VERTICAL</link>,&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197">BOTH</link>&#32;};
+9 
+13 &#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classintro__t_1_1slide">slide</link>&#32;{
+14 &#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+15 &#32;&#32;&#32;&#32;<link linkend="_classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552">slide</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;_fadeIn,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;_fadeOut,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;_duration,
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_Texture*&#32;_texture,&#32;SDL_Rect&#32;_dest&#32;=&#32;{},&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467">skippable</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>);
+17 
+18 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb">fadeIn</link>;
+19 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b">duration</link>;
+20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe">fadeOut</link>;
+21 &#32;&#32;&#32;&#32;SDL_Texture*&#32;<link linkend="_classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0">texture</link>;
+22 &#32;&#32;&#32;&#32;SDL_Rect&#32;<link linkend="_classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf">dest</link>;
+23 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467">skippable</link>;
+24 &#32;&#32;};
+25 
+29 &#32;&#32;std::vector&lt;slide&gt;&#32;<link linkend="_classintro__t_1a97b511d587ca8e05515e35e6418cf1d0">slides</link>;
+33 &#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1a6db4493f9b8695a1bed2f16f3af45870">startTime</link>;
+37 &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1a1543b2b845c6999165123b34608fcf25">skip</link>;
+38 
+46 &#32;&#32;<link linkend="_classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d">intro_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>);
+50 &#32;&#32;<link linkend="_classintro__t_1a56e63618edf895c263cda8a8c8ef45e6">~intro_t</link>();
+62 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
+66 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
+73 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1adda2b278aae9bae71b89194313bc23a9">handle</link>(SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+74 
+82 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a104f915a0a592c0db524a70ffc666a60">slideShow</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;time,&#32;<emphasis role="keywordtype">bool</emphasis>&amp;&#32;click,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;skipGrace&#32;=&#32;500);
+95 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a0439809e2c67c40ea20757ffed70968c">addSlide</link>(SDL_Surface*&#32;surface,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;fadeIn,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;duration,
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;fadeOut,&#32;SDL_Rect&#32;dest&#32;=&#32;SDL_Rect{},&#32;<emphasis role="keywordtype">bool</emphasis>&#32;centred&#32;=&#32;<emphasis role="keyword">true</emphasis>,
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;skippable&#32;=&#32;<emphasis role="keyword">true</emphasis>);
+98 
+105 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a427b58b3e041bb4672278b9e422b8292">centreRect</link>(SDL_Rect&amp;&#32;rect,&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link>&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link>&#32;=&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197">centre::BOTH</link>)&#32;<emphasis role="keyword">const</emphasis>;
+106 };
+107 
+108 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

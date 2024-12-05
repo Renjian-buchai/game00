@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d9/dea/classintro__t" kind="class" language="C++" prot="public">
+    <compoundname>intro_t</compoundname>
+    <basecompoundref refid="df/db1/classscene" prot="public" virt="non-virtual">scene</basecompoundref>
+    <includes refid="dd/d82/init_8hh" local="no">init.hh</includes>
+    <innerclass refid="da/dec/classintro__t_1_1slide" prot="public">intro_t::slide</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>centre</name>
+        <qualifiedname>intro_t::centre</qualifiedname>
+        <enumvalue id="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e" prot="public">
+          <name>HORIZONTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc" prot="public">
+          <name>VERTICAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197" prot="public">
+          <name>BOTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="8" column="3" bodyfile="include/scenes/init.hh" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="da/dec/classintro__t_1_1slide" kindref="compound">slide</ref> &gt;</type>
+        <definition>std::vector&lt;slide&gt; intro_t::slides</definition>
+        <argsstring></argsstring>
+        <name>slides</name>
+        <qualifiedname>intro_t::slides</qualifiedname>
+        <briefdescription>
+<para>Slides to be slideshowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="29" column="15" bodyfile="include/scenes/init.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dea/classintro__t_1a6db4493f9b8695a1bed2f16f3af45870" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t intro_t::startTime</definition>
+        <argsstring></argsstring>
+        <name>startTime</name>
+        <qualifiedname>intro_t::startTime</qualifiedname>
+        <briefdescription>
+<para>The time at which each slide starts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="33" column="10" bodyfile="include/scenes/init.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dea/classintro__t_1a1543b2b845c6999165123b34608fcf25" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool intro_t::skip</definition>
+        <argsstring></argsstring>
+        <name>skip</name>
+        <qualifiedname>intro_t::skip</qualifiedname>
+        <briefdescription>
+<para>Whether a skip is requested by the event handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="37" column="8" bodyfile="include/scenes/init.hh" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/dea/classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>intro_t::intro_t</definition>
+        <argsstring>(game *context)</argsstring>
+        <name>intro_t</name>
+        <qualifiedname>intro_t::intro_t</qualifiedname>
+        <param>
+          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new intro t object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called only once when WM is initialised</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Game context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="46" column="3" bodyfile="src/scenes/init.cc" bodystart="77" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>intro_t::~intro_t</definition>
+        <argsstring>()</argsstring>
+        <name>~intro_t</name>
+        <qualifiedname>intro_t::~intro_t</qualifiedname>
+        <briefdescription>
+<para>Destroy the intro t object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="50" column="3" bodyfile="src/scenes/init.cc" bodystart="146" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>std::pair&lt; scenes, sceneData &gt; intro_t::update</definition>
+        <argsstring>() override</argsstring>
+        <name>update</name>
+        <qualifiedname>intro_t::update</qualifiedname>
+        <reimplements refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</reimplements>
+        <briefdescription>
+<para>Updates scene info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Makes the call on when to move on to explorer.</para>
+<para>When it moves on, it calls its own destructor to minimise its size and effect on memory usage.</para>
+<para><simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="62" column="13" bodyfile="src/scenes/init.cc" bodystart="153" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void intro_t::render</definition>
+        <argsstring>() override</argsstring>
+        <name>render</name>
+        <qualifiedname>intro_t::render</qualifiedname>
+        <reimplements refid="df/db1/classscene_1a7c218380f822d46bee781520e855a7de">render</reimplements>
+        <briefdescription>
+<para>Renders slides. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="66" column="8" bodyfile="src/scenes/init.cc" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>std::pair&lt; scenes, sceneData &gt; intro_t::handle</definition>
+        <argsstring>(SDL_Event &amp;event) override</argsstring>
+        <name>handle</name>
+        <qualifiedname>intro_t::handle</qualifiedname>
+        <reimplements refid="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2">handle</reimplements>
+        <param>
+          <type>SDL_Event &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="73" column="13" bodyfile="src/scenes/init.cc" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intro_t::slideShow</definition>
+        <argsstring>(size_t time, bool &amp;click, size_t skipGrace=500)</argsstring>
+        <name>slideShow</name>
+        <qualifiedname>intro_t::slideShow</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>click</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>skipGrace</declname>
+          <defval>500</defval>
+        </param>
+        <briefdescription>
+<para>Performs the slideshow logic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current time </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>click</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether a click happened in the past n seconds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipGrace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Grace period for skipping. Default: 500 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="82" column="8" bodyfile="src/scenes/init.cc" bodystart="14" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dea/classintro__t_1a0439809e2c67c40ea20757ffed70968c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intro_t::addSlide</definition>
+        <argsstring>(SDL_Surface *surface, size_t fadeIn, size_t duration, size_t fadeOut, SDL_Rect dest=SDL_Rect{}, bool centred=true, bool skippable=true)</argsstring>
+        <name>addSlide</name>
+        <qualifiedname>intro_t::addSlide</qualifiedname>
+        <param>
+          <type>SDL_Surface *</type>
+          <declname>surface</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>fadeIn</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>fadeOut</declname>
+        </param>
+        <param>
+          <type>SDL_Rect</type>
+          <declname>dest</declname>
+          <defval>SDL_Rect{}</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>centred</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skippable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Adds slides to slideshow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>surface</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Surface to be converted into a slideshow. Will be converted into a texture, then freed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fadeIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fade in duration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full brightness duration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fadeOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fade out duration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination for where to render the slide </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centred</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the slide is centred. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skippable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether it is permissible to skip the slide </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="95" column="8" bodyfile="src/scenes/init.cc" bodystart="52" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intro_t::centreRect</definition>
+        <argsstring>(SDL_Rect &amp;rect, centre centre=centre::BOTH) const</argsstring>
+        <name>centreRect</name>
+        <qualifiedname>intro_t::centreRect</qualifiedname>
+        <param>
+          <type>SDL_Rect &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6" kindref="member">centre</ref></type>
+          <declname>centre</declname>
+          <defval><ref refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197" kindref="member">centre::BOTH</ref></defval>
+        </param>
+        <briefdescription>
+<para>Centres rect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rect to centre </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stores how the rect will be centred </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/init.hh" line="105" column="8" bodyfile="src/scenes/init.cc" bodystart="64" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>intro_t</label>
+        <link refid="d9/dea/classintro__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>game</label>
+        <link refid="d0/d51/classgame"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>winMan</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>intro_t</label>
+        <link refid="d9/dea/classintro__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>wm</label>
+        <link refid="df/d1c/classwm"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>current</edgelabel>
+          <edgelabel>resume</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/scenes/init.hh" line="6" column="1" bodyfile="include/scenes/init.hh" bodystart="6" bodyend="106"/>
+    <listofallmembers>
+      <member refid="d9/dea/classintro__t_1a0439809e2c67c40ea20757ffed70968c" prot="public" virt="non-virtual"><scope>intro_t</scope><name>addSlide</name></member>
+      <member refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6" prot="public" virt="non-virtual"><scope>intro_t</scope><name>centre</name></member>
+      <member refid="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" prot="public" virt="non-virtual"><scope>intro_t</scope><name>centreRect</name></member>
+      <member refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" prot="public" virt="non-virtual"><scope>intro_t</scope><name>context</name></member>
+      <member refid="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9" prot="public" virt="virtual"><scope>intro_t</scope><name>handle</name></member>
+      <member refid="d9/dea/classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d" prot="public" virt="non-virtual"><scope>intro_t</scope><name>intro_t</name></member>
+      <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" virt="non-virtual"><scope>intro_t</scope><name>loadTexture</name></member>
+      <member refid="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808" prot="public" virt="virtual"><scope>intro_t</scope><name>render</name></member>
+      <member refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" prot="public" virt="non-virtual"><scope>intro_t</scope><name>scene</name></member>
+      <member refid="d9/dea/classintro__t_1a1543b2b845c6999165123b34608fcf25" prot="public" virt="non-virtual"><scope>intro_t</scope><name>skip</name></member>
+      <member refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" prot="public" virt="non-virtual"><scope>intro_t</scope><name>slides</name></member>
+      <member refid="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" prot="public" virt="non-virtual"><scope>intro_t</scope><name>slideShow</name></member>
+      <member refid="d9/dea/classintro__t_1a6db4493f9b8695a1bed2f16f3af45870" prot="public" virt="non-virtual"><scope>intro_t</scope><name>startTime</name></member>
+      <member refid="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da" prot="public" virt="virtual"><scope>intro_t</scope><name>update</name></member>
+      <member refid="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" prot="public" virt="non-virtual"><scope>intro_t</scope><name>~intro_t</name></member>
+      <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" virt="virtual"><scope>intro_t</scope><name>~scene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

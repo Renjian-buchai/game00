@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.12.0" xml:lang="en-US">
+  <compound refid="d5/db0/classexplorer__t" kind="class"><name>explorer_t</name>
+    <member refid="d5/db0/classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3" kind="variable"><name>saveData</name></member>
+    <member refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kind="variable"><name>items</name></member>
+    <member refid="d5/db0/classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93" kind="variable"><name>background</name></member>
+    <member refid="d5/db0/classexplorer__t_1a9cb2c4b54f466e5535c38cdac94ea0b4" kind="variable"><name>nameWrapLength</name></member>
+    <member refid="d5/db0/classexplorer__t_1ab134139610d2267ca833abcd44b39aac" kind="variable"><name>downloadBounds</name></member>
+    <member refid="d5/db0/classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6" kind="function"><name>explorer_t</name></member>
+    <member refid="d5/db0/classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50" kind="function"><name>~explorer_t</name></member>
+    <member refid="d5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5" kind="function"><name>update</name></member>
+    <member refid="d5/db0/classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757" kind="function"><name>render</name></member>
+    <member refid="d5/db0/classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882" kind="function"><name>handle</name></member>
+    <member refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" kind="function"><name>createFilesystemEntry</name></member>
+  </compound>
+  <compound refid="d0/d51/classgame" kind="class"><name>game</name>
+    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61" kind="enum"><name>gameState</name></member>
+    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db" kind="enumvalue"><name>terminating</name></member>
+    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb" kind="enumvalue"><name>intro</name></member>
+    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057" kind="enumvalue"><name>gameplay</name></member>
+    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2" kind="enumvalue"><name>paused</name></member>
+    <member refid="d0/d51/classgame_1a66a0e69c41270ee22849d56d12e12749" kind="variable"><name>state</name></member>
+    <member refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kind="variable"><name>dispBounds</name></member>
+    <member refid="d0/d51/classgame_1acc01740eae91dd462ec52a9d7a3ec974" kind="variable"><name>mainWindow</name></member>
+    <member refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kind="variable"><name>mainRenderer</name></member>
+    <member refid="d0/d51/classgame_1a9e8b656712b1f8d16290abd3d21b2331" kind="variable"><name>bgm</name></member>
+    <member refid="d0/d51/classgame_1a74c272eea906013e6af7480d8d31f431" kind="variable"><name>silence</name></member>
+    <member refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" kind="variable"><name>font</name></member>
+    <member refid="d0/d51/classgame_1a392ea9253c1a69cd42b0d45547568eb0" kind="variable"><name>pixelSize</name></member>
+    <member refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kind="variable"><name>winMan</name></member>
+    <member refid="d0/d51/classgame_1ac71bfd4415fdd0075d2115aa0ffe2bf6" kind="variable"><name>mutex</name></member>
+    <member refid="d0/d51/classgame_1a4f416f46f79adaa51c134ecce60adae2" kind="variable"><name>loadThread</name></member>
+    <member refid="d0/d51/classgame_1ad9c102127b5038f880067ad6c9198d38" kind="function"><name>game</name></member>
+    <member refid="d0/d51/classgame_1ae87abd20c4d8a7906fa48e690a5f1d07" kind="function"><name>~game</name></member>
+    <member refid="d0/d51/classgame_1abf967ec7fa712fde980d9c399e4f778d" kind="function"><name>gameplay</name></member>
+  </compound>
+  <compound refid="d9/dea/classintro__t" kind="class"><name>intro_t</name>
+    <member refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6" kind="enum"><name>centre</name></member>
+    <member refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e" kind="enumvalue"><name>HORIZONTAL</name></member>
+    <member refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc" kind="enumvalue"><name>VERTICAL</name></member>
+    <member refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197" kind="enumvalue"><name>BOTH</name></member>
+    <member refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kind="variable"><name>slides</name></member>
+    <member refid="d9/dea/classintro__t_1a6db4493f9b8695a1bed2f16f3af45870" kind="variable"><name>startTime</name></member>
+    <member refid="d9/dea/classintro__t_1a1543b2b845c6999165123b34608fcf25" kind="variable"><name>skip</name></member>
+    <member refid="d9/dea/classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d" kind="function"><name>intro_t</name></member>
+    <member refid="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" kind="function"><name>~intro_t</name></member>
+    <member refid="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da" kind="function"><name>update</name></member>
+    <member refid="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808" kind="function"><name>render</name></member>
+    <member refid="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9" kind="function"><name>handle</name></member>
+    <member refid="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" kind="function"><name>slideShow</name></member>
+    <member refid="d9/dea/classintro__t_1a0439809e2c67c40ea20757ffed70968c" kind="function"><name>addSlide</name></member>
+    <member refid="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" kind="function"><name>centreRect</name></member>
+  </compound>
+  <compound refid="d9/d03/classnotepad__t" kind="class"><name>notepad_t</name>
+    <member refid="d9/d03/classnotepad__t_1a6af0111089b6735d3e21cdfb1b198e65" kind="variable"><name>scale</name></member>
+    <member refid="d9/d03/classnotepad__t_1a4416b91e1e20a180f9a00855b6f9c459" kind="variable"><name>background</name></member>
+    <member refid="d9/d03/classnotepad__t_1a6766a5c1170ee8fab7ecdb209f0d2076" kind="variable"><name>entry</name></member>
+    <member refid="d9/d03/classnotepad__t_1a312b35908588ed45384a73e3ad7f4992" kind="variable"><name>lineWrapLength</name></member>
+    <member refid="d9/d03/classnotepad__t_1a71add6ff4e2c0947e3043df553695bd1" kind="variable"><name>currentData</name></member>
+    <member refid="d9/d03/classnotepad__t_1ade41e5a025182a3a851e078e8fbbe4af" kind="variable"><name>prevData</name></member>
+    <member refid="d9/d03/classnotepad__t_1af6ff2f6dffb32c3fd6edc955c4b0dfba" kind="variable"><name>entryRect</name></member>
+    <member refid="d9/d03/classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f" kind="function"><name>notepad_t</name></member>
+    <member refid="d9/d03/classnotepad__t_1ac047cc39e7ff3f954057314e6298d6b1" kind="function"><name>~notepad_t</name></member>
+    <member refid="d9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa" kind="function"><name>update</name></member>
+    <member refid="d9/d03/classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a" kind="function"><name>render</name></member>
+    <member refid="d9/d03/classnotepad__t_1ad98a24e386e2a0363a44e67054988160" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="dc/daa/classpause__t" kind="class"><name>pause_t</name>
+    <member refid="dc/daa/classpause__t_1abc176f557fb1f594687017c268bbdfe4" kind="variable"><name>overlay</name></member>
+    <member refid="dc/daa/classpause__t_1a3e20af849346bcd336f939865a270c5c" kind="variable"><name>resume</name></member>
+    <member refid="dc/daa/classpause__t_1a0c32a4f98b58aa3806699382970ec491" kind="variable"><name>resumeHover</name></member>
+    <member refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" kind="variable"><name>resumeState</name></member>
+    <member refid="dc/daa/classpause__t_1ae945e4a533d1de46870bffe0e838d8ae" kind="variable"><name>resumePos</name></member>
+    <member refid="dc/daa/classpause__t_1a148437ac9cfb0970822384f99c03ac77" kind="variable"><name>exit</name></member>
+    <member refid="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" kind="variable"><name>exitHover</name></member>
+    <member refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" kind="variable"><name>exitState</name></member>
+    <member refid="dc/daa/classpause__t_1a9034485c8caf7cd1dfddf7f300542747" kind="variable"><name>exitPos</name></member>
+    <member refid="dc/daa/classpause__t_1a840256e71d9ff0f489090fff8f07c946" kind="function"><name>pause_t</name></member>
+    <member refid="dc/daa/classpause__t_1a8e6961a2a9fb61c99e92face62126593" kind="function"><name>~pause_t</name></member>
+    <member refid="dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca" kind="function"><name>update</name></member>
+    <member refid="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8" kind="function"><name>render</name></member>
+    <member refid="dc/daa/classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="df/db1/classscene" kind="class"><name>scene</name>
+    <member refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kind="variable"><name>context</name></member>
+    <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" kind="function"><name>loadTexture</name></member>
+    <member refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" kind="function"><name>scene</name></member>
+    <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" kind="function"><name>~scene</name></member>
+    <member refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7" kind="function"><name>update</name></member>
+    <member refid="df/db1/classscene_1a7c218380f822d46bee781520e855a7de" kind="function"><name>render</name></member>
+    <member refid="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="da/dec/classintro__t_1_1slide" kind="class"><name>intro_t::slide</name>
+    <member refid="da/dec/classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb" kind="variable"><name>fadeIn</name></member>
+    <member refid="da/dec/classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b" kind="variable"><name>duration</name></member>
+    <member refid="da/dec/classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe" kind="variable"><name>fadeOut</name></member>
+    <member refid="da/dec/classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0" kind="variable"><name>texture</name></member>
+    <member refid="da/dec/classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf" kind="variable"><name>dest</name></member>
+    <member refid="da/dec/classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467" kind="variable"><name>skippable</name></member>
+    <member refid="da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552" kind="function"><name>slide</name></member>
+  </compound>
+  <compound refid="df/d1c/classwm" kind="class"><name>wm</name>
+    <member refid="df/d1c/classwm_1aab22b0e4971405b7fe57e8409e68793b" kind="variable"><name>icons</name></member>
+    <member refid="df/d1c/classwm_1a718f320271041e9c08cdfbdc58cc3a64" kind="variable"><name>OSOverlay</name></member>
+    <member refid="df/d1c/classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3" kind="variable"><name>context</name></member>
+    <member refid="df/d1c/classwm_1a50c97d11917956cf0abb63be275faddc" kind="variable"><name>pauseBounds</name></member>
+    <member refid="df/d1c/classwm_1a205790bf574b52cabae2bca77b17c262" kind="variable"><name>wasSilence</name></member>
+    <member refid="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" kind="variable"><name>explorer</name></member>
+    <member refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kind="variable"><name>notepad</name></member>
+    <member refid="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" kind="variable"><name>pause</name></member>
+    <member refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" kind="variable"><name>intro</name></member>
+    <member refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kind="variable"><name>current</name></member>
+    <member refid="df/d1c/classwm_1aeedc8b11c2b96839e921b7f82840656e" kind="variable"><name>resume</name></member>
+    <member refid="df/d1c/classwm_1ae80ff7518d15add5e8a639bc1b509ed4" kind="function"><name>wm</name></member>
+    <member refid="df/d1c/classwm_1a963abfdd7d229db5869e59a97a301f47" kind="function"><name>wm</name></member>
+    <member refid="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" kind="function"><name>render</name></member>
+    <member refid="df/d1c/classwm_1a7f282167450e97df5792d589c9ced058" kind="function"><name>handle</name></member>
+    <member refid="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="d6/d16/structwm_init_data" kind="struct"><name>wmInitData</name>
+    <member refid="d6/d16/structwm_init_data_1a23c6b2179ddaad3cde159dd42e163beb" kind="variable"><name>winMan</name></member>
+    <member refid="d6/d16/structwm_init_data_1a8b40ddc033a30ca9233002d0b965f8e8" kind="variable"><name>context</name></member>
+    <member refid="d6/d16/structwm_init_data_1a3cc884818469631e7c4b46a7c7f1dd69" kind="variable"><name>mutex</name></member>
+    <member refid="d6/d16/structwm_init_data_1ac7929391314691a337cafde524d5acfc" kind="function"><name>wmInitData</name></member>
+    <member refid="d6/d16/structwm_init_data_1a1333b79b5c832494ebc67333cd1b30a6" kind="function"><name>~wmInitData</name></member>
+    <member refid="d6/d16/structwm_init_data_1a2d7a4173fc868770359b717479f39b3f" kind="function"><name>lock</name></member>
+    <member refid="d6/d16/structwm_init_data_1af86a2de615bbeee89fc31586b8875296" kind="function"><name>unlock</name></member>
+  </compound>
+  <compound refid="d9/d05/enum_8hh" kind="file"><name>enum.hh</name>
+    <member refid="d9/d05/enum_8hh_1ac37de80148c8c914ee47baccc98c59e6" kind="enum"><name>notepadData</name></member>
+    <member refid="d9/d05/enum_8hh_1ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9" kind="enumvalue"><name>empty</name></member>
+    <member refid="d9/d05/enum_8hh_1ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d" kind="enumvalue"><name>entry1</name></member>
+    <member refid="d9/d05/enum_8hh_1ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd" kind="enumvalue"><name>entry2</name></member>
+    <member refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a" kind="enum"><name>explorerData</name></member>
+    <member refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9" kind="enumvalue"><name>init</name></member>
+    <member refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d" kind="enumvalue"><name>entry1</name></member>
+    <member refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd" kind="enumvalue"><name>entry2</name></member>
+    <member refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24" kind="enumvalue"><name>size</name></member>
+    <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kind="enum"><name>scenes</name></member>
+    <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kind="enumvalue"><name>intro</name></member>
+    <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kind="enumvalue"><name>explorer</name></member>
+    <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" kind="enumvalue"><name>notepad</name></member>
+    <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9" kind="enumvalue"><name>pause</name></member>
+    <member refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kind="typedef"><name>sceneData</name></member>
+  </compound>
+  <compound refid="d3/d0e/game_8hh" kind="file"><name>game.hh</name>
+  </compound>
+  <compound refid="d0/d8b/pch_8hh" kind="file"><name>pch.hh</name>
+  </compound>
+  <compound refid="d4/d7c/explorer_8hh" kind="file"><name>explorer.hh</name>
+  </compound>
+  <compound refid="dd/d82/init_8hh" kind="file"><name>init.hh</name>
+  </compound>
+  <compound refid="d4/d54/notepad_8hh" kind="file"><name>notepad.hh</name>
+  </compound>
+  <compound refid="d4/d90/pause_8hh" kind="file"><name>pause.hh</name>
+  </compound>
+  <compound refid="d5/dd8/scene_8hh" kind="file"><name>scene.hh</name>
+    <member refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kind="define"><name>pix</name></member>
+  </compound>
+  <compound refid="d3/d51/wm_8hh" kind="file"><name>wm.hh</name>
+  </compound>
+  <compound refid="da/d5e/game_8cc" kind="file"><name>game.cc</name>
+    <member refid="da/d5e/game_8cc_1a99ac6b71536a9029028ea49afd42fab0" kind="function"><name>wmInit</name></member>
+  </compound>
+  <compound refid="de/d8a/gameplay_8cc" kind="file"><name>gameplay.cc</name>
+  </compound>
+  <compound refid="df/d0b/pause_8cc" kind="file"><name>pause.cc</name>
+  </compound>
+  <compound refid="df/d17/wm_8cc" kind="file"><name>wm.cc</name>
+  </compound>
+  <compound refid="d9/d0f/main_8cc" kind="file"><name>main.cc</name>
+    <member refid="d9/d0f/main_8cc_1a70fa023bb5d371dac47448b690c83581" kind="define"><name>skipIntro</name></member>
+    <member refid="d9/d0f/main_8cc_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d5/d14/explorer_8cc" kind="file"><name>explorer.cc</name>
+    <member refid="d5/d14/explorer_8cc_1aa3c2bd85b3a50c8377042bf30c9b0331" kind="function"><name>operator++</name></member>
+  </compound>
+  <compound refid="d0/ddc/init_8cc" kind="file"><name>init.cc</name>
+  </compound>
+  <compound refid="d0/d31/notepad_8cc" kind="file"><name>notepad.cc</name>
+  </compound>
+  <compound refid="d4/d11/scene_8cc" kind="file"><name>scene.cc</name>
+  </compound>
+  <compound refid="dir_1699be727a800b1d059c6f7f2b91d2ee" kind="dir"><name>src/game</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_9551f21d874a3950d142803a40139414" kind="dir"><name>include/scenes</name>
+  </compound>
+  <compound refid="dir_ecc8d4550b7fd15fd45b6c26299430bf" kind="dir"><name>src/scenes</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

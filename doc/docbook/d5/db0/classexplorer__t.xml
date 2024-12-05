@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classexplorer__t" xml:lang="en-US">
+<title>explorer_t Class Reference</title>
+<indexterm><primary>explorer_t</primary></indexterm>
+<para>
+<computeroutput>#include &lt;explorer.hh&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for explorer_t:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/db0/classexplorer__t.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6">explorer_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>)</para>
+
+<para>Construct a new explorer t object. </para>
+</listitem>
+            <listitem><para><link linkend="_classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50">~explorer_t</link> ()</para>
+
+<para>Destroy the explorer t object. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">update</link> () override</para>
+
+<para>Update logic for the explorer t object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">render</link> () override</para>
+
+<para>Renders explorer, and files. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">handle</link> (SDL_Event &amp;event) override</para>
+
+<para>Handles mouse movement and file selection. </para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a">createFilesystemEntry</link> (const char *text, const char *<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24">size</link>)</para>
+
+<para>Creates texture to display in filesystem. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
+            <listitem><para>SDL_Texture * <link linkend="_classscene_1a5d4681a41f14704a05c4f84569888061">loadTexture</link> (const char *path)</para>
+
+<para>Loads texture based on path. </para>
+</listitem>
+            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+
+<para>Construct a new scene object. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496">~scene</link> ()</para>
+
+<para>Destroy the scene object. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link> <link linkend="_classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3">saveData</link></para>
+
+<para>Information of game state. </para>
+</listitem>
+            <listitem><para>std::vector&lt; std::pair&lt; SDL_Texture *, SDL_Rect &gt; &gt; <link linkend="_classexplorer__t_1aea965f72ccf4510850fc844e97c51c19">items</link></para>
+
+<para>Explorer items to be rendered. </para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93">background</link></para>
+
+<para>Background of explorer. </para>
+</listitem>
+            <listitem><para>const int <link linkend="_classexplorer__t_1a9cb2c4b54f466e5535c38cdac94ea0b4">nameWrapLength</link></para>
+
+<para>Maximum length of the name in texture. </para>
+</listitem>
+            <listitem><para>const SDL_Rect <link linkend="_classexplorer__t_1ab134139610d2267ca833abcd44b39aac">downloadBounds</link></para>
+
+<para>Position of the download button. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+
+<para>Game context. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6"/><section>
+    <title>explorer_t()</title>
+<indexterm><primary>explorer_t</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>explorer_t</secondary></indexterm>
+<para><computeroutput>explorer_t::explorer_t (<link linkend="_classgame">game</link> * context)</computeroutput></para><para>
+
+<para>Construct a new explorer t object. </para>
+</para>
+
+<para>Called only once when WM is initialised</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>_context</entry><entry>
+<para>game context </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50"/><section>
+    <title>~explorer_t()</title>
+<indexterm><primary>~explorer_t</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>~explorer_t</secondary></indexterm>
+<para><computeroutput>explorer_t::~explorer_t ( )</computeroutput></para><para>
+
+<para>Destroy the explorer t object. </para>
+</para>
+
+<para>Called only when the wm is destroyed </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a"/><section>
+    <title>createFilesystemEntry()</title>
+<indexterm><primary>createFilesystemEntry</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>createFilesystemEntry</secondary></indexterm>
+<para><computeroutput>SDL_Texture * explorer_t::createFilesystemEntry (const char * text, const char * size)</computeroutput></para><para>
+
+<para>Creates texture to display in filesystem. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>text</entry><entry>
+<para>Text to be inserted as name </para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para>Text to be inserted in size </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>SDL_Texture* Texture at size width x 40 to make the text itself more readable </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882"/><section>
+    <title>handle()</title>
+<indexterm><primary>handle</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; explorer_t::handle (SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Handles mouse movement and file selection. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>event</entry><entry>
+<para>Event to be handled </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene</link>.</para>
+</section>
+<anchor xml:id="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757"/><section>
+    <title>render()</title>
+<indexterm><primary>render</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>render</secondary></indexterm>
+<para><computeroutput>void explorer_t::render ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Renders explorer, and files. </para>
+</para>
+<para>
+Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene</link>.</para>
+</section>
+<anchor xml:id="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; explorer_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Update logic for the explorer t object. </para>
+</para>
+
+<para>Realistically, does absolutely nothing.</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">scene</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93"/><section>
+    <title>background</title>
+<indexterm><primary>background</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>background</secondary></indexterm>
+<para><computeroutput>SDL_Texture* explorer_t::background</computeroutput></para><para>
+
+<para>Background of explorer. </para>
+</para>
+</section>
+<anchor xml:id="_classexplorer__t_1ab134139610d2267ca833abcd44b39aac"/><section>
+    <title>downloadBounds</title>
+<indexterm><primary>downloadBounds</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>downloadBounds</secondary></indexterm>
+<para><computeroutput>const SDL_Rect explorer_t::downloadBounds</computeroutput></para><para>
+
+<para>Position of the download button. </para>
+</para>
+</section>
+<anchor xml:id="_classexplorer__t_1aea965f72ccf4510850fc844e97c51c19"/><section>
+    <title>items</title>
+<indexterm><primary>items</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>items</secondary></indexterm>
+<para><computeroutput>std::vector&lt;std::pair&lt;SDL_Texture*, SDL_Rect&gt; &gt; explorer_t::items</computeroutput></para><para>
+
+<para>Explorer items to be rendered. </para>
+</para>
+</section>
+<anchor xml:id="_classexplorer__t_1a9cb2c4b54f466e5535c38cdac94ea0b4"/><section>
+    <title>nameWrapLength</title>
+<indexterm><primary>nameWrapLength</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>nameWrapLength</secondary></indexterm>
+<para><computeroutput>const int explorer_t::nameWrapLength</computeroutput></para><para>
+
+<para>Maximum length of the name in texture. </para>
+</para>
+</section>
+<anchor xml:id="_classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3"/><section>
+    <title>saveData</title>
+<indexterm><primary>saveData</primary><secondary>explorer_t</secondary></indexterm>
+<indexterm><primary>explorer_t</primary><secondary>saveData</secondary></indexterm>
+<para><computeroutput><link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link> explorer_t::saveData</computeroutput></para><para>
+
+<para>Information of game state. </para>
+</para>
+
+<para>Stores what entries are available to the player </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/scenes/<link linkend="_explorer_8hh">explorer.hh</link>src/scenes/<link linkend="_explorer_8cc">explorer.cc</link></section>
+</section>

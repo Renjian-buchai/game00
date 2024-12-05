@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_68267d1309a1af8e8297ef4c3efbcdba" xml:lang="en-US">
+<title>src Directory Reference</title>
+<indexterm><primary>src Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_1699be727a800b1d059c6f7f2b91d2ee">game</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_ecc8d4550b7fd15fd45b6c26299430bf">scenes</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_main_8cc">main.cc</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

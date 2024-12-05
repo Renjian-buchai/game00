@@ -1,0 +1,197 @@
+.TH "pause_t" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pause_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <pause\&.hh>\fP
+.PP
+Inherits \fBscene\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpause_t\fP (\fBgame\fP *\fBcontext\fP)"
+.br
+.RI "Construct a new pause t object\&. "
+.ti -1c
+.RI "\fB~pause_t\fP ()"
+.br
+.RI "Destroy the pause t object\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.br
+.RI "Update logic for the pause menu\&. "
+.ti -1c
+.RI "void \fBrender\fP () override"
+.br
+.RI "Renders menu, and buttons\&. "
+.ti -1c
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
+.br
+.RI "Handles hovers\&. "
+.in -1c
+
+Public Member Functions inherited from \fBscene\fP
+.in +1c
+.ti -1c
+.RI "SDL_Texture * \fBloadTexture\fP (const char *path)"
+.br
+.RI "Loads texture based on path\&. "
+.ti -1c
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
+.br
+.RI "Construct a new scene object\&. "
+.ti -1c
+.RI "virtual \fB~scene\fP ()"
+.br
+.RI "Destroy the scene object\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "SDL_Texture * \fBoverlay\fP"
+.br
+.RI "Pause overlay\&. "
+.ti -1c
+.RI "SDL_Texture * \fBresume\fP"
+.br
+.RI "Resume button when not hovered\&. "
+.ti -1c
+.RI "SDL_Texture * \fBresumeHover\fP"
+.br
+.RI "Resume button when hovered over\&. "
+.ti -1c
+.RI "SDL_Texture * \fBresumeState\fP"
+.br
+.RI "State of the resume button\&. "
+.ti -1c
+.RI "SDL_Rect \fBresumePos\fP"
+.br
+.ti -1c
+.RI "SDL_Texture * \fBexit\fP"
+.br
+.RI "Exit button when not hovered\&. "
+.ti -1c
+.RI "SDL_Texture * \fBexitHover\fP"
+.br
+.RI "Exit button when hovered over\&. "
+.ti -1c
+.RI "SDL_Texture * \fBexitState\fP"
+.br
+.RI "State of the exit button\&. "
+.ti -1c
+.RI "SDL_Rect \fBexitPos\fP"
+.br
+.RI "Position of the exit button\&. "
+.in -1c
+
+Public Attributes inherited from \fBscene\fP
+.in +1c
+.ti -1c
+.RI "\fBgame\fP * \fBcontext\fP"
+.br
+.RI "Game context\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "pause_t::pause_t (\fBgame\fP * context)"
+
+.PP
+Construct a new pause t object\&. Called only once when WM is initialised
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIcontext\fP game context 
+.RE
+.PP
+
+.SS "pause_t::~pause_t ()"
+
+.PP
+Destroy the pause t object\&. Called only when the wm is destroyed 
+.SH "Member Function Documentation"
+.PP 
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > pause_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Handles hovers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevent\fP Event to be handled 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData>Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.PP
+Implements \fBscene\fP\&.
+.SS "void pause_t::render ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Renders menu, and buttons\&. 
+.PP
+Implements \fBscene\fP\&.
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > pause_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Update logic for the pause menu\&. Realistically, does absolutely nothing\&.
+
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain 
+.RE
+.PP
+
+.PP
+Implements \fBscene\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "SDL_Texture* pause_t::exit"
+
+.PP
+Exit button when not hovered\&. 
+.SS "SDL_Texture* pause_t::exitHover"
+
+.PP
+Exit button when hovered over\&. 
+.SS "SDL_Rect pause_t::exitPos"
+
+.PP
+Position of the exit button\&. 
+.SS "SDL_Texture* pause_t::exitState"
+
+.PP
+State of the exit button\&. 
+.SS "SDL_Texture* pause_t::overlay"
+
+.PP
+Pause overlay\&. 
+.SS "SDL_Texture* pause_t::resume"
+
+.PP
+Resume button when not hovered\&. 
+.SS "SDL_Texture* pause_t::resumeHover"
+
+.PP
+Resume button when hovered over\&. 
+.SS "SDL_Rect pause_t::resumePos"
+Position of the resume button 
+.SS "SDL_Texture* pause_t::resumeState"
+
+.PP
+State of the resume button\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

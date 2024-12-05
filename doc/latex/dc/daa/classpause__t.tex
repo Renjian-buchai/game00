@@ -1,0 +1,243 @@
+\doxysection{pause\+\_\+t Class Reference}
+\label{classpause__t}\index{pause\_t@{pause\_t}}
+
+
+{\ttfamily \#include $<$pause.\+hh$>$}
+
+Inheritance diagram for pause\+\_\+t\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/daa/classpause__t}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpause__t_a840256e71d9ff0f489090fff8f07c946}{pause\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}})
+\begin{DoxyCompactList}\small\item\em Construct a new pause t object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpause__t_a8e6961a2a9fb61c99e92face62126593}{\texorpdfstring{$\sim$}{\string~}pause\+\_\+t}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the pause t object. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classpause__t_ac738a9a7bc4671c59a8a9eacd9d0e0ca}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update logic for the pause menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpause__t_a021e3734b6d7c0688490809b5f87d8c8}{render}} () override
+\begin{DoxyCompactList}\small\item\em Renders menu, and buttons. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classpause__t_a267e138e3c13edfb2e0c57cb9100ceac}{handle}} (SDL\+\_\+\+Event \&event) override
+\begin{DoxyCompactList}\small\item\em Handles hovers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classscene}{scene}}}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
+\begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classscene_a1012571c9524a29524b8b9d680715e90}{scene}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpause__t_abc176f557fb1f594687017c268bbdfe4}{overlay}}
+\begin{DoxyCompactList}\small\item\em Pause overlay. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpause__t_a3e20af849346bcd336f939865a270c5c}{resume}}
+\begin{DoxyCompactList}\small\item\em Resume button when not hovered. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpause__t_a0c32a4f98b58aa3806699382970ec491}{resume\+Hover}}
+\begin{DoxyCompactList}\small\item\em Resume button when hovered over. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpause__t_af9103128c6bc5af691f2fc46209e3217}{resume\+State}}
+\begin{DoxyCompactList}\small\item\em State of the resume button. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classpause__t_ae945e4a533d1de46870bffe0e838d8ae}{resume\+Pos}}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpause__t_a148437ac9cfb0970822384f99c03ac77}{exit}}
+\begin{DoxyCompactList}\small\item\em Exit button when not hovered. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpause__t_a3e67f3211198db082a0ac245dad42212}{exit\+Hover}}
+\begin{DoxyCompactList}\small\item\em Exit button when hovered over. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpause__t_ae058f8bee107894a18b483c2433b719e}{exit\+State}}
+\begin{DoxyCompactList}\small\item\em State of the exit button. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classpause__t_a9034485c8caf7cd1dfddf7f300542747}{exit\+Pos}}
+\begin{DoxyCompactList}\small\item\em Position of the exit button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classscene}{scene}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}}
+\begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{pause\_t@{pause\_t}!pause\_t@{pause\_t}}
+\index{pause\_t@{pause\_t}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{pause\_t()}{pause\_t()}}
+{\footnotesize\ttfamily \label{classpause__t_a840256e71d9ff0f489090fff8f07c946} 
+pause\+\_\+t\+::pause\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new pause t object. 
+
+Called only once when WM is initialised
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & game context \\
+\hline
+\end{DoxyParams}
+\index{pause\_t@{pause\_t}!````~pause\_t@{\texorpdfstring{$\sim$}{\string~}pause\_t}}
+\index{````~pause\_t@{\texorpdfstring{$\sim$}{\string~}pause\_t}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}pause\_t()}{\string~pause\_t()}}
+{\footnotesize\ttfamily \label{classpause__t_a8e6961a2a9fb61c99e92face62126593} 
+pause\+\_\+t\+::\texorpdfstring{$\sim$}{\string~}pause\+\_\+t (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destroy the pause t object. 
+
+Called only when the wm is destroyed 
+
+\doxysubsection{Member Function Documentation}
+\index{pause\_t@{pause\_t}!handle@{handle}}
+\index{handle@{handle}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classpause__t_a267e138e3c13edfb2e0c57cb9100ceac} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ pause\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles hovers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$Returns the scene to be changed to, and the data that scene should contain 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classscene_a56dec35146b15669e3cf054ced2f4be2}{scene}}.
+
+\index{pause\_t@{pause\_t}!render@{render}}
+\index{render@{render}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classpause__t_a021e3734b6d7c0688490809b5f87d8c8} 
+void pause\+\_\+t\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders menu, and buttons. 
+
+
+
+Implements \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{scene}}.
+
+\index{pause\_t@{pause\_t}!update@{update}}
+\index{update@{update}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classpause__t_ac738a9a7bc4671c59a8a9eacd9d0e0ca} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ pause\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update logic for the pause menu. 
+
+Realistically, does absolutely nothing.
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{scene}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\index{pause\_t@{pause\_t}!exit@{exit}}
+\index{exit@{exit}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{exit}{exit}}
+{\footnotesize\ttfamily \label{classpause__t_a148437ac9cfb0970822384f99c03ac77} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} pause\+\_\+t\+::exit}
+
+
+
+Exit button when not hovered. 
+
+\index{pause\_t@{pause\_t}!exitHover@{exitHover}}
+\index{exitHover@{exitHover}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{exitHover}{exitHover}}
+{\footnotesize\ttfamily \label{classpause__t_a3e67f3211198db082a0ac245dad42212} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} pause\+\_\+t\+::exit\+Hover}
+
+
+
+Exit button when hovered over. 
+
+\index{pause\_t@{pause\_t}!exitPos@{exitPos}}
+\index{exitPos@{exitPos}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{exitPos}{exitPos}}
+{\footnotesize\ttfamily \label{classpause__t_a9034485c8caf7cd1dfddf7f300542747} 
+SDL\+\_\+\+Rect pause\+\_\+t\+::exit\+Pos}
+
+
+
+Position of the exit button. 
+
+\index{pause\_t@{pause\_t}!exitState@{exitState}}
+\index{exitState@{exitState}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{exitState}{exitState}}
+{\footnotesize\ttfamily \label{classpause__t_ae058f8bee107894a18b483c2433b719e} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} pause\+\_\+t\+::exit\+State}
+
+
+
+State of the exit button. 
+
+\index{pause\_t@{pause\_t}!overlay@{overlay}}
+\index{overlay@{overlay}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{overlay}{overlay}}
+{\footnotesize\ttfamily \label{classpause__t_abc176f557fb1f594687017c268bbdfe4} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} pause\+\_\+t\+::overlay}
+
+
+
+Pause overlay. 
+
+\index{pause\_t@{pause\_t}!resume@{resume}}
+\index{resume@{resume}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{resume}{resume}}
+{\footnotesize\ttfamily \label{classpause__t_a3e20af849346bcd336f939865a270c5c} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} pause\+\_\+t\+::resume}
+
+
+
+Resume button when not hovered. 
+
+\index{pause\_t@{pause\_t}!resumeHover@{resumeHover}}
+\index{resumeHover@{resumeHover}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{resumeHover}{resumeHover}}
+{\footnotesize\ttfamily \label{classpause__t_a0c32a4f98b58aa3806699382970ec491} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} pause\+\_\+t\+::resume\+Hover}
+
+
+
+Resume button when hovered over. 
+
+\index{pause\_t@{pause\_t}!resumePos@{resumePos}}
+\index{resumePos@{resumePos}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{resumePos}{resumePos}}
+{\footnotesize\ttfamily \label{classpause__t_ae945e4a533d1de46870bffe0e838d8ae} 
+SDL\+\_\+\+Rect pause\+\_\+t\+::resume\+Pos}
+
+Position of the resume button \index{pause\_t@{pause\_t}!resumeState@{resumeState}}
+\index{resumeState@{resumeState}!pause\_t@{pause\_t}}
+\doxysubsubsection{\texorpdfstring{resumeState}{resumeState}}
+{\footnotesize\ttfamily \label{classpause__t_af9103128c6bc5af691f2fc46209e3217} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} pause\+\_\+t\+::resume\+State}
+
+
+
+State of the resume button. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/scenes/\mbox{\hyperlink{pause_8hh}{pause.\+hh}}\item 
+src/game/\mbox{\hyperlink{pause_8cc}{pause.\+cc}}\end{DoxyCompactItemize}

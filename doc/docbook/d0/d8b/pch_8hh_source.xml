@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_pch_8hh_source" xml:lang="en-US">
+<title>pch.hh</title>
+<indexterm><primary>include/pch.hh</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(PCH_HH)</emphasis>
+2 <emphasis role="preprocessor">#define&#32;PCH_HH</emphasis>
+3 
+4 <emphasis role="comment">//&#32;Stdlib</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;array&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+8 <emphasis role="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+9 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&lt;utility&gt;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&lt;variant&gt;</emphasis>
+12 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+13 
+14 <emphasis role="comment">//&#32;SDL</emphasis>
+15 <emphasis role="preprocessor">#include&#32;&quot;SDL.h&quot;</emphasis>
+16 <emphasis role="preprocessor">#include&#32;&quot;SDL_image.h&quot;</emphasis>
+17 <emphasis role="preprocessor">#include&#32;&quot;SDL_mixer.h&quot;</emphasis>
+18 <emphasis role="preprocessor">#include&#32;&quot;SDL_ttf.h&quot;</emphasis>
+19 
+20 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

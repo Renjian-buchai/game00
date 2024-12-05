@@ -1,0 +1,225 @@
+\doxysection{wm Class Reference}
+\label{classwm}\index{wm@{wm}}
+
+
+{\ttfamily \#include $<$wm.\+hh$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwm_ae80ff7518d15add5e8a639bc1b509ed4}{wm}} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new wm object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classwm_a963abfdd7d229db5869e59a97a301f47}{wm}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classwm_af9afae9fdbb9db6fdb6d62bf934ab5c3}{context}})
+\begin{DoxyCompactList}\small\item\em Construct a new wm object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classwm_aa9731642bc561de498bc559f0d5ab84e}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the current scene, icons, and the overlay. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_a7f282167450e97df5792d589c9ced058}{handle}} (SDL\+\_\+\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Handles events and scene switches via task bar. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_a54115bce16818acb350825256b11b2ce}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates scene data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::pair$<$ SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}, SDL\+\_\+\+Rect $>$ $>$ \mbox{\hyperlink{classwm_aab22b0e4971405b7fe57e8409e68793b}{icons}}
+\begin{DoxyCompactList}\small\item\em Icons for the task bar. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classwm_a718f320271041e9c08cdfbdc58cc3a64}{OSOverlay}}
+\begin{DoxyCompactList}\small\item\em Task bar overlay. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classwm_af9afae9fdbb9db6fdb6d62bf934ab5c3}{context}}
+\begin{DoxyCompactList}\small\item\em game context \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classwm_a50c97d11917956cf0abb63be275faddc}{pause\+Bounds}}
+\begin{DoxyCompactList}\small\item\em Position of the pause button. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classwm_a205790bf574b52cabae2bca77b17c262}{was\+Silence}} = 0
+\begin{DoxyCompactList}\small\item\em Stores whether the last music track was silent. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classexplorer__t}{explorer\+\_\+t}} $>$ \mbox{\hyperlink{classwm_adbe11e0ba621af1815bf54fde8244645}{explorer}}
+\begin{DoxyCompactList}\small\item\em Scenes. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classnotepad__t}{notepad\+\_\+t}} $>$ \mbox{\hyperlink{classwm_a041f88bc8a008ca3baca643fb12a1004}{notepad}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpause__t}{pause\+\_\+t}} $>$ \mbox{\hyperlink{classwm_a856235eafcdb96ed22216d2b53fb3b24}{pause}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classintro__t}{intro\+\_\+t}} $>$ \mbox{\hyperlink{classwm_a139e824c013da025cafc10d68b73aa34}{intro}}
+\item 
+\mbox{\hyperlink{classscene}{scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classwm_a2abf8c7eedd04f896cbf0ef50358f1c7}{current}}
+\begin{DoxyCompactList}\small\item\em Current scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classscene}{scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classwm_aeedc8b11c2b96839e921b7f82840656e}{resume}}
+\begin{DoxyCompactList}\small\item\em Scene to resume on. Only used for unpausing purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{wm@{wm}!wm@{wm}}
+\index{wm@{wm}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{wm()}{wm()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwm_ae80ff7518d15add5e8a639bc1b509ed4} 
+wm\+::wm (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new wm object. 
+
+Just to placate the warnings \index{wm@{wm}!wm@{wm}}
+\index{wm@{wm}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{wm()}{wm()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwm_a963abfdd7d229db5869e59a97a301f47} 
+wm\+::wm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new wm object. 
+
+Constructs all the scenes, too
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & game context \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\index{wm@{wm}!handle@{handle}}
+\index{handle@{handle}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classwm_a7f282167450e97df5792d589c9ced058} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+
+
+Handles events and scene switches via task bar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event to be handled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
+\end{DoxyReturn}
+\index{wm@{wm}!render@{render}}
+\index{render@{render}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classwm_aa9731642bc561de498bc559f0d5ab84e} 
+void wm\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Renders the current scene, icons, and the overlay. 
+
+Does not render if the current scene is the intro. \index{wm@{wm}!update@{update}}
+\index{update@{update}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classwm_a54115bce16818acb350825256b11b2ce} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Updates scene data. 
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\index{wm@{wm}!context@{context}}
+\index{context@{context}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \label{classwm_af9afae9fdbb9db6fdb6d62bf934ab5c3} 
+\mbox{\hyperlink{classgame}{game}}\texorpdfstring{$\ast$}{*} wm\+::context}
+
+
+
+game context 
+
+\index{wm@{wm}!current@{current}}
+\index{current@{current}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \label{classwm_a2abf8c7eedd04f896cbf0ef50358f1c7} 
+\mbox{\hyperlink{classscene}{scene}}\texorpdfstring{$\ast$}{*} wm\+::current}
+
+
+
+Current scene. 
+
+\index{wm@{wm}!explorer@{explorer}}
+\index{explorer@{explorer}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{explorer}{explorer}}
+{\footnotesize\ttfamily \label{classwm_adbe11e0ba621af1815bf54fde8244645} 
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classexplorer__t}{explorer\+\_\+t}}$>$ wm\+::explorer}
+
+
+
+Scenes. 
+
+Unique pointers so that they\textquotesingle{}ll kill themselves once wm terminates \index{wm@{wm}!icons@{icons}}
+\index{icons@{icons}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{icons}{icons}}
+{\footnotesize\ttfamily \label{classwm_aab22b0e4971405b7fe57e8409e68793b} 
+std\+::vector$<$std\+::pair$<$SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*}, SDL\+\_\+\+Rect$>$ $>$ wm\+::icons}
+
+
+
+Icons for the task bar. 
+
+\index{wm@{wm}!intro@{intro}}
+\index{intro@{intro}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{intro}{intro}}
+{\footnotesize\ttfamily \label{classwm_a139e824c013da025cafc10d68b73aa34} 
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classintro__t}{intro\+\_\+t}}$>$ wm\+::intro}
+
+\index{wm@{wm}!notepad@{notepad}}
+\index{notepad@{notepad}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{notepad}{notepad}}
+{\footnotesize\ttfamily \label{classwm_a041f88bc8a008ca3baca643fb12a1004} 
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classnotepad__t}{notepad\+\_\+t}}$>$ wm\+::notepad}
+
+\index{wm@{wm}!OSOverlay@{OSOverlay}}
+\index{OSOverlay@{OSOverlay}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{OSOverlay}{OSOverlay}}
+{\footnotesize\ttfamily \label{classwm_a718f320271041e9c08cdfbdc58cc3a64} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} wm\+::\+OSOverlay}
+
+
+
+Task bar overlay. 
+
+\index{wm@{wm}!pause@{pause}}
+\index{pause@{pause}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{pause}{pause}}
+{\footnotesize\ttfamily \label{classwm_a856235eafcdb96ed22216d2b53fb3b24} 
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classpause__t}{pause\+\_\+t}}$>$ wm\+::pause}
+
+\index{wm@{wm}!pauseBounds@{pauseBounds}}
+\index{pauseBounds@{pauseBounds}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{pauseBounds}{pauseBounds}}
+{\footnotesize\ttfamily \label{classwm_a50c97d11917956cf0abb63be275faddc} 
+SDL\+\_\+\+Rect wm\+::pause\+Bounds}
+
+
+
+Position of the pause button. 
+
+\index{wm@{wm}!resume@{resume}}
+\index{resume@{resume}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{resume}{resume}}
+{\footnotesize\ttfamily \label{classwm_aeedc8b11c2b96839e921b7f82840656e} 
+\mbox{\hyperlink{classscene}{scene}}\texorpdfstring{$\ast$}{*} wm\+::resume}
+
+
+
+Scene to resume on. Only used for unpausing purposes. 
+
+\index{wm@{wm}!wasSilence@{wasSilence}}
+\index{wasSilence@{wasSilence}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{wasSilence}{wasSilence}}
+{\footnotesize\ttfamily \label{classwm_a205790bf574b52cabae2bca77b17c262} 
+bool wm\+::was\+Silence = 0}
+
+
+
+Stores whether the last music track was silent. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{wm_8hh}{wm.\+hh}}\item 
+src/game/\mbox{\hyperlink{wm_8cc}{wm.\+cc}}\end{DoxyCompactItemize}

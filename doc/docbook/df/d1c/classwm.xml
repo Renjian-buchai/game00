@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classwm" xml:lang="en-US">
+<title>wm Class Reference</title>
+<indexterm><primary>wm</primary></indexterm>
+<para>
+<computeroutput>#include &lt;wm.hh&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classwm_1ae80ff7518d15add5e8a639bc1b509ed4">wm</link> ()=default</para>
+
+<para>Construct a new wm object. </para>
+</listitem>
+            <listitem><para><link linkend="_classwm_1a963abfdd7d229db5869e59a97a301f47">wm</link> (<link linkend="_classgame">game</link> *<link linkend="_classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3">context</link>)</para>
+
+<para>Construct a new wm object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classwm_1aa9731642bc561de498bc559f0d5ab84e">render</link> ()</para>
+
+<para>Renders the current scene, icons, and the overlay. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1a7f282167450e97df5792d589c9ced058">handle</link> (SDL_Event &amp;event)</para>
+
+<para>Handles events and scene switches via task bar. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1a54115bce16818acb350825256b11b2ce">update</link> ()</para>
+
+<para>Updates scene data. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::vector&lt; std::pair&lt; SDL_Texture *, SDL_Rect &gt; &gt; <link linkend="_classwm_1aab22b0e4971405b7fe57e8409e68793b">icons</link></para>
+
+<para>Icons for the task bar. </para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classwm_1a718f320271041e9c08cdfbdc58cc3a64">OSOverlay</link></para>
+
+<para>Task bar overlay. </para>
+</listitem>
+            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3">context</link></para>
+
+<para>game context </para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classwm_1a50c97d11917956cf0abb63be275faddc">pauseBounds</link></para>
+
+<para>Position of the pause button. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classwm_1a205790bf574b52cabae2bca77b17c262">wasSilence</link> = 0</para>
+
+<para>Stores whether the last music track was silent. </para>
+</listitem>
+            <listitem><para>std::unique_ptr&lt; <link linkend="_classexplorer__t">explorer_t</link> &gt; <link linkend="_classwm_1adbe11e0ba621af1815bf54fde8244645">explorer</link></para>
+
+<para>Scenes. </para>
+</listitem>
+            <listitem><para>std::unique_ptr&lt; <link linkend="_classnotepad__t">notepad_t</link> &gt; <link linkend="_classwm_1a041f88bc8a008ca3baca643fb12a1004">notepad</link></para>
+</listitem>
+            <listitem><para>std::unique_ptr&lt; <link linkend="_classpause__t">pause_t</link> &gt; <link linkend="_classwm_1a856235eafcdb96ed22216d2b53fb3b24">pause</link></para>
+</listitem>
+            <listitem><para>std::unique_ptr&lt; <link linkend="_classintro__t">intro_t</link> &gt; <link linkend="_classwm_1a139e824c013da025cafc10d68b73aa34">intro</link></para>
+</listitem>
+            <listitem><para><link linkend="_classscene">scene</link> * <link linkend="_classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7">current</link></para>
+
+<para>Current scene. </para>
+</listitem>
+            <listitem><para><link linkend="_classscene">scene</link> * <link linkend="_classwm_1aeedc8b11c2b96839e921b7f82840656e">resume</link></para>
+
+<para>Scene to resume on. Only used for unpausing purposes. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classwm_1ae80ff7518d15add5e8a639bc1b509ed4"/><section>
+    <title>wm()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>wm</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>wm</secondary></indexterm>
+<para><computeroutput>wm::wm ( )<computeroutput>[default]</computeroutput></computeroutput></para><para>
+
+<para>Construct a new wm object. </para>
+</para>
+
+<para>Just to placate the warnings </para>
+</section>
+<anchor xml:id="_classwm_1a963abfdd7d229db5869e59a97a301f47"/><section>
+    <title>wm()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>wm</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>wm</secondary></indexterm>
+<para><computeroutput>wm::wm (<link linkend="_classgame">game</link> * context)</computeroutput></para><para>
+
+<para>Construct a new wm object. </para>
+</para>
+
+<para>Constructs all the scenes, too</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>context</entry><entry>
+<para>game context </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classwm_1a7f282167450e97df5792d589c9ced058"/><section>
+    <title>handle()</title>
+<indexterm><primary>handle</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::handle (SDL_Event &amp; event)</computeroutput></para><para>
+
+<para>Handles events and scene switches via task bar. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>event</entry><entry>
+<para>Event to be handled. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classwm_1aa9731642bc561de498bc559f0d5ab84e"/><section>
+    <title>render()</title>
+<indexterm><primary>render</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>render</secondary></indexterm>
+<para><computeroutput>void wm::render ( )</computeroutput></para><para>
+
+<para>Renders the current scene, icons, and the overlay. </para>
+</para>
+
+<para>Does not render if the current scene is the intro. </para>
+</section>
+<anchor xml:id="_classwm_1a54115bce16818acb350825256b11b2ce"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::update ( )</computeroutput></para><para>
+
+<para>Updates scene data. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3"/><section>
+    <title>context</title>
+<indexterm><primary>context</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>context</secondary></indexterm>
+<para><computeroutput><link linkend="_classgame">game</link>* wm::context</computeroutput></para><para>
+
+<para>game context </para>
+</para>
+</section>
+<anchor xml:id="_classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7"/><section>
+    <title>current</title>
+<indexterm><primary>current</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>current</secondary></indexterm>
+<para><computeroutput><link linkend="_classscene">scene</link>* wm::current</computeroutput></para><para>
+
+<para>Current scene. </para>
+</para>
+</section>
+<anchor xml:id="_classwm_1adbe11e0ba621af1815bf54fde8244645"/><section>
+    <title>explorer</title>
+<indexterm><primary>explorer</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>explorer</secondary></indexterm>
+<para><computeroutput>std::unique_ptr&lt;<link linkend="_classexplorer__t">explorer_t</link>&gt; wm::explorer</computeroutput></para><para>
+
+<para>Scenes. </para>
+</para>
+
+<para>Unique pointers so that they&apos;ll kill themselves once wm terminates </para>
+</section>
+<anchor xml:id="_classwm_1aab22b0e4971405b7fe57e8409e68793b"/><section>
+    <title>icons</title>
+<indexterm><primary>icons</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>icons</secondary></indexterm>
+<para><computeroutput>std::vector&lt;std::pair&lt;SDL_Texture*, SDL_Rect&gt; &gt; wm::icons</computeroutput></para><para>
+
+<para>Icons for the task bar. </para>
+</para>
+</section>
+<anchor xml:id="_classwm_1a139e824c013da025cafc10d68b73aa34"/><section>
+    <title>intro</title>
+<indexterm><primary>intro</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>intro</secondary></indexterm>
+<para><computeroutput>std::unique_ptr&lt;<link linkend="_classintro__t">intro_t</link>&gt; wm::intro</computeroutput></para></section>
+<anchor xml:id="_classwm_1a041f88bc8a008ca3baca643fb12a1004"/><section>
+    <title>notepad</title>
+<indexterm><primary>notepad</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>notepad</secondary></indexterm>
+<para><computeroutput>std::unique_ptr&lt;<link linkend="_classnotepad__t">notepad_t</link>&gt; wm::notepad</computeroutput></para></section>
+<anchor xml:id="_classwm_1a718f320271041e9c08cdfbdc58cc3a64"/><section>
+    <title>OSOverlay</title>
+<indexterm><primary>OSOverlay</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>OSOverlay</secondary></indexterm>
+<para><computeroutput>SDL_Texture* wm::OSOverlay</computeroutput></para><para>
+
+<para>Task bar overlay. </para>
+</para>
+</section>
+<anchor xml:id="_classwm_1a856235eafcdb96ed22216d2b53fb3b24"/><section>
+    <title>pause</title>
+<indexterm><primary>pause</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>pause</secondary></indexterm>
+<para><computeroutput>std::unique_ptr&lt;<link linkend="_classpause__t">pause_t</link>&gt; wm::pause</computeroutput></para></section>
+<anchor xml:id="_classwm_1a50c97d11917956cf0abb63be275faddc"/><section>
+    <title>pauseBounds</title>
+<indexterm><primary>pauseBounds</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>pauseBounds</secondary></indexterm>
+<para><computeroutput>SDL_Rect wm::pauseBounds</computeroutput></para><para>
+
+<para>Position of the pause button. </para>
+</para>
+</section>
+<anchor xml:id="_classwm_1aeedc8b11c2b96839e921b7f82840656e"/><section>
+    <title>resume</title>
+<indexterm><primary>resume</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>resume</secondary></indexterm>
+<para><computeroutput><link linkend="_classscene">scene</link>* wm::resume</computeroutput></para><para>
+
+<para>Scene to resume on. Only used for unpausing purposes. </para>
+</para>
+</section>
+<anchor xml:id="_classwm_1a205790bf574b52cabae2bca77b17c262"/><section>
+    <title>wasSilence</title>
+<indexterm><primary>wasSilence</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>wasSilence</secondary></indexterm>
+<para><computeroutput>bool wm::wasSilence = 0</computeroutput></para><para>
+
+<para>Stores whether the last music track was silent. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/<link linkend="_wm_8hh">wm.hh</link>src/game/<link linkend="_wm_8cc">wm.cc</link></section>
+</section>

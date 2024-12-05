@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_game_8cc" xml:lang="en-US">
+<title>src/game/game.cc File Reference</title>
+<indexterm><primary>src/game/game.cc</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;../include/game.hh&quot;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structwm_init_data">wmInitData</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_game_8cc_1a99ac6b71536a9029028ea49afd42fab0">wmInit</link> (void *data)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_game_8cc_1a99ac6b71536a9029028ea49afd42fab0"/><section>
+    <title>wmInit()</title>
+<indexterm><primary>wmInit</primary><secondary>game.cc</secondary></indexterm>
+<indexterm><primary>game.cc</primary><secondary>wmInit</secondary></indexterm>
+<para><computeroutput>int wmInit (void * data)</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,278 @@
+\doxysection{intro\+\_\+t Class Reference}
+\label{classintro__t}\index{intro\_t@{intro\_t}}
+
+
+{\ttfamily \#include $<$init.\+hh$>$}
+
+Inheritance diagram for intro\+\_\+t\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/dea/classintro__t}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classintro__t_1_1slide}{slide}}
+\begin{DoxyCompactList}\small\item\em Contains all the information required for a functional slideshow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6}{centre}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e}{HORIZONTAL}}
+, \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc}{VERTICAL}}
+, \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197}{BOTH}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classintro__t_ad12e48028d1cc4b1c288dab77dbe193d}{intro\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}})
+\begin{DoxyCompactList}\small\item\em Construct a new intro t object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classintro__t_a56e63618edf895c263cda8a8c8ef45e6}{\texorpdfstring{$\sim$}{\string~}intro\+\_\+t}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the intro t object. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classintro__t_a09c3876e890a37be7a17dbbb0084d4da}{update}} () override
+\begin{DoxyCompactList}\small\item\em Updates scene info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classintro__t_add93912d666cc242e170f15e7e03a808}{render}} () override
+\begin{DoxyCompactList}\small\item\em Renders slides. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classintro__t_adda2b278aae9bae71b89194313bc23a9}{handle}} (SDL\+\_\+\+Event \&event) override
+\item 
+void \mbox{\hyperlink{classintro__t_a104f915a0a592c0db524a70ffc666a60}{slide\+Show}} (size\+\_\+t time, bool \&click, size\+\_\+t skip\+Grace=500)
+\begin{DoxyCompactList}\small\item\em Performs the slideshow logic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classintro__t_a0439809e2c67c40ea20757ffed70968c}{add\+Slide}} (SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*}surface, size\+\_\+t fade\+In, size\+\_\+t duration, size\+\_\+t fade\+Out, SDL\+\_\+\+Rect dest=SDL\+\_\+\+Rect\{\}, bool centred=true, bool skippable=true)
+\begin{DoxyCompactList}\small\item\em Adds slides to slideshow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classintro__t_a427b58b3e041bb4672278b9e422b8292}{centre\+Rect}} (SDL\+\_\+\+Rect \&rect, \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6}{centre}} \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6}{centre}}=\mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197}{centre\+::\+BOTH}}) const
+\begin{DoxyCompactList}\small\item\em Centres rect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classscene}{scene}}}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
+\begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classscene_a1012571c9524a29524b8b9d680715e90}{scene}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classintro__t_1_1slide}{slide}} $>$ \mbox{\hyperlink{classintro__t_a97b511d587ca8e05515e35e6418cf1d0}{slides}}
+\begin{DoxyCompactList}\small\item\em Slides to be slideshowed. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classintro__t_a6db4493f9b8695a1bed2f16f3af45870}{start\+Time}}
+\begin{DoxyCompactList}\small\item\em The time at which each slide starts. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classintro__t_a1543b2b845c6999165123b34608fcf25}{skip}}
+\begin{DoxyCompactList}\small\item\em Whether a skip is requested by the event handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classscene}{scene}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}}
+\begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\index{intro\_t@{intro\_t}!centre@{centre}}
+\index{centre@{centre}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{centre}{centre}}
+{\footnotesize\ttfamily \label{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6} 
+enum class \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6}{intro\+\_\+t\+::centre}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HORIZONTAL@{HORIZONTAL}!intro\_t@{intro\_t}}\index{intro\_t@{intro\_t}!HORIZONTAL@{HORIZONTAL}}}\label{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6} 
+HORIZONTAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VERTICAL@{VERTICAL}!intro\_t@{intro\_t}}\index{intro\_t@{intro\_t}!VERTICAL@{VERTICAL}}}\label{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6} 
+VERTICAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BOTH@{BOTH}!intro\_t@{intro\_t}}\index{intro\_t@{intro\_t}!BOTH@{BOTH}}}\label{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6} 
+BOTH&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{intro\_t@{intro\_t}!intro\_t@{intro\_t}}
+\index{intro\_t@{intro\_t}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{intro\_t()}{intro\_t()}}
+{\footnotesize\ttfamily \label{classintro__t_ad12e48028d1cc4b1c288dab77dbe193d} 
+intro\+\_\+t\+::intro\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new intro t object. 
+
+Called only once when WM is initialised
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Game context \\
+\hline
+\end{DoxyParams}
+\index{intro\_t@{intro\_t}!````~intro\_t@{\texorpdfstring{$\sim$}{\string~}intro\_t}}
+\index{````~intro\_t@{\texorpdfstring{$\sim$}{\string~}intro\_t}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}intro\_t()}{\string~intro\_t()}}
+{\footnotesize\ttfamily \label{classintro__t_a56e63618edf895c263cda8a8c8ef45e6} 
+intro\+\_\+t\+::\texorpdfstring{$\sim$}{\string~}intro\+\_\+t (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destroy the intro t object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\index{intro\_t@{intro\_t}!addSlide@{addSlide}}
+\index{addSlide@{addSlide}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{addSlide()}{addSlide()}}
+{\footnotesize\ttfamily \label{classintro__t_a0439809e2c67c40ea20757ffed70968c} 
+void intro\+\_\+t\+::add\+Slide (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*}}]{surface}{, }\item[{size\+\_\+t}]{fade\+In}{, }\item[{size\+\_\+t}]{duration}{, }\item[{size\+\_\+t}]{fade\+Out}{, }\item[{SDL\+\_\+\+Rect}]{dest}{ = {\ttfamily SDL\+\_\+Rect\{\}}, }\item[{bool}]{centred}{ = {\ttfamily true}, }\item[{bool}]{skippable}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Adds slides to slideshow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & Surface to be converted into a slideshow. Will be converted into a texture, then freed. \\
+\hline
+{\em fade\+In} & Fade in duration \\
+\hline
+{\em duration} & Full brightness duration \\
+\hline
+{\em fade\+Out} & Fade out duration \\
+\hline
+{\em dest} & Destination for where to render the slide \\
+\hline
+{\em centred} & Whether the slide is centred. \\
+\hline
+{\em skippable} & Whether it is permissible to skip the slide \\
+\hline
+\end{DoxyParams}
+\index{intro\_t@{intro\_t}!centreRect@{centreRect}}
+\index{centreRect@{centreRect}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{centreRect()}{centreRect()}}
+{\footnotesize\ttfamily \label{classintro__t_a427b58b3e041bb4672278b9e422b8292} 
+void intro\+\_\+t\+::centre\+Rect (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect \&}]{rect}{, }\item[{\mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6}{centre}}}]{centre}{ = {\ttfamily \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197}{centre\+::\+BOTH}}}}\end{DoxyParamCaption}) const}
+
+
+
+Centres rect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rect to centre \\
+\hline
+{\em centre} & Stores how the rect will be centred \\
+\hline
+\end{DoxyParams}
+\index{intro\_t@{intro\_t}!handle@{handle}}
+\index{handle@{handle}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classintro__t_adda2b278aae9bae71b89194313bc23a9} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ intro\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classscene_a56dec35146b15669e3cf054ced2f4be2}{scene}}.
+
+\index{intro\_t@{intro\_t}!render@{render}}
+\index{render@{render}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classintro__t_add93912d666cc242e170f15e7e03a808} 
+void intro\+\_\+t\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders slides. 
+
+
+
+Implements \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{scene}}.
+
+\index{intro\_t@{intro\_t}!slideShow@{slideShow}}
+\index{slideShow@{slideShow}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{slideShow()}{slideShow()}}
+{\footnotesize\ttfamily \label{classintro__t_a104f915a0a592c0db524a70ffc666a60} 
+void intro\+\_\+t\+::slide\+Show (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{time}{, }\item[{bool \&}]{click}{, }\item[{size\+\_\+t}]{skip\+Grace}{ = {\ttfamily 500}}\end{DoxyParamCaption})}
+
+
+
+Performs the slideshow logic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Current time \\
+\hline
+{\em click} & Whether a click happened in the past n seconds \\
+\hline
+{\em skip\+Grace} & Grace period for skipping. Default\+: 500 \\
+\hline
+\end{DoxyParams}
+\index{intro\_t@{intro\_t}!update@{update}}
+\index{update@{update}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classintro__t_a09c3876e890a37be7a17dbbb0084d4da} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ intro\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates scene info. 
+
+Makes the call on when to move on to explorer.
+
+When it moves on, it calls its own destructor to minimise its size and effect on memory usage.
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{scene}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\index{intro\_t@{intro\_t}!skip@{skip}}
+\index{skip@{skip}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{skip}{skip}}
+{\footnotesize\ttfamily \label{classintro__t_a1543b2b845c6999165123b34608fcf25} 
+bool intro\+\_\+t\+::skip}
+
+
+
+Whether a skip is requested by the event handler. 
+
+\index{intro\_t@{intro\_t}!slides@{slides}}
+\index{slides@{slides}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{slides}{slides}}
+{\footnotesize\ttfamily \label{classintro__t_a97b511d587ca8e05515e35e6418cf1d0} 
+std\+::vector$<$\mbox{\hyperlink{classintro__t_1_1slide}{slide}}$>$ intro\+\_\+t\+::slides}
+
+
+
+Slides to be slideshowed. 
+
+\index{intro\_t@{intro\_t}!startTime@{startTime}}
+\index{startTime@{startTime}!intro\_t@{intro\_t}}
+\doxysubsubsection{\texorpdfstring{startTime}{startTime}}
+{\footnotesize\ttfamily \label{classintro__t_a6db4493f9b8695a1bed2f16f3af45870} 
+size\+\_\+t intro\+\_\+t\+::start\+Time}
+
+
+
+The time at which each slide starts. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/scenes/\mbox{\hyperlink{init_8hh}{init.\+hh}}\item 
+src/scenes/\mbox{\hyperlink{init_8cc}{init.\+cc}}\end{DoxyCompactItemize}

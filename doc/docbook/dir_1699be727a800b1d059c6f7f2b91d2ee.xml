@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_1699be727a800b1d059c6f7f2b91d2ee" xml:lang="en-US">
+<title>src/game Directory Reference</title>
+<indexterm><primary>src/game Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_game_8cc">game.cc</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_gameplay_8cc">gameplay.cc</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_pause_8cc">pause.cc</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_wm_8cc">wm.cc</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

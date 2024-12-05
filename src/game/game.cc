@@ -15,6 +15,17 @@ struct wmInitData {
   void unlock() { SDL_UnlockMutex(mutex); }
 };
 
+int wmInit(void *data) {
+  // We only need to copy the addresses.
+  wmInitData *initData = reinterpret_cast<wmInitData *>(data);
+
+  initData->lock();
+  *initData->winMan = wm(initData->context);
+  initData->unlock();
+
+  return 0;
+};
+
 game::game() {
   if (int err = SDL_GetDisplayBounds(0, &dispBounds)) {
     std::cerr << SDL_GetError() << "\n";
@@ -37,22 +48,6 @@ game::game() {
     exit(-1);
   }
 
-  // Testing if it can render
-  {
-    if (int err = SDL_SetRenderDrawColor(mainRenderer, 0x00, 0x00, 0x00,
-                                         SDL_ALPHA_OPAQUE)) {
-      std::cerr << SDL_GetError() << "\n";
-      this->~game();
-      exit(err);
-    }
-
-    if (int err = SDL_RenderClear(mainRenderer)) {
-      std::cerr << SDL_GetError() << "\n";
-      this->~game();
-      exit(err);
-    }
-  }
-
   font = TTF_OpenFont("res/UI/fonts/arial.ttf", 50);
   if (font == nullptr) {
     std::cerr << TTF_GetError();
@@ -63,17 +58,6 @@ game::game() {
   pixelSize = static_cast<double>(dispBounds.w) / 640.0f;
 
   mutex = SDL_CreateMutex();
-
-  int (*wmInit)(void *) = [](void *data) -> int {
-    // We only need to copy the addresses.
-    wmInitData *initData = reinterpret_cast<wmInitData *>(data);
-
-    initData->lock();
-    *initData->winMan = wm(initData->context);
-    initData->unlock();
-
-    return 0;
-  };
 
   loadThread = SDL_CreateThread(
       wmInit, "WM initialiser",

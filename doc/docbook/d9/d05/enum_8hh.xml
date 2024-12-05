@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_enum_8hh" xml:lang="en-US">
+<title>include/enum.hh File Reference</title>
+<indexterm><primary>include/enum.hh</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;cstdint&gt;<?linebreak?></programlisting><simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> = std::variant&lt;std::monostate, <link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link>&gt;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum class <link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link> : uint8_t { <link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9">empty</link>
+, <link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d">entry1</link> = 1
+, <link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd">entry2</link> = 2
+ }</para>
+
+<para>Entry currently stored in notepad. </para>
+</listitem>
+            <listitem><para>enum class <link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link> : uint8_t { <link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9">init</link>
+, <link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d">entry1</link>
+, <link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd">entry2</link>
+, <link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24">size</link>
+ }</para>
+
+<para>Entries list. </para>
+</listitem>
+            <listitem><para>enum class <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link> : uint8_t { <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb">intro</link>
+, <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162">explorer</link>
+, <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf">notepad</link>
+, <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9">pause</link>
+ }</para>
+
+<para>Scenes list. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab"/><section>
+    <title>sceneData</title>
+<indexterm><primary>sceneData</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>sceneData</secondary></indexterm>
+<para><computeroutput>using <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> = std::variant&lt;std::monostate, <link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link>&gt;</computeroutput></para></section>
+</section>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a"/><section>
+    <title>explorerData</title>
+<indexterm><primary>explorerData</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>explorerData</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link> : uint8_t<computeroutput>[strong]</computeroutput></computeroutput></para><para>
+
+<para>Entries list. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>init</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>init</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9"/>init</entry><entry></entry></row><row><entry><indexterm><primary>entry1</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>entry1</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d"/>entry1</entry><entry></entry></row><row><entry><indexterm><primary>entry2</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>entry2</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"/>entry2</entry><entry></entry></row><row><entry><indexterm><primary>size</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>size</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"/>size</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6"/><section>
+    <title>notepadData</title>
+<indexterm><primary>notepadData</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>notepadData</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link> : uint8_t<computeroutput>[strong]</computeroutput></computeroutput></para><para>
+
+<para>Entry currently stored in notepad. </para>
+</para>
+
+<para>Enumerated continuously and in order to make file name queries convenient </para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>empty</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>empty</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9"/>empty</entry><entry></entry></row><row><entry><indexterm><primary>entry1</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>entry1</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d"/>entry1</entry><entry></entry></row><row><entry><indexterm><primary>entry2</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>entry2</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd"/>entry2</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a"/><section>
+    <title>scenes</title>
+<indexterm><primary>scenes</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>scenes</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link> : uint8_t<computeroutput>[strong]</computeroutput></computeroutput></para><para>
+
+<para>Scenes list. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>intro</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>intro</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb"/>intro</entry><entry></entry></row><row><entry><indexterm><primary>explorer</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>explorer</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"/>explorer</entry><entry></entry></row><row><entry><indexterm><primary>notepad</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>notepad</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"/>notepad</entry><entry></entry></row><row><entry><indexterm><primary>pause</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>pause</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"/>pause</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+</section>

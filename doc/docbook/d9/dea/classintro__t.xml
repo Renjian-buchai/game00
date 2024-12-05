@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classintro__t" xml:lang="en-US">
+<title>intro_t Class Reference</title>
+<indexterm><primary>intro_t</primary></indexterm>
+<para>
+<computeroutput>#include &lt;init.hh&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for intro_t:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/dea/classintro__t.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classintro__t_1_1slide">slide</link></para>
+
+<para>Contains all the information required for a functional slideshow. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum class <link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link> : uint8_t { <link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e">HORIZONTAL</link>
+, <link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc">VERTICAL</link>
+, <link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197">BOTH</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d">intro_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>)</para>
+
+<para>Construct a new intro t object. </para>
+</listitem>
+            <listitem><para><link linkend="_classintro__t_1a56e63618edf895c263cda8a8c8ef45e6">~intro_t</link> ()</para>
+
+<para>Destroy the intro t object. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">update</link> () override</para>
+
+<para>Updates scene info. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">render</link> () override</para>
+
+<para>Renders slides. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classintro__t_1adda2b278aae9bae71b89194313bc23a9">handle</link> (SDL_Event &amp;event) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_classintro__t_1a104f915a0a592c0db524a70ffc666a60">slideShow</link> (size_t time, bool &amp;click, size_t skipGrace=500)</para>
+
+<para>Performs the slideshow logic. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classintro__t_1a0439809e2c67c40ea20757ffed70968c">addSlide</link> (SDL_Surface *surface, size_t fadeIn, size_t duration, size_t fadeOut, SDL_Rect dest=SDL_Rect{}, bool centred=true, bool skippable=true)</para>
+
+<para>Adds slides to slideshow. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classintro__t_1a427b58b3e041bb4672278b9e422b8292">centreRect</link> (SDL_Rect &amp;rect, <link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link> <link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link>=<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197">centre::BOTH</link>) const</para>
+
+<para>Centres rect. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
+            <listitem><para>SDL_Texture * <link linkend="_classscene_1a5d4681a41f14704a05c4f84569888061">loadTexture</link> (const char *path)</para>
+
+<para>Loads texture based on path. </para>
+</listitem>
+            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+
+<para>Construct a new scene object. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496">~scene</link> ()</para>
+
+<para>Destroy the scene object. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::vector&lt; <link linkend="_classintro__t_1_1slide">slide</link> &gt; <link linkend="_classintro__t_1a97b511d587ca8e05515e35e6418cf1d0">slides</link></para>
+
+<para>Slides to be slideshowed. </para>
+</listitem>
+            <listitem><para>size_t <link linkend="_classintro__t_1a6db4493f9b8695a1bed2f16f3af45870">startTime</link></para>
+
+<para>The time at which each slide starts. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classintro__t_1a1543b2b845c6999165123b34608fcf25">skip</link></para>
+
+<para>Whether a skip is requested by the event handler. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+
+<para>Game context. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6"/><section>
+    <title>centre</title>
+<indexterm><primary>centre</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>centre</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">intro_t::centre</link> : uint8_t<computeroutput>[strong]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>HORIZONTAL</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>HORIZONTAL</secondary></indexterm>
+<anchor xml:id="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e"/>HORIZONTAL</entry><entry></entry></row><row><entry><indexterm><primary>VERTICAL</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>VERTICAL</secondary></indexterm>
+<anchor xml:id="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc"/>VERTICAL</entry><entry></entry></row><row><entry><indexterm><primary>BOTH</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>BOTH</secondary></indexterm>
+<anchor xml:id="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"/>BOTH</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d"/><section>
+    <title>intro_t()</title>
+<indexterm><primary>intro_t</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>intro_t</secondary></indexterm>
+<para><computeroutput>intro_t::intro_t (<link linkend="_classgame">game</link> * context)</computeroutput></para><para>
+
+<para>Construct a new intro t object. </para>
+</para>
+
+<para>Called only once when WM is initialised</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>context</entry><entry>
+<para>Game context </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classintro__t_1a56e63618edf895c263cda8a8c8ef45e6"/><section>
+    <title>~intro_t()</title>
+<indexterm><primary>~intro_t</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>~intro_t</secondary></indexterm>
+<para><computeroutput>intro_t::~intro_t ( )</computeroutput></para><para>
+
+<para>Destroy the intro t object. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classintro__t_1a0439809e2c67c40ea20757ffed70968c"/><section>
+    <title>addSlide()</title>
+<indexterm><primary>addSlide</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>addSlide</secondary></indexterm>
+<para><computeroutput>void intro_t::addSlide (SDL_Surface * surface, size_t fadeIn, size_t duration, size_t fadeOut, SDL_Rect dest = <computeroutput>SDL_Rect{}</computeroutput>
+, bool centred = <computeroutput>true</computeroutput>
+, bool skippable = <computeroutput>true</computeroutput>
+)</computeroutput></para><para>
+
+<para>Adds slides to slideshow. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>surface</entry><entry>
+<para>Surface to be converted into a slideshow. Will be converted into a texture, then freed. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>fadeIn</entry><entry>
+<para>Fade in duration </para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>Full brightness duration </para>
+</entry>
+                            </row>
+                            <row>
+<entry>fadeOut</entry><entry>
+<para>Fade out duration </para>
+</entry>
+                            </row>
+                            <row>
+<entry>dest</entry><entry>
+<para>Destination for where to render the slide </para>
+</entry>
+                            </row>
+                            <row>
+<entry>centred</entry><entry>
+<para>Whether the slide is centred. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>skippable</entry><entry>
+<para>Whether it is permissible to skip the slide </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classintro__t_1a427b58b3e041bb4672278b9e422b8292"/><section>
+    <title>centreRect()</title>
+<indexterm><primary>centreRect</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>centreRect</secondary></indexterm>
+<para><computeroutput>void intro_t::centreRect (SDL_Rect &amp; rect, <link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link> centre = <computeroutput><link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197">centre::BOTH</link></computeroutput>
+) const</computeroutput></para><para>
+
+<para>Centres rect. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rect</entry><entry>
+<para>Rect to centre </para>
+</entry>
+                            </row>
+                            <row>
+<entry>centre</entry><entry>
+<para>Stores how the rect will be centred </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classintro__t_1adda2b278aae9bae71b89194313bc23a9"/><section>
+    <title>handle()</title>
+<indexterm><primary>handle</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; intro_t::handle (SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>event</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene</link>.</para>
+</section>
+<anchor xml:id="_classintro__t_1add93912d666cc242e170f15e7e03a808"/><section>
+    <title>render()</title>
+<indexterm><primary>render</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>render</secondary></indexterm>
+<para><computeroutput>void intro_t::render ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Renders slides. </para>
+</para>
+<para>
+Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene</link>.</para>
+</section>
+<anchor xml:id="_classintro__t_1a104f915a0a592c0db524a70ffc666a60"/><section>
+    <title>slideShow()</title>
+<indexterm><primary>slideShow</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>slideShow</secondary></indexterm>
+<para><computeroutput>void intro_t::slideShow (size_t time, bool &amp; click, size_t skipGrace = <computeroutput>500</computeroutput>
+)</computeroutput></para><para>
+
+<para>Performs the slideshow logic. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>time</entry><entry>
+<para>Current time </para>
+</entry>
+                            </row>
+                            <row>
+<entry>click</entry><entry>
+<para>Whether a click happened in the past n seconds </para>
+</entry>
+                            </row>
+                            <row>
+<entry>skipGrace</entry><entry>
+<para>Grace period for skipping. Default: 500 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; intro_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Updates scene info. </para>
+</para>
+
+<para>Makes the call on when to move on to explorer.</para>
+
+<para>When it moves on, it calls its own destructor to minimise its size and effect on memory usage.</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">scene</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classintro__t_1a1543b2b845c6999165123b34608fcf25"/><section>
+    <title>skip</title>
+<indexterm><primary>skip</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>skip</secondary></indexterm>
+<para><computeroutput>bool intro_t::skip</computeroutput></para><para>
+
+<para>Whether a skip is requested by the event handler. </para>
+</para>
+</section>
+<anchor xml:id="_classintro__t_1a97b511d587ca8e05515e35e6418cf1d0"/><section>
+    <title>slides</title>
+<indexterm><primary>slides</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>slides</secondary></indexterm>
+<para><computeroutput>std::vector&lt;<link linkend="_classintro__t_1_1slide">slide</link>&gt; intro_t::slides</computeroutput></para><para>
+
+<para>Slides to be slideshowed. </para>
+</para>
+</section>
+<anchor xml:id="_classintro__t_1a6db4493f9b8695a1bed2f16f3af45870"/><section>
+    <title>startTime</title>
+<indexterm><primary>startTime</primary><secondary>intro_t</secondary></indexterm>
+<indexterm><primary>intro_t</primary><secondary>startTime</secondary></indexterm>
+<para><computeroutput>size_t intro_t::startTime</computeroutput></para><para>
+
+<para>The time at which each slide starts. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/scenes/<link linkend="_init_8hh">init.hh</link>src/scenes/<link linkend="_init_8cc">init.cc</link></section>
+</section>

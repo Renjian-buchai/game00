@@ -1,0 +1,34 @@
+\doxysection{scene.\+hh}
+\label{scene_8hh_source}\index{include/scenes/scene.hh@{include/scenes/scene.hh}}
+\mbox{\hyperlink{scene_8hh}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#if\ !defined(SCENE\_HH)}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SCENE\_HH}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../../include/pch.hh"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../enum.hh"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ pix(val)\ static\_cast<int>(val\ *\ context-\/>pixelSize)}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }game;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }scene\ \{}
+\DoxyCodeLine{00015\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ SDL\_Texture*\ loadTexture(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ path);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ game*\ context;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ scene(game*\ gameContext);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keyword}{virtual}\ \string~scene();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keyword}{virtual}\ std::pair<scenes,\ sceneData>\ update()\ =\ 0;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ render()\ =\ 0;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00068\ \ \ \textcolor{keyword}{virtual}\ std::pair<scenes,\ sceneData>\ handle(SDL\_Event\&)\ =\ 0;}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
