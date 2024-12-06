@@ -1,5 +1,6 @@
 #include "scenes/init.hh"
 
+#include "SDL_image.h"
 #include "game.hh"
 
 intro_t::slide::slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,

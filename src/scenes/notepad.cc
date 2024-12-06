@@ -1,7 +1,9 @@
 #include "scenes/notepad.hh"
 
 #include <fstream>
+#include <iostream>
 
+#include "SDL_image.h"
 #include "game.hh"
 
 notepad_t::notepad_t(game* _context)

@@ -1,5 +1,8 @@
 #include "wm.hh"
 
+#include <iostream>
+
+#include "SDL_image.h"
 #include "game.hh"
 #include "scenes/explorer.hh"
 #include "scenes/init.hh"

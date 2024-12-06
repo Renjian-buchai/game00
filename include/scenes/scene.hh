@@ -1,7 +1,10 @@
 #if !defined(SCENE_HH)
 #define SCENE_HH
 
-#include "../enum.hh"
+#include <utility>
+
+#include "SDL.h"
+#include "enum.hh"
 
 #define pix(val) static_cast<int>(val * context->pixelSize)
 

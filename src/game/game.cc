@@ -1,5 +1,7 @@
 #include "../include/game.hh"
 
+#include <iostream>
+
 struct wmInitData {
   wm *winMan;
   game *context;

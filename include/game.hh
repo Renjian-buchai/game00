@@ -1,6 +1,8 @@
 #if !defined(game_GAME_HH)
 #define game_GAME_HH
 
+#include <array>
+
 #include "SDL.h"
 #include "SDL_mixer.h"
 #include "SDL_ttf.h"

@@ -1,5 +1,8 @@
 #include "scenes/explorer.hh"
 
+#include <iostream>
+
+#include "SDL_image.h"
 #include "game.hh"
 
 explorerData operator++(explorerData& save) {

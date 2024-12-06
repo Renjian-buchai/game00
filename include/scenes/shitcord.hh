@@ -5,7 +5,7 @@
 
 class shitcord_t : public scene {
  public:
-   /**
+  /**
    * @brief Construct a new shitcord t object
    *
    * Called only once when WM is initialised

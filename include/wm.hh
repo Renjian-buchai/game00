@@ -1,8 +1,11 @@
 #if !defined(WM_HH)
 #define WM_HH
 
-#include "enum.hh"
+#include <memory>
+#include <vector>
+
 #include "SDL.h"
+#include "enum.hh"
 #include "scenes/explorer.hh"
 #include "scenes/init.hh"
 #include "scenes/notepad.hh"
