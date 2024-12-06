@@ -5,12 +5,14 @@
     </info>
 <chapter>
     <title>Class Documentation</title>
+    <xi:include href="d4/dd4/classbutton.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d5/db0/classexplorer__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d0/d51/classgame.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d9/dea/classintro__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d9/d03/classnotepad__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dc/daa/classpause__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="df/db1/classscene.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="de/deb/classshitcord__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="da/dec/classintro__t_1_1slide.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="df/d1c/classwm.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d6/d16/structwm_init_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -21,8 +23,6 @@
     <xi:include href="d9/d05/enum_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d3/d0e/game_8hh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d3/d0e/game_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="d0/d8b/pch_8hh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="d0/d8b/pch_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d4/d7c/explorer_8hh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d4/d7c/explorer_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dd/d82/init_8hh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -33,6 +33,10 @@
     <xi:include href="d4/d90/pause_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d5/dd8/scene_8hh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d5/dd8/scene_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/da8/shitcord_8hh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/da8/shitcord_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="de/df3/button_8hh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="de/df3/button_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d3/d51/wm_8hh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d3/d51/wm_8hh_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="da/d5e/game_8cc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -44,6 +48,8 @@
     <xi:include href="d0/ddc/init_8cc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d0/d31/notepad_8cc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="d4/d11/scene_8cc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d0/dd7/shitcord_8cc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/da7/button_8cc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <index/>
 </book>

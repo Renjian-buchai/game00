@@ -5,29 +5,31 @@
 Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(SCENE_HH)</emphasis>
 2 <emphasis role="preprocessor">#define&#32;SCENE_HH</emphasis>
 3 
-4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_pch_8hh">../../include/pch.hh</link>&quot;</emphasis>
-5 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_enum_8hh">../enum.hh</link>&quot;</emphasis>
-6 
-7 <emphasis role="preprocessor">#define&#32;pix(val)&#32;static_cast&lt;int&gt;(val&#32;*&#32;context-&gt;pixelSize)</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;utility&gt;</emphasis>
+5 
+6 <emphasis role="preprocessor">#include&#32;&quot;SDL.h&quot;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_enum_8hh">enum.hh</link>&quot;</emphasis>
 8 
-9 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classgame">game</link>;
+9 <emphasis role="preprocessor">#define&#32;pix(val)&#32;static_cast&lt;int&gt;(val&#32;*&#32;context-&gt;pixelSize)</emphasis>
 10 
-14 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classscene">scene</link>&#32;{
-15 &#32;<emphasis role="keyword">public</emphasis>:
-22 &#32;&#32;SDL_Texture*&#32;<link linkend="_classscene_1a5d4681a41f14704a05c4f84569888061">loadTexture</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;path);
-23 
-27 &#32;&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>;
-28 
-34 &#32;&#32;<link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link>(<link linkend="_classgame">game</link>*&#32;gameContext);
-35 
-41 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496">~scene</link>();
-42 
-51 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</link>()&#32;=&#32;0;
-52 
-58 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">render</link>()&#32;=&#32;0;
-59 
-68 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">handle</link>(SDL_Event&amp;)&#32;=&#32;0;
-69 };
-70 
-71 <emphasis role="preprocessor">#endif</emphasis>
+11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classgame">game</link>;
+12 
+16 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classscene">scene</link>&#32;{
+17 &#32;<emphasis role="keyword">public</emphasis>:
+24 &#32;&#32;SDL_Texture*&#32;<link linkend="_classscene_1a5d4681a41f14704a05c4f84569888061">loadTexture</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;path);
+25 
+29 &#32;&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>;
+30 
+36 &#32;&#32;<link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link>(<link linkend="_classgame">game</link>*&#32;gameContext);
+37 
+43 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496">~scene</link>();
+44 
+53 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</link>()&#32;=&#32;0;
+54 
+60 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">render</link>()&#32;=&#32;0;
+61 
+70 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">handle</link>(SDL_Event&amp;)&#32;=&#32;0;
+71 };
+72 
+73 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

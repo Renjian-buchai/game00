@@ -7,6 +7,8 @@
         <itemizedlist>
             <listitem><para>directory <link linkend="_dir_9551f21d874a3950d142803a40139414">scenes</link></para>
 </listitem>
+            <listitem><para>directory <link linkend="_dir_2be27b93ac2ffdd435225404b7b3c21b">UI</link></para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -15,8 +17,6 @@
             <listitem><para>file <link linkend="_enum_8hh">enum.hh</link></para>
 </listitem>
             <listitem><para>file <link linkend="_game_8hh">game.hh</link></para>
-</listitem>
-            <listitem><para>file <link linkend="_pch_8hh">pch.hh</link></para>
 </listitem>
             <listitem><para>file <link linkend="_wm_8hh">wm.hh</link></para>
 </listitem>

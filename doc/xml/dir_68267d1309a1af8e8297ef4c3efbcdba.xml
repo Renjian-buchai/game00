@@ -4,6 +4,7 @@
     <compoundname>src</compoundname>
     <innerdir refid="dir_1699be727a800b1d059c6f7f2b91d2ee">src/game</innerdir>
     <innerdir refid="dir_ecc8d4550b7fd15fd45b6c26299430bf">src/scenes</innerdir>
+    <innerdir refid="dir_7ad25bca70c4d3d9103f75d82f41ef94">src/UI</innerdir>
     <innerfile refid="d9/d0f/main_8cc">main.cc</innerfile>
     <briefdescription>
     </briefdescription>

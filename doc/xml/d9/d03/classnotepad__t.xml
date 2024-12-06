@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="47" column="3" bodyfile="src/scenes/notepad.cc" bodystart="7" bodyend="30"/>
+        <location file="include/scenes/notepad.hh" line="47" column="3" bodyfile="src/scenes/notepad.cc" bodystart="9" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="d9/d03/classnotepad__t_1ac047cc39e7ff3f954057314e6298d6b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="53" column="3" bodyfile="src/scenes/notepad.cc" bodystart="32" bodyend="35"/>
+        <location file="include/scenes/notepad.hh" line="53" column="3" bodyfile="src/scenes/notepad.cc" bodystart="34" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="d9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="62" column="13" bodyfile="src/scenes/notepad.cc" bodystart="37" bodyend="62"/>
+        <location file="include/scenes/notepad.hh" line="62" column="13" bodyfile="src/scenes/notepad.cc" bodystart="39" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="d9/d03/classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="66" column="8" bodyfile="src/scenes/notepad.cc" bodystart="64" bodyend="67"/>
+        <location file="include/scenes/notepad.hh" line="66" column="8" bodyfile="src/scenes/notepad.cc" bodystart="66" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="d9/d03/classnotepad__t_1ad98a24e386e2a0363a44e67054988160" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="76" column="13" bodyfile="src/scenes/notepad.cc" bodystart="69" bodyend="71"/>
+        <location file="include/scenes/notepad.hh" line="76" column="13" bodyfile="src/scenes/notepad.cc" bodystart="71" bodyend="73"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

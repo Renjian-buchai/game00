@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d1/da8/shitcord_8hh" kind="file" language="C++">
+    <compoundname>shitcord.hh</compoundname>
+    <includes refid="d5/dd8/scene_8hh" local="yes">scene.hh</includes>
+    <includedby refid="d3/d51/wm_8hh" local="yes">include/wm.hh</includedby>
+    <includedby refid="df/d17/wm_8cc" local="yes">src/game/wm.cc</includedby>
+    <includedby refid="d0/dd7/shitcord_8cc" local="yes">src/scenes/shitcord.cc</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>SDL.h</label>
+      </node>
+      <node id="5">
+        <label>enum.hh</label>
+        <link refid="d9/d05/enum_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scene.hh</label>
+        <link refid="d5/dd8/scene_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/scenes/shitcord.hh</label>
+        <link refid="d1/da8/shitcord_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>variant</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/game.hh</label>
+        <link refid="d3/d0e/game_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/scenes/shitcord.hh</label>
+        <link refid="d1/da8/shitcord_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/wm.hh</label>
+        <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/UI/button.cc</label>
+        <link refid="db/da7/button_8cc"/>
+      </node>
+      <node id="5">
+        <label>src/game/gameplay.cc</label>
+        <link refid="de/d8a/gameplay_8cc"/>
+      </node>
+      <node id="6">
+        <label>src/game/pause.cc</label>
+        <link refid="df/d0b/pause_8cc"/>
+      </node>
+      <node id="7">
+        <label>src/game/wm.cc</label>
+        <link refid="df/d17/wm_8cc"/>
+      </node>
+      <node id="8">
+        <label>src/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
+      </node>
+      <node id="9">
+        <label>src/scenes/explorer.cc</label>
+        <link refid="d5/d14/explorer_8cc"/>
+      </node>
+      <node id="10">
+        <label>src/scenes/init.cc</label>
+        <link refid="d0/ddc/init_8cc"/>
+      </node>
+      <node id="11">
+        <label>src/scenes/notepad.cc</label>
+        <link refid="d0/d31/notepad_8cc"/>
+      </node>
+      <node id="12">
+        <label>src/scenes/scene.cc</label>
+        <link refid="d4/d11/scene_8cc"/>
+      </node>
+      <node id="13">
+        <label>src/scenes/shitcord.cc</label>
+        <link refid="d0/dd7/shitcord_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="de/deb/classshitcord__t" prot="public">shitcord_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#if<sp/>!defined(SHITCORD_HH)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHITCORD_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/dd8/scene_8hh" kindref="compound">scene.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="de/deb/classshitcord__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/deb/classshitcord__t" kindref="compound">shitcord_t</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><ref refid="de/deb/classshitcord__t_1ac750bf47c76c2f9872534c2f375da388" kindref="member">shitcord_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/><ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="de/deb/classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71" kindref="member">~shitcord_t</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163" kindref="member">update</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kindref="member">render</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="de/deb/classshitcord__t_1a9d74d93e9337fc274113950419ab831c" kindref="member">handle</ref>(SDL_Event&amp;<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/scenes/shitcord.hh"/>
+  </compounddef>
+</doxygen>

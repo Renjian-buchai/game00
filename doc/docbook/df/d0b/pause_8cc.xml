@@ -2,4 +2,4 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_pause_8cc" xml:lang="en-US">
 <title>src/game/pause.cc File Reference</title>
 <indexterm><primary>src/game/pause.cc</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;../../include/scenes/pause.hh&quot;<?linebreak?>#include &quot;../../include/game.hh&quot;<?linebreak?></programlisting></section>
+<programlisting linenumbering="unnumbered">#include &quot;scenes/pause.hh&quot;<?linebreak?>#include &quot;game.hh&quot;<?linebreak?></programlisting></section>

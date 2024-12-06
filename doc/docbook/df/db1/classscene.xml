@@ -125,7 +125,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implemented in <link linkend="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">explorer_t</link>, <link linkend="_classintro__t_1adda2b278aae9bae71b89194313bc23a9">intro_t</link>, <link linkend="_classnotepad__t_1ad98a24e386e2a0363a44e67054988160">notepad_t</link>, and <link linkend="_classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac">pause_t</link>.</para>
+Implemented in <link linkend="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">explorer_t</link>, <link linkend="_classintro__t_1adda2b278aae9bae71b89194313bc23a9">intro_t</link>, <link linkend="_classnotepad__t_1ad98a24e386e2a0363a44e67054988160">notepad_t</link>, <link linkend="_classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac">pause_t</link>, and <link linkend="_classshitcord__t_1a9d74d93e9337fc274113950419ab831c">shitcord_t</link>.</para>
 </section>
 <anchor xml:id="_classscene_1a5d4681a41f14704a05c4f84569888061"/><section>
     <title>loadTexture()</title>
@@ -173,7 +173,7 @@ Parameters</title>
 
 <para>Called in <link linkend="_classwm_1aa9731642bc561de498bc559f0d5ab84e">wm::render()</link> </para>
 <para>
-Implemented in <link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">explorer_t</link>, <link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">intro_t</link>, <link linkend="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a">notepad_t</link>, and <link linkend="_classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">pause_t</link>.</para>
+Implemented in <link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">explorer_t</link>, <link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">intro_t</link>, <link linkend="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a">notepad_t</link>, <link linkend="_classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">pause_t</link>, and <link linkend="_classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696">shitcord_t</link>.</para>
 </section>
 <anchor xml:id="_classscene_1a34b71ea2aea3fd3c007786e75be817c7"/><section>
     <title>update()</title>
@@ -192,7 +192,7 @@ Implemented in <link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade7
 </formalpara>
 </para>
 <para>
-Implemented in <link linkend="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">explorer_t</link>, <link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">intro_t</link>, <link linkend="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">notepad_t</link>, and <link linkend="_classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca">pause_t</link>.</para>
+Implemented in <link linkend="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">explorer_t</link>, <link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">intro_t</link>, <link linkend="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">notepad_t</link>, <link linkend="_classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca">pause_t</link>, and <link linkend="_classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163">shitcord_t</link>.</para>
 </section>
 </section>
 <section>

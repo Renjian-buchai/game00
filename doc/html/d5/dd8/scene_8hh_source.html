@@ -66,44 +66,45 @@ $(function(){ initResizable(false); });
 <a href="../../d5/dd8/scene_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#if !defined(SCENE_HH)</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SCENE_HH</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/d8b/pch_8hh.html">../../include/pch.hh</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d05/enum_8hh.html">../enum.hh</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="../../d5/dd8/scene_8hh.html#a65ce2d414e762882854d47ab28016bb4">    7</a></span><span class="preprocessor">#define pix(val) static_cast&lt;int&gt;(val * context-&gt;pixelSize)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;SDL.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d05/enum_8hh.html">enum.hh</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="../../d0/d51/classgame.html">game</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d5/dd8/scene_8hh.html#a65ce2d414e762882854d47ab28016bb4">    9</a></span><span class="preprocessor">#define pix(val) static_cast&lt;int&gt;(val * context-&gt;pixelSize)</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/db1/classscene.html">scene</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  SDL_Texture* <a class="code hl_function" href="../../df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061">loadTexture</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c">   27</a></span>  <a class="code hl_class" href="../../d0/d51/classgame.html">game</a>* <a class="code hl_variable" href="../../df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c">context</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_function" href="../../df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90">scene</a>(<a class="code hl_class" href="../../d0/d51/classgame.html">game</a>* gameContext);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">virtual</span> <a class="code hl_function" href="../../df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496">~scene</a>();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7">   51</a></span>  <span class="keyword">virtual</span> std::pair&lt;scenes, sceneData&gt; <a class="code hl_function" href="../../df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7">update</a>() = 0;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html#a7c218380f822d46bee781520e855a7de">   58</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/db1/classscene.html#a7c218380f822d46bee781520e855a7de">render</a>() = 0;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2">   68</a></span>  <span class="keyword">virtual</span> std::pair&lt;scenes, sceneData&gt; <a class="code hl_function" href="../../df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2">handle</a>(SDL_Event&amp;) = 0;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="../../d0/d51/classgame.html">game</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/db1/classscene.html">scene</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  SDL_Texture* <a class="code hl_function" href="../../df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061">loadTexture</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c">   29</a></span>  <a class="code hl_class" href="../../d0/d51/classgame.html">game</a>* <a class="code hl_variable" href="../../df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c">context</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_function" href="../../df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90">scene</a>(<a class="code hl_class" href="../../d0/d51/classgame.html">game</a>* gameContext);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">virtual</span> <a class="code hl_function" href="../../df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496">~scene</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7">   53</a></span>  <span class="keyword">virtual</span> std::pair&lt;scenes, sceneData&gt; <a class="code hl_function" href="../../df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7">update</a>() = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html#a7c218380f822d46bee781520e855a7de">   60</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/db1/classscene.html#a7c218380f822d46bee781520e855a7de">render</a>() = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2">   70</a></span>  <span class="keyword">virtual</span> std::pair&lt;scenes, sceneData&gt; <a class="code hl_function" href="../../df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2">handle</a>(SDL_Event&amp;) = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
 </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassgame_html"><div class="ttname"><a href="../../d0/d51/classgame.html">game</a></div><div class="ttdef"><b>Definition</b> game.hh:7</div></div>
-<div class="ttc" id="aclassscene_html"><div class="ttname"><a href="../../df/db1/classscene.html">scene</a></div><div class="ttdoc">Interface class for scenes.</div><div class="ttdef"><b>Definition</b> scene.hh:14</div></div>
-<div class="ttc" id="aclassscene_html_a1012571c9524a29524b8b9d680715e90"><div class="ttname"><a href="../../df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90">scene::scene</a></div><div class="ttdeci">scene(game *gameContext)</div><div class="ttdoc">Construct a new scene object.</div><div class="ttdef"><b>Definition</b> scene.cc:5</div></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassgame_html"><div class="ttname"><a href="../../d0/d51/classgame.html">game</a></div><div class="ttdef"><b>Definition</b> game.hh:11</div></div>
+<div class="ttc" id="aclassscene_html"><div class="ttname"><a href="../../df/db1/classscene.html">scene</a></div><div class="ttdoc">Interface class for scenes.</div><div class="ttdef"><b>Definition</b> scene.hh:16</div></div>
+<div class="ttc" id="aclassscene_html_a1012571c9524a29524b8b9d680715e90"><div class="ttname"><a href="../../df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90">scene::scene</a></div><div class="ttdeci">scene(game *gameContext)</div><div class="ttdoc">Construct a new scene object.</div><div class="ttdef"><b>Definition</b> scene.cc:9</div></div>
 <div class="ttc" id="aclassscene_html_a34b71ea2aea3fd3c007786e75be817c7"><div class="ttname"><a href="../../df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7">scene::update</a></div><div class="ttdeci">virtual std::pair&lt; scenes, sceneData &gt; update()=0</div><div class="ttdoc">Updates scene logic.</div></div>
 <div class="ttc" id="aclassscene_html_a56dec35146b15669e3cf054ced2f4be2"><div class="ttname"><a href="../../df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2">scene::handle</a></div><div class="ttdeci">virtual std::pair&lt; scenes, sceneData &gt; handle(SDL_Event &amp;)=0</div><div class="ttdoc">Handles events.</div></div>
-<div class="ttc" id="aclassscene_html_a5d4681a41f14704a05c4f84569888061"><div class="ttname"><a href="../../df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061">scene::loadTexture</a></div><div class="ttdeci">SDL_Texture * loadTexture(const char *path)</div><div class="ttdoc">Loads texture based on path.</div><div class="ttdef"><b>Definition</b> scene.cc:9</div></div>
+<div class="ttc" id="aclassscene_html_a5d4681a41f14704a05c4f84569888061"><div class="ttname"><a href="../../df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061">scene::loadTexture</a></div><div class="ttdeci">SDL_Texture * loadTexture(const char *path)</div><div class="ttdoc">Loads texture based on path.</div><div class="ttdef"><b>Definition</b> scene.cc:13</div></div>
 <div class="ttc" id="aclassscene_html_a7c218380f822d46bee781520e855a7de"><div class="ttname"><a href="../../df/db1/classscene.html#a7c218380f822d46bee781520e855a7de">scene::render</a></div><div class="ttdeci">virtual void render()=0</div><div class="ttdoc">Renders textures.</div></div>
-<div class="ttc" id="aclassscene_html_aa97c9c1f46aa44e63223a737fcdcb496"><div class="ttname"><a href="../../df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496">scene::~scene</a></div><div class="ttdeci">virtual ~scene()</div><div class="ttdoc">Destroy the scene object.</div><div class="ttdef"><b>Definition</b> scene.cc:7</div></div>
-<div class="ttc" id="aclassscene_html_ae9987da046dc0255632015f0e42a546c"><div class="ttname"><a href="../../df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c">scene::context</a></div><div class="ttdeci">game * context</div><div class="ttdoc">Game context.</div><div class="ttdef"><b>Definition</b> scene.hh:27</div></div>
+<div class="ttc" id="aclassscene_html_aa97c9c1f46aa44e63223a737fcdcb496"><div class="ttname"><a href="../../df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496">scene::~scene</a></div><div class="ttdeci">virtual ~scene()</div><div class="ttdoc">Destroy the scene object.</div><div class="ttdef"><b>Definition</b> scene.cc:11</div></div>
+<div class="ttc" id="aclassscene_html_ae9987da046dc0255632015f0e42a546c"><div class="ttname"><a href="../../df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c">scene::context</a></div><div class="ttdeci">game * context</div><div class="ttdoc">Game context.</div><div class="ttdef"><b>Definition</b> scene.hh:29</div></div>
 <div class="ttc" id="aenum_8hh_html"><div class="ttname"><a href="../../d9/d05/enum_8hh.html">enum.hh</a></div></div>
-<div class="ttc" id="apch_8hh_html"><div class="ttname"><a href="../../d0/d8b/pch_8hh.html">pch.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -7,50 +7,15 @@
     <includedby refid="df/d17/wm_8cc" local="yes">src/game/wm.cc</includedby>
     <includedby refid="d0/d31/notepad_8cc" local="yes">src/scenes/notepad.cc</includedby>
     <incdepgraph>
-      <node id="12">
+      <node id="4">
         <label>SDL.h</label>
       </node>
-      <node id="13">
-        <label>SDL_image.h</label>
-      </node>
-      <node id="14">
-        <label>SDL_mixer.h</label>
-      </node>
-      <node id="15">
-        <label>SDL_ttf.h</label>
-      </node>
-      <node id="16">
-        <label>../enum.hh</label>
+      <node id="5">
+        <label>enum.hh</label>
         <link refid="d9/d05/enum_8hh"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>../../include/pch.hh</label>
-        <link refid="d0/d8b/pch_8hh"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -64,32 +29,19 @@
         <link refid="d5/dd8/scene_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>array</label>
-      </node>
-      <node id="5">
+      <node id="6">
         <label>cstdint</label>
       </node>
-      <node id="6">
-        <label>iostream</label>
-      </node>
-      <node id="7">
-        <label>memory</label>
-      </node>
-      <node id="8">
-        <label>string</label>
-      </node>
-      <node id="9">
+      <node id="3">
         <label>utility</label>
       </node>
-      <node id="10">
+      <node id="7">
         <label>variant</label>
-      </node>
-      <node id="11">
-        <label>vector</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -112,15 +64,17 @@
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>include/scenes/notepad.hh</label>
         <link refid="d4/d54/notepad_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -128,40 +82,44 @@
         <link refid="d3/d51/wm_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="4">
+        <label>src/UI/button.cc</label>
+        <link refid="db/da7/button_8cc"/>
+      </node>
+      <node id="5">
         <label>src/game/gameplay.cc</label>
         <link refid="de/d8a/gameplay_8cc"/>
       </node>
-      <node id="5">
+      <node id="6">
         <label>src/game/pause.cc</label>
         <link refid="df/d0b/pause_8cc"/>
       </node>
-      <node id="6">
+      <node id="7">
         <label>src/game/wm.cc</label>
         <link refid="df/d17/wm_8cc"/>
       </node>
-      <node id="7">
+      <node id="8">
         <label>src/main.cc</label>
         <link refid="d9/d0f/main_8cc"/>
       </node>
-      <node id="8">
+      <node id="9">
         <label>src/scenes/explorer.cc</label>
         <link refid="d5/d14/explorer_8cc"/>
       </node>
-      <node id="9">
+      <node id="10">
         <label>src/scenes/init.cc</label>
         <link refid="d0/ddc/init_8cc"/>
       </node>
-      <node id="10">
+      <node id="11">
         <label>src/scenes/notepad.cc</label>
         <link refid="d0/d31/notepad_8cc"/>
       </node>
-      <node id="11">
+      <node id="12">
         <label>src/scenes/scene.cc</label>
         <link refid="d4/d11/scene_8cc"/>
       </node>

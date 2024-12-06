@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="46" column="3" bodyfile="src/scenes/init.cc" bodystart="77" bodyend="144"/>
+        <location file="include/scenes/init.hh" line="46" column="3" bodyfile="src/scenes/init.cc" bodystart="78" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="50" column="3" bodyfile="src/scenes/init.cc" bodystart="146" bodyend="151"/>
+        <location file="include/scenes/init.hh" line="50" column="3" bodyfile="src/scenes/init.cc" bodystart="147" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="62" column="13" bodyfile="src/scenes/init.cc" bodystart="153" bodyend="160"/>
+        <location file="include/scenes/init.hh" line="62" column="13" bodyfile="src/scenes/init.cc" bodystart="154" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="66" column="8" bodyfile="src/scenes/init.cc" bodystart="162" bodyend="165"/>
+        <location file="include/scenes/init.hh" line="66" column="8" bodyfile="src/scenes/init.cc" bodystart="163" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="73" column="13" bodyfile="src/scenes/init.cc" bodystart="167" bodyend="170"/>
+        <location file="include/scenes/init.hh" line="73" column="13" bodyfile="src/scenes/init.cc" bodystart="168" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="82" column="8" bodyfile="src/scenes/init.cc" bodystart="14" bodyend="50"/>
+        <location file="include/scenes/init.hh" line="82" column="8" bodyfile="src/scenes/init.cc" bodystart="15" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="d9/dea/classintro__t_1a0439809e2c67c40ea20757ffed70968c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="95" column="8" bodyfile="src/scenes/init.cc" bodystart="52" bodyend="62"/>
+        <location file="include/scenes/init.hh" line="95" column="8" bodyfile="src/scenes/init.cc" bodystart="53" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -399,7 +399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="105" column="8" bodyfile="src/scenes/init.cc" bodystart="64" bodyend="75"/>
+        <location file="include/scenes/init.hh" line="105" column="8" bodyfile="src/scenes/init.cc" bodystart="65" bodyend="76"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

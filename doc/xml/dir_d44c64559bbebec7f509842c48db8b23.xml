@@ -3,9 +3,9 @@
   <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
     <compoundname>include</compoundname>
     <innerdir refid="dir_9551f21d874a3950d142803a40139414">include/scenes</innerdir>
+    <innerdir refid="dir_2be27b93ac2ffdd435225404b7b3c21b">include/UI</innerdir>
     <innerfile refid="d9/d05/enum_8hh">enum.hh</innerfile>
     <innerfile refid="d3/d0e/game_8hh">game.hh</innerfile>
-    <innerfile refid="d0/d8b/pch_8hh">pch.hh</innerfile>
     <innerfile refid="d3/d51/wm_8hh">wm.hh</innerfile>
     <briefdescription>
     </briefdescription>

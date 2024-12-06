@@ -19,40 +19,33 @@ class game {
 
   /**
    * @brief State that the game is in
-   *
    */
   gameState state = gameState::intro;
 
   /**
    * @brief Rect containing the screen height and width
-   *
    */
   SDL_Rect dispBounds;
   /**
    * @brief Main window to render to
-   *
    */
   SDL_Window* mainWindow;
   /**
    * @brief Main renderer that renders to mainWindow
-   *
    */
   SDL_Renderer* mainRenderer;
 
   /**
    * @brief Background music. Randomly selected.
-   *
    */
   std::array<Mix_Music*, 4> bgm;
   /**
    * @brief Different lengths of silence. Randomly selected.
-   *
    */
   std::array<Mix_Music*, 6> silence;
 
   /**
    * @brief Font used for text.
-   *
    */
   TTF_Font* font;
 
@@ -61,7 +54,6 @@ class game {
 
   /**
    * @brief Windows manager
-   *
    */
   wm winMan;
 
@@ -69,7 +61,6 @@ class game {
 
   /**
    * @brief Thread that loads winMan
-   *
    */
   SDL_Thread* loadThread;
 
@@ -82,13 +73,11 @@ class game {
 
   /**
    * @brief Destroy the game object
-   *
    */
   ~game();
 
   /**
    * @brief Runs the WM. Waits for the WM to be initialised, first.
-   *
    */
   void gameplay();
 };

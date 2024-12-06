@@ -63,6 +63,8 @@
 </listitem>
             <listitem><para>std::unique_ptr&lt; <link linkend="_classintro__t">intro_t</link> &gt; <link linkend="_classwm_1a139e824c013da025cafc10d68b73aa34">intro</link></para>
 </listitem>
+            <listitem><para>std::unique_ptr&lt; <link linkend="_classshitcord__t">shitcord_t</link> &gt; <link linkend="_classwm_1a5b53423d16a28cc8c0eec221572fb454">shitcord</link></para>
+</listitem>
             <listitem><para><link linkend="_classscene">scene</link> * <link linkend="_classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7">current</link></para>
 
 <para>Current scene. </para>
@@ -266,6 +268,11 @@ Parameters</title>
 <para>Scene to resume on. Only used for unpausing purposes. </para>
 </para>
 </section>
+<anchor xml:id="_classwm_1a5b53423d16a28cc8c0eec221572fb454"/><section>
+    <title>shitcord</title>
+<indexterm><primary>shitcord</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>shitcord</secondary></indexterm>
+<para><computeroutput>std::unique_ptr&lt;<link linkend="_classshitcord__t">shitcord_t</link>&gt; wm::shitcord</computeroutput></para></section>
 <anchor xml:id="_classwm_1a205790bf574b52cabae2bca77b17c262"/><section>
     <title>wasSilence</title>
 <indexterm><primary>wasSilence</primary><secondary>wm</secondary></indexterm>

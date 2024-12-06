@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_button_8hh_source" xml:lang="en-US">
+<title>button.hh</title>
+<indexterm><primary>include/UI/button.hh</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(BUTTON_HH)</emphasis>
+2 <emphasis role="preprocessor">#define&#32;BUTTON_HH</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&quot;SDL.h&quot;</emphasis>
+5 
+6 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classgame">game</link>;
+7 
+11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbutton">button</link>&#32;{
+12 &#32;<emphasis role="keyword">public</emphasis>:
+16 &#32;&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classbutton_1a30d5ec30e29436cf3f6d5193d52fda2b">context</link>;
+17 
+21 &#32;&#32;SDL_Texture*&#32;<link linkend="_classbutton_1a0265f6451efbb40c797098978da0d7e7">inactive</link>;
+22 
+26 &#32;&#32;SDL_Texture*&#32;<link linkend="_classbutton_1a55f1693b42a5278c5c4e25ef5673c9d0">hovered</link>;
+27 
+31 &#32;&#32;SDL_Texture*&#32;<link linkend="_classbutton_1a8d7611bebd505f3a4750b6db754ae3af">state</link>;
+32 
+36 &#32;&#32;SDL_Rect&#32;<link linkend="_classbutton_1a301797c8211a1e6a5bc84837bde1f135">bounds</link>;
+37 
+41 &#32;&#32;<link linkend="_classbutton_1afb234fcae14847d00a64fdc155d7c98e">button</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classbutton_1a30d5ec30e29436cf3f6d5193d52fda2b">context</link>,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_classbutton_1a0265f6451efbb40c797098978da0d7e7">inactive</link>,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_classbutton_1a55f1693b42a5278c5c4e25ef5673c9d0">hovered</link>,
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_Rect&#32;<link linkend="_classbutton_1a301797c8211a1e6a5bc84837bde1f135">bounds</link>);
+43 
+44 &#32;&#32;<link linkend="_classbutton_1a6ae171da0cdc25fb2dfa57397a5b419f">~button</link>();
+45 
+51 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classbutton_1ac65167fc1f6d80153406f6694aab8818">handle</link>(SDL_Event&amp;&#32;event);
+52 
+56 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classbutton_1a9dbb394b8582e9be3a237a5c030f8af6">render</link>();
+57 };
+58 
+59 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

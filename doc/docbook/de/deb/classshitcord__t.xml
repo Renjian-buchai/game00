@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classshitcord__t" xml:lang="en-US">
+<title>shitcord_t Class Reference</title>
+<indexterm><primary>shitcord_t</primary></indexterm>
+<para>
+<computeroutput>#include &lt;shitcord.hh&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for shitcord_t:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/deb/classshitcord__t.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classshitcord__t_1ac750bf47c76c2f9872534c2f375da388">shitcord_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>)</para>
+
+<para>Construct a new shitcord t object. </para>
+</listitem>
+            <listitem><para><link linkend="_classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71">~shitcord_t</link> ()</para>
+
+<para>Destroy the shitcord t object. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163">update</link> () override</para>
+
+<para>Update logic for shitcord. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696">render</link> () override</para>
+
+<para>Renders menu, and messages. </para>
+</listitem>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classshitcord__t_1a9d74d93e9337fc274113950419ab831c">handle</link> (SDL_Event &amp;event) override</para>
+
+<para>Handles hovers. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
+            <listitem><para>SDL_Texture * <link linkend="_classscene_1a5d4681a41f14704a05c4f84569888061">loadTexture</link> (const char *path)</para>
+
+<para>Loads texture based on path. </para>
+</listitem>
+            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+
+<para>Construct a new scene object. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496">~scene</link> ()</para>
+
+<para>Destroy the scene object. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Attributes inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+
+<para>Game context. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classshitcord__t_1ac750bf47c76c2f9872534c2f375da388"/><section>
+    <title>shitcord_t()</title>
+<indexterm><primary>shitcord_t</primary><secondary>shitcord_t</secondary></indexterm>
+<indexterm><primary>shitcord_t</primary><secondary>shitcord_t</secondary></indexterm>
+<para><computeroutput>shitcord_t::shitcord_t (<link linkend="_classgame">game</link> * context)</computeroutput></para><para>
+
+<para>Construct a new shitcord t object. </para>
+</para>
+
+<para>Called only once when WM is initialised</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>context</entry><entry>
+<para>game context </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71"/><section>
+    <title>~shitcord_t()</title>
+<indexterm><primary>~shitcord_t</primary><secondary>shitcord_t</secondary></indexterm>
+<indexterm><primary>shitcord_t</primary><secondary>~shitcord_t</secondary></indexterm>
+<para><computeroutput>shitcord_t::~shitcord_t ( )</computeroutput></para><para>
+
+<para>Destroy the shitcord t object. </para>
+</para>
+
+<para>Called only when the wm is destroyed </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classshitcord__t_1a9d74d93e9337fc274113950419ab831c"/><section>
+    <title>handle()</title>
+<indexterm><primary>handle</primary><secondary>shitcord_t</secondary></indexterm>
+<indexterm><primary>shitcord_t</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; shitcord_t::handle (SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Handles hovers. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>event</entry><entry>
+<para>Event to be handled </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt;Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene</link>.</para>
+</section>
+<anchor xml:id="_classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696"/><section>
+    <title>render()</title>
+<indexterm><primary>render</primary><secondary>shitcord_t</secondary></indexterm>
+<indexterm><primary>shitcord_t</primary><secondary>render</secondary></indexterm>
+<para><computeroutput>void shitcord_t::render ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Renders menu, and messages. </para>
+</para>
+<para>
+Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene</link>.</para>
+</section>
+<anchor xml:id="_classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>shitcord_t</secondary></indexterm>
+<indexterm><primary>shitcord_t</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; shitcord_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Update logic for shitcord. </para>
+</para>
+
+<para>Probably does the message appearing</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">scene</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/scenes/<link linkend="_shitcord_8hh">shitcord.hh</link>src/scenes/<link linkend="_shitcord_8cc">shitcord.cc</link></section>
+</section>

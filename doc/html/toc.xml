@@ -1,6 +1,17 @@
 <toc label="Game" topic="index.html">
   <topic label="Classes" href="annotated.html">
     <topic label="Class List" href="annotated.html">
+      <topic label="button" href="d4/dd4/classbutton.html">
+        <topic label="button" href="d4/dd4/classbutton.html#afb234fcae14847d00a64fdc155d7c98e"/>
+        <topic label="~button" href="d4/dd4/classbutton.html#a6ae171da0cdc25fb2dfa57397a5b419f"/>
+        <topic label="handle" href="d4/dd4/classbutton.html#ac65167fc1f6d80153406f6694aab8818"/>
+        <topic label="render" href="d4/dd4/classbutton.html#a9dbb394b8582e9be3a237a5c030f8af6"/>
+        <topic label="bounds" href="d4/dd4/classbutton.html#a301797c8211a1e6a5bc84837bde1f135"/>
+        <topic label="context" href="d4/dd4/classbutton.html#a30d5ec30e29436cf3f6d5193d52fda2b"/>
+        <topic label="hovered" href="d4/dd4/classbutton.html#a55f1693b42a5278c5c4e25ef5673c9d0"/>
+        <topic label="inactive" href="d4/dd4/classbutton.html#a0265f6451efbb40c797098978da0d7e7"/>
+        <topic label="state" href="d4/dd4/classbutton.html#a8d7611bebd505f3a4750b6db754ae3af"/>
+      </topic>
       <topic label="explorer_t" href="d5/db0/classexplorer__t.html">
         <topic label="explorer_t" href="d5/db0/classexplorer__t.html#a75961f78eebb4030c1f2d7b78929a2b6"/>
         <topic label="~explorer_t" href="d5/db0/classexplorer__t.html#a44fc2dcde828c85abf707bb5ff024b50"/>
@@ -101,6 +112,13 @@
         <topic label="update" href="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"/>
         <topic label="context" href="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"/>
       </topic>
+      <topic label="shitcord_t" href="de/deb/classshitcord__t.html">
+        <topic label="shitcord_t" href="de/deb/classshitcord__t.html#ac750bf47c76c2f9872534c2f375da388"/>
+        <topic label="~shitcord_t" href="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"/>
+        <topic label="handle" href="de/deb/classshitcord__t.html#a9d74d93e9337fc274113950419ab831c"/>
+        <topic label="render" href="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"/>
+        <topic label="update" href="de/deb/classshitcord__t.html#a9e1bba8daf615bf68d9e3f5616a02163"/>
+      </topic>
       <topic label="wm" href="df/d1c/classwm.html">
         <topic label="wm" href="df/d1c/classwm.html#ae80ff7518d15add5e8a639bc1b509ed4"/>
         <topic label="wm" href="df/d1c/classwm.html#a963abfdd7d229db5869e59a97a301f47"/>
@@ -117,6 +135,7 @@
         <topic label="pause" href="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"/>
         <topic label="pauseBounds" href="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"/>
         <topic label="resume" href="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"/>
+        <topic label="shitcord" href="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"/>
         <topic label="wasSilence" href="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"/>
       </topic>
       <topic label="wmInitData" href="d6/d16/structwm_init_data.html">
@@ -130,12 +149,14 @@
     </topic>
     <topic label="Class Index" href="classes.html"/>
     <topic label="Class Hierarchy" href="hierarchy.html">
+      <topic label="button" href="d4/dd4/classbutton.html"/>
       <topic label="game" href="d0/d51/classgame.html"/>
       <topic label="scene" href="df/db1/classscene.html">
         <topic label="explorer_t" href="d5/db0/classexplorer__t.html"/>
         <topic label="intro_t" href="d9/dea/classintro__t.html"/>
         <topic label="notepad_t" href="d9/d03/classnotepad__t.html"/>
         <topic label="pause_t" href="dc/daa/classpause__t.html"/>
+        <topic label="shitcord_t" href="de/deb/classshitcord__t.html"/>
       </topic>
       <topic label="intro_t::slide" href="da/dec/classintro__t_1_1slide.html"/>
       <topic label="wm" href="df/d1c/classwm.html"/>
@@ -250,6 +271,30 @@
             </topic>
             <topic label="pix" href="d5/dd8/scene_8hh.html#a65ce2d414e762882854d47ab28016bb4"/>
           </topic>
+          <topic label="shitcord.hh" href="d1/da8/shitcord_8hh.html">
+            <topic label="shitcord_t" href="de/deb/classshitcord__t.html">
+              <topic label="shitcord_t" href="de/deb/classshitcord__t.html#ac750bf47c76c2f9872534c2f375da388"/>
+              <topic label="~shitcord_t" href="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"/>
+              <topic label="handle" href="de/deb/classshitcord__t.html#a9d74d93e9337fc274113950419ab831c"/>
+              <topic label="render" href="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"/>
+              <topic label="update" href="de/deb/classshitcord__t.html#a9e1bba8daf615bf68d9e3f5616a02163"/>
+            </topic>
+          </topic>
+        </topic>
+        <topic label="UI" href="dir_2be27b93ac2ffdd435225404b7b3c21b.html">
+          <topic label="button.hh" href="de/df3/button_8hh.html">
+            <topic label="button" href="d4/dd4/classbutton.html">
+              <topic label="button" href="d4/dd4/classbutton.html#afb234fcae14847d00a64fdc155d7c98e"/>
+              <topic label="~button" href="d4/dd4/classbutton.html#a6ae171da0cdc25fb2dfa57397a5b419f"/>
+              <topic label="handle" href="d4/dd4/classbutton.html#ac65167fc1f6d80153406f6694aab8818"/>
+              <topic label="render" href="d4/dd4/classbutton.html#a9dbb394b8582e9be3a237a5c030f8af6"/>
+              <topic label="bounds" href="d4/dd4/classbutton.html#a301797c8211a1e6a5bc84837bde1f135"/>
+              <topic label="context" href="d4/dd4/classbutton.html#a30d5ec30e29436cf3f6d5193d52fda2b"/>
+              <topic label="hovered" href="d4/dd4/classbutton.html#a55f1693b42a5278c5c4e25ef5673c9d0"/>
+              <topic label="inactive" href="d4/dd4/classbutton.html#a0265f6451efbb40c797098978da0d7e7"/>
+              <topic label="state" href="d4/dd4/classbutton.html#a8d7611bebd505f3a4750b6db754ae3af"/>
+            </topic>
+          </topic>
         </topic>
         <topic label="enum.hh" href="d9/d05/enum_8hh.html">
           <topic label="sceneData" href="d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab"/>
@@ -269,6 +314,7 @@
             <topic label="explorer" href="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"/>
             <topic label="notepad" href="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"/>
             <topic label="pause" href="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"/>
+            <topic label="shitcord" href="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"/>
           </topic>
         </topic>
         <topic label="game.hh" href="d3/d0e/game_8hh.html">
@@ -295,7 +341,6 @@
             <topic label="winMan" href="d0/d51/classgame.html#a149df5bc9d648f2b400d3f03f8aa139d"/>
           </topic>
         </topic>
-        <topic label="pch.hh" href="d0/d8b/pch_8hh.html"/>
         <topic label="wm.hh" href="d3/d51/wm_8hh.html">
           <topic label="wm" href="df/d1c/classwm.html">
             <topic label="wm" href="df/d1c/classwm.html#ae80ff7518d15add5e8a639bc1b509ed4"/>
@@ -313,6 +358,7 @@
             <topic label="pause" href="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"/>
             <topic label="pauseBounds" href="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"/>
             <topic label="resume" href="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"/>
+            <topic label="shitcord" href="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"/>
             <topic label="wasSilence" href="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"/>
           </topic>
         </topic>
@@ -341,6 +387,10 @@
           <topic label="init.cc" href="d0/ddc/init_8cc.html"/>
           <topic label="notepad.cc" href="d0/d31/notepad_8cc.html"/>
           <topic label="scene.cc" href="d4/d11/scene_8cc.html"/>
+          <topic label="shitcord.cc" href="d0/dd7/shitcord_8cc.html"/>
+        </topic>
+        <topic label="UI" href="dir_7ad25bca70c4d3d9103f75d82f41ef94.html">
+          <topic label="button.cc" href="db/da7/button_8cc.html"/>
         </topic>
         <topic label="main.cc" href="d9/d0f/main_8cc.html">
           <topic label="skipIntro" href="d9/d0f/main_8cc.html#a70fa023bb5d371dac47448b690c83581"/>

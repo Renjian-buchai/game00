@@ -1,5 +1,282 @@
 AutoGen Definitions dummy;
 class = {
+  cp-id     = 'd4/dd4/classbutton';
+  cp-name   = 'button';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/dd4/classbutton_1afb234fcae14847d00a64fdc155d7c98e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'button';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+game *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'context';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'inactive';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'hovered';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Rect
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'bounds';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construct a new button object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/dd4/classbutton_1a6ae171da0cdc25fb2dfa57397a5b419f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~button';
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/dd4/classbutton_1ac65167fc1f6d80153406f6694aab8818';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'handle';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Event &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'event';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '51';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Changes the state when the button hovers over the button.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param event Event to be handled
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/dd4/classbutton_1a9dbb394b8582e9be3a237a5c030f8af6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'render';
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Renders button.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/dd4/classbutton_1a30d5ec30e29436cf3f6d5193d52fda2b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+game *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'context';
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Game context.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/dd4/classbutton_1a0265f6451efbb40c797098978da0d7e7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'inactive';
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Button when not mouse is not hovering over it.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/dd4/classbutton_1a55f1693b42a5278c5c4e25ef5673c9d0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'hovered';
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Button when mouse is hovering over it.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/dd4/classbutton_1a8d7611bebd505f3a4750b6db754ae3af';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'state';
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Current state of the button.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/dd4/classbutton_1a301797c8211a1e6a5bc84837bde1f135';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Rect
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'bounds';
+      sec-mem-desc-file = 'U:/repos/game/include/UI/button.hh';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Bounds of the button.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'U:/repos/game/include/UI/button.hh';
+  cp-fileline  = '11';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Class for button UI elements.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'button';
+        node-link = {
+          node-link-id = 'd4/dd4/classbutton';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+context
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'd0/d51/classgame';
+        };
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+winMan
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'scene';
+        node-link = {
+          node-link-id = 'df/db1/classscene';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+context
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'wm';
+        node-link = {
+          node-link-id = 'df/d1c/classwm';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+context
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '4';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+current
+resume
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
   cp-id     = 'd5/db0/classexplorer__t';
   cp-name   = 'explorer_t';
   cp-ref     = {
@@ -356,7 +633,7 @@ class = {
       sec-mem-enum = { enum-name = gameplay; };
       sec-mem-enum = { enum-name = paused; };
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '9';
+      sec-mem-desc-line = '13';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -377,7 +654,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'game';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '77';
+      sec-mem-desc-line = '72';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new game object.
 _EnD_oF_dEf_TeXt_;
@@ -395,7 +672,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~game';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '83';
+      sec-mem-desc-line = '77';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Destroy the game object.
 _EnD_oF_dEf_TeXt_;
@@ -413,7 +690,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'gameplay';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '89';
+      sec-mem-desc-line = '82';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Runs the WM. Waits for the WM to be initialised, first.
 _EnD_oF_dEf_TeXt_;
@@ -437,7 +714,7 @@ _EnD_oF_dEf_TeXt_;
 = gameState::intro
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '20';
+      sec-mem-desc-line = '23';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 State that the game is in.
 _EnD_oF_dEf_TeXt_;
@@ -455,7 +732,7 @@ SDL_Rect
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dispBounds';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '26';
+      sec-mem-desc-line = '28';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Rect containing the screen height and width.
 _EnD_oF_dEf_TeXt_;
@@ -473,7 +750,7 @@ SDL_Window *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mainWindow';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '31';
+      sec-mem-desc-line = '32';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Main window to render to.
 _EnD_oF_dEf_TeXt_;
@@ -509,7 +786,7 @@ std::array< Mix_Music *, 4 >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'bgm';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '42';
+      sec-mem-desc-line = '41';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Background music. Randomly selected.
 _EnD_oF_dEf_TeXt_;
@@ -527,7 +804,7 @@ std::array< Mix_Music *, 6 >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'silence';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '47';
+      sec-mem-desc-line = '45';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Different lengths of silence. Randomly selected.
 _EnD_oF_dEf_TeXt_;
@@ -545,7 +822,7 @@ TTF_Font *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'font';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '53';
+      sec-mem-desc-line = '50';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Font used for text.
 _EnD_oF_dEf_TeXt_;
@@ -563,7 +840,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pixelSize';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '56';
+      sec-mem-desc-line = '53';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -581,7 +858,7 @@ wm
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'winMan';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '62';
+      sec-mem-desc-line = '58';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Windows manager.
 _EnD_oF_dEf_TeXt_;
@@ -599,7 +876,7 @@ SDL_mutex *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mutex';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '64';
+      sec-mem-desc-line = '60';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -617,7 +894,7 @@ SDL_Thread *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'loadThread';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '70';
+      sec-mem-desc-line = '65';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Thread that loads winMan.
 _EnD_oF_dEf_TeXt_;
@@ -627,7 +904,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = 'U:/repos/game/include/game.hh';
-  cp-fileline  = '7';
+  cp-fileline  = '11';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1893,6 +2170,12 @@ class = {
     ref-prot = public;
     ref-virt = non-virtual;
   };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'de/deb/classshitcord__t';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
   cp-section = {
     sec-kind = 'public-func';
     sec-member = {
@@ -1911,7 +2194,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'path';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
-      sec-mem-desc-line = '22';
+      sec-mem-desc-line = '24';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Loads texture based on path.
 _EnD_oF_dEf_TeXt_;
@@ -1936,7 +2219,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gameContext';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
-      sec-mem-desc-line = '34';
+      sec-mem-desc-line = '36';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new scene object.
 _EnD_oF_dEf_TeXt_;
@@ -1954,7 +2237,7 @@ virtual
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~scene';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
-      sec-mem-desc-line = '41';
+      sec-mem-desc-line = '43';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Destroy the scene object.
 _EnD_oF_dEf_TeXt_;
@@ -1972,7 +2255,7 @@ virtual std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
-      sec-mem-desc-line = '51';
+      sec-mem-desc-line = '53';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Updates scene logic.
 _EnD_oF_dEf_TeXt_;
@@ -1993,7 +2276,7 @@ virtual void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'render';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
-      sec-mem-desc-line = '58';
+      sec-mem-desc-line = '60';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Renders textures.
 _EnD_oF_dEf_TeXt_;
@@ -2016,7 +2299,7 @@ SDL_Event &
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
-      sec-mem-desc-line = '68';
+      sec-mem-desc-line = '70';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Handles events.
 _EnD_oF_dEf_TeXt_;
@@ -2040,7 +2323,7 @@ game *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'context';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
-      sec-mem-desc-line = '27';
+      sec-mem-desc-line = '29';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Game context.
 _EnD_oF_dEf_TeXt_;
@@ -2050,7 +2333,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = 'U:/repos/game/include/scenes/scene.hh';
-  cp-fileline  = '14';
+  cp-fileline  = '16';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Interface class for scenes.
 _EnD_oF_dEf_TeXt_;
@@ -2109,6 +2392,17 @@ _EnD_oF_dEf_TeXt_;
           node-link-id = 'df/db1/classscene';
         };
       }; /* node */
+      node = {
+        node-id    = 6;
+        node-label = 'shitcord_t';
+        node-link = {
+          node-link-id = 'de/deb/classshitcord__t';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
@@ -2155,6 +2449,221 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
           child-id = '1';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+current
+resume
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'de/deb/classshitcord__t';
+  cp-name   = 'shitcord_t';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'df/db1/classscene';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/deb/classshitcord__t_1ac750bf47c76c2f9872534c2f375da388';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'shitcord_t';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+game *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'context';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'U:/repos/game/include/scenes/shitcord.hh';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construct a new shitcord t object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Called only once when WM is initialised
+
+@param context game context
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/deb/classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~shitcord_t';
+      sec-mem-desc-file = 'U:/repos/game/include/scenes/shitcord.hh';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Destroy the shitcord t object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Called only when the wm is destroyed
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::pair< scenes, sceneData >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'update';
+      sec-mem-desc-file = 'U:/repos/game/include/scenes/shitcord.hh';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Update logic for shitcord.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Probably does the message appearing
+
+@return std::pair<scenes, sceneData> Returns the scene to be changed to,
+and the data that scene should contain
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'render';
+      sec-mem-desc-file = 'U:/repos/game/include/scenes/shitcord.hh';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Renders menu, and messages.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/deb/classshitcord__t_1a9d74d93e9337fc274113950419ab831c';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::pair< scenes, sceneData >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'handle';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Event &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'event';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'U:/repos/game/include/scenes/shitcord.hh';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Handles hovers.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param event Event to be handled
+@return std::pair<scenes, sceneData>Returns the scene to be changed to,
+and the data that scene should contain
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'U:/repos/game/include/scenes/shitcord.hh';
+  cp-fileline  = '6';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'scene';
+        node-link = {
+          node-link-id = 'df/db1/classscene';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'shitcord_t';
+        node-link = {
+          node-link-id = 'de/deb/classshitcord__t';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'd0/d51/classgame';
+        };
+        node-child = {
+          child-id = '4';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+winMan
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'scene';
+        node-link = {
+          node-link-id = 'df/db1/classscene';
+        };
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+context
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'shitcord_t';
+        node-link = {
+          node-link-id = 'de/deb/classshitcord__t';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'wm';
+        node-link = {
+          node-link-id = 'df/d1c/classwm';
+        };
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+context
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '2';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 current
@@ -2366,7 +2875,7 @@ class = {
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'wm';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '74';
+      sec-mem-desc-line = '70';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new wm object.
 _EnD_oF_dEf_TeXt_;
@@ -2390,7 +2899,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'context';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '82';
+      sec-mem-desc-line = '78';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new wm object.
 _EnD_oF_dEf_TeXt_;
@@ -2410,7 +2919,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'render';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '89';
+      sec-mem-desc-line = '84';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Renders the current scene, icons, and the overlay.
 _EnD_oF_dEf_TeXt_;
@@ -2434,7 +2943,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '97';
+      sec-mem-desc-line = '92';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Handles events and scene switches via task bar.
 _EnD_oF_dEf_TeXt_;
@@ -2454,7 +2963,7 @@ std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '104';
+      sec-mem-desc-line = '99';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Updates scene data.
 _EnD_oF_dEf_TeXt_;
@@ -2476,7 +2985,7 @@ std::vector< std::pair< SDL_Texture *, SDL_Rect > >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'icons';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '21';
+      sec-mem-desc-line = '24';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Icons for the task bar.
 _EnD_oF_dEf_TeXt_;
@@ -2494,7 +3003,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'OSOverlay';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '27';
+      sec-mem-desc-line = '29';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Task bar overlay.
 _EnD_oF_dEf_TeXt_;
@@ -2512,7 +3021,7 @@ game *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'context';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '33';
+      sec-mem-desc-line = '34';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 game context
 _EnD_oF_dEf_TeXt_;
@@ -2551,7 +3060,7 @@ _EnD_oF_dEf_TeXt_;
 = 0
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '45';
+      sec-mem-desc-line = '44';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Stores whether the last music track was silent.
 _EnD_oF_dEf_TeXt_;
@@ -2569,7 +3078,7 @@ std::unique_ptr< explorer_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'explorer';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '53';
+      sec-mem-desc-line = '51';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Scenes.
 _EnD_oF_dEf_TeXt_;
@@ -2587,7 +3096,7 @@ std::unique_ptr< notepad_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'notepad';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '54';
+      sec-mem-desc-line = '52';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2605,7 +3114,7 @@ std::unique_ptr< pause_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pause';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '55';
+      sec-mem-desc-line = '53';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2623,7 +3132,25 @@ std::unique_ptr< intro_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'intro';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '56';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'df/d1c/classwm_1a5b53423d16a28cc8c0eec221572fb454';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::unique_ptr< shitcord_t >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'shitcord';
+      sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
+      sec-mem-desc-line = '55';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2641,7 +3168,7 @@ scene *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'current';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '62';
+      sec-mem-desc-line = '60';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Current scene.
 _EnD_oF_dEf_TeXt_;
@@ -2659,7 +3186,7 @@ scene *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'resume';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '67';
+      sec-mem-desc-line = '64';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Scene to resume on. Only used for unpausing purposes.
 _EnD_oF_dEf_TeXt_;
@@ -2669,7 +3196,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = 'U:/repos/game/include/wm.hh';
-  cp-fileline  = '15';
+  cp-fileline  = '19';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2763,7 +3290,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = '_mutex';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/src/game/game.cc';
-      sec-mem-desc-line = '11';
+      sec-mem-desc-line = '13';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2781,7 +3308,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~wmInitData';
       sec-mem-desc-file = 'U:/repos/game/src/game/game.cc';
-      sec-mem-desc-line = '13';
+      sec-mem-desc-line = '15';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2799,7 +3326,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lock';
       sec-mem-desc-file = 'U:/repos/game/src/game/game.cc';
-      sec-mem-desc-line = '14';
+      sec-mem-desc-line = '16';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2817,7 +3344,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'unlock';
       sec-mem-desc-file = 'U:/repos/game/src/game/game.cc';
-      sec-mem-desc-line = '15';
+      sec-mem-desc-line = '17';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2838,7 +3365,7 @@ wm *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'winMan';
       sec-mem-desc-file = 'U:/repos/game/src/game/game.cc';
-      sec-mem-desc-line = '4';
+      sec-mem-desc-line = '6';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2856,7 +3383,7 @@ game *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'context';
       sec-mem-desc-file = 'U:/repos/game/src/game/game.cc';
-      sec-mem-desc-line = '5';
+      sec-mem-desc-line = '7';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2877,7 +3404,7 @@ SDL_mutex *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mutex';
       sec-mem-desc-file = 'U:/repos/game/src/game/game.cc';
-      sec-mem-desc-line = '8';
+      sec-mem-desc-line = '10';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2887,7 +3414,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = 'U:/repos/game/src/game/game.cc';
-  cp-fileline  = '3';
+  cp-fileline  = '5';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2986,7 +3513,7 @@ _EnD_oF_dEf_TeXt_;
  std::variant<std::monostate, notepadData>
 _EnD_oF_dEf_TeXt_;
       typedef-mem-desc-file = 'U:/repos/game/include/enum.hh';
-      typedef-mem-desc-line = '35';
+      typedef-mem-desc-line = '38';
       typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -3006,7 +3533,7 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = entry1; enum-value = '= 1'; };
       enum-mem-enum = { enum-name = entry2; enum-value = '= 2'; };
       enum-mem-desc-file = 'U:/repos/game/include/enum.hh';
-      enum-mem-desc-line = '10';
+      enum-mem-desc-line = '12';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Entry currently stored in notepad.
 _EnD_oF_dEf_TeXt_;
@@ -3025,7 +3552,7 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = entry2; };
       enum-mem-enum = { enum-name = size; };
       enum-mem-desc-file = 'U:/repos/game/include/enum.hh';
-      enum-mem-desc-line = '18';
+      enum-mem-desc-line = '20';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Entries list.
 _EnD_oF_dEf_TeXt_;
@@ -3043,8 +3570,9 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = explorer; };
       enum-mem-enum = { enum-name = notepad; };
       enum-mem-enum = { enum-name = pause; };
+      enum-mem-enum = { enum-name = shitcord; };
       enum-mem-desc-file = 'U:/repos/game/include/enum.hh';
-      enum-mem-desc-line = '28';
+      enum-mem-desc-line = '30';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Scenes list.
 _EnD_oF_dEf_TeXt_;
@@ -3066,18 +3594,6 @@ file = {
   file-id   = 'd3/d0e/game_8hh';
   file-name = 'game.hh';
   file-full-name  = 'U:/repos/game/include/game.hh';
-  file-first-line = '1';
-  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-  file-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-}; /* file */
-file = {
-  file-id   = 'd0/d8b/pch_8hh';
-  file-name = 'pch.hh';
-  file-full-name  = 'U:/repos/game/include/pch.hh';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 
@@ -3151,7 +3667,7 @@ file = {
 static_cast<int>(val * context->pixelSize)
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
-      define-mem-desc-line = '7';
+      define-mem-desc-line = '9';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -3161,6 +3677,30 @@ _EnD_oF_dEf_TeXt_;
     }; /* define-member */
     };
   file-full-name  = 'U:/repos/game/include/scenes/scene.hh';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd1/da8/shitcord_8hh';
+  file-name = 'shitcord.hh';
+  file-full-name  = 'U:/repos/game/include/scenes/shitcord.hh';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'de/df3/button_8hh';
+  file-name = 'button.hh';
+  file-full-name  = 'U:/repos/game/include/UI/button.hh';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 
@@ -3201,7 +3741,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'data';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'U:/repos/game/src/game/game.cc';
-      func-mem-desc-line = '18';
+      func-mem-desc-line = '20';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -3266,7 +3806,7 @@ file = {
       define-mem-prot = public;
       define-mem-name = 'skipIntro';
       define-mem-desc-file = 'U:/repos/game/src/main.cc';
-      define-mem-desc-line = '40';
+      define-mem-desc-line = '45';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -3298,7 +3838,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'argv';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'U:/repos/game/src/main.cc';
-      func-mem-desc-line = '4';
+      func-mem-desc-line = '9';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -3336,7 +3876,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'save';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'U:/repos/game/src/scenes/explorer.cc';
-      func-mem-desc-line = '5';
+      func-mem-desc-line = '8';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -3382,6 +3922,30 @@ file = {
   file-id   = 'd4/d11/scene_8cc';
   file-name = 'scene.cc';
   file-full-name  = 'U:/repos/game/src/scenes/scene.cc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd0/dd7/shitcord_8cc';
+  file-name = 'shitcord.cc';
+  file-full-name  = 'U:/repos/game/src/scenes/shitcord.cc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'db/da7/button_8cc';
+  file-name = 'button.cc';
+  file-full-name  = 'U:/repos/game/src/UI/button.cc';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 

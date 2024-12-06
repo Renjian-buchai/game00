@@ -1,0 +1,108 @@
+.TH "button" 3 "Version 0.1.0" "Game" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+button \- Class for button UI elements\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <button\&.hh>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBbutton\fP (\fBgame\fP *\fBcontext\fP, const char *\fBinactive\fP, const char *\fBhovered\fP, SDL_Rect \fBbounds\fP)"
+.br
+.RI "Construct a new button object\&. "
+.ti -1c
+.RI "\fB~button\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandle\fP (SDL_Event &event)"
+.br
+.RI "Changes the state when the button hovers over the button\&. "
+.ti -1c
+.RI "void \fBrender\fP ()"
+.br
+.RI "Renders button\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBgame\fP * \fBcontext\fP"
+.br
+.RI "Game context\&. "
+.ti -1c
+.RI "SDL_Texture * \fBinactive\fP"
+.br
+.RI "Button when not mouse is not hovering over it\&. "
+.ti -1c
+.RI "SDL_Texture * \fBhovered\fP"
+.br
+.RI "Button when mouse is hovering over it\&. "
+.ti -1c
+.RI "SDL_Texture * \fBstate\fP"
+.br
+.RI "Current state of the button\&. "
+.ti -1c
+.RI "SDL_Rect \fBbounds\fP"
+.br
+.RI "Bounds of the button\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class for button UI elements\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "button::button (\fBgame\fP * context, const char * inactive, const char * hovered, SDL_Rect bounds)"
+
+.PP
+Construct a new button object\&. 
+.SS "button::~button ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void button::handle (SDL_Event & event)"
+
+.PP
+Changes the state when the button hovers over the button\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevent\fP Event to be handled 
+.RE
+.PP
+
+.SS "void button::render ()"
+
+.PP
+Renders button\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "SDL_Rect button::bounds"
+
+.PP
+Bounds of the button\&. 
+.SS "\fBgame\fP* button::context"
+
+.PP
+Game context\&. 
+.SS "SDL_Texture* button::hovered"
+
+.PP
+Button when mouse is hovering over it\&. 
+.SS "SDL_Texture* button::inactive"
+
+.PP
+Button when not mouse is not hovering over it\&. 
+.SS "SDL_Texture* button::state"
+
+.PP
+Current state of the button\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game from the source code\&.

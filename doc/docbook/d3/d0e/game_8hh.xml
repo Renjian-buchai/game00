@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_game_8hh" xml:lang="en-US">
 <title>include/game.hh File Reference</title>
 <indexterm><primary>include/game.hh</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;pch.hh&quot;<?linebreak?>#include &quot;wm.hh&quot;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &lt;array&gt;<?linebreak?>#include &quot;SDL.h&quot;<?linebreak?>#include &quot;SDL_mixer.h&quot;<?linebreak?>#include &quot;SDL_ttf.h&quot;<?linebreak?>#include &quot;wm.hh&quot;<?linebreak?></programlisting><simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classgame">game</link></para>

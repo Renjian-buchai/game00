@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d4/dd4/classbutton" kind="class" language="C++" prot="public">
+    <compoundname>button</compoundname>
+    <includes refid="de/df3/button_8hh" local="no">button.hh</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/dd4/classbutton_1a30d5ec30e29436cf3f6d5193d52fda2b" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+        <definition>game* button::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>button::context</qualifiedname>
+        <briefdescription>
+<para>Game context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="16" column="8" bodyfile="include/UI/button.hh" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dd4/classbutton_1a0265f6451efbb40c797098978da0d7e7" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* button::inactive</definition>
+        <argsstring></argsstring>
+        <name>inactive</name>
+        <qualifiedname>button::inactive</qualifiedname>
+        <briefdescription>
+<para>Button when not mouse is not hovering over it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="21" column="15" bodyfile="include/UI/button.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dd4/classbutton_1a55f1693b42a5278c5c4e25ef5673c9d0" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* button::hovered</definition>
+        <argsstring></argsstring>
+        <name>hovered</name>
+        <qualifiedname>button::hovered</qualifiedname>
+        <briefdescription>
+<para>Button when mouse is hovering over it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="26" column="15" bodyfile="include/UI/button.hh" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dd4/classbutton_1a8d7611bebd505f3a4750b6db754ae3af" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* button::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>button::state</qualifiedname>
+        <briefdescription>
+<para>Current state of the button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="31" column="15" bodyfile="include/UI/button.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dd4/classbutton_1a301797c8211a1e6a5bc84837bde1f135" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect button::bounds</definition>
+        <argsstring></argsstring>
+        <name>bounds</name>
+        <qualifiedname>button::bounds</qualifiedname>
+        <briefdescription>
+<para>Bounds of the button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="36" column="12" bodyfile="include/UI/button.hh" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/dd4/classbutton_1afb234fcae14847d00a64fdc155d7c98e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>button::button</definition>
+        <argsstring>(game *context, const char *inactive, const char *hovered, SDL_Rect bounds)</argsstring>
+        <name>button</name>
+        <qualifiedname>button::button</qualifiedname>
+        <param>
+          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>inactive</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>hovered</declname>
+        </param>
+        <param>
+          <type>SDL_Rect</type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new button object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="41" column="3" bodyfile="src/UI/button.cc" bodystart="6" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd4/classbutton_1a6ae171da0cdc25fb2dfa57397a5b419f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>button::~button</definition>
+        <argsstring>()</argsstring>
+        <name>~button</name>
+        <qualifiedname>button::~button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="44" column="3" bodyfile="src/UI/button.cc" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd4/classbutton_1ac65167fc1f6d80153406f6694aab8818" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void button::handle</definition>
+        <argsstring>(SDL_Event &amp;event)</argsstring>
+        <name>handle</name>
+        <qualifiedname>button::handle</qualifiedname>
+        <param>
+          <type>SDL_Event &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Changes the state when the button hovers over the button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event to be handled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="51" column="8" bodyfile="src/UI/button.cc" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd4/classbutton_1a9dbb394b8582e9be3a237a5c030f8af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void button::render</definition>
+        <argsstring>()</argsstring>
+        <name>render</name>
+        <qualifiedname>button::render</qualifiedname>
+        <briefdescription>
+<para>Renders button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/UI/button.hh" line="56" column="8" bodyfile="src/UI/button.cc" bodystart="37" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for button UI elements. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>button</label>
+        <link refid="d4/dd4/classbutton"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game</label>
+        <link refid="d0/d51/classgame"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>winMan</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>wm</label>
+        <link refid="df/d1c/classwm"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>current</edgelabel>
+          <edgelabel>resume</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/UI/button.hh" line="11" column="1" bodyfile="include/UI/button.hh" bodystart="11" bodyend="57"/>
+    <listofallmembers>
+      <member refid="d4/dd4/classbutton_1a301797c8211a1e6a5bc84837bde1f135" prot="public" virt="non-virtual"><scope>button</scope><name>bounds</name></member>
+      <member refid="d4/dd4/classbutton_1afb234fcae14847d00a64fdc155d7c98e" prot="public" virt="non-virtual"><scope>button</scope><name>button</name></member>
+      <member refid="d4/dd4/classbutton_1a30d5ec30e29436cf3f6d5193d52fda2b" prot="public" virt="non-virtual"><scope>button</scope><name>context</name></member>
+      <member refid="d4/dd4/classbutton_1ac65167fc1f6d80153406f6694aab8818" prot="public" virt="non-virtual"><scope>button</scope><name>handle</name></member>
+      <member refid="d4/dd4/classbutton_1a55f1693b42a5278c5c4e25ef5673c9d0" prot="public" virt="non-virtual"><scope>button</scope><name>hovered</name></member>
+      <member refid="d4/dd4/classbutton_1a0265f6451efbb40c797098978da0d7e7" prot="public" virt="non-virtual"><scope>button</scope><name>inactive</name></member>
+      <member refid="d4/dd4/classbutton_1a9dbb394b8582e9be3a237a5c030f8af6" prot="public" virt="non-virtual"><scope>button</scope><name>render</name></member>
+      <member refid="d4/dd4/classbutton_1a8d7611bebd505f3a4750b6db754ae3af" prot="public" virt="non-virtual"><scope>button</scope><name>state</name></member>
+      <member refid="d4/dd4/classbutton_1a6ae171da0cdc25fb2dfa57397a5b419f" prot="public" virt="non-virtual"><scope>button</scope><name>~button</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

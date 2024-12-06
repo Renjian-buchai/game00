@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d0/dd7/shitcord_8cc" kind="file" language="C++">
+    <compoundname>shitcord.cc</compoundname>
+    <includes refid="d1/da8/shitcord_8hh" local="yes">scenes/shitcord.hh</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>SDL.h</label>
+      </node>
+      <node id="6">
+        <label>enum.hh</label>
+        <link refid="d9/d05/enum_8hh"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>scene.hh</label>
+        <link refid="d5/dd8/scene_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scenes/shitcord.hh</label>
+        <link refid="d1/da8/shitcord_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/scenes/shitcord.cc</label>
+        <link refid="d0/dd7/shitcord_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>utility</label>
+      </node>
+      <node id="8">
+        <label>variant</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/da8/shitcord_8hh" kindref="compound">scenes/shitcord.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="de/deb/classshitcord__t_1ac750bf47c76c2f9872534c2f375da388" kindref="member">shitcord_t::shitcord_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)<sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="de/deb/classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71" kindref="member">shitcord_t::~shitcord_t</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163" kindref="member">shitcord_t::update</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7" kindref="member">scenes::shitcord</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kindref="member">shitcord_t::render</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="de/deb/classshitcord__t_1a9d74d93e9337fc274113950419ab831c" kindref="member">shitcord_t::handle</ref>(SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7" kindref="member">scenes::shitcord</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/scenes/shitcord.cc"/>
+  </compounddef>
+</doxygen>

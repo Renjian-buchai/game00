@@ -10,7 +10,7 @@ scene \- Interface class for scenes\&.
 .PP
 \fR#include <scene\&.hh>\fP
 .PP
-Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, \fBpause_t\fP, and \fBshitcord_t\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -82,7 +82,7 @@ std::pair<scenes, sceneData> Returns the scene to be changed to, and the data th
 .PP
 
 .PP
-Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, \fBpause_t\fP, and \fBshitcord_t\fP\&.
 .SS "SDL_Texture * scene::loadTexture (const char * path)"
 
 .PP
@@ -104,7 +104,7 @@ SDL_Texture* Loaded texture
 .PP
 Renders textures\&. Called in \fBwm::render()\fP 
 .PP
-Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, \fBpause_t\fP, and \fBshitcord_t\fP\&.
 .SS "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > scene::update ()\fR [pure virtual]\fP"
 
 .PP
@@ -118,7 +118,7 @@ std::pair<scenes, sceneData> Returns the scene to be changed to, and the data th
 .PP
 
 .PP
-Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, \fBpause_t\fP, and \fBshitcord_t\fP\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "\fBgame\fP* scene::context"

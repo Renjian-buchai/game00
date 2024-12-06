@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="42" column="3" bodyfile="src/scenes/explorer.cc" bodystart="43" bodyend="81"/>
+        <location file="include/scenes/explorer.hh" line="42" column="3" bodyfile="src/scenes/explorer.cc" bodystart="46" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="d5/db0/classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="49" column="3" bodyfile="src/scenes/explorer.cc" bodystart="83" bodyend="89"/>
+        <location file="include/scenes/explorer.hh" line="49" column="3" bodyfile="src/scenes/explorer.cc" bodystart="86" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="d5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="59" column="13" bodyfile="src/scenes/explorer.cc" bodystart="91" bodyend="93"/>
+        <location file="include/scenes/explorer.hh" line="59" column="13" bodyfile="src/scenes/explorer.cc" bodystart="94" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="d5/db0/classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="64" column="8" bodyfile="src/scenes/explorer.cc" bodystart="95" bodyend="101"/>
+        <location file="include/scenes/explorer.hh" line="64" column="8" bodyfile="src/scenes/explorer.cc" bodystart="98" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="d5/db0/classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="73" column="13" bodyfile="src/scenes/explorer.cc" bodystart="103" bodyend="151"/>
+        <location file="include/scenes/explorer.hh" line="73" column="13" bodyfile="src/scenes/explorer.cc" bodystart="106" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>SDL_Texture *</type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="83" column="15" bodyfile="src/scenes/explorer.cc" bodystart="12" bodyend="41"/>
+        <location file="include/scenes/explorer.hh" line="83" column="15" bodyfile="src/scenes/explorer.cc" bodystart="15" bodyend="44"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

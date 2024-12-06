@@ -1,0 +1,144 @@
+\doxysection{button Class Reference}
+\label{classbutton}\index{button@{button}}
+
+
+Class for button UI elements.  
+
+
+
+
+{\ttfamily \#include $<$button.\+hh$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbutton_afb234fcae14847d00a64fdc155d7c98e}{button}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classbutton_a30d5ec30e29436cf3f6d5193d52fda2b}{context}}, const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classbutton_a0265f6451efbb40c797098978da0d7e7}{inactive}}, const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classbutton_a55f1693b42a5278c5c4e25ef5673c9d0}{hovered}}, SDL\+\_\+\+Rect \mbox{\hyperlink{classbutton_a301797c8211a1e6a5bc84837bde1f135}{bounds}})
+\begin{DoxyCompactList}\small\item\em Construct a new button object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbutton_a6ae171da0cdc25fb2dfa57397a5b419f}{\texorpdfstring{$\sim$}{\string~}button}} ()
+\item 
+void \mbox{\hyperlink{classbutton_ac65167fc1f6d80153406f6694aab8818}{handle}} (SDL\+\_\+\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Changes the state when the button hovers over the button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbutton_a9dbb394b8582e9be3a237a5c030f8af6}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classbutton_a30d5ec30e29436cf3f6d5193d52fda2b}{context}}
+\begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classbutton_a0265f6451efbb40c797098978da0d7e7}{inactive}}
+\begin{DoxyCompactList}\small\item\em Button when not mouse is not hovering over it. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classbutton_a55f1693b42a5278c5c4e25ef5673c9d0}{hovered}}
+\begin{DoxyCompactList}\small\item\em Button when mouse is hovering over it. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classbutton_a8d7611bebd505f3a4750b6db754ae3af}{state}}
+\begin{DoxyCompactList}\small\item\em Current state of the button. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classbutton_a301797c8211a1e6a5bc84837bde1f135}{bounds}}
+\begin{DoxyCompactList}\small\item\em Bounds of the button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for button UI elements. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{button@{button}!button@{button}}
+\index{button@{button}!button@{button}}
+\doxysubsubsection{\texorpdfstring{button()}{button()}}
+{\footnotesize\ttfamily \label{classbutton_afb234fcae14847d00a64fdc155d7c98e} 
+button\+::button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{inactive}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{hovered}{, }\item[{SDL\+\_\+\+Rect}]{bounds}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new button object. 
+
+\index{button@{button}!````~button@{\texorpdfstring{$\sim$}{\string~}button}}
+\index{````~button@{\texorpdfstring{$\sim$}{\string~}button}!button@{button}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}button()}{\string~button()}}
+{\footnotesize\ttfamily \label{classbutton_a6ae171da0cdc25fb2dfa57397a5b419f} 
+button\+::\texorpdfstring{$\sim$}{\string~}button (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\index{button@{button}!handle@{handle}}
+\index{handle@{handle}!button@{button}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classbutton_ac65167fc1f6d80153406f6694aab8818} 
+void button\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+
+
+Changes the state when the button hovers over the button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event to be handled \\
+\hline
+\end{DoxyParams}
+\index{button@{button}!render@{render}}
+\index{render@{render}!button@{button}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classbutton_a9dbb394b8582e9be3a237a5c030f8af6} 
+void button\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Renders button. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\index{button@{button}!bounds@{bounds}}
+\index{bounds@{bounds}!button@{button}}
+\doxysubsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily \label{classbutton_a301797c8211a1e6a5bc84837bde1f135} 
+SDL\+\_\+\+Rect button\+::bounds}
+
+
+
+Bounds of the button. 
+
+\index{button@{button}!context@{context}}
+\index{context@{context}!button@{button}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \label{classbutton_a30d5ec30e29436cf3f6d5193d52fda2b} 
+\mbox{\hyperlink{classgame}{game}}\texorpdfstring{$\ast$}{*} button\+::context}
+
+
+
+Game context. 
+
+\index{button@{button}!hovered@{hovered}}
+\index{hovered@{hovered}!button@{button}}
+\doxysubsubsection{\texorpdfstring{hovered}{hovered}}
+{\footnotesize\ttfamily \label{classbutton_a55f1693b42a5278c5c4e25ef5673c9d0} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} button\+::hovered}
+
+
+
+Button when mouse is hovering over it. 
+
+\index{button@{button}!inactive@{inactive}}
+\index{inactive@{inactive}!button@{button}}
+\doxysubsubsection{\texorpdfstring{inactive}{inactive}}
+{\footnotesize\ttfamily \label{classbutton_a0265f6451efbb40c797098978da0d7e7} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} button\+::inactive}
+
+
+
+Button when not mouse is not hovering over it. 
+
+\index{button@{button}!state@{state}}
+\index{state@{state}!button@{button}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \label{classbutton_a8d7611bebd505f3a4750b6db754ae3af} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} button\+::state}
+
+
+
+Current state of the button. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+UI/\mbox{\hyperlink{button_8hh}{button.\+hh}}\item 
+src/\+UI/\mbox{\hyperlink{button_8cc}{button.\+cc}}\end{DoxyCompactItemize}

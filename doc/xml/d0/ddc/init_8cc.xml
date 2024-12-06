@@ -2,51 +2,36 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
   <compounddef id="d0/ddc/init_8cc" kind="file" language="C++">
     <compoundname>init.cc</compoundname>
-    <includes refid="dd/d82/init_8hh" local="yes">../../include/scenes/init.hh</includes>
-    <includes refid="d3/d0e/game_8hh" local="yes">../../include/game.hh</includes>
+    <includes refid="dd/d82/init_8hh" local="yes">scenes/init.hh</includes>
+    <includes local="yes">SDL_image.h</includes>
+    <includes refid="d3/d0e/game_8hh" local="yes">game.hh</includes>
     <incdepgraph>
-      <node id="13">
+      <node id="5">
         <label>SDL.h</label>
       </node>
-      <node id="14">
+      <node id="9">
         <label>SDL_image.h</label>
       </node>
-      <node id="15">
+      <node id="12">
         <label>SDL_mixer.h</label>
       </node>
-      <node id="16">
+      <node id="13">
         <label>SDL_ttf.h</label>
       </node>
-      <node id="17">
-        <label>../enum.hh</label>
+      <node id="6">
+        <label>enum.hh</label>
         <link refid="d9/d05/enum_8hh"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>../../include/game.hh</label>
-        <link refid="d3/d0e/game_8hh"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>../../include/pch.hh</label>
-        <link refid="d0/d8b/pch_8hh"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
+      </node>
+      <node id="10">
+        <label>game.hh</label>
+        <link refid="d3/d0e/game_8hh"/>
         <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -54,30 +39,26 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
       </node>
-      <node id="20">
+      <node id="17">
         <label>scenes/explorer.hh</label>
         <link refid="d4/d7c/explorer_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="2">
-        <label>../../include/scenes/init.hh</label>
+        <label>scenes/init.hh</label>
         <link refid="dd/d82/init_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="18">
         <label>scenes/notepad.hh</label>
         <link refid="d4/d54/notepad_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="19">
         <label>scenes/pause.hh</label>
         <link refid="d4/d90/pause_8hh"/>
         <childnode refid="3" relation="include">
@@ -88,23 +69,37 @@
         <link refid="d5/dd8/scene_8hh"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
+        <label>scenes/shitcord.hh</label>
+        <link refid="d1/da8/shitcord_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
         <label>wm.hh</label>
         <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
         <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -112,31 +107,27 @@
         <link refid="d0/ddc/init_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="11">
         <label>array</label>
       </node>
-      <node id="6">
+      <node id="7">
         <label>cstdint</label>
       </node>
-      <node id="7">
-        <label>iostream</label>
-      </node>
-      <node id="8">
+      <node id="15">
         <label>memory</label>
       </node>
-      <node id="9">
-        <label>string</label>
-      </node>
-      <node id="10">
+      <node id="4">
         <label>utility</label>
       </node>
-      <node id="11">
+      <node id="8">
         <label>variant</label>
       </node>
-      <node id="12">
+      <node id="16">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -145,176 +136,177 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/d82/init_8hh" kindref="compound">../../include/scenes/init.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/d82/init_8hh" kindref="compound">scenes/init.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">../../include/game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><ref refid="da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552" kindref="member">intro_t::slide::slide</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_fadeIn,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_fadeOut,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_duration,</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Texture*<sp/>_texture,<sp/>SDL_Rect<sp/>_dest,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_skippable)</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>fadeIn(_fadeIn),</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>duration(_duration),</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fadeOut(_fadeOut),</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>texture(_texture),</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dest(_dest),</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>skippable(_skippable)<sp/>{}</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" kindref="member">intro_t::slideShow</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>time,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>click,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>skipGrace)<sp/>{</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lastTime<sp/>=<sp/>time;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>currentSlide;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>.empty())<sp/>{</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/>slide&amp;<sp/>head<sp/>=<sp/><ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>[currentSlide];</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(click<sp/>&amp;&amp;<sp/>head.skippable<sp/>&amp;&amp;<sp/>time<sp/>-<sp/>lastTime<sp/>&gt;<sp/>skipGrace)<sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>time;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>++currentSlide;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>click<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time<sp/>-<sp/>lastTime<sp/>&gt;<sp/>head.fadeIn<sp/>+<sp/>head.duration<sp/>+<sp/>head.fadeOut)<sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>time;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>++currentSlide;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time<sp/>-<sp/>lastTime<sp/>&lt;<sp/>head.fadeIn)<sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_SetTextureAlphaMod(head.texture,<sp/>255<sp/>*<sp/>(time<sp/>-<sp/>lastTime)<sp/>/<sp/>head.fadeIn);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time<sp/>-<sp/>lastTime<sp/>&lt;<sp/>head.fadeIn<sp/>+<sp/>head.duration)<sp/>{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>(void)0;<sp/><sp/></highlight><highlight class="comment">//<sp/>Head<sp/>should<sp/>be<sp/>255<sp/>already,<sp/>so<sp/>save<sp/>on<sp/>some<sp/>clock<sp/>cycles</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_SetTextureAlphaMod(</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>head.texture,</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>255<sp/>-<sp/>(255<sp/>*<sp/>(time<sp/>-<sp/>lastTime<sp/>-<sp/>head.fadeIn<sp/>-<sp/>head.duration)<sp/>/</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>head.fadeOut));</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>head.texture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_RectEmpty(&amp;head.dest)<sp/>?<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>:<sp/>&amp;head.dest);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dea/classintro__t_1a0439809e2c67c40ea20757ffed70968c" kindref="member">intro_t::addSlide</ref>(SDL_Surface*<sp/>surface,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>fadeIn,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>duration,</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>fadeOut,<sp/>SDL_Rect<sp/>dest,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>centred,</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>skippable)<sp/>{</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>.emplace_back(</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fadeIn,<sp/>fadeOut,<sp/>duration,</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface),<sp/>dest,</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>skippable);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(centred)<sp/><ref refid="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" kindref="member">intro_t::centreRect</ref>(<ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>.rbegin()-&gt;dest);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" kindref="member">intro_t::centreRect</ref>(SDL_Rect&amp;<sp/>rect,<sp/>centre<sp/>_centre)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_centre<sp/>==<sp/><ref refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197" kindref="member">centre::BOTH</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.x<sp/>=<sp/>(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kindref="member">dispBounds</ref>.w<sp/>-<sp/>rect.w)<sp/>/<sp/>2;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.y<sp/>=<sp/>(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kindref="member">dispBounds</ref>.h<sp/>-<sp/>rect.h)<sp/>/<sp/>2;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_centre<sp/>==<sp/><ref refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e" kindref="member">centre::HORIZONTAL</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.x<sp/>=<sp/>(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kindref="member">dispBounds</ref>.w<sp/>-<sp/>rect.w)<sp/>/<sp/>2;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.y<sp/>=<sp/>(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kindref="member">dispBounds</ref>.h<sp/>-<sp/>rect.h)<sp/>/<sp/>2;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><ref refid="d9/dea/classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d" kindref="member">intro_t::intro_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context),<sp/>startTime(SDL_GetTicks64())<sp/>{</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/>addSlide(IMG_Load(</highlight><highlight class="stringliteral">&quot;res/images/0001.png&quot;</highlight><highlight class="normal">),<sp/>0,<sp/>1500,<sp/>500);</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/>SDL_Colour<sp/>white{0xff,<sp/>0xff,<sp/>0xff,<sp/>SDL_ALPHA_OPAQUE};</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>TTF_RenderText_Solid(</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;Ah,<sp/>but<sp/>I&apos;ll<sp/>be<sp/>causing<sp/>trouble<sp/>for<sp/>my<sp/>family,<sp/>won&apos;t<sp/>I?&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>white);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>1000,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;If<sp/>only<sp/>someone<sp/>else<sp/>could<sp/>just...&quot;</highlight><highlight class="normal">,<sp/>white,<sp/>0);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>1000,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;Live<sp/>on<sp/>my<sp/>behalf...&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>white,<sp/>0);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>1000,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;So<sp/>that<sp/>I<sp/>don&apos;t<sp/>have<sp/>to.&quot;</highlight><highlight class="normal">,<sp/>white,<sp/>0);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>1000,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.0s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>{},<sp/>0);</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>0,<sp/>2000,<sp/>0,<sp/>SDL_Rect{},<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.0s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;This<sp/>game<sp/>does<sp/>not<sp/>represent\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;the<sp/>experiences<sp/>of<sp/>the<sp/>creator.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;See:<sp/>The<sp/>Beginner&apos;s<sp/>Guide&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>white,<sp/>0);</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>500,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.0s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Please<sp/>don&apos;t<sp/>spam<sp/>my<sp/>e-mail\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;asking<sp/>about<sp/>my<sp/>mental<sp/>health&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;\nlike<sp/>last<sp/>time.&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>white,<sp/>0);</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>500,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.0s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>{},<sp/>0);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>0,<sp/>2000,<sp/>0,<sp/>SDL_Rect{},<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>5s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;Loading...&quot;</highlight><highlight class="normal">,<sp/>{0xbb,<sp/>0xbb,<sp/>0xbb,<sp/>SDL_ALPHA_OPAQUE},<sp/>0);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>5000,<sp/>250,</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{context-&gt;dispBounds.w<sp/>-<sp/>surface-&gt;w<sp/>-<sp/>context-&gt;dispBounds.h<sp/>/<sp/>40,</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;dispBounds.h<sp/>-<sp/>surface-&gt;h<sp/>-<sp/>context-&gt;dispBounds.h<sp/>/<sp/>40,</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>surface-&gt;w,<sp/>surface-&gt;h},</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><ref refid="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" kindref="member">intro_t::~intro_t</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(slide&amp;<sp/>_slide<sp/>:<sp/><ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_DestroyTexture(_slide.texture);</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>.clear();</highlight></codeline>
-<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da" kindref="member">intro_t::update</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>deltaTime<sp/>=<sp/>SDL_GetTicks64()<sp/>-<sp/><ref refid="d9/dea/classintro__t_1a6db4493f9b8695a1bed2f16f3af45870" kindref="member">startTime</ref>;</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(deltaTime<sp/>&gt;<sp/>19000)<sp/>{</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" kindref="member">~intro_t</ref>();</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>,<sp/>std::monostate());</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>,<sp/>std::monostate());</highlight></codeline>
-<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808" kindref="member">intro_t::render</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/>SDL_RenderClear(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>);</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><ref refid="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" kindref="member">slideShow</ref>(SDL_GetTicks64(),<sp/><ref refid="d9/dea/classintro__t_1a1543b2b845c6999165123b34608fcf25" kindref="member">skip</ref>);</highlight></codeline>
-<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight></codeline>
-<codeline lineno="167"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9" kindref="member">intro_t::handle</ref>(SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><ref refid="d9/dea/classintro__t_1a1543b2b845c6999165123b34608fcf25" kindref="member">skip</ref><sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.type<sp/>==<sp/>SDL_KEYDOWN<sp/>&amp;&amp;<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.key.keysym.sym<sp/>==<sp/>SDLK_SPACE;</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>,<sp/>std::monostate());</highlight></codeline>
-<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL_image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552" kindref="member">intro_t::slide::slide</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_fadeIn,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_fadeOut,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_duration,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Texture*<sp/>_texture,<sp/>SDL_Rect<sp/>_dest,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_skippable)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>fadeIn(_fadeIn),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>duration(_duration),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fadeOut(_fadeOut),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>texture(_texture),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dest(_dest),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>skippable(_skippable)<sp/>{}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" kindref="member">intro_t::slideShow</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>time,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>click,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>skipGrace)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lastTime<sp/>=<sp/>time;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>currentSlide;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>.empty())<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>slide&amp;<sp/>head<sp/>=<sp/><ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>[currentSlide];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(click<sp/>&amp;&amp;<sp/>head.skippable<sp/>&amp;&amp;<sp/>time<sp/>-<sp/>lastTime<sp/>&gt;<sp/>skipGrace)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>time;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>++currentSlide;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>click<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time<sp/>-<sp/>lastTime<sp/>&gt;<sp/>head.fadeIn<sp/>+<sp/>head.duration<sp/>+<sp/>head.fadeOut)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>time;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>++currentSlide;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time<sp/>-<sp/>lastTime<sp/>&lt;<sp/>head.fadeIn)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_SetTextureAlphaMod(head.texture,<sp/>255<sp/>*<sp/>(time<sp/>-<sp/>lastTime)<sp/>/<sp/>head.fadeIn);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time<sp/>-<sp/>lastTime<sp/>&lt;<sp/>head.fadeIn<sp/>+<sp/>head.duration)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>(void)0;<sp/><sp/></highlight><highlight class="comment">//<sp/>Head<sp/>should<sp/>be<sp/>255<sp/>already,<sp/>so<sp/>save<sp/>on<sp/>some<sp/>clock<sp/>cycles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_SetTextureAlphaMod(</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>head.texture,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>255<sp/>-<sp/>(255<sp/>*<sp/>(time<sp/>-<sp/>lastTime<sp/>-<sp/>head.fadeIn<sp/>-<sp/>head.duration)<sp/>/</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>head.fadeOut));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>head.texture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_RectEmpty(&amp;head.dest)<sp/>?<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>:<sp/>&amp;head.dest);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dea/classintro__t_1a0439809e2c67c40ea20757ffed70968c" kindref="member">intro_t::addSlide</ref>(SDL_Surface*<sp/>surface,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>fadeIn,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>duration,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>fadeOut,<sp/>SDL_Rect<sp/>dest,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>centred,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>skippable)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>.emplace_back(</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fadeIn,<sp/>fadeOut,<sp/>duration,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface),<sp/>dest,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>skippable);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(centred)<sp/><ref refid="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" kindref="member">intro_t::centreRect</ref>(<ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>.rbegin()-&gt;dest);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" kindref="member">intro_t::centreRect</ref>(SDL_Rect&amp;<sp/>rect,<sp/>centre<sp/>_centre)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_centre<sp/>==<sp/><ref refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197" kindref="member">centre::BOTH</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.x<sp/>=<sp/>(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kindref="member">dispBounds</ref>.w<sp/>-<sp/>rect.w)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.y<sp/>=<sp/>(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kindref="member">dispBounds</ref>.h<sp/>-<sp/>rect.h)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_centre<sp/>==<sp/><ref refid="d9/dea/classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e" kindref="member">centre::HORIZONTAL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.x<sp/>=<sp/>(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kindref="member">dispBounds</ref>.w<sp/>-<sp/>rect.w)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.y<sp/>=<sp/>(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kindref="member">dispBounds</ref>.h<sp/>-<sp/>rect.h)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><ref refid="d9/dea/classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d" kindref="member">intro_t::intro_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context),<sp/>startTime(SDL_GetTicks64())<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>addSlide(IMG_Load(</highlight><highlight class="stringliteral">&quot;res/images/0001.png&quot;</highlight><highlight class="normal">),<sp/>0,<sp/>1500,<sp/>500);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>SDL_Colour<sp/>white{0xff,<sp/>0xff,<sp/>0xff,<sp/>SDL_ALPHA_OPAQUE};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>TTF_RenderText_Solid(</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;Ah,<sp/>but<sp/>I&apos;ll<sp/>be<sp/>causing<sp/>trouble<sp/>for<sp/>my<sp/>family,<sp/>won&apos;t<sp/>I?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>white);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>1000,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;If<sp/>only<sp/>someone<sp/>else<sp/>could<sp/>just...&quot;</highlight><highlight class="normal">,<sp/>white,<sp/>0);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>1000,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;Live<sp/>on<sp/>my<sp/>behalf...&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>white,<sp/>0);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>1000,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;So<sp/>that<sp/>I<sp/>don&apos;t<sp/>have<sp/>to.&quot;</highlight><highlight class="normal">,<sp/>white,<sp/>0);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>1000,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.0s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>{},<sp/>0);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>0,<sp/>2000,<sp/>0,<sp/>SDL_Rect{},<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.0s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;This<sp/>game<sp/>does<sp/>not<sp/>represent\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;the<sp/>experiences<sp/>of<sp/>the<sp/>creator.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;See:<sp/>The<sp/>Beginner&apos;s<sp/>Guide&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>white,<sp/>0);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>500,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.0s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Please<sp/>don&apos;t<sp/>spam<sp/>my<sp/>e-mail\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;asking<sp/>about<sp/>my<sp/>mental<sp/>health&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;\nlike<sp/>last<sp/>time.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>white,<sp/>0);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>500,<sp/>250,<sp/>{0,<sp/>0,<sp/>surface-&gt;w,<sp/>surface-&gt;h});</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.0s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>{},<sp/>0);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>0,<sp/>2000,<sp/>0,<sp/>SDL_Rect{},<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>5s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>surface<sp/>=<sp/>TTF_RenderText_Solid_Wrapped(</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;font,<sp/></highlight><highlight class="stringliteral">&quot;Loading...&quot;</highlight><highlight class="normal">,<sp/>{0xbb,<sp/>0xbb,<sp/>0xbb,<sp/>SDL_ALPHA_OPAQUE},<sp/>0);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>addSlide(surface,<sp/>250,<sp/>5000,<sp/>250,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{context-&gt;dispBounds.w<sp/>-<sp/>surface-&gt;w<sp/>-<sp/>context-&gt;dispBounds.h<sp/>/<sp/>40,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;dispBounds.h<sp/>-<sp/>surface-&gt;h<sp/>-<sp/>context-&gt;dispBounds.h<sp/>/<sp/>40,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>surface-&gt;w,<sp/>surface-&gt;h},</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><ref refid="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" kindref="member">intro_t::~intro_t</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(slide&amp;<sp/>_slide<sp/>:<sp/><ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_DestroyTexture(_slide.texture);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><ref refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kindref="member">slides</ref>.clear();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da" kindref="member">intro_t::update</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>deltaTime<sp/>=<sp/>SDL_GetTicks64()<sp/>-<sp/><ref refid="d9/dea/classintro__t_1a6db4493f9b8695a1bed2f16f3af45870" kindref="member">startTime</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(deltaTime<sp/>&gt;<sp/>19000)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" kindref="member">~intro_t</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808" kindref="member">intro_t::render</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>SDL_RenderClear(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><ref refid="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" kindref="member">slideShow</ref>(SDL_GetTicks64(),<sp/><ref refid="d9/dea/classintro__t_1a1543b2b845c6999165123b34608fcf25" kindref="member">skip</ref>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9" kindref="member">intro_t::handle</ref>(SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><ref refid="d9/dea/classintro__t_1a1543b2b845c6999165123b34608fcf25" kindref="member">skip</ref><sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.type<sp/>==<sp/>SDL_KEYDOWN<sp/>&amp;&amp;<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.key.keysym.sym<sp/>==<sp/>SDLK_SPACE;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/scenes/init.cc"/>
   </compounddef>

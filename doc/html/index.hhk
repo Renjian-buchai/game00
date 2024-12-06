@@ -15,8 +15,51 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9e8b656712b1f8d16290abd3d21b2331"><param name="Name" value="bgm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"><param name="Name" value="BOTH"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a301797c8211a1e6a5bc84837bde1f135"><param name="Name" value="bounds"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#afb234fcae14847d00a64fdc155d7c98e"><param name="Name" value="button(game *context, const char *inactive, const char *hovered, SDL_Rect bounds)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a301797c8211a1e6a5bc84837bde1f135"><param name="Name" value="bounds"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#afb234fcae14847d00a64fdc155d7c98e"><param name="Name" value="button(game *context, const char *inactive, const char *hovered, SDL_Rect bounds)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a30d5ec30e29436cf3f6d5193d52fda2b"><param name="Name" value="context"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#ac65167fc1f6d80153406f6694aab8818"><param name="Name" value="handle(SDL_Event &amp;event)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a55f1693b42a5278c5c4e25ef5673c9d0"><param name="Name" value="hovered"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a0265f6451efbb40c797098978da0d7e7"><param name="Name" value="inactive"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a9dbb394b8582e9be3a237a5c030f8af6"><param name="Name" value="render()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a8d7611bebd505f3a4750b6db754ae3af"><param name="Name" value="state"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html"><param name="Name" value="button"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a6ae171da0cdc25fb2dfa57397a5b419f"><param name="Name" value="~button()"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6"><param name="Name" value="centre"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a427b58b3e041bb4672278b9e422b8292"><param name="Name" value="centreRect(SDL_Rect &amp;rect, centre centre=centre::BOTH) const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a30d5ec30e29436cf3f6d5193d52fda2b"><param name="Name" value="context"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a30d5ec30e29436cf3f6d5193d52fda2b"><param name="Name" value="button"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"><param name="Name" value="context"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"><param name="Name" value="scene"></OBJECT>
@@ -110,6 +153,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a"><param name="Name" value="scenes"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"><param name="Name" value="shitcord"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html"><param name="Name" value="enum.hh"></OBJECT>
   <UL>
@@ -277,9 +324,22 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"><param name="Name" value="pause_t"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a9d74d93e9337fc274113950419ab831c"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a9d74d93e9337fc274113950419ab831c"><param name="Name" value="shitcord_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#ac65167fc1f6d80153406f6694aab8818"><param name="Name" value="handle(SDL_Event &amp;event)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#ac65167fc1f6d80153406f6694aab8818"><param name="Name" value="button"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"><param name="Name" value="handle(SDL_Event &amp;event)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"><param name="Name" value="wm"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e"><param name="Name" value="HORIZONTAL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a55f1693b42a5278c5c4e25ef5673c9d0"><param name="Name" value="hovered"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aab22b0e4971405b7fe57e8409e68793b"><param name="Name" value="icons"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a0265f6451efbb40c797098978da0d7e7"><param name="Name" value="inactive"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9"><param name="Name" value="init"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb"><param name="Name" value="intro"></OBJECT>
   <UL>
@@ -551,8 +611,19 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"><param name="Name" value="pause_t"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"><param name="Name" value="render() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"><param name="Name" value="shitcord_t"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a7c218380f822d46bee781520e855a7de"><param name="Name" value="render()=0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a9dbb394b8582e9be3a237a5c030f8af6"><param name="Name" value="render()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a9dbb394b8582e9be3a237a5c030f8af6"><param name="Name" value="button"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"><param name="Name" value="render()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"><param name="Name" value="wm"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a3e20af849346bcd336f939865a270c5c"><param name="Name" value="resume"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a3e20af849346bcd336f939865a270c5c"><param name="Name" value="pause_t"></OBJECT>
@@ -599,6 +670,36 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab"><param name="Name" value="sceneData"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a"><param name="Name" value="scenes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"><param name="Name" value="shitcord"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"><param name="Name" value="enum.hh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"><param name="Name" value="shitcord"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"><param name="Name" value="wm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html"><param name="Name" value="shitcord_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#ac750bf47c76c2f9872534c2f375da388"><param name="Name" value="shitcord_t(game *context)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html"><param name="Name" value="shitcord_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a9d74d93e9337fc274113950419ab831c"><param name="Name" value="handle(SDL_Event &amp;event) override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html"><param name="Name" value="shitcord_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"><param name="Name" value="render() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html"><param name="Name" value="shitcord_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#ac750bf47c76c2f9872534c2f375da388"><param name="Name" value="shitcord_t(game *context)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html"><param name="Name" value="shitcord_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a9e1bba8daf615bf68d9e3f5616a02163"><param name="Name" value="update() override"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html"><param name="Name" value="shitcord_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"><param name="Name" value="~shitcord_t()"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a74c272eea906013e6af7480d8d31f431"><param name="Name" value="silence"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"><param name="Name" value="size"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a1543b2b845c6999165123b34608fcf25"><param name="Name" value="skip"></OBJECT>
@@ -608,7 +709,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a97b511d587ca8e05515e35e6418cf1d0"><param name="Name" value="slides"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a104f915a0a592c0db524a70ffc666a60"><param name="Name" value="slideShow(size_t time, bool &amp;click, size_t skipGrace=500)"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a6db4493f9b8695a1bed2f16f3af45870"><param name="Name" value="startTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a8d7611bebd505f3a4750b6db754ae3af"><param name="Name" value="state"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a8d7611bebd505f3a4750b6db754ae3af"><param name="Name" value="button"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a66a0e69c41270ee22849d56d12e12749"><param name="Name" value="state"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a66a0e69c41270ee22849d56d12e12749"><param name="Name" value="game"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"><param name="Name" value="terminating"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="da/dec/classintro__t_1_1slide.html#ae876137be1a25a3ac7dfb65802306ad0"><param name="Name" value="texture"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#af86a2de615bbeee89fc31586b8875296"><param name="Name" value="unlock()"></OBJECT>
@@ -627,6 +735,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"><param name="Name" value="update() override"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"><param name="Name" value="pause_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a9e1bba8daf615bf68d9e3f5616a02163"><param name="Name" value="update() override"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a9e1bba8daf615bf68d9e3f5616a02163"><param name="Name" value="shitcord_t"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"><param name="Name" value="update()=0"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"><param name="Name" value="update()"></OBJECT>
@@ -693,6 +805,10 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"><param name="Name" value="shitcord"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"><param name="Name" value="update()"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d1c/classwm.html"><param name="Name" value="wm"></OBJECT>
@@ -734,12 +850,14 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a1333b79b5c832494ebc67333cd1b30a6"><param name="Name" value="~wmInitData()"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/dd4/classbutton.html#a6ae171da0cdc25fb2dfa57397a5b419f"><param name="Name" value="~button()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/db0/classexplorer__t.html#a44fc2dcde828c85abf707bb5ff024b50"><param name="Name" value="~explorer_t()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d0/d51/classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07"><param name="Name" value="~game()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/dea/classintro__t.html#a56e63618edf895c263cda8a8c8ef45e6"><param name="Name" value="~intro_t()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d9/d03/classnotepad__t.html#ac047cc39e7ff3f954057314e6298d6b1"><param name="Name" value="~notepad_t()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/daa/classpause__t.html#a8e6961a2a9fb61c99e92face62126593"><param name="Name" value="~pause_t()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496"><param name="Name" value="~scene()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"><param name="Name" value="~shitcord_t()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d16/structwm_init_data.html#a1333b79b5c832494ebc67333cd1b30a6"><param name="Name" value="~wmInitData()"></OBJECT>
 </UL>
 </BODY>

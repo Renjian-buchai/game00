@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="de/df3/button_8hh" kind="file" language="C++">
+    <compoundname>button.hh</compoundname>
+    <includes local="yes">SDL.h</includes>
+    <includedby refid="db/da7/button_8cc" local="yes">src/UI/button.cc</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>SDL.h</label>
+      </node>
+      <node id="1">
+        <label>include/UI/button.hh</label>
+        <link refid="de/df3/button_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/UI/button.hh</label>
+        <link refid="de/df3/button_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/UI/button.cc</label>
+        <link refid="db/da7/button_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/dd4/classbutton" prot="public">button</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#if<sp/>!defined(BUTTON_HH)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUTTON_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d51/classgame" kindref="compound">game</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="d4/dd4/classbutton" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/dd4/classbutton" kindref="compound">button</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="d4/dd4/classbutton_1a30d5ec30e29436cf3f6d5193d52fda2b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/><ref refid="d4/dd4/classbutton_1a30d5ec30e29436cf3f6d5193d52fda2b" kindref="member">context</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d4/dd4/classbutton_1a0265f6451efbb40c797098978da0d7e7" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="d4/dd4/classbutton_1a0265f6451efbb40c797098978da0d7e7" kindref="member">inactive</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d4/dd4/classbutton_1a55f1693b42a5278c5c4e25ef5673c9d0" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="d4/dd4/classbutton_1a55f1693b42a5278c5c4e25ef5673c9d0" kindref="member">hovered</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d4/dd4/classbutton_1a8d7611bebd505f3a4750b6db754ae3af" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="d4/dd4/classbutton_1a8d7611bebd505f3a4750b6db754ae3af" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d4/dd4/classbutton_1a301797c8211a1e6a5bc84837bde1f135" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/><ref refid="d4/dd4/classbutton_1a301797c8211a1e6a5bc84837bde1f135" kindref="member">bounds</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="d4/dd4/classbutton_1afb234fcae14847d00a64fdc155d7c98e" kindref="member">button</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/><ref refid="d4/dd4/classbutton_1a30d5ec30e29436cf3f6d5193d52fda2b" kindref="member">context</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d4/dd4/classbutton_1a0265f6451efbb40c797098978da0d7e7" kindref="member">inactive</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d4/dd4/classbutton_1a55f1693b42a5278c5c4e25ef5673c9d0" kindref="member">hovered</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Rect<sp/><ref refid="d4/dd4/classbutton_1a301797c8211a1e6a5bc84837bde1f135" kindref="member">bounds</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="d4/dd4/classbutton_1a6ae171da0cdc25fb2dfa57397a5b419f" kindref="member">~button</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/dd4/classbutton_1ac65167fc1f6d80153406f6694aab8818" kindref="member">handle</ref>(SDL_Event&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/dd4/classbutton_1a9dbb394b8582e9be3a237a5c030f8af6" kindref="member">render</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/UI/button.hh"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="de/deb/classshitcord__t" kind="class" language="C++" prot="public">
+    <compoundname>shitcord_t</compoundname>
+    <basecompoundref refid="df/db1/classscene" prot="public" virt="non-virtual">scene</basecompoundref>
+    <includes refid="d1/da8/shitcord_8hh" local="no">shitcord.hh</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/deb/classshitcord__t_1ac750bf47c76c2f9872534c2f375da388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shitcord_t::shitcord_t</definition>
+        <argsstring>(game *context)</argsstring>
+        <name>shitcord_t</name>
+        <qualifiedname>shitcord_t::shitcord_t</qualifiedname>
+        <param>
+          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new shitcord t object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called only once when WM is initialised</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>game context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/shitcord.hh" line="15" column="3" bodyfile="src/scenes/shitcord.cc" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="de/deb/classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shitcord_t::~shitcord_t</definition>
+        <argsstring>()</argsstring>
+        <name>~shitcord_t</name>
+        <qualifiedname>shitcord_t::~shitcord_t</qualifiedname>
+        <briefdescription>
+<para>Destroy the shitcord t object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called only when the wm is destroyed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/shitcord.hh" line="22" column="3" bodyfile="src/scenes/shitcord.cc" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>std::pair&lt; scenes, sceneData &gt; shitcord_t::update</definition>
+        <argsstring>() override</argsstring>
+        <name>update</name>
+        <qualifiedname>shitcord_t::update</qualifiedname>
+        <reimplements refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</reimplements>
+        <briefdescription>
+<para>Update logic for shitcord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Probably does the message appearing</para>
+<para><simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/shitcord.hh" line="32" column="13" bodyfile="src/scenes/shitcord.cc" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void shitcord_t::render</definition>
+        <argsstring>() override</argsstring>
+        <name>render</name>
+        <qualifiedname>shitcord_t::render</qualifiedname>
+        <reimplements refid="df/db1/classscene_1a7c218380f822d46bee781520e855a7de">render</reimplements>
+        <briefdescription>
+<para>Renders menu, and messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/shitcord.hh" line="37" column="8" bodyfile="src/scenes/shitcord.cc" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="de/deb/classshitcord__t_1a9d74d93e9337fc274113950419ab831c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>std::pair&lt; scenes, sceneData &gt; shitcord_t::handle</definition>
+        <argsstring>(SDL_Event &amp;event) override</argsstring>
+        <name>handle</name>
+        <qualifiedname>shitcord_t::handle</qualifiedname>
+        <reimplements refid="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2">handle</reimplements>
+        <param>
+          <type>SDL_Event &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Handles hovers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event to be handled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt;Returns the scene to be changed to, and the data that scene should contain </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/scenes/shitcord.hh" line="46" column="13" bodyfile="src/scenes/shitcord.cc" bodystart="13" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+      </node>
+      <node id="1">
+        <label>shitcord_t</label>
+        <link refid="de/deb/classshitcord__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>game</label>
+        <link refid="d0/d51/classgame"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>winMan</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scene</label>
+        <link refid="df/db1/classscene"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>shitcord_t</label>
+        <link refid="de/deb/classshitcord__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>wm</label>
+        <link refid="df/d1c/classwm"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>current</edgelabel>
+          <edgelabel>resume</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/scenes/shitcord.hh" line="6" column="1" bodyfile="include/scenes/shitcord.hh" bodystart="6" bodyend="47"/>
+    <listofallmembers>
+      <member refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>context</name></member>
+      <member refid="de/deb/classshitcord__t_1a9d74d93e9337fc274113950419ab831c" prot="public" virt="virtual"><scope>shitcord_t</scope><name>handle</name></member>
+      <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>loadTexture</name></member>
+      <member refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" prot="public" virt="virtual"><scope>shitcord_t</scope><name>render</name></member>
+      <member refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>scene</name></member>
+      <member refid="de/deb/classshitcord__t_1ac750bf47c76c2f9872534c2f375da388" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>shitcord_t</name></member>
+      <member refid="de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163" prot="public" virt="virtual"><scope>shitcord_t</scope><name>update</name></member>
+      <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" virt="virtual"><scope>shitcord_t</scope><name>~scene</name></member>
+      <member refid="de/deb/classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>~shitcord_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

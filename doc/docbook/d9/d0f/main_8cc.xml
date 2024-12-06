@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8cc" xml:lang="en-US">
 <title>src/main.cc File Reference</title>
 <indexterm><primary>src/main.cc</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;game.hh&quot;<?linebreak?>#include &quot;pch.hh&quot;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;<?linebreak?>#include &quot;SDL.h&quot;<?linebreak?>#include &quot;SDL_image.h&quot;<?linebreak?>#include &quot;SDL_mixer.h&quot;<?linebreak?>#include &quot;SDL_ttf.h&quot;<?linebreak?>#include &quot;game.hh&quot;<?linebreak?></programlisting><simplesect>
     <title>Macros    </title>
         <itemizedlist>
             <listitem><para>#define <link linkend="_main_8cc_1a70fa023bb5d371dac47448b690c83581">skipIntro</link></para>

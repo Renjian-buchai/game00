@@ -5,43 +5,48 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#if\ !defined(WM\_HH)}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WM\_HH}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}enum.hh"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}pch.hh"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}scenes/explorer.hh"{}}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}scenes/init.hh"{}}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}scenes/notepad.hh"{}}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}scenes/pause.hh"{}}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }game;}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }scene;}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}enum.hh"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}scenes/explorer.hh"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}scenes/init.hh"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}scenes/notepad.hh"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}scenes/pause.hh"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}scenes/shitcord.hh"{}}}
 \DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }wm\ \{}
-\DoxyCodeLine{00016\ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00021\ \ \ std::vector<std::pair<SDL\_Texture*,\ SDL\_Rect>>\ icons;}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00027\ \ \ SDL\_Texture*\ OSOverlay;}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00033\ \ \ game*\ context;}
-\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }game;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }scene;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }wm\ \{}
+\DoxyCodeLine{00020\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ std::vector<std::pair<SDL\_Texture*,\ SDL\_Rect>>\ icons;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ SDL\_Texture*\ OSOverlay;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ game*\ context;}
+\DoxyCodeLine{00035\ }
 \DoxyCodeLine{00039\ \ \ SDL\_Rect\ pauseBounds;}
 \DoxyCodeLine{00040\ }
-\DoxyCodeLine{00045\ \ \ \textcolor{keywordtype}{bool}\ wasSilence\ =\ 0;}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00053\ \ \ std::unique\_ptr<explorer\_t>\ explorer;}
-\DoxyCodeLine{00054\ \ \ std::unique\_ptr<notepad\_t>\ notepad;}
-\DoxyCodeLine{00055\ \ \ std::unique\_ptr<pause\_t>\ pause;}
-\DoxyCodeLine{00056\ \ \ std::unique\_ptr<intro\_t>\ intro;}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00062\ \ \ scene*\ current;}
-\DoxyCodeLine{00067\ \ \ scene*\ resume;}
-\DoxyCodeLine{00074\ \ \ wm()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00082\ \ \ wm(game*\ context);}
-\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{void}\ render();}
-\DoxyCodeLine{00097\ \ \ std::pair<scenes,\ sceneData>\ handle(SDL\_Event\&\ event);}
-\DoxyCodeLine{00104\ \ \ std::pair<scenes,\ sceneData>\ update();}
-\DoxyCodeLine{00105\ \};}
-\DoxyCodeLine{00106\ }
-\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{bool}\ wasSilence\ =\ 0;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ std::unique\_ptr<explorer\_t>\ explorer;}
+\DoxyCodeLine{00052\ \ \ std::unique\_ptr<notepad\_t>\ notepad;}
+\DoxyCodeLine{00053\ \ \ std::unique\_ptr<pause\_t>\ pause;}
+\DoxyCodeLine{00054\ \ \ std::unique\_ptr<intro\_t>\ intro;}
+\DoxyCodeLine{00055\ \ \ std::unique\_ptr<shitcord\_t>\ shitcord;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ scene*\ current;}
+\DoxyCodeLine{00064\ \ \ scene*\ resume;}
+\DoxyCodeLine{00070\ \ \ wm()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00078\ \ \ wm(game*\ context);}
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordtype}{void}\ render();}
+\DoxyCodeLine{00092\ \ \ std::pair<scenes,\ sceneData>\ handle(SDL\_Event\&\ event);}
+\DoxyCodeLine{00099\ \ \ std::pair<scenes,\ sceneData>\ update();}
+\DoxyCodeLine{00100\ \};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}
