@@ -2,6 +2,8 @@
 #define ENUM_HH
 
 #include <cstdint>
+#include <variant>
+
 /**
  * @brief Entry currently stored in notepad.
  *
@@ -30,6 +32,7 @@ enum class scenes : uint8_t {
   explorer,
   notepad,
   pause,
+  shitcord,
 };
 
 using sceneData = std::variant<std::monostate, notepadData>;

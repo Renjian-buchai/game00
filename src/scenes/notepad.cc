@@ -1,8 +1,8 @@
-#include "../../include/scenes/notepad.hh"
+#include "scenes/notepad.hh"
 
 #include <fstream>
 
-#include "../../include/game.hh"
+#include "game.hh"
 
 notepad_t::notepad_t(game* _context)
     : scene(_context),

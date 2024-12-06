@@ -1,6 +1,6 @@
-#include "../../include/scenes/init.hh"
+#include "scenes/init.hh"
 
-#include "../../include/game.hh"
+#include "game.hh"
 
 intro_t::slide::slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
                       SDL_Texture* _texture, SDL_Rect _dest, bool _skippable)

@@ -2,11 +2,12 @@
 #define WM_HH
 
 #include "enum.hh"
-#include "pch.hh"
+#include "SDL.h"
 #include "scenes/explorer.hh"
 #include "scenes/init.hh"
 #include "scenes/notepad.hh"
 #include "scenes/pause.hh"
+#include "scenes/shitcord.hh"
 
 class game;
 
@@ -54,6 +55,7 @@ class wm {
   std::unique_ptr<notepad_t> notepad;
   std::unique_ptr<pause_t> pause;
   std::unique_ptr<intro_t> intro;
+  std::unique_ptr<shitcord_t> shitcord;
 
   /**
    * @brief Current scene

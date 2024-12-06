@@ -1,6 +1,6 @@
-#include "../../include/scenes/scene.hh"
+#include "scenes/scene.hh"
 
-#include "../../include/game.hh"
+#include "game.hh"
 
 scene::scene(game* _context) : context(_context) {}
 

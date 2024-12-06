@@ -1,6 +1,6 @@
-#include "../../include/scenes/explorer.hh"
+#include "scenes/explorer.hh"
 
-#include "../../include/game.hh"
+#include "game.hh"
 
 explorerData operator++(explorerData& save) {
   using IntType = typename std::underlying_type<explorerData>::type;

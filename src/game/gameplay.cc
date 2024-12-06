@@ -1,5 +1,6 @@
-#include "../../include/game.hh"
-#include "../../include/wm.hh"
+#include "game.hh"
+#include "wm.hh"
+#include "enum.hh"
 
 void game::gameplay() {
   SDL_WaitThread(loadThread, nullptr);
@@ -37,6 +38,11 @@ void game::gameplay() {
 
         case scenes::pause:
           winMan.current = winMan.pause.get();
+          break;
+
+        case scenes::shitcord:
+          winMan.current = winMan.shitcord.get();
+          break;
       }
     }
 
@@ -58,8 +64,16 @@ void game::gameplay() {
 
       case scenes::pause:
         winMan.current = winMan.pause.get();
+        break;
+
+      case scenes::shitcord:
+        winMan.current = winMan.shitcord.get();
+        break;
     }
   }
+
+  // Adding a destructor causes the initialisation of wm to fail
+  SDL_DestroyTexture(winMan.OSOverlay);
 
   return;
 }

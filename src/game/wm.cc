@@ -1,10 +1,11 @@
-#include "../../include/wm.hh"
+#include "wm.hh"
 
-#include "../../include/game.hh"
-#include "../../include/scenes/explorer.hh"
-#include "../../include/scenes/init.hh"
-#include "../../include/scenes/notepad.hh"
-#include "../../include/scenes/pause.hh"
+#include "game.hh"
+#include "scenes/explorer.hh"
+#include "scenes/init.hh"
+#include "scenes/notepad.hh"
+#include "scenes/pause.hh"
+#include "scenes/shitcord.hh"
 
 wm::wm(game* _context)
     : context(_context),
@@ -13,7 +14,7 @@ wm::wm(game* _context)
       notepad(std::make_unique<notepad_t>(context)),
       pause(std::make_unique<pause_t>(context)),
       intro(std::make_unique<intro_t>(context)),
-      // current(intro.get()) {
+      shitcord(std::make_unique<shitcord_t>(context)),
       current(explorer.get()) {
   SDL_Surface* surface = IMG_Load("res/UI/OS.png");
   if (surface == nullptr) {

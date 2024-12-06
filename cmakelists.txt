@@ -39,7 +39,7 @@ else()
                   ${CMAKE_CURRENT_BINARY_DIR}/res)
 endif()
 
-target_precompile_headers(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/include/pch.hh)
+target_precompile_headers(${PROJECT_NAME} PRIVATE <array> <cstdint> <iostream> <memory> <string> <utility> <variant> <vector> "${INCLUDE_DIR}SDL2/SDL.h" "${INCLUDE_DIR}SDL2/SDL_image.h" "${INCLUDE_DIR}SDL2/SDL_mixer.h" "${INCLUDE_DIR}SDL2/SDL_ttf.h")
 
 target_include_directories(${PROJECT_NAME} PRIVATE "${PROJECT_SOURCE_DIR}/include")
 target_include_directories(${PROJECT_NAME} PRIVATE "${INCLUDE_DIR}")
