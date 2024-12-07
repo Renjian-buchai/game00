@@ -46,9 +46,9 @@ class button {
   /**
    * @brief Changes the state when the button hovers over the button.
    *
-   * @param event Event to be handled
+   * @param event Point associated with mouse movement
    */
-  void handle(SDL_Event& event);
+  void handle(SDL_Point point);
 
   /**
    * @brief Renders button

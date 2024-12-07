@@ -16,13 +16,13 @@ notepad_t::notepad_t(game* _context)
                          static_cast<int>(lineWrapLength / scale), 0}) {
   SDL_Surface* surface = IMG_Load("res/images/notepad.png");
   if (surface == nullptr) {
-    std::cout << IMG_GetError();
+    std::cerr << IMG_GetError();
     exit(-1);
   }
   background = SDL_CreateTextureFromSurface(context->mainRenderer, surface);
   SDL_FreeSurface(surface);
   if (background == nullptr) {
-    std::cout << SDL_GetError();
+    std::cerr << SDL_GetError();
     exit(-1);
   }
 

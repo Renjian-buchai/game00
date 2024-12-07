@@ -1,5 +1,7 @@
 #include "UI/button.hh"
 
+#include <iostream>
+
 #include "SDL_image.h"
 #include "game.hh"
 
@@ -24,14 +26,8 @@ button::~button() {
   SDL_DestroyTexture(hovered);
 }
 
-void button::handle(SDL_Event& event) {
-  if (event.type == SDL_MOUSEMOTION) {
-    SDL_Point p{event.motion.x, event.motion.y};
-
-    if (SDL_PointInRect(&p, &bounds)) {
-      state = state == inactive ? hovered : inactive;
-    }
-  }
+void button::handle(SDL_Point point) {
+  state = SDL_PointInRect(&point, &bounds) ? hovered : inactive;
 }
 
 void button::render() {

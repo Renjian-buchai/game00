@@ -66,7 +66,7 @@ game::game() {
       (new wmInitData{&this->winMan, this, SDL_CreateMutex()}));
 
   if (Mix_OpenAudio(48000, MIX_DEFAULT_FORMAT, 2, 2048)) {
-    std::cout << Mix_GetError();
+    std::cerr << Mix_GetError();
     exit(-1);
   }
 
@@ -76,7 +76,7 @@ game::game() {
   bgm[3] = Mix_LoadMUS("res/audio/OST/where.mp3");
   for (uint8_t i = 0; i < 4; ++i) {
     if (bgm[i] == nullptr) {
-      std::cout << "BGM " << std::to_string(i) << ": " << Mix_GetError()
+      std::cerr << "BGM " << std::to_string(i) << ": " << Mix_GetError()
                 << "\n";
       exit(-1);
     }
@@ -90,7 +90,7 @@ game::game() {
   silence[5] = Mix_LoadMUS("res/audio/sfx/silent120.mp3");
   for (uint8_t i = 0; i < 6; ++i) {
     if (silence[i] == nullptr) {
-      std::cout << "BGM " << std::to_string(i) << ": " << Mix_GetError()
+      std::cerr << "BGM " << std::to_string(i) << ": " << Mix_GetError()
                 << "\n";
       exit(-1);
     }

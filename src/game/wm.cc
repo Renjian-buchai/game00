@@ -21,7 +21,7 @@ wm::wm(game* _context)
       current(explorer.get()) {
   SDL_Surface* surface = IMG_Load("res/UI/OS.png");
   if (surface == nullptr) {
-    std::cout << IMG_GetError();
+    std::cerr << IMG_GetError();
     std::exit(-1);
   }
 
@@ -30,7 +30,7 @@ wm::wm(game* _context)
 
   surface = IMG_Load("res/UI/explorerIcon.png");
   if (surface == nullptr) {
-    std::cout << IMG_GetError();
+    std::cerr << IMG_GetError();
     std::exit(-1);
   }
   icons.emplace_back(
@@ -40,7 +40,7 @@ wm::wm(game* _context)
 
   surface = IMG_Load("res/UI/notepadIcon.png");
   if (surface == nullptr) {
-    std::cout << IMG_GetError();
+    std::cerr << IMG_GetError();
     std::exit(-1);
   }
   icons.emplace_back(
@@ -104,7 +104,7 @@ std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
 
     // Only for pausing
     if (current == pause.get()) {
-      if (SDL_PointInRect(&point, &pause->resumePos)) {
+      if (SDL_PointInRect(&point, &pause->resume.bounds)) {
         if (resume == explorer.get()) {
           return std::make_pair(scenes::explorer, std::monostate());
         } else if (resume == notepad.get()) {
@@ -116,7 +116,7 @@ std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
         }
       }
 
-      if (SDL_PointInRect(&point, &pause->exitPos)) {
+      if (SDL_PointInRect(&point, &pause->exit.bounds)) {
         context->state = game::gameState::terminating;
         std::exit(0);
       }

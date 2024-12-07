@@ -1,28 +1,22 @@
 #include "scenes/pause.hh"
 
-#include "game.hh"
+#include <iostream>
 
+#include "game.hh"
 pause_t::pause_t(game* _context)
     : scene(_context),
-      resumePos({pix(219), pix(169), pix(201), pix(63)}),
-      exitPos({pix(219), pix(235), pix(201), pix(63)}) {
+      resume{context,
+             "res/UI/PauseBTResume.png",
+             "res/UI/PauseBTResumeHover.png",
+             {pix(219), pix(169), pix(201), pix(63)}},
+      exit{context,
+           "res/UI/PauseBTExit.png",
+           "res/UI/PauseBTExitHover.png",
+           {pix(219), pix(235), pix(201), pix(63)}} {
   overlay = loadTexture("res/UI/PauseOverlay.png");
-  resume = loadTexture("res/UI/PauseBTResume.png");
-  resumeHover = loadTexture("res/UI/PauseBTResumeHover.png");
-  resumeState = resume;
-
-  exit = loadTexture("res/UI/PauseBTExit.png");
-  exitHover = loadTexture("res/UI/PauseBTExitHover.png");
-  exitState = exit;
 }
 
-pause_t::~pause_t() {
-  SDL_DestroyTexture(overlay);
-  SDL_DestroyTexture(resume);
-  SDL_DestroyTexture(resumeHover);
-  SDL_DestroyTexture(exit);
-  SDL_DestroyTexture(exitHover);
-}
+pause_t::~pause_t() { SDL_DestroyTexture(overlay); }
 
 std::pair<scenes, sceneData> pause_t::update() {
   return std::make_pair(scenes::pause, std::monostate());
@@ -30,17 +24,17 @@ std::pair<scenes, sceneData> pause_t::update() {
 
 void pause_t::render() {
   SDL_RenderCopy(context->mainRenderer, overlay, nullptr, nullptr);
-  SDL_RenderCopy(context->mainRenderer, resumeState, nullptr, nullptr);
-  SDL_RenderCopy(context->mainRenderer, exitState, nullptr, nullptr);
+  resume.render();
+  exit.render();
 }
 
 std::pair<scenes, sceneData> pause_t::handle(SDL_Event& event) {
-  SDL_Point mousePosition = {event.motion.x, event.motion.y};
+  if (event.type == SDL_MOUSEMOTION) {
+    SDL_Point mousePosition = {event.motion.x, event.motion.y};
 
-  resumeState =
-      SDL_PointInRect(&mousePosition, &resumePos) ? resumeHover : resume;
-
-  exitState = SDL_PointInRect(&mousePosition, &exitPos) ? exitHover : exit;
+    resume.handle(mousePosition);
+    exit.handle(mousePosition);
+  }
 
   return std::make_pair(scenes::pause, std::monostate());
 }

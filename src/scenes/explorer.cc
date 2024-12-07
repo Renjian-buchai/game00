@@ -51,13 +51,13 @@ explorer_t::explorer_t(game* _context)
     saveData = explorerData::init;
     SDL_Surface* surface = IMG_Load("res/images/OSExplorer.png");
     if (surface == nullptr) {
-      std::cout << IMG_GetError();
+      std::cerr << IMG_GetError();
       std::exit(-1);
     }
 
     background = SDL_CreateTextureFromSurface(_context->mainRenderer, surface);
     if (background == nullptr) {
-      std::cout << SDL_GetError();
+      std::cerr << SDL_GetError();
       std::exit(-1);
     }
     SDL_FreeSurface(surface);
@@ -69,7 +69,7 @@ explorer_t::explorer_t(game* _context)
         "↑ His files have been deleted. Let's download them from the cloud.",
         {0x80, 0x87, 0x7d, SDL_ALPHA_OPAQUE}, pix(300));
     if (text == nullptr) {
-      std::cout << TTF_GetError();
+      std::cerr << TTF_GetError();
       exit(-1);
     }
 

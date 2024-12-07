@@ -1,6 +1,7 @@
 #if !defined(PAUSE_HH)
 #define PAUSE_HH
 
+#include "UI/button.hh"
 #include "scene.hh"
 
 class pause_t : public scene {
@@ -11,36 +12,14 @@ class pause_t : public scene {
   SDL_Texture* overlay;
 
   /**
-   * @brief Resume button when not hovered
+   * @brief Resume button
    */
-  SDL_Texture* resume;
-  /**
-   * @brief Resume button when hovered over
-   */
-  SDL_Texture* resumeHover;
-  /**
-   * @brief State of the resume button
-   */
-  SDL_Texture* resumeState;
-  /** Position of the resume button */
-  SDL_Rect resumePos;
+  button resume;
 
   /**
-   * @brief Exit button when not hovered
+   * @brief Exit button
    */
-  SDL_Texture* exit;
-  /**
-   * @brief Exit button when hovered over
-   */
-  SDL_Texture* exitHover;
-  /**
-   * @brief State of the exit button
-   */
-  SDL_Texture* exitState;
-  /**
-   * @brief Position of the exit button
-   */
-  SDL_Rect exitPos;
+  button exit;
 
   /**
    * @brief Construct a new pause t object
