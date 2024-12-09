@@ -14,7 +14,7 @@ notepad_t::notepad_t(game* _context)
       prevData(notepadData::empty),
       entryRect(SDL_Rect{pix(8), pix(32),
                          static_cast<int>(lineWrapLength / scale), 0}) {
-  SDL_Surface* surface = IMG_Load("res/images/notepad.png");
+  SDL_Surface* surface = IMG_Load("res/UI/backgrounds/notepad.png");
   if (surface == nullptr) {
     std::cout << IMG_GetError();
     exit(-1);

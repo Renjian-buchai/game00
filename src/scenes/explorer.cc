@@ -49,7 +49,7 @@ explorer_t::explorer_t(game* _context)
       downloadBounds(SDL_Rect{0, 0, pix(40), pix(24)}) {
   {
     saveData = explorerData::init;
-    SDL_Surface* surface = IMG_Load("res/images/OSExplorer.png");
+    SDL_Surface* surface = IMG_Load("res/UI/backgrounds/explorer.png");
     if (surface == nullptr) {
       std::cout << IMG_GetError();
       std::exit(-1);

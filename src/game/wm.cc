@@ -28,7 +28,7 @@ wm::wm(game* _context)
   OSOverlay = SDL_CreateTextureFromSurface(context->mainRenderer, surface);
   SDL_FreeSurface(surface);
 
-  surface = IMG_Load("res/UI/explorerIcon.png");
+  surface = IMG_Load("res/UI/icons/explorerIcon.png");
   if (surface == nullptr) {
     std::cout << IMG_GetError();
     std::exit(-1);
@@ -38,7 +38,7 @@ wm::wm(game* _context)
       SDL_Rect{pix(24), pix(376), pix(surface->w), pix(surface->h)});
   SDL_FreeSurface(surface);
 
-  surface = IMG_Load("res/UI/notepadIcon.png");
+  surface = IMG_Load("res/UI/icons/notepadIcon.png");
   if (surface == nullptr) {
     std::cout << IMG_GetError();
     std::exit(-1);
@@ -46,6 +46,16 @@ wm::wm(game* _context)
   icons.emplace_back(
       SDL_CreateTextureFromSurface(context->mainRenderer, surface),
       SDL_Rect{pix(48), pix(376), pix(surface->w), pix(surface->h)});
+  SDL_FreeSurface(surface);
+
+  surface = IMG_Load("res/UI/icons/shitcordIcon.png");
+  if (surface == nullptr) {
+    std::cout << IMG_GetError();
+    std::exit(-1);
+  }
+  icons.emplace_back(
+      SDL_CreateTextureFromSurface(context->mainRenderer, surface),
+      SDL_Rect{pix(72), pix(376), pix(surface->w), pix(surface->h)});
   SDL_FreeSurface(surface);
 
   {
@@ -88,9 +98,12 @@ std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
         return std::make_pair(scenes::notepad, notepad->currentData);
       } else if (resume == pause.get()) {
         return std::make_pair(scenes::pause, std::monostate());
+      } else if (resume == shitcord.get()) {
+        return std::make_pair(scenes::shitcord, std::monostate());
       } else if (resume == intro.get()) {
         return std::make_pair(scenes::intro, std::monostate());
       }
+
     } else {
       resume = current;
 
@@ -111,6 +124,8 @@ std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
           return std::make_pair(scenes::notepad, notepad->currentData);
         } else if (resume == pause.get()) {
           return std::make_pair(scenes::pause, std::monostate());
+        } else if (resume == shitcord.get()) {
+          return std::make_pair(scenes::shitcord, std::monostate());
         } else if (resume == intro.get()) {
           return std::make_pair(scenes::intro, std::monostate());
         }
@@ -138,6 +153,9 @@ std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
 
           case 48:
             return std::make_pair(scenes::notepad, notepad->currentData);
+
+          case 72:
+            return std::make_pair(scenes::shitcord, std::monostate());
 
           default:
             break;

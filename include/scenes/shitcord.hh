@@ -5,6 +5,8 @@
 
 class shitcord_t : public scene {
  public:
+  SDL_Texture* background;
+
   /**
    * @brief Construct a new shitcord t object
    *
