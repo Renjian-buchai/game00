@@ -75,7 +75,7 @@ void wm::render() {
   }
 }
 
-std::pair<scenes, sceneData> wm::update() {
+const std::pair<scenes, sceneData> wm::update() {
   if (!Mix_PlayingMusic()) {
     if (wasSilence) {
       Mix_PlayMusic(context->bgm[std::rand() % 4], 0);
@@ -89,7 +89,7 @@ std::pair<scenes, sceneData> wm::update() {
   return current->update();
 }
 
-std::pair<scenes, sceneData> wm::handle(const SDL_Event& event) {
+const std::pair<scenes, sceneData> wm::handle(const SDL_Event& event) {
   if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
     if (current == pause.get()) {
       if (resume == explorer.get()) {
@@ -132,7 +132,7 @@ std::pair<scenes, sceneData> wm::handle(const SDL_Event& event) {
       }
 
       if (SDL_PointInRect(&point, &pause->exitPos)) {
-        context->state = game::gameState::terminating;
+        context->state = gameState::terminating;
         std::exit(0);
       }
     } else {

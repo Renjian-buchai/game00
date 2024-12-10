@@ -6,7 +6,7 @@
 #include "SDL_image.h"
 #include "game.hh"
 
-notepad_t::notepad_t(game* _context)
+notepad_t::notepad_t(const game* _context)
     : scene(_context),
       lineWrapLength(static_cast<int>(
           scale * static_cast<double>(context->dispBounds.w - pix(16)))),
@@ -36,7 +36,7 @@ notepad_t::~notepad_t() {
   SDL_DestroyTexture(background);
 }
 
-std::pair<scenes, sceneData> notepad_t::update() {
+const std::pair<scenes, sceneData> notepad_t::update() {
   if (currentData != prevData) {
     SDL_Surface* text;
     {
@@ -68,6 +68,6 @@ void notepad_t::render() {
   SDL_RenderCopy(context->mainRenderer, entry, nullptr, &entryRect);
 }
 
-std::pair<scenes, sceneData> notepad_t::handle(const SDL_Event& event) {
+const std::pair<scenes, sceneData> notepad_t::handle(const SDL_Event& event) {
   return std::make_pair(scenes::notepad, currentData);
 }

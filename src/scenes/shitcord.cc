@@ -13,7 +13,7 @@ shitcord_t::shitcord_t(const game* _context) : scene(_context) {
 
 shitcord_t::~shitcord_t() {}
 
-std::pair<scenes, sceneData> shitcord_t::update() {
+const std::pair<scenes, sceneData> shitcord_t::update() {
   return std::make_pair(scenes::shitcord, std::monostate());
 }
 
@@ -21,7 +21,7 @@ void shitcord_t::render() {
   SDL_RenderCopy(context->mainRenderer, background, nullptr, nullptr);
 }
 
-std::pair<scenes, sceneData> shitcord_t::handle(const SDL_Event& event) {
+const std::pair<scenes, sceneData> shitcord_t::handle(const SDL_Event& event) {
   return std::make_pair(scenes::shitcord, std::monostate());
 }
 

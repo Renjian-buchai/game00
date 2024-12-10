@@ -50,7 +50,7 @@ class scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  virtual std::pair<scenes, sceneData> update() = 0;
+  virtual const std::pair<scenes, sceneData> update() = 0;
 
   /**
    * @brief Renders textures
@@ -67,7 +67,7 @@ class scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  virtual std::pair<scenes, sceneData> handle(const SDL_Event&) = 0;
+  virtual const std::pair<scenes, sceneData> handle(const SDL_Event&) = 0;
 };
 
 #endif

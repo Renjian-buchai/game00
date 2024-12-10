@@ -1,6 +1,8 @@
 #if !defined(EXPLORER_HH)
 #define EXPLORER_HH
 
+#include <vector>
+
 #include "scene.hh"
 
 class explorer_t : public scene {
@@ -39,7 +41,7 @@ class explorer_t : public scene {
    *
    * @param context game context
    */
-  explorer_t(game* context);
+  explorer_t(const game* context);
 
   /**
    * @brief Destroy the explorer t object
@@ -56,7 +58,7 @@ class explorer_t : public scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  std::pair<scenes, sceneData> update() override;
+  const std::pair<scenes, sceneData> update() override;
 
   /**
    * @brief Renders explorer, and files
@@ -70,7 +72,7 @@ class explorer_t : public scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
+  const std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
 
   /**
    * @brief Creates texture to display in filesystem

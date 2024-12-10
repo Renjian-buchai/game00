@@ -34,7 +34,7 @@ class shitcord_t : public scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  std::pair<scenes, sceneData> update() override;
+  const std::pair<scenes, sceneData> update() override;
 
   /**
    * @brief Renders menu, and messages
@@ -48,7 +48,7 @@ class shitcord_t : public scene {
    * @return std::pair<scenes, sceneData>Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
+  const std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
 
   /**
    * @brief Generates the option texture from the surface

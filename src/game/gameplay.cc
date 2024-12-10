@@ -1,6 +1,35 @@
+#include "enum.hh"
 #include "game.hh"
 #include "wm.hh"
-#include "enum.hh"
+
+void changeScene(const std::pair<scenes, sceneData>& sceneChangeData,
+                 wm& winMan) {
+  switch (sceneChangeData.first) {
+    case scenes::explorer:
+      winMan.current = winMan.explorer.get();
+      break;
+
+    case scenes::notepad:
+      winMan.current = winMan.notepad.get();
+      winMan.notepad->currentData =
+          std::get<notepadData>(sceneChangeData.second);
+      break;
+
+    case scenes::intro:
+      winMan.current = winMan.intro.get();
+      break;
+
+    case scenes::pause:
+      winMan.current = winMan.pause.get();
+      break;
+
+    case scenes::shitcord:
+      winMan.current = winMan.shitcord.get();
+      break;
+  }
+
+  return;
+}
 
 void game::gameplay() {
   SDL_WaitThread(loadThread, nullptr);
@@ -21,55 +50,11 @@ void game::gameplay() {
       }
 
       sceneChangeData = winMan.handle(event);
-      switch (sceneChangeData.first) {
-        case scenes::explorer:
-          winMan.current = winMan.explorer.get();
-          break;
-
-        case scenes::notepad:
-          winMan.current = winMan.notepad.get();
-          winMan.notepad->currentData =
-              std::get<notepadData>(sceneChangeData.second);
-          break;
-
-        case scenes::intro:
-          winMan.current = winMan.intro.get();
-          break;
-
-        case scenes::pause:
-          winMan.current = winMan.pause.get();
-          break;
-
-        case scenes::shitcord:
-          winMan.current = winMan.shitcord.get();
-          break;
-      }
+      changeScene(sceneChangeData, winMan);
     }
 
     sceneChangeData = winMan.update();
-    switch (sceneChangeData.first) {
-      case scenes::explorer:
-        winMan.current = winMan.explorer.get();
-        break;
-
-      case scenes::notepad:
-        winMan.current = winMan.notepad.get();
-        winMan.notepad->currentData =
-            std::get<notepadData>(sceneChangeData.second);
-        break;
-
-      case scenes::intro:
-        winMan.current = winMan.intro.get();
-        break;
-
-      case scenes::pause:
-        winMan.current = winMan.pause.get();
-        break;
-
-      case scenes::shitcord:
-        winMan.current = winMan.shitcord.get();
-        break;
-    }
+    changeScene(sceneChangeData, winMan);
   }
 
   // Adding a destructor causes the initialisation of wm to fail

@@ -3,8 +3,9 @@
 #include "SDL_image.h"
 #include "game.hh"
 
-intro_t::slide::slide(size_t _fadeIn, size_t _fadeOut, size_t _duration,
-                      SDL_Texture* _texture, SDL_Rect _dest, bool _skippable)
+intro_t::slide::slide(const size_t _fadeIn, const size_t _fadeOut,
+                      const size_t _duration, SDL_Texture* _texture,
+                      const SDL_Rect _dest, const bool _skippable)
     : fadeIn(_fadeIn),
       duration(_duration),
       fadeOut(_fadeOut),
@@ -75,7 +76,7 @@ void intro_t::centreRect(SDL_Rect& rect, centre _centre) const {
   return;
 }
 
-intro_t::intro_t(game* _context)
+intro_t::intro_t(const game* _context)
     : scene(_context), startTime(SDL_GetTicks64()) {
   addSlide(IMG_Load("res/images/0001.png"), 0, 1500, 500);
 
@@ -151,7 +152,7 @@ intro_t::~intro_t() {
   slides.clear();
 }
 
-std::pair<scenes, sceneData> intro_t::update() {
+const std::pair<scenes, sceneData> intro_t::update() {
   size_t deltaTime = SDL_GetTicks64() - startTime;
   if (deltaTime > 19000) {
     this->~intro_t();
@@ -165,7 +166,7 @@ void intro_t::render() {
   slideShow(SDL_GetTicks64(), skip);
 }
 
-std::pair<scenes, sceneData> intro_t::handle(const SDL_Event& event) {
+const std::pair<scenes, sceneData> intro_t::handle(const SDL_Event& event) {
   skip = event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE;
   return std::make_pair(scenes::intro, std::monostate());
 }
