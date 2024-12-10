@@ -35,18 +35,6 @@ enum class scenes : uint8_t {
   shitcord,
 };
 
-/**
- * @brief Current gamestate
- *
- * @deprecated Replaced with wm system
- */
-enum class gameState : uint8_t {
-  terminating,
-  intro,
-  gameplay,
-  paused,
-};
-
 using sceneData = std::variant<std::monostate, notepadData>;
 
 #endif

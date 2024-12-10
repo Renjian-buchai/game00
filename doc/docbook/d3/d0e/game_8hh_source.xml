@@ -5,41 +5,43 @@
 Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(game_GAME_HH)</emphasis>
 2 <emphasis role="preprocessor">#define&#32;game_GAME_HH</emphasis>
 3 
-4 <emphasis role="preprocessor">#include&#32;&lt;array&gt;</emphasis>
-5 
-6 <emphasis role="preprocessor">#include&#32;&quot;SDL.h&quot;</emphasis>
-7 <emphasis role="preprocessor">#include&#32;&quot;SDL_mixer.h&quot;</emphasis>
-8 <emphasis role="preprocessor">#include&#32;&quot;SDL_ttf.h&quot;</emphasis>
-9 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_enum_8hh">enum.hh</link>&quot;</emphasis>
-10 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_wm_8hh">wm.hh</link>&quot;</emphasis>
-11 
-12 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classgame">game</link>&#32;{
-13 &#32;<emphasis role="keyword">public</emphasis>:
-18 &#32;&#32;<link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73">gameState</link>&#32;<link linkend="_classgame_1a66a0e69c41270ee22849d56d12e12749">state</link>;
-19 
-24 &#32;&#32;SDL_Rect&#32;<link linkend="_classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6">dispBounds</link>;
-29 &#32;&#32;SDL_Window*&#32;<link linkend="_classgame_1acc01740eae91dd462ec52a9d7a3ec974">mainWindow</link>;
-34 &#32;&#32;SDL_Renderer*&#32;<link linkend="_classgame_1a7d010ea5627621067a7686f330d5e104">mainRenderer</link>;
-35 
-40 &#32;&#32;std::array&lt;Mix_Music*,&#32;4&gt;&#32;<link linkend="_classgame_1a9e8b656712b1f8d16290abd3d21b2331">bgm</link>;
-45 &#32;&#32;std::array&lt;Mix_Music*,&#32;6&gt;&#32;<link linkend="_classgame_1a74c272eea906013e6af7480d8d31f431">silence</link>;
-46 
-51 &#32;&#32;TTF_Font*&#32;<link linkend="_classgame_1a63c1e94224ab226955bba8717c64bdc0">font</link>;
-52 
-54 &#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_classgame_1a392ea9253c1a69cd42b0d45547568eb0">pixelSize</link>;
-55 
-60 &#32;&#32;<link linkend="_classwm">wm</link>&#32;<link linkend="_classgame_1a149df5bc9d648f2b400d3f03f8aa139d">winMan</link>;
-61 
-62 &#32;&#32;SDL_mutex*&#32;<link linkend="_classgame_1ac71bfd4415fdd0075d2115aa0ffe2bf6">mutex</link>;
+4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_pch_8hh">pch.hh</link>&quot;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_wm_8hh">wm.hh</link>&quot;</emphasis>
+6 
+7 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classgame">game</link>&#32;{
+8 &#32;<emphasis role="keyword">public</emphasis>:
+9 &#32;&#32;<emphasis role="keyword">enum&#32;class</emphasis>&#32;<link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">gameState</link>&#32;:&#32;uint8_t&#32;{
+10 &#32;&#32;&#32;&#32;<link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db">terminating</link>,
+11 &#32;&#32;&#32;&#32;<link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">intro</link>,
+12 &#32;&#32;&#32;&#32;<link linkend="_classgame_1abf967ec7fa712fde980d9c399e4f778d">gameplay</link>,
+13 &#32;&#32;&#32;&#32;<link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2">paused</link>,
+14 &#32;&#32;};
+15 
+20 &#32;&#32;<link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">gameState</link>&#32;<link linkend="_classgame_1a66a0e69c41270ee22849d56d12e12749">state</link>&#32;=&#32;<link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">gameState::intro</link>;
+21 
+26 &#32;&#32;SDL_Rect&#32;<link linkend="_classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6">dispBounds</link>;
+31 &#32;&#32;SDL_Window*&#32;<link linkend="_classgame_1acc01740eae91dd462ec52a9d7a3ec974">mainWindow</link>;
+36 &#32;&#32;SDL_Renderer*&#32;<link linkend="_classgame_1a7d010ea5627621067a7686f330d5e104">mainRenderer</link>;
+37 
+42 &#32;&#32;std::array&lt;Mix_Music*,&#32;4&gt;&#32;<link linkend="_classgame_1a9e8b656712b1f8d16290abd3d21b2331">bgm</link>;
+47 &#32;&#32;std::array&lt;Mix_Music*,&#32;6&gt;&#32;<link linkend="_classgame_1a74c272eea906013e6af7480d8d31f431">silence</link>;
+48 
+53 &#32;&#32;TTF_Font*&#32;<link linkend="_classgame_1a63c1e94224ab226955bba8717c64bdc0">font</link>;
+54 
+56 &#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_classgame_1a392ea9253c1a69cd42b0d45547568eb0">pixelSize</link>;
+57 
+62 &#32;&#32;<link linkend="_classwm">wm</link>&#32;<link linkend="_classgame_1a149df5bc9d648f2b400d3f03f8aa139d">winMan</link>;
 63 
-68 &#32;&#32;SDL_Thread*&#32;<link linkend="_classgame_1a4f416f46f79adaa51c134ecce60adae2">loadThread</link>;
-69 
-75 &#32;&#32;<link linkend="_classgame_1ad9c102127b5038f880067ad6c9198d38">game</link>();
-76 
-81 &#32;&#32;<link linkend="_classgame_1ae87abd20c4d8a7906fa48e690a5f1d07">~game</link>();
-82 
-87 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classgame_1abf967ec7fa712fde980d9c399e4f778d">gameplay</link>();
-88 };
-89 
-90 <emphasis role="preprocessor">#endif</emphasis>
+64 &#32;&#32;SDL_mutex*&#32;<link linkend="_classgame_1ac71bfd4415fdd0075d2115aa0ffe2bf6">mutex</link>;
+65 
+70 &#32;&#32;SDL_Thread*&#32;<link linkend="_classgame_1a4f416f46f79adaa51c134ecce60adae2">loadThread</link>;
+71 
+77 &#32;&#32;<link linkend="_classgame_1ad9c102127b5038f880067ad6c9198d38">game</link>();
+78 
+83 &#32;&#32;<link linkend="_classgame_1ae87abd20c4d8a7906fa48e690a5f1d07">~game</link>();
+84 
+89 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classgame_1abf967ec7fa712fde980d9c399e4f778d">gameplay</link>();
+90 };
+91 
+92 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

@@ -5,34 +5,32 @@
 Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(EXPLORER_HH)</emphasis>
 2 <emphasis role="preprocessor">#define&#32;EXPLORER_HH</emphasis>
 3 
-4 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_scene_8hh">scene.hh</link>&quot;</emphasis>
 5 
-6 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_scene_8hh">scene.hh</link>&quot;</emphasis>
-7 
-8 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classexplorer__t">explorer_t</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classscene">scene</link>&#32;{
-9 &#32;<emphasis role="keyword">public</emphasis>:
-15 &#32;&#32;<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link>&#32;<link linkend="_classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3">saveData</link>;
-16 
-20 &#32;&#32;std::vector&lt;std::pair&lt;SDL_Texture*,&#32;SDL_Rect&gt;&gt;&#32;<link linkend="_classexplorer__t_1aea965f72ccf4510850fc844e97c51c19">items</link>;
-21 
-25 &#32;&#32;SDL_Texture*&#32;<link linkend="_classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93">background</link>;
-26 
-30 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classexplorer__t_1a9cb2c4b54f466e5535c38cdac94ea0b4">nameWrapLength</link>;
-31 
-35 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;SDL_Rect&#32;<link linkend="_classexplorer__t_1ab134139610d2267ca833abcd44b39aac">downloadBounds</link>;
-36 
-44 &#32;&#32;<link linkend="_classexplorer__t_1a2924ed013429848f0cbeb1383449e505">explorer_t</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
-45 
-51 &#32;&#32;<link linkend="_classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50">~explorer_t</link>();
-52 
-61 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
-62 
-66 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
-67 
-75 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classexplorer__t_1a87452daa84e4b7145c1f50a812010824">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
-76 
-85 &#32;&#32;SDL_Texture*&#32;<link linkend="_classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a">createFilesystemEntry</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;text,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24">size</link>);
-86 };
-87 
-88 <emphasis role="preprocessor">#endif</emphasis>
+6 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classexplorer__t">explorer_t</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classscene">scene</link>&#32;{
+7 &#32;<emphasis role="keyword">public</emphasis>:
+13 &#32;&#32;<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link>&#32;<link linkend="_classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3">saveData</link>;
+14 
+18 &#32;&#32;std::vector&lt;std::pair&lt;SDL_Texture*,&#32;SDL_Rect&gt;&gt;&#32;<link linkend="_classexplorer__t_1aea965f72ccf4510850fc844e97c51c19">items</link>;
+19 
+23 &#32;&#32;SDL_Texture*&#32;<link linkend="_classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93">background</link>;
+24 
+28 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classexplorer__t_1a9cb2c4b54f466e5535c38cdac94ea0b4">nameWrapLength</link>;
+29 
+33 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;SDL_Rect&#32;<link linkend="_classexplorer__t_1ab134139610d2267ca833abcd44b39aac">downloadBounds</link>;
+34 
+42 &#32;&#32;<link linkend="_classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6">explorer_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>);
+43 
+49 &#32;&#32;<link linkend="_classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50">~explorer_t</link>();
+50 
+59 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
+60 
+64 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
+65 
+73 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">handle</link>(SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+74 
+83 &#32;&#32;SDL_Texture*&#32;<link linkend="_classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a">createFilesystemEntry</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;text,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24">size</link>);
+84 };
+85 
+86 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

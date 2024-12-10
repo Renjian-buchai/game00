@@ -5,6 +5,7 @@
     <innerdir refid="dir_9551f21d874a3950d142803a40139414">include/scenes</innerdir>
     <innerfile refid="d9/d05/enum_8hh">enum.hh</innerfile>
     <innerfile refid="d3/d0e/game_8hh">game.hh</innerfile>
+    <innerfile refid="d0/d8b/pch_8hh">pch.hh</innerfile>
     <innerfile refid="d3/d51/wm_8hh">wm.hh</innerfile>
     <briefdescription>
     </briefdescription>

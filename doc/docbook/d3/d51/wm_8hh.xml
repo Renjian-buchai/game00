@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_wm_8hh" xml:lang="en-US">
 <title>include/wm.hh File Reference</title>
 <indexterm><primary>include/wm.hh</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &lt;memory&gt;<?linebreak?>#include &lt;vector&gt;<?linebreak?>#include &quot;SDL.h&quot;<?linebreak?>#include &quot;enum.hh&quot;<?linebreak?>#include &quot;scenes/explorer.hh&quot;<?linebreak?>#include &quot;scenes/init.hh&quot;<?linebreak?>#include &quot;scenes/notepad.hh&quot;<?linebreak?>#include &quot;scenes/pause.hh&quot;<?linebreak?>#include &quot;scenes/shitcord.hh&quot;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &quot;enum.hh&quot;<?linebreak?>#include &quot;pch.hh&quot;<?linebreak?>#include &quot;scenes/explorer.hh&quot;<?linebreak?>#include &quot;scenes/init.hh&quot;<?linebreak?>#include &quot;scenes/notepad.hh&quot;<?linebreak?>#include &quot;scenes/pause.hh&quot;<?linebreak?></programlisting><simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classwm">wm</link></para>

@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_game_8cc" xml:lang="en-US">
 <title>src/game/game.cc File Reference</title>
 <indexterm><primary>src/game/game.cc</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;../include/game.hh&quot;<?linebreak?>#include &lt;iostream&gt;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &quot;../include/game.hh&quot;<?linebreak?></programlisting><simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>struct <link linkend="_structwm_init_data">wmInitData</link></para>

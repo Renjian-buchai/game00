@@ -15,27 +15,22 @@ class notepad_t : public scene {
    * @brief Background of the notepad as a texture
    */
   SDL_Texture* background;
-
   /**
    * @brief Text of the notepad, as a texture
    */
   SDL_Texture* entry;
-
   /**
    * @brief Length before the note wraps the length
    */
   const int lineWrapLength;
-
   /**
    * @brief The current entry
    */
   notepadData currentData;
-
   /**
    * @brief The last entry that was there when notepad was exited
    */
   notepadData prevData;
-
   /**
    * @brief Position of the entry.
    */
@@ -47,17 +42,15 @@ class notepad_t : public scene {
    *
    * Called only once when WM is initialised
    *
-   * @param context game context
+   * @param _context game context
    */
-  notepad_t(const game* context);
-
+  notepad_t(game* context);
   /**
    * @brief Destroy the notepad t object
    *
    * Called only when the wm is destroyed
    */
   ~notepad_t();
-
   /**
    * @brief Checks if the current data is the same as the data stored
    * previously.
@@ -66,13 +59,11 @@ class notepad_t : public scene {
    *
    * @return std::pair<scenes, sceneData>
    */
-  const std::pair<scenes, sceneData> update() override;
-
+  std::pair<scenes, sceneData> update() override;
   /**
    * @brief Renders notepad, and entry
    */
   void render() override;
-
   /**
    * @brief Handles event.
    *
@@ -82,7 +73,7 @@ class notepad_t : public scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  const std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
+  std::pair<scenes, sceneData> handle(SDL_Event& event) override;
 };
 
 #endif

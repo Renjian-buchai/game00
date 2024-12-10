@@ -13,29 +13,20 @@
 \DoxyCodeLine{00012\ }
 \DoxyCodeLine{00013\ \ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00017\ \ \ SDL\_Texture*\ background;}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00022\ \ \ SDL\_Texture*\ entry;}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ lineWrapLength;}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00032\ \ \ notepadData\ currentData;}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00037\ \ \ notepadData\ prevData;}
+\DoxyCodeLine{00021\ \ \ SDL\_Texture*\ entry;}
+\DoxyCodeLine{00025\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ lineWrapLength;}
+\DoxyCodeLine{00029\ \ \ notepadData\ currentData;}
+\DoxyCodeLine{00033\ \ \ notepadData\ prevData;}
+\DoxyCodeLine{00037\ \ \ SDL\_Rect\ entryRect;}
 \DoxyCodeLine{00038\ }
-\DoxyCodeLine{00042\ \ \ SDL\_Rect\ entryRect;}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00052\ \ \ notepad\_t(\textcolor{keyword}{const}\ game*\ context);}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00059\ \ \ \string~notepad\_t();}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00069\ \ \ \textcolor{keyword}{const}\ std::pair<scenes,\ sceneData>\ update()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00074\ \ \ \textcolor{keywordtype}{void}\ render()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00085\ \ \ \textcolor{keyword}{const}\ std::pair<scenes,\ sceneData>\ handle(\textcolor{keyword}{const}\ SDL\_Event\&\ event)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00086\ \};}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00039\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ notepad\_t(game*\ context);}
+\DoxyCodeLine{00053\ \ \ \string~notepad\_t();}
+\DoxyCodeLine{00062\ \ \ std::pair<scenes,\ sceneData>\ update()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{void}\ render()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00076\ \ \ std::pair<scenes,\ sceneData>\ handle(SDL\_Event\&\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

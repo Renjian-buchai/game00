@@ -26,14 +26,14 @@ class scene {
   /**
    * @brief Game context
    */
-  const game* context;
+  game* context;
 
   /**
    * @brief Construct a new scene object
    *
    * @param gameContext game context
    */
-  scene(const game* gameContext);
+  scene(game* gameContext);
 
   /**
    * @brief Destroy the scene object
@@ -50,7 +50,7 @@ class scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  virtual const std::pair<scenes, sceneData> update() = 0;
+  virtual std::pair<scenes, sceneData> update() = 0;
 
   /**
    * @brief Renders textures
@@ -67,7 +67,7 @@ class scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  virtual const std::pair<scenes, sceneData> handle(const SDL_Event&) = 0;
+  virtual std::pair<scenes, sceneData> handle(SDL_Event&) = 0;
 };
 
 #endif

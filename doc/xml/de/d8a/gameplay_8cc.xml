@@ -2,30 +2,42 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
   <compounddef id="de/d8a/gameplay_8cc" kind="file" language="C++">
     <compoundname>gameplay.cc</compoundname>
-    <includes refid="d9/d05/enum_8hh" local="yes">enum.hh</includes>
-    <includes refid="d3/d0e/game_8hh" local="yes">game.hh</includes>
-    <includes refid="d3/d51/wm_8hh" local="yes">wm.hh</includes>
+    <includes refid="d3/d0e/game_8hh" local="yes">../../include/game.hh</includes>
+    <includes refid="d3/d51/wm_8hh" local="yes">../../include/wm.hh</includes>
     <incdepgraph>
-      <node id="7">
+      <node id="12">
         <label>SDL.h</label>
       </node>
-      <node id="8">
+      <node id="13">
+        <label>SDL_image.h</label>
+      </node>
+      <node id="14">
         <label>SDL_mixer.h</label>
       </node>
-      <node id="9">
+      <node id="15">
         <label>SDL_ttf.h</label>
       </node>
-      <node id="2">
+      <node id="17">
         <label>enum.hh</label>
         <link refid="d9/d05/enum_8hh"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="5">
-        <label>game.hh</label>
+      <node id="2">
+        <label>../../include/game.hh</label>
         <link refid="d3/d0e/game_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pch.hh</label>
+        <link refid="d0/d8b/pch_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -34,77 +46,65 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-      </node>
-      <node id="13">
-        <label>scenes/explorer.hh</label>
-        <link refid="d4/d7c/explorer_8hh"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>scenes/init.hh</label>
-        <link refid="dd/d82/init_8hh"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>scenes/notepad.hh</label>
-        <link refid="d4/d54/notepad_8hh"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>scenes/pause.hh</label>
-        <link refid="d4/d90/pause_8hh"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>scene.hh</label>
-        <link refid="d5/dd8/scene_8hh"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>scenes/shitcord.hh</label>
-        <link refid="d1/da8/shitcord_8hh"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>wm.hh</label>
-        <link refid="d3/d51/wm_8hh"/>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>scenes/explorer.hh</label>
+        <link refid="d4/d7c/explorer_8hh"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>scenes/init.hh</label>
+        <link refid="dd/d82/init_8hh"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>scenes/notepad.hh</label>
+        <link refid="d4/d54/notepad_8hh"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>scenes/pause.hh</label>
+        <link refid="d4/d90/pause_8hh"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>scene.hh</label>
+        <link refid="d5/dd8/scene_8hh"/>
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
+      </node>
+      <node id="16">
+        <label>wm.hh</label>
+        <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -112,125 +112,104 @@
         <link refid="de/d8a/gameplay_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>array</label>
-      </node>
-      <node id="3">
-        <label>cstdint</label>
-      </node>
-      <node id="11">
-        <label>memory</label>
-      </node>
-      <node id="20">
-        <label>string</label>
-      </node>
-      <node id="15">
-        <label>utility</label>
       </node>
       <node id="4">
+        <label>array</label>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>utility</label>
+      </node>
+      <node id="10">
         <label>variant</label>
       </node>
-      <node id="12">
+      <node id="11">
         <label>vector</label>
       </node>
     </incdepgraph>
-    <sectiondef kind="func">
-      <memberdef kind="function" id="de/d8a/gameplay_8cc_1a199644654857552c06fa8aaea76ac812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void changeScene</definition>
-        <argsstring>(const std::pair&lt; scenes, sceneData &gt; &amp;sceneChangeData, wm &amp;winMan)</argsstring>
-        <name>changeScene</name>
-        <param>
-          <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt; &amp;</type>
-          <declname>sceneChangeData</declname>
-        </param>
-        <param>
-          <type><ref refid="df/d1c/classwm" kindref="compound">wm</ref> &amp;</type>
-          <declname>winMan</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/game/gameplay.cc" line="5" column="6" bodyfile="src/game/gameplay.cc" bodystart="5" bodyend="32"/>
-      </memberdef>
-    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d05/enum_8hh" kindref="compound">enum.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d51/wm_8hh" kindref="compound">wm.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d8a/gameplay_8cc_1a199644654857552c06fa8aaea76ac812" kindref="member">changeScene</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;&amp;<sp/>sceneChangeData,</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d1c/classwm" kindref="compound">wm</ref>&amp;<sp/>winMan)<sp/>{</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(sceneChangeData.first)<sp/>{</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>:</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>winMan.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/>winMan.<ref refid="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" kindref="member">explorer</ref>.get();</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">../../include/game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d51/wm_8hh" kindref="compound">../../include/wm.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d51/classgame_1abf967ec7fa712fde980d9c399e4f778d" kindref="member">game::gameplay</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/>SDL_WaitThread(<ref refid="d0/d51/classgame_1a4f416f46f79adaa51c134ecce60adae2" kindref="member">loadThread</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/>Mix_PlayMusic(<ref refid="d0/d51/classgame_1a9e8b656712b1f8d16290abd3d21b2331" kindref="member">bgm</ref>[0],<sp/>0);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>SDL_Event<sp/>event;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/>sceneChangeData<sp/>=</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>,<sp/>std::monostate());</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" kindref="member">scenes::notepad</ref>:</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>winMan.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/>winMan.<ref refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kindref="member">notepad</ref>.get();</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>winMan.<ref refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kindref="member">notepad</ref>-&gt;currentData<sp/>=</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::get&lt;notepadData&gt;(sceneChangeData.second);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>:</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>winMan.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/>winMan.<ref refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" kindref="member">intro</ref>.get();</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="d0/d51/classgame_1a66a0e69c41270ee22849d56d12e12749" kindref="member">state</ref><sp/>!=<sp/><ref refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db" kindref="member">gameState::terminating</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" kindref="member">render</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderPresent(<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(SDL_PollEvent(&amp;event))<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.type<sp/>==<sp/>SDL_QUIT)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a66a0e69c41270ee22849d56d12e12749" kindref="member">state</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db" kindref="member">gameState::terminating</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9" kindref="member">scenes::pause</ref>:</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>winMan.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/>winMan.<ref refid="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" kindref="member">pause</ref>.get();</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7" kindref="member">scenes::shitcord</ref>:</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>winMan.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/>winMan.<ref refid="df/d1c/classwm_1a5b53423d16a28cc8c0eec221572fb454" kindref="member">shitcord</ref>.get();</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sceneChangeData<sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a7f282167450e97df5792d589c9ced058" kindref="member">handle</ref>(event);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(sceneChangeData.first)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" kindref="member">explorer</ref>.get();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" kindref="member">scenes::notepad</ref>:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kindref="member">notepad</ref>.get();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kindref="member">notepad</ref>-&gt;currentData<sp/>=</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::get&lt;notepadData&gt;(sceneChangeData.second);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d51/classgame_1abf967ec7fa712fde980d9c399e4f778d" kindref="member">game::gameplay</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/>SDL_WaitThread(<ref refid="d0/d51/classgame_1a4f416f46f79adaa51c134ecce60adae2" kindref="member">loadThread</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/>Mix_PlayMusic(<ref refid="d0/d51/classgame_1a9e8b656712b1f8d16290abd3d21b2331" kindref="member">bgm</ref>[0],<sp/>0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" kindref="member">intro</ref>.get();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/>SDL_Event<sp/>event;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/>sceneChangeData<sp/>=</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>,<sp/>std::monostate());</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="d0/d51/classgame_1a66a0e69c41270ee22849d56d12e12749" kindref="member">state</ref><sp/>!=<sp/><ref refid="d9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db" kindref="member">gameState::terminating</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" kindref="member">render</ref>();</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderPresent(<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(SDL_PollEvent(&amp;event))<sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.type<sp/>==<sp/>SDL_QUIT)<sp/>{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a66a0e69c41270ee22849d56d12e12749" kindref="member">state</ref><sp/>=<sp/><ref refid="d9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db" kindref="member">gameState::terminating</ref>;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sceneChangeData<sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca" kindref="member">handle</ref>(event);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d8a/gameplay_8cc_1a199644654857552c06fa8aaea76ac812" kindref="member">changeScene</ref>(sceneChangeData,<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>sceneChangeData<sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a486c679090df44959f5bf6dd71db5983" kindref="member">update</ref>();</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d8a/gameplay_8cc_1a199644654857552c06fa8aaea76ac812" kindref="member">changeScene</ref>(sceneChangeData,<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Adding<sp/>a<sp/>destructor<sp/>causes<sp/>the<sp/>initialisation<sp/>of<sp/>wm<sp/>to<sp/>fail</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(<ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a718f320271041e9c08cdfbdc58cc3a64" kindref="member">OSOverlay</ref>);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9" kindref="member">scenes::pause</ref>:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" kindref="member">pause</ref>.get();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>sceneChangeData<sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(sceneChangeData.first)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" kindref="member">explorer</ref>.get();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" kindref="member">scenes::notepad</ref>:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kindref="member">notepad</ref>.get();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kindref="member">notepad</ref>-&gt;currentData<sp/>=</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::get&lt;notepadData&gt;(sceneChangeData.second);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" kindref="member">scenes::intro</ref>:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" kindref="member">intro</ref>.get();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9" kindref="member">scenes::pause</ref>:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kindref="member">current</ref><sp/>=<sp/><ref refid="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" kindref="member">winMan</ref>.<ref refid="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" kindref="member">pause</ref>.get();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/game/gameplay.cc"/>
   </compounddef>

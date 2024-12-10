@@ -8,6 +8,13 @@ game
 .PP
 .PP
 \fR#include <game\&.hh>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum class \fBgameState\fP : uint8_t { \fBterminating\fP, \fBintro\fP, \fBgameplay\fP, \fBpaused\fP }"
+.br
+.in -1c
 .SS "Public Member Functions"
 
 .in +1c
@@ -28,7 +35,7 @@ game
 
 .in +1c
 .ti -1c
-.RI "\fBgameState\fP \fBstate\fP"
+.RI "\fBgameState\fP \fBstate\fP = \fBgameState::intro\fP"
 .br
 .RI "State that the game is in\&. "
 .ti -1c
@@ -70,6 +77,21 @@ game
 .br
 .RI "Thread that loads winMan\&. "
 .in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum class \fBgame::gameState\fP : uint8_t\fR [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIterminating \fP
+.TP
+\f(BIintro \fP
+.TP
+\f(BIgameplay \fP
+.TP
+\f(BIpaused \fP
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "game::game ()"
@@ -122,7 +144,7 @@ Size of virtual pixels per real pixel\&.
 
 .PP
 Different lengths of silence\&. Randomly selected\&. 
-.SS "\fBgameState\fP game::state"
+.SS "\fBgameState\fP game::state = \fBgameState::intro\fP"
 
 .PP
 State that the game is in\&. 

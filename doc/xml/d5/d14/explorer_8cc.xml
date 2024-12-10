@@ -2,119 +2,47 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
   <compounddef id="d5/d14/explorer_8cc" kind="file" language="C++">
     <compoundname>explorer.cc</compoundname>
-    <includes refid="d4/d7c/explorer_8hh" local="yes">scenes/explorer.hh</includes>
-    <includes local="no">iostream</includes>
-    <includes local="yes">SDL_image.h</includes>
-    <includes refid="d3/d0e/game_8hh" local="yes">game.hh</includes>
+    <includes refid="d4/d7c/explorer_8hh" local="yes">../../include/scenes/explorer.hh</includes>
+    <includes refid="d3/d0e/game_8hh" local="yes">../../include/game.hh</includes>
     <incdepgraph>
-      <node id="6">
+      <node id="13">
         <label>SDL.h</label>
       </node>
-      <node id="11">
+      <node id="14">
         <label>SDL_image.h</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>SDL_mixer.h</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>SDL_ttf.h</label>
       </node>
-      <node id="7">
-        <label>enum.hh</label>
+      <node id="17">
+        <label>../enum.hh</label>
         <link refid="d9/d05/enum_8hh"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>game.hh</label>
-        <link refid="d3/d0e/game_8hh"/>
-        <childnode refid="13" relation="include">
-        </childnode>
         <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>scenes/explorer.hh</label>
-        <link refid="d4/d7c/explorer_8hh"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="18">
-        <label>scenes/init.hh</label>
-        <link refid="dd/d82/init_8hh"/>
+        <label>../../include/game.hh</label>
+        <link refid="d3/d0e/game_8hh"/>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="19">
-        <label>scenes/notepad.hh</label>
-        <link refid="d4/d54/notepad_8hh"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>scenes/pause.hh</label>
-        <link refid="d4/d90/pause_8hh"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="4">
-        <label>scene.hh</label>
-        <link refid="d5/dd8/scene_8hh"/>
+        <label>../../include/pch.hh</label>
+        <link refid="d0/d8b/pch_8hh"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-      </node>
-      <node id="21">
-        <label>scenes/shitcord.hh</label>
-        <link refid="d1/da8/shitcord_8hh"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>wm.hh</label>
-        <link refid="d3/d51/wm_8hh"/>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>src/scenes/explorer.cc</label>
-        <link refid="d5/d14/explorer_8cc"/>
-        <childnode refid="2" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -122,29 +50,93 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
       </node>
-      <node id="13">
-        <label>array</label>
+      <node id="2">
+        <label>../../include/scenes/explorer.hh</label>
+        <link refid="d4/d7c/explorer_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
-      <node id="8">
-        <label>cstdint</label>
+      <node id="20">
+        <label>scenes/init.hh</label>
+        <link refid="dd/d82/init_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
-      <node id="10">
-        <label>iostream</label>
-      </node>
-      <node id="17">
-        <label>memory</label>
+      <node id="21">
+        <label>scenes/notepad.hh</label>
+        <link refid="d4/d54/notepad_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="22">
-        <label>string</label>
-      </node>
-      <node id="5">
-        <label>utility</label>
-      </node>
-      <node id="9">
-        <label>variant</label>
+        <label>scenes/pause.hh</label>
+        <link refid="d4/d90/pause_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="3">
+        <label>scene.hh</label>
+        <link refid="d5/dd8/scene_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>wm.hh</label>
+        <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/scenes/explorer.cc</label>
+        <link refid="d5/d14/explorer_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>variant</label>
+      </node>
+      <node id="12">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -164,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/scenes/explorer.cc" line="8" column="14" bodyfile="src/scenes/explorer.cc" bodystart="8" bodyend="13"/>
+        <location file="src/scenes/explorer.cc" line="5" column="14" bodyfile="src/scenes/explorer.cc" bodystart="5" bodyend="10"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -172,160 +164,157 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d7c/explorer_8hh" kindref="compound">scenes/explorer.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d7c/explorer_8hh" kindref="compound">../../include/scenes/explorer.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">../../include/game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL_image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a" kindref="member">explorerData</ref><sp/><ref refid="d5/d14/explorer_8cc_1aa3c2bd85b3a50c8377042bf30c9b0331" kindref="member">operator++</ref>(<ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a" kindref="member">explorerData</ref>&amp;<sp/>save)<sp/>{</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">IntType<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::underlying_type&lt;explorerData&gt;::type;</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/>save<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a" kindref="member">explorerData</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">IntType</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(save)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a" kindref="member">explorerData</ref><sp/><ref refid="d5/d14/explorer_8cc_1aa3c2bd85b3a50c8377042bf30c9b0331" kindref="member">operator++</ref>(<ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a" kindref="member">explorerData</ref>&amp;<sp/>save)<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">IntType<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::underlying_type&lt;explorerData&gt;::type;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/>save<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a" kindref="member">explorerData</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">IntType</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(save)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>save;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>save;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal">SDL_Texture*<sp/><ref refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" kindref="member">explorer_t::createFilesystemEntry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>text,</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24" kindref="member">size</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>IMG_Load(</highlight><highlight class="stringliteral">&quot;res/UI/file.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/>SDL_Renderer*<sp/>renderer<sp/>=<sp/>SDL_CreateSoftwareRenderer(surface);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/>newTexture<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>thingSurface<sp/>=<sp/>TTF_RenderUTF8_Solid_Wrapped(</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" kindref="member">font</ref>,<sp/>text,<sp/>{0xe0,<sp/>0xe1,<sp/>0xcc,<sp/>SDL_ALPHA_OPAQUE},<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(0));</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/>newTexture<sp/>=<sp/>SDL_CreateTextureFromSurface(renderer,<sp/>thingSurface);</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(thingSurface);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/>rect<sp/>=<sp/>{11,<sp/>6,<sp/>thingSurface-&gt;w<sp/>*<sp/>40<sp/>/<sp/>thingSurface-&gt;h,<sp/>40};</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(renderer,<sp/>newTexture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;rect);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(newTexture);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/>thingSurface<sp/>=<sp/>TTF_RenderUTF8_Solid_Wrapped(</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" kindref="member">font</ref>,<sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24" kindref="member">size</ref>,<sp/>{0xe0,<sp/>0xe1,<sp/>0xcc,<sp/>SDL_ALPHA_OPAQUE},<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(0));</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/>newTexture<sp/>=<sp/>SDL_CreateTextureFromSurface(renderer,<sp/>thingSurface);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(thingSurface);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/>rect<sp/>=<sp/>{550,<sp/>6,<sp/>thingSurface-&gt;w<sp/>*<sp/>40<sp/>/<sp/>thingSurface-&gt;h,<sp/>40};</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(renderer,<sp/>newTexture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;rect);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(newTexture);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/>texture<sp/>=</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">SDL_Texture*<sp/><ref refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" kindref="member">explorer_t::createFilesystemEntry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>text,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24" kindref="member">size</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>IMG_Load(</highlight><highlight class="stringliteral">&quot;res/UI/file.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>SDL_Renderer*<sp/>renderer<sp/>=<sp/>SDL_CreateSoftwareRenderer(surface);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/>newTexture<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>thingSurface<sp/>=<sp/>TTF_RenderUTF8_Solid_Wrapped(</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" kindref="member">font</ref>,<sp/>text,<sp/>{0xe0,<sp/>0xe1,<sp/>0xcc,<sp/>SDL_ALPHA_OPAQUE},<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(0));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>newTexture<sp/>=<sp/>SDL_CreateTextureFromSurface(renderer,<sp/>thingSurface);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(thingSurface);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/>rect<sp/>=<sp/>{11,<sp/>6,<sp/>thingSurface-&gt;w<sp/>*<sp/>40<sp/>/<sp/>thingSurface-&gt;h,<sp/>40};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(renderer,<sp/>newTexture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;rect);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(newTexture);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>thingSurface<sp/>=<sp/>TTF_RenderUTF8_Solid_Wrapped(</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" kindref="member">font</ref>,<sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24" kindref="member">size</ref>,<sp/>{0xe0,<sp/>0xe1,<sp/>0xcc,<sp/>SDL_ALPHA_OPAQUE},<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(0));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>newTexture<sp/>=<sp/>SDL_CreateTextureFromSurface(renderer,<sp/>thingSurface);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(thingSurface);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>rect<sp/>=<sp/>{550,<sp/>6,<sp/>thingSurface-&gt;w<sp/>*<sp/>40<sp/>/<sp/>thingSurface-&gt;h,<sp/>40};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(renderer,<sp/>newTexture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;rect);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(newTexture);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/>texture<sp/>=</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>texture;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>texture;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><ref refid="d5/db0/classexplorer__t_1a2924ed013429848f0cbeb1383449e505" kindref="member">explorer_t::explorer_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context),</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nameWrapLength(260<sp/>*<sp/>_context-&gt;pixelSize),</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>downloadBounds(SDL_Rect{0,<sp/>0,<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(40),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(24)})<sp/>{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>saveData<sp/>=<sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9" kindref="member">explorerData::init</ref>;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>IMG_Load(</highlight><highlight class="stringliteral">&quot;res/UI/backgrounds/explorer.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(surface<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>IMG_GetError();</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::exit(-1);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>background<sp/>=<sp/>SDL_CreateTextureFromSurface(_context-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(background<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>SDL_GetError();</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::exit(-1);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(saveData<sp/>==<sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9" kindref="member">explorerData::init</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Surface*<sp/>text<sp/>=<sp/>TTF_RenderUTF8_Blended_Wrapped(</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_context-&gt;<ref refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" kindref="member">font</ref>,</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;↑<sp/>His<sp/>files<sp/>have<sp/>been<sp/>deleted.<sp/>Let&apos;s<sp/>download<sp/>them<sp/>from<sp/>the<sp/>cloud.&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{0x80,<sp/>0x87,<sp/>0x7d,<sp/>SDL_ALPHA_OPAQUE},<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(300));</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(text<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>TTF_GetError();</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>items.emplace_back(</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(_context-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>text),</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Rect{pix(8),<sp/>pix(56),<sp/>text-&gt;w,<sp/>text-&gt;h});</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="d5/db0/classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6" kindref="member">explorer_t::explorer_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context),</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nameWrapLength(260<sp/>*<sp/>_context-&gt;pixelSize),</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>downloadBounds(SDL_Rect{0,<sp/>0,<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(40),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(24)})<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>saveData<sp/>=<sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9" kindref="member">explorerData::init</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>IMG_Load(</highlight><highlight class="stringliteral">&quot;res/images/OSExplorer.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(surface<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>IMG_GetError();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::exit(-1);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>background<sp/>=<sp/>SDL_CreateTextureFromSurface(_context-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(background<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>SDL_GetError();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::exit(-1);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(saveData<sp/>==<sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9" kindref="member">explorerData::init</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Surface*<sp/>text<sp/>=<sp/>TTF_RenderUTF8_Blended_Wrapped(</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_context-&gt;<ref refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" kindref="member">font</ref>,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;↑<sp/>His<sp/>files<sp/>have<sp/>been<sp/>deleted.<sp/>Let&apos;s<sp/>download<sp/>them<sp/>from<sp/>the<sp/>cloud.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{0x80,<sp/>0x87,<sp/>0x7d,<sp/>SDL_ALPHA_OPAQUE},<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(300));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(text<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>TTF_GetError();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>items.emplace_back(</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(_context-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>text),</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Rect{pix(8),<sp/>pix(56),<sp/>text-&gt;w,<sp/>text-&gt;h});</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_FreeSurface(text);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_FreeSurface(text);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><ref refid="d5/db0/classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50" kindref="member">explorer_t::~explorer_t</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.size();<sp/>++i)<sp/>{</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_DestroyTexture(<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>[0].first);</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.erase(<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.begin());</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(<ref refid="d5/db0/classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93" kindref="member">background</ref>);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d5/db0/classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb" kindref="member">explorer_t::update</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>,<sp/>std::monostate());</highlight></codeline>
-<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="d5/db0/classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50" kindref="member">explorer_t::~explorer_t</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_DestroyTexture(<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>[0].first);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.erase(<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.begin());</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(<ref refid="d5/db0/classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93" kindref="member">background</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5" kindref="member">explorer_t::update</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/db0/classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757" kindref="member">explorer_t::render</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="d5/db0/classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93" kindref="member">background</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/db0/classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757" kindref="member">explorer_t::render</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="d5/db0/classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93" kindref="member">background</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[texture,<sp/>position]<sp/>:<sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>texture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;position);</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d5/db0/classexplorer__t_1a87452daa84e4b7145c1f50a812010824" kindref="member">explorer_t::handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/>SDL_Point<sp/>point;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.type)<sp/>{</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SDL_KEYDOWN:</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.key.keysym.sym)<sp/>{}</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SDL_MOUSEBUTTONDOWN:</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>point.x<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.button.x;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>point.y<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.button.y;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SDL_PointInRect(&amp;point,<sp/>&amp;<ref refid="d5/db0/classexplorer__t_1ab134139610d2267ca833abcd44b39aac" kindref="member">downloadBounds</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="d5/db0/classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3" kindref="member">saveData</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd" kindref="member">explorerData::entry2</ref>:</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.emplace_back(<ref refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" kindref="member">createFilesystemEntry</ref>(</highlight><highlight class="stringliteral">&quot;2024/6/15&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;921B&quot;</highlight><highlight class="normal">),</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Rect{<ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(1),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(72),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(320),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(24)});</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9" kindref="member">explorerData::init</ref>:</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="d5/db0/classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3" kindref="member">saveData</ref>;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[fallthrough]];</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d" kindref="member">explorerData::entry1</ref>:</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_DestroyTexture(<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.front().first);</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.erase(<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.begin());</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.emplace_back(<ref refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" kindref="member">createFilesystemEntry</ref>(</highlight><highlight class="stringliteral">&quot;2024/7/20&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1.3K&quot;</highlight><highlight class="normal">),</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Rect{<ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(1),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(48),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(320),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(24)});</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[texture,<sp/>position]<sp/>:<sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>texture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;position);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d5/db0/classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882" kindref="member">explorer_t::handle</ref>(SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>SDL_Point<sp/>point;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.type)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SDL_KEYDOWN:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.key.keysym.sym)<sp/>{}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SDL_MOUSEBUTTONDOWN:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>point.x<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.button.x;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>point.y<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.button.y;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SDL_PointInRect(&amp;point,<sp/>&amp;<ref refid="d5/db0/classexplorer__t_1ab134139610d2267ca833abcd44b39aac" kindref="member">downloadBounds</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="d5/db0/classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3" kindref="member">saveData</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd" kindref="member">explorerData::entry2</ref>:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.emplace_back(<ref refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" kindref="member">createFilesystemEntry</ref>(</highlight><highlight class="stringliteral">&quot;2024/6/15&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;921B&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Rect{<ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(1),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(72),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(320),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(24)});</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9" kindref="member">explorerData::init</ref>:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="d5/db0/classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3" kindref="member">saveData</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[fallthrough]];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/d05/enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d" kindref="member">explorerData::entry1</ref>:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_DestroyTexture(<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.front().first);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.erase(<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.begin());</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.emplace_back(<ref refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" kindref="member">createFilesystemEntry</ref>(</highlight><highlight class="stringliteral">&quot;2024/7/20&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1.3K&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Rect{<ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(1),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(48),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(320),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(24)});</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.size();<sp/>++i)<sp/>{</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SDL_PointInRect(&amp;point,<sp/>&amp;<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>[i].second))<sp/>{</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" kindref="member">scenes::notepad</ref>,<sp/><ref refid="d9/d05/enum_8hh_1ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d" kindref="member">notepadData::entry1</ref>);</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SDL_PointInRect(&amp;point,<sp/>&amp;<ref refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" kindref="member">items</ref>[i].second))<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" kindref="member">scenes::notepad</ref>,<sp/><ref refid="d9/d05/enum_8hh_1ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d" kindref="member">notepadData::entry1</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>,<sp/>std::monostate());</highlight></codeline>
-<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kindref="member">scenes::explorer</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/scenes/explorer.cc"/>
   </compounddef>

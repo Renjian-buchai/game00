@@ -5,42 +5,44 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#if\ !defined(game\_GAME\_HH)}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ game\_GAME\_HH}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <array>}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SDL\_mixer.h"{}}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}SDL\_ttf.h"{}}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}enum.hh"{}}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}wm.hh"{}}}
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }game\ \{}
-\DoxyCodeLine{00013\ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00018\ \ \ gameState\ state;}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00024\ \ \ SDL\_Rect\ dispBounds;}
-\DoxyCodeLine{00029\ \ \ SDL\_Window*\ mainWindow;}
-\DoxyCodeLine{00034\ \ \ SDL\_Renderer*\ mainRenderer;}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00040\ \ \ std::array<Mix\_Music*,\ 4>\ bgm;}
-\DoxyCodeLine{00045\ \ \ std::array<Mix\_Music*,\ 6>\ silence;}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00051\ \ \ TTF\_Font*\ font;}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{double}\ pixelSize;}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00060\ \ \ wm\ winMan;}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \ \ SDL\_mutex*\ mutex;}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}pch.hh"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}wm.hh"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }game\ \{}
+\DoxyCodeLine{00008\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \textcolor{keyword}{enum\ class}\ gameState\ :\ uint8\_t\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ terminating,}
+\DoxyCodeLine{00011\ \ \ \ \ intro,}
+\DoxyCodeLine{00012\ \ \ \ \ gameplay,}
+\DoxyCodeLine{00013\ \ \ \ \ paused,}
+\DoxyCodeLine{00014\ \ \ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \ \ gameState\ state\ =\ gameState::intro;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \ \ SDL\_Rect\ dispBounds;}
+\DoxyCodeLine{00031\ \ \ SDL\_Window*\ mainWindow;}
+\DoxyCodeLine{00036\ \ \ SDL\_Renderer*\ mainRenderer;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ std::array<Mix\_Music*,\ 4>\ bgm;}
+\DoxyCodeLine{00047\ \ \ std::array<Mix\_Music*,\ 6>\ silence;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ TTF\_Font*\ font;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{double}\ pixelSize;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ wm\ winMan;}
 \DoxyCodeLine{00063\ }
-\DoxyCodeLine{00068\ \ \ SDL\_Thread*\ loadThread;}
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00075\ \ \ game();}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00081\ \ \ \string~game();}
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00087\ \ \ \textcolor{keywordtype}{void}\ gameplay();}
-\DoxyCodeLine{00088\ \};}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00064\ \ \ SDL\_mutex*\ mutex;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ SDL\_Thread*\ loadThread;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ game();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \string~game();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{void}\ gameplay();}
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

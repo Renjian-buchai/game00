@@ -145,7 +145,7 @@ $doxydocs=
                     {
                       parameters => [
                         {
-                          name => 'context'
+                          name => '_context'
                         }
                       ],
                       doc => [
@@ -164,7 +164,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'context',
-                type => 'const game *'
+                type => 'game *'
               }
             ]
           },
@@ -240,7 +240,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -325,13 +325,13 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
               {
                 declaration_name => 'event',
-                type => 'const SDL_Event &'
+                type => 'SDL_Event &'
               }
             ],
             reimplements => {
@@ -577,6 +577,12 @@ $doxydocs=
           scope => 'game'
         },
         {
+          name => 'gameState',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'game'
+        },
+        {
           name => 'loadThread',
           virtualness => 'non_virtual',
           protection => 'public',
@@ -631,6 +637,42 @@ $doxydocs=
           scope => 'game'
         }
       ],
+      public_typedefs => {
+        members => [
+          {
+            kind => 'enum',
+            name => 'gameState',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            type => 'uint8_t',
+            values => [
+              {
+                name => 'terminating',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'intro',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'gameplay',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'paused',
+                brief => {},
+                detailed => {}
+              }
+            ]
+          }
+        ]
+      },
       public_methods => {
         members => [
           {
@@ -735,7 +777,8 @@ $doxydocs=
               ]
             },
             detailed => {},
-            type => 'gameState'
+            type => 'gameState',
+            initializer => '= gameState::intro'
           },
           {
             kind => 'variable',
@@ -1142,7 +1185,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'context',
-                type => 'const game *'
+                type => 'game *'
               }
             ]
           },
@@ -1215,7 +1258,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -1286,13 +1329,13 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
               {
                 declaration_name => 'event',
-                type => 'const SDL_Event &'
+                type => 'SDL_Event &'
               }
             ],
             reimplements => {
@@ -1856,7 +1899,7 @@ $doxydocs=
                     {
                       parameters => [
                         {
-                          name => 'context'
+                          name => '_context'
                         }
                       ],
                       doc => [
@@ -1875,7 +1918,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'context',
-                type => 'const game *'
+                type => 'game *'
               }
             ]
           },
@@ -1951,7 +1994,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -2043,13 +2086,13 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
               {
                 declaration_name => 'event',
-                type => 'const SDL_Event &'
+                type => 'SDL_Event &'
               }
             ],
             reimplements => {
@@ -2409,7 +2452,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'context',
-                type => 'const game *'
+                type => 'game *'
               }
             ]
           },
@@ -2485,7 +2528,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -2570,13 +2613,13 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
               {
                 declaration_name => 'event',
-                type => 'const SDL_Event &'
+                type => 'SDL_Event &'
               }
             ],
             reimplements => {
@@ -2795,11 +2838,6 @@ $doxydocs=
           name => 'pause_t',
           virtualness => 'non_virtual',
           protection => 'public'
-        },
-        {
-          name => 'shitcord_t',
-          virtualness => 'non_virtual',
-          protection => 'public'
         }
       ],
       inner => [
@@ -2959,7 +2997,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'gameContext',
-                type => 'const game *'
+                type => 'game *'
               }
             ]
           },
@@ -3025,7 +3063,7 @@ $doxydocs=
                 },
                 {
                   type => 'url',
-                  link => 'df/d1c/classwm_1a486c679090df44959f5bf6dd71db5983',
+                  link => 'df/d1c/classwm_1a54115bce16818acb350825256b11b2ce',
                   content => 'wm::update()'
                 },
                 {
@@ -3041,15 +3079,12 @@ $doxydocs=
                 }
               ]
             },
-            type => 'virtual const std::pair< scenes, sceneData >',
+            type => 'virtual std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
             ],
             reimplemented_by => [
-              {
-                name => 'update'
-              },
               {
                 name => 'update'
               },
@@ -3118,9 +3153,6 @@ $doxydocs=
               },
               {
                 name => 'render'
-              },
-              {
-                name => 'render'
               }
             ]
           },
@@ -3152,7 +3184,7 @@ $doxydocs=
                 },
                 {
                   type => 'url',
-                  link => 'df/d1c/classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca',
+                  link => 'df/d1c/classwm_1a7f282167450e97df5792d589c9ced058',
                   content => 'wm::handle()'
                 },
                 {
@@ -3168,18 +3200,15 @@ $doxydocs=
                 }
               ]
             },
-            type => 'virtual const std::pair< scenes, sceneData >',
+            type => 'virtual std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
               {
-                type => 'const SDL_Event &'
+                type => 'SDL_Event &'
               }
             ],
             reimplemented_by => [
-              {
-                name => 'handle'
-              },
               {
                 name => 'handle'
               },
@@ -3216,7 +3245,7 @@ $doxydocs=
               ]
             },
             detailed => {},
-            type => 'const game *'
+            type => 'game *'
           }
         ]
       },
@@ -3231,397 +3260,6 @@ $doxydocs=
           }
         ]
       },
-      detailed => {}
-    },
-    {
-      name => 'shitcord_t',
-      kind => 'class',
-      base => [
-        {
-          name => 'scene',
-          virtualness => 'non_virtual',
-          protection => 'public'
-        }
-      ],
-      inner => [
-      ],
-      includes => {
-        local => 'no',
-        name => 'shitcord.hh'
-      },
-      all_members => [
-        {
-          name => 'background',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'shitcord_t'
-        },
-        {
-          name => 'context',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'scene'
-        },
-        {
-          name => 'generateOptions',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'shitcord_t'
-        },
-        {
-          name => 'handle',
-          virtualness => 'virtual',
-          protection => 'public',
-          scope => 'shitcord_t'
-        },
-        {
-          name => 'loadTexture',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'scene'
-        },
-        {
-          name => 'render',
-          virtualness => 'virtual',
-          protection => 'public',
-          scope => 'shitcord_t'
-        },
-        {
-          name => 'scene',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'scene'
-        },
-        {
-          name => 'shitcord_t',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'shitcord_t'
-        },
-        {
-          name => 'update',
-          virtualness => 'virtual',
-          protection => 'public',
-          scope => 'shitcord_t'
-        },
-        {
-          name => '~scene',
-          virtualness => 'virtual',
-          protection => 'public',
-          scope => 'scene'
-        },
-        {
-          name => '~shitcord_t',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'shitcord_t'
-        }
-      ],
-      public_methods => {
-        members => [
-          {
-            kind => 'function',
-            name => 'shitcord_t',
-            virtualness => 'non_virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Construct a new shitcord t object. '
-                }
-              ]
-            },
-            detailed => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Called only once when WM is initialised'
-                },
-                {
-                  type => 'parbreak'
-                },
-                {
-                  params => [
-                    {
-                      parameters => [
-                        {
-                          name => 'context'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'text',
-                          content => 'game context '
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            const => 'no',
-            volatile => 'no',
-            parameters => [
-              {
-                declaration_name => 'context',
-                type => 'const game *'
-              }
-            ]
-          },
-          {
-            kind => 'function',
-            name => '~shitcord_t',
-            virtualness => 'non_virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Destroy the shitcord t object. '
-                }
-              ]
-            },
-            detailed => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Called only when the wm is destroyed '
-                }
-              ]
-            },
-            const => 'no',
-            volatile => 'no',
-            parameters => [
-            ]
-          },
-          {
-            kind => 'function',
-            name => 'update',
-            virtualness => 'virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Update logic for shitcord. '
-                }
-              ]
-            },
-            detailed => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Probably does the message appearing'
-                },
-                {
-                  type => 'parbreak'
-                },
-                {
-                  return => [
-                    {
-                      type => 'text',
-                      content => 'std::pair<scenes, sceneData> Returns the scene to be changed to, and the data that scene should contain '
-                    }
-                  ]
-                }
-              ]
-            },
-            type => 'const std::pair< scenes, sceneData >',
-            const => 'no',
-            volatile => 'no',
-            parameters => [
-            ],
-            reimplements => {
-              name => 'update'
-            }
-          },
-          {
-            kind => 'function',
-            name => 'render',
-            virtualness => 'virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Renders menu, and messages. '
-                }
-              ]
-            },
-            detailed => {},
-            type => 'void',
-            const => 'no',
-            volatile => 'no',
-            parameters => [
-            ],
-            reimplements => {
-              name => 'render'
-            }
-          },
-          {
-            kind => 'function',
-            name => 'handle',
-            virtualness => 'virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Handles hovers. '
-                }
-              ]
-            },
-            detailed => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  params => [
-                    {
-                      parameters => [
-                        {
-                          name => 'event'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'text',
-                          content => 'Event to be handled '
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  return => [
-                    {
-                      type => 'text',
-                      content => 'std::pair<scenes, sceneData>Returns the scene to be changed to, and the data that scene should contain '
-                    }
-                  ]
-                }
-              ]
-            },
-            type => 'const std::pair< scenes, sceneData >',
-            const => 'no',
-            volatile => 'no',
-            parameters => [
-              {
-                declaration_name => 'event',
-                type => 'const SDL_Event &'
-              }
-            ],
-            reimplements => {
-              name => 'handle'
-            }
-          },
-          {
-            kind => 'function',
-            name => 'generateOptions',
-            virtualness => 'non_virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Generates the option texture from the surface. '
-                }
-              ]
-            },
-            detailed => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  params => [
-                    {
-                      parameters => [
-                        {
-                          name => 'options'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'text',
-                          content => 'Options to be enumerated '
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  return => [
-                    {
-                      type => 'text',
-                      content => 'SDL_Texture* Texture, upscaled by a factor of 2. '
-                    }
-                  ]
-                }
-              ]
-            },
-            type => 'SDL_Texture *',
-            const => 'no',
-            volatile => 'no',
-            parameters => [
-              {
-                declaration_name => 'options',
-                type => 'const std::array< std::string, 3 >'
-              }
-            ]
-          }
-        ]
-      },
-      public_members => {
-        members => [
-          {
-            kind => 'variable',
-            name => 'background',
-            virtualness => 'non_virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {},
-            detailed => {},
-            type => 'SDL_Texture *'
-          }
-        ]
-      },
-      brief => {},
       detailed => {}
     },
     {
@@ -3685,148 +3323,35 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Construct a new slide. '
-                }
-              ]
-            },
-            detailed => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  params => [
-                    {
-                      parameters => [
-                        {
-                          name => 'fadeIn'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'text',
-                          content => 'Time taken for fade in (ms) '
-                        }
-                      ]
-                    },
-                    {
-                      parameters => [
-                        {
-                          name => 'fadeOut'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'parbreak'
-                        },
-                        {
-                          type => 'text',
-                          content => 'Time taken for fade out (ms) '
-                        }
-                      ]
-                    },
-                    {
-                      parameters => [
-                        {
-                          name => 'duration'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'parbreak'
-                        },
-                        {
-                          type => 'text',
-                          content => 'Duration that slide spends at full alpha (ms) '
-                        }
-                      ]
-                    },
-                    {
-                      parameters => [
-                        {
-                          name => 'texture'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'parbreak'
-                        },
-                        {
-                          type => 'text',
-                          content => 'Texture containing slide contents '
-                        }
-                      ]
-                    },
-                    {
-                      parameters => [
-                        {
-                          name => 'dest'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'parbreak'
-                        },
-                        {
-                          type => 'text',
-                          content => 'Location that the slide should be rendered. Default = empty; empty => full screen '
-                        }
-                      ]
-                    },
-                    {
-                      parameters => [
-                        {
-                          name => 'skippable'
-                        }
-                      ],
-                      doc => [
-                        {
-                          type => 'parbreak'
-                        },
-                        {
-                          type => 'text',
-                          content => 'Whether a slide can be skipped. Default = true '
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
+            brief => {},
+            detailed => {},
             const => 'no',
             volatile => 'no',
             parameters => [
               {
-                declaration_name => 'fadeIn',
-                type => 'const size_t'
+                declaration_name => '_fadeIn',
+                type => 'size_t'
               },
               {
-                declaration_name => 'fadeOut',
-                type => 'const size_t'
+                declaration_name => '_fadeOut',
+                type => 'size_t'
               },
               {
-                declaration_name => 'duration',
-                type => 'const size_t'
+                declaration_name => '_duration',
+                type => 'size_t'
               },
               {
-                declaration_name => 'texture',
+                declaration_name => '_texture',
                 type => 'SDL_Texture *'
               },
               {
-                declaration_name => 'dest',
-                type => 'const SDL_Rect',
+                declaration_name => '_dest',
+                type => 'SDL_Rect',
                 default_value => '{}'
               },
               {
                 declaration_name => 'skippable',
-                type => 'const bool',
+                type => 'bool',
                 default_value => 'true'
               }
             ]
@@ -3841,17 +3366,7 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Time taken for fade in. '
-                }
-              ]
-            },
+            brief => {},
             detailed => {},
             type => 'size_t'
           },
@@ -3861,17 +3376,7 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Duration slide spends at full alpha. '
-                }
-              ]
-            },
+            brief => {},
             detailed => {},
             type => 'size_t'
           },
@@ -3881,17 +3386,7 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Time taken for fade out. '
-                }
-              ]
-            },
+            brief => {},
             detailed => {},
             type => 'size_t'
           },
@@ -3901,17 +3396,7 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Texture containing slide contents. '
-                }
-              ]
-            },
+            brief => {},
             detailed => {},
             type => 'SDL_Texture *'
           },
@@ -3921,17 +3406,7 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Destination that the slide should be rendered. '
-                }
-              ]
-            },
+            brief => {},
             detailed => {},
             type => 'SDL_Rect'
           },
@@ -3941,17 +3416,7 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Whether a slide can be skipped. '
-                }
-              ]
-            },
+            brief => {},
             detailed => {},
             type => 'bool'
           }
@@ -4048,12 +3513,6 @@ $doxydocs=
         },
         {
           name => 'resume',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'wm'
-        },
-        {
-          name => 'shitcord',
           virtualness => 'non_virtual',
           protection => 'public',
           scope => 'wm'
@@ -4258,13 +3717,13 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
               {
                 declaration_name => 'event',
-                type => 'const SDL_Event &'
+                type => 'SDL_Event &'
               }
             ]
           },
@@ -4300,7 +3759,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'const std::pair< scenes, sceneData >',
+            type => 'std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -4470,16 +3929,6 @@ $doxydocs=
             brief => {},
             detailed => {},
             type => 'std::unique_ptr< intro_t >'
-          },
-          {
-            kind => 'variable',
-            name => 'shitcord',
-            virtualness => 'non_virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {},
-            detailed => {},
-            type => 'std::unique_ptr< shitcord_t >'
           },
           {
             kind => 'variable',
@@ -4699,16 +4148,9 @@ $doxydocs=
       includes => [
         {
           name => 'cstdint'
-        },
-        {
-          name => 'variant'
         }
       ],
       included_by => [
-        {
-          name => 'include/game.hh',
-          ref => 'd3/d0e/game_8hh'
-        },
         {
           name => 'include/scenes/scene.hh',
           ref => 'd5/dd8/scene_8hh'
@@ -4716,10 +4158,6 @@ $doxydocs=
         {
           name => 'include/wm.hh',
           ref => 'd3/d51/wm_8hh'
-        },
-        {
-          name => 'src/game/gameplay.cc',
-          ref => 'de/d8a/gameplay_8cc'
         }
       ],
       typedefs => {
@@ -4869,68 +4307,6 @@ $doxydocs=
                 name => 'pause',
                 brief => {},
                 detailed => {}
-              },
-              {
-                name => 'shitcord',
-                brief => {},
-                detailed => {}
-              }
-            ]
-          },
-          {
-            kind => 'enum',
-            name => 'gameState',
-            virtualness => 'non_virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'text',
-                  content => 'Current gamestate. '
-                }
-              ]
-            },
-            detailed => {
-              doc => [
-                {
-                  type => 'parbreak'
-                },
-                {
-                  type => 'xrefitem',
-                  content => [
-                    {
-                      type => 'text',
-                      content => 'Replaced with wm system '
-                    }
-                  ]
-                }
-              ]
-            },
-            type => 'uint8_t',
-            values => [
-              {
-                name => 'terminating',
-                brief => {},
-                detailed => {}
-              },
-              {
-                name => 'intro',
-                brief => {},
-                detailed => {}
-              },
-              {
-                name => 'gameplay',
-                brief => {},
-                detailed => {}
-              },
-              {
-                name => 'paused',
-                brief => {},
-                detailed => {}
               }
             ]
           }
@@ -4943,20 +4319,8 @@ $doxydocs=
       name => 'game.hh',
       includes => [
         {
-          name => 'array'
-        },
-        {
-          name => 'SDL.h'
-        },
-        {
-          name => 'SDL_mixer.h'
-        },
-        {
-          name => 'SDL_ttf.h'
-        },
-        {
-          name => 'enum.hh',
-          ref => 'd9/d05/enum_8hh'
+          name => 'pch.hh',
+          ref => 'd0/d8b/pch_8hh'
         },
         {
           name => 'wm.hh',
@@ -4995,10 +4359,67 @@ $doxydocs=
         {
           name => 'src/scenes/scene.cc',
           ref => 'd4/d11/scene_8cc'
+        }
+      ],
+      brief => {},
+      detailed => {}
+    },
+    {
+      name => 'pch.hh',
+      includes => [
+        {
+          name => 'array'
         },
         {
-          name => 'src/scenes/shitcord.cc',
-          ref => 'd0/dd7/shitcord_8cc'
+          name => 'cstdint'
+        },
+        {
+          name => 'iostream'
+        },
+        {
+          name => 'memory'
+        },
+        {
+          name => 'string'
+        },
+        {
+          name => 'utility'
+        },
+        {
+          name => 'variant'
+        },
+        {
+          name => 'vector'
+        },
+        {
+          name => 'SDL.h'
+        },
+        {
+          name => 'SDL_image.h'
+        },
+        {
+          name => 'SDL_mixer.h'
+        },
+        {
+          name => 'SDL_ttf.h'
+        }
+      ],
+      included_by => [
+        {
+          name => 'include/game.hh',
+          ref => 'd3/d0e/game_8hh'
+        },
+        {
+          name => 'include/scenes/scene.hh',
+          ref => 'd5/dd8/scene_8hh'
+        },
+        {
+          name => 'include/wm.hh',
+          ref => 'd3/d51/wm_8hh'
+        },
+        {
+          name => 'src/main.cc',
+          ref => 'd9/d0f/main_8cc'
         }
       ],
       brief => {},
@@ -5007,9 +4428,6 @@ $doxydocs=
     {
       name => 'explorer.hh',
       includes => [
-        {
-          name => 'vector'
-        },
         {
           name => 'scene.hh',
           ref => 'd5/dd8/scene_8hh'
@@ -5111,13 +4529,11 @@ $doxydocs=
       name => 'scene.hh',
       includes => [
         {
-          name => 'utility'
+          name => '../../include/pch.hh',
+          ref => 'd0/d8b/pch_8hh'
         },
         {
-          name => 'SDL.h'
-        },
-        {
-          name => 'enum.hh',
+          name => '../enum.hh',
           ref => 'd9/d05/enum_8hh'
         }
       ],
@@ -5137,10 +4553,6 @@ $doxydocs=
         {
           name => 'include/scenes/pause.hh',
           ref => 'd4/d90/pause_8hh'
-        },
-        {
-          name => 'include/scenes/shitcord.hh',
-          ref => 'd1/da8/shitcord_8hh'
         },
         {
           name => 'src/scenes/scene.cc',
@@ -5170,51 +4582,15 @@ $doxydocs=
       detailed => {}
     },
     {
-      name => 'shitcord.hh',
-      includes => [
-        {
-          name => 'array'
-        },
-        {
-          name => 'string'
-        },
-        {
-          name => 'scene.hh',
-          ref => 'd5/dd8/scene_8hh'
-        }
-      ],
-      included_by => [
-        {
-          name => 'include/wm.hh',
-          ref => 'd3/d51/wm_8hh'
-        },
-        {
-          name => 'src/game/wm.cc',
-          ref => 'df/d17/wm_8cc'
-        },
-        {
-          name => 'src/scenes/shitcord.cc',
-          ref => 'd0/dd7/shitcord_8cc'
-        }
-      ],
-      brief => {},
-      detailed => {}
-    },
-    {
       name => 'wm.hh',
       includes => [
         {
-          name => 'memory'
-        },
-        {
-          name => 'vector'
-        },
-        {
-          name => 'SDL.h'
-        },
-        {
           name => 'enum.hh',
           ref => 'd9/d05/enum_8hh'
+        },
+        {
+          name => 'pch.hh',
+          ref => 'd0/d8b/pch_8hh'
         },
         {
           name => 'scenes/explorer.hh',
@@ -5231,10 +4607,6 @@ $doxydocs=
         {
           name => 'scenes/pause.hh',
           ref => 'd4/d90/pause_8hh'
-        },
-        {
-          name => 'scenes/shitcord.hh',
-          ref => 'd1/da8/shitcord_8hh'
         }
       ],
       included_by => [
@@ -5259,9 +4631,6 @@ $doxydocs=
       includes => [
         {
           name => '../include/game.hh'
-        },
-        {
-          name => 'iostream'
         }
       ],
       included_by => [
@@ -5295,46 +4664,16 @@ $doxydocs=
       name => 'gameplay.cc',
       includes => [
         {
-          name => 'enum.hh',
-          ref => 'd9/d05/enum_8hh'
-        },
-        {
-          name => 'game.hh',
+          name => '../../include/game.hh',
           ref => 'd3/d0e/game_8hh'
         },
         {
-          name => 'wm.hh',
+          name => '../../include/wm.hh',
           ref => 'd3/d51/wm_8hh'
         }
       ],
       included_by => [
       ],
-      functions => {
-        members => [
-          {
-            kind => 'function',
-            name => 'changeScene',
-            virtualness => 'non_virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {},
-            detailed => {},
-            type => 'void',
-            const => 'no',
-            volatile => 'no',
-            parameters => [
-              {
-                declaration_name => 'sceneChangeData',
-                type => 'const std::pair< scenes, sceneData > &'
-              },
-              {
-                declaration_name => 'winMan',
-                type => 'wm &'
-              }
-            ]
-          }
-        ]
-      },
       brief => {},
       detailed => {}
     },
@@ -5342,11 +4681,11 @@ $doxydocs=
       name => 'pause.cc',
       includes => [
         {
-          name => 'scenes/pause.hh',
+          name => '../../include/scenes/pause.hh',
           ref => 'd4/d90/pause_8hh'
         },
         {
-          name => 'game.hh',
+          name => '../../include/game.hh',
           ref => 'd3/d0e/game_8hh'
         }
       ],
@@ -5359,38 +4698,28 @@ $doxydocs=
       name => 'wm.cc',
       includes => [
         {
-          name => 'wm.hh',
+          name => '../../include/wm.hh',
           ref => 'd3/d51/wm_8hh'
         },
         {
-          name => 'iostream'
-        },
-        {
-          name => 'SDL_image.h'
-        },
-        {
-          name => 'game.hh',
+          name => '../../include/game.hh',
           ref => 'd3/d0e/game_8hh'
         },
         {
-          name => 'scenes/explorer.hh',
+          name => '../../include/scenes/explorer.hh',
           ref => 'd4/d7c/explorer_8hh'
         },
         {
-          name => 'scenes/init.hh',
+          name => '../../include/scenes/init.hh',
           ref => 'dd/d82/init_8hh'
         },
         {
-          name => 'scenes/notepad.hh',
+          name => '../../include/scenes/notepad.hh',
           ref => 'd4/d54/notepad_8hh'
         },
         {
-          name => 'scenes/pause.hh',
+          name => '../../include/scenes/pause.hh',
           ref => 'd4/d90/pause_8hh'
-        },
-        {
-          name => 'scenes/shitcord.hh',
-          ref => 'd1/da8/shitcord_8hh'
         }
       ],
       included_by => [
@@ -5402,23 +4731,12 @@ $doxydocs=
       name => 'main.cc',
       includes => [
         {
-          name => 'iostream'
-        },
-        {
-          name => 'SDL.h'
-        },
-        {
-          name => 'SDL_image.h'
-        },
-        {
-          name => 'SDL_mixer.h'
-        },
-        {
-          name => 'SDL_ttf.h'
-        },
-        {
           name => 'game.hh',
           ref => 'd3/d0e/game_8hh'
+        },
+        {
+          name => 'pch.hh',
+          ref => 'd0/d8b/pch_8hh'
         }
       ],
       included_by => [
@@ -5469,17 +4787,11 @@ $doxydocs=
       name => 'explorer.cc',
       includes => [
         {
-          name => 'scenes/explorer.hh',
+          name => '../../include/scenes/explorer.hh',
           ref => 'd4/d7c/explorer_8hh'
         },
         {
-          name => 'iostream'
-        },
-        {
-          name => 'SDL_image.h'
-        },
-        {
-          name => 'game.hh',
+          name => '../../include/game.hh',
           ref => 'd3/d0e/game_8hh'
         }
       ],
@@ -5514,14 +4826,11 @@ $doxydocs=
       name => 'init.cc',
       includes => [
         {
-          name => 'scenes/init.hh',
+          name => '../../include/scenes/init.hh',
           ref => 'dd/d82/init_8hh'
         },
         {
-          name => 'SDL_image.h'
-        },
-        {
-          name => 'game.hh',
+          name => '../../include/game.hh',
           ref => 'd3/d0e/game_8hh'
         }
       ],
@@ -5534,20 +4843,14 @@ $doxydocs=
       name => 'notepad.cc',
       includes => [
         {
-          name => 'scenes/notepad.hh',
+          name => '../../include/scenes/notepad.hh',
           ref => 'd4/d54/notepad_8hh'
         },
         {
           name => 'fstream'
         },
         {
-          name => 'iostream'
-        },
-        {
-          name => 'SDL_image.h'
-        },
-        {
-          name => 'game.hh',
+          name => '../../include/game.hh',
           ref => 'd3/d0e/game_8hh'
         }
       ],
@@ -5560,40 +4863,11 @@ $doxydocs=
       name => 'scene.cc',
       includes => [
         {
-          name => 'scenes/scene.hh',
+          name => '../../include/scenes/scene.hh',
           ref => 'd5/dd8/scene_8hh'
         },
         {
-          name => 'iostream'
-        },
-        {
-          name => 'SDL.h'
-        },
-        {
-          name => 'SDL_image.h'
-        },
-        {
-          name => 'game.hh',
-          ref => 'd3/d0e/game_8hh'
-        }
-      ],
-      included_by => [
-      ],
-      brief => {},
-      detailed => {}
-    },
-    {
-      name => 'shitcord.cc',
-      includes => [
-        {
-          name => 'scenes/shitcord.hh',
-          ref => 'd1/da8/shitcord_8hh'
-        },
-        {
-          name => 'SDL_image.h'
-        },
-        {
-          name => 'game.hh',
+          name => '../../include/game.hh',
           ref => 'd3/d0e/game_8hh'
         }
       ],
@@ -5606,43 +4880,6 @@ $doxydocs=
   groups => [
   ],
   pages => [
-    {
-      name => 'deprecated',
-      title4 => 'Deprecated List',
-      detailed => {
-        doc => [
-          {
-            type => 'parbreak'
-          },
-          {
-            type => 'text',
-            content => 'Member '
-          },
-          {
-            type => 'ref',
-            link => 'd9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73',
-            content => [
-              {
-                type => 'text',
-                content => 'gameState'
-              }
-            ]
-          },
-          {
-            type => 'text',
-            content => ' '
-          },
-          {
-            type => 'anchor',
-            id => 'da/d58/deprecated_1_deprecated000001'
-          },
-          {
-            type => 'text',
-            content => 'Replaced with wm system '
-          }
-        ]
-      }
-    }
   ]
 };
 1;

@@ -1,15 +1,10 @@
 #if !defined(SHITCORD_HH)
 #define SHITCORD_HH
 
-#include <array>
-#include <string>
-
 #include "scene.hh"
 
 class shitcord_t : public scene {
  public:
-  SDL_Texture* background;
-
   /**
    * @brief Construct a new shitcord t object
    *
@@ -17,7 +12,7 @@ class shitcord_t : public scene {
    *
    * @param context game context
    */
-  shitcord_t(const game* context);
+  shitcord_t(game* context);
 
   /**
    * @brief Destroy the shitcord t object
@@ -34,7 +29,7 @@ class shitcord_t : public scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  const std::pair<scenes, sceneData> update() override;
+  std::pair<scenes, sceneData> update() override;
 
   /**
    * @brief Renders menu, and messages
@@ -48,15 +43,7 @@ class shitcord_t : public scene {
    * @return std::pair<scenes, sceneData>Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  const std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
-
-  /**
-   * @brief Generates the option texture from the surface
-   *
-   * @param options Options to be enumerated
-   * @return SDL_Texture* Texture, upscaled by a factor of 2.
-   */
-  SDL_Texture* generateOptions(const std::array<std::string, 3> options);
+  std::pair<scenes, sceneData> handle(SDL_Event& event) override;
 };
 
 #endif

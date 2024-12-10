@@ -14,7 +14,7 @@ Inherits \fBscene\fP\&.
 
 .in +1c
 .ti -1c
-.RI "\fBpause_t\fP (const \fBgame\fP *\fBcontext\fP)"
+.RI "\fBpause_t\fP (\fBgame\fP *\fBcontext\fP)"
 .br
 .RI "Construct a new pause t object\&. "
 .ti -1c
@@ -22,7 +22,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Destroy the pause t object\&. "
 .ti -1c
-.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
 .br
 .RI "Update logic for the pause menu\&. "
 .ti -1c
@@ -30,7 +30,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Renders menu, and buttons\&. "
 .ti -1c
-.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
 .br
 .RI "Handles hovers\&. "
 .in -1c
@@ -42,7 +42,7 @@ Public Member Functions inherited from \fBscene\fP
 .br
 .RI "Loads texture based on path\&. "
 .ti -1c
-.RI "\fBscene\fP (const \fBgame\fP *gameContext)"
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
 .br
 .RI "Construct a new scene object\&. "
 .ti -1c
@@ -93,13 +93,13 @@ Public Member Functions inherited from \fBscene\fP
 Public Attributes inherited from \fBscene\fP
 .in +1c
 .ti -1c
-.RI "const \fBgame\fP * \fBcontext\fP"
+.RI "\fBgame\fP * \fBcontext\fP"
 .br
 .RI "Game context\&. "
 .in -1c
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "pause_t::pause_t (const \fBgame\fP * context)"
+.SS "pause_t::pause_t (\fBgame\fP * context)"
 
 .PP
 Construct a new pause t object\&. Called only once when WM is initialised
@@ -117,7 +117,7 @@ Construct a new pause t object\&. Called only once when WM is initialised
 Destroy the pause t object\&. Called only when the wm is destroyed 
 .SH "Member Function Documentation"
 .PP 
-.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > pause_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > pause_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Handles hovers\&. 
@@ -141,7 +141,7 @@ Implements \fBscene\fP\&.
 Renders menu, and buttons\&. 
 .PP
 Implements \fBscene\fP\&.
-.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > pause_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > pause_t::update ()\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Update logic for the pause menu\&. Realistically, does absolutely nothing\&.

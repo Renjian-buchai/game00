@@ -14,7 +14,7 @@ Inherits \fBscene\fP\&.
 
 .in +1c
 .ti -1c
-.RI "\fBnotepad_t\fP (const \fBgame\fP *\fBcontext\fP)"
+.RI "\fBnotepad_t\fP (\fBgame\fP *\fBcontext\fP)"
 .br
 .RI "Construct a new notepad t object\&. "
 .ti -1c
@@ -22,7 +22,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Destroy the notepad t object\&. "
 .ti -1c
-.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
 .br
 .RI "Checks if the current data is the same as the data stored previously\&. "
 .ti -1c
@@ -30,7 +30,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Renders notepad, and entry\&. "
 .ti -1c
-.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
 .br
 .RI "Handles event\&. "
 .in -1c
@@ -42,7 +42,7 @@ Public Member Functions inherited from \fBscene\fP
 .br
 .RI "Loads texture based on path\&. "
 .ti -1c
-.RI "\fBscene\fP (const \fBgame\fP *gameContext)"
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
 .br
 .RI "Construct a new scene object\&. "
 .ti -1c
@@ -82,7 +82,7 @@ Public Member Functions inherited from \fBscene\fP
 Public Attributes inherited from \fBscene\fP
 .in +1c
 .ti -1c
-.RI "const \fBgame\fP * \fBcontext\fP"
+.RI "\fBgame\fP * \fBcontext\fP"
 .br
 .RI "Game context\&. "
 .in -1c
@@ -96,7 +96,7 @@ Public Attributes inherited from \fBscene\fP
 .in -1c
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "notepad_t::notepad_t (const \fBgame\fP * context)"
+.SS "notepad_t::notepad_t (\fBgame\fP * context)"
 
 .PP
 Construct a new notepad t object\&. Called only once when WM is initialised
@@ -104,7 +104,7 @@ Construct a new notepad t object\&. Called only once when WM is initialised
 .PP
 \fBParameters\fP
 .RS 4
-\fIcontext\fP game context 
+\fI_context\fP game context 
 .RE
 .PP
 
@@ -114,7 +114,7 @@ Construct a new notepad t object\&. Called only once when WM is initialised
 Destroy the notepad t object\&. Called only when the wm is destroyed 
 .SH "Member Function Documentation"
 .PP 
-.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > notepad_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > notepad_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Handles event\&. Realistically, does nothing unless I add scrolling\&.
@@ -139,7 +139,7 @@ Implements \fBscene\fP\&.
 Renders notepad, and entry\&. 
 .PP
 Implements \fBscene\fP\&.
-.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > notepad_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > notepad_t::update ()\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Checks if the current data is the same as the data stored previously\&. Does nothing if it's the same\&.

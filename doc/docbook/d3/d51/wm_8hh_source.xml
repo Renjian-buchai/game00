@@ -5,53 +5,42 @@
 Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(WM_HH)</emphasis>
 2 <emphasis role="preprocessor">#define&#32;WM_HH</emphasis>
 3 
-4 <emphasis role="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
-5 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
-6 
-7 <emphasis role="preprocessor">#include&#32;&quot;SDL.h&quot;</emphasis>
-8 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_enum_8hh">enum.hh</link>&quot;</emphasis>
-9 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_explorer_8hh">scenes/explorer.hh</link>&quot;</emphasis>
-10 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_init_8hh">scenes/init.hh</link>&quot;</emphasis>
-11 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_notepad_8hh">scenes/notepad.hh</link>&quot;</emphasis>
-12 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_pause_8hh">scenes/pause.hh</link>&quot;</emphasis>
-13 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_shitcord_8hh">scenes/shitcord.hh</link>&quot;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_enum_8hh">enum.hh</link>&quot;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_pch_8hh">pch.hh</link>&quot;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_explorer_8hh">scenes/explorer.hh</link>&quot;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_init_8hh">scenes/init.hh</link>&quot;</emphasis>
+8 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_notepad_8hh">scenes/notepad.hh</link>&quot;</emphasis>
+9 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_pause_8hh">scenes/pause.hh</link>&quot;</emphasis>
+10 
+11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classgame">game</link>;
+12 
+13 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classscene">scene</link>;
 14 
-15 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classgame">game</link>;
-16 
-17 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classscene">scene</link>;
-18 
-19 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classwm">wm</link>&#32;{
-20 &#32;<emphasis role="keyword">public</emphasis>:
-24 &#32;&#32;std::vector&lt;std::pair&lt;SDL_Texture*,&#32;SDL_Rect&gt;&gt;&#32;<link linkend="_classwm_1aab22b0e4971405b7fe57e8409e68793b">icons</link>;
-25 
-29 &#32;&#32;SDL_Texture*&#32;<link linkend="_classwm_1a718f320271041e9c08cdfbdc58cc3a64">OSOverlay</link>;
-30 
-34 &#32;&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3">context</link>;
-35 
+15 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classwm">wm</link>&#32;{
+16 &#32;<emphasis role="keyword">public</emphasis>:
+21 &#32;&#32;std::vector&lt;std::pair&lt;SDL_Texture*,&#32;SDL_Rect&gt;&gt;&#32;<link linkend="_classwm_1aab22b0e4971405b7fe57e8409e68793b">icons</link>;
+22 
+27 &#32;&#32;SDL_Texture*&#32;<link linkend="_classwm_1a718f320271041e9c08cdfbdc58cc3a64">OSOverlay</link>;
+28 
+33 &#32;&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3">context</link>;
+34 
 39 &#32;&#32;SDL_Rect&#32;<link linkend="_classwm_1a50c97d11917956cf0abb63be275faddc">pauseBounds</link>;
 40 
-44 &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classwm_1a205790bf574b52cabae2bca77b17c262">wasSilence</link>&#32;=&#32;0;
-45 
-51 &#32;&#32;std::unique_ptr&lt;explorer_t&gt;&#32;<link linkend="_classwm_1adbe11e0ba621af1815bf54fde8244645">explorer</link>;
-52 &#32;&#32;std::unique_ptr&lt;notepad_t&gt;&#32;<link linkend="_classwm_1a041f88bc8a008ca3baca643fb12a1004">notepad</link>;
-53 &#32;&#32;std::unique_ptr&lt;pause_t&gt;&#32;<link linkend="_classwm_1a856235eafcdb96ed22216d2b53fb3b24">pause</link>;
-54 &#32;&#32;std::unique_ptr&lt;intro_t&gt;&#32;<link linkend="_classwm_1a139e824c013da025cafc10d68b73aa34">intro</link>;
-55 &#32;&#32;std::unique_ptr&lt;shitcord_t&gt;&#32;<link linkend="_classwm_1a5b53423d16a28cc8c0eec221572fb454">shitcord</link>;
-56 
-60 &#32;&#32;<link linkend="_classscene">scene</link>*&#32;<link linkend="_classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7">current</link>;
-61 
-65 &#32;&#32;<link linkend="_classscene">scene</link>*&#32;<link linkend="_classwm_1aeedc8b11c2b96839e921b7f82840656e">resume</link>;
-66 
-72 &#32;&#32;<link linkend="_classwm_1ae80ff7518d15add5e8a639bc1b509ed4">wm</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
-73 
-81 &#32;&#32;<link linkend="_classwm_1ae80ff7518d15add5e8a639bc1b509ed4">wm</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3">context</link>);
-82 
-88 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classwm_1aa9731642bc561de498bc559f0d5ab84e">render</link>();
-89 
-97 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event);
-98 
-105 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classwm_1a486c679090df44959f5bf6dd71db5983">update</link>();
-106 };
-107 
-108 <emphasis role="preprocessor">#endif</emphasis>
+45 &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classwm_1a205790bf574b52cabae2bca77b17c262">wasSilence</link>&#32;=&#32;0;
+46 
+53 &#32;&#32;std::unique_ptr&lt;explorer_t&gt;&#32;<link linkend="_classwm_1adbe11e0ba621af1815bf54fde8244645">explorer</link>;
+54 &#32;&#32;std::unique_ptr&lt;notepad_t&gt;&#32;<link linkend="_classwm_1a041f88bc8a008ca3baca643fb12a1004">notepad</link>;
+55 &#32;&#32;std::unique_ptr&lt;pause_t&gt;&#32;<link linkend="_classwm_1a856235eafcdb96ed22216d2b53fb3b24">pause</link>;
+56 &#32;&#32;std::unique_ptr&lt;intro_t&gt;&#32;<link linkend="_classwm_1a139e824c013da025cafc10d68b73aa34">intro</link>;
+57 
+62 &#32;&#32;<link linkend="_classscene">scene</link>*&#32;<link linkend="_classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7">current</link>;
+67 &#32;&#32;<link linkend="_classscene">scene</link>*&#32;<link linkend="_classwm_1aeedc8b11c2b96839e921b7f82840656e">resume</link>;
+74 &#32;&#32;<link linkend="_classwm_1ae80ff7518d15add5e8a639bc1b509ed4">wm</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+82 &#32;&#32;<link linkend="_classwm_1ae80ff7518d15add5e8a639bc1b509ed4">wm</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3">context</link>);
+89 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classwm_1aa9731642bc561de498bc559f0d5ab84e">render</link>();
+97 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classwm_1a7f282167450e97df5792d589c9ced058">handle</link>(SDL_Event&amp;&#32;event);
+104 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classwm_1a54115bce16818acb350825256b11b2ce">update</link>();
+105 };
+106 
+107 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

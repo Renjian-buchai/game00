@@ -6,16 +6,15 @@
 <filterAttribute>doxygen</filterAttribute>
 <toc>
 <section title="Game 0.1.0" ref="index.html">
-<section title="Deprecated List" ref="da/d58/deprecated.html"/>
 <section title="Classes" ref="annotated.html">
 <section title="Class List" ref="annotated.html">
 <section title="explorer_t" ref="d5/db0/classexplorer__t.html">
-<section title="explorer_t" ref="d5/db0/classexplorer__t.html#a2924ed013429848f0cbeb1383449e505"/>
+<section title="explorer_t" ref="d5/db0/classexplorer__t.html#a75961f78eebb4030c1f2d7b78929a2b6"/>
 <section title="~explorer_t" ref="d5/db0/classexplorer__t.html#a44fc2dcde828c85abf707bb5ff024b50"/>
 <section title="createFilesystemEntry" ref="d5/db0/classexplorer__t.html#a37bd5f0b908b0c66a411c873733e3f5a"/>
-<section title="handle" ref="d5/db0/classexplorer__t.html#a87452daa84e4b7145c1f50a812010824"/>
+<section title="handle" ref="d5/db0/classexplorer__t.html#add68d9bf9c0e52805f4bb714b1133882"/>
 <section title="render" ref="d5/db0/classexplorer__t.html#aeeb2aa5c58317a29463ce527b2ade757"/>
-<section title="update" ref="d5/db0/classexplorer__t.html#a9fd3219c8a05b381b5e8ee292000c1cb"/>
+<section title="update" ref="d5/db0/classexplorer__t.html#a099b72112db6de2a3d8f6ea0b724fae5"/>
 <section title="background" ref="d5/db0/classexplorer__t.html#a29be9f9a5ec3090c4998f9cb7277cc93"/>
 <section title="downloadBounds" ref="d5/db0/classexplorer__t.html#ab134139610d2267ca833abcd44b39aac"/>
 <section title="items" ref="d5/db0/classexplorer__t.html#aea965f72ccf4510850fc844e97c51c19"/>
@@ -23,6 +22,12 @@
 <section title="saveData" ref="d5/db0/classexplorer__t.html#a40830fddee0e376a60dba4876b7bc7e3"/>
 </section>
 <section title="game" ref="d0/d51/classgame.html">
+<section title="gameState" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61">
+<section title="terminating" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"/>
+<section title="intro" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"/>
+<section title="gameplay" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"/>
+<section title="paused" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"/>
+</section>
 <section title="game" ref="d0/d51/classgame.html#ad9c102127b5038f880067ad6c9198d38"/>
 <section title="~game" ref="d0/d51/classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07"/>
 <section title="gameplay" ref="d0/d51/classgame.html#abf967ec7fa712fde980d9c399e4f778d"/>
@@ -40,7 +45,7 @@
 </section>
 <section title="intro_t" ref="d9/dea/classintro__t.html">
 <section title="slide" ref="da/dec/classintro__t_1_1slide.html">
-<section title="slide" ref="da/dec/classintro__t_1_1slide.html#a32664b85dc6014b6614477f315d81ee5"/>
+<section title="slide" ref="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"/>
 <section title="dest" ref="da/dec/classintro__t_1_1slide.html#a7c36e704b33011d1088d093f88e436bf"/>
 <section title="duration" ref="da/dec/classintro__t_1_1slide.html#a0a4846e82f88facedf50da06b6dd061b"/>
 <section title="fadeIn" ref="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"/>
@@ -53,24 +58,24 @@
 <section title="VERTICAL" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc"/>
 <section title="BOTH" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"/>
 </section>
-<section title="intro_t" ref="d9/dea/classintro__t.html#a820567ef1f00c44713099e17180f1414"/>
+<section title="intro_t" ref="d9/dea/classintro__t.html#ad12e48028d1cc4b1c288dab77dbe193d"/>
 <section title="~intro_t" ref="d9/dea/classintro__t.html#a56e63618edf895c263cda8a8c8ef45e6"/>
 <section title="addSlide" ref="d9/dea/classintro__t.html#a0439809e2c67c40ea20757ffed70968c"/>
 <section title="centreRect" ref="d9/dea/classintro__t.html#a427b58b3e041bb4672278b9e422b8292"/>
-<section title="handle" ref="d9/dea/classintro__t.html#a3a698a22fdd0e66f603955af8ced0186"/>
+<section title="handle" ref="d9/dea/classintro__t.html#adda2b278aae9bae71b89194313bc23a9"/>
 <section title="render" ref="d9/dea/classintro__t.html#add93912d666cc242e170f15e7e03a808"/>
 <section title="slideShow" ref="d9/dea/classintro__t.html#a104f915a0a592c0db524a70ffc666a60"/>
-<section title="update" ref="d9/dea/classintro__t.html#a0939d6693673f0f0d9dfc0e9fd8e224c"/>
+<section title="update" ref="d9/dea/classintro__t.html#a09c3876e890a37be7a17dbbb0084d4da"/>
 <section title="skip" ref="d9/dea/classintro__t.html#a1543b2b845c6999165123b34608fcf25"/>
 <section title="slides" ref="d9/dea/classintro__t.html#a97b511d587ca8e05515e35e6418cf1d0"/>
 <section title="startTime" ref="d9/dea/classintro__t.html#a6db4493f9b8695a1bed2f16f3af45870"/>
 </section>
 <section title="notepad_t" ref="d9/d03/classnotepad__t.html">
-<section title="notepad_t" ref="d9/d03/classnotepad__t.html#ae910b670eb9800dc5f998943efc80371"/>
+<section title="notepad_t" ref="d9/d03/classnotepad__t.html#aca34ffdf14d61518257d5ff32cbda77f"/>
 <section title="~notepad_t" ref="d9/d03/classnotepad__t.html#ac047cc39e7ff3f954057314e6298d6b1"/>
-<section title="handle" ref="d9/d03/classnotepad__t.html#a3fa185451691009d01df66441f2accb4"/>
+<section title="handle" ref="d9/d03/classnotepad__t.html#ad98a24e386e2a0363a44e67054988160"/>
 <section title="render" ref="d9/d03/classnotepad__t.html#a08c6c7349f0912c9f547b25fa8189f9a"/>
-<section title="update" ref="d9/d03/classnotepad__t.html#acb29bf9572b3733208643185c76e7f17"/>
+<section title="update" ref="d9/d03/classnotepad__t.html#ab177e5696b0a4925d4309ce90e5f66aa"/>
 <section title="background" ref="d9/d03/classnotepad__t.html#a4416b91e1e20a180f9a00855b6f9c459"/>
 <section title="currentData" ref="d9/d03/classnotepad__t.html#a71add6ff4e2c0947e3043df553695bd1"/>
 <section title="entry" ref="d9/d03/classnotepad__t.html#a6766a5c1170ee8fab7ecdb209f0d2076"/>
@@ -79,11 +84,11 @@
 <section title="prevData" ref="d9/d03/classnotepad__t.html#ade41e5a025182a3a851e078e8fbbe4af"/>
 </section>
 <section title="pause_t" ref="dc/daa/classpause__t.html">
-<section title="pause_t" ref="dc/daa/classpause__t.html#afff933b3fe3682e13e095d5b867d41e7"/>
+<section title="pause_t" ref="dc/daa/classpause__t.html#a840256e71d9ff0f489090fff8f07c946"/>
 <section title="~pause_t" ref="dc/daa/classpause__t.html#a8e6961a2a9fb61c99e92face62126593"/>
-<section title="handle" ref="dc/daa/classpause__t.html#a0945dd5c1b896cd92d9d7454c13f577e"/>
+<section title="handle" ref="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"/>
 <section title="render" ref="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"/>
-<section title="update" ref="dc/daa/classpause__t.html#a7975d907b119f75c9b87fe6f3ceb7d2c"/>
+<section title="update" ref="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"/>
 <section title="exit" ref="dc/daa/classpause__t.html#a148437ac9cfb0970822384f99c03ac77"/>
 <section title="exitHover" ref="dc/daa/classpause__t.html#a3e67f3211198db082a0ac245dad42212"/>
 <section title="exitPos" ref="dc/daa/classpause__t.html#a9034485c8caf7cd1dfddf7f300542747"/>
@@ -95,29 +100,20 @@
 <section title="resumeState" ref="dc/daa/classpause__t.html#af9103128c6bc5af691f2fc46209e3217"/>
 </section>
 <section title="scene" ref="df/db1/classscene.html">
-<section title="scene" ref="df/db1/classscene.html#ad7ef1968aa37f2e796fec45026b9ade0"/>
+<section title="scene" ref="df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90"/>
 <section title="~scene" ref="df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496"/>
-<section title="handle" ref="df/db1/classscene.html#a1a6ee7a03d72487127dbfa6f79f0db9d"/>
+<section title="handle" ref="df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2"/>
 <section title="loadTexture" ref="df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061"/>
 <section title="render" ref="df/db1/classscene.html#a7c218380f822d46bee781520e855a7de"/>
-<section title="update" ref="df/db1/classscene.html#a668e98e3a86c4413fa3291c83fcc5378"/>
-<section title="context" ref="df/db1/classscene.html#a1659b1da41590a2ac67f9927beb823ea"/>
-</section>
-<section title="shitcord_t" ref="de/deb/classshitcord__t.html">
-<section title="shitcord_t" ref="de/deb/classshitcord__t.html#aac03a23af4132dd92108d20b30a6be0d"/>
-<section title="~shitcord_t" ref="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"/>
-<section title="generateOptions" ref="de/deb/classshitcord__t.html#a94654f5d652fb31631e2ff17e5c3776b"/>
-<section title="handle" ref="de/deb/classshitcord__t.html#a26224292a18d8df42b361a1f3b333ed8"/>
-<section title="render" ref="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"/>
-<section title="update" ref="de/deb/classshitcord__t.html#a13bf62175766d1ebc873c3a8ac8a1b55"/>
-<section title="background" ref="de/deb/classshitcord__t.html#a18f38f0c4bb56eeffdd3ef8657626081"/>
+<section title="update" ref="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"/>
+<section title="context" ref="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"/>
 </section>
 <section title="wm" ref="df/d1c/classwm.html">
 <section title="wm" ref="df/d1c/classwm.html#ae80ff7518d15add5e8a639bc1b509ed4"/>
 <section title="wm" ref="df/d1c/classwm.html#a963abfdd7d229db5869e59a97a301f47"/>
-<section title="handle" ref="df/d1c/classwm.html#ae5f8a28b02b3bc82d4422c6ea0e745ca"/>
+<section title="handle" ref="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"/>
 <section title="render" ref="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"/>
-<section title="update" ref="df/d1c/classwm.html#a486c679090df44959f5bf6dd71db5983"/>
+<section title="update" ref="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"/>
 <section title="context" ref="df/d1c/classwm.html#af9afae9fdbb9db6fdb6d62bf934ab5c3"/>
 <section title="current" ref="df/d1c/classwm.html#a2abf8c7eedd04f896cbf0ef50358f1c7"/>
 <section title="explorer" ref="df/d1c/classwm.html#adbe11e0ba621af1815bf54fde8244645"/>
@@ -128,7 +124,6 @@
 <section title="pause" ref="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"/>
 <section title="pauseBounds" ref="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"/>
 <section title="resume" ref="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"/>
-<section title="shitcord" ref="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"/>
 <section title="wasSilence" ref="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"/>
 </section>
 <section title="wmInitData" ref="d6/d16/structwm_init_data.html">
@@ -148,7 +143,6 @@
 <section title="intro_t" ref="d9/dea/classintro__t.html"/>
 <section title="notepad_t" ref="d9/d03/classnotepad__t.html"/>
 <section title="pause_t" ref="dc/daa/classpause__t.html"/>
-<section title="shitcord_t" ref="de/deb/classshitcord__t.html"/>
 </section>
 <section title="intro_t::slide" ref="da/dec/classintro__t_1_1slide.html"/>
 <section title="wm" ref="df/d1c/classwm.html"/>
@@ -167,12 +161,12 @@
 <section title="scenes" ref="dir_9551f21d874a3950d142803a40139414.html">
 <section title="explorer.hh" ref="d4/d7c/explorer_8hh.html">
 <section title="explorer_t" ref="d5/db0/classexplorer__t.html">
-<section title="explorer_t" ref="d5/db0/classexplorer__t.html#a2924ed013429848f0cbeb1383449e505"/>
+<section title="explorer_t" ref="d5/db0/classexplorer__t.html#a75961f78eebb4030c1f2d7b78929a2b6"/>
 <section title="~explorer_t" ref="d5/db0/classexplorer__t.html#a44fc2dcde828c85abf707bb5ff024b50"/>
 <section title="createFilesystemEntry" ref="d5/db0/classexplorer__t.html#a37bd5f0b908b0c66a411c873733e3f5a"/>
-<section title="handle" ref="d5/db0/classexplorer__t.html#a87452daa84e4b7145c1f50a812010824"/>
+<section title="handle" ref="d5/db0/classexplorer__t.html#add68d9bf9c0e52805f4bb714b1133882"/>
 <section title="render" ref="d5/db0/classexplorer__t.html#aeeb2aa5c58317a29463ce527b2ade757"/>
-<section title="update" ref="d5/db0/classexplorer__t.html#a9fd3219c8a05b381b5e8ee292000c1cb"/>
+<section title="update" ref="d5/db0/classexplorer__t.html#a099b72112db6de2a3d8f6ea0b724fae5"/>
 <section title="background" ref="d5/db0/classexplorer__t.html#a29be9f9a5ec3090c4998f9cb7277cc93"/>
 <section title="downloadBounds" ref="d5/db0/classexplorer__t.html#ab134139610d2267ca833abcd44b39aac"/>
 <section title="items" ref="d5/db0/classexplorer__t.html#aea965f72ccf4510850fc844e97c51c19"/>
@@ -183,7 +177,7 @@
 <section title="init.hh" ref="dd/d82/init_8hh.html">
 <section title="intro_t" ref="d9/dea/classintro__t.html">
 <section title="slide" ref="da/dec/classintro__t_1_1slide.html">
-<section title="slide" ref="da/dec/classintro__t_1_1slide.html#a32664b85dc6014b6614477f315d81ee5"/>
+<section title="slide" ref="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"/>
 <section title="dest" ref="da/dec/classintro__t_1_1slide.html#a7c36e704b33011d1088d093f88e436bf"/>
 <section title="duration" ref="da/dec/classintro__t_1_1slide.html#a0a4846e82f88facedf50da06b6dd061b"/>
 <section title="fadeIn" ref="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"/>
@@ -196,20 +190,20 @@
 <section title="VERTICAL" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc"/>
 <section title="BOTH" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"/>
 </section>
-<section title="intro_t" ref="d9/dea/classintro__t.html#a820567ef1f00c44713099e17180f1414"/>
+<section title="intro_t" ref="d9/dea/classintro__t.html#ad12e48028d1cc4b1c288dab77dbe193d"/>
 <section title="~intro_t" ref="d9/dea/classintro__t.html#a56e63618edf895c263cda8a8c8ef45e6"/>
 <section title="addSlide" ref="d9/dea/classintro__t.html#a0439809e2c67c40ea20757ffed70968c"/>
 <section title="centreRect" ref="d9/dea/classintro__t.html#a427b58b3e041bb4672278b9e422b8292"/>
-<section title="handle" ref="d9/dea/classintro__t.html#a3a698a22fdd0e66f603955af8ced0186"/>
+<section title="handle" ref="d9/dea/classintro__t.html#adda2b278aae9bae71b89194313bc23a9"/>
 <section title="render" ref="d9/dea/classintro__t.html#add93912d666cc242e170f15e7e03a808"/>
 <section title="slideShow" ref="d9/dea/classintro__t.html#a104f915a0a592c0db524a70ffc666a60"/>
-<section title="update" ref="d9/dea/classintro__t.html#a0939d6693673f0f0d9dfc0e9fd8e224c"/>
+<section title="update" ref="d9/dea/classintro__t.html#a09c3876e890a37be7a17dbbb0084d4da"/>
 <section title="skip" ref="d9/dea/classintro__t.html#a1543b2b845c6999165123b34608fcf25"/>
 <section title="slides" ref="d9/dea/classintro__t.html#a97b511d587ca8e05515e35e6418cf1d0"/>
 <section title="startTime" ref="d9/dea/classintro__t.html#a6db4493f9b8695a1bed2f16f3af45870"/>
 </section>
 <section title="intro_t::slide" ref="da/dec/classintro__t_1_1slide.html">
-<section title="slide" ref="da/dec/classintro__t_1_1slide.html#a32664b85dc6014b6614477f315d81ee5"/>
+<section title="slide" ref="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"/>
 <section title="dest" ref="da/dec/classintro__t_1_1slide.html#a7c36e704b33011d1088d093f88e436bf"/>
 <section title="duration" ref="da/dec/classintro__t_1_1slide.html#a0a4846e82f88facedf50da06b6dd061b"/>
 <section title="fadeIn" ref="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"/>
@@ -220,11 +214,11 @@
 </section>
 <section title="notepad.hh" ref="d4/d54/notepad_8hh.html">
 <section title="notepad_t" ref="d9/d03/classnotepad__t.html">
-<section title="notepad_t" ref="d9/d03/classnotepad__t.html#ae910b670eb9800dc5f998943efc80371"/>
+<section title="notepad_t" ref="d9/d03/classnotepad__t.html#aca34ffdf14d61518257d5ff32cbda77f"/>
 <section title="~notepad_t" ref="d9/d03/classnotepad__t.html#ac047cc39e7ff3f954057314e6298d6b1"/>
-<section title="handle" ref="d9/d03/classnotepad__t.html#a3fa185451691009d01df66441f2accb4"/>
+<section title="handle" ref="d9/d03/classnotepad__t.html#ad98a24e386e2a0363a44e67054988160"/>
 <section title="render" ref="d9/d03/classnotepad__t.html#a08c6c7349f0912c9f547b25fa8189f9a"/>
-<section title="update" ref="d9/d03/classnotepad__t.html#acb29bf9572b3733208643185c76e7f17"/>
+<section title="update" ref="d9/d03/classnotepad__t.html#ab177e5696b0a4925d4309ce90e5f66aa"/>
 <section title="background" ref="d9/d03/classnotepad__t.html#a4416b91e1e20a180f9a00855b6f9c459"/>
 <section title="currentData" ref="d9/d03/classnotepad__t.html#a71add6ff4e2c0947e3043df553695bd1"/>
 <section title="entry" ref="d9/d03/classnotepad__t.html#a6766a5c1170ee8fab7ecdb209f0d2076"/>
@@ -235,11 +229,11 @@
 </section>
 <section title="pause.hh" ref="d4/d90/pause_8hh.html">
 <section title="pause_t" ref="dc/daa/classpause__t.html">
-<section title="pause_t" ref="dc/daa/classpause__t.html#afff933b3fe3682e13e095d5b867d41e7"/>
+<section title="pause_t" ref="dc/daa/classpause__t.html#a840256e71d9ff0f489090fff8f07c946"/>
 <section title="~pause_t" ref="dc/daa/classpause__t.html#a8e6961a2a9fb61c99e92face62126593"/>
-<section title="handle" ref="dc/daa/classpause__t.html#a0945dd5c1b896cd92d9d7454c13f577e"/>
+<section title="handle" ref="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"/>
 <section title="render" ref="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"/>
-<section title="update" ref="dc/daa/classpause__t.html#a7975d907b119f75c9b87fe6f3ceb7d2c"/>
+<section title="update" ref="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"/>
 <section title="exit" ref="dc/daa/classpause__t.html#a148437ac9cfb0970822384f99c03ac77"/>
 <section title="exitHover" ref="dc/daa/classpause__t.html#a3e67f3211198db082a0ac245dad42212"/>
 <section title="exitPos" ref="dc/daa/classpause__t.html#a9034485c8caf7cd1dfddf7f300542747"/>
@@ -253,26 +247,15 @@
 </section>
 <section title="scene.hh" ref="d5/dd8/scene_8hh.html">
 <section title="scene" ref="df/db1/classscene.html">
-<section title="scene" ref="df/db1/classscene.html#ad7ef1968aa37f2e796fec45026b9ade0"/>
+<section title="scene" ref="df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90"/>
 <section title="~scene" ref="df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496"/>
-<section title="handle" ref="df/db1/classscene.html#a1a6ee7a03d72487127dbfa6f79f0db9d"/>
+<section title="handle" ref="df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2"/>
 <section title="loadTexture" ref="df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061"/>
 <section title="render" ref="df/db1/classscene.html#a7c218380f822d46bee781520e855a7de"/>
-<section title="update" ref="df/db1/classscene.html#a668e98e3a86c4413fa3291c83fcc5378"/>
-<section title="context" ref="df/db1/classscene.html#a1659b1da41590a2ac67f9927beb823ea"/>
+<section title="update" ref="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"/>
+<section title="context" ref="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"/>
 </section>
 <section title="pix" ref="d5/dd8/scene_8hh.html#a65ce2d414e762882854d47ab28016bb4"/>
-</section>
-<section title="shitcord.hh" ref="d1/da8/shitcord_8hh.html">
-<section title="shitcord_t" ref="de/deb/classshitcord__t.html">
-<section title="shitcord_t" ref="de/deb/classshitcord__t.html#aac03a23af4132dd92108d20b30a6be0d"/>
-<section title="~shitcord_t" ref="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"/>
-<section title="generateOptions" ref="de/deb/classshitcord__t.html#a94654f5d652fb31631e2ff17e5c3776b"/>
-<section title="handle" ref="de/deb/classshitcord__t.html#a26224292a18d8df42b361a1f3b333ed8"/>
-<section title="render" ref="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"/>
-<section title="update" ref="de/deb/classshitcord__t.html#a13bf62175766d1ebc873c3a8ac8a1b55"/>
-<section title="background" ref="de/deb/classshitcord__t.html#a18f38f0c4bb56eeffdd3ef8657626081"/>
-</section>
 </section>
 </section>
 <section title="enum.hh" ref="d9/d05/enum_8hh.html">
@@ -282,12 +265,6 @@
 <section title="entry1" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d"/>
 <section title="entry2" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"/>
 <section title="size" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"/>
-</section>
-<section title="gameState" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73">
-<section title="terminating" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db"/>
-<section title="intro" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb"/>
-<section title="gameplay" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057"/>
-<section title="paused" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2"/>
 </section>
 <section title="notepadData" ref="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6">
 <section title="empty" ref="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9"/>
@@ -299,11 +276,16 @@
 <section title="explorer" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"/>
 <section title="notepad" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"/>
 <section title="pause" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"/>
-<section title="shitcord" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"/>
 </section>
 </section>
 <section title="game.hh" ref="d3/d0e/game_8hh.html">
 <section title="game" ref="d0/d51/classgame.html">
+<section title="gameState" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61">
+<section title="terminating" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"/>
+<section title="intro" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"/>
+<section title="gameplay" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"/>
+<section title="paused" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"/>
+</section>
 <section title="game" ref="d0/d51/classgame.html#ad9c102127b5038f880067ad6c9198d38"/>
 <section title="~game" ref="d0/d51/classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07"/>
 <section title="gameplay" ref="d0/d51/classgame.html#abf967ec7fa712fde980d9c399e4f778d"/>
@@ -320,13 +302,14 @@
 <section title="winMan" ref="d0/d51/classgame.html#a149df5bc9d648f2b400d3f03f8aa139d"/>
 </section>
 </section>
+<section title="pch.hh" ref="d0/d8b/pch_8hh.html"/>
 <section title="wm.hh" ref="d3/d51/wm_8hh.html">
 <section title="wm" ref="df/d1c/classwm.html">
 <section title="wm" ref="df/d1c/classwm.html#ae80ff7518d15add5e8a639bc1b509ed4"/>
 <section title="wm" ref="df/d1c/classwm.html#a963abfdd7d229db5869e59a97a301f47"/>
-<section title="handle" ref="df/d1c/classwm.html#ae5f8a28b02b3bc82d4422c6ea0e745ca"/>
+<section title="handle" ref="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"/>
 <section title="render" ref="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"/>
-<section title="update" ref="df/d1c/classwm.html#a486c679090df44959f5bf6dd71db5983"/>
+<section title="update" ref="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"/>
 <section title="context" ref="df/d1c/classwm.html#af9afae9fdbb9db6fdb6d62bf934ab5c3"/>
 <section title="current" ref="df/d1c/classwm.html#a2abf8c7eedd04f896cbf0ef50358f1c7"/>
 <section title="explorer" ref="df/d1c/classwm.html#adbe11e0ba621af1815bf54fde8244645"/>
@@ -337,7 +320,6 @@
 <section title="pause" ref="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"/>
 <section title="pauseBounds" ref="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"/>
 <section title="resume" ref="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"/>
-<section title="shitcord" ref="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"/>
 <section title="wasSilence" ref="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"/>
 </section>
 </section>
@@ -355,9 +337,7 @@
 </section>
 <section title="wmInit" ref="da/d5e/game_8cc.html#a99ac6b71536a9029028ea49afd42fab0"/>
 </section>
-<section title="gameplay.cc" ref="de/d8a/gameplay_8cc.html">
-<section title="changeScene" ref="de/d8a/gameplay_8cc.html#a199644654857552c06fa8aaea76ac812"/>
-</section>
+<section title="gameplay.cc" ref="de/d8a/gameplay_8cc.html"/>
 <section title="pause.cc" ref="df/d0b/pause_8cc.html"/>
 <section title="wm.cc" ref="df/d17/wm_8cc.html"/>
 </section>
@@ -368,7 +348,6 @@
 <section title="init.cc" ref="d0/ddc/init_8cc.html"/>
 <section title="notepad.cc" ref="d0/d31/notepad_8cc.html"/>
 <section title="scene.cc" ref="d4/d11/scene_8cc.html"/>
-<section title="shitcord.cc" ref="d0/dd7/shitcord_8cc.html"/>
 </section>
 <section title="main.cc" ref="d9/d0f/main_8cc.html">
 <section title="skipIntro" ref="d9/d0f/main_8cc.html#a70fa023bb5d371dac47448b690c83581"/>
@@ -393,15 +372,12 @@
 <keyword name="notepad_t" id="notepad_t_" ref="d9/d03/classnotepad__t.html"/>
 <keyword name="pause_t" id="pause_t_" ref="dc/daa/classpause__t.html"/>
 <keyword name="scene" id="scene_" ref="df/db1/classscene.html"/>
-<keyword name="shitcord_t" id="shitcord_t_" ref="de/deb/classshitcord__t.html"/>
 <keyword name="intro_t::slide" id="intro_t::slide_" ref="da/dec/classintro__t_1_1slide.html"/>
 <keyword name="wm" id="wm_" ref="df/d1c/classwm.html"/>
 <keyword name="wmInitData" id="wmInitData_" ref="d6/d16/structwm_init_data.html"/>
-<keyword name="Deprecated List" id="Deprecated List_" ref="da/d58/deprecated.html"/>
 <keyword name="addSlide(SDL_Surface *surface, size_t fadeIn, size_t duration, size_t fadeOut, SDL_Rect dest=SDL_Rect{}, bool centred=true, bool skippable=true)" id="intro_t::addSlide_a0439809e2c67c40ea20757ffed70968c" ref="d9/dea/classintro__t.html#a0439809e2c67c40ea20757ffed70968c"/>
 <keyword name="background" id="explorer_t::background_a29be9f9a5ec3090c4998f9cb7277cc93" ref="d5/db0/classexplorer__t.html#a29be9f9a5ec3090c4998f9cb7277cc93"/>
 <keyword name="background" id="notepad_t::background_a4416b91e1e20a180f9a00855b6f9c459" ref="d9/d03/classnotepad__t.html#a4416b91e1e20a180f9a00855b6f9c459"/>
-<keyword name="background" id="shitcord_t::background_a18f38f0c4bb56eeffdd3ef8657626081" ref="de/deb/classshitcord__t.html#a18f38f0c4bb56eeffdd3ef8657626081"/>
 <keyword name="bgm" id="game::bgm_a9e8b656712b1f8d16290abd3d21b2331" ref="d0/d51/classgame.html#a9e8b656712b1f8d16290abd3d21b2331"/>
 <keyword name="BOTH" id="intro_t::BOTH_ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"/>
 <keyword name="centre" id="intro_t::centre_ac0868c571d3b553a94ecf27c0ac63ee6" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6"/>
@@ -410,7 +386,7 @@
 <keyword name="BOTH" id="intro_t::BOTH_ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"/>
 <keyword name="centreRect(SDL_Rect &amp;rect, centre centre=centre::BOTH) const" id="intro_t::centreRect_a427b58b3e041bb4672278b9e422b8292" ref="d9/dea/classintro__t.html#a427b58b3e041bb4672278b9e422b8292"/>
 <keyword name="context" id="wmInitData::context_a8b40ddc033a30ca9233002d0b965f8e8" ref="d6/d16/structwm_init_data.html#a8b40ddc033a30ca9233002d0b965f8e8"/>
-<keyword name="context" id="scene::context_a1659b1da41590a2ac67f9927beb823ea" ref="df/db1/classscene.html#a1659b1da41590a2ac67f9927beb823ea"/>
+<keyword name="context" id="scene::context_ae9987da046dc0255632015f0e42a546c" ref="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"/>
 <keyword name="context" id="wm::context_af9afae9fdbb9db6fdb6d62bf934ab5c3" ref="df/d1c/classwm.html#af9afae9fdbb9db6fdb6d62bf934ab5c3"/>
 <keyword name="createFilesystemEntry(const char *text, const char *size)" id="explorer_t::createFilesystemEntry_a37bd5f0b908b0c66a411c873733e3f5a" ref="d5/db0/classexplorer__t.html#a37bd5f0b908b0c66a411c873733e3f5a"/>
 <keyword name="current" id="wm::current_a2abf8c7eedd04f896cbf0ef50358f1c7" ref="df/d1c/classwm.html#a2abf8c7eedd04f896cbf0ef50358f1c7"/>
@@ -426,24 +402,29 @@
 <keyword name="exitPos" id="pause_t::exitPos_a9034485c8caf7cd1dfddf7f300542747" ref="dc/daa/classpause__t.html#a9034485c8caf7cd1dfddf7f300542747"/>
 <keyword name="exitState" id="pause_t::exitState_ae058f8bee107894a18b483c2433b719e" ref="dc/daa/classpause__t.html#ae058f8bee107894a18b483c2433b719e"/>
 <keyword name="explorer" id="wm::explorer_adbe11e0ba621af1815bf54fde8244645" ref="df/d1c/classwm.html#adbe11e0ba621af1815bf54fde8244645"/>
-<keyword name="explorer_t(const game *context)" id="explorer_t::explorer_t_a2924ed013429848f0cbeb1383449e505" ref="d5/db0/classexplorer__t.html#a2924ed013429848f0cbeb1383449e505"/>
+<keyword name="explorer_t(game *context)" id="explorer_t::explorer_t_a75961f78eebb4030c1f2d7b78929a2b6" ref="d5/db0/classexplorer__t.html#a75961f78eebb4030c1f2d7b78929a2b6"/>
 <keyword name="fadeIn" id="intro_t::slide::fadeIn_a2c6db6f868f8dca116a02bfbe6a228eb" ref="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"/>
 <keyword name="fadeOut" id="intro_t::slide::fadeOut_a409eb856ae821b07dd66f76cbb6a3dbe" ref="da/dec/classintro__t_1_1slide.html#a409eb856ae821b07dd66f76cbb6a3dbe"/>
 <keyword name="font" id="game::font_a63c1e94224ab226955bba8717c64bdc0" ref="d0/d51/classgame.html#a63c1e94224ab226955bba8717c64bdc0"/>
 <keyword name="game()" id="game::game_ad9c102127b5038f880067ad6c9198d38" ref="d0/d51/classgame.html#ad9c102127b5038f880067ad6c9198d38"/>
 <keyword name="gameplay()" id="game::gameplay_abf967ec7fa712fde980d9c399e4f778d" ref="d0/d51/classgame.html#abf967ec7fa712fde980d9c399e4f778d"/>
-<keyword name="generateOptions(const std::array&lt; std::string, 3 &gt; options)" id="shitcord_t::generateOptions_a94654f5d652fb31631e2ff17e5c3776b" ref="de/deb/classshitcord__t.html#a94654f5d652fb31631e2ff17e5c3776b"/>
-<keyword name="handle(const SDL_Event &amp;event) override" id="explorer_t::handle_a87452daa84e4b7145c1f50a812010824" ref="d5/db0/classexplorer__t.html#a87452daa84e4b7145c1f50a812010824"/>
-<keyword name="handle(const SDL_Event &amp;event) override" id="intro_t::handle_a3a698a22fdd0e66f603955af8ced0186" ref="d9/dea/classintro__t.html#a3a698a22fdd0e66f603955af8ced0186"/>
-<keyword name="handle(const SDL_Event &amp;event) override" id="notepad_t::handle_a3fa185451691009d01df66441f2accb4" ref="d9/d03/classnotepad__t.html#a3fa185451691009d01df66441f2accb4"/>
-<keyword name="handle(const SDL_Event &amp;event) override" id="pause_t::handle_a0945dd5c1b896cd92d9d7454c13f577e" ref="dc/daa/classpause__t.html#a0945dd5c1b896cd92d9d7454c13f577e"/>
-<keyword name="handle(const SDL_Event &amp;)=0" id="scene::handle_a1a6ee7a03d72487127dbfa6f79f0db9d" ref="df/db1/classscene.html#a1a6ee7a03d72487127dbfa6f79f0db9d"/>
-<keyword name="handle(const SDL_Event &amp;event) override" id="shitcord_t::handle_a26224292a18d8df42b361a1f3b333ed8" ref="de/deb/classshitcord__t.html#a26224292a18d8df42b361a1f3b333ed8"/>
-<keyword name="handle(const SDL_Event &amp;event)" id="wm::handle_ae5f8a28b02b3bc82d4422c6ea0e745ca" ref="df/d1c/classwm.html#ae5f8a28b02b3bc82d4422c6ea0e745ca"/>
+<keyword name="gameplay" id="game::gameplay_a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"/>
+<keyword name="gameState" id="game::gameState_a9fa617ead70613f9f2176f3aa2094f61" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61"/>
+<keyword name="terminating" id="game::terminating_a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"/>
+<keyword name="intro" id="game::intro_a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"/>
+<keyword name="gameplay" id="game::gameplay_a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"/>
+<keyword name="paused" id="game::paused_a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"/>
+<keyword name="handle(SDL_Event &amp;event) override" id="explorer_t::handle_add68d9bf9c0e52805f4bb714b1133882" ref="d5/db0/classexplorer__t.html#add68d9bf9c0e52805f4bb714b1133882"/>
+<keyword name="handle(SDL_Event &amp;event) override" id="intro_t::handle_adda2b278aae9bae71b89194313bc23a9" ref="d9/dea/classintro__t.html#adda2b278aae9bae71b89194313bc23a9"/>
+<keyword name="handle(SDL_Event &amp;event) override" id="notepad_t::handle_ad98a24e386e2a0363a44e67054988160" ref="d9/d03/classnotepad__t.html#ad98a24e386e2a0363a44e67054988160"/>
+<keyword name="handle(SDL_Event &amp;event) override" id="pause_t::handle_a267e138e3c13edfb2e0c57cb9100ceac" ref="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"/>
+<keyword name="handle(SDL_Event &amp;)=0" id="scene::handle_a56dec35146b15669e3cf054ced2f4be2" ref="df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2"/>
+<keyword name="handle(SDL_Event &amp;event)" id="wm::handle_a7f282167450e97df5792d589c9ced058" ref="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"/>
 <keyword name="HORIZONTAL" id="intro_t::HORIZONTAL_ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a86e5d0d8407ce71f7e2004ef3949894e"/>
 <keyword name="icons" id="wm::icons_aab22b0e4971405b7fe57e8409e68793b" ref="df/d1c/classwm.html#aab22b0e4971405b7fe57e8409e68793b"/>
 <keyword name="intro" id="wm::intro_a139e824c013da025cafc10d68b73aa34" ref="df/d1c/classwm.html#a139e824c013da025cafc10d68b73aa34"/>
-<keyword name="intro_t(const game *context)" id="intro_t::intro_t_a820567ef1f00c44713099e17180f1414" ref="d9/dea/classintro__t.html#a820567ef1f00c44713099e17180f1414"/>
+<keyword name="intro" id="game::intro_a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"/>
+<keyword name="intro_t(game *context)" id="intro_t::intro_t_ad12e48028d1cc4b1c288dab77dbe193d" ref="d9/dea/classintro__t.html#ad12e48028d1cc4b1c288dab77dbe193d"/>
 <keyword name="items" id="explorer_t::items_aea965f72ccf4510850fc844e97c51c19" ref="d5/db0/classexplorer__t.html#aea965f72ccf4510850fc844e97c51c19"/>
 <keyword name="lineWrapLength" id="notepad_t::lineWrapLength_a312b35908588ed45384a73e3ad7f4992" ref="d9/d03/classnotepad__t.html#a312b35908588ed45384a73e3ad7f4992"/>
 <keyword name="loadTexture(const char *path)" id="scene::loadTexture_a5d4681a41f14704a05c4f84569888061" ref="df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061"/>
@@ -454,12 +435,13 @@
 <keyword name="mutex" id="game::mutex_ac71bfd4415fdd0075d2115aa0ffe2bf6" ref="d0/d51/classgame.html#ac71bfd4415fdd0075d2115aa0ffe2bf6"/>
 <keyword name="nameWrapLength" id="explorer_t::nameWrapLength_a9cb2c4b54f466e5535c38cdac94ea0b4" ref="d5/db0/classexplorer__t.html#a9cb2c4b54f466e5535c38cdac94ea0b4"/>
 <keyword name="notepad" id="wm::notepad_a041f88bc8a008ca3baca643fb12a1004" ref="df/d1c/classwm.html#a041f88bc8a008ca3baca643fb12a1004"/>
-<keyword name="notepad_t(const game *context)" id="notepad_t::notepad_t_ae910b670eb9800dc5f998943efc80371" ref="d9/d03/classnotepad__t.html#ae910b670eb9800dc5f998943efc80371"/>
+<keyword name="notepad_t(game *context)" id="notepad_t::notepad_t_aca34ffdf14d61518257d5ff32cbda77f" ref="d9/d03/classnotepad__t.html#aca34ffdf14d61518257d5ff32cbda77f"/>
 <keyword name="OSOverlay" id="wm::OSOverlay_a718f320271041e9c08cdfbdc58cc3a64" ref="df/d1c/classwm.html#a718f320271041e9c08cdfbdc58cc3a64"/>
 <keyword name="overlay" id="pause_t::overlay_abc176f557fb1f594687017c268bbdfe4" ref="dc/daa/classpause__t.html#abc176f557fb1f594687017c268bbdfe4"/>
 <keyword name="pause" id="wm::pause_a856235eafcdb96ed22216d2b53fb3b24" ref="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"/>
-<keyword name="pause_t(const game *context)" id="pause_t::pause_t_afff933b3fe3682e13e095d5b867d41e7" ref="dc/daa/classpause__t.html#afff933b3fe3682e13e095d5b867d41e7"/>
+<keyword name="pause_t(game *context)" id="pause_t::pause_t_a840256e71d9ff0f489090fff8f07c946" ref="dc/daa/classpause__t.html#a840256e71d9ff0f489090fff8f07c946"/>
 <keyword name="pauseBounds" id="wm::pauseBounds_a50c97d11917956cf0abb63be275faddc" ref="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"/>
+<keyword name="paused" id="game::paused_a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"/>
 <keyword name="pixelSize" id="game::pixelSize_a392ea9253c1a69cd42b0d45547568eb0" ref="d0/d51/classgame.html#a392ea9253c1a69cd42b0d45547568eb0"/>
 <keyword name="prevData" id="notepad_t::prevData_ade41e5a025182a3a851e078e8fbbe4af" ref="d9/d03/classnotepad__t.html#ade41e5a025182a3a851e078e8fbbe4af"/>
 <keyword name="render() override" id="explorer_t::render_aeeb2aa5c58317a29463ce527b2ade757" ref="d5/db0/classexplorer__t.html#aeeb2aa5c58317a29463ce527b2ade757"/>
@@ -467,7 +449,6 @@
 <keyword name="render() override" id="notepad_t::render_a08c6c7349f0912c9f547b25fa8189f9a" ref="d9/d03/classnotepad__t.html#a08c6c7349f0912c9f547b25fa8189f9a"/>
 <keyword name="render() override" id="pause_t::render_a021e3734b6d7c0688490809b5f87d8c8" ref="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"/>
 <keyword name="render()=0" id="scene::render_a7c218380f822d46bee781520e855a7de" ref="df/db1/classscene.html#a7c218380f822d46bee781520e855a7de"/>
-<keyword name="render() override" id="shitcord_t::render_a04b3dbd430b42e009e6c47122c69e696" ref="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"/>
 <keyword name="render()" id="wm::render_aa9731642bc561de498bc559f0d5ab84e" ref="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"/>
 <keyword name="resume" id="pause_t::resume_a3e20af849346bcd336f939865a270c5c" ref="dc/daa/classpause__t.html#a3e20af849346bcd336f939865a270c5c"/>
 <keyword name="resume" id="wm::resume_aeedc8b11c2b96839e921b7f82840656e" ref="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"/>
@@ -476,26 +457,24 @@
 <keyword name="resumeState" id="pause_t::resumeState_af9103128c6bc5af691f2fc46209e3217" ref="dc/daa/classpause__t.html#af9103128c6bc5af691f2fc46209e3217"/>
 <keyword name="saveData" id="explorer_t::saveData_a40830fddee0e376a60dba4876b7bc7e3" ref="d5/db0/classexplorer__t.html#a40830fddee0e376a60dba4876b7bc7e3"/>
 <keyword name="scale" id="notepad_t::scale_a6af0111089b6735d3e21cdfb1b198e65" ref="d9/d03/classnotepad__t.html#a6af0111089b6735d3e21cdfb1b198e65"/>
-<keyword name="scene(const game *gameContext)" id="scene::scene_ad7ef1968aa37f2e796fec45026b9ade0" ref="df/db1/classscene.html#ad7ef1968aa37f2e796fec45026b9ade0"/>
-<keyword name="shitcord" id="wm::shitcord_a5b53423d16a28cc8c0eec221572fb454" ref="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"/>
-<keyword name="shitcord_t(const game *context)" id="shitcord_t::shitcord_t_aac03a23af4132dd92108d20b30a6be0d" ref="de/deb/classshitcord__t.html#aac03a23af4132dd92108d20b30a6be0d"/>
+<keyword name="scene(game *gameContext)" id="scene::scene_a1012571c9524a29524b8b9d680715e90" ref="df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90"/>
 <keyword name="silence" id="game::silence_a74c272eea906013e6af7480d8d31f431" ref="d0/d51/classgame.html#a74c272eea906013e6af7480d8d31f431"/>
 <keyword name="skip" id="intro_t::skip_a1543b2b845c6999165123b34608fcf25" ref="d9/dea/classintro__t.html#a1543b2b845c6999165123b34608fcf25"/>
 <keyword name="skippable" id="intro_t::slide::skippable_ac153b105d5a7b6639822e2beb06f3467" ref="da/dec/classintro__t_1_1slide.html#ac153b105d5a7b6639822e2beb06f3467"/>
-<keyword name="slide(const size_t fadeIn, const size_t fadeOut, const size_t duration, SDL_Texture *texture, const SDL_Rect dest={}, const bool skippable=true)" id="intro_t::slide::slide_a32664b85dc6014b6614477f315d81ee5" ref="da/dec/classintro__t_1_1slide.html#a32664b85dc6014b6614477f315d81ee5"/>
+<keyword name="slide(size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture *_texture, SDL_Rect _dest={}, bool skippable=true)" id="intro_t::slide::slide_a349a2578c1249f4b6dab207bc8efa552" ref="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"/>
 <keyword name="slides" id="intro_t::slides_a97b511d587ca8e05515e35e6418cf1d0" ref="d9/dea/classintro__t.html#a97b511d587ca8e05515e35e6418cf1d0"/>
 <keyword name="slideShow(size_t time, bool &amp;click, size_t skipGrace=500)" id="intro_t::slideShow_a104f915a0a592c0db524a70ffc666a60" ref="d9/dea/classintro__t.html#a104f915a0a592c0db524a70ffc666a60"/>
 <keyword name="startTime" id="intro_t::startTime_a6db4493f9b8695a1bed2f16f3af45870" ref="d9/dea/classintro__t.html#a6db4493f9b8695a1bed2f16f3af45870"/>
 <keyword name="state" id="game::state_a66a0e69c41270ee22849d56d12e12749" ref="d0/d51/classgame.html#a66a0e69c41270ee22849d56d12e12749"/>
+<keyword name="terminating" id="game::terminating_a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db" ref="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"/>
 <keyword name="texture" id="intro_t::slide::texture_ae876137be1a25a3ac7dfb65802306ad0" ref="da/dec/classintro__t_1_1slide.html#ae876137be1a25a3ac7dfb65802306ad0"/>
 <keyword name="unlock()" id="wmInitData::unlock_af86a2de615bbeee89fc31586b8875296" ref="d6/d16/structwm_init_data.html#af86a2de615bbeee89fc31586b8875296"/>
-<keyword name="update() override" id="explorer_t::update_a9fd3219c8a05b381b5e8ee292000c1cb" ref="d5/db0/classexplorer__t.html#a9fd3219c8a05b381b5e8ee292000c1cb"/>
-<keyword name="update() override" id="intro_t::update_a0939d6693673f0f0d9dfc0e9fd8e224c" ref="d9/dea/classintro__t.html#a0939d6693673f0f0d9dfc0e9fd8e224c"/>
-<keyword name="update() override" id="notepad_t::update_acb29bf9572b3733208643185c76e7f17" ref="d9/d03/classnotepad__t.html#acb29bf9572b3733208643185c76e7f17"/>
-<keyword name="update() override" id="pause_t::update_a7975d907b119f75c9b87fe6f3ceb7d2c" ref="dc/daa/classpause__t.html#a7975d907b119f75c9b87fe6f3ceb7d2c"/>
-<keyword name="update()=0" id="scene::update_a668e98e3a86c4413fa3291c83fcc5378" ref="df/db1/classscene.html#a668e98e3a86c4413fa3291c83fcc5378"/>
-<keyword name="update() override" id="shitcord_t::update_a13bf62175766d1ebc873c3a8ac8a1b55" ref="de/deb/classshitcord__t.html#a13bf62175766d1ebc873c3a8ac8a1b55"/>
-<keyword name="update()" id="wm::update_a486c679090df44959f5bf6dd71db5983" ref="df/d1c/classwm.html#a486c679090df44959f5bf6dd71db5983"/>
+<keyword name="update() override" id="explorer_t::update_a099b72112db6de2a3d8f6ea0b724fae5" ref="d5/db0/classexplorer__t.html#a099b72112db6de2a3d8f6ea0b724fae5"/>
+<keyword name="update() override" id="intro_t::update_a09c3876e890a37be7a17dbbb0084d4da" ref="d9/dea/classintro__t.html#a09c3876e890a37be7a17dbbb0084d4da"/>
+<keyword name="update() override" id="notepad_t::update_ab177e5696b0a4925d4309ce90e5f66aa" ref="d9/d03/classnotepad__t.html#ab177e5696b0a4925d4309ce90e5f66aa"/>
+<keyword name="update() override" id="pause_t::update_ac738a9a7bc4671c59a8a9eacd9d0e0ca" ref="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"/>
+<keyword name="update()=0" id="scene::update_a34b71ea2aea3fd3c007786e75be817c7" ref="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"/>
+<keyword name="update()" id="wm::update_a54115bce16818acb350825256b11b2ce" ref="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"/>
 <keyword name="VERTICAL" id="intro_t::VERTICAL_ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc" ref="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc"/>
 <keyword name="wasSilence" id="wm::wasSilence_a205790bf574b52cabae2bca77b17c262" ref="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"/>
 <keyword name="winMan" id="wmInitData::winMan_a23c6b2179ddaad3cde159dd42e163beb" ref="d6/d16/structwm_init_data.html#a23c6b2179ddaad3cde159dd42e163beb"/>
@@ -509,9 +488,7 @@
 <keyword name="~notepad_t()" id="notepad_t::~notepad_t_ac047cc39e7ff3f954057314e6298d6b1" ref="d9/d03/classnotepad__t.html#ac047cc39e7ff3f954057314e6298d6b1"/>
 <keyword name="~pause_t()" id="pause_t::~pause_t_a8e6961a2a9fb61c99e92face62126593" ref="dc/daa/classpause__t.html#a8e6961a2a9fb61c99e92face62126593"/>
 <keyword name="~scene()" id="scene::~scene_aa97c9c1f46aa44e63223a737fcdcb496" ref="df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496"/>
-<keyword name="~shitcord_t()" id="shitcord_t::~shitcord_t_a46798c707ed5dce9b324cdaa17db5c71" ref="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"/>
 <keyword name="~wmInitData()" id="wmInitData::~wmInitData_a1333b79b5c832494ebc67333cd1b30a6" ref="d6/d16/structwm_init_data.html#a1333b79b5c832494ebc67333cd1b30a6"/>
-<keyword name="changeScene(const std::pair&lt; scenes, sceneData &gt; &amp;sceneChangeData, wm &amp;winMan)" id="gameplay.cc::changeScene_a199644654857552c06fa8aaea76ac812" ref="de/d8a/gameplay_8cc.html#a199644654857552c06fa8aaea76ac812"/>
 <keyword name="empty" id="enum.hh::empty_ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9" ref="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9"/>
 <keyword name="entry1" id="enum.hh::entry1_ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d" ref="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d"/>
 <keyword name="entry1" id="enum.hh::entry1_a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d"/>
@@ -523,15 +500,8 @@
 <keyword name="entry1" id="enum.hh::entry1_a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d"/>
 <keyword name="entry2" id="enum.hh::entry2_a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"/>
 <keyword name="size" id="enum.hh::size_a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"/>
-<keyword name="gameplay" id="enum.hh::gameplay_aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057"/>
-<keyword name="gameState" id="enum.hh::gameState_aa2f76535ef50e4e6dda6740929d1ed73" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73"/>
-<keyword name="terminating" id="enum.hh::terminating_aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db"/>
-<keyword name="intro" id="enum.hh::intro_aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb"/>
-<keyword name="gameplay" id="enum.hh::gameplay_aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057"/>
-<keyword name="paused" id="enum.hh::paused_aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2"/>
 <keyword name="init" id="enum.hh::init_a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9"/>
 <keyword name="intro" id="enum.hh::intro_a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb"/>
-<keyword name="intro" id="enum.hh::intro_aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb"/>
 <keyword name="main(int argc, char **argv)" id="main.cc::main_a3c04138a5bfe5d72780bb7e82a18e627" ref="d9/d0f/main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627"/>
 <keyword name="notepad" id="enum.hh::notepad_a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"/>
 <keyword name="notepadData" id="enum.hh::notepadData_ac37de80148c8c914ee47baccc98c59e6" ref="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6"/>
@@ -540,7 +510,6 @@
 <keyword name="entry2" id="enum.hh::entry2_ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd" ref="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd"/>
 <keyword name="operator++(explorerData &amp;save)" id="explorer.cc::operator++_aa3c2bd85b3a50c8377042bf30c9b0331" ref="d5/d14/explorer_8cc.html#aa3c2bd85b3a50c8377042bf30c9b0331"/>
 <keyword name="pause" id="enum.hh::pause_a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"/>
-<keyword name="paused" id="enum.hh::paused_aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2"/>
 <keyword name="pix(val)" id="scene.hh::pix_a65ce2d414e762882854d47ab28016bb4" ref="d5/dd8/scene_8hh.html#a65ce2d414e762882854d47ab28016bb4"/>
 <keyword name="sceneData" id="enum.hh::sceneData_ae5fd02a37eaf8afa38cba1e723317dab" ref="d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab"/>
 <keyword name="scenes" id="enum.hh::scenes_a72e129a3b1e399b1f98da21557f0fd8a" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a"/>
@@ -548,11 +517,8 @@
 <keyword name="explorer" id="enum.hh::explorer_a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"/>
 <keyword name="notepad" id="enum.hh::notepad_a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"/>
 <keyword name="pause" id="enum.hh::pause_a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"/>
-<keyword name="shitcord" id="enum.hh::shitcord_a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"/>
-<keyword name="shitcord" id="enum.hh::shitcord_a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7" ref="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"/>
 <keyword name="size" id="enum.hh::size_a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24" ref="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"/>
 <keyword name="skipIntro" id="main.cc::skipIntro_a70fa023bb5d371dac47448b690c83581" ref="d9/d0f/main_8cc.html#a70fa023bb5d371dac47448b690c83581"/>
-<keyword name="terminating" id="enum.hh::terminating_aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db" ref="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db"/>
 <keyword name="wmInit(void *data)" id="game.cc::wmInit_a99ac6b71536a9029028ea49afd42fab0" ref="da/d5e/game_8cc.html#a99ac6b71536a9029028ea49afd42fab0"/>
 </keywords>
 <files>
@@ -563,16 +529,14 @@
 <file>closed.png</file>
 <file>d0/d31/notepad_8cc.html</file>
 <file>d0/d51/classgame.html</file>
-<file>d0/dd7/shitcord_8cc.html</file>
+<file>d0/d8b/pch_8hh.html</file>
+<file>d0/d8b/pch_8hh_source.html</file>
 <file>d0/ddc/init_8cc.html</file>
-<file>d1/da8/shitcord_8hh.html</file>
-<file>d1/da8/shitcord_8hh_source.html</file>
 <file>d3/d0e/game_8hh.html</file>
 <file>d3/d0e/game_8hh_source.html</file>
 <file>d3/d51/wm_8hh.html</file>
 <file>d3/d51/wm_8hh_source.html</file>
 <file>d3/d74/classpause__t-members.html</file>
-<file>d3/d76/classshitcord__t-members.html</file>
 <file>d3/daf/classgame-members.html</file>
 <file>d4/d11/scene_8cc.html</file>
 <file>d4/d54/notepad_8hh.html</file>
@@ -597,7 +561,6 @@
 <file>d9/dea/classintro__t.html</file>
 <file>d9/dea/classintro__t.png</file>
 <file>d9/df8/classscene-members.html</file>
-<file>da/d58/deprecated.html</file>
 <file>da/d5e/game_8cc.html</file>
 <file>da/dec/classintro__t_1_1slide.html</file>
 <file>dc/d0e/classwm-members.html</file>
@@ -608,8 +571,6 @@
 <file>de/d22/classexplorer__t-members.html</file>
 <file>de/d27/classnotepad__t-members.html</file>
 <file>de/d8a/gameplay_8cc.html</file>
-<file>de/deb/classshitcord__t.html</file>
-<file>de/deb/classshitcord__t.png</file>
 <file>df/d0b/pause_8cc.html</file>
 <file>df/d17/wm_8cc.html</file>
 <file>df/d1c/classwm.html</file>
@@ -647,7 +608,6 @@
 <file>nav_hd.png</file>
 <file>navtree.css</file>
 <file>open.png</file>
-<file>pages.html</file>
 <file>plus.svg</file>
 <file>plusd.svg</file>
 <file>resize.js</file>

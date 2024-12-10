@@ -29,7 +29,7 @@ Inherits \fBscene\fP\&.
 
 .in +1c
 .ti -1c
-.RI "\fBintro_t\fP (const \fBgame\fP *\fBcontext\fP)"
+.RI "\fBintro_t\fP (\fBgame\fP *\fBcontext\fP)"
 .br
 .RI "Construct a new intro t object\&. "
 .ti -1c
@@ -37,7 +37,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Destroy the intro t object\&. "
 .ti -1c
-.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
 .br
 .RI "Updates scene info\&. "
 .ti -1c
@@ -45,7 +45,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Renders slides\&. "
 .ti -1c
-.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
 .br
 .ti -1c
 .RI "void \fBslideShow\fP (size_t time, bool &click, size_t skipGrace=500)"
@@ -68,7 +68,7 @@ Public Member Functions inherited from \fBscene\fP
 .br
 .RI "Loads texture based on path\&. "
 .ti -1c
-.RI "\fBscene\fP (const \fBgame\fP *gameContext)"
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
 .br
 .RI "Construct a new scene object\&. "
 .ti -1c
@@ -96,7 +96,7 @@ Public Member Functions inherited from \fBscene\fP
 Public Attributes inherited from \fBscene\fP
 .in +1c
 .ti -1c
-.RI "const \fBgame\fP * \fBcontext\fP"
+.RI "\fBgame\fP * \fBcontext\fP"
 .br
 .RI "Game context\&. "
 .in -1c
@@ -115,7 +115,7 @@ Public Attributes inherited from \fBscene\fP
 \f(BIBOTH \fP
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "intro_t::intro_t (const \fBgame\fP * context)"
+.SS "intro_t::intro_t (\fBgame\fP * context)"
 
 .PP
 Construct a new intro t object\&. Called only once when WM is initialised
@@ -169,7 +169,7 @@ Centres rect\&.
 .RE
 .PP
 
-.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > intro_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > intro_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 \fBParameters\fP
@@ -206,7 +206,7 @@ Performs the slideshow logic\&.
 .RE
 .PP
 
-.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > intro_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > intro_t::update ()\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Updates scene info\&. Makes the call on when to move on to explorer\&.

@@ -13,9 +13,8 @@ intro_t::slide \- Contains all the information required for a functional slidesh
 
 .in +1c
 .ti -1c
-.RI "\fBslide\fP (const size_t \fBfadeIn\fP, const size_t \fBfadeOut\fP, const size_t \fBduration\fP, SDL_Texture *\fBtexture\fP, const SDL_Rect \fBdest\fP={}, const bool \fBskippable\fP=true)"
+.RI "\fBslide\fP (size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture *_texture, SDL_Rect _dest={}, bool \fBskippable\fP=true)"
 .br
-.RI "Construct a new slide\&. "
 .in -1c
 .SS "Public Attributes"
 
@@ -23,80 +22,43 @@ intro_t::slide \- Contains all the information required for a functional slidesh
 .ti -1c
 .RI "size_t \fBfadeIn\fP"
 .br
-.RI "Time taken for fade in\&. "
 .ti -1c
 .RI "size_t \fBduration\fP"
 .br
-.RI "Duration slide spends at full alpha\&. "
 .ti -1c
 .RI "size_t \fBfadeOut\fP"
 .br
-.RI "Time taken for fade out\&. "
 .ti -1c
 .RI "SDL_Texture * \fBtexture\fP"
 .br
-.RI "Texture containing slide contents\&. "
 .ti -1c
 .RI "SDL_Rect \fBdest\fP"
 .br
-.RI "Destination that the slide should be rendered\&. "
 .ti -1c
 .RI "bool \fBskippable\fP"
 .br
-.RI "Whether a slide can be skipped\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
 Contains all the information required for a functional slideshow\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "intro_t::slide::slide (const size_t fadeIn, const size_t fadeOut, const size_t duration, SDL_Texture * texture, const SDL_Rect dest = \fR{}\fP, const bool skippable = \fRtrue\fP)"
-
-.PP
-Construct a new slide\&. 
-.PP
-\fBParameters\fP
-.RS 4
-\fIfadeIn\fP Time taken for fade in (ms) 
-.br
-\fIfadeOut\fP Time taken for fade out (ms) 
-.br
-\fIduration\fP Duration that slide spends at full alpha (ms) 
-.br
-\fItexture\fP Texture containing slide contents 
-.br
-\fIdest\fP Location that the slide should be rendered\&. Default = empty; empty => full screen 
-.br
-\fIskippable\fP Whether a slide can be skipped\&. Default = true 
-.RE
-.PP
+.SS "intro_t::slide::slide (size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture * _texture, SDL_Rect _dest = \fR{}\fP, bool skippable = \fRtrue\fP)"
 
 .SH "Member Data Documentation"
 .PP 
 .SS "SDL_Rect intro_t::slide::dest"
 
-.PP
-Destination that the slide should be rendered\&. 
 .SS "size_t intro_t::slide::duration"
 
-.PP
-Duration slide spends at full alpha\&. 
 .SS "size_t intro_t::slide::fadeIn"
 
-.PP
-Time taken for fade in\&. 
 .SS "size_t intro_t::slide::fadeOut"
 
-.PP
-Time taken for fade out\&. 
 .SS "bool intro_t::slide::skippable"
 
-.PP
-Whether a slide can be skipped\&. 
 .SS "SDL_Texture* intro_t::slide::texture"
 
-.PP
-Texture containing slide contents\&. 
 
 .SH "Author"
 .PP 

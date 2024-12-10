@@ -16,6 +16,8 @@
 </listitem>
             <listitem><para>file <link linkend="_game_8hh">game.hh</link></para>
 </listitem>
+            <listitem><para>file <link linkend="_pch_8hh">pch.hh</link></para>
+</listitem>
             <listitem><para>file <link linkend="_wm_8hh">wm.hh</link></para>
 </listitem>
         </itemizedlist>

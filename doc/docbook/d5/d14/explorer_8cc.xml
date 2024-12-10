@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_explorer_8cc" xml:lang="en-US">
 <title>src/scenes/explorer.cc File Reference</title>
 <indexterm><primary>src/scenes/explorer.cc</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;scenes/explorer.hh&quot;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &quot;SDL_image.h&quot;<?linebreak?>#include &quot;game.hh&quot;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &quot;../../include/scenes/explorer.hh&quot;<?linebreak?>#include &quot;../../include/game.hh&quot;<?linebreak?></programlisting><simplesect>
     <title>Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link> <link linkend="_explorer_8cc_1aa3c2bd85b3a50c8377042bf30c9b0331">operator++</link> (<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587a">explorerData</link> &amp;save)</para>

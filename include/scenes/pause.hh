@@ -14,17 +14,14 @@ class pause_t : public scene {
    * @brief Resume button when not hovered
    */
   SDL_Texture* resume;
-
   /**
    * @brief Resume button when hovered over
    */
   SDL_Texture* resumeHover;
-
   /**
    * @brief State of the resume button
    */
   SDL_Texture* resumeState;
-
   /** Position of the resume button */
   SDL_Rect resumePos;
 
@@ -32,17 +29,14 @@ class pause_t : public scene {
    * @brief Exit button when not hovered
    */
   SDL_Texture* exit;
-
   /**
    * @brief Exit button when hovered over
    */
   SDL_Texture* exitHover;
-
   /**
    * @brief State of the exit button
    */
   SDL_Texture* exitState;
-
   /**
    * @brief Position of the exit button
    */
@@ -55,15 +49,13 @@ class pause_t : public scene {
    *
    * @param context game context
    */
-  pause_t(const game* context);
-
+  pause_t(game* context);
   /**
    * @brief Destroy the pause t object
    *
    * Called only when the wm is destroyed
    */
   ~pause_t();
-
   /**
    * @brief Update logic for the pause menu
    *
@@ -72,13 +64,11 @@ class pause_t : public scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  const std::pair<scenes, sceneData> update() override;
-
+  std::pair<scenes, sceneData> update() override;
   /**
    * @brief Renders menu, and buttons
    */
   void render() override;
-
   /**
    * @brief Handles hovers
    *
@@ -86,6 +76,6 @@ class pause_t : public scene {
    * @return std::pair<scenes, sceneData>Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  const std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
+  std::pair<scenes, sceneData> handle(SDL_Event& event) override;
 };
 #endif

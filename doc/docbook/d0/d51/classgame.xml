@@ -6,6 +6,17 @@
 <computeroutput>#include &lt;game.hh&gt;</computeroutput>
 </para>
 <simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum class <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">gameState</link> : uint8_t { <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db">terminating</link>
+, <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">intro</link>
+, <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057">gameplay</link>
+, <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2">paused</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_classgame_1ad9c102127b5038f880067ad6c9198d38">game</link> ()</para>
@@ -25,7 +36,7 @@
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73">gameState</link> <link linkend="_classgame_1a66a0e69c41270ee22849d56d12e12749">state</link></para>
+            <listitem><para><link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">gameState</link> <link linkend="_classgame_1a66a0e69c41270ee22849d56d12e12749">state</link> = <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">gameState::intro</link></para>
 
 <para>State that the game is in. </para>
 </listitem>
@@ -67,6 +78,31 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61"/><section>
+    <title>gameState</title>
+<indexterm><primary>gameState</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>gameState</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">game::gameState</link> : uint8_t<computeroutput>[strong]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>terminating</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>terminating</secondary></indexterm>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"/>terminating</entry><entry></entry></row><row><entry><indexterm><primary>intro</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>intro</secondary></indexterm>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"/>intro</entry><entry></entry></row><row><entry><indexterm><primary>gameplay</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>gameplay</secondary></indexterm>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"/>gameplay</entry><entry></entry></row><row><entry><indexterm><primary>paused</primary><secondary>game</secondary></indexterm>
+<indexterm><primary>game</primary><secondary>paused</secondary></indexterm>
+<anchor xml:id="_classgame_1a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"/>paused</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
 <anchor xml:id="_classgame_1ad9c102127b5038f880067ad6c9198d38"/><section>
@@ -183,7 +219,7 @@
     <title>state</title>
 <indexterm><primary>state</primary><secondary>game</secondary></indexterm>
 <indexterm><primary>game</primary><secondary>state</secondary></indexterm>
-<para><computeroutput><link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73">gameState</link> game::state</computeroutput></para><para>
+<para><computeroutput><link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61">gameState</link> game::state = <link linkend="_classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">gameState::intro</link></computeroutput></para><para>
 
 <para>State that the game is in. </para>
 </para>

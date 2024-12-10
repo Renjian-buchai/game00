@@ -12,30 +12,20 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 11 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1abc176f557fb1f594687017c268bbdfe4">overlay</link>;
 12 
 16 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1a3e20af849346bcd336f939865a270c5c">resume</link>;
-17 
-21 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1a0c32a4f98b58aa3806699382970ec491">resumeHover</link>;
-22 
-26 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1af9103128c6bc5af691f2fc46209e3217">resumeState</link>;
+20 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1a0c32a4f98b58aa3806699382970ec491">resumeHover</link>;
+24 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1af9103128c6bc5af691f2fc46209e3217">resumeState</link>;
+26 &#32;&#32;SDL_Rect&#32;<link linkend="_classpause__t_1ae945e4a533d1de46870bffe0e838d8ae">resumePos</link>;
 27 
-29 &#32;&#32;SDL_Rect&#32;<link linkend="_classpause__t_1ae945e4a533d1de46870bffe0e838d8ae">resumePos</link>;
-30 
-34 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1a148437ac9cfb0970822384f99c03ac77">exit</link>;
-35 
-39 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1a3e67f3211198db082a0ac245dad42212">exitHover</link>;
-40 
-44 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1ae058f8bee107894a18b483c2433b719e">exitState</link>;
-45 
-49 &#32;&#32;SDL_Rect&#32;<link linkend="_classpause__t_1a9034485c8caf7cd1dfddf7f300542747">exitPos</link>;
-50 
-58 &#32;&#32;<link linkend="_classpause__t_1afff933b3fe3682e13e095d5b867d41e7">pause_t</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
-59 
-65 &#32;&#32;<link linkend="_classpause__t_1a8e6961a2a9fb61c99e92face62126593">~pause_t</link>();
-66 
-75 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
-76 
-80 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
-81 
-89 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
-90 };
-91 <emphasis role="preprocessor">#endif</emphasis>
+31 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1a148437ac9cfb0970822384f99c03ac77">exit</link>;
+35 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1a3e67f3211198db082a0ac245dad42212">exitHover</link>;
+39 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1ae058f8bee107894a18b483c2433b719e">exitState</link>;
+43 &#32;&#32;SDL_Rect&#32;<link linkend="_classpause__t_1a9034485c8caf7cd1dfddf7f300542747">exitPos</link>;
+44 
+52 &#32;&#32;<link linkend="_classpause__t_1a840256e71d9ff0f489090fff8f07c946">pause_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>);
+58 &#32;&#32;<link linkend="_classpause__t_1a8e6961a2a9fb61c99e92face62126593">~pause_t</link>();
+67 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
+71 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
+79 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac">handle</link>(SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+80 };
+81 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

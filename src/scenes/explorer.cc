@@ -43,13 +43,13 @@ SDL_Texture* explorer_t::createFilesystemEntry(const char* text,
   return texture;
 }
 
-explorer_t::explorer_t(const game* _context)
+explorer_t::explorer_t(game* _context)
     : scene(_context),
       nameWrapLength(260 * _context->pixelSize),
       downloadBounds(SDL_Rect{0, 0, pix(40), pix(24)}) {
   {
     saveData = explorerData::init;
-    SDL_Surface* surface = IMG_Load("res/UI/backgrounds/explorer.png");
+    SDL_Surface* surface = IMG_Load("res/images/OSExplorer.png");
     if (surface == nullptr) {
       std::cout << IMG_GetError();
       std::exit(-1);
@@ -91,7 +91,7 @@ explorer_t::~explorer_t() {
   SDL_DestroyTexture(background);
 }
 
-const std::pair<scenes, sceneData> explorer_t::update() {
+std::pair<scenes, sceneData> explorer_t::update() {
   return std::make_pair(scenes::explorer, std::monostate());
 }
 
@@ -103,7 +103,7 @@ void explorer_t::render() {
   }
 }
 
-const std::pair<scenes, sceneData> explorer_t::handle(const SDL_Event& event) {
+std::pair<scenes, sceneData> explorer_t::handle(SDL_Event& event) {
   SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:

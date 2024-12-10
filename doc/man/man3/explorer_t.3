@@ -14,7 +14,7 @@ Inherits \fBscene\fP\&.
 
 .in +1c
 .ti -1c
-.RI "\fBexplorer_t\fP (const \fBgame\fP *\fBcontext\fP)"
+.RI "\fBexplorer_t\fP (\fBgame\fP *\fBcontext\fP)"
 .br
 .RI "Construct a new explorer t object\&. "
 .ti -1c
@@ -22,7 +22,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Destroy the explorer t object\&. "
 .ti -1c
-.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
 .br
 .RI "Update logic for the explorer t object\&. "
 .ti -1c
@@ -30,7 +30,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Renders explorer, and files\&. "
 .ti -1c
-.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
 .br
 .RI "Handles mouse movement and file selection\&. "
 .ti -1c
@@ -46,7 +46,7 @@ Public Member Functions inherited from \fBscene\fP
 .br
 .RI "Loads texture based on path\&. "
 .ti -1c
-.RI "\fBscene\fP (const \fBgame\fP *gameContext)"
+.RI "\fBscene\fP (\fBgame\fP *gameContext)"
 .br
 .RI "Construct a new scene object\&. "
 .ti -1c
@@ -82,13 +82,13 @@ Public Member Functions inherited from \fBscene\fP
 Public Attributes inherited from \fBscene\fP
 .in +1c
 .ti -1c
-.RI "const \fBgame\fP * \fBcontext\fP"
+.RI "\fBgame\fP * \fBcontext\fP"
 .br
 .RI "Game context\&. "
 .in -1c
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "explorer_t::explorer_t (const \fBgame\fP * context)"
+.SS "explorer_t::explorer_t (\fBgame\fP * context)"
 
 .PP
 Construct a new explorer t object\&. Called only once when WM is initialised
@@ -96,7 +96,7 @@ Construct a new explorer t object\&. Called only once when WM is initialised
 .PP
 \fBParameters\fP
 .RS 4
-\fIcontext\fP game context 
+\fI_context\fP game context 
 .RE
 .PP
 
@@ -124,7 +124,7 @@ SDL_Texture* Texture at size width x 40 to make the text itself more readable
 .RE
 .PP
 
-.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Handles mouse movement and file selection\&. 
@@ -148,7 +148,7 @@ Implements \fBscene\fP\&.
 Renders explorer, and files\&. 
 .PP
 Implements \fBscene\fP\&.
-.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::update ()\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Update logic for the explorer t object\&. Realistically, does absolutely nothing\&.

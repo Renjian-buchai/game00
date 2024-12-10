@@ -11,13 +11,12 @@
         <name>fadeIn</name>
         <qualifiedname>intro_t::slide::fadeIn</qualifiedname>
         <briefdescription>
-<para>Time taken for fade in. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="33" column="12" bodyfile="include/scenes/init.hh" bodystart="33" bodyend="-1"/>
+        <location file="include/scenes/init.hh" line="18" column="12" bodyfile="include/scenes/init.hh" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -26,13 +25,12 @@
         <name>duration</name>
         <qualifiedname>intro_t::slide::duration</qualifiedname>
         <briefdescription>
-<para>Duration slide spends at full alpha. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="38" column="12" bodyfile="include/scenes/init.hh" bodystart="38" bodyend="-1"/>
+        <location file="include/scenes/init.hh" line="19" column="12" bodyfile="include/scenes/init.hh" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -41,13 +39,12 @@
         <name>fadeOut</name>
         <qualifiedname>intro_t::slide::fadeOut</qualifiedname>
         <briefdescription>
-<para>Time taken for fade out. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="43" column="12" bodyfile="include/scenes/init.hh" bodystart="43" bodyend="-1"/>
+        <location file="include/scenes/init.hh" line="20" column="12" bodyfile="include/scenes/init.hh" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0" prot="public" static="no" mutable="no">
         <type>SDL_Texture *</type>
@@ -56,13 +53,12 @@
         <name>texture</name>
         <qualifiedname>intro_t::slide::texture</qualifiedname>
         <briefdescription>
-<para>Texture containing slide contents. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="48" column="17" bodyfile="include/scenes/init.hh" bodystart="48" bodyend="-1"/>
+        <location file="include/scenes/init.hh" line="21" column="17" bodyfile="include/scenes/init.hh" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf" prot="public" static="no" mutable="no">
         <type>SDL_Rect</type>
@@ -71,13 +67,12 @@
         <name>dest</name>
         <qualifiedname>intro_t::slide::dest</qualifiedname>
         <briefdescription>
-<para>Destination that the slide should be rendered. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="53" column="14" bodyfile="include/scenes/init.hh" bodystart="53" bodyend="-1"/>
+        <location file="include/scenes/init.hh" line="22" column="14" bodyfile="include/scenes/init.hh" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/dec/classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -86,106 +81,54 @@
         <name>skippable</name>
         <qualifiedname>intro_t::slide::skippable</qualifiedname>
         <briefdescription>
-<para>Whether a slide can be skipped. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="58" column="10" bodyfile="include/scenes/init.hh" bodystart="58" bodyend="-1"/>
+        <location file="include/scenes/init.hh" line="23" column="10" bodyfile="include/scenes/init.hh" bodystart="23" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="da/dec/classintro__t_1_1slide_1a32664b85dc6014b6614477f315d81ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>intro_t::slide::slide</definition>
-        <argsstring>(const size_t fadeIn, const size_t fadeOut, const size_t duration, SDL_Texture *texture, const SDL_Rect dest={}, const bool skippable=true)</argsstring>
+        <argsstring>(size_t _fadeIn, size_t _fadeOut, size_t _duration, SDL_Texture *_texture, SDL_Rect _dest={}, bool skippable=true)</argsstring>
         <name>slide</name>
         <qualifiedname>intro_t::slide::slide</qualifiedname>
         <param>
-          <type>const size_t</type>
-          <declname>fadeIn</declname>
+          <type>size_t</type>
+          <declname>_fadeIn</declname>
         </param>
         <param>
-          <type>const size_t</type>
-          <declname>fadeOut</declname>
+          <type>size_t</type>
+          <declname>_fadeOut</declname>
         </param>
         <param>
-          <type>const size_t</type>
-          <declname>duration</declname>
+          <type>size_t</type>
+          <declname>_duration</declname>
         </param>
         <param>
           <type>SDL_Texture *</type>
-          <declname>texture</declname>
+          <declname>_texture</declname>
         </param>
         <param>
-          <type>const SDL_Rect</type>
-          <declname>dest</declname>
+          <type>SDL_Rect</type>
+          <declname>_dest</declname>
           <defval>{}</defval>
         </param>
         <param>
-          <type>const bool</type>
+          <type>bool</type>
           <declname>skippable</declname>
           <defval>true</defval>
         </param>
         <briefdescription>
-<para>Construct a new slide. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>fadeIn</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Time taken for fade in (ms) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>fadeOut</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Time taken for fade out (ms) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>duration</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Duration that slide spends at full alpha (ms) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>texture</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Texture containing slide contents </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>dest</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Location that the slide should be rendered. Default = empty; empty =&gt; full screen </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>skippable</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether a slide can be skipped. Default = true </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="26" column="5" bodyfile="src/scenes/init.cc" bodystart="6" bodyend="14"/>
+        <location file="include/scenes/init.hh" line="15" column="5" bodyfile="src/scenes/init.cc" bodystart="5" bodyend="12"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -193,14 +136,14 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/scenes/init.hh" line="13" column="3" bodyfile="include/scenes/init.hh" bodystart="13" bodyend="59"/>
+    <location file="include/scenes/init.hh" line="13" column="3" bodyfile="include/scenes/init.hh" bodystart="13" bodyend="24"/>
     <listofallmembers>
       <member refid="da/dec/classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>dest</name></member>
       <member refid="da/dec/classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>duration</name></member>
       <member refid="da/dec/classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>fadeIn</name></member>
       <member refid="da/dec/classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>fadeOut</name></member>
       <member refid="da/dec/classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>skippable</name></member>
-      <member refid="da/dec/classintro__t_1_1slide_1a32664b85dc6014b6614477f315d81ee5" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>slide</name></member>
+      <member refid="da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>slide</name></member>
       <member refid="da/dec/classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0" prot="public" virt="non-virtual"><scope>intro_t::slide</scope><name>texture</name></member>
     </listofallmembers>
   </compounddef>

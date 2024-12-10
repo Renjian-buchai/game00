@@ -8,8 +8,6 @@ include/enum.hh
 .PP
 \fR#include <cstdint>\fP
 .br
-\fR#include <variant>\fP
-.br
 
 .SS "Typedefs"
 
@@ -30,13 +28,9 @@ include/enum.hh
 .br
 .RI "Entries list\&. "
 .ti -1c
-.RI "enum class \fBscenes\fP : uint8_t { \fBintro\fP, \fBexplorer\fP, \fBnotepad\fP, \fBpause\fP, \fBshitcord\fP }"
+.RI "enum class \fBscenes\fP : uint8_t { \fBintro\fP, \fBexplorer\fP, \fBnotepad\fP, \fBpause\fP }"
 .br
 .RI "Scenes list\&. "
-.ti -1c
-.RI "enum class \fBgameState\fP : uint8_t { \fBterminating\fP, \fBintro\fP, \fBgameplay\fP, \fBpaused\fP }"
-.br
-.RI "Current gamestate\&. "
 .in -1c
 .SH "Typedef Documentation"
 .PP 
@@ -59,28 +53,6 @@ Entries list\&.
 \f(BIentry2 \fP
 .TP
 \f(BIsize \fP
-.SS "enum class \fBgameState\fP : uint8_t\fR [strong]\fP"
-
-.PP
-Current gamestate\&. 
-.PP
-\fBDeprecated\fP
-.RS 4
-Replaced with wm system 
-.RE
-.PP
-
-.PP
-\fBEnumerator\fP
-.in +1c
-.TP
-\f(BIterminating \fP
-.TP
-\f(BIintro \fP
-.TP
-\f(BIgameplay \fP
-.TP
-\f(BIpaused \fP
 .SS "enum class \fBnotepadData\fP : uint8_t\fR [strong]\fP"
 
 .PP
@@ -109,8 +81,6 @@ Scenes list\&.
 \f(BInotepad \fP
 .TP
 \f(BIpause \fP
-.TP
-\f(BIshitcord \fP
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Game from the source code\&.

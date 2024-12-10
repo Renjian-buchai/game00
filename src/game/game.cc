@@ -29,7 +29,6 @@ int wmInit(void *data) {
 };
 
 game::game() {
-  state = gameState::intro;
   if (int err = SDL_GetDisplayBounds(0, &dispBounds)) {
     std::cerr << SDL_GetError() << "\n";
     exit(err);

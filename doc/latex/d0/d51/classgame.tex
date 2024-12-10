@@ -4,6 +4,15 @@
 
 {\ttfamily \#include $<$game.\+hh$>$}
 
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61}{game\+State}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db}{terminating}}
+, \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb}{intro}}
+, \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057}{gameplay}}
+, \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2}{paused}}
+ \}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -16,7 +25,7 @@ void \mbox{\hyperlink{classgame_abf967ec7fa712fde980d9c399e4f778d}{gameplay}} ()
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73}{game\+State}} \mbox{\hyperlink{classgame_a66a0e69c41270ee22849d56d12e12749}{state}}
+\mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61}{game\+State}} \mbox{\hyperlink{classgame_a66a0e69c41270ee22849d56d12e12749}{state}} = \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb}{game\+State\+::intro}}
 \begin{DoxyCompactList}\small\item\em State that the game is in. \end{DoxyCompactList}\item 
 SDL\+\_\+\+Rect \mbox{\hyperlink{classgame_a2de268c0ae822e5ac4b5d1bb2199f2d6}{disp\+Bounds}}
 \begin{DoxyCompactList}\small\item\em Rect containing the screen height and width. \end{DoxyCompactList}\item 
@@ -38,6 +47,33 @@ SDL\+\_\+mutex \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_ac71bfd4415
 \item 
 SDL\+\_\+\+Thread \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_a4f416f46f79adaa51c134ecce60adae2}{load\+Thread}}
 \begin{DoxyCompactList}\small\item\em Thread that loads win\+Man. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\index{game@{game}!gameState@{gameState}}
+\index{gameState@{gameState}!game@{game}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+enum class \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61}{game\+::game\+State}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{terminating@{terminating}!game@{game}}\index{game@{game}!terminating@{terminating}}}\label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+terminating&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{intro@{intro}!game@{game}}\index{game@{game}!intro@{intro}}}\label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+intro&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gameplay@{gameplay}!game@{game}}\index{game@{game}!gameplay@{gameplay}}}\label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+gameplay&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{paused@{paused}!game@{game}}\index{game@{game}!paused@{paused}}}\label{classgame_a9fa617ead70613f9f2176f3aa2094f61} 
+paused&\\
+\hline
+
+\end{DoxyEnumFields}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -164,7 +200,7 @@ Different lengths of silence. Randomly selected.
 \index{state@{state}!game@{game}}
 \doxysubsubsection{\texorpdfstring{state}{state}}
 {\footnotesize\ttfamily \label{classgame_a66a0e69c41270ee22849d56d12e12749} 
-\mbox{\hyperlink{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73}{game\+State}} game\+::state}
+\mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61}{game\+State}} game\+::state = \mbox{\hyperlink{classgame_a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb}{game\+State\+::intro}}}
 
 
 

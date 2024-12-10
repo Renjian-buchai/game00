@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/game/game.cc" line="6" column="6" bodyfile="src/game/game.cc" bodystart="6" bodyend="-1"/>
+        <location file="src/game/game.cc" line="4" column="6" bodyfile="src/game/game.cc" bodystart="4" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d6/d16/structwm_init_data_1a8b40ddc033a30ca9233002d0b965f8e8" prot="public" static="no" mutable="no">
         <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/game/game.cc" line="7" column="8" bodyfile="src/game/game.cc" bodystart="7" bodyend="-1"/>
+        <location file="src/game/game.cc" line="5" column="8" bodyfile="src/game/game.cc" bodystart="5" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/game/game.cc" line="10" column="13" bodyfile="src/game/game.cc" bodystart="10" bodyend="-1"/>
+        <location file="src/game/game.cc" line="8" column="13" bodyfile="src/game/game.cc" bodystart="8" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/game/game.cc" line="13" column="3" bodyfile="src/game/game.cc" bodystart="13" bodyend="14"/>
+        <location file="src/game/game.cc" line="11" column="3" bodyfile="src/game/game.cc" bodystart="11" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="d6/d16/structwm_init_data_1a1333b79b5c832494ebc67333cd1b30a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/game/game.cc" line="15" column="3" bodyfile="src/game/game.cc" bodystart="15" bodyend="15"/>
+        <location file="src/game/game.cc" line="13" column="3" bodyfile="src/game/game.cc" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="function" id="d6/d16/structwm_init_data_1a2d7a4173fc868770359b717479f39b3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/game/game.cc" line="16" column="8" bodyfile="src/game/game.cc" bodystart="16" bodyend="16"/>
+        <location file="src/game/game.cc" line="14" column="8" bodyfile="src/game/game.cc" bodystart="14" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="d6/d16/structwm_init_data_1af86a2de615bbeee89fc31586b8875296" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/game/game.cc" line="17" column="8" bodyfile="src/game/game.cc" bodystart="17" bodyend="17"/>
+        <location file="src/game/game.cc" line="15" column="8" bodyfile="src/game/game.cc" bodystart="15" bodyend="15"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -159,7 +159,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/game/game.cc" line="5" column="1" bodyfile="src/game/game.cc" bodystart="5" bodyend="18"/>
+    <location file="src/game/game.cc" line="3" column="1" bodyfile="src/game/game.cc" bodystart="3" bodyend="16"/>
     <listofallmembers>
       <member refid="d6/d16/structwm_init_data_1a8b40ddc033a30ca9233002d0b965f8e8" prot="public" virt="non-virtual"><scope>wmInitData</scope><name>context</name></member>
       <member refid="d6/d16/structwm_init_data_1a2d7a4173fc868770359b717479f39b3f" prot="public" virt="non-virtual"><scope>wmInitData</scope><name>lock</name></member>

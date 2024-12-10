@@ -39,22 +39,22 @@ int main(int argc, char** argv) {
 
   game game;
 
-  while (game.state != gameState::terminating) {
+  while (game.state != game::gameState::terminating) {
     switch (game.state) {
-      case gameState::intro:
+      case game::gameState::intro:
 #define skipIntro
 #ifdef skipIntro
-        game.state = gameState::gameplay;
+        game.state = game::gameState::gameplay;
 #else
         game.intro();
 #endif
         break;
 
-      case gameState::gameplay:
+      case game::gameState::gameplay:
         game.gameplay();
         break;
 
-      case gameState::terminating:
+      case game::gameState::terminating:
         // It should never reach this point anyways
         break;
 
