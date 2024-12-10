@@ -39,7 +39,9 @@ SDL_Texture* shitcord_t::generateOptions(
     }
   }
 
-  if (options[2] != "") {
+  if (options[2] == "") {
+    render += "\n ";
+  } else {
     render += "3. " + options[2];
   }
 
@@ -48,7 +50,7 @@ SDL_Texture* shitcord_t::generateOptions(
                                    {0xe0, 0xe1, 0xcc, SDL_ALPHA_OPAQUE}, 1248);
   SDL_Texture* optionTexture =
       SDL_CreateTextureFromSurface(surfaceRenderer, optionText);
-  SDL_Rect bounds{16, 16, optionText->w, optionText->h};
+  SDL_Rect bounds{16, 16, 114 * optionText->w / optionText->h, 114};
   SDL_FreeSurface(optionText);
 
   SDL_RenderCopy(surfaceRenderer, optionTexture, nullptr, &bounds);
