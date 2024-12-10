@@ -6,11 +6,12 @@
     <derivedcompoundref refid="d9/dea/classintro__t" prot="public" virt="non-virtual">intro_t</derivedcompoundref>
     <derivedcompoundref refid="d9/d03/classnotepad__t" prot="public" virt="non-virtual">notepad_t</derivedcompoundref>
     <derivedcompoundref refid="dc/daa/classpause__t" prot="public" virt="non-virtual">pause_t</derivedcompoundref>
+    <derivedcompoundref refid="de/deb/classshitcord__t" prot="public" virt="non-virtual">shitcord_t</derivedcompoundref>
     <includes refid="d5/dd8/scene_8hh" local="no">scene.hh</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" prot="public" static="no" mutable="no">
-        <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
-        <definition>game* scene::context</definition>
+      <memberdef kind="variable" id="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" prot="public" static="no" mutable="no">
+        <type>const <ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+        <definition>const game* scene::context</definition>
         <argsstring></argsstring>
         <name>context</name>
         <qualifiedname>scene::context</qualifiedname>
@@ -21,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/scene.hh" line="27" column="8" bodyfile="include/scenes/scene.hh" bodystart="27" bodyend="-1"/>
+        <location file="include/scenes/scene.hh" line="29" column="14" bodyfile="include/scenes/scene.hh" bodystart="29" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -54,16 +55,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/scene.hh" line="22" column="15" bodyfile="src/scenes/scene.cc" bodystart="9" bodyend="27"/>
+        <location file="include/scenes/scene.hh" line="24" column="15" bodyfile="src/scenes/scene.cc" bodystart="13" bodyend="31"/>
       </memberdef>
-      <memberdef kind="function" id="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="df/db1/classscene_1ad7ef1968aa37f2e796fec45026b9ade0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>scene::scene</definition>
-        <argsstring>(game *gameContext)</argsstring>
+        <argsstring>(const game *gameContext)</argsstring>
         <name>scene</name>
         <qualifiedname>scene::scene</qualifiedname>
         <param>
-          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <type>const <ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
           <declname>gameContext</declname>
         </param>
         <briefdescription>
@@ -83,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/scene.hh" line="34" column="3" bodyfile="src/scenes/scene.cc" bodystart="5" bodyend="5"/>
+        <location file="include/scenes/scene.hh" line="36" column="3" bodyfile="src/scenes/scene.cc" bodystart="9" bodyend="9"/>
       </memberdef>
       <memberdef kind="function" id="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -99,30 +100,31 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/scene.hh" line="41" column="11" bodyfile="src/scenes/scene.cc" bodystart="7" bodyend="7"/>
+        <location file="include/scenes/scene.hh" line="43" column="11" bodyfile="src/scenes/scene.cc" bodystart="11" bodyend="11"/>
       </memberdef>
-      <memberdef kind="function" id="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>virtual std::pair&lt; scenes, sceneData &gt; scene::update</definition>
+      <memberdef kind="function" id="df/db1/classscene_1a668e98e3a86c4413fa3291c83fcc5378" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>virtual const std::pair&lt; scenes, sceneData &gt; scene::update</definition>
         <argsstring>()=0</argsstring>
         <name>update</name>
         <qualifiedname>scene::update</qualifiedname>
-        <reimplementedby refid="d5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">update</reimplementedby>
-        <reimplementedby refid="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">update</reimplementedby>
-        <reimplementedby refid="d9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">update</reimplementedby>
-        <reimplementedby refid="dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca">update</reimplementedby>
+        <reimplementedby refid="d5/db0/classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb">update</reimplementedby>
+        <reimplementedby refid="d9/dea/classintro__t_1a0939d6693673f0f0d9dfc0e9fd8e224c">update</reimplementedby>
+        <reimplementedby refid="d9/d03/classnotepad__t_1acb29bf9572b3733208643185c76e7f17">update</reimplementedby>
+        <reimplementedby refid="dc/daa/classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c">update</reimplementedby>
+        <reimplementedby refid="de/deb/classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55">update</reimplementedby>
         <briefdescription>
 <para>Updates scene logic. </para>
         </briefdescription>
         <detaileddescription>
-<para>Called in <ref refid="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" kindref="member">wm::update()</ref></para>
+<para>Called in <ref refid="df/d1c/classwm_1a486c679090df44959f5bf6dd71db5983" kindref="member">wm::update()</ref></para>
 <para><simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/scene.hh" line="51" column="21"/>
+        <location file="include/scenes/scene.hh" line="53" column="27"/>
       </memberdef>
       <memberdef kind="function" id="df/db1/classscene_1a7c218380f822d46bee781520e855a7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -134,6 +136,7 @@
         <reimplementedby refid="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808">render</reimplementedby>
         <reimplementedby refid="d9/d03/classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a">render</reimplementedby>
         <reimplementedby refid="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">render</reimplementedby>
+        <reimplementedby refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696">render</reimplementedby>
         <briefdescription>
 <para>Renders textures. </para>
         </briefdescription>
@@ -142,33 +145,34 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/scene.hh" line="58" column="16"/>
+        <location file="include/scenes/scene.hh" line="60" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>virtual std::pair&lt; scenes, sceneData &gt; scene::handle</definition>
-        <argsstring>(SDL_Event &amp;)=0</argsstring>
+      <memberdef kind="function" id="df/db1/classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>virtual const std::pair&lt; scenes, sceneData &gt; scene::handle</definition>
+        <argsstring>(const SDL_Event &amp;)=0</argsstring>
         <name>handle</name>
         <qualifiedname>scene::handle</qualifiedname>
-        <reimplementedby refid="d5/db0/classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">handle</reimplementedby>
-        <reimplementedby refid="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9">handle</reimplementedby>
-        <reimplementedby refid="d9/d03/classnotepad__t_1ad98a24e386e2a0363a44e67054988160">handle</reimplementedby>
-        <reimplementedby refid="dc/daa/classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac">handle</reimplementedby>
+        <reimplementedby refid="d5/db0/classexplorer__t_1a87452daa84e4b7145c1f50a812010824">handle</reimplementedby>
+        <reimplementedby refid="d9/dea/classintro__t_1a3a698a22fdd0e66f603955af8ced0186">handle</reimplementedby>
+        <reimplementedby refid="d9/d03/classnotepad__t_1a3fa185451691009d01df66441f2accb4">handle</reimplementedby>
+        <reimplementedby refid="dc/daa/classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e">handle</reimplementedby>
+        <reimplementedby refid="de/deb/classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8">handle</reimplementedby>
         <param>
-          <type>SDL_Event &amp;</type>
+          <type>const SDL_Event &amp;</type>
         </param>
         <briefdescription>
 <para>Handles events. </para>
         </briefdescription>
         <detaileddescription>
-<para>Called in <ref refid="df/d1c/classwm_1a7f282167450e97df5792d589c9ced058" kindref="member">wm::handle()</ref></para>
+<para>Called in <ref refid="df/d1c/classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca" kindref="member">wm::handle()</ref></para>
 <para><simplesect kind="return"><para>std::pair&lt;scenes, sceneData&gt; Returns the scene to be changed to, and the data that scene should contain </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/scene.hh" line="68" column="21"/>
+        <location file="include/scenes/scene.hh" line="70" column="27"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -205,6 +209,12 @@
         <label>scene</label>
         <link refid="df/db1/classscene"/>
       </node>
+      <node id="6">
+        <label>shitcord_t</label>
+        <link refid="de/deb/classshitcord__t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
     </inheritancegraph>
     <collaborationgraph>
       <node id="2">
@@ -233,14 +243,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/scenes/scene.hh" line="14" column="1" bodyfile="include/scenes/scene.hh" bodystart="14" bodyend="69"/>
+    <location file="include/scenes/scene.hh" line="16" column="1" bodyfile="include/scenes/scene.hh" bodystart="16" bodyend="71"/>
     <listofallmembers>
-      <member refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" prot="public" virt="non-virtual"><scope>scene</scope><name>context</name></member>
-      <member refid="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2" prot="public" virt="pure-virtual"><scope>scene</scope><name>handle</name></member>
+      <member refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" prot="public" virt="non-virtual"><scope>scene</scope><name>context</name></member>
+      <member refid="df/db1/classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d" prot="public" virt="pure-virtual"><scope>scene</scope><name>handle</name></member>
       <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" virt="non-virtual"><scope>scene</scope><name>loadTexture</name></member>
       <member refid="df/db1/classscene_1a7c218380f822d46bee781520e855a7de" prot="public" virt="pure-virtual"><scope>scene</scope><name>render</name></member>
-      <member refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" prot="public" virt="non-virtual"><scope>scene</scope><name>scene</name></member>
-      <member refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7" prot="public" virt="pure-virtual"><scope>scene</scope><name>update</name></member>
+      <member refid="df/db1/classscene_1ad7ef1968aa37f2e796fec45026b9ade0" prot="public" virt="non-virtual"><scope>scene</scope><name>scene</name></member>
+      <member refid="df/db1/classscene_1a668e98e3a86c4413fa3291c83fcc5378" prot="public" virt="pure-virtual"><scope>scene</scope><name>update</name></member>
       <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" virt="virtual"><scope>scene</scope><name>~scene</name></member>
     </listofallmembers>
   </compounddef>

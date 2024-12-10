@@ -5,33 +5,35 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#if\ !defined(EXPLORER\_HH)}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EXPLORER\_HH}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}scene.hh"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }explorer\_t\ :\ \textcolor{keyword}{public}\ scene\ \{}
-\DoxyCodeLine{00007\ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00013\ \ \ explorerData\ saveData;}
-\DoxyCodeLine{00014\ }
-\DoxyCodeLine{00018\ \ \ std::vector<std::pair<SDL\_Texture*,\ SDL\_Rect>>\ items;}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00023\ \ \ SDL\_Texture*\ background;}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00028\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ nameWrapLength;}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00033\ \ \ \textcolor{keyword}{const}\ SDL\_Rect\ downloadBounds;}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00042\ \ \ explorer\_t(game*\ context);}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00049\ \ \ \string~explorer\_t();}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00059\ \ \ std::pair<scenes,\ sceneData>\ update()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00064\ \ \ \textcolor{keywordtype}{void}\ render()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00073\ \ \ std::pair<scenes,\ sceneData>\ handle(SDL\_Event\&\ event)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00083\ \ \ SDL\_Texture*\ createFilesystemEntry(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ text,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ size);}
-\DoxyCodeLine{00084\ \};}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}scene.hh"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }explorer\_t\ :\ \textcolor{keyword}{public}\ scene\ \{}
+\DoxyCodeLine{00009\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ explorerData\ saveData;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \ \ std::vector<std::pair<SDL\_Texture*,\ SDL\_Rect>>\ items;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ SDL\_Texture*\ background;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ nameWrapLength;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keyword}{const}\ SDL\_Rect\ downloadBounds;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00044\ \ \ explorer\_t(\textcolor{keyword}{const}\ game*\ context);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \string~explorer\_t();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00061\ \ \ \textcolor{keyword}{const}\ std::pair<scenes,\ sceneData>\ update()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{void}\ render()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keyword}{const}\ std::pair<scenes,\ sceneData>\ handle(\textcolor{keyword}{const}\ SDL\_Event\&\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00085\ \ \ SDL\_Texture*\ createFilesystemEntry(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ text,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ size);}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

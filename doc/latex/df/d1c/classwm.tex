@@ -13,9 +13,9 @@
 \begin{DoxyCompactList}\small\item\em Construct a new wm object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classwm_aa9731642bc561de498bc559f0d5ab84e}{render}} ()
 \begin{DoxyCompactList}\small\item\em Renders the current scene, icons, and the overlay. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_a7f282167450e97df5792d589c9ced058}{handle}} (SDL\+\_\+\+Event \&event)
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_ae5f8a28b02b3bc82d4422c6ea0e745ca}{handle}} (const SDL\+\_\+\+Event \&event)
 \begin{DoxyCompactList}\small\item\em Handles events and scene switches via task bar. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_a54115bce16818acb350825256b11b2ce}{update}} ()
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_a486c679090df44959f5bf6dd71db5983}{update}} ()
 \begin{DoxyCompactList}\small\item\em Updates scene data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -37,6 +37,8 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classnotepad__t}{notepad\+\_\+t}} $>$
 std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classpause__t}{pause\+\_\+t}} $>$ \mbox{\hyperlink{classwm_a856235eafcdb96ed22216d2b53fb3b24}{pause}}
 \item 
 std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classintro__t}{intro\+\_\+t}} $>$ \mbox{\hyperlink{classwm_a139e824c013da025cafc10d68b73aa34}{intro}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classshitcord__t}{shitcord\+\_\+t}} $>$ \mbox{\hyperlink{classwm_a5b53423d16a28cc8c0eec221572fb454}{shitcord}}
 \item 
 \mbox{\hyperlink{classscene}{scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classwm_a2abf8c7eedd04f896cbf0ef50358f1c7}{current}}
 \begin{DoxyCompactList}\small\item\em Current scene. \end{DoxyCompactList}\item 
@@ -78,8 +80,8 @@ Constructs all the scenes, too
 \index{wm@{wm}!handle@{handle}}
 \index{handle@{handle}!wm@{wm}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classwm_a7f282167450e97df5792d589c9ced058} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classwm_ae5f8a28b02b3bc82d4422c6ea0e745ca} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})}
 
 
 
@@ -106,8 +108,8 @@ Renders the current scene, icons, and the overlay.
 Does not render if the current scene is the intro. \index{wm@{wm}!update@{update}}
 \index{update@{update}!wm@{wm}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{classwm_a54115bce16818acb350825256b11b2ce} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classwm_a486c679090df44959f5bf6dd71db5983} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -206,6 +208,12 @@ Position of the pause button.
 
 
 Scene to resume on. Only used for unpausing purposes. 
+
+\index{wm@{wm}!shitcord@{shitcord}}
+\index{shitcord@{shitcord}!wm@{wm}}
+\doxysubsubsection{\texorpdfstring{shitcord}{shitcord}}
+{\footnotesize\ttfamily \label{classwm_a5b53423d16a28cc8c0eec221572fb454} 
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classshitcord__t}{shitcord\+\_\+t}}$>$ wm\+::shitcord}
 
 \index{wm@{wm}!wasSilence@{wasSilence}}
 \index{wasSilence@{wasSilence}!wm@{wm}}

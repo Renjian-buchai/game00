@@ -17,14 +17,16 @@ annotated.html
 classes.html
 d0/d31/notepad_8cc.html
 d0/d51/classgame.html
-d0/d8b/pch_8hh.html
-d0/d8b/pch_8hh_source.html
+d0/dd7/shitcord_8cc.html
 d0/ddc/init_8cc.html
+d1/da8/shitcord_8hh.html
+d1/da8/shitcord_8hh_source.html
 d3/d0e/game_8hh.html
 d3/d0e/game_8hh_source.html
 d3/d51/wm_8hh.html
 d3/d51/wm_8hh_source.html
 d3/d74/classpause__t-members.html
+d3/d76/classshitcord__t-members.html
 d3/daf/classgame-members.html
 d4/d11/scene_8cc.html
 d4/d54/notepad_8hh.html
@@ -46,6 +48,7 @@ d9/d05/enum_8hh_source.html
 d9/d0f/main_8cc.html
 d9/dea/classintro__t.html
 d9/df8/classscene-members.html
+da/d58/deprecated.html
 da/d5e/game_8cc.html
 da/dec/classintro__t_1_1slide.html
 dc/d0e/classwm-members.html
@@ -55,6 +58,7 @@ dd/d82/init_8hh_source.html
 de/d22/classexplorer__t-members.html
 de/d27/classnotepad__t-members.html
 de/d8a/gameplay_8cc.html
+de/deb/classshitcord__t.html
 df/d0b/pause_8cc.html
 df/d17/wm_8cc.html
 df/d1c/classwm.html
@@ -78,6 +82,7 @@ globals_func.html
 globals_type.html
 hierarchy.html
 index.html
+pages.html
 bc_s.png
 bc_sd.png
 closed.png
@@ -85,6 +90,7 @@ d5/db0/classexplorer__t.png
 d9/d03/classnotepad__t.png
 d9/dea/classintro__t.png
 dc/daa/classpause__t.png
+de/deb/classshitcord__t.png
 df/db1/classscene.png
 doxygen.svg
 minus.svg

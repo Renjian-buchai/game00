@@ -1,13 +1,14 @@
 <toc label="Game" topic="index.html">
+  <topic label="Deprecated List" href="da/d58/deprecated.html"/>
   <topic label="Classes" href="annotated.html">
     <topic label="Class List" href="annotated.html">
       <topic label="explorer_t" href="d5/db0/classexplorer__t.html">
-        <topic label="explorer_t" href="d5/db0/classexplorer__t.html#a75961f78eebb4030c1f2d7b78929a2b6"/>
+        <topic label="explorer_t" href="d5/db0/classexplorer__t.html#a2924ed013429848f0cbeb1383449e505"/>
         <topic label="~explorer_t" href="d5/db0/classexplorer__t.html#a44fc2dcde828c85abf707bb5ff024b50"/>
         <topic label="createFilesystemEntry" href="d5/db0/classexplorer__t.html#a37bd5f0b908b0c66a411c873733e3f5a"/>
-        <topic label="handle" href="d5/db0/classexplorer__t.html#add68d9bf9c0e52805f4bb714b1133882"/>
+        <topic label="handle" href="d5/db0/classexplorer__t.html#a87452daa84e4b7145c1f50a812010824"/>
         <topic label="render" href="d5/db0/classexplorer__t.html#aeeb2aa5c58317a29463ce527b2ade757"/>
-        <topic label="update" href="d5/db0/classexplorer__t.html#a099b72112db6de2a3d8f6ea0b724fae5"/>
+        <topic label="update" href="d5/db0/classexplorer__t.html#a9fd3219c8a05b381b5e8ee292000c1cb"/>
         <topic label="background" href="d5/db0/classexplorer__t.html#a29be9f9a5ec3090c4998f9cb7277cc93"/>
         <topic label="downloadBounds" href="d5/db0/classexplorer__t.html#ab134139610d2267ca833abcd44b39aac"/>
         <topic label="items" href="d5/db0/classexplorer__t.html#aea965f72ccf4510850fc844e97c51c19"/>
@@ -15,12 +16,6 @@
         <topic label="saveData" href="d5/db0/classexplorer__t.html#a40830fddee0e376a60dba4876b7bc7e3"/>
       </topic>
       <topic label="game" href="d0/d51/classgame.html">
-        <topic label="gameState" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61">
-          <topic label="terminating" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"/>
-          <topic label="intro" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"/>
-          <topic label="gameplay" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"/>
-          <topic label="paused" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"/>
-        </topic>
         <topic label="game" href="d0/d51/classgame.html#ad9c102127b5038f880067ad6c9198d38"/>
         <topic label="~game" href="d0/d51/classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07"/>
         <topic label="gameplay" href="d0/d51/classgame.html#abf967ec7fa712fde980d9c399e4f778d"/>
@@ -38,7 +33,7 @@
       </topic>
       <topic label="intro_t" href="d9/dea/classintro__t.html">
         <topic label="slide" href="da/dec/classintro__t_1_1slide.html">
-          <topic label="slide" href="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"/>
+          <topic label="slide" href="da/dec/classintro__t_1_1slide.html#a32664b85dc6014b6614477f315d81ee5"/>
           <topic label="dest" href="da/dec/classintro__t_1_1slide.html#a7c36e704b33011d1088d093f88e436bf"/>
           <topic label="duration" href="da/dec/classintro__t_1_1slide.html#a0a4846e82f88facedf50da06b6dd061b"/>
           <topic label="fadeIn" href="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"/>
@@ -51,24 +46,24 @@
           <topic label="VERTICAL" href="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc"/>
           <topic label="BOTH" href="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"/>
         </topic>
-        <topic label="intro_t" href="d9/dea/classintro__t.html#ad12e48028d1cc4b1c288dab77dbe193d"/>
+        <topic label="intro_t" href="d9/dea/classintro__t.html#a820567ef1f00c44713099e17180f1414"/>
         <topic label="~intro_t" href="d9/dea/classintro__t.html#a56e63618edf895c263cda8a8c8ef45e6"/>
         <topic label="addSlide" href="d9/dea/classintro__t.html#a0439809e2c67c40ea20757ffed70968c"/>
         <topic label="centreRect" href="d9/dea/classintro__t.html#a427b58b3e041bb4672278b9e422b8292"/>
-        <topic label="handle" href="d9/dea/classintro__t.html#adda2b278aae9bae71b89194313bc23a9"/>
+        <topic label="handle" href="d9/dea/classintro__t.html#a3a698a22fdd0e66f603955af8ced0186"/>
         <topic label="render" href="d9/dea/classintro__t.html#add93912d666cc242e170f15e7e03a808"/>
         <topic label="slideShow" href="d9/dea/classintro__t.html#a104f915a0a592c0db524a70ffc666a60"/>
-        <topic label="update" href="d9/dea/classintro__t.html#a09c3876e890a37be7a17dbbb0084d4da"/>
+        <topic label="update" href="d9/dea/classintro__t.html#a0939d6693673f0f0d9dfc0e9fd8e224c"/>
         <topic label="skip" href="d9/dea/classintro__t.html#a1543b2b845c6999165123b34608fcf25"/>
         <topic label="slides" href="d9/dea/classintro__t.html#a97b511d587ca8e05515e35e6418cf1d0"/>
         <topic label="startTime" href="d9/dea/classintro__t.html#a6db4493f9b8695a1bed2f16f3af45870"/>
       </topic>
       <topic label="notepad_t" href="d9/d03/classnotepad__t.html">
-        <topic label="notepad_t" href="d9/d03/classnotepad__t.html#aca34ffdf14d61518257d5ff32cbda77f"/>
+        <topic label="notepad_t" href="d9/d03/classnotepad__t.html#ae910b670eb9800dc5f998943efc80371"/>
         <topic label="~notepad_t" href="d9/d03/classnotepad__t.html#ac047cc39e7ff3f954057314e6298d6b1"/>
-        <topic label="handle" href="d9/d03/classnotepad__t.html#ad98a24e386e2a0363a44e67054988160"/>
+        <topic label="handle" href="d9/d03/classnotepad__t.html#a3fa185451691009d01df66441f2accb4"/>
         <topic label="render" href="d9/d03/classnotepad__t.html#a08c6c7349f0912c9f547b25fa8189f9a"/>
-        <topic label="update" href="d9/d03/classnotepad__t.html#ab177e5696b0a4925d4309ce90e5f66aa"/>
+        <topic label="update" href="d9/d03/classnotepad__t.html#acb29bf9572b3733208643185c76e7f17"/>
         <topic label="background" href="d9/d03/classnotepad__t.html#a4416b91e1e20a180f9a00855b6f9c459"/>
         <topic label="currentData" href="d9/d03/classnotepad__t.html#a71add6ff4e2c0947e3043df553695bd1"/>
         <topic label="entry" href="d9/d03/classnotepad__t.html#a6766a5c1170ee8fab7ecdb209f0d2076"/>
@@ -77,11 +72,11 @@
         <topic label="prevData" href="d9/d03/classnotepad__t.html#ade41e5a025182a3a851e078e8fbbe4af"/>
       </topic>
       <topic label="pause_t" href="dc/daa/classpause__t.html">
-        <topic label="pause_t" href="dc/daa/classpause__t.html#a840256e71d9ff0f489090fff8f07c946"/>
+        <topic label="pause_t" href="dc/daa/classpause__t.html#afff933b3fe3682e13e095d5b867d41e7"/>
         <topic label="~pause_t" href="dc/daa/classpause__t.html#a8e6961a2a9fb61c99e92face62126593"/>
-        <topic label="handle" href="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"/>
+        <topic label="handle" href="dc/daa/classpause__t.html#a0945dd5c1b896cd92d9d7454c13f577e"/>
         <topic label="render" href="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"/>
-        <topic label="update" href="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"/>
+        <topic label="update" href="dc/daa/classpause__t.html#a7975d907b119f75c9b87fe6f3ceb7d2c"/>
         <topic label="exit" href="dc/daa/classpause__t.html#a148437ac9cfb0970822384f99c03ac77"/>
         <topic label="exitHover" href="dc/daa/classpause__t.html#a3e67f3211198db082a0ac245dad42212"/>
         <topic label="exitPos" href="dc/daa/classpause__t.html#a9034485c8caf7cd1dfddf7f300542747"/>
@@ -93,20 +88,29 @@
         <topic label="resumeState" href="dc/daa/classpause__t.html#af9103128c6bc5af691f2fc46209e3217"/>
       </topic>
       <topic label="scene" href="df/db1/classscene.html">
-        <topic label="scene" href="df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90"/>
+        <topic label="scene" href="df/db1/classscene.html#ad7ef1968aa37f2e796fec45026b9ade0"/>
         <topic label="~scene" href="df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496"/>
-        <topic label="handle" href="df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2"/>
+        <topic label="handle" href="df/db1/classscene.html#a1a6ee7a03d72487127dbfa6f79f0db9d"/>
         <topic label="loadTexture" href="df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061"/>
         <topic label="render" href="df/db1/classscene.html#a7c218380f822d46bee781520e855a7de"/>
-        <topic label="update" href="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"/>
-        <topic label="context" href="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"/>
+        <topic label="update" href="df/db1/classscene.html#a668e98e3a86c4413fa3291c83fcc5378"/>
+        <topic label="context" href="df/db1/classscene.html#a1659b1da41590a2ac67f9927beb823ea"/>
+      </topic>
+      <topic label="shitcord_t" href="de/deb/classshitcord__t.html">
+        <topic label="shitcord_t" href="de/deb/classshitcord__t.html#aac03a23af4132dd92108d20b30a6be0d"/>
+        <topic label="~shitcord_t" href="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"/>
+        <topic label="generateOptions" href="de/deb/classshitcord__t.html#a94654f5d652fb31631e2ff17e5c3776b"/>
+        <topic label="handle" href="de/deb/classshitcord__t.html#a26224292a18d8df42b361a1f3b333ed8"/>
+        <topic label="render" href="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"/>
+        <topic label="update" href="de/deb/classshitcord__t.html#a13bf62175766d1ebc873c3a8ac8a1b55"/>
+        <topic label="background" href="de/deb/classshitcord__t.html#a18f38f0c4bb56eeffdd3ef8657626081"/>
       </topic>
       <topic label="wm" href="df/d1c/classwm.html">
         <topic label="wm" href="df/d1c/classwm.html#ae80ff7518d15add5e8a639bc1b509ed4"/>
         <topic label="wm" href="df/d1c/classwm.html#a963abfdd7d229db5869e59a97a301f47"/>
-        <topic label="handle" href="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"/>
+        <topic label="handle" href="df/d1c/classwm.html#ae5f8a28b02b3bc82d4422c6ea0e745ca"/>
         <topic label="render" href="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"/>
-        <topic label="update" href="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"/>
+        <topic label="update" href="df/d1c/classwm.html#a486c679090df44959f5bf6dd71db5983"/>
         <topic label="context" href="df/d1c/classwm.html#af9afae9fdbb9db6fdb6d62bf934ab5c3"/>
         <topic label="current" href="df/d1c/classwm.html#a2abf8c7eedd04f896cbf0ef50358f1c7"/>
         <topic label="explorer" href="df/d1c/classwm.html#adbe11e0ba621af1815bf54fde8244645"/>
@@ -117,6 +121,7 @@
         <topic label="pause" href="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"/>
         <topic label="pauseBounds" href="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"/>
         <topic label="resume" href="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"/>
+        <topic label="shitcord" href="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"/>
         <topic label="wasSilence" href="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"/>
       </topic>
       <topic label="wmInitData" href="d6/d16/structwm_init_data.html">
@@ -136,6 +141,7 @@
         <topic label="intro_t" href="d9/dea/classintro__t.html"/>
         <topic label="notepad_t" href="d9/d03/classnotepad__t.html"/>
         <topic label="pause_t" href="dc/daa/classpause__t.html"/>
+        <topic label="shitcord_t" href="de/deb/classshitcord__t.html"/>
       </topic>
       <topic label="intro_t::slide" href="da/dec/classintro__t_1_1slide.html"/>
       <topic label="wm" href="df/d1c/classwm.html"/>
@@ -154,12 +160,12 @@
         <topic label="scenes" href="dir_9551f21d874a3950d142803a40139414.html">
           <topic label="explorer.hh" href="d4/d7c/explorer_8hh.html">
             <topic label="explorer_t" href="d5/db0/classexplorer__t.html">
-              <topic label="explorer_t" href="d5/db0/classexplorer__t.html#a75961f78eebb4030c1f2d7b78929a2b6"/>
+              <topic label="explorer_t" href="d5/db0/classexplorer__t.html#a2924ed013429848f0cbeb1383449e505"/>
               <topic label="~explorer_t" href="d5/db0/classexplorer__t.html#a44fc2dcde828c85abf707bb5ff024b50"/>
               <topic label="createFilesystemEntry" href="d5/db0/classexplorer__t.html#a37bd5f0b908b0c66a411c873733e3f5a"/>
-              <topic label="handle" href="d5/db0/classexplorer__t.html#add68d9bf9c0e52805f4bb714b1133882"/>
+              <topic label="handle" href="d5/db0/classexplorer__t.html#a87452daa84e4b7145c1f50a812010824"/>
               <topic label="render" href="d5/db0/classexplorer__t.html#aeeb2aa5c58317a29463ce527b2ade757"/>
-              <topic label="update" href="d5/db0/classexplorer__t.html#a099b72112db6de2a3d8f6ea0b724fae5"/>
+              <topic label="update" href="d5/db0/classexplorer__t.html#a9fd3219c8a05b381b5e8ee292000c1cb"/>
               <topic label="background" href="d5/db0/classexplorer__t.html#a29be9f9a5ec3090c4998f9cb7277cc93"/>
               <topic label="downloadBounds" href="d5/db0/classexplorer__t.html#ab134139610d2267ca833abcd44b39aac"/>
               <topic label="items" href="d5/db0/classexplorer__t.html#aea965f72ccf4510850fc844e97c51c19"/>
@@ -170,7 +176,7 @@
           <topic label="init.hh" href="dd/d82/init_8hh.html">
             <topic label="intro_t" href="d9/dea/classintro__t.html">
               <topic label="slide" href="da/dec/classintro__t_1_1slide.html">
-                <topic label="slide" href="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"/>
+                <topic label="slide" href="da/dec/classintro__t_1_1slide.html#a32664b85dc6014b6614477f315d81ee5"/>
                 <topic label="dest" href="da/dec/classintro__t_1_1slide.html#a7c36e704b33011d1088d093f88e436bf"/>
                 <topic label="duration" href="da/dec/classintro__t_1_1slide.html#a0a4846e82f88facedf50da06b6dd061b"/>
                 <topic label="fadeIn" href="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"/>
@@ -183,20 +189,20 @@
                 <topic label="VERTICAL" href="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a3e1b74251c07310c5f1b968145bf00dc"/>
                 <topic label="BOTH" href="d9/dea/classintro__t.html#ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197"/>
               </topic>
-              <topic label="intro_t" href="d9/dea/classintro__t.html#ad12e48028d1cc4b1c288dab77dbe193d"/>
+              <topic label="intro_t" href="d9/dea/classintro__t.html#a820567ef1f00c44713099e17180f1414"/>
               <topic label="~intro_t" href="d9/dea/classintro__t.html#a56e63618edf895c263cda8a8c8ef45e6"/>
               <topic label="addSlide" href="d9/dea/classintro__t.html#a0439809e2c67c40ea20757ffed70968c"/>
               <topic label="centreRect" href="d9/dea/classintro__t.html#a427b58b3e041bb4672278b9e422b8292"/>
-              <topic label="handle" href="d9/dea/classintro__t.html#adda2b278aae9bae71b89194313bc23a9"/>
+              <topic label="handle" href="d9/dea/classintro__t.html#a3a698a22fdd0e66f603955af8ced0186"/>
               <topic label="render" href="d9/dea/classintro__t.html#add93912d666cc242e170f15e7e03a808"/>
               <topic label="slideShow" href="d9/dea/classintro__t.html#a104f915a0a592c0db524a70ffc666a60"/>
-              <topic label="update" href="d9/dea/classintro__t.html#a09c3876e890a37be7a17dbbb0084d4da"/>
+              <topic label="update" href="d9/dea/classintro__t.html#a0939d6693673f0f0d9dfc0e9fd8e224c"/>
               <topic label="skip" href="d9/dea/classintro__t.html#a1543b2b845c6999165123b34608fcf25"/>
               <topic label="slides" href="d9/dea/classintro__t.html#a97b511d587ca8e05515e35e6418cf1d0"/>
               <topic label="startTime" href="d9/dea/classintro__t.html#a6db4493f9b8695a1bed2f16f3af45870"/>
             </topic>
             <topic label="intro_t::slide" href="da/dec/classintro__t_1_1slide.html">
-              <topic label="slide" href="da/dec/classintro__t_1_1slide.html#a349a2578c1249f4b6dab207bc8efa552"/>
+              <topic label="slide" href="da/dec/classintro__t_1_1slide.html#a32664b85dc6014b6614477f315d81ee5"/>
               <topic label="dest" href="da/dec/classintro__t_1_1slide.html#a7c36e704b33011d1088d093f88e436bf"/>
               <topic label="duration" href="da/dec/classintro__t_1_1slide.html#a0a4846e82f88facedf50da06b6dd061b"/>
               <topic label="fadeIn" href="da/dec/classintro__t_1_1slide.html#a2c6db6f868f8dca116a02bfbe6a228eb"/>
@@ -207,11 +213,11 @@
           </topic>
           <topic label="notepad.hh" href="d4/d54/notepad_8hh.html">
             <topic label="notepad_t" href="d9/d03/classnotepad__t.html">
-              <topic label="notepad_t" href="d9/d03/classnotepad__t.html#aca34ffdf14d61518257d5ff32cbda77f"/>
+              <topic label="notepad_t" href="d9/d03/classnotepad__t.html#ae910b670eb9800dc5f998943efc80371"/>
               <topic label="~notepad_t" href="d9/d03/classnotepad__t.html#ac047cc39e7ff3f954057314e6298d6b1"/>
-              <topic label="handle" href="d9/d03/classnotepad__t.html#ad98a24e386e2a0363a44e67054988160"/>
+              <topic label="handle" href="d9/d03/classnotepad__t.html#a3fa185451691009d01df66441f2accb4"/>
               <topic label="render" href="d9/d03/classnotepad__t.html#a08c6c7349f0912c9f547b25fa8189f9a"/>
-              <topic label="update" href="d9/d03/classnotepad__t.html#ab177e5696b0a4925d4309ce90e5f66aa"/>
+              <topic label="update" href="d9/d03/classnotepad__t.html#acb29bf9572b3733208643185c76e7f17"/>
               <topic label="background" href="d9/d03/classnotepad__t.html#a4416b91e1e20a180f9a00855b6f9c459"/>
               <topic label="currentData" href="d9/d03/classnotepad__t.html#a71add6ff4e2c0947e3043df553695bd1"/>
               <topic label="entry" href="d9/d03/classnotepad__t.html#a6766a5c1170ee8fab7ecdb209f0d2076"/>
@@ -222,11 +228,11 @@
           </topic>
           <topic label="pause.hh" href="d4/d90/pause_8hh.html">
             <topic label="pause_t" href="dc/daa/classpause__t.html">
-              <topic label="pause_t" href="dc/daa/classpause__t.html#a840256e71d9ff0f489090fff8f07c946"/>
+              <topic label="pause_t" href="dc/daa/classpause__t.html#afff933b3fe3682e13e095d5b867d41e7"/>
               <topic label="~pause_t" href="dc/daa/classpause__t.html#a8e6961a2a9fb61c99e92face62126593"/>
-              <topic label="handle" href="dc/daa/classpause__t.html#a267e138e3c13edfb2e0c57cb9100ceac"/>
+              <topic label="handle" href="dc/daa/classpause__t.html#a0945dd5c1b896cd92d9d7454c13f577e"/>
               <topic label="render" href="dc/daa/classpause__t.html#a021e3734b6d7c0688490809b5f87d8c8"/>
-              <topic label="update" href="dc/daa/classpause__t.html#ac738a9a7bc4671c59a8a9eacd9d0e0ca"/>
+              <topic label="update" href="dc/daa/classpause__t.html#a7975d907b119f75c9b87fe6f3ceb7d2c"/>
               <topic label="exit" href="dc/daa/classpause__t.html#a148437ac9cfb0970822384f99c03ac77"/>
               <topic label="exitHover" href="dc/daa/classpause__t.html#a3e67f3211198db082a0ac245dad42212"/>
               <topic label="exitPos" href="dc/daa/classpause__t.html#a9034485c8caf7cd1dfddf7f300542747"/>
@@ -240,15 +246,26 @@
           </topic>
           <topic label="scene.hh" href="d5/dd8/scene_8hh.html">
             <topic label="scene" href="df/db1/classscene.html">
-              <topic label="scene" href="df/db1/classscene.html#a1012571c9524a29524b8b9d680715e90"/>
+              <topic label="scene" href="df/db1/classscene.html#ad7ef1968aa37f2e796fec45026b9ade0"/>
               <topic label="~scene" href="df/db1/classscene.html#aa97c9c1f46aa44e63223a737fcdcb496"/>
-              <topic label="handle" href="df/db1/classscene.html#a56dec35146b15669e3cf054ced2f4be2"/>
+              <topic label="handle" href="df/db1/classscene.html#a1a6ee7a03d72487127dbfa6f79f0db9d"/>
               <topic label="loadTexture" href="df/db1/classscene.html#a5d4681a41f14704a05c4f84569888061"/>
               <topic label="render" href="df/db1/classscene.html#a7c218380f822d46bee781520e855a7de"/>
-              <topic label="update" href="df/db1/classscene.html#a34b71ea2aea3fd3c007786e75be817c7"/>
-              <topic label="context" href="df/db1/classscene.html#ae9987da046dc0255632015f0e42a546c"/>
+              <topic label="update" href="df/db1/classscene.html#a668e98e3a86c4413fa3291c83fcc5378"/>
+              <topic label="context" href="df/db1/classscene.html#a1659b1da41590a2ac67f9927beb823ea"/>
             </topic>
             <topic label="pix" href="d5/dd8/scene_8hh.html#a65ce2d414e762882854d47ab28016bb4"/>
+          </topic>
+          <topic label="shitcord.hh" href="d1/da8/shitcord_8hh.html">
+            <topic label="shitcord_t" href="de/deb/classshitcord__t.html">
+              <topic label="shitcord_t" href="de/deb/classshitcord__t.html#aac03a23af4132dd92108d20b30a6be0d"/>
+              <topic label="~shitcord_t" href="de/deb/classshitcord__t.html#a46798c707ed5dce9b324cdaa17db5c71"/>
+              <topic label="generateOptions" href="de/deb/classshitcord__t.html#a94654f5d652fb31631e2ff17e5c3776b"/>
+              <topic label="handle" href="de/deb/classshitcord__t.html#a26224292a18d8df42b361a1f3b333ed8"/>
+              <topic label="render" href="de/deb/classshitcord__t.html#a04b3dbd430b42e009e6c47122c69e696"/>
+              <topic label="update" href="de/deb/classshitcord__t.html#a13bf62175766d1ebc873c3a8ac8a1b55"/>
+              <topic label="background" href="de/deb/classshitcord__t.html#a18f38f0c4bb56eeffdd3ef8657626081"/>
+            </topic>
           </topic>
         </topic>
         <topic label="enum.hh" href="d9/d05/enum_8hh.html">
@@ -258,6 +275,12 @@
             <topic label="entry1" href="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aad329f73735d65163cec28c0a79429e7d"/>
             <topic label="entry2" href="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"/>
             <topic label="size" href="d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"/>
+          </topic>
+          <topic label="gameState" href="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73">
+            <topic label="terminating" href="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db"/>
+            <topic label="intro" href="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb"/>
+            <topic label="gameplay" href="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057"/>
+            <topic label="paused" href="d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2"/>
           </topic>
           <topic label="notepadData" href="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6">
             <topic label="empty" href="d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9"/>
@@ -269,16 +292,11 @@
             <topic label="explorer" href="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"/>
             <topic label="notepad" href="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"/>
             <topic label="pause" href="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"/>
+            <topic label="shitcord" href="d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"/>
           </topic>
         </topic>
         <topic label="game.hh" href="d3/d0e/game_8hh.html">
           <topic label="game" href="d0/d51/classgame.html">
-            <topic label="gameState" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61">
-              <topic label="terminating" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"/>
-              <topic label="intro" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"/>
-              <topic label="gameplay" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"/>
-              <topic label="paused" href="d0/d51/classgame.html#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"/>
-            </topic>
             <topic label="game" href="d0/d51/classgame.html#ad9c102127b5038f880067ad6c9198d38"/>
             <topic label="~game" href="d0/d51/classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07"/>
             <topic label="gameplay" href="d0/d51/classgame.html#abf967ec7fa712fde980d9c399e4f778d"/>
@@ -295,14 +313,13 @@
             <topic label="winMan" href="d0/d51/classgame.html#a149df5bc9d648f2b400d3f03f8aa139d"/>
           </topic>
         </topic>
-        <topic label="pch.hh" href="d0/d8b/pch_8hh.html"/>
         <topic label="wm.hh" href="d3/d51/wm_8hh.html">
           <topic label="wm" href="df/d1c/classwm.html">
             <topic label="wm" href="df/d1c/classwm.html#ae80ff7518d15add5e8a639bc1b509ed4"/>
             <topic label="wm" href="df/d1c/classwm.html#a963abfdd7d229db5869e59a97a301f47"/>
-            <topic label="handle" href="df/d1c/classwm.html#a7f282167450e97df5792d589c9ced058"/>
+            <topic label="handle" href="df/d1c/classwm.html#ae5f8a28b02b3bc82d4422c6ea0e745ca"/>
             <topic label="render" href="df/d1c/classwm.html#aa9731642bc561de498bc559f0d5ab84e"/>
-            <topic label="update" href="df/d1c/classwm.html#a54115bce16818acb350825256b11b2ce"/>
+            <topic label="update" href="df/d1c/classwm.html#a486c679090df44959f5bf6dd71db5983"/>
             <topic label="context" href="df/d1c/classwm.html#af9afae9fdbb9db6fdb6d62bf934ab5c3"/>
             <topic label="current" href="df/d1c/classwm.html#a2abf8c7eedd04f896cbf0ef50358f1c7"/>
             <topic label="explorer" href="df/d1c/classwm.html#adbe11e0ba621af1815bf54fde8244645"/>
@@ -313,6 +330,7 @@
             <topic label="pause" href="df/d1c/classwm.html#a856235eafcdb96ed22216d2b53fb3b24"/>
             <topic label="pauseBounds" href="df/d1c/classwm.html#a50c97d11917956cf0abb63be275faddc"/>
             <topic label="resume" href="df/d1c/classwm.html#aeedc8b11c2b96839e921b7f82840656e"/>
+            <topic label="shitcord" href="df/d1c/classwm.html#a5b53423d16a28cc8c0eec221572fb454"/>
             <topic label="wasSilence" href="df/d1c/classwm.html#a205790bf574b52cabae2bca77b17c262"/>
           </topic>
         </topic>
@@ -330,7 +348,9 @@
             </topic>
             <topic label="wmInit" href="da/d5e/game_8cc.html#a99ac6b71536a9029028ea49afd42fab0"/>
           </topic>
-          <topic label="gameplay.cc" href="de/d8a/gameplay_8cc.html"/>
+          <topic label="gameplay.cc" href="de/d8a/gameplay_8cc.html">
+            <topic label="changeScene" href="de/d8a/gameplay_8cc.html#a199644654857552c06fa8aaea76ac812"/>
+          </topic>
           <topic label="pause.cc" href="df/d0b/pause_8cc.html"/>
           <topic label="wm.cc" href="df/d17/wm_8cc.html"/>
         </topic>
@@ -341,6 +361,7 @@
           <topic label="init.cc" href="d0/ddc/init_8cc.html"/>
           <topic label="notepad.cc" href="d0/d31/notepad_8cc.html"/>
           <topic label="scene.cc" href="d4/d11/scene_8cc.html"/>
+          <topic label="shitcord.cc" href="d0/dd7/shitcord_8cc.html"/>
         </topic>
         <topic label="main.cc" href="d9/d0f/main_8cc.html">
           <topic label="skipIntro" href="d9/d0f/main_8cc.html#a70fa023bb5d371dac47448b690c83581"/>

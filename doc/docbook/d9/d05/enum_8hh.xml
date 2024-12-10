@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_enum_8hh" xml:lang="en-US">
 <title>include/enum.hh File Reference</title>
 <indexterm><primary>include/enum.hh</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &lt;cstdint&gt;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &lt;cstdint&gt;<?linebreak?>#include &lt;variant&gt;<?linebreak?></programlisting><simplesect>
     <title>Typedefs    </title>
         <itemizedlist>
             <listitem><para>using <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> = std::variant&lt;std::monostate, <link linkend="_enum_8hh_1ac37de80148c8c914ee47baccc98c59e6">notepadData</link>&gt;</para>
@@ -27,13 +27,22 @@
 
 <para>Entries list. </para>
 </listitem>
-            <listitem><para>enum class <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link> : uint8_t { <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb">intro</link>
+            <listitem><para>enum class <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link> : uint8_t { <?linebreak?><link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb">intro</link>
 , <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162">explorer</link>
 , <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf">notepad</link>
 , <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9">pause</link>
+, <?linebreak?><link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7">shitcord</link>
  }</para>
 
 <para>Scenes list. </para>
+</listitem>
+            <listitem><para>enum class <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73">gameState</link> : uint8_t { <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db">terminating</link>
+, <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb">intro</link>
+, <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057">gameplay</link>
+, <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2">paused</link>
+ }</para>
+
+<para>Current gamestate. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -70,6 +79,36 @@
 <anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"/>entry2</entry><entry></entry></row><row><entry><indexterm><primary>size</primary><secondary>enum.hh</secondary></indexterm>
 <indexterm><primary>enum.hh</primary><secondary>size</secondary></indexterm>
 <anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"/>size</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73"/><section>
+    <title>gameState</title>
+<indexterm><primary>gameState</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>gameState</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73">gameState</link> : uint8_t<computeroutput>[strong]</computeroutput></computeroutput></para><para>
+
+<para>Current gamestate. </para>
+</para>
+
+<para><para><link linkend="_deprecated_1_deprecated000001">Deprecated</link> 
+<para>Replaced with wm system </para>
+</para></para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>terminating</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>terminating</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db"/>terminating</entry><entry></entry></row><row><entry><indexterm><primary>intro</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>intro</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb"/>intro</entry><entry></entry></row><row><entry><indexterm><primary>gameplay</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>gameplay</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057"/>gameplay</entry><entry></entry></row><row><entry><indexterm><primary>paused</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>paused</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2"/>paused</entry><entry></entry></row>    </tbody>
     </tgroup>
 </informaltable>
 </section>
@@ -121,7 +160,9 @@
 <indexterm><primary>enum.hh</primary><secondary>notepad</secondary></indexterm>
 <anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf"/>notepad</entry><entry></entry></row><row><entry><indexterm><primary>pause</primary><secondary>enum.hh</secondary></indexterm>
 <indexterm><primary>enum.hh</primary><secondary>pause</secondary></indexterm>
-<anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"/>pause</entry><entry></entry></row>    </tbody>
+<anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9"/>pause</entry><entry></entry></row><row><entry><indexterm><primary>shitcord</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>shitcord</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7"/>shitcord</entry><entry></entry></row>    </tbody>
     </tgroup>
 </informaltable>
 </section>

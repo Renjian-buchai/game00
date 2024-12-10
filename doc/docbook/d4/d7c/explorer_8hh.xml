@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_explorer_8hh" xml:lang="en-US">
 <title>include/scenes/explorer.hh File Reference</title>
 <indexterm><primary>include/scenes/explorer.hh</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;scene.hh&quot;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &lt;vector&gt;<?linebreak?>#include &quot;scene.hh&quot;<?linebreak?></programlisting><simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classexplorer__t">explorer_t</link></para>

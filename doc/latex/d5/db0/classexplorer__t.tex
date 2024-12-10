@@ -13,15 +13,15 @@ Inheritance diagram for explorer\+\_\+t\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classexplorer__t_a75961f78eebb4030c1f2d7b78929a2b6}{explorer\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}})
+\mbox{\hyperlink{classexplorer__t_a2924ed013429848f0cbeb1383449e505}{explorer\+\_\+t}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}})
 \begin{DoxyCompactList}\small\item\em Construct a new explorer t object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classexplorer__t_a44fc2dcde828c85abf707bb5ff024b50}{\texorpdfstring{$\sim$}{\string~}explorer\+\_\+t}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the explorer t object. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classexplorer__t_a099b72112db6de2a3d8f6ea0b724fae5}{update}} () override
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classexplorer__t_a9fd3219c8a05b381b5e8ee292000c1cb}{update}} () override
 \begin{DoxyCompactList}\small\item\em Update logic for the explorer t object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classexplorer__t_aeeb2aa5c58317a29463ce527b2ade757}{render}} () override
 \begin{DoxyCompactList}\small\item\em Renders explorer, and files. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classexplorer__t_add68d9bf9c0e52805f4bb714b1133882}{handle}} (SDL\+\_\+\+Event \&event) override
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classexplorer__t_a87452daa84e4b7145c1f50a812010824}{handle}} (const SDL\+\_\+\+Event \&event) override
 \begin{DoxyCompactList}\small\item\em Handles mouse movement and file selection. \end{DoxyCompactList}\item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classexplorer__t_a37bd5f0b908b0c66a411c873733e3f5a}{create\+Filesystem\+Entry}} (const char \texorpdfstring{$\ast$}{*}text, const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{enum_8hh_a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24}{size}})
 \begin{DoxyCompactList}\small\item\em Creates texture to display in filesystem. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -30,7 +30,7 @@ SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classexplorer__t_
 \item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
 \begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classscene_a1012571c9524a29524b8b9d680715e90}{scene}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\mbox{\hyperlink{classscene_ad7ef1968aa37f2e796fec45026b9ade0}{scene}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
 \begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -50,7 +50,7 @@ const SDL\+\_\+\+Rect \mbox{\hyperlink{classexplorer__t_ab134139610d2267ca833abc
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classscene}{scene}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}}
+const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}}
 \begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -58,8 +58,8 @@ const SDL\+\_\+\+Rect \mbox{\hyperlink{classexplorer__t_ab134139610d2267ca833abc
 \index{explorer\_t@{explorer\_t}!explorer\_t@{explorer\_t}}
 \index{explorer\_t@{explorer\_t}!explorer\_t@{explorer\_t}}
 \doxysubsubsection{\texorpdfstring{explorer\_t()}{explorer\_t()}}
-{\footnotesize\ttfamily \label{classexplorer__t_a75961f78eebb4030c1f2d7b78929a2b6} 
-explorer\+\_\+t\+::explorer\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classexplorer__t_a2924ed013429848f0cbeb1383449e505} 
+explorer\+\_\+t\+::explorer\+\_\+t (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
 
 
 
@@ -69,7 +69,7 @@ Called only once when WM is initialised
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+context} & game context \\
+{\em context} & game context \\
 \hline
 \end{DoxyParams}
 \index{explorer\_t@{explorer\_t}!````~explorer\_t@{\texorpdfstring{$\sim$}{\string~}explorer\_t}}
@@ -108,8 +108,8 @@ SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} Texture at size width x 40 to make 
 \index{explorer\_t@{explorer\_t}!handle@{handle}}
 \index{handle@{handle}!explorer\_t@{explorer\_t}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classexplorer__t_add68d9bf9c0e52805f4bb714b1133882} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ explorer\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classexplorer__t_a87452daa84e4b7145c1f50a812010824} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ explorer\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -125,7 +125,7 @@ std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classscene_a56dec35146b15669e3cf054ced2f4be2}{scene}}.
+Implements \mbox{\hyperlink{classscene_a1a6ee7a03d72487127dbfa6f79f0db9d}{scene}}.
 
 \index{explorer\_t@{explorer\_t}!render@{render}}
 \index{render@{render}!explorer\_t@{explorer\_t}}
@@ -144,8 +144,8 @@ Implements \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{scene}
 \index{explorer\_t@{explorer\_t}!update@{update}}
 \index{update@{update}!explorer\_t@{explorer\_t}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{classexplorer__t_a099b72112db6de2a3d8f6ea0b724fae5} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ explorer\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classexplorer__t_a9fd3219c8a05b381b5e8ee292000c1cb} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ explorer\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -158,7 +158,7 @@ std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{scene}}.
+Implements \mbox{\hyperlink{classscene_a668e98e3a86c4413fa3291c83fcc5378}{scene}}.
 
 
 

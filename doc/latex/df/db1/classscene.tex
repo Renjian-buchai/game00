@@ -20,20 +20,20 @@ Inheritance diagram for scene\+:\begin{figure}[H]
 \item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
 \begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classscene_a1012571c9524a29524b8b9d680715e90}{scene}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\mbox{\hyperlink{classscene_ad7ef1968aa37f2e796fec45026b9ade0}{scene}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
 \begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\item 
-virtual std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{update}} ()=0
+virtual const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classscene_a668e98e3a86c4413fa3291c83fcc5378}{update}} ()=0
 \begin{DoxyCompactList}\small\item\em Updates scene logic. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{render}} ()=0
 \begin{DoxyCompactList}\small\item\em Renders textures. \end{DoxyCompactList}\item 
-virtual std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classscene_a56dec35146b15669e3cf054ced2f4be2}{handle}} (SDL\+\_\+\+Event \&)=0
+virtual const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classscene_a1a6ee7a03d72487127dbfa6f79f0db9d}{handle}} (const SDL\+\_\+\+Event \&)=0
 \begin{DoxyCompactList}\small\item\em Handles events. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}}
+const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}}
 \begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -44,8 +44,8 @@ Interface class for scenes.
 \index{scene@{scene}!scene@{scene}}
 \index{scene@{scene}!scene@{scene}}
 \doxysubsubsection{\texorpdfstring{scene()}{scene()}}
-{\footnotesize\ttfamily \label{classscene_a1012571c9524a29524b8b9d680715e90} 
-scene\+::scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{game\+Context}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classscene_ad7ef1968aa37f2e796fec45026b9ade0} 
+scene\+::scene (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{game\+Context}{}\end{DoxyParamCaption})}
 
 
 
@@ -72,21 +72,21 @@ Usually called only when wm is destroyed
 \index{scene@{scene}!handle@{handle}}
 \index{handle@{handle}!scene@{scene}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classscene_a56dec35146b15669e3cf054ced2f4be2} 
-virtual std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ scene\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \label{classscene_a1a6ee7a03d72487127dbfa6f79f0db9d} 
+virtual const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ scene\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Handles events. 
 
-Called in \doxylink{classwm_a7f282167450e97df5792d589c9ced058}{wm\+::handle()}
+Called in \doxylink{classwm_ae5f8a28b02b3bc82d4422c6ea0e745ca}{wm\+::handle()}
 
 \begin{DoxyReturn}{Returns}
 std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classexplorer__t_add68d9bf9c0e52805f4bb714b1133882}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_adda2b278aae9bae71b89194313bc23a9}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_ad98a24e386e2a0363a44e67054988160}{notepad\+\_\+t}}, and \mbox{\hyperlink{classpause__t_a267e138e3c13edfb2e0c57cb9100ceac}{pause\+\_\+t}}.
+Implemented in \mbox{\hyperlink{classexplorer__t_a87452daa84e4b7145c1f50a812010824}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_a3a698a22fdd0e66f603955af8ced0186}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_a3fa185451691009d01df66441f2accb4}{notepad\+\_\+t}}, \mbox{\hyperlink{classpause__t_a0945dd5c1b896cd92d9d7454c13f577e}{pause\+\_\+t}}, and \mbox{\hyperlink{classshitcord__t_a26224292a18d8df42b361a1f3b333ed8}{shitcord\+\_\+t}}.
 
 \index{scene@{scene}!loadTexture@{loadTexture}}
 \index{loadTexture@{loadTexture}!scene@{scene}}
@@ -118,26 +118,26 @@ Renders textures.
 
 Called in \doxylink{classwm_aa9731642bc561de498bc559f0d5ab84e}{wm\+::render()} 
 
-Implemented in \mbox{\hyperlink{classexplorer__t_aeeb2aa5c58317a29463ce527b2ade757}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_add93912d666cc242e170f15e7e03a808}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_a08c6c7349f0912c9f547b25fa8189f9a}{notepad\+\_\+t}}, and \mbox{\hyperlink{classpause__t_a021e3734b6d7c0688490809b5f87d8c8}{pause\+\_\+t}}.
+Implemented in \mbox{\hyperlink{classexplorer__t_aeeb2aa5c58317a29463ce527b2ade757}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_add93912d666cc242e170f15e7e03a808}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_a08c6c7349f0912c9f547b25fa8189f9a}{notepad\+\_\+t}}, \mbox{\hyperlink{classpause__t_a021e3734b6d7c0688490809b5f87d8c8}{pause\+\_\+t}}, and \mbox{\hyperlink{classshitcord__t_a04b3dbd430b42e009e6c47122c69e696}{shitcord\+\_\+t}}.
 
 \index{scene@{scene}!update@{update}}
 \index{update@{update}!scene@{scene}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{classscene_a34b71ea2aea3fd3c007786e75be817c7} 
-virtual std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ scene\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \label{classscene_a668e98e3a86c4413fa3291c83fcc5378} 
+virtual const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ scene\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Updates scene logic. 
 
-Called in \doxylink{classwm_a54115bce16818acb350825256b11b2ce}{wm\+::update()}
+Called in \doxylink{classwm_a486c679090df44959f5bf6dd71db5983}{wm\+::update()}
 
 \begin{DoxyReturn}{Returns}
 std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classexplorer__t_a099b72112db6de2a3d8f6ea0b724fae5}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_a09c3876e890a37be7a17dbbb0084d4da}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_ab177e5696b0a4925d4309ce90e5f66aa}{notepad\+\_\+t}}, and \mbox{\hyperlink{classpause__t_ac738a9a7bc4671c59a8a9eacd9d0e0ca}{pause\+\_\+t}}.
+Implemented in \mbox{\hyperlink{classexplorer__t_a9fd3219c8a05b381b5e8ee292000c1cb}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_a0939d6693673f0f0d9dfc0e9fd8e224c}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_acb29bf9572b3733208643185c76e7f17}{notepad\+\_\+t}}, \mbox{\hyperlink{classpause__t_a7975d907b119f75c9b87fe6f3ceb7d2c}{pause\+\_\+t}}, and \mbox{\hyperlink{classshitcord__t_a13bf62175766d1ebc873c3a8ac8a1b55}{shitcord\+\_\+t}}.
 
 
 
@@ -145,8 +145,8 @@ Implemented in \mbox{\hyperlink{classexplorer__t_a099b72112db6de2a3d8f6ea0b724fa
 \index{scene@{scene}!context@{context}}
 \index{context@{context}!scene@{scene}}
 \doxysubsubsection{\texorpdfstring{context}{context}}
-{\footnotesize\ttfamily \label{classscene_ae9987da046dc0255632015f0e42a546c} 
-\mbox{\hyperlink{classgame}{game}}\texorpdfstring{$\ast$}{*} scene\+::context}
+{\footnotesize\ttfamily \label{classscene_a1659b1da41590a2ac67f9927beb823ea} 
+const \mbox{\hyperlink{classgame}{game}}\texorpdfstring{$\ast$}{*} scene\+::context}
 
 
 

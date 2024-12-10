@@ -13,22 +13,22 @@ Inheritance diagram for notepad\+\_\+t\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classnotepad__t_aca34ffdf14d61518257d5ff32cbda77f}{notepad\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}})
+\mbox{\hyperlink{classnotepad__t_ae910b670eb9800dc5f998943efc80371}{notepad\+\_\+t}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}})
 \begin{DoxyCompactList}\small\item\em Construct a new notepad t object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classnotepad__t_ac047cc39e7ff3f954057314e6298d6b1}{\texorpdfstring{$\sim$}{\string~}notepad\+\_\+t}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the notepad t object. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classnotepad__t_ab177e5696b0a4925d4309ce90e5f66aa}{update}} () override
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classnotepad__t_acb29bf9572b3733208643185c76e7f17}{update}} () override
 \begin{DoxyCompactList}\small\item\em Checks if the current data is the same as the data stored previously. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classnotepad__t_a08c6c7349f0912c9f547b25fa8189f9a}{render}} () override
 \begin{DoxyCompactList}\small\item\em Renders notepad, and entry. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classnotepad__t_ad98a24e386e2a0363a44e67054988160}{handle}} (SDL\+\_\+\+Event \&event) override
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classnotepad__t_a3fa185451691009d01df66441f2accb4}{handle}} (const SDL\+\_\+\+Event \&event) override
 \begin{DoxyCompactList}\small\item\em Handles event. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classscene}{scene}}}
 \begin{DoxyCompactItemize}
 \item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
 \begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classscene_a1012571c9524a29524b8b9d680715e90}{scene}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\mbox{\hyperlink{classscene_ad7ef1968aa37f2e796fec45026b9ade0}{scene}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
 \begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -50,7 +50,7 @@ SDL\+\_\+\+Rect \mbox{\hyperlink{classnotepad__t_af6ff2f6dffb32c3fd6edc955c4b0df
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classscene}{scene}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}}
+const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}}
 \begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -63,8 +63,8 @@ static constexpr double \mbox{\hyperlink{classnotepad__t_a6af0111089b6735d3e21cd
 \index{notepad\_t@{notepad\_t}!notepad\_t@{notepad\_t}}
 \index{notepad\_t@{notepad\_t}!notepad\_t@{notepad\_t}}
 \doxysubsubsection{\texorpdfstring{notepad\_t()}{notepad\_t()}}
-{\footnotesize\ttfamily \label{classnotepad__t_aca34ffdf14d61518257d5ff32cbda77f} 
-notepad\+\_\+t\+::notepad\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classnotepad__t_ae910b670eb9800dc5f998943efc80371} 
+notepad\+\_\+t\+::notepad\+\_\+t (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
 
 
 
@@ -74,7 +74,7 @@ Called only once when WM is initialised
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+context} & game context \\
+{\em context} & game context \\
 \hline
 \end{DoxyParams}
 \index{notepad\_t@{notepad\_t}!````~notepad\_t@{\texorpdfstring{$\sim$}{\string~}notepad\_t}}
@@ -93,8 +93,8 @@ Called only when the wm is destroyed
 \index{notepad\_t@{notepad\_t}!handle@{handle}}
 \index{handle@{handle}!notepad\_t@{notepad\_t}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classnotepad__t_ad98a24e386e2a0363a44e67054988160} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ notepad\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classnotepad__t_a3fa185451691009d01df66441f2accb4} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ notepad\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -112,7 +112,7 @@ std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classscene_a56dec35146b15669e3cf054ced2f4be2}{scene}}.
+Implements \mbox{\hyperlink{classscene_a1a6ee7a03d72487127dbfa6f79f0db9d}{scene}}.
 
 \index{notepad\_t@{notepad\_t}!render@{render}}
 \index{render@{render}!notepad\_t@{notepad\_t}}
@@ -131,8 +131,8 @@ Implements \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{scene}
 \index{notepad\_t@{notepad\_t}!update@{update}}
 \index{update@{update}!notepad\_t@{notepad\_t}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{classnotepad__t_ab177e5696b0a4925d4309ce90e5f66aa} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ notepad\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classnotepad__t_acb29bf9572b3733208643185c76e7f17} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ notepad\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -145,7 +145,7 @@ std\+::pair$<$scenes, scene\+Data$>$
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{scene}}.
+Implements \mbox{\hyperlink{classscene_a668e98e3a86c4413fa3291c83fcc5378}{scene}}.
 
 
 

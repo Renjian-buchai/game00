@@ -38,6 +38,7 @@ $(function() { codefold.init(1); });
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
     </ul>
@@ -79,12 +80,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9731642bc561de498bc559f0d5ab84e" id="r_aa9731642bc561de498bc559f0d5ab84e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9731642bc561de498bc559f0d5ab84e">render</a> ()</td></tr>
 <tr class="memdesc:aa9731642bc561de498bc559f0d5ab84e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the current scene, icons, and the overlay.  <br /></td></tr>
 <tr class="separator:aa9731642bc561de498bc559f0d5ab84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f282167450e97df5792d589c9ced058" id="r_a7f282167450e97df5792d589c9ced058"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a>, <a class="el" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f282167450e97df5792d589c9ced058">handle</a> (SDL_Event &amp;event)</td></tr>
-<tr class="memdesc:a7f282167450e97df5792d589c9ced058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles events and scene switches via task bar.  <br /></td></tr>
-<tr class="separator:a7f282167450e97df5792d589c9ced058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54115bce16818acb350825256b11b2ce" id="r_a54115bce16818acb350825256b11b2ce"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a>, <a class="el" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54115bce16818acb350825256b11b2ce">update</a> ()</td></tr>
-<tr class="memdesc:a54115bce16818acb350825256b11b2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates scene data.  <br /></td></tr>
-<tr class="separator:a54115bce16818acb350825256b11b2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f8a28b02b3bc82d4422c6ea0e745ca" id="r_ae5f8a28b02b3bc82d4422c6ea0e745ca"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; <a class="el" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a>, <a class="el" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5f8a28b02b3bc82d4422c6ea0e745ca">handle</a> (const SDL_Event &amp;event)</td></tr>
+<tr class="memdesc:ae5f8a28b02b3bc82d4422c6ea0e745ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles events and scene switches via task bar.  <br /></td></tr>
+<tr class="separator:ae5f8a28b02b3bc82d4422c6ea0e745ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486c679090df44959f5bf6dd71db5983" id="r_a486c679090df44959f5bf6dd71db5983"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; <a class="el" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a>, <a class="el" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a486c679090df44959f5bf6dd71db5983">update</a> ()</td></tr>
+<tr class="memdesc:a486c679090df44959f5bf6dd71db5983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates scene data.  <br /></td></tr>
+<tr class="separator:a486c679090df44959f5bf6dd71db5983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -112,6 +113,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a856235eafcdb96ed22216d2b53fb3b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a139e824c013da025cafc10d68b73aa34" id="r_a139e824c013da025cafc10d68b73aa34"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d9/dea/classintro__t.html">intro_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a139e824c013da025cafc10d68b73aa34">intro</a></td></tr>
 <tr class="separator:a139e824c013da025cafc10d68b73aa34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b53423d16a28cc8c0eec221572fb454" id="r_a5b53423d16a28cc8c0eec221572fb454"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../de/deb/classshitcord__t.html">shitcord_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b53423d16a28cc8c0eec221572fb454">shitcord</a></td></tr>
+<tr class="separator:a5b53423d16a28cc8c0eec221572fb454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2abf8c7eedd04f896cbf0ef50358f1c7" id="r_a2abf8c7eedd04f896cbf0ef50358f1c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/db1/classscene.html">scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2abf8c7eedd04f896cbf0ef50358f1c7">current</a></td></tr>
 <tr class="memdesc:a2abf8c7eedd04f896cbf0ef50358f1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current scene.  <br /></td></tr>
 <tr class="separator:a2abf8c7eedd04f896cbf0ef50358f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,16 +178,16 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7f282167450e97df5792d589c9ced058" name="a7f282167450e97df5792d589c9ced058"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f282167450e97df5792d589c9ced058">&#9670;&#160;</a></span>handle()</h2>
+<a id="ae5f8a28b02b3bc82d4422c6ea0e745ca" name="ae5f8a28b02b3bc82d4422c6ea0e745ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f8a28b02b3bc82d4422c6ea0e745ca">&#9670;&#160;</a></span>handle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; <a class="el" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a>, <a class="el" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> &gt; wm::handle </td>
+          <td class="memname">const std::pair&lt; <a class="el" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a>, <a class="el" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> &gt; wm::handle </td>
           <td>(</td>
-          <td class="paramtype">SDL_Event &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td class="paramtype">const SDL_Event &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -221,14 +224,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a54115bce16818acb350825256b11b2ce" name="a54115bce16818acb350825256b11b2ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54115bce16818acb350825256b11b2ce">&#9670;&#160;</a></span>update()</h2>
+<a id="a486c679090df44959f5bf6dd71db5983" name="a486c679090df44959f5bf6dd71db5983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486c679090df44959f5bf6dd71db5983">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; <a class="el" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a>, <a class="el" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> &gt; wm::update </td>
+          <td class="memname">const std::pair&lt; <a class="el" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a>, <a class="el" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> &gt; wm::update </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -394,6 +397,20 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Scene to resume on. Only used for unpausing purposes. </p>
+
+</div>
+</div>
+<a id="a5b53423d16a28cc8c0eec221572fb454" name="a5b53423d16a28cc8c0eec221572fb454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b53423d16a28cc8c0eec221572fb454">&#9670;&#160;</a></span>shitcord</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../de/deb/classshitcord__t.html">shitcord_t</a>&gt; wm::shitcord</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

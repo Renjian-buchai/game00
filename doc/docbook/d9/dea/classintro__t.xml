@@ -35,7 +35,7 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d">intro_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>)</para>
+            <listitem><para><link linkend="_classintro__t_1a820567ef1f00c44713099e17180f1414">intro_t</link> (const <link linkend="_classgame">game</link> *<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>)</para>
 
 <para>Construct a new intro t object. </para>
 </listitem>
@@ -43,7 +43,7 @@
 
 <para>Destroy the intro t object. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">update</link> () override</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classintro__t_1a0939d6693673f0f0d9dfc0e9fd8e224c">update</link> () override</para>
 
 <para>Updates scene info. </para>
 </listitem>
@@ -51,7 +51,7 @@
 
 <para>Renders slides. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classintro__t_1adda2b278aae9bae71b89194313bc23a9">handle</link> (SDL_Event &amp;event) override</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classintro__t_1a3a698a22fdd0e66f603955af8ced0186">handle</link> (const SDL_Event &amp;event) override</para>
 </listitem>
             <listitem><para>void <link linkend="_classintro__t_1a104f915a0a592c0db524a70ffc666a60">slideShow</link> (size_t time, bool &amp;click, size_t skipGrace=500)</para>
 
@@ -72,7 +72,7 @@ Public Member Functions inherited from <link linkend="_classscene">scene</link> 
 
 <para>Loads texture based on path. </para>
 </listitem>
-            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+            <listitem><para><link linkend="_classscene_1ad7ef1968aa37f2e796fec45026b9ade0">scene</link> (const <link linkend="_classgame">game</link> *gameContext)</para>
 
 <para>Construct a new scene object. </para>
 </listitem>
@@ -99,7 +99,7 @@ Public Member Functions inherited from <link linkend="_classscene">scene</link> 
         </itemizedlist>
 </simplesect>
 Public Attributes inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
-            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+            <listitem><para>const <link linkend="_classgame">game</link> * <link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link></para>
 
 <para>Game context. </para>
 </listitem>
@@ -129,11 +129,11 @@ Public Attributes inherited from <link linkend="_classscene">scene</link>       
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d"/><section>
+<anchor xml:id="_classintro__t_1a820567ef1f00c44713099e17180f1414"/><section>
     <title>intro_t()</title>
 <indexterm><primary>intro_t</primary><secondary>intro_t</secondary></indexterm>
 <indexterm><primary>intro_t</primary><secondary>intro_t</secondary></indexterm>
-<para><computeroutput>intro_t::intro_t (<link linkend="_classgame">game</link> * context)</computeroutput></para><para>
+<para><computeroutput>intro_t::intro_t (const <link linkend="_classgame">game</link> * context)</computeroutput></para><para>
 
 <para>Construct a new intro t object. </para>
 </para>
@@ -275,11 +275,11 @@ Parameters</title>
                 </formalpara>
                 </para>
 </section>
-<anchor xml:id="_classintro__t_1adda2b278aae9bae71b89194313bc23a9"/><section>
+<anchor xml:id="_classintro__t_1a3a698a22fdd0e66f603955af8ced0186"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>intro_t</secondary></indexterm>
 <indexterm><primary>intro_t</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; intro_t::handle (SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; intro_t::handle (const SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para>
 <para>
                 <formalpara>
                     <title>
@@ -306,7 +306,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene</link>.</para>
+Implements <link linkend="_classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">scene</link>.</para>
 </section>
 <anchor xml:id="_classintro__t_1add93912d666cc242e170f15e7e03a808"/><section>
     <title>render()</title>
@@ -361,11 +361,11 @@ Parameters</title>
                 </formalpara>
                 </para>
 </section>
-<anchor xml:id="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da"/><section>
+<anchor xml:id="_classintro__t_1a0939d6693673f0f0d9dfc0e9fd8e224c"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>intro_t</secondary></indexterm>
 <indexterm><primary>intro_t</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; intro_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; intro_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Updates scene info. </para>
 </para>
@@ -380,7 +380,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">scene</link>.</para>
+Implements <link linkend="_classscene_1a668e98e3a86c4413fa3291c83fcc5378">scene</link>.</para>
 </section>
 </section>
 <section>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_shitcord_8cc" xml:lang="en-US">
+<title>src/scenes/shitcord.cc File Reference</title>
+<indexterm><primary>src/scenes/shitcord.cc</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;scenes/shitcord.hh&quot;<?linebreak?>#include &quot;SDL_image.h&quot;<?linebreak?>#include &quot;game.hh&quot;<?linebreak?></programlisting></section>

@@ -1,6 +1,7 @@
 \doxysection{include/enum.hh File Reference}
 \label{enum_8hh}\index{include/enum.hh@{include/enum.hh}}
 {\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$variant$>$}\newline
 \doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,12 +21,21 @@ enum class \mbox{\hyperlink{enum_8hh_a8cc8a11a6b6df22c3570fbee895c587a}{explorer
 , \mbox{\hyperlink{enum_8hh_a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24}{size}}
  \}
 \begin{DoxyCompactList}\small\item\em Entries list. \end{DoxyCompactList}\item 
-enum class \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb}{intro}}
+enum class \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}} \+: uint8\+\_\+t \{ \newline
+\mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb}{intro}}
 , \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162}{explorer}}
 , \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf}{notepad}}
 , \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9}{pause}}
+, \newline
+\mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7}{shitcord}}
  \}
-\begin{DoxyCompactList}\small\item\em Scenes list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Scenes list. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73}{game\+State}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db}{terminating}}
+, \mbox{\hyperlink{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb}{intro}}
+, \mbox{\hyperlink{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057}{gameplay}}
+, \mbox{\hyperlink{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2}{paused}}
+ \}
+\begin{DoxyCompactList}\small\item\em Current gamestate. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Typedef Documentation}
@@ -63,6 +73,36 @@ entry2&\\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{size@{size}!enum.hh@{enum.hh}}\index{enum.hh@{enum.hh}!size@{size}}}\label{enum_8hh_a8cc8a11a6b6df22c3570fbee895c587a} 
 size&\\
+\hline
+
+\end{DoxyEnumFields}
+\index{enum.hh@{enum.hh}!gameState@{gameState}}
+\index{gameState@{gameState}!enum.hh@{enum.hh}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \label{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73} 
+enum class \mbox{\hyperlink{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73}{game\+State}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Current gamestate. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Replaced with wm system \end{DoxyRefDesc}
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{terminating@{terminating}!enum.hh@{enum.hh}}\index{enum.hh@{enum.hh}!terminating@{terminating}}}\label{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73} 
+terminating&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{intro@{intro}!enum.hh@{enum.hh}}\index{enum.hh@{enum.hh}!intro@{intro}}}\label{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73} 
+intro&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gameplay@{gameplay}!enum.hh@{enum.hh}}\index{enum.hh@{enum.hh}!gameplay@{gameplay}}}\label{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73} 
+gameplay&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{paused@{paused}!enum.hh@{enum.hh}}\index{enum.hh@{enum.hh}!paused@{paused}}}\label{enum_8hh_aa2f76535ef50e4e6dda6740929d1ed73} 
+paused&\\
 \hline
 
 \end{DoxyEnumFields}
@@ -115,6 +155,10 @@ notepad&\\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{pause@{pause}!enum.hh@{enum.hh}}\index{enum.hh@{enum.hh}!pause@{pause}}}\label{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a} 
 pause&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{shitcord@{shitcord}!enum.hh@{enum.hh}}\index{enum.hh@{enum.hh}!shitcord@{shitcord}}}\label{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a} 
+shitcord&\\
 \hline
 
 \end{DoxyEnumFields}

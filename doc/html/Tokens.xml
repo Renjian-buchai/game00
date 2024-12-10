@@ -62,6 +62,16 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>shitcord_t</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>intro_t::slide</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -88,6 +98,13 @@
       <Scope>wmInitData</Scope>
     </TokenIdentifier>
     <Path>d6/d16/structwm_init_data.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>deprecated</Name>
+      <APILanguage>unknown</APILanguage>
+    </TokenIdentifier>
+    <Path>da/d58/deprecated.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -119,6 +136,16 @@
     </TokenIdentifier>
     <Path>d9/d03/classnotepad__t.html</Path>
     <Anchor>a4416b91e1e20a180f9a00855b6f9c459</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>background</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a18f38f0c4bb56eeffdd3ef8657626081</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -209,7 +236,7 @@
       <Scope>scene</Scope>
     </TokenIdentifier>
     <Path>df/db1/classscene.html</Path>
-    <Anchor>ae9987da046dc0255632015f0e42a546c</Anchor>
+    <Anchor>a1659b1da41590a2ac67f9927beb823ea</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -370,7 +397,7 @@
       <Scope>explorer_t</Scope>
     </TokenIdentifier>
     <Path>d5/db0/classexplorer__t.html</Path>
-    <Anchor>a75961f78eebb4030c1f2d7b78929a2b6</Anchor>
+    <Anchor>a2924ed013429848f0cbeb1383449e505</Anchor>
     <DeclaredIn>explorer.hh</DeclaredIn>
   </Token>
   <Token>
@@ -427,63 +454,14 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>gameplay</Name>
+      <Name>generateOptions</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>econst</Type>
-      <Scope>game</Scope>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
     </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>gameState</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>enum</Type>
-      <Scope>game</Scope>
-    </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>terminating</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>econst</Type>
-      <Scope>game</Scope>
-    </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>intro</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>econst</Type>
-      <Scope>game</Scope>
-    </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>gameplay</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>econst</Type>
-      <Scope>game</Scope>
-    </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>paused</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>econst</Type>
-      <Scope>game</Scope>
-    </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2</Anchor>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a94654f5d652fb31631e2ff17e5c3776b</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -493,7 +471,7 @@
       <Scope>explorer_t</Scope>
     </TokenIdentifier>
     <Path>d5/db0/classexplorer__t.html</Path>
-    <Anchor>add68d9bf9c0e52805f4bb714b1133882</Anchor>
+    <Anchor>a87452daa84e4b7145c1f50a812010824</Anchor>
     <DeclaredIn>explorer.hh</DeclaredIn>
   </Token>
   <Token>
@@ -504,7 +482,7 @@
       <Scope>intro_t</Scope>
     </TokenIdentifier>
     <Path>d9/dea/classintro__t.html</Path>
-    <Anchor>adda2b278aae9bae71b89194313bc23a9</Anchor>
+    <Anchor>a3a698a22fdd0e66f603955af8ced0186</Anchor>
     <DeclaredIn>init.hh</DeclaredIn>
   </Token>
   <Token>
@@ -515,7 +493,7 @@
       <Scope>notepad_t</Scope>
     </TokenIdentifier>
     <Path>d9/d03/classnotepad__t.html</Path>
-    <Anchor>ad98a24e386e2a0363a44e67054988160</Anchor>
+    <Anchor>a3fa185451691009d01df66441f2accb4</Anchor>
     <DeclaredIn>notepad.hh</DeclaredIn>
   </Token>
   <Token>
@@ -526,7 +504,7 @@
       <Scope>pause_t</Scope>
     </TokenIdentifier>
     <Path>dc/daa/classpause__t.html</Path>
-    <Anchor>a267e138e3c13edfb2e0c57cb9100ceac</Anchor>
+    <Anchor>a0945dd5c1b896cd92d9d7454c13f577e</Anchor>
     <DeclaredIn>pause.hh</DeclaredIn>
   </Token>
   <Token>
@@ -537,8 +515,19 @@
       <Scope>scene</Scope>
     </TokenIdentifier>
     <Path>df/db1/classscene.html</Path>
-    <Anchor>a56dec35146b15669e3cf054ced2f4be2</Anchor>
+    <Anchor>a1a6ee7a03d72487127dbfa6f79f0db9d</Anchor>
     <DeclaredIn>scene.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>handle</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a26224292a18d8df42b361a1f3b333ed8</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -548,7 +537,7 @@
       <Scope>wm</Scope>
     </TokenIdentifier>
     <Path>df/d1c/classwm.html</Path>
-    <Anchor>a7f282167450e97df5792d589c9ced058</Anchor>
+    <Anchor>ae5f8a28b02b3bc82d4422c6ea0e745ca</Anchor>
     <DeclaredIn>wm.hh</DeclaredIn>
   </Token>
   <Token>
@@ -583,23 +572,13 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>intro</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>econst</Type>
-      <Scope>game</Scope>
-    </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>intro_t</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>intro_t</Scope>
     </TokenIdentifier>
     <Path>d9/dea/classintro__t.html</Path>
-    <Anchor>ad12e48028d1cc4b1c288dab77dbe193d</Anchor>
+    <Anchor>a820567ef1f00c44713099e17180f1414</Anchor>
     <DeclaredIn>init.hh</DeclaredIn>
   </Token>
   <Token>
@@ -712,7 +691,7 @@
       <Scope>notepad_t</Scope>
     </TokenIdentifier>
     <Path>d9/d03/classnotepad__t.html</Path>
-    <Anchor>aca34ffdf14d61518257d5ff32cbda77f</Anchor>
+    <Anchor>ae910b670eb9800dc5f998943efc80371</Anchor>
     <DeclaredIn>notepad.hh</DeclaredIn>
   </Token>
   <Token>
@@ -753,7 +732,7 @@
       <Scope>pause_t</Scope>
     </TokenIdentifier>
     <Path>dc/daa/classpause__t.html</Path>
-    <Anchor>a840256e71d9ff0f489090fff8f07c946</Anchor>
+    <Anchor>afff933b3fe3682e13e095d5b867d41e7</Anchor>
     <DeclaredIn>pause.hh</DeclaredIn>
   </Token>
   <Token>
@@ -765,16 +744,6 @@
     </TokenIdentifier>
     <Path>df/d1c/classwm.html</Path>
     <Anchor>a50c97d11917956cf0abb63be275faddc</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>paused</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>econst</Type>
-      <Scope>game</Scope>
-    </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -850,6 +819,17 @@
     <Path>df/db1/classscene.html</Path>
     <Anchor>a7c218380f822d46bee781520e855a7de</Anchor>
     <DeclaredIn>scene.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>render</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a04b3dbd430b42e009e6c47122c69e696</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -940,8 +920,29 @@
       <Scope>scene</Scope>
     </TokenIdentifier>
     <Path>df/db1/classscene.html</Path>
-    <Anchor>a1012571c9524a29524b8b9d680715e90</Anchor>
+    <Anchor>ad7ef1968aa37f2e796fec45026b9ade0</Anchor>
     <DeclaredIn>scene.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>shitcord</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>wm</Scope>
+    </TokenIdentifier>
+    <Path>df/d1c/classwm.html</Path>
+    <Anchor>a5b53423d16a28cc8c0eec221572fb454</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>shitcord_t</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>aac03a23af4132dd92108d20b30a6be0d</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -981,7 +982,7 @@
       <Scope>intro_t::slide</Scope>
     </TokenIdentifier>
     <Path>da/dec/classintro__t_1_1slide.html</Path>
-    <Anchor>a349a2578c1249f4b6dab207bc8efa552</Anchor>
+    <Anchor>a32664b85dc6014b6614477f315d81ee5</Anchor>
     <DeclaredIn>init.hh</DeclaredIn>
   </Token>
   <Token>
@@ -1027,16 +1028,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>terminating</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>econst</Type>
-      <Scope>game</Scope>
-    </TokenIdentifier>
-    <Path>d0/d51/classgame.html</Path>
-    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>texture</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -1064,7 +1055,7 @@
       <Scope>explorer_t</Scope>
     </TokenIdentifier>
     <Path>d5/db0/classexplorer__t.html</Path>
-    <Anchor>a099b72112db6de2a3d8f6ea0b724fae5</Anchor>
+    <Anchor>a9fd3219c8a05b381b5e8ee292000c1cb</Anchor>
     <DeclaredIn>explorer.hh</DeclaredIn>
   </Token>
   <Token>
@@ -1075,7 +1066,7 @@
       <Scope>intro_t</Scope>
     </TokenIdentifier>
     <Path>d9/dea/classintro__t.html</Path>
-    <Anchor>a09c3876e890a37be7a17dbbb0084d4da</Anchor>
+    <Anchor>a0939d6693673f0f0d9dfc0e9fd8e224c</Anchor>
     <DeclaredIn>init.hh</DeclaredIn>
   </Token>
   <Token>
@@ -1086,7 +1077,7 @@
       <Scope>notepad_t</Scope>
     </TokenIdentifier>
     <Path>d9/d03/classnotepad__t.html</Path>
-    <Anchor>ab177e5696b0a4925d4309ce90e5f66aa</Anchor>
+    <Anchor>acb29bf9572b3733208643185c76e7f17</Anchor>
     <DeclaredIn>notepad.hh</DeclaredIn>
   </Token>
   <Token>
@@ -1097,7 +1088,7 @@
       <Scope>pause_t</Scope>
     </TokenIdentifier>
     <Path>dc/daa/classpause__t.html</Path>
-    <Anchor>ac738a9a7bc4671c59a8a9eacd9d0e0ca</Anchor>
+    <Anchor>a7975d907b119f75c9b87fe6f3ceb7d2c</Anchor>
     <DeclaredIn>pause.hh</DeclaredIn>
   </Token>
   <Token>
@@ -1108,8 +1099,19 @@
       <Scope>scene</Scope>
     </TokenIdentifier>
     <Path>df/db1/classscene.html</Path>
-    <Anchor>a34b71ea2aea3fd3c007786e75be817c7</Anchor>
+    <Anchor>a668e98e3a86c4413fa3291c83fcc5378</Anchor>
     <DeclaredIn>scene.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>update</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a13bf62175766d1ebc873c3a8ac8a1b55</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1119,7 +1121,7 @@
       <Scope>wm</Scope>
     </TokenIdentifier>
     <Path>df/d1c/classwm.html</Path>
-    <Anchor>a54115bce16818acb350825256b11b2ce</Anchor>
+    <Anchor>a486c679090df44959f5bf6dd71db5983</Anchor>
     <DeclaredIn>wm.hh</DeclaredIn>
   </Token>
   <Token>
@@ -1263,6 +1265,17 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>~shitcord_t</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a46798c707ed5dce9b324cdaa17db5c71</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>~wmInitData</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
@@ -1271,6 +1284,16 @@
     <Path>d6/d16/structwm_init_data.html</Path>
     <Anchor>a1333b79b5c832494ebc67333cd1b30a6</Anchor>
     <DeclaredIn>game.cc</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>changeScene</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>de/d8a/gameplay_8cc.html</Path>
+    <Anchor>a199644654857552c06fa8aaea76ac812</Anchor>
+    <DeclaredIn>gameplay.cc</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1384,6 +1407,66 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>gameplay</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>gameState</Name>
+      <APILanguage>c</APILanguage>
+      <Type>enum</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>terminating</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>intro</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>gameplay</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>paused</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>init</Name>
       <APILanguage>c</APILanguage>
       <Type>econst</Type>
@@ -1400,6 +1483,16 @@
     </TokenIdentifier>
     <Path>d9/d05/enum_8hh.html</Path>
     <Anchor>a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>intro</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb</Anchor>
     <DeclaredIn>enum.hh</DeclaredIn>
   </Token>
   <Token>
@@ -1484,6 +1577,16 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>paused</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>pix</Name>
       <APILanguage>unknown</APILanguage>
       <Type>macro</Type>
@@ -1554,6 +1657,26 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>shitcord</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>shitcord</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>size</Name>
       <APILanguage>c</APILanguage>
       <Type>econst</Type>
@@ -1571,6 +1694,16 @@
     <Path>d9/d0f/main_8cc.html</Path>
     <Anchor>a70fa023bb5d371dac47448b690c83581</Anchor>
     <DeclaredIn>main.cc</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>terminating</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>

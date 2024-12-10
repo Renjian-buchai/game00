@@ -6,6 +6,10 @@
       <Path>index.html</Path>
       <Subnodes>
        <Node>
+        <Name>Deprecated List</Name>
+        <Path>da/d58/deprecated.html</Path>
+       </Node>
+       <Node>
         <Name>Classes</Name>
         <Path>annotated.html</Path>
       <Subnodes>
@@ -20,7 +24,7 @@
              <Node>
               <Name>explorer_t</Name>
               <Path>d5/db0/classexplorer__t.html</Path>
-              <Anchor>a75961f78eebb4030c1f2d7b78929a2b6</Anchor>
+              <Anchor>a2924ed013429848f0cbeb1383449e505</Anchor>
              </Node>
              <Node>
               <Name>~explorer_t</Name>
@@ -35,7 +39,7 @@
              <Node>
               <Name>handle</Name>
               <Path>d5/db0/classexplorer__t.html</Path>
-              <Anchor>add68d9bf9c0e52805f4bb714b1133882</Anchor>
+              <Anchor>a87452daa84e4b7145c1f50a812010824</Anchor>
              </Node>
              <Node>
               <Name>render</Name>
@@ -45,7 +49,7 @@
              <Node>
               <Name>update</Name>
               <Path>d5/db0/classexplorer__t.html</Path>
-              <Anchor>a099b72112db6de2a3d8f6ea0b724fae5</Anchor>
+              <Anchor>a9fd3219c8a05b381b5e8ee292000c1cb</Anchor>
              </Node>
              <Node>
               <Name>background</Name>
@@ -78,33 +82,6 @@
             <Name>game</Name>
             <Path>d0/d51/classgame.html</Path>
           <Subnodes>
-             <Node>
-              <Name>gameState</Name>
-              <Path>d0/d51/classgame.html</Path>
-              <Anchor>a9fa617ead70613f9f2176f3aa2094f61</Anchor>
-            <Subnodes>
-               <Node>
-                <Name>terminating</Name>
-                <Path>d0/d51/classgame.html</Path>
-                <Anchor>a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db</Anchor>
-               </Node>
-               <Node>
-                <Name>intro</Name>
-                <Path>d0/d51/classgame.html</Path>
-                <Anchor>a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb</Anchor>
-               </Node>
-               <Node>
-                <Name>gameplay</Name>
-                <Path>d0/d51/classgame.html</Path>
-                <Anchor>a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057</Anchor>
-               </Node>
-               <Node>
-                <Name>paused</Name>
-                <Path>d0/d51/classgame.html</Path>
-                <Anchor>a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2</Anchor>
-               </Node>
-              </Subnodes>
-             </Node>
              <Node>
               <Name>game</Name>
               <Path>d0/d51/classgame.html</Path>
@@ -188,7 +165,7 @@
                <Node>
                 <Name>slide</Name>
                 <Path>da/dec/classintro__t_1_1slide.html</Path>
-                <Anchor>a349a2578c1249f4b6dab207bc8efa552</Anchor>
+                <Anchor>a32664b85dc6014b6614477f315d81ee5</Anchor>
                </Node>
                <Node>
                 <Name>dest</Name>
@@ -247,7 +224,7 @@
              <Node>
               <Name>intro_t</Name>
               <Path>d9/dea/classintro__t.html</Path>
-              <Anchor>ad12e48028d1cc4b1c288dab77dbe193d</Anchor>
+              <Anchor>a820567ef1f00c44713099e17180f1414</Anchor>
              </Node>
              <Node>
               <Name>~intro_t</Name>
@@ -267,7 +244,7 @@
              <Node>
               <Name>handle</Name>
               <Path>d9/dea/classintro__t.html</Path>
-              <Anchor>adda2b278aae9bae71b89194313bc23a9</Anchor>
+              <Anchor>a3a698a22fdd0e66f603955af8ced0186</Anchor>
              </Node>
              <Node>
               <Name>render</Name>
@@ -282,7 +259,7 @@
              <Node>
               <Name>update</Name>
               <Path>d9/dea/classintro__t.html</Path>
-              <Anchor>a09c3876e890a37be7a17dbbb0084d4da</Anchor>
+              <Anchor>a0939d6693673f0f0d9dfc0e9fd8e224c</Anchor>
              </Node>
              <Node>
               <Name>skip</Name>
@@ -308,7 +285,7 @@
              <Node>
               <Name>notepad_t</Name>
               <Path>d9/d03/classnotepad__t.html</Path>
-              <Anchor>aca34ffdf14d61518257d5ff32cbda77f</Anchor>
+              <Anchor>ae910b670eb9800dc5f998943efc80371</Anchor>
              </Node>
              <Node>
               <Name>~notepad_t</Name>
@@ -318,7 +295,7 @@
              <Node>
               <Name>handle</Name>
               <Path>d9/d03/classnotepad__t.html</Path>
-              <Anchor>ad98a24e386e2a0363a44e67054988160</Anchor>
+              <Anchor>a3fa185451691009d01df66441f2accb4</Anchor>
              </Node>
              <Node>
               <Name>render</Name>
@@ -328,7 +305,7 @@
              <Node>
               <Name>update</Name>
               <Path>d9/d03/classnotepad__t.html</Path>
-              <Anchor>ab177e5696b0a4925d4309ce90e5f66aa</Anchor>
+              <Anchor>acb29bf9572b3733208643185c76e7f17</Anchor>
              </Node>
              <Node>
               <Name>background</Name>
@@ -369,7 +346,7 @@
              <Node>
               <Name>pause_t</Name>
               <Path>dc/daa/classpause__t.html</Path>
-              <Anchor>a840256e71d9ff0f489090fff8f07c946</Anchor>
+              <Anchor>afff933b3fe3682e13e095d5b867d41e7</Anchor>
              </Node>
              <Node>
               <Name>~pause_t</Name>
@@ -379,7 +356,7 @@
              <Node>
               <Name>handle</Name>
               <Path>dc/daa/classpause__t.html</Path>
-              <Anchor>a267e138e3c13edfb2e0c57cb9100ceac</Anchor>
+              <Anchor>a0945dd5c1b896cd92d9d7454c13f577e</Anchor>
              </Node>
              <Node>
               <Name>render</Name>
@@ -389,7 +366,7 @@
              <Node>
               <Name>update</Name>
               <Path>dc/daa/classpause__t.html</Path>
-              <Anchor>ac738a9a7bc4671c59a8a9eacd9d0e0ca</Anchor>
+              <Anchor>a7975d907b119f75c9b87fe6f3ceb7d2c</Anchor>
              </Node>
              <Node>
               <Name>exit</Name>
@@ -445,7 +422,7 @@
              <Node>
               <Name>scene</Name>
               <Path>df/db1/classscene.html</Path>
-              <Anchor>a1012571c9524a29524b8b9d680715e90</Anchor>
+              <Anchor>ad7ef1968aa37f2e796fec45026b9ade0</Anchor>
              </Node>
              <Node>
               <Name>~scene</Name>
@@ -455,7 +432,7 @@
              <Node>
               <Name>handle</Name>
               <Path>df/db1/classscene.html</Path>
-              <Anchor>a56dec35146b15669e3cf054ced2f4be2</Anchor>
+              <Anchor>a1a6ee7a03d72487127dbfa6f79f0db9d</Anchor>
              </Node>
              <Node>
               <Name>loadTexture</Name>
@@ -470,12 +447,53 @@
              <Node>
               <Name>update</Name>
               <Path>df/db1/classscene.html</Path>
-              <Anchor>a34b71ea2aea3fd3c007786e75be817c7</Anchor>
+              <Anchor>a668e98e3a86c4413fa3291c83fcc5378</Anchor>
              </Node>
              <Node>
               <Name>context</Name>
               <Path>df/db1/classscene.html</Path>
-              <Anchor>ae9987da046dc0255632015f0e42a546c</Anchor>
+              <Anchor>a1659b1da41590a2ac67f9927beb823ea</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>shitcord_t</Name>
+            <Path>de/deb/classshitcord__t.html</Path>
+          <Subnodes>
+             <Node>
+              <Name>shitcord_t</Name>
+              <Path>de/deb/classshitcord__t.html</Path>
+              <Anchor>aac03a23af4132dd92108d20b30a6be0d</Anchor>
+             </Node>
+             <Node>
+              <Name>~shitcord_t</Name>
+              <Path>de/deb/classshitcord__t.html</Path>
+              <Anchor>a46798c707ed5dce9b324cdaa17db5c71</Anchor>
+             </Node>
+             <Node>
+              <Name>generateOptions</Name>
+              <Path>de/deb/classshitcord__t.html</Path>
+              <Anchor>a94654f5d652fb31631e2ff17e5c3776b</Anchor>
+             </Node>
+             <Node>
+              <Name>handle</Name>
+              <Path>de/deb/classshitcord__t.html</Path>
+              <Anchor>a26224292a18d8df42b361a1f3b333ed8</Anchor>
+             </Node>
+             <Node>
+              <Name>render</Name>
+              <Path>de/deb/classshitcord__t.html</Path>
+              <Anchor>a04b3dbd430b42e009e6c47122c69e696</Anchor>
+             </Node>
+             <Node>
+              <Name>update</Name>
+              <Path>de/deb/classshitcord__t.html</Path>
+              <Anchor>a13bf62175766d1ebc873c3a8ac8a1b55</Anchor>
+             </Node>
+             <Node>
+              <Name>background</Name>
+              <Path>de/deb/classshitcord__t.html</Path>
+              <Anchor>a18f38f0c4bb56eeffdd3ef8657626081</Anchor>
              </Node>
             </Subnodes>
            </Node>
@@ -496,7 +514,7 @@
              <Node>
               <Name>handle</Name>
               <Path>df/d1c/classwm.html</Path>
-              <Anchor>a7f282167450e97df5792d589c9ced058</Anchor>
+              <Anchor>ae5f8a28b02b3bc82d4422c6ea0e745ca</Anchor>
              </Node>
              <Node>
               <Name>render</Name>
@@ -506,7 +524,7 @@
              <Node>
               <Name>update</Name>
               <Path>df/d1c/classwm.html</Path>
-              <Anchor>a54115bce16818acb350825256b11b2ce</Anchor>
+              <Anchor>a486c679090df44959f5bf6dd71db5983</Anchor>
              </Node>
              <Node>
               <Name>context</Name>
@@ -557,6 +575,11 @@
               <Name>resume</Name>
               <Path>df/d1c/classwm.html</Path>
               <Anchor>aeedc8b11c2b96839e921b7f82840656e</Anchor>
+             </Node>
+             <Node>
+              <Name>shitcord</Name>
+              <Path>df/d1c/classwm.html</Path>
+              <Anchor>a5b53423d16a28cc8c0eec221572fb454</Anchor>
              </Node>
              <Node>
               <Name>wasSilence</Name>
@@ -635,6 +658,10 @@
               <Name>pause_t</Name>
               <Path>dc/daa/classpause__t.html</Path>
              </Node>
+             <Node>
+              <Name>shitcord_t</Name>
+              <Path>de/deb/classshitcord__t.html</Path>
+             </Node>
             </Subnodes>
            </Node>
            <Node>
@@ -702,7 +729,7 @@
                    <Node>
                     <Name>explorer_t</Name>
                     <Path>d5/db0/classexplorer__t.html</Path>
-                    <Anchor>a75961f78eebb4030c1f2d7b78929a2b6</Anchor>
+                    <Anchor>a2924ed013429848f0cbeb1383449e505</Anchor>
                    </Node>
                    <Node>
                     <Name>~explorer_t</Name>
@@ -717,7 +744,7 @@
                    <Node>
                     <Name>handle</Name>
                     <Path>d5/db0/classexplorer__t.html</Path>
-                    <Anchor>add68d9bf9c0e52805f4bb714b1133882</Anchor>
+                    <Anchor>a87452daa84e4b7145c1f50a812010824</Anchor>
                    </Node>
                    <Node>
                     <Name>render</Name>
@@ -727,7 +754,7 @@
                    <Node>
                     <Name>update</Name>
                     <Path>d5/db0/classexplorer__t.html</Path>
-                    <Anchor>a099b72112db6de2a3d8f6ea0b724fae5</Anchor>
+                    <Anchor>a9fd3219c8a05b381b5e8ee292000c1cb</Anchor>
                    </Node>
                    <Node>
                     <Name>background</Name>
@@ -773,7 +800,7 @@
                      <Node>
                       <Name>slide</Name>
                       <Path>da/dec/classintro__t_1_1slide.html</Path>
-                      <Anchor>a349a2578c1249f4b6dab207bc8efa552</Anchor>
+                      <Anchor>a32664b85dc6014b6614477f315d81ee5</Anchor>
                      </Node>
                      <Node>
                       <Name>dest</Name>
@@ -832,7 +859,7 @@
                    <Node>
                     <Name>intro_t</Name>
                     <Path>d9/dea/classintro__t.html</Path>
-                    <Anchor>ad12e48028d1cc4b1c288dab77dbe193d</Anchor>
+                    <Anchor>a820567ef1f00c44713099e17180f1414</Anchor>
                    </Node>
                    <Node>
                     <Name>~intro_t</Name>
@@ -852,7 +879,7 @@
                    <Node>
                     <Name>handle</Name>
                     <Path>d9/dea/classintro__t.html</Path>
-                    <Anchor>adda2b278aae9bae71b89194313bc23a9</Anchor>
+                    <Anchor>a3a698a22fdd0e66f603955af8ced0186</Anchor>
                    </Node>
                    <Node>
                     <Name>render</Name>
@@ -867,7 +894,7 @@
                    <Node>
                     <Name>update</Name>
                     <Path>d9/dea/classintro__t.html</Path>
-                    <Anchor>a09c3876e890a37be7a17dbbb0084d4da</Anchor>
+                    <Anchor>a0939d6693673f0f0d9dfc0e9fd8e224c</Anchor>
                    </Node>
                    <Node>
                     <Name>skip</Name>
@@ -893,7 +920,7 @@
                    <Node>
                     <Name>slide</Name>
                     <Path>da/dec/classintro__t_1_1slide.html</Path>
-                    <Anchor>a349a2578c1249f4b6dab207bc8efa552</Anchor>
+                    <Anchor>a32664b85dc6014b6614477f315d81ee5</Anchor>
                    </Node>
                    <Node>
                     <Name>dest</Name>
@@ -940,7 +967,7 @@
                    <Node>
                     <Name>notepad_t</Name>
                     <Path>d9/d03/classnotepad__t.html</Path>
-                    <Anchor>aca34ffdf14d61518257d5ff32cbda77f</Anchor>
+                    <Anchor>ae910b670eb9800dc5f998943efc80371</Anchor>
                    </Node>
                    <Node>
                     <Name>~notepad_t</Name>
@@ -950,7 +977,7 @@
                    <Node>
                     <Name>handle</Name>
                     <Path>d9/d03/classnotepad__t.html</Path>
-                    <Anchor>ad98a24e386e2a0363a44e67054988160</Anchor>
+                    <Anchor>a3fa185451691009d01df66441f2accb4</Anchor>
                    </Node>
                    <Node>
                     <Name>render</Name>
@@ -960,7 +987,7 @@
                    <Node>
                     <Name>update</Name>
                     <Path>d9/d03/classnotepad__t.html</Path>
-                    <Anchor>ab177e5696b0a4925d4309ce90e5f66aa</Anchor>
+                    <Anchor>acb29bf9572b3733208643185c76e7f17</Anchor>
                    </Node>
                    <Node>
                     <Name>background</Name>
@@ -1007,7 +1034,7 @@
                    <Node>
                     <Name>pause_t</Name>
                     <Path>dc/daa/classpause__t.html</Path>
-                    <Anchor>a840256e71d9ff0f489090fff8f07c946</Anchor>
+                    <Anchor>afff933b3fe3682e13e095d5b867d41e7</Anchor>
                    </Node>
                    <Node>
                     <Name>~pause_t</Name>
@@ -1017,7 +1044,7 @@
                    <Node>
                     <Name>handle</Name>
                     <Path>dc/daa/classpause__t.html</Path>
-                    <Anchor>a267e138e3c13edfb2e0c57cb9100ceac</Anchor>
+                    <Anchor>a0945dd5c1b896cd92d9d7454c13f577e</Anchor>
                    </Node>
                    <Node>
                     <Name>render</Name>
@@ -1027,7 +1054,7 @@
                    <Node>
                     <Name>update</Name>
                     <Path>dc/daa/classpause__t.html</Path>
-                    <Anchor>ac738a9a7bc4671c59a8a9eacd9d0e0ca</Anchor>
+                    <Anchor>a7975d907b119f75c9b87fe6f3ceb7d2c</Anchor>
                    </Node>
                    <Node>
                     <Name>exit</Name>
@@ -1089,7 +1116,7 @@
                    <Node>
                     <Name>scene</Name>
                     <Path>df/db1/classscene.html</Path>
-                    <Anchor>a1012571c9524a29524b8b9d680715e90</Anchor>
+                    <Anchor>ad7ef1968aa37f2e796fec45026b9ade0</Anchor>
                    </Node>
                    <Node>
                     <Name>~scene</Name>
@@ -1099,7 +1126,7 @@
                    <Node>
                     <Name>handle</Name>
                     <Path>df/db1/classscene.html</Path>
-                    <Anchor>a56dec35146b15669e3cf054ced2f4be2</Anchor>
+                    <Anchor>a1a6ee7a03d72487127dbfa6f79f0db9d</Anchor>
                    </Node>
                    <Node>
                     <Name>loadTexture</Name>
@@ -1114,12 +1141,12 @@
                    <Node>
                     <Name>update</Name>
                     <Path>df/db1/classscene.html</Path>
-                    <Anchor>a34b71ea2aea3fd3c007786e75be817c7</Anchor>
+                    <Anchor>a668e98e3a86c4413fa3291c83fcc5378</Anchor>
                    </Node>
                    <Node>
                     <Name>context</Name>
                     <Path>df/db1/classscene.html</Path>
-                    <Anchor>ae9987da046dc0255632015f0e42a546c</Anchor>
+                    <Anchor>a1659b1da41590a2ac67f9927beb823ea</Anchor>
                    </Node>
                   </Subnodes>
                  </Node>
@@ -1127,6 +1154,53 @@
                   <Name>pix</Name>
                   <Path>d5/dd8/scene_8hh.html</Path>
                   <Anchor>a65ce2d414e762882854d47ab28016bb4</Anchor>
+                 </Node>
+                </Subnodes>
+               </Node>
+               <Node>
+                <Name>shitcord.hh</Name>
+                <Path>d1/da8/shitcord_8hh.html</Path>
+              <Subnodes>
+                 <Node>
+                  <Name>shitcord_t</Name>
+                  <Path>de/deb/classshitcord__t.html</Path>
+                <Subnodes>
+                   <Node>
+                    <Name>shitcord_t</Name>
+                    <Path>de/deb/classshitcord__t.html</Path>
+                    <Anchor>aac03a23af4132dd92108d20b30a6be0d</Anchor>
+                   </Node>
+                   <Node>
+                    <Name>~shitcord_t</Name>
+                    <Path>de/deb/classshitcord__t.html</Path>
+                    <Anchor>a46798c707ed5dce9b324cdaa17db5c71</Anchor>
+                   </Node>
+                   <Node>
+                    <Name>generateOptions</Name>
+                    <Path>de/deb/classshitcord__t.html</Path>
+                    <Anchor>a94654f5d652fb31631e2ff17e5c3776b</Anchor>
+                   </Node>
+                   <Node>
+                    <Name>handle</Name>
+                    <Path>de/deb/classshitcord__t.html</Path>
+                    <Anchor>a26224292a18d8df42b361a1f3b333ed8</Anchor>
+                   </Node>
+                   <Node>
+                    <Name>render</Name>
+                    <Path>de/deb/classshitcord__t.html</Path>
+                    <Anchor>a04b3dbd430b42e009e6c47122c69e696</Anchor>
+                   </Node>
+                   <Node>
+                    <Name>update</Name>
+                    <Path>de/deb/classshitcord__t.html</Path>
+                    <Anchor>a13bf62175766d1ebc873c3a8ac8a1b55</Anchor>
+                   </Node>
+                   <Node>
+                    <Name>background</Name>
+                    <Path>de/deb/classshitcord__t.html</Path>
+                    <Anchor>a18f38f0c4bb56eeffdd3ef8657626081</Anchor>
+                   </Node>
+                  </Subnodes>
                  </Node>
                 </Subnodes>
                </Node>
@@ -1165,6 +1239,33 @@
                   <Name>size</Name>
                   <Path>d9/d05/enum_8hh.html</Path>
                   <Anchor>a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24</Anchor>
+                 </Node>
+                </Subnodes>
+               </Node>
+               <Node>
+                <Name>gameState</Name>
+                <Path>d9/d05/enum_8hh.html</Path>
+                <Anchor>aa2f76535ef50e4e6dda6740929d1ed73</Anchor>
+              <Subnodes>
+                 <Node>
+                  <Name>terminating</Name>
+                  <Path>d9/d05/enum_8hh.html</Path>
+                  <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>intro</Name>
+                  <Path>d9/d05/enum_8hh.html</Path>
+                  <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>gameplay</Name>
+                  <Path>d9/d05/enum_8hh.html</Path>
+                  <Anchor>aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>paused</Name>
+                  <Path>d9/d05/enum_8hh.html</Path>
+                  <Anchor>aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
@@ -1215,6 +1316,11 @@
                   <Path>d9/d05/enum_8hh.html</Path>
                   <Anchor>a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9</Anchor>
                  </Node>
+                 <Node>
+                  <Name>shitcord</Name>
+                  <Path>d9/d05/enum_8hh.html</Path>
+                  <Anchor>a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7</Anchor>
+                 </Node>
                 </Subnodes>
                </Node>
               </Subnodes>
@@ -1227,33 +1333,6 @@
                 <Name>game</Name>
                 <Path>d0/d51/classgame.html</Path>
               <Subnodes>
-                 <Node>
-                  <Name>gameState</Name>
-                  <Path>d0/d51/classgame.html</Path>
-                  <Anchor>a9fa617ead70613f9f2176f3aa2094f61</Anchor>
-                <Subnodes>
-                   <Node>
-                    <Name>terminating</Name>
-                    <Path>d0/d51/classgame.html</Path>
-                    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>intro</Name>
-                    <Path>d0/d51/classgame.html</Path>
-                    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>gameplay</Name>
-                    <Path>d0/d51/classgame.html</Path>
-                    <Anchor>a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>paused</Name>
-                    <Path>d0/d51/classgame.html</Path>
-                    <Anchor>a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2</Anchor>
-                   </Node>
-                  </Subnodes>
-                 </Node>
                  <Node>
                   <Name>game</Name>
                   <Path>d0/d51/classgame.html</Path>
@@ -1329,10 +1408,6 @@
               </Subnodes>
              </Node>
              <Node>
-              <Name>pch.hh</Name>
-              <Path>d0/d8b/pch_8hh.html</Path>
-             </Node>
-             <Node>
               <Name>wm.hh</Name>
               <Path>d3/d51/wm_8hh.html</Path>
             <Subnodes>
@@ -1353,7 +1428,7 @@
                  <Node>
                   <Name>handle</Name>
                   <Path>df/d1c/classwm.html</Path>
-                  <Anchor>a7f282167450e97df5792d589c9ced058</Anchor>
+                  <Anchor>ae5f8a28b02b3bc82d4422c6ea0e745ca</Anchor>
                  </Node>
                  <Node>
                   <Name>render</Name>
@@ -1363,7 +1438,7 @@
                  <Node>
                   <Name>update</Name>
                   <Path>df/d1c/classwm.html</Path>
-                  <Anchor>a54115bce16818acb350825256b11b2ce</Anchor>
+                  <Anchor>a486c679090df44959f5bf6dd71db5983</Anchor>
                  </Node>
                  <Node>
                   <Name>context</Name>
@@ -1414,6 +1489,11 @@
                   <Name>resume</Name>
                   <Path>df/d1c/classwm.html</Path>
                   <Anchor>aeedc8b11c2b96839e921b7f82840656e</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>shitcord</Name>
+                  <Path>df/d1c/classwm.html</Path>
+                  <Anchor>a5b53423d16a28cc8c0eec221572fb454</Anchor>
                  </Node>
                  <Node>
                   <Name>wasSilence</Name>
@@ -1484,6 +1564,13 @@
                <Node>
                 <Name>gameplay.cc</Name>
                 <Path>de/d8a/gameplay_8cc.html</Path>
+              <Subnodes>
+                 <Node>
+                  <Name>changeScene</Name>
+                  <Path>de/d8a/gameplay_8cc.html</Path>
+                  <Anchor>a199644654857552c06fa8aaea76ac812</Anchor>
+                 </Node>
+                </Subnodes>
                </Node>
                <Node>
                 <Name>pause.cc</Name>
@@ -1521,6 +1608,10 @@
                <Node>
                 <Name>scene.cc</Name>
                 <Path>d4/d11/scene_8cc.html</Path>
+               </Node>
+               <Node>
+                <Name>shitcord.cc</Name>
+                <Path>d0/dd7/shitcord_8cc.html</Path>
                </Node>
               </Subnodes>
              </Node>

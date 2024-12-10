@@ -6,22 +6,16 @@
 #include "SDL.h"
 #include "SDL_mixer.h"
 #include "SDL_ttf.h"
+#include "enum.hh"
 #include "wm.hh"
 
 class game {
  public:
-  enum class gameState : uint8_t {
-    terminating,
-    intro,
-    gameplay,
-    paused,
-  };
-
   /**
    * @brief State that the game is in
    *
    */
-  gameState state = gameState::intro;
+  gameState state;
 
   /**
    * @brief Rect containing the screen height and width

@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="20" column="15" bodyfile="include/scenes/pause.hh" bodystart="20" bodyend="-1"/>
+        <location file="include/scenes/pause.hh" line="21" column="15" bodyfile="include/scenes/pause.hh" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" prot="public" static="no" mutable="no">
         <type>SDL_Texture *</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="24" column="15" bodyfile="include/scenes/pause.hh" bodystart="24" bodyend="-1"/>
+        <location file="include/scenes/pause.hh" line="26" column="15" bodyfile="include/scenes/pause.hh" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dc/daa/classpause__t_1ae945e4a533d1de46870bffe0e838d8ae" prot="public" static="no" mutable="no">
         <type>SDL_Rect</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="26" column="12" bodyfile="include/scenes/pause.hh" bodystart="26" bodyend="-1"/>
+        <location file="include/scenes/pause.hh" line="29" column="12" bodyfile="include/scenes/pause.hh" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dc/daa/classpause__t_1a148437ac9cfb0970822384f99c03ac77" prot="public" static="no" mutable="no">
         <type>SDL_Texture *</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="31" column="15" bodyfile="include/scenes/pause.hh" bodystart="31" bodyend="-1"/>
+        <location file="include/scenes/pause.hh" line="34" column="15" bodyfile="include/scenes/pause.hh" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" prot="public" static="no" mutable="no">
         <type>SDL_Texture *</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="35" column="15" bodyfile="include/scenes/pause.hh" bodystart="35" bodyend="-1"/>
+        <location file="include/scenes/pause.hh" line="39" column="15" bodyfile="include/scenes/pause.hh" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" prot="public" static="no" mutable="no">
         <type>SDL_Texture *</type>
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="39" column="15" bodyfile="include/scenes/pause.hh" bodystart="39" bodyend="-1"/>
+        <location file="include/scenes/pause.hh" line="44" column="15" bodyfile="include/scenes/pause.hh" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dc/daa/classpause__t_1a9034485c8caf7cd1dfddf7f300542747" prot="public" static="no" mutable="no">
         <type>SDL_Rect</type>
@@ -138,18 +138,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="43" column="12" bodyfile="include/scenes/pause.hh" bodystart="43" bodyend="-1"/>
+        <location file="include/scenes/pause.hh" line="49" column="12" bodyfile="include/scenes/pause.hh" bodystart="49" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="dc/daa/classpause__t_1a840256e71d9ff0f489090fff8f07c946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="dc/daa/classpause__t_1afff933b3fe3682e13e095d5b867d41e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>pause_t::pause_t</definition>
-        <argsstring>(game *context)</argsstring>
+        <argsstring>(const game *context)</argsstring>
         <name>pause_t</name>
         <qualifiedname>pause_t::pause_t</qualifiedname>
         <param>
-          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <type>const <ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
           <declname>context</declname>
         </param>
         <briefdescription>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="52" column="3" bodyfile="src/game/pause.cc" bodystart="5" bodyend="17"/>
+        <location file="include/scenes/pause.hh" line="58" column="3" bodyfile="src/game/pause.cc" bodystart="5" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="dc/daa/classpause__t_1a8e6961a2a9fb61c99e92face62126593" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -186,15 +186,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="58" column="3" bodyfile="src/game/pause.cc" bodystart="19" bodyend="25"/>
+        <location file="include/scenes/pause.hh" line="65" column="3" bodyfile="src/game/pause.cc" bodystart="19" bodyend="25"/>
       </memberdef>
-      <memberdef kind="function" id="dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>std::pair&lt; scenes, sceneData &gt; pause_t::update</definition>
+      <memberdef kind="function" id="dc/daa/classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>const std::pair&lt; scenes, sceneData &gt; pause_t::update</definition>
         <argsstring>() override</argsstring>
         <name>update</name>
         <qualifiedname>pause_t::update</qualifiedname>
-        <reimplements refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</reimplements>
+        <reimplements refid="df/db1/classscene_1a668e98e3a86c4413fa3291c83fcc5378">update</reimplements>
         <briefdescription>
 <para>Update logic for the pause menu. </para>
         </briefdescription>
@@ -206,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="67" column="13" bodyfile="src/game/pause.cc" bodystart="27" bodyend="29"/>
+        <location file="include/scenes/pause.hh" line="75" column="19" bodyfile="src/game/pause.cc" bodystart="27" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -222,17 +222,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="71" column="8" bodyfile="src/game/pause.cc" bodystart="31" bodyend="35"/>
+        <location file="include/scenes/pause.hh" line="80" column="8" bodyfile="src/game/pause.cc" bodystart="31" bodyend="35"/>
       </memberdef>
-      <memberdef kind="function" id="dc/daa/classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>std::pair&lt; scenes, sceneData &gt; pause_t::handle</definition>
-        <argsstring>(SDL_Event &amp;event) override</argsstring>
+      <memberdef kind="function" id="dc/daa/classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>const std::pair&lt; scenes, sceneData &gt; pause_t::handle</definition>
+        <argsstring>(const SDL_Event &amp;event) override</argsstring>
         <name>handle</name>
         <qualifiedname>pause_t::handle</qualifiedname>
-        <reimplements refid="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2">handle</reimplements>
+        <reimplements refid="df/db1/classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">handle</reimplements>
         <param>
-          <type>SDL_Event &amp;</type>
+          <type>const SDL_Event &amp;</type>
           <declname>event</declname>
         </param>
         <briefdescription>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/pause.hh" line="79" column="13" bodyfile="src/game/pause.cc" bodystart="37" bodyend="46"/>
+        <location file="include/scenes/pause.hh" line="89" column="19" bodyfile="src/game/pause.cc" bodystart="37" bodyend="46"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -306,24 +306,24 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/scenes/pause.hh" line="6" column="1" bodyfile="include/scenes/pause.hh" bodystart="6" bodyend="80"/>
+    <location file="include/scenes/pause.hh" line="6" column="1" bodyfile="include/scenes/pause.hh" bodystart="6" bodyend="90"/>
     <listofallmembers>
-      <member refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" prot="public" virt="non-virtual"><scope>pause_t</scope><name>context</name></member>
+      <member refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" prot="public" virt="non-virtual"><scope>pause_t</scope><name>context</name></member>
       <member refid="dc/daa/classpause__t_1a148437ac9cfb0970822384f99c03ac77" prot="public" virt="non-virtual"><scope>pause_t</scope><name>exit</name></member>
       <member refid="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" prot="public" virt="non-virtual"><scope>pause_t</scope><name>exitHover</name></member>
       <member refid="dc/daa/classpause__t_1a9034485c8caf7cd1dfddf7f300542747" prot="public" virt="non-virtual"><scope>pause_t</scope><name>exitPos</name></member>
       <member refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" prot="public" virt="non-virtual"><scope>pause_t</scope><name>exitState</name></member>
-      <member refid="dc/daa/classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac" prot="public" virt="virtual"><scope>pause_t</scope><name>handle</name></member>
+      <member refid="dc/daa/classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e" prot="public" virt="virtual"><scope>pause_t</scope><name>handle</name></member>
       <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" virt="non-virtual"><scope>pause_t</scope><name>loadTexture</name></member>
       <member refid="dc/daa/classpause__t_1abc176f557fb1f594687017c268bbdfe4" prot="public" virt="non-virtual"><scope>pause_t</scope><name>overlay</name></member>
-      <member refid="dc/daa/classpause__t_1a840256e71d9ff0f489090fff8f07c946" prot="public" virt="non-virtual"><scope>pause_t</scope><name>pause_t</name></member>
+      <member refid="dc/daa/classpause__t_1afff933b3fe3682e13e095d5b867d41e7" prot="public" virt="non-virtual"><scope>pause_t</scope><name>pause_t</name></member>
       <member refid="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8" prot="public" virt="virtual"><scope>pause_t</scope><name>render</name></member>
       <member refid="dc/daa/classpause__t_1a3e20af849346bcd336f939865a270c5c" prot="public" virt="non-virtual"><scope>pause_t</scope><name>resume</name></member>
       <member refid="dc/daa/classpause__t_1a0c32a4f98b58aa3806699382970ec491" prot="public" virt="non-virtual"><scope>pause_t</scope><name>resumeHover</name></member>
       <member refid="dc/daa/classpause__t_1ae945e4a533d1de46870bffe0e838d8ae" prot="public" virt="non-virtual"><scope>pause_t</scope><name>resumePos</name></member>
       <member refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" prot="public" virt="non-virtual"><scope>pause_t</scope><name>resumeState</name></member>
-      <member refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" prot="public" virt="non-virtual"><scope>pause_t</scope><name>scene</name></member>
-      <member refid="dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca" prot="public" virt="virtual"><scope>pause_t</scope><name>update</name></member>
+      <member refid="df/db1/classscene_1ad7ef1968aa37f2e796fec45026b9ade0" prot="public" virt="non-virtual"><scope>pause_t</scope><name>scene</name></member>
+      <member refid="dc/daa/classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c" prot="public" virt="virtual"><scope>pause_t</scope><name>update</name></member>
       <member refid="dc/daa/classpause__t_1a8e6961a2a9fb61c99e92face62126593" prot="public" virt="non-virtual"><scope>pause_t</scope><name>~pause_t</name></member>
       <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" virt="virtual"><scope>pause_t</scope><name>~scene</name></member>
     </listofallmembers>

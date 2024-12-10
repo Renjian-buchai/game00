@@ -2,7 +2,7 @@
 
 #include "game.hh"
 
-pause_t::pause_t(game* _context)
+pause_t::pause_t(const game* _context)
     : scene(_context),
       resumePos({pix(219), pix(169), pix(201), pix(63)}),
       exitPos({pix(219), pix(235), pix(201), pix(63)}) {
@@ -24,7 +24,7 @@ pause_t::~pause_t() {
   SDL_DestroyTexture(exitHover);
 }
 
-std::pair<scenes, sceneData> pause_t::update() {
+const std::pair<scenes, sceneData> pause_t::update() {
   return std::make_pair(scenes::pause, std::monostate());
 }
 
@@ -34,7 +34,7 @@ void pause_t::render() {
   SDL_RenderCopy(context->mainRenderer, exitState, nullptr, nullptr);
 }
 
-std::pair<scenes, sceneData> pause_t::handle(SDL_Event& event) {
+const std::pair<scenes, sceneData> pause_t::handle(const SDL_Event& event) {
   SDL_Point mousePosition = {event.motion.x, event.motion.y};
 
   resumeState =

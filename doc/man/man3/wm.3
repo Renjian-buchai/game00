@@ -24,11 +24,11 @@ wm
 .br
 .RI "Renders the current scene, icons, and the overlay\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event)"
+.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event)"
 .br
 .RI "Handles events and scene switches via task bar\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP ()"
+.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP ()"
 .br
 .RI "Updates scene data\&. "
 .in -1c
@@ -69,6 +69,9 @@ wm
 .RI "std::unique_ptr< \fBintro_t\fP > \fBintro\fP"
 .br
 .ti -1c
+.RI "std::unique_ptr< \fBshitcord_t\fP > \fBshitcord\fP"
+.br
+.ti -1c
 .RI "\fBscene\fP * \fBcurrent\fP"
 .br
 .RI "Current scene\&. "
@@ -97,7 +100,7 @@ Construct a new wm object\&. Constructs all the scenes, too
 
 .SH "Member Function Documentation"
 .PP 
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > wm::handle (SDL_Event & event)"
+.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > wm::handle (const SDL_Event & event)"
 
 .PP
 Handles events and scene switches via task bar\&. 
@@ -117,7 +120,7 @@ std::pair<scenes, sceneData> Returns the scene to be changed to, and the data th
 
 .PP
 Renders the current scene, icons, and the overlay\&. Does not render if the current scene is the intro\&. 
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > wm::update ()"
+.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > wm::update ()"
 
 .PP
 Updates scene data\&. 
@@ -164,6 +167,8 @@ Position of the pause button\&.
 
 .PP
 Scene to resume on\&. Only used for unpausing purposes\&. 
+.SS "std::unique_ptr<\fBshitcord_t\fP> wm::shitcord"
+
 .SS "bool wm::wasSilence = 0"
 
 .PP

@@ -3,56 +3,13 @@
   <compounddef id="d0/d51/classgame" kind="class" language="C++" prot="public">
     <compoundname>game</compoundname>
     <includes refid="d3/d0e/game_8hh" local="no">game.hh</includes>
-    <sectiondef kind="public-type">
-      <memberdef kind="enum" id="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
-        <name>gameState</name>
-        <qualifiedname>game::gameState</qualifiedname>
-        <enumvalue id="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db" prot="public">
-          <name>terminating</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb" prot="public">
-          <name>intro</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057" prot="public">
-          <name>gameplay</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2" prot="public">
-          <name>paused</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/game.hh" line="9" column="3" bodyfile="include/game.hh" bodystart="9" bodyend="14"/>
-      </memberdef>
-    </sectiondef>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d0/d51/classgame_1a66a0e69c41270ee22849d56d12e12749" prot="public" static="no" mutable="no">
-        <type><ref refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61" kindref="member">gameState</ref></type>
+        <type><ref refid="d9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73" kindref="member">gameState</ref></type>
         <definition>gameState game::state</definition>
         <argsstring></argsstring>
         <name>state</name>
         <qualifiedname>game::state</qualifiedname>
-        <initializer>= <ref refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb" kindref="member">gameState::intro</ref></initializer>
         <briefdescription>
 <para>State that the game is in. </para>
         </briefdescription>
@@ -60,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="20" column="13" bodyfile="include/game.hh" bodystart="20" bodyend="-1"/>
+        <location file="include/game.hh" line="18" column="13" bodyfile="include/game.hh" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" prot="public" static="no" mutable="no">
         <type>SDL_Rect</type>
@@ -75,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="26" column="12" bodyfile="include/game.hh" bodystart="26" bodyend="-1"/>
+        <location file="include/game.hh" line="24" column="12" bodyfile="include/game.hh" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1acc01740eae91dd462ec52a9d7a3ec974" prot="public" static="no" mutable="no">
         <type>SDL_Window *</type>
@@ -90,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="31" column="14" bodyfile="include/game.hh" bodystart="31" bodyend="-1"/>
+        <location file="include/game.hh" line="29" column="14" bodyfile="include/game.hh" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" prot="public" static="no" mutable="no">
         <type>SDL_Renderer *</type>
@@ -105,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="36" column="16" bodyfile="include/game.hh" bodystart="36" bodyend="-1"/>
+        <location file="include/game.hh" line="34" column="16" bodyfile="include/game.hh" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1a9e8b656712b1f8d16290abd3d21b2331" prot="public" static="no" mutable="no">
         <type>std::array&lt; Mix_Music *, 4 &gt;</type>
@@ -120,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="42" column="14" bodyfile="include/game.hh" bodystart="42" bodyend="-1"/>
+        <location file="include/game.hh" line="40" column="14" bodyfile="include/game.hh" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1a74c272eea906013e6af7480d8d31f431" prot="public" static="no" mutable="no">
         <type>std::array&lt; Mix_Music *, 6 &gt;</type>
@@ -135,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="47" column="14" bodyfile="include/game.hh" bodystart="47" bodyend="-1"/>
+        <location file="include/game.hh" line="45" column="14" bodyfile="include/game.hh" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" prot="public" static="no" mutable="no">
         <type>TTF_Font *</type>
@@ -150,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="53" column="12" bodyfile="include/game.hh" bodystart="53" bodyend="-1"/>
+        <location file="include/game.hh" line="51" column="12" bodyfile="include/game.hh" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1a392ea9253c1a69cd42b0d45547568eb0" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -166,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="56" column="10" bodyfile="include/game.hh" bodystart="56" bodyend="-1"/>
+        <location file="include/game.hh" line="54" column="10" bodyfile="include/game.hh" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1a149df5bc9d648f2b400d3f03f8aa139d" prot="public" static="no" mutable="no">
         <type><ref refid="df/d1c/classwm" kindref="compound">wm</ref></type>
@@ -181,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="62" column="6" bodyfile="include/game.hh" bodystart="62" bodyend="-1"/>
+        <location file="include/game.hh" line="60" column="6" bodyfile="include/game.hh" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1ac71bfd4415fdd0075d2115aa0ffe2bf6" prot="public" static="no" mutable="no">
         <type>SDL_mutex *</type>
@@ -195,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="64" column="13" bodyfile="include/game.hh" bodystart="64" bodyend="-1"/>
+        <location file="include/game.hh" line="62" column="13" bodyfile="include/game.hh" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d51/classgame_1a4f416f46f79adaa51c134ecce60adae2" prot="public" static="no" mutable="no">
         <type>SDL_Thread *</type>
@@ -210,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="70" column="14" bodyfile="include/game.hh" bodystart="70" bodyend="-1"/>
+        <location file="include/game.hh" line="68" column="14" bodyfile="include/game.hh" bodystart="68" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -228,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="77" column="3" bodyfile="src/game/game.cc" bodystart="29" bodyend="98"/>
+        <location file="include/game.hh" line="75" column="3" bodyfile="src/game/game.cc" bodystart="31" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="d0/d51/classgame_1ae87abd20c4d8a7906fa48e690a5f1d07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -243,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="83" column="3" bodyfile="src/game/game.cc" bodystart="100" bodyend="116"/>
+        <location file="include/game.hh" line="81" column="3" bodyfile="src/game/game.cc" bodystart="103" bodyend="119"/>
       </memberdef>
       <memberdef kind="function" id="d0/d51/classgame_1abf967ec7fa712fde980d9c399e4f778d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -258,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/game.hh" line="89" column="8" bodyfile="src/game/gameplay.cc" bodystart="4" bodyend="65"/>
+        <location file="include/game.hh" line="87" column="8" bodyfile="src/game/gameplay.cc" bodystart="34" bodyend="64"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -292,14 +249,13 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/game.hh" line="7" column="1" bodyfile="include/game.hh" bodystart="7" bodyend="90"/>
+    <location file="include/game.hh" line="12" column="1" bodyfile="include/game.hh" bodystart="12" bodyend="88"/>
     <listofallmembers>
       <member refid="d0/d51/classgame_1a9e8b656712b1f8d16290abd3d21b2331" prot="public" virt="non-virtual"><scope>game</scope><name>bgm</name></member>
       <member refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" prot="public" virt="non-virtual"><scope>game</scope><name>dispBounds</name></member>
       <member refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" prot="public" virt="non-virtual"><scope>game</scope><name>font</name></member>
       <member refid="d0/d51/classgame_1ad9c102127b5038f880067ad6c9198d38" prot="public" virt="non-virtual"><scope>game</scope><name>game</name></member>
       <member refid="d0/d51/classgame_1abf967ec7fa712fde980d9c399e4f778d" prot="public" virt="non-virtual"><scope>game</scope><name>gameplay</name></member>
-      <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61" prot="public" virt="non-virtual"><scope>game</scope><name>gameState</name></member>
       <member refid="d0/d51/classgame_1a4f416f46f79adaa51c134ecce60adae2" prot="public" virt="non-virtual"><scope>game</scope><name>loadThread</name></member>
       <member refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" prot="public" virt="non-virtual"><scope>game</scope><name>mainRenderer</name></member>
       <member refid="d0/d51/classgame_1acc01740eae91dd462ec52a9d7a3ec974" prot="public" virt="non-virtual"><scope>game</scope><name>mainWindow</name></member>

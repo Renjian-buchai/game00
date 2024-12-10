@@ -6,27 +6,37 @@
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ENUM\_HH}}
 \DoxyCodeLine{00003\ }
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstdint>}}
-\DoxyCodeLine{00010\ \textcolor{keyword}{enum\ class}\ notepadData\ :\ uint8\_t\ \{}
-\DoxyCodeLine{00011\ \ \ empty,}
-\DoxyCodeLine{00012\ \ \ entry1\ =\ 1,}
-\DoxyCodeLine{00013\ \ \ entry2\ =\ 2,}
-\DoxyCodeLine{00014\ \};}
-\DoxyCodeLine{00018\ \textcolor{keyword}{enum\ class}\ explorerData\ :\ uint8\_t\ \{}
-\DoxyCodeLine{00019\ \ \ init,}
-\DoxyCodeLine{00020\ \ \ entry1,}
-\DoxyCodeLine{00021\ \ \ entry2,}
-\DoxyCodeLine{00022\ \ \ size,}
-\DoxyCodeLine{00023\ \};}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{enum\ class}\ scenes\ :\ uint8\_t\ \{}
-\DoxyCodeLine{00029\ \ \ intro,}
-\DoxyCodeLine{00030\ \ \ explorer,}
-\DoxyCodeLine{00031\ \ \ notepad,}
-\DoxyCodeLine{00032\ \ \ pause,}
-\DoxyCodeLine{00033\ \};}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \textcolor{keyword}{using\ }sceneData\ =\ std::variant<std::monostate,\ notepadData>;}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <variant>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{enum\ class}\ notepadData\ :\ uint8\_t\ \{}
+\DoxyCodeLine{00013\ \ \ empty,}
+\DoxyCodeLine{00014\ \ \ entry1\ =\ 1,}
+\DoxyCodeLine{00015\ \ \ entry2\ =\ 2,}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00020\ \textcolor{keyword}{enum\ class}\ explorerData\ :\ uint8\_t\ \{}
+\DoxyCodeLine{00021\ \ \ init,}
+\DoxyCodeLine{00022\ \ \ entry1,}
+\DoxyCodeLine{00023\ \ \ entry2,}
+\DoxyCodeLine{00024\ \ \ size,}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{enum\ class}\ scenes\ :\ uint8\_t\ \{}
+\DoxyCodeLine{00031\ \ \ intro,}
+\DoxyCodeLine{00032\ \ \ explorer,}
+\DoxyCodeLine{00033\ \ \ notepad,}
+\DoxyCodeLine{00034\ \ \ pause,}
+\DoxyCodeLine{00035\ \ \ shitcord,}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{enum\ class}\ gameState\ :\ uint8\_t\ \{}
+\DoxyCodeLine{00044\ \ \ terminating,}
+\DoxyCodeLine{00045\ \ \ intro,}
+\DoxyCodeLine{00046\ \ \ gameplay,}
+\DoxyCodeLine{00047\ \ \ paused,}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{using\ }sceneData\ =\ std::variant<std::monostate,\ notepadData>;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

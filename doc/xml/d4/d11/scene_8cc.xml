@@ -2,101 +2,108 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
   <compounddef id="d4/d11/scene_8cc" kind="file" language="C++">
     <compoundname>scene.cc</compoundname>
-    <includes refid="d5/dd8/scene_8hh" local="yes">../../include/scenes/scene.hh</includes>
-    <includes refid="d3/d0e/game_8hh" local="yes">../../include/game.hh</includes>
+    <includes refid="d5/dd8/scene_8hh" local="yes">scenes/scene.hh</includes>
+    <includes local="no">iostream</includes>
+    <includes local="yes">SDL.h</includes>
+    <includes local="yes">SDL_image.h</includes>
+    <includes refid="d3/d0e/game_8hh" local="yes">game.hh</includes>
     <incdepgraph>
-      <node id="12">
+      <node id="4">
         <label>SDL.h</label>
       </node>
-      <node id="13">
+      <node id="9">
         <label>SDL_image.h</label>
       </node>
-      <node id="14">
+      <node id="12">
         <label>SDL_mixer.h</label>
       </node>
-      <node id="15">
+      <node id="13">
         <label>SDL_ttf.h</label>
       </node>
-      <node id="16">
-        <label>../enum.hh</label>
+      <node id="5">
+        <label>enum.hh</label>
         <link refid="d9/d05/enum_8hh"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>../../include/game.hh</label>
-        <link refid="d3/d0e/game_8hh"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>../../include/pch.hh</label>
-        <link refid="d0/d8b/pch_8hh"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
+      </node>
+      <node id="10">
+        <label>game.hh</label>
+        <link refid="d3/d0e/game_8hh"/>
         <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
       </node>
-      <node id="19">
+      <node id="17">
         <label>scenes/explorer.hh</label>
         <link refid="d4/d7c/explorer_8hh"/>
+        <childnode refid="16" relation="include">
+        </childnode>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="18">
         <label>scenes/init.hh</label>
         <link refid="dd/d82/init_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="19">
         <label>scenes/notepad.hh</label>
         <link refid="d4/d54/notepad_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="20">
         <label>scenes/pause.hh</label>
         <link refid="d4/d90/pause_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="2">
-        <label>../../include/scenes/scene.hh</label>
+        <label>scenes/scene.hh</label>
         <link refid="d5/dd8/scene_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="21">
+        <label>scenes/shitcord.hh</label>
+        <link refid="d1/da8/shitcord_8hh"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
         <label>wm.hh</label>
         <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="15" relation="include">
+        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
@@ -104,39 +111,43 @@
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
       </node>
       <node id="1">
         <label>src/scenes/scene.cc</label>
         <link refid="d4/d11/scene_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="11">
         <label>array</label>
       </node>
-      <node id="5">
+      <node id="6">
         <label>cstdint</label>
       </node>
-      <node id="6">
+      <node id="8">
         <label>iostream</label>
       </node>
-      <node id="7">
+      <node id="15">
         <label>memory</label>
       </node>
-      <node id="8">
+      <node id="22">
         <label>string</label>
       </node>
-      <node id="9">
+      <node id="3">
         <label>utility</label>
       </node>
-      <node id="10">
+      <node id="7">
         <label>variant</label>
       </node>
-      <node id="11">
+      <node id="16">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -145,33 +156,37 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/dd8/scene_8hh" kindref="compound">../../include/scenes/scene.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/dd8/scene_8hh" kindref="compound">scenes/scene.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">../../include/game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><ref refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" kindref="member">scene::scene</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)<sp/>:<sp/>context(_context)<sp/>{}</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><ref refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" kindref="member">scene::~scene</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL_image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal">SDL_Texture*<sp/><ref refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" kindref="member">scene::loadTexture</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path)<sp/>{</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>IMG_Load(path);</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(surface<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>IMG_GetError();</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Safe<sp/>because<sp/>SDL<sp/>guarantees<sp/>that<sp/>all<sp/>functions<sp/>can<sp/>take<sp/>nullptr<sp/>as</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>textures.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/>texture<sp/>=</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(texture<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>SDL_GetError();</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>texture;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="df/db1/classscene_1ad7ef1968aa37f2e796fec45026b9ade0" kindref="member">scene::scene</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)<sp/>:<sp/>context(_context)<sp/>{}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" kindref="member">scene::~scene</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">SDL_Texture*<sp/><ref refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" kindref="member">scene::loadTexture</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>IMG_Load(path);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(surface<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>IMG_GetError();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Safe<sp/>because<sp/>SDL<sp/>guarantees<sp/>that<sp/>all<sp/>functions<sp/>can<sp/>take<sp/>nullptr<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>textures.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/>texture<sp/>=</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(texture<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>SDL_GetError();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>texture;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/scenes/scene.cc"/>
   </compounddef>

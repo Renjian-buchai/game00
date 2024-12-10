@@ -6,19 +6,14 @@
     <member refid="d5/db0/classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93" kind="variable"><name>background</name></member>
     <member refid="d5/db0/classexplorer__t_1a9cb2c4b54f466e5535c38cdac94ea0b4" kind="variable"><name>nameWrapLength</name></member>
     <member refid="d5/db0/classexplorer__t_1ab134139610d2267ca833abcd44b39aac" kind="variable"><name>downloadBounds</name></member>
-    <member refid="d5/db0/classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6" kind="function"><name>explorer_t</name></member>
+    <member refid="d5/db0/classexplorer__t_1a2924ed013429848f0cbeb1383449e505" kind="function"><name>explorer_t</name></member>
     <member refid="d5/db0/classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50" kind="function"><name>~explorer_t</name></member>
-    <member refid="d5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5" kind="function"><name>update</name></member>
+    <member refid="d5/db0/classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb" kind="function"><name>update</name></member>
     <member refid="d5/db0/classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757" kind="function"><name>render</name></member>
-    <member refid="d5/db0/classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882" kind="function"><name>handle</name></member>
+    <member refid="d5/db0/classexplorer__t_1a87452daa84e4b7145c1f50a812010824" kind="function"><name>handle</name></member>
     <member refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" kind="function"><name>createFilesystemEntry</name></member>
   </compound>
   <compound refid="d0/d51/classgame" kind="class"><name>game</name>
-    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61" kind="enum"><name>gameState</name></member>
-    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db" kind="enumvalue"><name>terminating</name></member>
-    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb" kind="enumvalue"><name>intro</name></member>
-    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057" kind="enumvalue"><name>gameplay</name></member>
-    <member refid="d0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2" kind="enumvalue"><name>paused</name></member>
     <member refid="d0/d51/classgame_1a66a0e69c41270ee22849d56d12e12749" kind="variable"><name>state</name></member>
     <member refid="d0/d51/classgame_1a2de268c0ae822e5ac4b5d1bb2199f2d6" kind="variable"><name>dispBounds</name></member>
     <member refid="d0/d51/classgame_1acc01740eae91dd462ec52a9d7a3ec974" kind="variable"><name>mainWindow</name></member>
@@ -42,11 +37,11 @@
     <member refid="d9/dea/classintro__t_1a97b511d587ca8e05515e35e6418cf1d0" kind="variable"><name>slides</name></member>
     <member refid="d9/dea/classintro__t_1a6db4493f9b8695a1bed2f16f3af45870" kind="variable"><name>startTime</name></member>
     <member refid="d9/dea/classintro__t_1a1543b2b845c6999165123b34608fcf25" kind="variable"><name>skip</name></member>
-    <member refid="d9/dea/classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d" kind="function"><name>intro_t</name></member>
+    <member refid="d9/dea/classintro__t_1a820567ef1f00c44713099e17180f1414" kind="function"><name>intro_t</name></member>
     <member refid="d9/dea/classintro__t_1a56e63618edf895c263cda8a8c8ef45e6" kind="function"><name>~intro_t</name></member>
-    <member refid="d9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da" kind="function"><name>update</name></member>
+    <member refid="d9/dea/classintro__t_1a0939d6693673f0f0d9dfc0e9fd8e224c" kind="function"><name>update</name></member>
     <member refid="d9/dea/classintro__t_1add93912d666cc242e170f15e7e03a808" kind="function"><name>render</name></member>
-    <member refid="d9/dea/classintro__t_1adda2b278aae9bae71b89194313bc23a9" kind="function"><name>handle</name></member>
+    <member refid="d9/dea/classintro__t_1a3a698a22fdd0e66f603955af8ced0186" kind="function"><name>handle</name></member>
     <member refid="d9/dea/classintro__t_1a104f915a0a592c0db524a70ffc666a60" kind="function"><name>slideShow</name></member>
     <member refid="d9/dea/classintro__t_1a0439809e2c67c40ea20757ffed70968c" kind="function"><name>addSlide</name></member>
     <member refid="d9/dea/classintro__t_1a427b58b3e041bb4672278b9e422b8292" kind="function"><name>centreRect</name></member>
@@ -59,11 +54,11 @@
     <member refid="d9/d03/classnotepad__t_1a71add6ff4e2c0947e3043df553695bd1" kind="variable"><name>currentData</name></member>
     <member refid="d9/d03/classnotepad__t_1ade41e5a025182a3a851e078e8fbbe4af" kind="variable"><name>prevData</name></member>
     <member refid="d9/d03/classnotepad__t_1af6ff2f6dffb32c3fd6edc955c4b0dfba" kind="variable"><name>entryRect</name></member>
-    <member refid="d9/d03/classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f" kind="function"><name>notepad_t</name></member>
+    <member refid="d9/d03/classnotepad__t_1ae910b670eb9800dc5f998943efc80371" kind="function"><name>notepad_t</name></member>
     <member refid="d9/d03/classnotepad__t_1ac047cc39e7ff3f954057314e6298d6b1" kind="function"><name>~notepad_t</name></member>
-    <member refid="d9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa" kind="function"><name>update</name></member>
+    <member refid="d9/d03/classnotepad__t_1acb29bf9572b3733208643185c76e7f17" kind="function"><name>update</name></member>
     <member refid="d9/d03/classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a" kind="function"><name>render</name></member>
-    <member refid="d9/d03/classnotepad__t_1ad98a24e386e2a0363a44e67054988160" kind="function"><name>handle</name></member>
+    <member refid="d9/d03/classnotepad__t_1a3fa185451691009d01df66441f2accb4" kind="function"><name>handle</name></member>
   </compound>
   <compound refid="dc/daa/classpause__t" kind="class"><name>pause_t</name>
     <member refid="dc/daa/classpause__t_1abc176f557fb1f594687017c268bbdfe4" kind="variable"><name>overlay</name></member>
@@ -75,20 +70,29 @@
     <member refid="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" kind="variable"><name>exitHover</name></member>
     <member refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" kind="variable"><name>exitState</name></member>
     <member refid="dc/daa/classpause__t_1a9034485c8caf7cd1dfddf7f300542747" kind="variable"><name>exitPos</name></member>
-    <member refid="dc/daa/classpause__t_1a840256e71d9ff0f489090fff8f07c946" kind="function"><name>pause_t</name></member>
+    <member refid="dc/daa/classpause__t_1afff933b3fe3682e13e095d5b867d41e7" kind="function"><name>pause_t</name></member>
     <member refid="dc/daa/classpause__t_1a8e6961a2a9fb61c99e92face62126593" kind="function"><name>~pause_t</name></member>
-    <member refid="dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca" kind="function"><name>update</name></member>
+    <member refid="dc/daa/classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c" kind="function"><name>update</name></member>
     <member refid="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8" kind="function"><name>render</name></member>
-    <member refid="dc/daa/classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac" kind="function"><name>handle</name></member>
+    <member refid="dc/daa/classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e" kind="function"><name>handle</name></member>
   </compound>
   <compound refid="df/db1/classscene" kind="class"><name>scene</name>
-    <member refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kind="variable"><name>context</name></member>
+    <member refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kind="variable"><name>context</name></member>
     <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" kind="function"><name>loadTexture</name></member>
-    <member refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" kind="function"><name>scene</name></member>
+    <member refid="df/db1/classscene_1ad7ef1968aa37f2e796fec45026b9ade0" kind="function"><name>scene</name></member>
     <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" kind="function"><name>~scene</name></member>
-    <member refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7" kind="function"><name>update</name></member>
+    <member refid="df/db1/classscene_1a668e98e3a86c4413fa3291c83fcc5378" kind="function"><name>update</name></member>
     <member refid="df/db1/classscene_1a7c218380f822d46bee781520e855a7de" kind="function"><name>render</name></member>
-    <member refid="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2" kind="function"><name>handle</name></member>
+    <member refid="df/db1/classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="de/deb/classshitcord__t" kind="class"><name>shitcord_t</name>
+    <member refid="de/deb/classshitcord__t_1a18f38f0c4bb56eeffdd3ef8657626081" kind="variable"><name>background</name></member>
+    <member refid="de/deb/classshitcord__t_1aac03a23af4132dd92108d20b30a6be0d" kind="function"><name>shitcord_t</name></member>
+    <member refid="de/deb/classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71" kind="function"><name>~shitcord_t</name></member>
+    <member refid="de/deb/classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55" kind="function"><name>update</name></member>
+    <member refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kind="function"><name>render</name></member>
+    <member refid="de/deb/classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8" kind="function"><name>handle</name></member>
+    <member refid="de/deb/classshitcord__t_1a94654f5d652fb31631e2ff17e5c3776b" kind="function"><name>generateOptions</name></member>
   </compound>
   <compound refid="da/dec/classintro__t_1_1slide" kind="class"><name>intro_t::slide</name>
     <member refid="da/dec/classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb" kind="variable"><name>fadeIn</name></member>
@@ -97,7 +101,7 @@
     <member refid="da/dec/classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0" kind="variable"><name>texture</name></member>
     <member refid="da/dec/classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf" kind="variable"><name>dest</name></member>
     <member refid="da/dec/classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467" kind="variable"><name>skippable</name></member>
-    <member refid="da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552" kind="function"><name>slide</name></member>
+    <member refid="da/dec/classintro__t_1_1slide_1a32664b85dc6014b6614477f315d81ee5" kind="function"><name>slide</name></member>
   </compound>
   <compound refid="df/d1c/classwm" kind="class"><name>wm</name>
     <member refid="df/d1c/classwm_1aab22b0e4971405b7fe57e8409e68793b" kind="variable"><name>icons</name></member>
@@ -109,13 +113,14 @@
     <member refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" kind="variable"><name>notepad</name></member>
     <member refid="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" kind="variable"><name>pause</name></member>
     <member refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" kind="variable"><name>intro</name></member>
+    <member refid="df/d1c/classwm_1a5b53423d16a28cc8c0eec221572fb454" kind="variable"><name>shitcord</name></member>
     <member refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" kind="variable"><name>current</name></member>
     <member refid="df/d1c/classwm_1aeedc8b11c2b96839e921b7f82840656e" kind="variable"><name>resume</name></member>
     <member refid="df/d1c/classwm_1ae80ff7518d15add5e8a639bc1b509ed4" kind="function"><name>wm</name></member>
     <member refid="df/d1c/classwm_1a963abfdd7d229db5869e59a97a301f47" kind="function"><name>wm</name></member>
     <member refid="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" kind="function"><name>render</name></member>
-    <member refid="df/d1c/classwm_1a7f282167450e97df5792d589c9ced058" kind="function"><name>handle</name></member>
-    <member refid="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" kind="function"><name>update</name></member>
+    <member refid="df/d1c/classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca" kind="function"><name>handle</name></member>
+    <member refid="df/d1c/classwm_1a486c679090df44959f5bf6dd71db5983" kind="function"><name>update</name></member>
   </compound>
   <compound refid="d6/d16/structwm_init_data" kind="struct"><name>wmInitData</name>
     <member refid="d6/d16/structwm_init_data_1a23c6b2179ddaad3cde159dd42e163beb" kind="variable"><name>winMan</name></member>
@@ -141,11 +146,15 @@
     <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162" kind="enumvalue"><name>explorer</name></member>
     <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" kind="enumvalue"><name>notepad</name></member>
     <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9" kind="enumvalue"><name>pause</name></member>
+    <member refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7" kind="enumvalue"><name>shitcord</name></member>
+    <member refid="d9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73" kind="enum"><name>gameState</name></member>
+    <member refid="d9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db" kind="enumvalue"><name>terminating</name></member>
+    <member refid="d9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb" kind="enumvalue"><name>intro</name></member>
+    <member refid="d9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057" kind="enumvalue"><name>gameplay</name></member>
+    <member refid="d9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2" kind="enumvalue"><name>paused</name></member>
     <member refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kind="typedef"><name>sceneData</name></member>
   </compound>
   <compound refid="d3/d0e/game_8hh" kind="file"><name>game.hh</name>
-  </compound>
-  <compound refid="d0/d8b/pch_8hh" kind="file"><name>pch.hh</name>
   </compound>
   <compound refid="d4/d7c/explorer_8hh" kind="file"><name>explorer.hh</name>
   </compound>
@@ -158,12 +167,15 @@
   <compound refid="d5/dd8/scene_8hh" kind="file"><name>scene.hh</name>
     <member refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kind="define"><name>pix</name></member>
   </compound>
+  <compound refid="d1/da8/shitcord_8hh" kind="file"><name>shitcord.hh</name>
+  </compound>
   <compound refid="d3/d51/wm_8hh" kind="file"><name>wm.hh</name>
   </compound>
   <compound refid="da/d5e/game_8cc" kind="file"><name>game.cc</name>
     <member refid="da/d5e/game_8cc_1a99ac6b71536a9029028ea49afd42fab0" kind="function"><name>wmInit</name></member>
   </compound>
   <compound refid="de/d8a/gameplay_8cc" kind="file"><name>gameplay.cc</name>
+    <member refid="de/d8a/gameplay_8cc_1a199644654857552c06fa8aaea76ac812" kind="function"><name>changeScene</name></member>
   </compound>
   <compound refid="df/d0b/pause_8cc" kind="file"><name>pause.cc</name>
   </compound>
@@ -181,6 +193,10 @@
   <compound refid="d0/d31/notepad_8cc" kind="file"><name>notepad.cc</name>
   </compound>
   <compound refid="d4/d11/scene_8cc" kind="file"><name>scene.cc</name>
+  </compound>
+  <compound refid="d0/dd7/shitcord_8cc" kind="file"><name>shitcord.cc</name>
+  </compound>
+  <compound refid="da/d58/deprecated" kind="page"><name>deprecated</name>
   </compound>
   <compound refid="dir_1699be727a800b1d059c6f7f2b91d2ee" kind="dir"><name>src/game</name>
   </compound>

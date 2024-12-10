@@ -16,7 +16,7 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6">explorer_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>)</para>
+            <listitem><para><link linkend="_classexplorer__t_1a2924ed013429848f0cbeb1383449e505">explorer_t</link> (const <link linkend="_classgame">game</link> *<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>)</para>
 
 <para>Construct a new explorer t object. </para>
 </listitem>
@@ -24,7 +24,7 @@
 
 <para>Destroy the explorer t object. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">update</link> () override</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb">update</link> () override</para>
 
 <para>Update logic for the explorer t object. </para>
 </listitem>
@@ -32,7 +32,7 @@
 
 <para>Renders explorer, and files. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">handle</link> (SDL_Event &amp;event) override</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classexplorer__t_1a87452daa84e4b7145c1f50a812010824">handle</link> (const SDL_Event &amp;event) override</para>
 
 <para>Handles mouse movement and file selection. </para>
 </listitem>
@@ -47,7 +47,7 @@ Public Member Functions inherited from <link linkend="_classscene">scene</link> 
 
 <para>Loads texture based on path. </para>
 </listitem>
-            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+            <listitem><para><link linkend="_classscene_1ad7ef1968aa37f2e796fec45026b9ade0">scene</link> (const <link linkend="_classgame">game</link> *gameContext)</para>
 
 <para>Construct a new scene object. </para>
 </listitem>
@@ -82,18 +82,18 @@ Public Member Functions inherited from <link linkend="_classscene">scene</link> 
         </itemizedlist>
 </simplesect>
 Public Attributes inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
-            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+            <listitem><para>const <link linkend="_classgame">game</link> * <link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link></para>
 
 <para>Game context. </para>
 </listitem>
         </itemizedlist>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6"/><section>
+<anchor xml:id="_classexplorer__t_1a2924ed013429848f0cbeb1383449e505"/><section>
     <title>explorer_t()</title>
 <indexterm><primary>explorer_t</primary><secondary>explorer_t</secondary></indexterm>
 <indexterm><primary>explorer_t</primary><secondary>explorer_t</secondary></indexterm>
-<para><computeroutput>explorer_t::explorer_t (<link linkend="_classgame">game</link> * context)</computeroutput></para><para>
+<para><computeroutput>explorer_t::explorer_t (const <link linkend="_classgame">game</link> * context)</computeroutput></para><para>
 
 <para>Construct a new explorer t object. </para>
 </para>
@@ -111,7 +111,7 @@ Parameters</title>
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-<entry>_context</entry><entry>
+<entry>context</entry><entry>
 <para>game context </para>
 </entry>
                             </row>
@@ -176,11 +176,11 @@ Parameters</title>
 </formalpara>
 </para>
 </section>
-<anchor xml:id="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882"/><section>
+<anchor xml:id="_classexplorer__t_1a87452daa84e4b7145c1f50a812010824"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>explorer_t</secondary></indexterm>
 <indexterm><primary>explorer_t</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; explorer_t::handle (SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; explorer_t::handle (const SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Handles mouse movement and file selection. </para>
 </para>
@@ -211,7 +211,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene</link>.</para>
+Implements <link linkend="_classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">scene</link>.</para>
 </section>
 <anchor xml:id="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757"/><section>
     <title>render()</title>
@@ -224,11 +224,11 @@ Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene<
 <para>
 Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene</link>.</para>
 </section>
-<anchor xml:id="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5"/><section>
+<anchor xml:id="_classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>explorer_t</secondary></indexterm>
 <indexterm><primary>explorer_t</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; explorer_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; explorer_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Update logic for the explorer t object. </para>
 </para>
@@ -241,7 +241,7 @@ Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene<
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">scene</link>.</para>
+Implements <link linkend="_classscene_1a668e98e3a86c4413fa3291c83fcc5378">scene</link>.</para>
 </section>
 </section>
 <section>

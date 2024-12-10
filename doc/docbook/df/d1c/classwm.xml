@@ -20,11 +20,11 @@
 
 <para>Renders the current scene, icons, and the overlay. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1a7f282167450e97df5792d589c9ced058">handle</link> (SDL_Event &amp;event)</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca">handle</link> (const SDL_Event &amp;event)</para>
 
 <para>Handles events and scene switches via task bar. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1a54115bce16818acb350825256b11b2ce">update</link> ()</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1a486c679090df44959f5bf6dd71db5983">update</link> ()</para>
 
 <para>Updates scene data. </para>
 </listitem>
@@ -62,6 +62,8 @@
             <listitem><para>std::unique_ptr&lt; <link linkend="_classpause__t">pause_t</link> &gt; <link linkend="_classwm_1a856235eafcdb96ed22216d2b53fb3b24">pause</link></para>
 </listitem>
             <listitem><para>std::unique_ptr&lt; <link linkend="_classintro__t">intro_t</link> &gt; <link linkend="_classwm_1a139e824c013da025cafc10d68b73aa34">intro</link></para>
+</listitem>
+            <listitem><para>std::unique_ptr&lt; <link linkend="_classshitcord__t">shitcord_t</link> &gt; <link linkend="_classwm_1a5b53423d16a28cc8c0eec221572fb454">shitcord</link></para>
 </listitem>
             <listitem><para><link linkend="_classscene">scene</link> * <link linkend="_classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7">current</link></para>
 
@@ -122,11 +124,11 @@ Parameters</title>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classwm_1a7f282167450e97df5792d589c9ced058"/><section>
+<anchor xml:id="_classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>wm</secondary></indexterm>
 <indexterm><primary>wm</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::handle (SDL_Event &amp; event)</computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::handle (const SDL_Event &amp; event)</computeroutput></para><para>
 
 <para>Handles events and scene switches via task bar. </para>
 </para>
@@ -168,11 +170,11 @@ Parameters</title>
 
 <para>Does not render if the current scene is the intro. </para>
 </section>
-<anchor xml:id="_classwm_1a54115bce16818acb350825256b11b2ce"/><section>
+<anchor xml:id="_classwm_1a486c679090df44959f5bf6dd71db5983"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>wm</secondary></indexterm>
 <indexterm><primary>wm</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::update ( )</computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::update ( )</computeroutput></para><para>
 
 <para>Updates scene data. </para>
 </para>
@@ -266,6 +268,11 @@ Parameters</title>
 <para>Scene to resume on. Only used for unpausing purposes. </para>
 </para>
 </section>
+<anchor xml:id="_classwm_1a5b53423d16a28cc8c0eec221572fb454"/><section>
+    <title>shitcord</title>
+<indexterm><primary>shitcord</primary><secondary>wm</secondary></indexterm>
+<indexterm><primary>wm</primary><secondary>shitcord</secondary></indexterm>
+<para><computeroutput>std::unique_ptr&lt;<link linkend="_classshitcord__t">shitcord_t</link>&gt; wm::shitcord</computeroutput></para></section>
 <anchor xml:id="_classwm_1a205790bf574b52cabae2bca77b17c262"/><section>
     <title>wasSilence</title>
 <indexterm><primary>wasSilence</primary><secondary>wm</secondary></indexterm>
