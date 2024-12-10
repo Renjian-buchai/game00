@@ -24,11 +24,11 @@ wm
 .br
 .RI "Renders the current scene, icons, and the overlay\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event)"
+.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event)"
 .br
 .RI "Handles events and scene switches via task bar\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP ()"
+.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP ()"
 .br
 .RI "Updates scene data\&. "
 .in -1c
@@ -100,7 +100,7 @@ Construct a new wm object\&. Constructs all the scenes, too
 
 .SH "Member Function Documentation"
 .PP 
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > wm::handle (const SDL_Event & event)"
+.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > wm::handle (const SDL_Event & event)"
 
 .PP
 Handles events and scene switches via task bar\&. 
@@ -120,7 +120,7 @@ std::pair<scenes, sceneData> Returns the scene to be changed to, and the data th
 
 .PP
 Renders the current scene, icons, and the overlay\&. Does not render if the current scene is the intro\&. 
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > wm::update ()"
+.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > wm::update ()"
 
 .PP
 Updates scene data\&. 

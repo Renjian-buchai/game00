@@ -39,12 +39,16 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="17">
         <label>scenes/explorer.hh</label>
         <link refid="d4/d7c/explorer_8hh"/>
+        <childnode refid="16" relation="include">
+        </childnode>
         <childnode refid="2" relation="include">
         </childnode>
       </node>

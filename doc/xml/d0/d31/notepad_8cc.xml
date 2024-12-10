@@ -39,12 +39,16 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="19">
         <label>scenes/explorer.hh</label>
         <link refid="d4/d7c/explorer_8hh"/>
+        <childnode refid="18" relation="include">
+        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -163,7 +167,7 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL_image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><ref refid="d9/d03/classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f" kindref="member">notepad_t::notepad_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="d9/d03/classnotepad__t_1ae910b670eb9800dc5f998943efc80371" kindref="member">notepad_t::notepad_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context),</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>lineWrapLength(static_cast&lt;int&gt;(</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale<sp/>*<sp/>static_cast&lt;double&gt;(context-&gt;dispBounds.w<sp/>-<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(16)))),</highlight></codeline>
@@ -193,7 +197,7 @@
 <codeline lineno="36"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(<ref refid="d9/d03/classnotepad__t_1a4416b91e1e20a180f9a00855b6f9c459" kindref="member">background</ref>);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa" kindref="member">notepad_t::update</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d9/d03/classnotepad__t_1acb29bf9572b3733208643185c76e7f17" kindref="member">notepad_t::update</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d9/d03/classnotepad__t_1a71add6ff4e2c0947e3043df553695bd1" kindref="member">currentData</ref><sp/>!=<sp/><ref refid="d9/d03/classnotepad__t_1ade41e5a025182a3a851e078e8fbbe4af" kindref="member">prevData</ref>)<sp/>{</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Surface*<sp/>text;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -225,7 +229,7 @@
 <codeline lineno="68"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="d9/d03/classnotepad__t_1a6766a5c1170ee8fab7ecdb209f0d2076" kindref="member">entry</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;<ref refid="d9/d03/classnotepad__t_1af6ff2f6dffb32c3fd6edc955c4b0dfba" kindref="member">entryRect</ref>);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d9/d03/classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e" kindref="member">notepad_t::handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="d9/d03/classnotepad__t_1a3fa185451691009d01df66441f2accb4" kindref="member">notepad_t::handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aae39852166dff5a12fbcf7afb4594bdcf" kindref="member">scenes::notepad</ref>,<sp/><ref refid="d9/d03/classnotepad__t_1a71add6ff4e2c0947e3043df553695bd1" kindref="member">currentData</ref>);</highlight></codeline>
 <codeline lineno="73"><highlight class="normal">}</highlight></codeline>
     </programlisting>

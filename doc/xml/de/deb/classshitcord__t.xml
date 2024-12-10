@@ -67,13 +67,13 @@
         </inbodydescription>
         <location file="include/scenes/shitcord.hh" line="27" column="3" bodyfile="src/scenes/shitcord.cc" bodystart="14" bodyend="14"/>
       </memberdef>
-      <memberdef kind="function" id="de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>std::pair&lt; scenes, sceneData &gt; shitcord_t::update</definition>
+      <memberdef kind="function" id="de/deb/classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>const std::pair&lt; scenes, sceneData &gt; shitcord_t::update</definition>
         <argsstring>() override</argsstring>
         <name>update</name>
         <qualifiedname>shitcord_t::update</qualifiedname>
-        <reimplements refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</reimplements>
+        <reimplements refid="df/db1/classscene_1a668e98e3a86c4413fa3291c83fcc5378">update</reimplements>
         <briefdescription>
 <para>Update logic for shitcord. </para>
         </briefdescription>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/shitcord.hh" line="37" column="13" bodyfile="src/scenes/shitcord.cc" bodystart="16" bodyend="18"/>
+        <location file="include/scenes/shitcord.hh" line="37" column="19" bodyfile="src/scenes/shitcord.cc" bodystart="16" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -103,13 +103,13 @@
         </inbodydescription>
         <location file="include/scenes/shitcord.hh" line="42" column="8" bodyfile="src/scenes/shitcord.cc" bodystart="20" bodyend="22"/>
       </memberdef>
-      <memberdef kind="function" id="de/deb/classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>std::pair&lt; scenes, sceneData &gt; shitcord_t::handle</definition>
+      <memberdef kind="function" id="de/deb/classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>const std::pair&lt; scenes, sceneData &gt; shitcord_t::handle</definition>
         <argsstring>(const SDL_Event &amp;event) override</argsstring>
         <name>handle</name>
         <qualifiedname>shitcord_t::handle</qualifiedname>
-        <reimplements refid="df/db1/classscene_1ac8586aac663647453efaaa03bb8bf0e0">handle</reimplements>
+        <reimplements refid="df/db1/classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">handle</reimplements>
         <param>
           <type>const SDL_Event &amp;</type>
           <declname>event</declname>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/shitcord.hh" line="51" column="13" bodyfile="src/scenes/shitcord.cc" bodystart="24" bodyend="26"/>
+        <location file="include/scenes/shitcord.hh" line="51" column="19" bodyfile="src/scenes/shitcord.cc" bodystart="24" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="de/deb/classshitcord__t_1a94654f5d652fb31631e2ff17e5c3776b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>SDL_Texture *</type>
@@ -164,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/shitcord.hh" line="59" column="15" bodyfile="src/scenes/shitcord.cc" bodystart="28" bodyend="62"/>
+        <location file="include/scenes/shitcord.hh" line="59" column="15" bodyfile="src/scenes/shitcord.cc" bodystart="28" bodyend="64"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -221,12 +221,12 @@
       <member refid="de/deb/classshitcord__t_1a18f38f0c4bb56eeffdd3ef8657626081" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>background</name></member>
       <member refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>context</name></member>
       <member refid="de/deb/classshitcord__t_1a94654f5d652fb31631e2ff17e5c3776b" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>generateOptions</name></member>
-      <member refid="de/deb/classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755" prot="public" virt="virtual"><scope>shitcord_t</scope><name>handle</name></member>
+      <member refid="de/deb/classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8" prot="public" virt="virtual"><scope>shitcord_t</scope><name>handle</name></member>
       <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>loadTexture</name></member>
       <member refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" prot="public" virt="virtual"><scope>shitcord_t</scope><name>render</name></member>
       <member refid="df/db1/classscene_1ad7ef1968aa37f2e796fec45026b9ade0" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>scene</name></member>
       <member refid="de/deb/classshitcord__t_1aac03a23af4132dd92108d20b30a6be0d" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>shitcord_t</name></member>
-      <member refid="de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163" prot="public" virt="virtual"><scope>shitcord_t</scope><name>update</name></member>
+      <member refid="de/deb/classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55" prot="public" virt="virtual"><scope>shitcord_t</scope><name>update</name></member>
       <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" virt="virtual"><scope>shitcord_t</scope><name>~scene</name></member>
       <member refid="de/deb/classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71" prot="public" virt="non-virtual"><scope>shitcord_t</scope><name>~shitcord_t</name></member>
     </listofallmembers>

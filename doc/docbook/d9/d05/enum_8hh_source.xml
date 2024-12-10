@@ -28,7 +28,14 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 35 &#32;&#32;<link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7">shitcord</link>,
 36 };
 37 
-38 <emphasis role="keyword">using&#32;</emphasis><link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link>&#32;=&#32;std::variant&lt;std::monostate,&#32;notepadData&gt;;
-39 
-40 <emphasis role="preprocessor">#endif</emphasis>
+43 <emphasis role="keyword">enum&#32;class</emphasis>&#32;<link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73">gameState</link>&#32;:&#32;uint8_t&#32;{
+44 &#32;&#32;<link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db">terminating</link>,
+45 &#32;&#32;<link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb">intro</link>,
+46 &#32;&#32;<link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057">gameplay</link>,
+47 &#32;&#32;<link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2">paused</link>,
+48 };
+49 
+50 <emphasis role="keyword">using&#32;</emphasis><link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link>&#32;=&#32;std::variant&lt;std::monostate,&#32;notepadData&gt;;
+51 
+52 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

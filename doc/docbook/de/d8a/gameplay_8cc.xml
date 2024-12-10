@@ -2,4 +2,19 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_gameplay_8cc" xml:lang="en-US">
 <title>src/game/gameplay.cc File Reference</title>
 <indexterm><primary>src/game/gameplay.cc</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;game.hh&quot;<?linebreak?>#include &quot;wm.hh&quot;<?linebreak?>#include &quot;enum.hh&quot;<?linebreak?></programlisting></section>
+<programlisting linenumbering="unnumbered">#include &quot;enum.hh&quot;<?linebreak?>#include &quot;game.hh&quot;<?linebreak?>#include &quot;wm.hh&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_gameplay_8cc_1a199644654857552c06fa8aaea76ac812">changeScene</link> (const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; &amp;sceneChangeData, <link linkend="_classwm">wm</link> &amp;winMan)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_gameplay_8cc_1a199644654857552c06fa8aaea76ac812"/><section>
+    <title>changeScene()</title>
+<indexterm><primary>changeScene</primary><secondary>gameplay.cc</secondary></indexterm>
+<indexterm><primary>gameplay.cc</primary><secondary>changeScene</secondary></indexterm>
+<para><computeroutput>void changeScene (const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; &amp; sceneChangeData, <link linkend="_classwm">wm</link> &amp; winMan)</computeroutput></para></section>
+</section>
+</section>

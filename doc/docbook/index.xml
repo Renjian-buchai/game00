@@ -3,6 +3,7 @@
     <info>
     <title>Game</title>
     </info>
+    <xi:include href="da/d58/deprecated.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <chapter>
     <title>Class Documentation</title>
     <xi:include href="d5/db0/classexplorer__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

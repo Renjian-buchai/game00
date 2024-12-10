@@ -16,7 +16,7 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f">notepad_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>)</para>
+            <listitem><para><link linkend="_classnotepad__t_1ae910b670eb9800dc5f998943efc80371">notepad_t</link> (const <link linkend="_classgame">game</link> *<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>)</para>
 
 <para>Construct a new notepad t object. </para>
 </listitem>
@@ -24,7 +24,7 @@
 
 <para>Destroy the notepad t object. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">update</link> () override</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classnotepad__t_1acb29bf9572b3733208643185c76e7f17">update</link> () override</para>
 
 <para>Checks if the current data is the same as the data stored previously. </para>
 </listitem>
@@ -32,7 +32,7 @@
 
 <para>Renders notepad, and entry. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e">handle</link> (const SDL_Event &amp;event) override</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classnotepad__t_1a3fa185451691009d01df66441f2accb4">handle</link> (const SDL_Event &amp;event) override</para>
 
 <para>Handles event. </para>
 </listitem>
@@ -98,11 +98,11 @@ Public Attributes inherited from <link linkend="_classscene">scene</link>       
 </simplesect>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f"/><section>
+<anchor xml:id="_classnotepad__t_1ae910b670eb9800dc5f998943efc80371"/><section>
     <title>notepad_t()</title>
 <indexterm><primary>notepad_t</primary><secondary>notepad_t</secondary></indexterm>
 <indexterm><primary>notepad_t</primary><secondary>notepad_t</secondary></indexterm>
-<para><computeroutput>notepad_t::notepad_t (<link linkend="_classgame">game</link> * context)</computeroutput></para><para>
+<para><computeroutput>notepad_t::notepad_t (const <link linkend="_classgame">game</link> * context)</computeroutput></para><para>
 
 <para>Construct a new notepad t object. </para>
 </para>
@@ -145,11 +145,11 @@ Parameters</title>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e"/><section>
+<anchor xml:id="_classnotepad__t_1a3fa185451691009d01df66441f2accb4"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>notepad_t</secondary></indexterm>
 <indexterm><primary>notepad_t</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; notepad_t::handle (const SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; notepad_t::handle (const SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Handles event. </para>
 </para>
@@ -182,7 +182,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1ac8586aac663647453efaaa03bb8bf0e0">scene</link>.</para>
+Implements <link linkend="_classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">scene</link>.</para>
 </section>
 <anchor xml:id="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a"/><section>
     <title>render()</title>
@@ -195,11 +195,11 @@ Implements <link linkend="_classscene_1ac8586aac663647453efaaa03bb8bf0e0">scene<
 <para>
 Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene</link>.</para>
 </section>
-<anchor xml:id="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa"/><section>
+<anchor xml:id="_classnotepad__t_1acb29bf9572b3733208643185c76e7f17"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>notepad_t</secondary></indexterm>
 <indexterm><primary>notepad_t</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; notepad_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; notepad_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Checks if the current data is the same as the data stored previously. </para>
 </para>
@@ -212,7 +212,7 @@ Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene<
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">scene</link>.</para>
+Implements <link linkend="_classscene_1a668e98e3a86c4413fa3291c83fcc5378">scene</link>.</para>
 </section>
 </section>
 <section>

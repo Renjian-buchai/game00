@@ -20,11 +20,11 @@
 
 <para>Renders the current scene, icons, and the overlay. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1a08290ca96dc53c185d114f2beae1f7a6">handle</link> (const SDL_Event &amp;event)</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca">handle</link> (const SDL_Event &amp;event)</para>
 
 <para>Handles events and scene switches via task bar. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1a54115bce16818acb350825256b11b2ce">update</link> ()</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classwm_1a486c679090df44959f5bf6dd71db5983">update</link> ()</para>
 
 <para>Updates scene data. </para>
 </listitem>
@@ -124,11 +124,11 @@ Parameters</title>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classwm_1a08290ca96dc53c185d114f2beae1f7a6"/><section>
+<anchor xml:id="_classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>wm</secondary></indexterm>
 <indexterm><primary>wm</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::handle (const SDL_Event &amp; event)</computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::handle (const SDL_Event &amp; event)</computeroutput></para><para>
 
 <para>Handles events and scene switches via task bar. </para>
 </para>
@@ -170,11 +170,11 @@ Parameters</title>
 
 <para>Does not render if the current scene is the intro. </para>
 </section>
-<anchor xml:id="_classwm_1a54115bce16818acb350825256b11b2ce"/><section>
+<anchor xml:id="_classwm_1a486c679090df44959f5bf6dd71db5983"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>wm</secondary></indexterm>
 <indexterm><primary>wm</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::update ( )</computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; wm::update ( )</computeroutput></para><para>
 
 <para>Updates scene data. </para>
 </para>

@@ -36,6 +36,14 @@
 
 <para>Scenes list. </para>
 </listitem>
+            <listitem><para>enum class <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73">gameState</link> : uint8_t { <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db">terminating</link>
+, <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb">intro</link>
+, <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057">gameplay</link>
+, <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2">paused</link>
+ }</para>
+
+<para>Current gamestate. </para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -71,6 +79,36 @@
 <anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aa9a1f1c8bd08b2d9c429d526c6c165ccd"/>entry2</entry><entry></entry></row><row><entry><indexterm><primary>size</primary><secondary>enum.hh</secondary></indexterm>
 <indexterm><primary>enum.hh</primary><secondary>size</secondary></indexterm>
 <anchor xml:id="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"/>size</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73"/><section>
+    <title>gameState</title>
+<indexterm><primary>gameState</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>gameState</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73">gameState</link> : uint8_t<computeroutput>[strong]</computeroutput></computeroutput></para><para>
+
+<para>Current gamestate. </para>
+</para>
+
+<para><para><link linkend="_deprecated_1_deprecated000001">Deprecated</link> 
+<para>Replaced with wm system </para>
+</para></para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>terminating</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>terminating</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db"/>terminating</entry><entry></entry></row><row><entry><indexterm><primary>intro</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>intro</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a0b4b633f3b914e8a7c656928816d01fb"/>intro</entry><entry></entry></row><row><entry><indexterm><primary>gameplay</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>gameplay</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057"/>gameplay</entry><entry></entry></row><row><entry><indexterm><primary>paused</primary><secondary>enum.hh</secondary></indexterm>
+<indexterm><primary>enum.hh</primary><secondary>paused</secondary></indexterm>
+<anchor xml:id="_enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2"/>paused</entry><entry></entry></row>    </tbody>
     </tgroup>
 </informaltable>
 </section>

@@ -38,6 +38,7 @@ $(function() { codefold.init(1); });
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
     </ul>
@@ -59,7 +60,6 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d3/daf/classgame-members.html">List of all members</a>  </div>
@@ -69,15 +69,6 @@ $(function(){ initResizable(false); });
 
 <p><code>#include &lt;<a class="el" href="../../d3/d0e/game_8hh_source.html">game.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a9fa617ead70613f9f2176f3aa2094f61" id="r_a9fa617ead70613f9f2176f3aa2094f61"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61">gameState</a> : uint8_t { <a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db">terminating</a>
-, <a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">intro</a>
-, <a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057">gameplay</a>
-, <a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2">paused</a>
- }</td></tr>
-<tr class="separator:a9fa617ead70613f9f2176f3aa2094f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9c102127b5038f880067ad6c9198d38" id="r_ad9c102127b5038f880067ad6c9198d38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9c102127b5038f880067ad6c9198d38">game</a> ()</td></tr>
@@ -92,7 +83,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a66a0e69c41270ee22849d56d12e12749" id="r_a66a0e69c41270ee22849d56d12e12749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61">gameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66a0e69c41270ee22849d56d12e12749">state</a> = <a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">gameState::intro</a></td></tr>
+<tr class="memitem:a66a0e69c41270ee22849d56d12e12749" id="r_a66a0e69c41270ee22849d56d12e12749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73">gameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66a0e69c41270ee22849d56d12e12749">state</a></td></tr>
 <tr class="memdesc:a66a0e69c41270ee22849d56d12e12749"><td class="mdescLeft">&#160;</td><td class="mdescRight">State that the game is in.  <br /></td></tr>
 <tr class="separator:a66a0e69c41270ee22849d56d12e12749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2de268c0ae822e5ac4b5d1bb2199f2d6" id="r_a2de268c0ae822e5ac4b5d1bb2199f2d6"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2de268c0ae822e5ac4b5d1bb2199f2d6">dispBounds</a></td></tr>
@@ -124,35 +115,6 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a4f416f46f79adaa51c134ecce60adae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread that loads winMan.  <br /></td></tr>
 <tr class="separator:a4f416f46f79adaa51c134ecce60adae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a9fa617ead70613f9f2176f3aa2094f61" name="a9fa617ead70613f9f2176f3aa2094f61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fa617ead70613f9f2176f3aa2094f61">&#9670;&#160;</a></span>gameState</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61">game::gameState</a> : uint8_t</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db" name="a9fa617ead70613f9f2176f3aa2094f61a2a70c8fd8851eaaa0859ec3fde42b9db"></a>terminating&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb" name="a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb"></a>intro&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057" name="a9fa617ead70613f9f2176f3aa2094f61a542e0be529723cc49566dcfd51153057"></a>gameplay&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2" name="a9fa617ead70613f9f2176f3aa2094f61ad13c3f7baed576768b11a714ef4d90e2"></a>paused&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad9c102127b5038f880067ad6c9198d38" name="ad9c102127b5038f880067ad6c9198d38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9c102127b5038f880067ad6c9198d38">&#9670;&#160;</a></span>game()</h2>
@@ -363,7 +325,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61">gameState</a> game::state = <a class="el" href="#a9fa617ead70613f9f2176f3aa2094f61a0b4b633f3b914e8a7c656928816d01fb">gameState::intro</a></td>
+          <td class="memname"><a class="el" href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73">gameState</a> game::state</td>
         </tr>
       </table>
 </div><div class="memdoc">

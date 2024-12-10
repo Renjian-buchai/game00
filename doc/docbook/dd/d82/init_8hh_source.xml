@@ -13,34 +13,47 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 9 
 13 &#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classintro__t_1_1slide">slide</link>&#32;{
 14 &#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
-15 &#32;&#32;&#32;&#32;<link linkend="_classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552">slide</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;_fadeIn,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;_fadeOut,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;_duration,
-16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_Texture*&#32;_texture,&#32;SDL_Rect&#32;_dest&#32;=&#32;{},&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467">skippable</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>);
-17 
-18 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb">fadeIn</link>;
-19 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b">duration</link>;
-20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe">fadeOut</link>;
-21 &#32;&#32;&#32;&#32;SDL_Texture*&#32;<link linkend="_classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0">texture</link>;
-22 &#32;&#32;&#32;&#32;SDL_Rect&#32;<link linkend="_classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf">dest</link>;
-23 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467">skippable</link>;
-24 &#32;&#32;};
-25 
-29 &#32;&#32;std::vector&lt;slide&gt;&#32;<link linkend="_classintro__t_1a97b511d587ca8e05515e35e6418cf1d0">slides</link>;
-33 &#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1a6db4493f9b8695a1bed2f16f3af45870">startTime</link>;
-37 &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1a1543b2b845c6999165123b34608fcf25">skip</link>;
-38 
-46 &#32;&#32;<link linkend="_classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d">intro_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
-50 &#32;&#32;<link linkend="_classintro__t_1a56e63618edf895c263cda8a8c8ef45e6">~intro_t</link>();
-62 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
-66 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
-73 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1a87ef6743a3237d0a5d12b45d18d139ec">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
-74 
-82 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a104f915a0a592c0db524a70ffc666a60">slideShow</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;time,&#32;<emphasis role="keywordtype">bool</emphasis>&amp;&#32;click,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;skipGrace&#32;=&#32;500);
-95 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a0439809e2c67c40ea20757ffed70968c">addSlide</link>(SDL_Surface*&#32;surface,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;fadeIn,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;duration,
-96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;fadeOut,&#32;SDL_Rect&#32;dest&#32;=&#32;SDL_Rect{},&#32;<emphasis role="keywordtype">bool</emphasis>&#32;centred&#32;=&#32;<emphasis role="keyword">true</emphasis>,
-97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;skippable&#32;=&#32;<emphasis role="keyword">true</emphasis>);
-98 
-105 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a427b58b3e041bb4672278b9e422b8292">centreRect</link>(SDL_Rect&amp;&#32;rect,&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link>&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link>&#32;=&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197">centre::BOTH</link>)&#32;<emphasis role="keyword">const</emphasis>;
-106 };
+26 &#32;&#32;&#32;&#32;<link linkend="_classintro__t_1_1slide_1a32664b85dc6014b6614477f315d81ee5">slide</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb">fadeIn</link>,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe">fadeOut</link>,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b">duration</link>,
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_Texture*&#32;<link linkend="_classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0">texture</link>,&#32;<emphasis role="keyword">const</emphasis>&#32;SDL_Rect&#32;<link linkend="_classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf">dest</link>&#32;=&#32;{},
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467">skippable</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>);
+29 
+33 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a2c6db6f868f8dca116a02bfbe6a228eb">fadeIn</link>;
+34 
+38 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a0a4846e82f88facedf50da06b6dd061b">duration</link>;
+39 
+43 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1a409eb856ae821b07dd66f76cbb6a3dbe">fadeOut</link>;
+44 
+48 &#32;&#32;&#32;&#32;SDL_Texture*&#32;<link linkend="_classintro__t_1_1slide_1ae876137be1a25a3ac7dfb65802306ad0">texture</link>;
+49 
+53 &#32;&#32;&#32;&#32;SDL_Rect&#32;<link linkend="_classintro__t_1_1slide_1a7c36e704b33011d1088d093f88e436bf">dest</link>;
+54 
+58 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1_1slide_1ac153b105d5a7b6639822e2beb06f3467">skippable</link>;
+59 &#32;&#32;};
+60 
+64 &#32;&#32;std::vector&lt;slide&gt;&#32;<link linkend="_classintro__t_1a97b511d587ca8e05515e35e6418cf1d0">slides</link>;
+65 
+69 &#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1a6db4493f9b8695a1bed2f16f3af45870">startTime</link>;
+70 
+74 &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1a1543b2b845c6999165123b34608fcf25">skip</link>;
+75 
+83 &#32;&#32;<link linkend="_classintro__t_1a820567ef1f00c44713099e17180f1414">intro_t</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
+84 
+88 &#32;&#32;<link linkend="_classintro__t_1a56e63618edf895c263cda8a8c8ef45e6">~intro_t</link>();
+89 
+101 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1a0939d6693673f0f0d9dfc0e9fd8e224c">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
+102 
+106 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
 107 
-108 <emphasis role="preprocessor">#endif</emphasis>
+114 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1a3a698a22fdd0e66f603955af8ced0186">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+115 
+123 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a104f915a0a592c0db524a70ffc666a60">slideShow</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;time,&#32;<emphasis role="keywordtype">bool</emphasis>&amp;&#32;click,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;skipGrace&#32;=&#32;500);
+124 
+137 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a0439809e2c67c40ea20757ffed70968c">addSlide</link>(SDL_Surface*&#32;surface,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;fadeIn,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;duration,
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;fadeOut,&#32;SDL_Rect&#32;dest&#32;=&#32;SDL_Rect{},&#32;<emphasis role="keywordtype">bool</emphasis>&#32;centred&#32;=&#32;<emphasis role="keyword">true</emphasis>,
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;skippable&#32;=&#32;<emphasis role="keyword">true</emphasis>);
+140 
+147 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a427b58b3e041bb4672278b9e422b8292">centreRect</link>(SDL_Rect&amp;&#32;rect,&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link>&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6">centre</link>&#32;=&#32;<link linkend="_classintro__t_1ac0868c571d3b553a94ecf27c0ac63ee6a6328e5e3186c227a021ef2ff77e40197">centre::BOTH</link>)&#32;<emphasis role="keyword">const</emphasis>;
+148 };
+149 
+150 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

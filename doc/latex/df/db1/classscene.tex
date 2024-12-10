@@ -24,11 +24,11 @@ SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d468
 \begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\item 
-virtual std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{update}} ()=0
+virtual const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classscene_a668e98e3a86c4413fa3291c83fcc5378}{update}} ()=0
 \begin{DoxyCompactList}\small\item\em Updates scene logic. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{render}} ()=0
 \begin{DoxyCompactList}\small\item\em Renders textures. \end{DoxyCompactList}\item 
-virtual std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classscene_ac8586aac663647453efaaa03bb8bf0e0}{handle}} (const SDL\+\_\+\+Event \&)=0
+virtual const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classscene_a1a6ee7a03d72487127dbfa6f79f0db9d}{handle}} (const SDL\+\_\+\+Event \&)=0
 \begin{DoxyCompactList}\small\item\em Handles events. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -72,21 +72,21 @@ Usually called only when wm is destroyed
 \index{scene@{scene}!handle@{handle}}
 \index{handle@{handle}!scene@{scene}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classscene_ac8586aac663647453efaaa03bb8bf0e0} 
-virtual std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ scene\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \label{classscene_a1a6ee7a03d72487127dbfa6f79f0db9d} 
+virtual const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ scene\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Handles events. 
 
-Called in \doxylink{classwm_a08290ca96dc53c185d114f2beae1f7a6}{wm\+::handle()}
+Called in \doxylink{classwm_ae5f8a28b02b3bc82d4422c6ea0e745ca}{wm\+::handle()}
 
 \begin{DoxyReturn}{Returns}
 std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classexplorer__t_a81d4adbe69a07633bf402dafffcac4d9}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_a87ef6743a3237d0a5d12b45d18d139ec}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_ac830adac821c1a0312bfc76e7d9b1a2e}{notepad\+\_\+t}}, \mbox{\hyperlink{classpause__t_adde6ed8cc11b8464ca58018423ac25ea}{pause\+\_\+t}}, and \mbox{\hyperlink{classshitcord__t_a0ea2efbb16cd3134848f2c9b58326755}{shitcord\+\_\+t}}.
+Implemented in \mbox{\hyperlink{classexplorer__t_a87452daa84e4b7145c1f50a812010824}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_a3a698a22fdd0e66f603955af8ced0186}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_a3fa185451691009d01df66441f2accb4}{notepad\+\_\+t}}, \mbox{\hyperlink{classpause__t_a0945dd5c1b896cd92d9d7454c13f577e}{pause\+\_\+t}}, and \mbox{\hyperlink{classshitcord__t_a26224292a18d8df42b361a1f3b333ed8}{shitcord\+\_\+t}}.
 
 \index{scene@{scene}!loadTexture@{loadTexture}}
 \index{loadTexture@{loadTexture}!scene@{scene}}
@@ -123,21 +123,21 @@ Implemented in \mbox{\hyperlink{classexplorer__t_aeeb2aa5c58317a29463ce527b2ade7
 \index{scene@{scene}!update@{update}}
 \index{update@{update}!scene@{scene}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{classscene_a34b71ea2aea3fd3c007786e75be817c7} 
-virtual std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ scene\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \label{classscene_a668e98e3a86c4413fa3291c83fcc5378} 
+virtual const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ scene\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Updates scene logic. 
 
-Called in \doxylink{classwm_a54115bce16818acb350825256b11b2ce}{wm\+::update()}
+Called in \doxylink{classwm_a486c679090df44959f5bf6dd71db5983}{wm\+::update()}
 
 \begin{DoxyReturn}{Returns}
 std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classexplorer__t_a099b72112db6de2a3d8f6ea0b724fae5}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_a09c3876e890a37be7a17dbbb0084d4da}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_ab177e5696b0a4925d4309ce90e5f66aa}{notepad\+\_\+t}}, \mbox{\hyperlink{classpause__t_ac738a9a7bc4671c59a8a9eacd9d0e0ca}{pause\+\_\+t}}, and \mbox{\hyperlink{classshitcord__t_a9e1bba8daf615bf68d9e3f5616a02163}{shitcord\+\_\+t}}.
+Implemented in \mbox{\hyperlink{classexplorer__t_a9fd3219c8a05b381b5e8ee292000c1cb}{explorer\+\_\+t}}, \mbox{\hyperlink{classintro__t_a0939d6693673f0f0d9dfc0e9fd8e224c}{intro\+\_\+t}}, \mbox{\hyperlink{classnotepad__t_acb29bf9572b3733208643185c76e7f17}{notepad\+\_\+t}}, \mbox{\hyperlink{classpause__t_a7975d907b119f75c9b87fe6f3ceb7d2c}{pause\+\_\+t}}, and \mbox{\hyperlink{classshitcord__t_a13bf62175766d1ebc873c3a8ac8a1b55}{shitcord\+\_\+t}}.
 
 
 

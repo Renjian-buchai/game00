@@ -164,7 +164,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'context',
-                type => 'game *'
+                type => 'const game *'
               }
             ]
           },
@@ -240,7 +240,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -325,7 +325,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -577,12 +577,6 @@ $doxydocs=
           scope => 'game'
         },
         {
-          name => 'gameState',
-          virtualness => 'non_virtual',
-          protection => 'public',
-          scope => 'game'
-        },
-        {
           name => 'loadThread',
           virtualness => 'non_virtual',
           protection => 'public',
@@ -637,42 +631,6 @@ $doxydocs=
           scope => 'game'
         }
       ],
-      public_typedefs => {
-        members => [
-          {
-            kind => 'enum',
-            name => 'gameState',
-            virtualness => 'non_virtual',
-            protection => 'public',
-            static => 'no',
-            brief => {},
-            detailed => {},
-            type => 'uint8_t',
-            values => [
-              {
-                name => 'terminating',
-                brief => {},
-                detailed => {}
-              },
-              {
-                name => 'intro',
-                brief => {},
-                detailed => {}
-              },
-              {
-                name => 'gameplay',
-                brief => {},
-                detailed => {}
-              },
-              {
-                name => 'paused',
-                brief => {},
-                detailed => {}
-              }
-            ]
-          }
-        ]
-      },
       public_methods => {
         members => [
           {
@@ -777,8 +735,7 @@ $doxydocs=
               ]
             },
             detailed => {},
-            type => 'gameState',
-            initializer => '= gameState::intro'
+            type => 'gameState'
           },
           {
             kind => 'variable',
@@ -1185,7 +1142,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'context',
-                type => 'game *'
+                type => 'const game *'
               }
             ]
           },
@@ -1258,7 +1215,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -1329,7 +1286,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -1918,7 +1875,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'context',
-                type => 'game *'
+                type => 'const game *'
               }
             ]
           },
@@ -1994,7 +1951,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -2086,7 +2043,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -2452,7 +2409,7 @@ $doxydocs=
             parameters => [
               {
                 declaration_name => 'context',
-                type => 'game *'
+                type => 'const game *'
               }
             ]
           },
@@ -2528,7 +2485,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -2613,7 +2570,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -3068,7 +3025,7 @@ $doxydocs=
                 },
                 {
                   type => 'url',
-                  link => 'df/d1c/classwm_1a54115bce16818acb350825256b11b2ce',
+                  link => 'df/d1c/classwm_1a486c679090df44959f5bf6dd71db5983',
                   content => 'wm::update()'
                 },
                 {
@@ -3084,7 +3041,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'virtual std::pair< scenes, sceneData >',
+            type => 'virtual const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -3195,7 +3152,7 @@ $doxydocs=
                 },
                 {
                   type => 'url',
-                  link => 'df/d1c/classwm_1a08290ca96dc53c185d114f2beae1f7a6',
+                  link => 'df/d1c/classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca',
                   content => 'wm::handle()'
                 },
                 {
@@ -3211,7 +3168,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'virtual std::pair< scenes, sceneData >',
+            type => 'virtual const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -3491,7 +3448,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -3576,7 +3533,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -3728,35 +3685,148 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
-            detailed => {},
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Construct a new slide. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'fadeIn'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'Time taken for fade in (ms) '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'fadeOut'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Time taken for fade out (ms) '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'duration'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Duration that slide spends at full alpha (ms) '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'texture'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Texture containing slide contents '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'dest'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Location that the slide should be rendered. Default = empty; empty => full screen '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'skippable'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Whether a slide can be skipped. Default = true '
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             const => 'no',
             volatile => 'no',
             parameters => [
               {
-                declaration_name => '_fadeIn',
-                type => 'size_t'
+                declaration_name => 'fadeIn',
+                type => 'const size_t'
               },
               {
-                declaration_name => '_fadeOut',
-                type => 'size_t'
+                declaration_name => 'fadeOut',
+                type => 'const size_t'
               },
               {
-                declaration_name => '_duration',
-                type => 'size_t'
+                declaration_name => 'duration',
+                type => 'const size_t'
               },
               {
-                declaration_name => '_texture',
+                declaration_name => 'texture',
                 type => 'SDL_Texture *'
               },
               {
-                declaration_name => '_dest',
-                type => 'SDL_Rect',
+                declaration_name => 'dest',
+                type => 'const SDL_Rect',
                 default_value => '{}'
               },
               {
                 declaration_name => 'skippable',
-                type => 'bool',
+                type => 'const bool',
                 default_value => 'true'
               }
             ]
@@ -3771,7 +3841,17 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Time taken for fade in. '
+                }
+              ]
+            },
             detailed => {},
             type => 'size_t'
           },
@@ -3781,7 +3861,17 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Duration slide spends at full alpha. '
+                }
+              ]
+            },
             detailed => {},
             type => 'size_t'
           },
@@ -3791,7 +3881,17 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Time taken for fade out. '
+                }
+              ]
+            },
             detailed => {},
             type => 'size_t'
           },
@@ -3801,7 +3901,17 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Texture containing slide contents. '
+                }
+              ]
+            },
             detailed => {},
             type => 'SDL_Texture *'
           },
@@ -3811,7 +3921,17 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Destination that the slide should be rendered. '
+                }
+              ]
+            },
             detailed => {},
             type => 'SDL_Rect'
           },
@@ -3821,7 +3941,17 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Whether a slide can be skipped. '
+                }
+              ]
+            },
             detailed => {},
             type => 'bool'
           }
@@ -4128,7 +4258,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -4170,7 +4300,7 @@ $doxydocs=
                 }
               ]
             },
-            type => 'std::pair< scenes, sceneData >',
+            type => 'const std::pair< scenes, sceneData >',
             const => 'no',
             volatile => 'no',
             parameters => [
@@ -4576,6 +4706,10 @@ $doxydocs=
       ],
       included_by => [
         {
+          name => 'include/game.hh',
+          ref => 'd3/d0e/game_8hh'
+        },
+        {
           name => 'include/scenes/scene.hh',
           ref => 'd5/dd8/scene_8hh'
         },
@@ -4742,6 +4876,63 @@ $doxydocs=
                 detailed => {}
               }
             ]
+          },
+          {
+            kind => 'enum',
+            name => 'gameState',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Current gamestate. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Replaced with wm system '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'uint8_t',
+            values => [
+              {
+                name => 'terminating',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'intro',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'gameplay',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'paused',
+                brief => {},
+                detailed => {}
+              }
+            ]
           }
         ]
       },
@@ -4762,6 +4953,10 @@ $doxydocs=
         },
         {
           name => 'SDL_ttf.h'
+        },
+        {
+          name => 'enum.hh',
+          ref => 'd9/d05/enum_8hh'
         },
         {
           name => 'wm.hh',
@@ -4812,6 +5007,9 @@ $doxydocs=
     {
       name => 'explorer.hh',
       includes => [
+        {
+          name => 'vector'
+        },
         {
           name => 'scene.hh',
           ref => 'd5/dd8/scene_8hh'
@@ -5097,20 +5295,46 @@ $doxydocs=
       name => 'gameplay.cc',
       includes => [
         {
+          name => 'enum.hh',
+          ref => 'd9/d05/enum_8hh'
+        },
+        {
           name => 'game.hh',
           ref => 'd3/d0e/game_8hh'
         },
         {
           name => 'wm.hh',
           ref => 'd3/d51/wm_8hh'
-        },
-        {
-          name => 'enum.hh',
-          ref => 'd9/d05/enum_8hh'
         }
       ],
       included_by => [
       ],
+      functions => {
+        members => [
+          {
+            kind => 'function',
+            name => 'changeScene',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            type => 'void',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'sceneChangeData',
+                type => 'const std::pair< scenes, sceneData > &'
+              },
+              {
+                declaration_name => 'winMan',
+                type => 'wm &'
+              }
+            ]
+          }
+        ]
+      },
       brief => {},
       detailed => {}
     },
@@ -5382,6 +5606,43 @@ $doxydocs=
   groups => [
   ],
   pages => [
+    {
+      name => 'deprecated',
+      title4 => 'Deprecated List',
+      detailed => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'Member '
+          },
+          {
+            type => 'ref',
+            link => 'd9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73',
+            content => [
+              {
+                type => 'text',
+                content => 'gameState'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' '
+          },
+          {
+            type => 'anchor',
+            id => 'da/d58/deprecated_1_deprecated000001'
+          },
+          {
+            type => 'text',
+            content => 'Replaced with wm system '
+          }
+        ]
+      }
+    }
   ]
 };
 1;

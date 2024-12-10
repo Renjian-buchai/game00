@@ -24,7 +24,7 @@
 
 <para>Destroy the shitcord t object. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163">update</link> () override</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55">update</link> () override</para>
 
 <para>Update logic for shitcord. </para>
 </listitem>
@@ -32,7 +32,7 @@
 
 <para>Renders menu, and messages. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755">handle</link> (const SDL_Event &amp;event) override</para>
+            <listitem><para>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8">handle</link> (const SDL_Event &amp;event) override</para>
 
 <para>Handles hovers. </para>
 </listitem>
@@ -153,11 +153,11 @@ Parameters</title>
 </formalpara>
 </para>
 </section>
-<anchor xml:id="_classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755"/><section>
+<anchor xml:id="_classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>shitcord_t</secondary></indexterm>
 <indexterm><primary>shitcord_t</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; shitcord_t::handle (const SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; shitcord_t::handle (const SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Handles hovers. </para>
 </para>
@@ -188,7 +188,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1ac8586aac663647453efaaa03bb8bf0e0">scene</link>.</para>
+Implements <link linkend="_classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">scene</link>.</para>
 </section>
 <anchor xml:id="_classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696"/><section>
     <title>render()</title>
@@ -201,11 +201,11 @@ Implements <link linkend="_classscene_1ac8586aac663647453efaaa03bb8bf0e0">scene<
 <para>
 Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene</link>.</para>
 </section>
-<anchor xml:id="_classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163"/><section>
+<anchor xml:id="_classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>shitcord_t</secondary></indexterm>
 <indexterm><primary>shitcord_t</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; shitcord_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; shitcord_t::update ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Update logic for shitcord. </para>
 </para>
@@ -218,7 +218,7 @@ Implements <link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">scene<
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">scene</link>.</para>
+Implements <link linkend="_classscene_1a668e98e3a86c4413fa3291c83fcc5378">scene</link>.</para>
 </section>
 </section>
 <section>

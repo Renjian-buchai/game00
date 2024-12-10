@@ -17,11 +17,11 @@ Inheritance diagram for shitcord\+\_\+t\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Construct a new shitcord t object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classshitcord__t_a46798c707ed5dce9b324cdaa17db5c71}{\texorpdfstring{$\sim$}{\string~}shitcord\+\_\+t}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the shitcord t object. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classshitcord__t_a9e1bba8daf615bf68d9e3f5616a02163}{update}} () override
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classshitcord__t_a13bf62175766d1ebc873c3a8ac8a1b55}{update}} () override
 \begin{DoxyCompactList}\small\item\em Update logic for shitcord. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classshitcord__t_a04b3dbd430b42e009e6c47122c69e696}{render}} () override
 \begin{DoxyCompactList}\small\item\em Renders menu, and messages. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classshitcord__t_a0ea2efbb16cd3134848f2c9b58326755}{handle}} (const SDL\+\_\+\+Event \&event) override
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classshitcord__t_a26224292a18d8df42b361a1f3b333ed8}{handle}} (const SDL\+\_\+\+Event \&event) override
 \begin{DoxyCompactList}\small\item\em Handles hovers. \end{DoxyCompactList}\item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classshitcord__t_a94654f5d652fb31631e2ff17e5c3776b}{generate\+Options}} (const std\+::array$<$ std\+::string, 3 $>$ options)
 \begin{DoxyCompactList}\small\item\em Generates the option texture from the surface. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -98,8 +98,8 @@ SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} Texture, upscaled by a factor of 2.
 \index{shitcord\_t@{shitcord\_t}!handle@{handle}}
 \index{handle@{handle}!shitcord\_t@{shitcord\_t}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classshitcord__t_a0ea2efbb16cd3134848f2c9b58326755} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ shitcord\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classshitcord__t_a26224292a18d8df42b361a1f3b333ed8} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ shitcord\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -115,7 +115,7 @@ std\+::pair$<$scenes, scene\+Data$>$Returns the scene to be changed to, and the 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classscene_ac8586aac663647453efaaa03bb8bf0e0}{scene}}.
+Implements \mbox{\hyperlink{classscene_a1a6ee7a03d72487127dbfa6f79f0db9d}{scene}}.
 
 \index{shitcord\_t@{shitcord\_t}!render@{render}}
 \index{render@{render}!shitcord\_t@{shitcord\_t}}
@@ -134,8 +134,8 @@ Implements \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{scene}
 \index{shitcord\_t@{shitcord\_t}!update@{update}}
 \index{update@{update}!shitcord\_t@{shitcord\_t}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{classshitcord__t_a9e1bba8daf615bf68d9e3f5616a02163} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ shitcord\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classshitcord__t_a13bf62175766d1ebc873c3a8ac8a1b55} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ shitcord\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -148,7 +148,7 @@ std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{scene}}.
+Implements \mbox{\hyperlink{classscene_a668e98e3a86c4413fa3291c83fcc5378}{scene}}.
 
 
 

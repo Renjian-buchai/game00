@@ -12,23 +12,23 @@ Contains all the information required for a functional slideshow.
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classintro__t_1_1slide_a349a2578c1249f4b6dab207bc8efa552}{slide}} (size\+\_\+t \+\_\+fade\+In, size\+\_\+t \+\_\+fade\+Out, size\+\_\+t \+\_\+duration, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}\+\_\+texture, SDL\+\_\+\+Rect \+\_\+dest=\{\}, bool \mbox{\hyperlink{classintro__t_1_1slide_ac153b105d5a7b6639822e2beb06f3467}{skippable}}=true)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classintro__t_1_1slide_a32664b85dc6014b6614477f315d81ee5}{slide}} (const size\+\_\+t \mbox{\hyperlink{classintro__t_1_1slide_a2c6db6f868f8dca116a02bfbe6a228eb}{fade\+In}}, const size\+\_\+t \mbox{\hyperlink{classintro__t_1_1slide_a409eb856ae821b07dd66f76cbb6a3dbe}{fade\+Out}}, const size\+\_\+t \mbox{\hyperlink{classintro__t_1_1slide_a0a4846e82f88facedf50da06b6dd061b}{duration}}, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classintro__t_1_1slide_ae876137be1a25a3ac7dfb65802306ad0}{texture}}, const SDL\+\_\+\+Rect \mbox{\hyperlink{classintro__t_1_1slide_a7c36e704b33011d1088d093f88e436bf}{dest}}=\{\}, const bool \mbox{\hyperlink{classintro__t_1_1slide_ac153b105d5a7b6639822e2beb06f3467}{skippable}}=true)
+\begin{DoxyCompactList}\small\item\em Construct a new slide. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 size\+\_\+t \mbox{\hyperlink{classintro__t_1_1slide_a2c6db6f868f8dca116a02bfbe6a228eb}{fade\+In}}
-\item 
+\begin{DoxyCompactList}\small\item\em Time taken for fade in. \end{DoxyCompactList}\item 
 size\+\_\+t \mbox{\hyperlink{classintro__t_1_1slide_a0a4846e82f88facedf50da06b6dd061b}{duration}}
-\item 
+\begin{DoxyCompactList}\small\item\em Duration slide spends at full alpha. \end{DoxyCompactList}\item 
 size\+\_\+t \mbox{\hyperlink{classintro__t_1_1slide_a409eb856ae821b07dd66f76cbb6a3dbe}{fade\+Out}}
-\item 
+\begin{DoxyCompactList}\small\item\em Time taken for fade out. \end{DoxyCompactList}\item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classintro__t_1_1slide_ae876137be1a25a3ac7dfb65802306ad0}{texture}}
-\item 
+\begin{DoxyCompactList}\small\item\em Texture containing slide contents. \end{DoxyCompactList}\item 
 SDL\+\_\+\+Rect \mbox{\hyperlink{classintro__t_1_1slide_a7c36e704b33011d1088d093f88e436bf}{dest}}
-\item 
+\begin{DoxyCompactList}\small\item\em Destination that the slide should be rendered. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classintro__t_1_1slide_ac153b105d5a7b6639822e2beb06f3467}{skippable}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Whether a slide can be skipped. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -38,9 +38,28 @@ Contains all the information required for a functional slideshow.
 \index{intro\_t::slide@{intro\_t::slide}!slide@{slide}}
 \index{slide@{slide}!intro\_t::slide@{intro\_t::slide}}
 \doxysubsubsection{\texorpdfstring{slide()}{slide()}}
-{\footnotesize\ttfamily \label{classintro__t_1_1slide_a349a2578c1249f4b6dab207bc8efa552} 
-intro\+\_\+t\+::slide\+::slide (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{\+\_\+fade\+In}{, }\item[{size\+\_\+t}]{\+\_\+fade\+Out}{, }\item[{size\+\_\+t}]{\+\_\+duration}{, }\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{\+\_\+texture}{, }\item[{SDL\+\_\+\+Rect}]{\+\_\+dest}{ = {\ttfamily \{\}}, }\item[{bool}]{skippable}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classintro__t_1_1slide_a32664b85dc6014b6614477f315d81ee5} 
+intro\+\_\+t\+::slide\+::slide (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{fade\+In}{, }\item[{const size\+\_\+t}]{fade\+Out}{, }\item[{const size\+\_\+t}]{duration}{, }\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture}{, }\item[{const SDL\+\_\+\+Rect}]{dest}{ = {\ttfamily \{\}}, }\item[{const bool}]{skippable}{ = {\ttfamily true}}\end{DoxyParamCaption})}
 
+
+
+Construct a new slide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fade\+In} & Time taken for fade in (ms) \\
+\hline
+{\em fade\+Out} & Time taken for fade out (ms) \\
+\hline
+{\em duration} & Duration that slide spends at full alpha (ms) \\
+\hline
+{\em texture} & Texture containing slide contents \\
+\hline
+{\em dest} & Location that the slide should be rendered. Default = empty; empty =\texorpdfstring{$>$}{>} full screen \\
+\hline
+{\em skippable} & Whether a slide can be skipped. Default = true \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}
@@ -50,11 +69,19 @@ intro\+\_\+t\+::slide\+::slide (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{\+\
 {\footnotesize\ttfamily \label{classintro__t_1_1slide_a7c36e704b33011d1088d093f88e436bf} 
 SDL\+\_\+\+Rect intro\+\_\+t\+::slide\+::dest}
 
+
+
+Destination that the slide should be rendered. 
+
 \index{intro\_t::slide@{intro\_t::slide}!duration@{duration}}
 \index{duration@{duration}!intro\_t::slide@{intro\_t::slide}}
 \doxysubsubsection{\texorpdfstring{duration}{duration}}
 {\footnotesize\ttfamily \label{classintro__t_1_1slide_a0a4846e82f88facedf50da06b6dd061b} 
 size\+\_\+t intro\+\_\+t\+::slide\+::duration}
+
+
+
+Duration slide spends at full alpha. 
 
 \index{intro\_t::slide@{intro\_t::slide}!fadeIn@{fadeIn}}
 \index{fadeIn@{fadeIn}!intro\_t::slide@{intro\_t::slide}}
@@ -62,11 +89,19 @@ size\+\_\+t intro\+\_\+t\+::slide\+::duration}
 {\footnotesize\ttfamily \label{classintro__t_1_1slide_a2c6db6f868f8dca116a02bfbe6a228eb} 
 size\+\_\+t intro\+\_\+t\+::slide\+::fade\+In}
 
+
+
+Time taken for fade in. 
+
 \index{intro\_t::slide@{intro\_t::slide}!fadeOut@{fadeOut}}
 \index{fadeOut@{fadeOut}!intro\_t::slide@{intro\_t::slide}}
 \doxysubsubsection{\texorpdfstring{fadeOut}{fadeOut}}
 {\footnotesize\ttfamily \label{classintro__t_1_1slide_a409eb856ae821b07dd66f76cbb6a3dbe} 
 size\+\_\+t intro\+\_\+t\+::slide\+::fade\+Out}
+
+
+
+Time taken for fade out. 
 
 \index{intro\_t::slide@{intro\_t::slide}!skippable@{skippable}}
 \index{skippable@{skippable}!intro\_t::slide@{intro\_t::slide}}
@@ -74,11 +109,19 @@ size\+\_\+t intro\+\_\+t\+::slide\+::fade\+Out}
 {\footnotesize\ttfamily \label{classintro__t_1_1slide_ac153b105d5a7b6639822e2beb06f3467} 
 bool intro\+\_\+t\+::slide\+::skippable}
 
+
+
+Whether a slide can be skipped. 
+
 \index{intro\_t::slide@{intro\_t::slide}!texture@{texture}}
 \index{texture@{texture}!intro\_t::slide@{intro\_t::slide}}
 \doxysubsubsection{\texorpdfstring{texture}{texture}}
 {\footnotesize\ttfamily \label{classintro__t_1_1slide_ae876137be1a25a3ac7dfb65802306ad0} 
 SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} intro\+\_\+t\+::slide\+::texture}
+
+
+
+Texture containing slide contents. 
 
 
 

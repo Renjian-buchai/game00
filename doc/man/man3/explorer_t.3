@@ -14,7 +14,7 @@ Inherits \fBscene\fP\&.
 
 .in +1c
 .ti -1c
-.RI "\fBexplorer_t\fP (\fBgame\fP *\fBcontext\fP)"
+.RI "\fBexplorer_t\fP (const \fBgame\fP *\fBcontext\fP)"
 .br
 .RI "Construct a new explorer t object\&. "
 .ti -1c
@@ -22,7 +22,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Destroy the explorer t object\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
 .br
 .RI "Update logic for the explorer t object\&. "
 .ti -1c
@@ -30,7 +30,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Renders explorer, and files\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
+.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
 .br
 .RI "Handles mouse movement and file selection\&. "
 .ti -1c
@@ -88,7 +88,7 @@ Public Attributes inherited from \fBscene\fP
 .in -1c
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "explorer_t::explorer_t (\fBgame\fP * context)"
+.SS "explorer_t::explorer_t (const \fBgame\fP * context)"
 
 .PP
 Construct a new explorer t object\&. Called only once when WM is initialised
@@ -124,7 +124,7 @@ SDL_Texture* Texture at size width x 40 to make the text itself more readable
 .RE
 .PP
 
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Handles mouse movement and file selection\&. 
@@ -148,7 +148,7 @@ Implements \fBscene\fP\&.
 Renders explorer, and files\&. 
 .PP
 Implements \fBscene\fP\&.
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > explorer_t::update ()\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Update logic for the explorer t object\&. Realistically, does absolutely nothing\&.

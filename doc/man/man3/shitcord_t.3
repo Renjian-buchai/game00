@@ -22,7 +22,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Destroy the shitcord t object\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
+.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBupdate\fP () override"
 .br
 .RI "Update logic for shitcord\&. "
 .ti -1c
@@ -30,7 +30,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Renders menu, and messages\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
+.RI "const std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
 .br
 .RI "Handles hovers\&. "
 .ti -1c
@@ -105,7 +105,7 @@ SDL_Texture* Texture, upscaled by a factor of 2\&.
 .RE
 .PP
 
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > shitcord_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > shitcord_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Handles hovers\&. 
@@ -129,7 +129,7 @@ Implements \fBscene\fP\&.
 Renders menu, and messages\&. 
 .PP
 Implements \fBscene\fP\&.
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > shitcord_t::update ()\fR [override]\fP, \fR [virtual]\fP"
+.SS "const std::pair< \fBscenes\fP, \fBsceneData\fP > shitcord_t::update ()\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Update logic for shitcord\&. Probably does the message appearing

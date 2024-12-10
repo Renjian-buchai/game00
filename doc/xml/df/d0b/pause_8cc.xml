@@ -33,12 +33,16 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
         <childnode refid="13" relation="include">
         </childnode>
       </node>
       <node id="16">
         <label>scenes/explorer.hh</label>
         <link refid="d4/d7c/explorer_8hh"/>
+        <childnode refid="15" relation="include">
+        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -141,7 +145,7 @@
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><ref refid="dc/daa/classpause__t_1a840256e71d9ff0f489090fff8f07c946" kindref="member">pause_t::pause_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="dc/daa/classpause__t_1afff933b3fe3682e13e095d5b867d41e7" kindref="member">pause_t::pause_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context),</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>resumePos({<ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(219),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(169),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(201),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(63)}),</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>exitPos({<ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(219),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(235),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(201),<sp/><ref refid="d5/dd8/scene_8hh_1a65ce2d414e762882854d47ab28016bb4" kindref="member">pix</ref>(63)})<sp/>{</highlight></codeline>
@@ -163,7 +167,7 @@
 <codeline lineno="24"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(<ref refid="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" kindref="member">exitHover</ref>);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca" kindref="member">pause_t::update</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c" kindref="member">pause_t::update</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9" kindref="member">scenes::pause</ref>,<sp/>std::monostate());</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
@@ -173,7 +177,7 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" kindref="member">exitState</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1adde6ed8cc11b8464ca58018423ac25ea" kindref="member">pause_t::handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e" kindref="member">pause_t::handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/>SDL_Point<sp/>mousePosition<sp/>=<sp/>{</highlight><highlight class="keyword">event</highlight><highlight class="normal">.motion.x,<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.motion.y};</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" kindref="member">resumeState</ref><sp/>=</highlight></codeline>

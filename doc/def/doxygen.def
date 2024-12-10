@@ -12,7 +12,7 @@ class = {
     sec-kind = 'public-func';
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd5/db0/classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6';
+      sec-mem-id   = 'd5/db0/classexplorer__t_1a2924ed013429848f0cbeb1383449e505';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -21,12 +21,12 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'explorer_t';
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-game *
+const game *
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'context';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '42';
+      sec-mem-desc-line = '44';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new explorer t object.
 _EnD_oF_dEf_TeXt_;
@@ -46,7 +46,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~explorer_t';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '49';
+      sec-mem-desc-line = '51';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Destroy the explorer t object.
 _EnD_oF_dEf_TeXt_;
@@ -56,15 +56,15 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5';
+      sec-mem-id   = 'd5/db0/classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '59';
+      sec-mem-desc-line = '61';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Update logic for the explorer t object.
 _EnD_oF_dEf_TeXt_;
@@ -85,7 +85,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'render';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '64';
+      sec-mem-desc-line = '66';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Renders explorer, and files.
 _EnD_oF_dEf_TeXt_;
@@ -95,11 +95,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd5/db0/classexplorer__t_1a81d4adbe69a07633bf402dafffcac4d9';
+      sec-mem-id   = 'd5/db0/classexplorer__t_1a87452daa84e4b7145c1f50a812010824';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'handle';
       sec-mem-param = {
@@ -109,7 +109,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '73';
+      sec-mem-desc-line = '75';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Handles mouse movement and file selection.
 _EnD_oF_dEf_TeXt_;
@@ -141,7 +141,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'size';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '83';
+      sec-mem-desc-line = '85';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Creates texture to display in filesystem.
 _EnD_oF_dEf_TeXt_;
@@ -165,7 +165,7 @@ explorerData
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'saveData';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '13';
+      sec-mem-desc-line = '15';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Information of game state.
 _EnD_oF_dEf_TeXt_;
@@ -183,7 +183,7 @@ std::vector< std::pair< SDL_Texture *, SDL_Rect > >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'items';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '18';
+      sec-mem-desc-line = '20';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Explorer items to be rendered.
 _EnD_oF_dEf_TeXt_;
@@ -201,7 +201,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'background';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '23';
+      sec-mem-desc-line = '25';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Background of explorer.
 _EnD_oF_dEf_TeXt_;
@@ -219,7 +219,7 @@ const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'nameWrapLength';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '28';
+      sec-mem-desc-line = '30';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Maximum length of the name in texture.
 _EnD_oF_dEf_TeXt_;
@@ -237,7 +237,7 @@ const SDL_Rect
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'downloadBounds';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/explorer.hh';
-      sec-mem-desc-line = '33';
+      sec-mem-desc-line = '35';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Position of the download button.
 _EnD_oF_dEf_TeXt_;
@@ -247,7 +247,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = 'U:/repos/game/include/scenes/explorer.hh';
-  cp-fileline  = '6';
+  cp-fileline  = '8';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -344,28 +344,6 @@ class = {
   cp-id     = 'd0/d51/classgame';
   cp-name   = 'game';
   cp-section = {
-    sec-kind = 'public-type';
-    sec-member = {
-      sec-mem-kind = 'enum';
-      sec-mem-id   = 'd0/d51/classgame_1a9fa617ead70613f9f2176f3aa2094f61';
-      sec-mem-virt = normal;
-      sec-mem-prot = public;
-      sec-mem-name = 'gameState';
-      sec-mem-enum = { enum-name = terminating; };
-      sec-mem-enum = { enum-name = intro; };
-      sec-mem-enum = { enum-name = gameplay; };
-      sec-mem-enum = { enum-name = paused; };
-      sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '13';
-      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-    }; /* sec-member */
-  }; /* cp-section */
-  cp-section = {
     sec-kind = 'public-func';
     sec-member = {
       sec-mem-kind = 'function';
@@ -377,7 +355,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'game';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '81';
+      sec-mem-desc-line = '75';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new game object.
 _EnD_oF_dEf_TeXt_;
@@ -395,7 +373,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~game';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '87';
+      sec-mem-desc-line = '81';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Destroy the game object.
 _EnD_oF_dEf_TeXt_;
@@ -413,7 +391,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'gameplay';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '93';
+      sec-mem-desc-line = '87';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Runs the WM. Waits for the WM to be initialised, first.
 _EnD_oF_dEf_TeXt_;
@@ -433,11 +411,8 @@ _EnD_oF_dEf_TeXt_;
 gameState
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'state';
-      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= gameState::intro
-_EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '24';
+      sec-mem-desc-line = '18';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 State that the game is in.
 _EnD_oF_dEf_TeXt_;
@@ -455,7 +430,7 @@ SDL_Rect
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dispBounds';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '30';
+      sec-mem-desc-line = '24';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Rect containing the screen height and width.
 _EnD_oF_dEf_TeXt_;
@@ -473,7 +448,7 @@ SDL_Window *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mainWindow';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '35';
+      sec-mem-desc-line = '29';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Main window to render to.
 _EnD_oF_dEf_TeXt_;
@@ -491,7 +466,7 @@ SDL_Renderer *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mainRenderer';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '40';
+      sec-mem-desc-line = '34';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Main renderer that renders to mainWindow.
 _EnD_oF_dEf_TeXt_;
@@ -509,7 +484,7 @@ std::array< Mix_Music *, 4 >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'bgm';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '46';
+      sec-mem-desc-line = '40';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Background music. Randomly selected.
 _EnD_oF_dEf_TeXt_;
@@ -527,7 +502,7 @@ std::array< Mix_Music *, 6 >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'silence';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '51';
+      sec-mem-desc-line = '45';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Different lengths of silence. Randomly selected.
 _EnD_oF_dEf_TeXt_;
@@ -545,7 +520,7 @@ TTF_Font *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'font';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '57';
+      sec-mem-desc-line = '51';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Font used for text.
 _EnD_oF_dEf_TeXt_;
@@ -563,7 +538,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pixelSize';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '60';
+      sec-mem-desc-line = '54';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -581,7 +556,7 @@ wm
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'winMan';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '66';
+      sec-mem-desc-line = '60';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Windows manager.
 _EnD_oF_dEf_TeXt_;
@@ -599,7 +574,7 @@ SDL_mutex *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mutex';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '68';
+      sec-mem-desc-line = '62';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -617,7 +592,7 @@ SDL_Thread *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'loadThread';
       sec-mem-desc-file = 'U:/repos/game/include/game.hh';
-      sec-mem-desc-line = '74';
+      sec-mem-desc-line = '68';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Thread that loads winMan.
 _EnD_oF_dEf_TeXt_;
@@ -627,7 +602,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = 'U:/repos/game/include/game.hh';
-  cp-fileline  = '11';
+  cp-fileline  = '12';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -722,7 +697,7 @@ _EnD_oF_dEf_TeXt_;
     sec-kind = 'public-func';
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd9/dea/classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d';
+      sec-mem-id   = 'd9/dea/classintro__t_1a820567ef1f00c44713099e17180f1414';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -731,12 +706,12 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'intro_t';
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-game *
+const game *
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'context';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '46';
+      sec-mem-desc-line = '83';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new intro t object.
 _EnD_oF_dEf_TeXt_;
@@ -756,7 +731,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~intro_t';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '50';
+      sec-mem-desc-line = '88';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Destroy the intro t object.
 _EnD_oF_dEf_TeXt_;
@@ -766,15 +741,15 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd9/dea/classintro__t_1a09c3876e890a37be7a17dbbb0084d4da';
+      sec-mem-id   = 'd9/dea/classintro__t_1a0939d6693673f0f0d9dfc0e9fd8e224c';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '62';
+      sec-mem-desc-line = '101';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Updates scene info.
 _EnD_oF_dEf_TeXt_;
@@ -798,7 +773,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'render';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '66';
+      sec-mem-desc-line = '106';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Renders slides.
 _EnD_oF_dEf_TeXt_;
@@ -808,11 +783,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd9/dea/classintro__t_1a87ef6743a3237d0a5d12b45d18d139ec';
+      sec-mem-id   = 'd9/dea/classintro__t_1a3a698a22fdd0e66f603955af8ced0186';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'handle';
       sec-mem-param = {
@@ -822,7 +797,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '73';
+      sec-mem-desc-line = '114';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -862,7 +837,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '82';
+      sec-mem-desc-line = '123';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Performs the slideshow logic.
 _EnD_oF_dEf_TeXt_;
@@ -933,7 +908,7 @@ true
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '95';
+      sec-mem-desc-line = '137';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Adds slides to slideshow.
 _EnD_oF_dEf_TeXt_;
@@ -973,7 +948,7 @@ centre::BOTH
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '105';
+      sec-mem-desc-line = '147';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Centres rect.
 _EnD_oF_dEf_TeXt_;
@@ -995,7 +970,7 @@ std::vector< slide >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'slides';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '29';
+      sec-mem-desc-line = '64';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Slides to be slideshowed.
 _EnD_oF_dEf_TeXt_;
@@ -1013,7 +988,7 @@ size_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'startTime';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '33';
+      sec-mem-desc-line = '69';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The time at which each slide starts.
 _EnD_oF_dEf_TeXt_;
@@ -1031,7 +1006,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'skip';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '37';
+      sec-mem-desc-line = '74';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Whether a skip is requested by the event handler.
 _EnD_oF_dEf_TeXt_;
@@ -1147,7 +1122,7 @@ class = {
     sec-kind = 'public-func';
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd9/d03/classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f';
+      sec-mem-id   = 'd9/d03/classnotepad__t_1ae910b670eb9800dc5f998943efc80371';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -1156,12 +1131,12 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'notepad_t';
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-game *
+const game *
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'context';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '47';
+      sec-mem-desc-line = '52';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new notepad t object.
 _EnD_oF_dEf_TeXt_;
@@ -1181,7 +1156,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~notepad_t';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '53';
+      sec-mem-desc-line = '59';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Destroy the notepad t object.
 _EnD_oF_dEf_TeXt_;
@@ -1191,15 +1166,15 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa';
+      sec-mem-id   = 'd9/d03/classnotepad__t_1acb29bf9572b3733208643185c76e7f17';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '62';
+      sec-mem-desc-line = '69';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Checks if the current data is the same as the data stored
 previously.
@@ -1220,7 +1195,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'render';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '66';
+      sec-mem-desc-line = '74';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Renders notepad, and entry.
 _EnD_oF_dEf_TeXt_;
@@ -1230,11 +1205,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd9/d03/classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e';
+      sec-mem-id   = 'd9/d03/classnotepad__t_1a3fa185451691009d01df66441f2accb4';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'handle';
       sec-mem-param = {
@@ -1244,7 +1219,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '76';
+      sec-mem-desc-line = '85';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Handles event.
 _EnD_oF_dEf_TeXt_;
@@ -1287,7 +1262,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'entry';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '21';
+      sec-mem-desc-line = '22';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Text of the notepad, as a texture.
 _EnD_oF_dEf_TeXt_;
@@ -1305,7 +1280,7 @@ const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lineWrapLength';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '25';
+      sec-mem-desc-line = '27';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Length before the note wraps the length.
 _EnD_oF_dEf_TeXt_;
@@ -1323,7 +1298,7 @@ notepadData
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'currentData';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '29';
+      sec-mem-desc-line = '32';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The current entry.
 _EnD_oF_dEf_TeXt_;
@@ -1341,7 +1316,7 @@ notepadData
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'prevData';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '33';
+      sec-mem-desc-line = '37';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The last entry that was there when notepad was exited.
 _EnD_oF_dEf_TeXt_;
@@ -1359,7 +1334,7 @@ SDL_Rect
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'entryRect';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/notepad.hh';
-      sec-mem-desc-line = '37';
+      sec-mem-desc-line = '42';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Position of the entry.
 _EnD_oF_dEf_TeXt_;
@@ -1499,7 +1474,7 @@ class = {
     sec-kind = 'public-func';
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'dc/daa/classpause__t_1a840256e71d9ff0f489090fff8f07c946';
+      sec-mem-id   = 'dc/daa/classpause__t_1afff933b3fe3682e13e095d5b867d41e7';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -1508,12 +1483,12 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pause_t';
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-game *
+const game *
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'context';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '52';
+      sec-mem-desc-line = '58';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new pause t object.
 _EnD_oF_dEf_TeXt_;
@@ -1533,7 +1508,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~pause_t';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '58';
+      sec-mem-desc-line = '65';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Destroy the pause t object.
 _EnD_oF_dEf_TeXt_;
@@ -1543,15 +1518,15 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca';
+      sec-mem-id   = 'dc/daa/classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '67';
+      sec-mem-desc-line = '75';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Update logic for the pause menu.
 _EnD_oF_dEf_TeXt_;
@@ -1572,7 +1547,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'render';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '71';
+      sec-mem-desc-line = '80';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Renders menu, and buttons.
 _EnD_oF_dEf_TeXt_;
@@ -1582,11 +1557,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'dc/daa/classpause__t_1adde6ed8cc11b8464ca58018423ac25ea';
+      sec-mem-id   = 'dc/daa/classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'handle';
       sec-mem-param = {
@@ -1596,7 +1571,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '79';
+      sec-mem-desc-line = '89';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Handles hovers.
 _EnD_oF_dEf_TeXt_;
@@ -1655,7 +1630,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'resumeHover';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '20';
+      sec-mem-desc-line = '21';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Resume button when hovered over.
 _EnD_oF_dEf_TeXt_;
@@ -1673,7 +1648,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'resumeState';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '24';
+      sec-mem-desc-line = '26';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 State of the resume button.
 _EnD_oF_dEf_TeXt_;
@@ -1691,7 +1666,7 @@ SDL_Rect
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'resumePos';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '26';
+      sec-mem-desc-line = '29';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1709,7 +1684,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exit';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '31';
+      sec-mem-desc-line = '34';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Exit button when not hovered.
 _EnD_oF_dEf_TeXt_;
@@ -1727,7 +1702,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exitHover';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '35';
+      sec-mem-desc-line = '39';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Exit button when hovered over.
 _EnD_oF_dEf_TeXt_;
@@ -1745,7 +1720,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exitState';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '39';
+      sec-mem-desc-line = '44';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 State of the exit button.
 _EnD_oF_dEf_TeXt_;
@@ -1763,7 +1738,7 @@ SDL_Rect
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exitPos';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/pause.hh';
-      sec-mem-desc-line = '43';
+      sec-mem-desc-line = '49';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Position of the exit button.
 _EnD_oF_dEf_TeXt_;
@@ -1970,11 +1945,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7';
+      sec-mem-id   = 'df/db1/classscene_1a668e98e3a86c4413fa3291c83fcc5378';
       sec-mem-virt = pure-virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-virtual std::pair< scenes, sceneData >
+virtual const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/scene.hh';
@@ -2009,11 +1984,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'df/db1/classscene_1ac8586aac663647453efaaa03bb8bf0e0';
+      sec-mem-id   = 'df/db1/classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d';
       sec-mem-virt = pure-virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-virtual std::pair< scenes, sceneData >
+virtual const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'handle';
       sec-mem-param = {
@@ -2239,11 +2214,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163';
+      sec-mem-id   = 'de/deb/classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/shitcord.hh';
@@ -2278,11 +2253,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'de/deb/classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755';
+      sec-mem-id   = 'de/deb/classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8';
       sec-mem-virt = virtual;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'handle';
       sec-mem-param = {
@@ -2450,7 +2425,7 @@ class = {
     sec-kind = 'public-func';
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'da/dec/classintro__t_1_1slide_1a349a2578c1249f4b6dab207bc8efa552';
+      sec-mem-id   = 'da/dec/classintro__t_1_1slide_1a32664b85dc6014b6614477f315d81ee5';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -2459,40 +2434,40 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'slide';
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-size_t
+const size_t
 _EnD_oF_dEf_TeXt_;
-        sec-mem-param-declname = '_fadeIn';
+        sec-mem-param-declname = 'fadeIn';
       }; /*        sec-mem-param--param */
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-size_t
+const size_t
 _EnD_oF_dEf_TeXt_;
-        sec-mem-param-declname = '_fadeOut';
+        sec-mem-param-declname = 'fadeOut';
       }; /*        sec-mem-param--param */
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-size_t
+const size_t
 _EnD_oF_dEf_TeXt_;
-        sec-mem-param-declname = '_duration';
+        sec-mem-param-declname = 'duration';
       }; /*        sec-mem-param--param */
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
 SDL_Texture *
 _EnD_oF_dEf_TeXt_;
-        sec-mem-param-declname = '_texture';
+        sec-mem-param-declname = 'texture';
       }; /*        sec-mem-param--param */
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-SDL_Rect
+const SDL_Rect
 _EnD_oF_dEf_TeXt_;
-        sec-mem-param-declname = '_dest';
+        sec-mem-param-declname = 'dest';
         sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
 {}
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-bool
+const bool
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'skippable';
         sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
@@ -2500,12 +2475,18 @@ true
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '15';
+      sec-mem-desc-line = '26';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Construct a new slide.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+@param fadeIn Time taken for fade in (ms)
+@param fadeOut Time taken for fade out (ms)
+@param duration Duration that slide spends at full alpha (ms)
+@param texture Texture containing slide contents
+@param dest Location that the slide should be rendered. Default = empty;
+empty => full screen
+@param skippable Whether a slide can be skipped. Default = true
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
@@ -2521,9 +2502,9 @@ size_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'fadeIn';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '18';
+      sec-mem-desc-line = '33';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Time taken for fade in.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -2539,9 +2520,9 @@ size_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'duration';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '19';
+      sec-mem-desc-line = '38';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Duration slide spends at full alpha.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -2557,9 +2538,9 @@ size_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'fadeOut';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '20';
+      sec-mem-desc-line = '43';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Time taken for fade out.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -2575,9 +2556,9 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'texture';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '21';
+      sec-mem-desc-line = '48';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Texture containing slide contents.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -2593,9 +2574,9 @@ SDL_Rect
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dest';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '22';
+      sec-mem-desc-line = '53';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Destination that the slide should be rendered.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -2611,9 +2592,9 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'skippable';
       sec-mem-desc-file = 'U:/repos/game/include/scenes/init.hh';
-      sec-mem-desc-line = '23';
+      sec-mem-desc-line = '58';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Whether a slide can be skipped.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -2644,7 +2625,7 @@ class = {
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'wm';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '79';
+      sec-mem-desc-line = '72';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new wm object.
 _EnD_oF_dEf_TeXt_;
@@ -2668,7 +2649,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'context';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '87';
+      sec-mem-desc-line = '81';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Construct a new wm object.
 _EnD_oF_dEf_TeXt_;
@@ -2688,7 +2669,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'render';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '94';
+      sec-mem-desc-line = '88';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Renders the current scene, icons, and the overlay.
 _EnD_oF_dEf_TeXt_;
@@ -2698,11 +2679,11 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'df/d1c/classwm_1a08290ca96dc53c185d114f2beae1f7a6';
+      sec-mem-id   = 'df/d1c/classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'handle';
       sec-mem-param = {
@@ -2712,7 +2693,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '102';
+      sec-mem-desc-line = '97';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Handles events and scene switches via task bar.
 _EnD_oF_dEf_TeXt_;
@@ -2724,15 +2705,15 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'df/d1c/classwm_1a54115bce16818acb350825256b11b2ce';
+      sec-mem-id   = 'df/d1c/classwm_1a486c679090df44959f5bf6dd71db5983';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
-std::pair< scenes, sceneData >
+const std::pair< scenes, sceneData >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '109';
+      sec-mem-desc-line = '105';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Updates scene data.
 _EnD_oF_dEf_TeXt_;
@@ -2754,7 +2735,7 @@ std::vector< std::pair< SDL_Texture *, SDL_Rect > >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'icons';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '25';
+      sec-mem-desc-line = '24';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Icons for the task bar.
 _EnD_oF_dEf_TeXt_;
@@ -2772,7 +2753,7 @@ SDL_Texture *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'OSOverlay';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '31';
+      sec-mem-desc-line = '29';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Task bar overlay.
 _EnD_oF_dEf_TeXt_;
@@ -2790,7 +2771,7 @@ game *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'context';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '37';
+      sec-mem-desc-line = '34';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 game context
 _EnD_oF_dEf_TeXt_;
@@ -2808,7 +2789,7 @@ SDL_Rect
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pauseBounds';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '43';
+      sec-mem-desc-line = '39';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Position of the pause button.
 _EnD_oF_dEf_TeXt_;
@@ -2829,7 +2810,7 @@ _EnD_oF_dEf_TeXt_;
 = 0
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '49';
+      sec-mem-desc-line = '44';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Stores whether the last music track was silent.
 _EnD_oF_dEf_TeXt_;
@@ -2847,7 +2828,7 @@ std::unique_ptr< explorer_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'explorer';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '57';
+      sec-mem-desc-line = '51';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Scenes.
 _EnD_oF_dEf_TeXt_;
@@ -2865,7 +2846,7 @@ std::unique_ptr< notepad_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'notepad';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '58';
+      sec-mem-desc-line = '52';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2883,7 +2864,7 @@ std::unique_ptr< pause_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pause';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '59';
+      sec-mem-desc-line = '53';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2901,7 +2882,7 @@ std::unique_ptr< intro_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'intro';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '60';
+      sec-mem-desc-line = '54';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2919,7 +2900,7 @@ std::unique_ptr< shitcord_t >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'shitcord';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '61';
+      sec-mem-desc-line = '55';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2937,7 +2918,7 @@ scene *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'current';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '67';
+      sec-mem-desc-line = '60';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Current scene.
 _EnD_oF_dEf_TeXt_;
@@ -2955,7 +2936,7 @@ scene *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'resume';
       sec-mem-desc-file = 'U:/repos/game/include/wm.hh';
-      sec-mem-desc-line = '72';
+      sec-mem-desc-line = '65';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Scene to resume on. Only used for unpausing purposes.
 _EnD_oF_dEf_TeXt_;
@@ -3282,7 +3263,7 @@ _EnD_oF_dEf_TeXt_;
  std::variant<std::monostate, notepadData>
 _EnD_oF_dEf_TeXt_;
       typedef-mem-desc-file = 'U:/repos/game/include/enum.hh';
-      typedef-mem-desc-line = '38';
+      typedef-mem-desc-line = '50';
       typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -3347,6 +3328,25 @@ Scenes list.
 _EnD_oF_dEf_TeXt_;
       enum-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
+_EnD_oF_dEf_TeXt_;
+    }; /* enum-member */
+    enum-member = {
+      enum-mem-kind = 'enum';
+      enum-mem-id   = 'd9/d05/enum_8hh_1aa2f76535ef50e4e6dda6740929d1ed73';
+      enum-mem-virt = normal;
+      enum-mem-prot = public;
+      enum-mem-name = 'gameState';
+      enum-mem-enum = { enum-name = terminating; };
+      enum-mem-enum = { enum-name = intro; };
+      enum-mem-enum = { enum-name = gameplay; };
+      enum-mem-enum = { enum-name = paused; };
+      enum-mem-desc-file = 'U:/repos/game/include/enum.hh';
+      enum-mem-desc-line = '43';
+      enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Current gamestate.
+_EnD_oF_dEf_TeXt_;
+      enum-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem deprecated 1.
 _EnD_oF_dEf_TeXt_;
     }; /* enum-member */
     };
@@ -3519,6 +3519,38 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'de/d8a/gameplay_8cc';
   file-name = 'gameplay.cc';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'de/d8a/gameplay_8cc_1a199644654857552c06fa8aaea76ac812';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'changeScene';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::pair< scenes, sceneData > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'sceneChangeData';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+wm &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'winMan';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'U:/repos/game/src/game/gameplay.cc';
+      func-mem-desc-line = '5';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
   file-full-name  = 'U:/repos/game/src/game/gameplay.cc';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_

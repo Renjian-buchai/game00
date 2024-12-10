@@ -13,9 +13,9 @@
 \begin{DoxyCompactList}\small\item\em Construct a new wm object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classwm_aa9731642bc561de498bc559f0d5ab84e}{render}} ()
 \begin{DoxyCompactList}\small\item\em Renders the current scene, icons, and the overlay. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_a08290ca96dc53c185d114f2beae1f7a6}{handle}} (const SDL\+\_\+\+Event \&event)
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_ae5f8a28b02b3bc82d4422c6ea0e745ca}{handle}} (const SDL\+\_\+\+Event \&event)
 \begin{DoxyCompactList}\small\item\em Handles events and scene switches via task bar. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_a54115bce16818acb350825256b11b2ce}{update}} ()
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classwm_a486c679090df44959f5bf6dd71db5983}{update}} ()
 \begin{DoxyCompactList}\small\item\em Updates scene data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -80,8 +80,8 @@ Constructs all the scenes, too
 \index{wm@{wm}!handle@{handle}}
 \index{handle@{handle}!wm@{wm}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classwm_a08290ca96dc53c185d114f2beae1f7a6} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classwm_ae5f8a28b02b3bc82d4422c6ea0e745ca} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})}
 
 
 
@@ -108,8 +108,8 @@ Renders the current scene, icons, and the overlay.
 Does not render if the current scene is the intro. \index{wm@{wm}!update@{update}}
 \index{update@{update}!wm@{wm}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{classwm_a54115bce16818acb350825256b11b2ce} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classwm_a486c679090df44959f5bf6dd71db5983} 
+const std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ wm\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 

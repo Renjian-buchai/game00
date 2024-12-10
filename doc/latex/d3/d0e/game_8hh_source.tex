@@ -10,43 +10,37 @@
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
 \DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SDL\_mixer.h"{}}}
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}SDL\_ttf.h"{}}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}wm.hh"{}}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }game\ \{}
-\DoxyCodeLine{00012\ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00013\ \ \ \textcolor{keyword}{enum\ class}\ gameState\ :\ uint8\_t\ \{}
-\DoxyCodeLine{00014\ \ \ \ \ terminating,}
-\DoxyCodeLine{00015\ \ \ \ \ intro,}
-\DoxyCodeLine{00016\ \ \ \ \ gameplay,}
-\DoxyCodeLine{00017\ \ \ \ \ paused,}
-\DoxyCodeLine{00018\ \ \ \};}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}enum.hh"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}wm.hh"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }game\ \{}
+\DoxyCodeLine{00013\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ gameState\ state;}
 \DoxyCodeLine{00019\ }
-\DoxyCodeLine{00024\ \ \ gameState\ state\ =\ gameState::intro;}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00030\ \ \ SDL\_Rect\ dispBounds;}
-\DoxyCodeLine{00035\ \ \ SDL\_Window*\ mainWindow;}
-\DoxyCodeLine{00040\ \ \ SDL\_Renderer*\ mainRenderer;}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00046\ \ \ std::array<Mix\_Music*,\ 4>\ bgm;}
-\DoxyCodeLine{00051\ \ \ std::array<Mix\_Music*,\ 6>\ silence;}
+\DoxyCodeLine{00024\ \ \ SDL\_Rect\ dispBounds;}
+\DoxyCodeLine{00029\ \ \ SDL\_Window*\ mainWindow;}
+\DoxyCodeLine{00034\ \ \ SDL\_Renderer*\ mainRenderer;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ std::array<Mix\_Music*,\ 4>\ bgm;}
+\DoxyCodeLine{00045\ \ \ std::array<Mix\_Music*,\ 6>\ silence;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ TTF\_Font*\ font;}
 \DoxyCodeLine{00052\ }
-\DoxyCodeLine{00057\ \ \ TTF\_Font*\ font;}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00060\ \ \ \textcolor{keywordtype}{double}\ pixelSize;}
+\DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{double}\ pixelSize;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ wm\ winMan;}
 \DoxyCodeLine{00061\ }
-\DoxyCodeLine{00066\ \ \ wm\ winMan;}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \ \ SDL\_mutex*\ mutex;}
+\DoxyCodeLine{00062\ \ \ SDL\_mutex*\ mutex;}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ SDL\_Thread*\ loadThread;}
 \DoxyCodeLine{00069\ }
-\DoxyCodeLine{00074\ \ \ SDL\_Thread*\ loadThread;}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00081\ \ \ game();}
+\DoxyCodeLine{00075\ \ \ game();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \ \ \string~game();}
 \DoxyCodeLine{00082\ }
-\DoxyCodeLine{00087\ \ \ \string~game();}
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00093\ \ \ \textcolor{keywordtype}{void}\ gameplay();}
-\DoxyCodeLine{00094\ \};}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00087\ \ \ \textcolor{keywordtype}{void}\ gameplay();}
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

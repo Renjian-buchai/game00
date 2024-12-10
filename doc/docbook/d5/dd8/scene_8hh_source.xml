@@ -24,11 +24,11 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 37 
 43 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classscene_1aa97c9c1f46aa44e63223a737fcdcb496">~scene</link>();
 44 
-53 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</link>()&#32;=&#32;0;
+53 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classscene_1a668e98e3a86c4413fa3291c83fcc5378">update</link>()&#32;=&#32;0;
 54 
 60 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classscene_1a7c218380f822d46bee781520e855a7de">render</link>()&#32;=&#32;0;
 61 
-70 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classscene_1ac8586aac663647453efaaa03bb8bf0e0">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;)&#32;=&#32;0;
+70 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;)&#32;=&#32;0;
 71 };
 72 
 73 <emphasis role="preprocessor">#endif</emphasis>

@@ -140,22 +140,32 @@
 <codeline lineno="11" refid="dc/daa/classpause__t_1abc176f557fb1f594687017c268bbdfe4" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1abc176f557fb1f594687017c268bbdfe4" kindref="member">overlay</ref>;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16" refid="dc/daa/classpause__t_1a3e20af849346bcd336f939865a270c5c" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1a3e20af849346bcd336f939865a270c5c" kindref="member">resume</ref>;</highlight></codeline>
-<codeline lineno="20" refid="dc/daa/classpause__t_1a0c32a4f98b58aa3806699382970ec491" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1a0c32a4f98b58aa3806699382970ec491" kindref="member">resumeHover</ref>;</highlight></codeline>
-<codeline lineno="24" refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" kindref="member">resumeState</ref>;</highlight></codeline>
-<codeline lineno="26" refid="dc/daa/classpause__t_1ae945e4a533d1de46870bffe0e838d8ae" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/><ref refid="dc/daa/classpause__t_1ae945e4a533d1de46870bffe0e838d8ae" kindref="member">resumePos</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="dc/daa/classpause__t_1a0c32a4f98b58aa3806699382970ec491" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1a0c32a4f98b58aa3806699382970ec491" kindref="member">resumeHover</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" kindref="member">resumeState</ref>;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31" refid="dc/daa/classpause__t_1a148437ac9cfb0970822384f99c03ac77" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1a148437ac9cfb0970822384f99c03ac77" kindref="member">exit</ref>;</highlight></codeline>
-<codeline lineno="35" refid="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" kindref="member">exitHover</ref>;</highlight></codeline>
-<codeline lineno="39" refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" kindref="member">exitState</ref>;</highlight></codeline>
-<codeline lineno="43" refid="dc/daa/classpause__t_1a9034485c8caf7cd1dfddf7f300542747" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/><ref refid="dc/daa/classpause__t_1a9034485c8caf7cd1dfddf7f300542747" kindref="member">exitPos</ref>;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="dc/daa/classpause__t_1a840256e71d9ff0f489090fff8f07c946" kindref="member">pause_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/><ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="dc/daa/classpause__t_1a8e6961a2a9fb61c99e92face62126593" kindref="member">~pause_t</ref>();</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca" kindref="member">update</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8" kindref="member">render</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1adde6ed8cc11b8464ca58018423ac25ea" kindref="member">handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="29" refid="dc/daa/classpause__t_1ae945e4a533d1de46870bffe0e838d8ae" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/><ref refid="dc/daa/classpause__t_1ae945e4a533d1de46870bffe0e838d8ae" kindref="member">resumePos</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="dc/daa/classpause__t_1a148437ac9cfb0970822384f99c03ac77" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1a148437ac9cfb0970822384f99c03ac77" kindref="member">exit</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1a3e67f3211198db082a0ac245dad42212" kindref="member">exitHover</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/><ref refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" kindref="member">exitState</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="dc/daa/classpause__t_1a9034485c8caf7cd1dfddf7f300542747" refkind="member"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/><ref refid="dc/daa/classpause__t_1a9034485c8caf7cd1dfddf7f300542747" kindref="member">exitPos</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="dc/daa/classpause__t_1afff933b3fe3682e13e095d5b867d41e7" kindref="member">pause_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/><ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="dc/daa/classpause__t_1a8e6961a2a9fb61c99e92face62126593" kindref="member">~pause_t</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c" kindref="member">update</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8" kindref="member">render</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e" kindref="member">handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="include/scenes/pause.hh"/>
   </compounddef>

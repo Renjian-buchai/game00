@@ -18,11 +18,11 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 21 
 27 &#32;&#32;<link linkend="_classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71">~shitcord_t</link>();
 28 
-37 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
+37 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
 38 
 42 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
 43 
-51 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+51 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
 52 
 59 &#32;&#32;SDL_Texture*&#32;<link linkend="_classshitcord__t_1a94654f5d652fb31631e2ff17e5c3776b">generateOptions</link>(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;std::string,&#32;3&gt;&#32;options);
 60 };

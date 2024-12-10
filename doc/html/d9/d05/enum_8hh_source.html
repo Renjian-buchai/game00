@@ -38,6 +38,7 @@ $(function() { codefold.init(1); });
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="../../files.html"><span>Files</span></a></li>
     </ul>
@@ -95,9 +96,18 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
 </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">   38</a></span><span class="keyword">using </span><a class="code hl_typedef" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> = std::variant&lt;std::monostate, notepadData&gt;;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73">   43</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73">gameState</a> : uint8_t {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_enumvalue" href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db">terminating</a>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_enumvalue" href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb">intro</a>,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_enumvalue" href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057">gameplay</a>,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_enumvalue" href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2">paused</a>,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">   50</a></span><span class="keyword">using </span><a class="code hl_typedef" href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a> = std::variant&lt;std::monostate, notepadData&gt;;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aenum_8hh_html_a72e129a3b1e399b1f98da21557f0fd8a"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8a">scenes</a></div><div class="ttdeci">scenes</div><div class="ttdoc">Scenes list.</div><div class="ttdef"><b>Definition</b> enum.hh:30</div></div>
 <div class="ttc" id="aenum_8hh_html_a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa09e592c4a21a21b39f22aa7d7170f162">scenes::explorer</a></div><div class="ttdeci">@ explorer</div></div>
 <div class="ttc" id="aenum_8hh_html_a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#a72e129a3b1e399b1f98da21557f0fd8aa0b4b633f3b914e8a7c656928816d01fb">scenes::intro</a></div><div class="ttdeci">@ intro</div></div>
@@ -107,11 +117,15 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aenum_8hh_html_a8cc8a11a6b6df22c3570fbee895c587a"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587a">explorerData</a></div><div class="ttdeci">explorerData</div><div class="ttdoc">Entries list.</div><div class="ttdef"><b>Definition</b> enum.hh:20</div></div>
 <div class="ttc" id="aenum_8hh_html_a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aae37f0136aa3ffaf149b351f6a4c948e9">explorerData::init</a></div><div class="ttdeci">@ init</div></div>
 <div class="ttc" id="aenum_8hh_html_a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24">explorerData::size</a></div><div class="ttdeci">@ size</div></div>
+<div class="ttc" id="aenum_8hh_html_aa2f76535ef50e4e6dda6740929d1ed73"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73">gameState</a></div><div class="ttdeci">gameState</div><div class="ttdoc">Current gamestate.</div><div class="ttdef"><b>Definition</b> enum.hh:43</div></div>
+<div class="ttc" id="aenum_8hh_html_aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a2a70c8fd8851eaaa0859ec3fde42b9db">gameState::terminating</a></div><div class="ttdeci">@ terminating</div></div>
+<div class="ttc" id="aenum_8hh_html_aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73a542e0be529723cc49566dcfd51153057">gameState::gameplay</a></div><div class="ttdeci">@ gameplay</div></div>
+<div class="ttc" id="aenum_8hh_html_aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#aa2f76535ef50e4e6dda6740929d1ed73ad13c3f7baed576768b11a714ef4d90e2">gameState::paused</a></div><div class="ttdeci">@ paused</div></div>
 <div class="ttc" id="aenum_8hh_html_ac37de80148c8c914ee47baccc98c59e6"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6">notepadData</a></div><div class="ttdeci">notepadData</div><div class="ttdoc">Entry currently stored in notepad.</div><div class="ttdef"><b>Definition</b> enum.hh:12</div></div>
 <div class="ttc" id="aenum_8hh_html_ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6a9a1f1c8bd08b2d9c429d526c6c165ccd">notepadData::entry2</a></div><div class="ttdeci">@ entry2</div></div>
 <div class="ttc" id="aenum_8hh_html_ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6aa2e4822a98337283e39f7b60acf85ec9">notepadData::empty</a></div><div class="ttdeci">@ empty</div></div>
 <div class="ttc" id="aenum_8hh_html_ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#ac37de80148c8c914ee47baccc98c59e6ad329f73735d65163cec28c0a79429e7d">notepadData::entry1</a></div><div class="ttdeci">@ entry1</div></div>
-<div class="ttc" id="aenum_8hh_html_ae5fd02a37eaf8afa38cba1e723317dab"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a></div><div class="ttdeci">std::variant&lt; std::monostate, notepadData &gt; sceneData</div><div class="ttdef"><b>Definition</b> enum.hh:38</div></div>
+<div class="ttc" id="aenum_8hh_html_ae5fd02a37eaf8afa38cba1e723317dab"><div class="ttname"><a href="../../d9/d05/enum_8hh.html#ae5fd02a37eaf8afa38cba1e723317dab">sceneData</a></div><div class="ttdeci">std::variant&lt; std::monostate, notepadData &gt; sceneData</div><div class="ttdef"><b>Definition</b> enum.hh:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

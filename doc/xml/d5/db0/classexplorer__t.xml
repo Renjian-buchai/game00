@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="13" column="16" bodyfile="include/scenes/explorer.hh" bodystart="13" bodyend="-1"/>
+        <location file="include/scenes/explorer.hh" line="15" column="16" bodyfile="include/scenes/explorer.hh" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; SDL_Texture *, SDL_Rect &gt; &gt;</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="18" column="15" bodyfile="include/scenes/explorer.hh" bodystart="18" bodyend="-1"/>
+        <location file="include/scenes/explorer.hh" line="20" column="15" bodyfile="include/scenes/explorer.hh" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/db0/classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93" prot="public" static="no" mutable="no">
         <type>SDL_Texture *</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="23" column="15" bodyfile="include/scenes/explorer.hh" bodystart="23" bodyend="-1"/>
+        <location file="include/scenes/explorer.hh" line="25" column="15" bodyfile="include/scenes/explorer.hh" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/db0/classexplorer__t_1a9cb2c4b54f466e5535c38cdac94ea0b4" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="28" column="13" bodyfile="include/scenes/explorer.hh" bodystart="28" bodyend="-1"/>
+        <location file="include/scenes/explorer.hh" line="30" column="13" bodyfile="include/scenes/explorer.hh" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/db0/classexplorer__t_1ab134139610d2267ca833abcd44b39aac" prot="public" static="no" mutable="no">
         <type>const SDL_Rect</type>
@@ -79,18 +79,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="33" column="18" bodyfile="include/scenes/explorer.hh" bodystart="33" bodyend="-1"/>
+        <location file="include/scenes/explorer.hh" line="35" column="18" bodyfile="include/scenes/explorer.hh" bodystart="35" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="d5/db0/classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d5/db0/classexplorer__t_1a2924ed013429848f0cbeb1383449e505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>explorer_t::explorer_t</definition>
-        <argsstring>(game *context)</argsstring>
+        <argsstring>(const game *context)</argsstring>
         <name>explorer_t</name>
         <qualifiedname>explorer_t::explorer_t</qualifiedname>
         <param>
-          <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
+          <type>const <ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
           <declname>context</declname>
         </param>
         <briefdescription>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="42" column="3" bodyfile="src/scenes/explorer.cc" bodystart="46" bodyend="84"/>
+        <location file="include/scenes/explorer.hh" line="44" column="3" bodyfile="src/scenes/explorer.cc" bodystart="46" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="d5/db0/classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -127,15 +127,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="49" column="3" bodyfile="src/scenes/explorer.cc" bodystart="86" bodyend="92"/>
+        <location file="include/scenes/explorer.hh" line="51" column="3" bodyfile="src/scenes/explorer.cc" bodystart="86" bodyend="92"/>
       </memberdef>
-      <memberdef kind="function" id="d5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>std::pair&lt; scenes, sceneData &gt; explorer_t::update</definition>
+      <memberdef kind="function" id="d5/db0/classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>const std::pair&lt; scenes, sceneData &gt; explorer_t::update</definition>
         <argsstring>() override</argsstring>
         <name>update</name>
         <qualifiedname>explorer_t::update</qualifiedname>
-        <reimplements refid="df/db1/classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</reimplements>
+        <reimplements refid="df/db1/classscene_1a668e98e3a86c4413fa3291c83fcc5378">update</reimplements>
         <briefdescription>
 <para>Update logic for the explorer t object. </para>
         </briefdescription>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="59" column="13" bodyfile="src/scenes/explorer.cc" bodystart="94" bodyend="96"/>
+        <location file="include/scenes/explorer.hh" line="61" column="19" bodyfile="src/scenes/explorer.cc" bodystart="94" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="d5/db0/classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -163,15 +163,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="64" column="8" bodyfile="src/scenes/explorer.cc" bodystart="98" bodyend="104"/>
+        <location file="include/scenes/explorer.hh" line="66" column="8" bodyfile="src/scenes/explorer.cc" bodystart="98" bodyend="104"/>
       </memberdef>
-      <memberdef kind="function" id="d5/db0/classexplorer__t_1a81d4adbe69a07633bf402dafffcac4d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>std::pair&lt; scenes, sceneData &gt; explorer_t::handle</definition>
+      <memberdef kind="function" id="d5/db0/classexplorer__t_1a87452daa84e4b7145c1f50a812010824" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>const std::pair&lt; scenes, sceneData &gt; explorer_t::handle</definition>
         <argsstring>(const SDL_Event &amp;event) override</argsstring>
         <name>handle</name>
         <qualifiedname>explorer_t::handle</qualifiedname>
-        <reimplements refid="df/db1/classscene_1ac8586aac663647453efaaa03bb8bf0e0">handle</reimplements>
+        <reimplements refid="df/db1/classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">handle</reimplements>
         <param>
           <type>const SDL_Event &amp;</type>
           <declname>event</declname>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="73" column="13" bodyfile="src/scenes/explorer.cc" bodystart="106" bodyend="154"/>
+        <location file="include/scenes/explorer.hh" line="75" column="19" bodyfile="src/scenes/explorer.cc" bodystart="106" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>SDL_Texture *</type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/explorer.hh" line="83" column="15" bodyfile="src/scenes/explorer.cc" bodystart="15" bodyend="44"/>
+        <location file="include/scenes/explorer.hh" line="85" column="15" bodyfile="src/scenes/explorer.cc" bodystart="15" bodyend="44"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -290,21 +290,21 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/scenes/explorer.hh" line="6" column="1" bodyfile="include/scenes/explorer.hh" bodystart="6" bodyend="84"/>
+    <location file="include/scenes/explorer.hh" line="8" column="1" bodyfile="include/scenes/explorer.hh" bodystart="8" bodyend="86"/>
     <listofallmembers>
       <member refid="d5/db0/classexplorer__t_1a29be9f9a5ec3090c4998f9cb7277cc93" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>background</name></member>
       <member refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>context</name></member>
       <member refid="d5/db0/classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>createFilesystemEntry</name></member>
       <member refid="d5/db0/classexplorer__t_1ab134139610d2267ca833abcd44b39aac" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>downloadBounds</name></member>
-      <member refid="d5/db0/classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>explorer_t</name></member>
-      <member refid="d5/db0/classexplorer__t_1a81d4adbe69a07633bf402dafffcac4d9" prot="public" virt="virtual"><scope>explorer_t</scope><name>handle</name></member>
+      <member refid="d5/db0/classexplorer__t_1a2924ed013429848f0cbeb1383449e505" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>explorer_t</name></member>
+      <member refid="d5/db0/classexplorer__t_1a87452daa84e4b7145c1f50a812010824" prot="public" virt="virtual"><scope>explorer_t</scope><name>handle</name></member>
       <member refid="d5/db0/classexplorer__t_1aea965f72ccf4510850fc844e97c51c19" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>items</name></member>
       <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>loadTexture</name></member>
       <member refid="d5/db0/classexplorer__t_1a9cb2c4b54f466e5535c38cdac94ea0b4" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>nameWrapLength</name></member>
       <member refid="d5/db0/classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757" prot="public" virt="virtual"><scope>explorer_t</scope><name>render</name></member>
       <member refid="d5/db0/classexplorer__t_1a40830fddee0e376a60dba4876b7bc7e3" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>saveData</name></member>
       <member refid="df/db1/classscene_1ad7ef1968aa37f2e796fec45026b9ade0" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>scene</name></member>
-      <member refid="d5/db0/classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5" prot="public" virt="virtual"><scope>explorer_t</scope><name>update</name></member>
+      <member refid="d5/db0/classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb" prot="public" virt="virtual"><scope>explorer_t</scope><name>update</name></member>
       <member refid="d5/db0/classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50" prot="public" virt="non-virtual"><scope>explorer_t</scope><name>~explorer_t</name></member>
       <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" virt="virtual"><scope>explorer_t</scope><name>~scene</name></member>
     </listofallmembers>

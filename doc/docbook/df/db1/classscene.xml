@@ -33,7 +33,7 @@
 
 <para>Destroy the scene object. </para>
 </listitem>
-            <listitem><para>virtual std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classscene_1a34b71ea2aea3fd3c007786e75be817c7">update</link> ()=0</para>
+            <listitem><para>virtual const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classscene_1a668e98e3a86c4413fa3291c83fcc5378">update</link> ()=0</para>
 
 <para>Updates scene logic. </para>
 </listitem>
@@ -41,7 +41,7 @@
 
 <para>Renders textures. </para>
 </listitem>
-            <listitem><para>virtual std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classscene_1ac8586aac663647453efaaa03bb8bf0e0">handle</link> (const SDL_Event &amp;)=0</para>
+            <listitem><para>virtual const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d">handle</link> (const SDL_Event &amp;)=0</para>
 
 <para>Handles events. </para>
 </listitem>
@@ -108,16 +108,16 @@ Parameters</title>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classscene_1ac8586aac663647453efaaa03bb8bf0e0"/><section>
+<anchor xml:id="_classscene_1a1a6ee7a03d72487127dbfa6f79f0db9d"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>scene</secondary></indexterm>
 <indexterm><primary>scene</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>virtual std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; scene::handle (const SDL_Event &amp; )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>virtual const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; scene::handle (const SDL_Event &amp; )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
 
 <para>Handles events. </para>
 </para>
 
-<para>Called in <link linkend="_classwm_1a08290ca96dc53c185d114f2beae1f7a6">wm::handle()</link></para>
+<para>Called in <link linkend="_classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca">wm::handle()</link></para>
 
 <para><formalpara><title>Returns</title>
 
@@ -125,7 +125,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implemented in <link linkend="_classexplorer__t_1a81d4adbe69a07633bf402dafffcac4d9">explorer_t</link>, <link linkend="_classintro__t_1a87ef6743a3237d0a5d12b45d18d139ec">intro_t</link>, <link linkend="_classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e">notepad_t</link>, <link linkend="_classpause__t_1adde6ed8cc11b8464ca58018423ac25ea">pause_t</link>, and <link linkend="_classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755">shitcord_t</link>.</para>
+Implemented in <link linkend="_classexplorer__t_1a87452daa84e4b7145c1f50a812010824">explorer_t</link>, <link linkend="_classintro__t_1a3a698a22fdd0e66f603955af8ced0186">intro_t</link>, <link linkend="_classnotepad__t_1a3fa185451691009d01df66441f2accb4">notepad_t</link>, <link linkend="_classpause__t_1a0945dd5c1b896cd92d9d7454c13f577e">pause_t</link>, and <link linkend="_classshitcord__t_1a26224292a18d8df42b361a1f3b333ed8">shitcord_t</link>.</para>
 </section>
 <anchor xml:id="_classscene_1a5d4681a41f14704a05c4f84569888061"/><section>
     <title>loadTexture()</title>
@@ -175,16 +175,16 @@ Parameters</title>
 <para>
 Implemented in <link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">explorer_t</link>, <link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">intro_t</link>, <link linkend="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a">notepad_t</link>, <link linkend="_classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">pause_t</link>, and <link linkend="_classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696">shitcord_t</link>.</para>
 </section>
-<anchor xml:id="_classscene_1a34b71ea2aea3fd3c007786e75be817c7"/><section>
+<anchor xml:id="_classscene_1a668e98e3a86c4413fa3291c83fcc5378"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>scene</secondary></indexterm>
 <indexterm><primary>scene</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>virtual std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; scene::update ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>virtual const std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; scene::update ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
 
 <para>Updates scene logic. </para>
 </para>
 
-<para>Called in <link linkend="_classwm_1a54115bce16818acb350825256b11b2ce">wm::update()</link></para>
+<para>Called in <link linkend="_classwm_1a486c679090df44959f5bf6dd71db5983">wm::update()</link></para>
 
 <para><formalpara><title>Returns</title>
 
@@ -192,7 +192,7 @@ Implemented in <link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade7
 </formalpara>
 </para>
 <para>
-Implemented in <link linkend="_classexplorer__t_1a099b72112db6de2a3d8f6ea0b724fae5">explorer_t</link>, <link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">intro_t</link>, <link linkend="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">notepad_t</link>, <link linkend="_classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca">pause_t</link>, and <link linkend="_classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163">shitcord_t</link>.</para>
+Implemented in <link linkend="_classexplorer__t_1a9fd3219c8a05b381b5e8ee292000c1cb">explorer_t</link>, <link linkend="_classintro__t_1a0939d6693673f0f0d9dfc0e9fd8e224c">intro_t</link>, <link linkend="_classnotepad__t_1acb29bf9572b3733208643185c76e7f17">notepad_t</link>, <link linkend="_classpause__t_1a7975d907b119f75c9b87fe6f3ceb7d2c">pause_t</link>, and <link linkend="_classshitcord__t_1a13bf62175766d1ebc873c3a8ac8a1b55">shitcord_t</link>.</para>
 </section>
 </section>
 <section>

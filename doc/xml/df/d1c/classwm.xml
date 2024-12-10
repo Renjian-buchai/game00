@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="25" column="15" bodyfile="include/wm.hh" bodystart="25" bodyend="-1"/>
+        <location file="include/wm.hh" line="24" column="15" bodyfile="include/wm.hh" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1a718f320271041e9c08cdfbdc58cc3a64" prot="public" static="no" mutable="no">
         <type>SDL_Texture *</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="31" column="15" bodyfile="include/wm.hh" bodystart="31" bodyend="-1"/>
+        <location file="include/wm.hh" line="29" column="15" bodyfile="include/wm.hh" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3" prot="public" static="no" mutable="no">
         <type><ref refid="d0/d51/classgame" kindref="compound">game</ref> *</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="37" column="8" bodyfile="include/wm.hh" bodystart="37" bodyend="-1"/>
+        <location file="include/wm.hh" line="34" column="8" bodyfile="include/wm.hh" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1a50c97d11917956cf0abb63be275faddc" prot="public" static="no" mutable="no">
         <type>SDL_Rect</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="43" column="12" bodyfile="include/wm.hh" bodystart="43" bodyend="-1"/>
+        <location file="include/wm.hh" line="39" column="12" bodyfile="include/wm.hh" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1a205790bf574b52cabae2bca77b17c262" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="49" column="8" bodyfile="include/wm.hh" bodystart="49" bodyend="-1"/>
+        <location file="include/wm.hh" line="44" column="8" bodyfile="include/wm.hh" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" prot="public" static="no" mutable="no">
         <type>std::unique_ptr&lt; <ref refid="d5/db0/classexplorer__t" kindref="compound">explorer_t</ref> &gt;</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="57" column="19" bodyfile="include/wm.hh" bodystart="57" bodyend="-1"/>
+        <location file="include/wm.hh" line="51" column="19" bodyfile="include/wm.hh" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" prot="public" static="no" mutable="no">
         <type>std::unique_ptr&lt; <ref refid="d9/d03/classnotepad__t" kindref="compound">notepad_t</ref> &gt;</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="58" column="19" bodyfile="include/wm.hh" bodystart="58" bodyend="-1"/>
+        <location file="include/wm.hh" line="52" column="19" bodyfile="include/wm.hh" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1a856235eafcdb96ed22216d2b53fb3b24" prot="public" static="no" mutable="no">
         <type>std::unique_ptr&lt; <ref refid="dc/daa/classpause__t" kindref="compound">pause_t</ref> &gt;</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="59" column="19" bodyfile="include/wm.hh" bodystart="59" bodyend="-1"/>
+        <location file="include/wm.hh" line="53" column="19" bodyfile="include/wm.hh" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" prot="public" static="no" mutable="no">
         <type>std::unique_ptr&lt; <ref refid="d9/dea/classintro__t" kindref="compound">intro_t</ref> &gt;</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="60" column="19" bodyfile="include/wm.hh" bodystart="60" bodyend="-1"/>
+        <location file="include/wm.hh" line="54" column="19" bodyfile="include/wm.hh" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1a5b53423d16a28cc8c0eec221572fb454" prot="public" static="no" mutable="no">
         <type>std::unique_ptr&lt; <ref refid="de/deb/classshitcord__t" kindref="compound">shitcord_t</ref> &gt;</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="61" column="19" bodyfile="include/wm.hh" bodystart="61" bodyend="-1"/>
+        <location file="include/wm.hh" line="55" column="19" bodyfile="include/wm.hh" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" prot="public" static="no" mutable="no">
         <type><ref refid="df/db1/classscene" kindref="compound">scene</ref> *</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="67" column="9" bodyfile="include/wm.hh" bodystart="67" bodyend="-1"/>
+        <location file="include/wm.hh" line="60" column="9" bodyfile="include/wm.hh" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d1c/classwm_1aeedc8b11c2b96839e921b7f82840656e" prot="public" static="no" mutable="no">
         <type><ref refid="df/db1/classscene" kindref="compound">scene</ref> *</type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="72" column="9" bodyfile="include/wm.hh" bodystart="72" bodyend="-1"/>
+        <location file="include/wm.hh" line="65" column="9" bodyfile="include/wm.hh" bodystart="65" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="79" column="3"/>
+        <location file="include/wm.hh" line="72" column="3"/>
       </memberdef>
       <memberdef kind="function" id="df/d1c/classwm_1a963abfdd7d229db5869e59a97a301f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="87" column="3" bodyfile="src/game/wm.cc" bodystart="13" bodyend="66"/>
+        <location file="include/wm.hh" line="81" column="3" bodyfile="src/game/wm.cc" bodystart="13" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -244,11 +244,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="94" column="8" bodyfile="src/game/wm.cc" bodystart="68" bodyend="76"/>
+        <location file="include/wm.hh" line="88" column="8" bodyfile="src/game/wm.cc" bodystart="68" bodyend="76"/>
       </memberdef>
-      <memberdef kind="function" id="df/d1c/classwm_1a08290ca96dc53c185d114f2beae1f7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>std::pair&lt; scenes, sceneData &gt; wm::handle</definition>
+      <memberdef kind="function" id="df/d1c/classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>const std::pair&lt; scenes, sceneData &gt; wm::handle</definition>
         <argsstring>(const SDL_Event &amp;event)</argsstring>
         <name>handle</name>
         <qualifiedname>wm::handle</qualifiedname>
@@ -275,11 +275,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="102" column="13" bodyfile="src/game/wm.cc" bodystart="92" bodyend="168"/>
+        <location file="include/wm.hh" line="97" column="19" bodyfile="src/game/wm.cc" bodystart="92" bodyend="168"/>
       </memberdef>
-      <memberdef kind="function" id="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
-        <definition>std::pair&lt; scenes, sceneData &gt; wm::update</definition>
+      <memberdef kind="function" id="df/d1c/classwm_1a486c679090df44959f5bf6dd71db5983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
+        <definition>const std::pair&lt; scenes, sceneData &gt; wm::update</definition>
         <argsstring>()</argsstring>
         <name>update</name>
         <qualifiedname>wm::update</qualifiedname>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/wm.hh" line="109" column="13" bodyfile="src/game/wm.cc" bodystart="78" bodyend="90"/>
+        <location file="include/wm.hh" line="105" column="19" bodyfile="src/game/wm.cc" bodystart="78" bodyend="90"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -327,12 +327,12 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/wm.hh" line="19" column="1" bodyfile="include/wm.hh" bodystart="19" bodyend="110"/>
+    <location file="include/wm.hh" line="19" column="1" bodyfile="include/wm.hh" bodystart="19" bodyend="106"/>
     <listofallmembers>
       <member refid="df/d1c/classwm_1af9afae9fdbb9db6fdb6d62bf934ab5c3" prot="public" virt="non-virtual"><scope>wm</scope><name>context</name></member>
       <member refid="df/d1c/classwm_1a2abf8c7eedd04f896cbf0ef50358f1c7" prot="public" virt="non-virtual"><scope>wm</scope><name>current</name></member>
       <member refid="df/d1c/classwm_1adbe11e0ba621af1815bf54fde8244645" prot="public" virt="non-virtual"><scope>wm</scope><name>explorer</name></member>
-      <member refid="df/d1c/classwm_1a08290ca96dc53c185d114f2beae1f7a6" prot="public" virt="non-virtual"><scope>wm</scope><name>handle</name></member>
+      <member refid="df/d1c/classwm_1ae5f8a28b02b3bc82d4422c6ea0e745ca" prot="public" virt="non-virtual"><scope>wm</scope><name>handle</name></member>
       <member refid="df/d1c/classwm_1aab22b0e4971405b7fe57e8409e68793b" prot="public" virt="non-virtual"><scope>wm</scope><name>icons</name></member>
       <member refid="df/d1c/classwm_1a139e824c013da025cafc10d68b73aa34" prot="public" virt="non-virtual"><scope>wm</scope><name>intro</name></member>
       <member refid="df/d1c/classwm_1a041f88bc8a008ca3baca643fb12a1004" prot="public" virt="non-virtual"><scope>wm</scope><name>notepad</name></member>
@@ -342,7 +342,7 @@
       <member refid="df/d1c/classwm_1aa9731642bc561de498bc559f0d5ab84e" prot="public" virt="non-virtual"><scope>wm</scope><name>render</name></member>
       <member refid="df/d1c/classwm_1aeedc8b11c2b96839e921b7f82840656e" prot="public" virt="non-virtual"><scope>wm</scope><name>resume</name></member>
       <member refid="df/d1c/classwm_1a5b53423d16a28cc8c0eec221572fb454" prot="public" virt="non-virtual"><scope>wm</scope><name>shitcord</name></member>
-      <member refid="df/d1c/classwm_1a54115bce16818acb350825256b11b2ce" prot="public" virt="non-virtual"><scope>wm</scope><name>update</name></member>
+      <member refid="df/d1c/classwm_1a486c679090df44959f5bf6dd71db5983" prot="public" virt="non-virtual"><scope>wm</scope><name>update</name></member>
       <member refid="df/d1c/classwm_1a205790bf574b52cabae2bca77b17c262" prot="public" virt="non-virtual"><scope>wm</scope><name>wasSilence</name></member>
       <member refid="df/d1c/classwm_1ae80ff7518d15add5e8a639bc1b509ed4" prot="public" virt="non-virtual"><scope>wm</scope><name>wm</name></member>
       <member refid="df/d1c/classwm_1a963abfdd7d229db5869e59a97a301f47" prot="public" virt="non-virtual"><scope>wm</scope><name>wm</name></member>
