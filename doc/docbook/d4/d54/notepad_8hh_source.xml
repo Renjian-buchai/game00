@@ -20,11 +20,11 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 37 &#32;&#32;SDL_Rect&#32;<link linkend="_classnotepad__t_1af6ff2f6dffb32c3fd6edc955c4b0dfba">entryRect</link>;
 38 
 39 &#32;<emphasis role="keyword">public</emphasis>:
-47 &#32;&#32;<link linkend="_classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f">notepad_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>);
+47 &#32;&#32;<link linkend="_classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f">notepad_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
 53 &#32;&#32;<link linkend="_classnotepad__t_1ac047cc39e7ff3f954057314e6298d6b1">~notepad_t</link>();
 62 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
 66 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
-76 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classnotepad__t_1ad98a24e386e2a0363a44e67054988160">handle</link>(SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+76 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
 77 };
 78 
 79 <emphasis role="preprocessor">#endif</emphasis>

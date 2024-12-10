@@ -132,7 +132,7 @@
 <para>Called only once when WM is initialised</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>_context</parametername>
+<parametername>context</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>game context </para>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="47" column="3" bodyfile="src/scenes/notepad.cc" bodystart="7" bodyend="30"/>
+        <location file="include/scenes/notepad.hh" line="47" column="3" bodyfile="src/scenes/notepad.cc" bodystart="9" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="d9/d03/classnotepad__t_1ac047cc39e7ff3f954057314e6298d6b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="53" column="3" bodyfile="src/scenes/notepad.cc" bodystart="32" bodyend="35"/>
+        <location file="include/scenes/notepad.hh" line="53" column="3" bodyfile="src/scenes/notepad.cc" bodystart="34" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="d9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="62" column="13" bodyfile="src/scenes/notepad.cc" bodystart="37" bodyend="62"/>
+        <location file="include/scenes/notepad.hh" line="62" column="13" bodyfile="src/scenes/notepad.cc" bodystart="39" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="d9/d03/classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -195,17 +195,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="66" column="8" bodyfile="src/scenes/notepad.cc" bodystart="64" bodyend="67"/>
+        <location file="include/scenes/notepad.hh" line="66" column="8" bodyfile="src/scenes/notepad.cc" bodystart="66" bodyend="69"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d03/classnotepad__t_1ad98a24e386e2a0363a44e67054988160" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="d9/d03/classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::pair&lt; <ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a" kindref="member">scenes</ref>, <ref refid="d9/d05/enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab" kindref="member">sceneData</ref> &gt;</type>
         <definition>std::pair&lt; scenes, sceneData &gt; notepad_t::handle</definition>
-        <argsstring>(SDL_Event &amp;event) override</argsstring>
+        <argsstring>(const SDL_Event &amp;event) override</argsstring>
         <name>handle</name>
         <qualifiedname>notepad_t::handle</qualifiedname>
-        <reimplements refid="df/db1/classscene_1a56dec35146b15669e3cf054ced2f4be2">handle</reimplements>
+        <reimplements refid="df/db1/classscene_1ac8586aac663647453efaaa03bb8bf0e0">handle</reimplements>
         <param>
-          <type>SDL_Event &amp;</type>
+          <type>const SDL_Event &amp;</type>
           <declname>event</declname>
         </param>
         <briefdescription>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/notepad.hh" line="76" column="13" bodyfile="src/scenes/notepad.cc" bodystart="69" bodyend="71"/>
+        <location file="include/scenes/notepad.hh" line="76" column="13" bodyfile="src/scenes/notepad.cc" bodystart="71" bodyend="73"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -283,18 +283,18 @@
     <location file="include/scenes/notepad.hh" line="6" column="1" bodyfile="include/scenes/notepad.hh" bodystart="6" bodyend="77"/>
     <listofallmembers>
       <member refid="d9/d03/classnotepad__t_1a4416b91e1e20a180f9a00855b6f9c459" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>background</name></member>
-      <member refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>context</name></member>
+      <member refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>context</name></member>
       <member refid="d9/d03/classnotepad__t_1a71add6ff4e2c0947e3043df553695bd1" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>currentData</name></member>
       <member refid="d9/d03/classnotepad__t_1a6766a5c1170ee8fab7ecdb209f0d2076" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>entry</name></member>
       <member refid="d9/d03/classnotepad__t_1af6ff2f6dffb32c3fd6edc955c4b0dfba" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>entryRect</name></member>
-      <member refid="d9/d03/classnotepad__t_1ad98a24e386e2a0363a44e67054988160" prot="public" virt="virtual"><scope>notepad_t</scope><name>handle</name></member>
+      <member refid="d9/d03/classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e" prot="public" virt="virtual"><scope>notepad_t</scope><name>handle</name></member>
       <member refid="d9/d03/classnotepad__t_1a312b35908588ed45384a73e3ad7f4992" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>lineWrapLength</name></member>
       <member refid="df/db1/classscene_1a5d4681a41f14704a05c4f84569888061" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>loadTexture</name></member>
       <member refid="d9/d03/classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>notepad_t</name></member>
       <member refid="d9/d03/classnotepad__t_1ade41e5a025182a3a851e078e8fbbe4af" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>prevData</name></member>
       <member refid="d9/d03/classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a" prot="public" virt="virtual"><scope>notepad_t</scope><name>render</name></member>
       <member refid="d9/d03/classnotepad__t_1a6af0111089b6735d3e21cdfb1b198e65" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>scale</name></member>
-      <member refid="df/db1/classscene_1a1012571c9524a29524b8b9d680715e90" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>scene</name></member>
+      <member refid="df/db1/classscene_1ad7ef1968aa37f2e796fec45026b9ade0" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>scene</name></member>
       <member refid="d9/d03/classnotepad__t_1ab177e5696b0a4925d4309ce90e5f66aa" prot="public" virt="virtual"><scope>notepad_t</scope><name>update</name></member>
       <member refid="d9/d03/classnotepad__t_1ac047cc39e7ff3f954057314e6298d6b1" prot="public" virt="non-virtual"><scope>notepad_t</scope><name>~notepad_t</name></member>
       <member refid="df/db1/classscene_1aa97c9c1f46aa44e63223a737fcdcb496" prot="public" virt="virtual"><scope>notepad_t</scope><name>~scene</name></member>

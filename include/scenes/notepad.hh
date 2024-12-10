@@ -42,7 +42,7 @@ class notepad_t : public scene {
    *
    * Called only once when WM is initialised
    *
-   * @param _context game context
+   * @param context game context
    */
   notepad_t(game* context);
   /**
@@ -73,7 +73,7 @@ class notepad_t : public scene {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  std::pair<scenes, sceneData> handle(SDL_Event& event) override;
+  std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
 };
 
 #endif

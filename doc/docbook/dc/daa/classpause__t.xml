@@ -16,7 +16,7 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classpause__t_1a840256e71d9ff0f489090fff8f07c946">pause_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>)</para>
+            <listitem><para><link linkend="_classpause__t_1a840256e71d9ff0f489090fff8f07c946">pause_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>)</para>
 
 <para>Construct a new pause t object. </para>
 </listitem>
@@ -32,7 +32,7 @@
 
 <para>Renders menu, and buttons. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac">handle</link> (SDL_Event &amp;event) override</para>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classpause__t_1adde6ed8cc11b8464ca58018423ac25ea">handle</link> (const SDL_Event &amp;event) override</para>
 
 <para>Handles hovers. </para>
 </listitem>
@@ -43,7 +43,7 @@ Public Member Functions inherited from <link linkend="_classscene">scene</link> 
 
 <para>Loads texture based on path. </para>
 </listitem>
-            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+            <listitem><para><link linkend="_classscene_1ad7ef1968aa37f2e796fec45026b9ade0">scene</link> (const <link linkend="_classgame">game</link> *gameContext)</para>
 
 <para>Construct a new scene object. </para>
 </listitem>
@@ -92,7 +92,7 @@ Public Member Functions inherited from <link linkend="_classscene">scene</link> 
         </itemizedlist>
 </simplesect>
 Public Attributes inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
-            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+            <listitem><para>const <link linkend="_classgame">game</link> * <link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link></para>
 
 <para>Game context. </para>
 </listitem>
@@ -146,11 +146,11 @@ Parameters</title>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac"/><section>
+<anchor xml:id="_classpause__t_1adde6ed8cc11b8464ca58018423ac25ea"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>pause_t</secondary></indexterm>
 <indexterm><primary>pause_t</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; pause_t::handle (SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; pause_t::handle (const SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Handles hovers. </para>
 </para>
@@ -181,7 +181,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene</link>.</para>
+Implements <link linkend="_classscene_1ac8586aac663647453efaaa03bb8bf0e0">scene</link>.</para>
 </section>
 <anchor xml:id="_classpause__t_1a021e3734b6d7c0688490809b5f87d8c8"/><section>
     <title>render()</title>

@@ -3,6 +3,6 @@
 <title>Class List</title>
 Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_classexplorer__t">explorer_t</link><link linkend="_classgame">game</link><link linkend="_classintro__t">intro_t</link><link linkend="_classnotepad__t">notepad_t</link><link linkend="_classpause__t">pause_t</link><link linkend="_classscene">scene</link>
 <para>Interface class for scenes </para>
-<link linkend="_classintro__t_1_1slide">intro_t::slide</link>
+<link linkend="_classshitcord__t">shitcord_t</link><link linkend="_classintro__t_1_1slide">intro_t::slide</link>
 <para>Contains all the information required for a functional slideshow </para>
 <link linkend="_classwm">wm</link><link linkend="_structwm_init_data">wmInitData</link></section>

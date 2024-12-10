@@ -16,7 +16,7 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f">notepad_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>)</para>
+            <listitem><para><link linkend="_classnotepad__t_1aca34ffdf14d61518257d5ff32cbda77f">notepad_t</link> (<link linkend="_classgame">game</link> *<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>)</para>
 
 <para>Construct a new notepad t object. </para>
 </listitem>
@@ -32,7 +32,7 @@
 
 <para>Renders notepad, and entry. </para>
 </listitem>
-            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classnotepad__t_1ad98a24e386e2a0363a44e67054988160">handle</link> (SDL_Event &amp;event) override</para>
+            <listitem><para>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; <link linkend="_classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e">handle</link> (const SDL_Event &amp;event) override</para>
 
 <para>Handles event. </para>
 </listitem>
@@ -43,7 +43,7 @@ Public Member Functions inherited from <link linkend="_classscene">scene</link> 
 
 <para>Loads texture based on path. </para>
 </listitem>
-            <listitem><para><link linkend="_classscene_1a1012571c9524a29524b8b9d680715e90">scene</link> (<link linkend="_classgame">game</link> *gameContext)</para>
+            <listitem><para><link linkend="_classscene_1ad7ef1968aa37f2e796fec45026b9ade0">scene</link> (const <link linkend="_classgame">game</link> *gameContext)</para>
 
 <para>Construct a new scene object. </para>
 </listitem>
@@ -82,7 +82,7 @@ Public Member Functions inherited from <link linkend="_classscene">scene</link> 
         </itemizedlist>
 </simplesect>
 Public Attributes inherited from <link linkend="_classscene">scene</link>        <itemizedlist>
-            <listitem><para><link linkend="_classgame">game</link> * <link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link></para>
+            <listitem><para>const <link linkend="_classgame">game</link> * <link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link></para>
 
 <para>Game context. </para>
 </listitem>
@@ -120,7 +120,7 @@ Parameters</title>
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-<entry>_context</entry><entry>
+<entry>context</entry><entry>
 <para>game context </para>
 </entry>
                             </row>
@@ -145,11 +145,11 @@ Parameters</title>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classnotepad__t_1ad98a24e386e2a0363a44e67054988160"/><section>
+<anchor xml:id="_classnotepad__t_1ac830adac821c1a0312bfc76e7d9b1a2e"/><section>
     <title>handle()</title>
 <indexterm><primary>handle</primary><secondary>notepad_t</secondary></indexterm>
 <indexterm><primary>notepad_t</primary><secondary>handle</secondary></indexterm>
-<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; notepad_t::handle (SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>std::pair&lt; <link linkend="_enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8a">scenes</link>, <link linkend="_enum_8hh_1ae5fd02a37eaf8afa38cba1e723317dab">sceneData</link> &gt; notepad_t::handle (const SDL_Event &amp; event)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Handles event. </para>
 </para>
@@ -182,7 +182,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Implements <link linkend="_classscene_1a56dec35146b15669e3cf054ced2f4be2">scene</link>.</para>
+Implements <link linkend="_classscene_1ac8586aac663647453efaaa03bb8bf0e0">scene</link>.</para>
 </section>
 <anchor xml:id="_classnotepad__t_1a08c6c7349f0912c9f547b25fa8189f9a"/><section>
     <title>render()</title>

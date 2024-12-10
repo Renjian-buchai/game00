@@ -6,7 +6,7 @@
 #include "SDL_image.h"
 #include "game.hh"
 
-scene::scene(game* _context) : context(_context) {}
+scene::scene(const game* _context) : context(_context) {}
 
 scene::~scene() {}
 

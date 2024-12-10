@@ -19,7 +19,7 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 29 
 33 &#32;&#32;<emphasis role="keyword">const</emphasis>&#32;SDL_Rect&#32;<link linkend="_classexplorer__t_1ab134139610d2267ca833abcd44b39aac">downloadBounds</link>;
 34 
-42 &#32;&#32;<link linkend="_classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6">explorer_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>);
+42 &#32;&#32;<link linkend="_classexplorer__t_1a75961f78eebb4030c1f2d7b78929a2b6">explorer_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
 43 
 49 &#32;&#32;<link linkend="_classexplorer__t_1a44fc2dcde828c85abf707bb5ff024b50">~explorer_t</link>();
 50 
@@ -27,7 +27,7 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 60 
 64 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classexplorer__t_1aeeb2aa5c58317a29463ce527b2ade757">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
 65 
-73 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classexplorer__t_1add68d9bf9c0e52805f4bb714b1133882">handle</link>(SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+73 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classexplorer__t_1a81d4adbe69a07633bf402dafffcac4d9">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
 74 
 83 &#32;&#32;SDL_Texture*&#32;<link linkend="_classexplorer__t_1a37bd5f0b908b0c66a411c873733e3f5a">createFilesystemEntry</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;text,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_enum_8hh_1a8cc8a11a6b6df22c3570fbee895c587aaf7bd60b75b29d79b660a2859395c1a24">size</link>);
 84 };

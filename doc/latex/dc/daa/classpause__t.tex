@@ -13,7 +13,7 @@ Inheritance diagram for pause\+\_\+t\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classpause__t_a840256e71d9ff0f489090fff8f07c946}{pause\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}})
+\mbox{\hyperlink{classpause__t_a840256e71d9ff0f489090fff8f07c946}{pause\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}})
 \begin{DoxyCompactList}\small\item\em Construct a new pause t object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classpause__t_a8e6961a2a9fb61c99e92face62126593}{\texorpdfstring{$\sim$}{\string~}pause\+\_\+t}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the pause t object. \end{DoxyCompactList}\item 
@@ -21,14 +21,14 @@ std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scen
 \begin{DoxyCompactList}\small\item\em Update logic for the pause menu. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classpause__t_a021e3734b6d7c0688490809b5f87d8c8}{render}} () override
 \begin{DoxyCompactList}\small\item\em Renders menu, and buttons. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classpause__t_a267e138e3c13edfb2e0c57cb9100ceac}{handle}} (SDL\+\_\+\+Event \&event) override
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classpause__t_adde6ed8cc11b8464ca58018423ac25ea}{handle}} (const SDL\+\_\+\+Event \&event) override
 \begin{DoxyCompactList}\small\item\em Handles hovers. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classscene}{scene}}}
 \begin{DoxyCompactItemize}
 \item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
 \begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classscene_a1012571c9524a29524b8b9d680715e90}{scene}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\mbox{\hyperlink{classscene_ad7ef1968aa37f2e796fec45026b9ade0}{scene}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
 \begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -56,7 +56,7 @@ SDL\+\_\+\+Rect \mbox{\hyperlink{classpause__t_a9034485c8caf7cd1dfddf7f300542747
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classscene}{scene}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}}
+const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}}
 \begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -94,8 +94,8 @@ Called only when the wm is destroyed
 \index{pause\_t@{pause\_t}!handle@{handle}}
 \index{handle@{handle}!pause\_t@{pause\_t}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classpause__t_a267e138e3c13edfb2e0c57cb9100ceac} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ pause\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classpause__t_adde6ed8cc11b8464ca58018423ac25ea} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ pause\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -111,7 +111,7 @@ std\+::pair$<$scenes, scene\+Data$>$Returns the scene to be changed to, and the 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classscene_a56dec35146b15669e3cf054ced2f4be2}{scene}}.
+Implements \mbox{\hyperlink{classscene_ac8586aac663647453efaaa03bb8bf0e0}{scene}}.
 
 \index{pause\_t@{pause\_t}!render@{render}}
 \index{render@{render}!pause\_t@{pause\_t}}

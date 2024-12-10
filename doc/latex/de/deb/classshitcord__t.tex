@@ -1,0 +1,167 @@
+\doxysection{shitcord\+\_\+t Class Reference}
+\label{classshitcord__t}\index{shitcord\_t@{shitcord\_t}}
+
+
+{\ttfamily \#include $<$shitcord.\+hh$>$}
+
+Inheritance diagram for shitcord\+\_\+t\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/deb/classshitcord__t}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classshitcord__t_aac03a23af4132dd92108d20b30a6be0d}{shitcord\+\_\+t}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}})
+\begin{DoxyCompactList}\small\item\em Construct a new shitcord t object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classshitcord__t_a46798c707ed5dce9b324cdaa17db5c71}{\texorpdfstring{$\sim$}{\string~}shitcord\+\_\+t}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the shitcord t object. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classshitcord__t_a9e1bba8daf615bf68d9e3f5616a02163}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update logic for shitcord. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classshitcord__t_a04b3dbd430b42e009e6c47122c69e696}{render}} () override
+\begin{DoxyCompactList}\small\item\em Renders menu, and messages. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classshitcord__t_a0ea2efbb16cd3134848f2c9b58326755}{handle}} (const SDL\+\_\+\+Event \&event) override
+\begin{DoxyCompactList}\small\item\em Handles hovers. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classshitcord__t_a94654f5d652fb31631e2ff17e5c3776b}{generate\+Options}} (const std\+::array$<$ std\+::string, 3 $>$ options)
+\begin{DoxyCompactList}\small\item\em Generates the option texture from the surface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classscene}{scene}}}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
+\begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classscene_ad7ef1968aa37f2e796fec45026b9ade0}{scene}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classshitcord__t_a18f38f0c4bb56eeffdd3ef8657626081}{background}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classscene}{scene}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}}
+\begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{shitcord\_t@{shitcord\_t}!shitcord\_t@{shitcord\_t}}
+\index{shitcord\_t@{shitcord\_t}!shitcord\_t@{shitcord\_t}}
+\doxysubsubsection{\texorpdfstring{shitcord\_t()}{shitcord\_t()}}
+{\footnotesize\ttfamily \label{classshitcord__t_aac03a23af4132dd92108d20b30a6be0d} 
+shitcord\+\_\+t\+::shitcord\+\_\+t (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}}]{context}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new shitcord t object. 
+
+Called only once when WM is initialised
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & game context \\
+\hline
+\end{DoxyParams}
+\index{shitcord\_t@{shitcord\_t}!````~shitcord\_t@{\texorpdfstring{$\sim$}{\string~}shitcord\_t}}
+\index{````~shitcord\_t@{\texorpdfstring{$\sim$}{\string~}shitcord\_t}!shitcord\_t@{shitcord\_t}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}shitcord\_t()}{\string~shitcord\_t()}}
+{\footnotesize\ttfamily \label{classshitcord__t_a46798c707ed5dce9b324cdaa17db5c71} 
+shitcord\+\_\+t\+::\texorpdfstring{$\sim$}{\string~}shitcord\+\_\+t (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destroy the shitcord t object. 
+
+Called only when the wm is destroyed 
+
+\doxysubsection{Member Function Documentation}
+\index{shitcord\_t@{shitcord\_t}!generateOptions@{generateOptions}}
+\index{generateOptions@{generateOptions}!shitcord\_t@{shitcord\_t}}
+\doxysubsubsection{\texorpdfstring{generateOptions()}{generateOptions()}}
+{\footnotesize\ttfamily \label{classshitcord__t_a94654f5d652fb31631e2ff17e5c3776b} 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} shitcord\+\_\+t\+::generate\+Options (\begin{DoxyParamCaption}\item[{const std\+::array$<$ std\+::string, 3 $>$}]{options}{}\end{DoxyParamCaption})}
+
+
+
+Generates the option texture from the surface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & Options to be enumerated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} Texture, upscaled by a factor of 2. 
+\end{DoxyReturn}
+\index{shitcord\_t@{shitcord\_t}!handle@{handle}}
+\index{handle@{handle}!shitcord\_t@{shitcord\_t}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classshitcord__t_a0ea2efbb16cd3134848f2c9b58326755} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ shitcord\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles hovers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$Returns the scene to be changed to, and the data that scene should contain 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classscene_ac8586aac663647453efaaa03bb8bf0e0}{scene}}.
+
+\index{shitcord\_t@{shitcord\_t}!render@{render}}
+\index{render@{render}!shitcord\_t@{shitcord\_t}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classshitcord__t_a04b3dbd430b42e009e6c47122c69e696} 
+void shitcord\+\_\+t\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders menu, and messages. 
+
+
+
+Implements \mbox{\hyperlink{classscene_a7c218380f822d46bee781520e855a7de}{scene}}.
+
+\index{shitcord\_t@{shitcord\_t}!update@{update}}
+\index{update@{update}!shitcord\_t@{shitcord\_t}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classshitcord__t_a9e1bba8daf615bf68d9e3f5616a02163} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ shitcord\+\_\+t\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update logic for shitcord. 
+
+Probably does the message appearing
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$scenes, scene\+Data$>$ Returns the scene to be changed to, and the data that scene should contain 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classscene_a34b71ea2aea3fd3c007786e75be817c7}{scene}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\index{shitcord\_t@{shitcord\_t}!background@{background}}
+\index{background@{background}!shitcord\_t@{shitcord\_t}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \label{classshitcord__t_a18f38f0c4bb56eeffdd3ef8657626081} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} shitcord\+\_\+t\+::background}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/scenes/\mbox{\hyperlink{shitcord_8hh}{shitcord.\+hh}}\item 
+src/scenes/\mbox{\hyperlink{shitcord_8cc}{shitcord.\+cc}}\end{DoxyCompactItemize}

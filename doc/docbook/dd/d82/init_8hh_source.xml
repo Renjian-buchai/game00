@@ -28,11 +28,11 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 33 &#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_classintro__t_1a6db4493f9b8695a1bed2f16f3af45870">startTime</link>;
 37 &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classintro__t_1a1543b2b845c6999165123b34608fcf25">skip</link>;
 38 
-46 &#32;&#32;<link linkend="_classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d">intro_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>);
+46 &#32;&#32;<link linkend="_classintro__t_1ad12e48028d1cc4b1c288dab77dbe193d">intro_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
 50 &#32;&#32;<link linkend="_classintro__t_1a56e63618edf895c263cda8a8c8ef45e6">~intro_t</link>();
 62 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1a09c3876e890a37be7a17dbbb0084d4da">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
 66 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1add93912d666cc242e170f15e7e03a808">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
-73 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1adda2b278aae9bae71b89194313bc23a9">handle</link>(SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+73 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classintro__t_1a87ef6743a3237d0a5d12b45d18d139ec">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
 74 
 82 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a104f915a0a592c0db524a70ffc666a60">slideShow</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;time,&#32;<emphasis role="keywordtype">bool</emphasis>&amp;&#32;click,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;skipGrace&#32;=&#32;500);
 95 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classintro__t_1a0439809e2c67c40ea20757ffed70968c">addSlide</link>(SDL_Surface*&#32;surface,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;fadeIn,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;duration,

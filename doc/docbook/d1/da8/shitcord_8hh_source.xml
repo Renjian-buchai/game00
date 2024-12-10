@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_shitcord_8hh_source" xml:lang="en-US">
+<title>shitcord.hh</title>
+<indexterm><primary>include/scenes/shitcord.hh</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#if&#32;!defined(SHITCORD_HH)</emphasis>
+2 <emphasis role="preprocessor">#define&#32;SHITCORD_HH</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&lt;array&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+6 
+7 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_scene_8hh">scene.hh</link>&quot;</emphasis>
+8 
+9 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classshitcord__t">shitcord_t</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classscene">scene</link>&#32;{
+10 &#32;<emphasis role="keyword">public</emphasis>:
+11 &#32;&#32;SDL_Texture*&#32;<link linkend="_classshitcord__t_1a18f38f0c4bb56eeffdd3ef8657626081">background</link>;
+12 
+20 &#32;&#32;<link linkend="_classshitcord__t_1aac03a23af4132dd92108d20b30a6be0d">shitcord_t</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
+21 
+27 &#32;&#32;<link linkend="_classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71">~shitcord_t</link>();
+28 
+37 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
+38 
+42 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
+43 
+51 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+52 
+59 &#32;&#32;SDL_Texture*&#32;<link linkend="_classshitcord__t_1a94654f5d652fb31631e2ff17e5c3776b">generateOptions</link>(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;std::string,&#32;3&gt;&#32;options);
+60 };
+61 
+62 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

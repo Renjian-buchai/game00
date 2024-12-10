@@ -21,11 +21,11 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 39 &#32;&#32;SDL_Texture*&#32;<link linkend="_classpause__t_1ae058f8bee107894a18b483c2433b719e">exitState</link>;
 43 &#32;&#32;SDL_Rect&#32;<link linkend="_classpause__t_1a9034485c8caf7cd1dfddf7f300542747">exitPos</link>;
 44 
-52 &#32;&#32;<link linkend="_classpause__t_1a840256e71d9ff0f489090fff8f07c946">pause_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1ae9987da046dc0255632015f0e42a546c">context</link>);
+52 &#32;&#32;<link linkend="_classpause__t_1a840256e71d9ff0f489090fff8f07c946">pause_t</link>(<link linkend="_classgame">game</link>*&#32;<link linkend="_classscene_1a1659b1da41590a2ac67f9927beb823ea">context</link>);
 58 &#32;&#32;<link linkend="_classpause__t_1a8e6961a2a9fb61c99e92face62126593">~pause_t</link>();
 67 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classpause__t_1ac738a9a7bc4671c59a8a9eacd9d0e0ca">update</link>()&#32;<emphasis role="keyword">override</emphasis>;
 71 &#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classpause__t_1a021e3734b6d7c0688490809b5f87d8c8">render</link>()&#32;<emphasis role="keyword">override</emphasis>;
-79 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac">handle</link>(SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
+79 &#32;&#32;std::pair&lt;scenes,&#32;sceneData&gt;&#32;<link linkend="_classpause__t_1adde6ed8cc11b8464ca58018423ac25ea">handle</link>(<emphasis role="keyword">const</emphasis>&#32;SDL_Event&amp;&#32;event)&#32;<emphasis role="keyword">override</emphasis>;
 80 };
 81 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

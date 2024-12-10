@@ -99,7 +99,7 @@ class wm {
    * @return std::pair<scenes, sceneData> Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  std::pair<scenes, sceneData> handle(SDL_Event& event);
+  std::pair<scenes, sceneData> handle(const SDL_Event& event);
   /**
    * @brief Updates scene data.
    *

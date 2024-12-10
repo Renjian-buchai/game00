@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/scenes/init.hh" line="15" column="5" bodyfile="src/scenes/init.cc" bodystart="5" bodyend="12"/>
+        <location file="include/scenes/init.hh" line="15" column="5" bodyfile="src/scenes/init.cc" bodystart="6" bodyend="13"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

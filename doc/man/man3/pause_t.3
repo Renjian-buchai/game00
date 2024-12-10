@@ -30,7 +30,7 @@ Inherits \fBscene\fP\&.
 .br
 .RI "Renders menu, and buttons\&. "
 .ti -1c
-.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &event) override"
+.RI "std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &event) override"
 .br
 .RI "Handles hovers\&. "
 .in -1c
@@ -42,7 +42,7 @@ Public Member Functions inherited from \fBscene\fP
 .br
 .RI "Loads texture based on path\&. "
 .ti -1c
-.RI "\fBscene\fP (\fBgame\fP *gameContext)"
+.RI "\fBscene\fP (const \fBgame\fP *gameContext)"
 .br
 .RI "Construct a new scene object\&. "
 .ti -1c
@@ -93,7 +93,7 @@ Public Member Functions inherited from \fBscene\fP
 Public Attributes inherited from \fBscene\fP
 .in +1c
 .ti -1c
-.RI "\fBgame\fP * \fBcontext\fP"
+.RI "const \fBgame\fP * \fBcontext\fP"
 .br
 .RI "Game context\&. "
 .in -1c
@@ -117,7 +117,7 @@ Construct a new pause t object\&. Called only once when WM is initialised
 Destroy the pause t object\&. Called only when the wm is destroyed 
 .SH "Member Function Documentation"
 .PP 
-.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > pause_t::handle (SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
+.SS "std::pair< \fBscenes\fP, \fBsceneData\fP > pause_t::handle (const SDL_Event & event)\fR [override]\fP, \fR [virtual]\fP"
 
 .PP
 Handles hovers\&. 

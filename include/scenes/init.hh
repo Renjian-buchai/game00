@@ -70,7 +70,7 @@ class intro_t : public scene {
    * @param event
    * @return std::pair<scenes, sceneData>
    */
-  std::pair<scenes, sceneData> handle(SDL_Event& event) override;
+  std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
 
   /**
    * @brief Performs the slideshow logic.

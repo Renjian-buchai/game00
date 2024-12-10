@@ -2,49 +2,32 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
   <compounddef id="df/d0b/pause_8cc" kind="file" language="C++">
     <compoundname>pause.cc</compoundname>
-    <includes refid="d4/d90/pause_8hh" local="yes">../../include/scenes/pause.hh</includes>
-    <includes refid="d3/d0e/game_8hh" local="yes">../../include/game.hh</includes>
+    <includes refid="d4/d90/pause_8hh" local="yes">scenes/pause.hh</includes>
+    <includes refid="d3/d0e/game_8hh" local="yes">game.hh</includes>
     <incdepgraph>
-      <node id="13">
+      <node id="5">
         <label>SDL.h</label>
       </node>
-      <node id="14">
-        <label>SDL_image.h</label>
-      </node>
-      <node id="15">
+      <node id="11">
         <label>SDL_mixer.h</label>
       </node>
-      <node id="16">
+      <node id="12">
         <label>SDL_ttf.h</label>
       </node>
-      <node id="17">
-        <label>../enum.hh</label>
+      <node id="6">
+        <label>enum.hh</label>
         <link refid="d9/d05/enum_8hh"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>../../include/game.hh</label>
-        <link refid="d3/d0e/game_8hh"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>../../include/pch.hh</label>
-        <link refid="d0/d8b/pch_8hh"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
+      </node>
+      <node id="9">
+        <label>game.hh</label>
+        <link refid="d3/d0e/game_8hh"/>
         <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
@@ -52,33 +35,27 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
       </node>
-      <node id="20">
+      <node id="16">
         <label>scenes/explorer.hh</label>
         <link refid="d4/d7c/explorer_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="17">
         <label>scenes/init.hh</label>
         <link refid="dd/d82/init_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="18">
         <label>scenes/notepad.hh</label>
         <link refid="d4/d54/notepad_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="2">
-        <label>../../include/scenes/pause.hh</label>
+        <label>scenes/pause.hh</label>
         <link refid="d4/d90/pause_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -88,23 +65,41 @@
         <link refid="d5/dd8/scene_8hh"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="19">
-        <label>wm.hh</label>
-        <link refid="d3/d51/wm_8hh"/>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
+        <label>scenes/shitcord.hh</label>
+        <link refid="d1/da8/shitcord_8hh"/>
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+      </node>
+      <node id="13">
+        <label>wm.hh</label>
+        <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -112,31 +107,28 @@
         <link refid="df/d0b/pause_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="10">
         <label>array</label>
       </node>
-      <node id="6">
+      <node id="7">
         <label>cstdint</label>
       </node>
-      <node id="7">
-        <label>iostream</label>
-      </node>
-      <node id="8">
+      <node id="14">
         <label>memory</label>
       </node>
-      <node id="9">
+      <node id="20">
         <label>string</label>
       </node>
-      <node id="10">
+      <node id="4">
         <label>utility</label>
       </node>
-      <node id="11">
+      <node id="8">
         <label>variant</label>
       </node>
-      <node id="12">
+      <node id="15">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -145,9 +137,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d90/pause_8hh" kindref="compound">../../include/scenes/pause.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d90/pause_8hh" kindref="compound">scenes/pause.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">../../include/game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"><ref refid="dc/daa/classpause__t_1a840256e71d9ff0f489090fff8f07c946" kindref="member">pause_t::pause_t</ref>(<ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context),</highlight></codeline>
@@ -176,12 +168,12 @@
 <codeline lineno="29"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/daa/classpause__t_1a021e3734b6d7c0688490809b5f87d8c8" kindref="member">pause_t::render</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="dc/daa/classpause__t_1abc176f557fb1f594687017c268bbdfe4" kindref="member">overlay</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" kindref="member">resumeState</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1ae9987da046dc0255632015f0e42a546c" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" kindref="member">exitState</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="dc/daa/classpause__t_1abc176f557fb1f594687017c268bbdfe4" kindref="member">overlay</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" kindref="member">resumeState</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="dc/daa/classpause__t_1ae058f8bee107894a18b483c2433b719e" kindref="member">exitState</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1a267e138e3c13edfb2e0c57cb9100ceac" kindref="member">pause_t::handle</ref>(SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="dc/daa/classpause__t_1adde6ed8cc11b8464ca58018423ac25ea" kindref="member">pause_t::handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/>SDL_Point<sp/>mousePosition<sp/>=<sp/>{</highlight><highlight class="keyword">event</highlight><highlight class="normal">.motion.x,<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.motion.y};</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="dc/daa/classpause__t_1af9103128c6bc5af691f2fc46209e3217" kindref="member">resumeState</ref><sp/>=</highlight></codeline>

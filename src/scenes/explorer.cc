@@ -103,7 +103,7 @@ void explorer_t::render() {
   }
 }
 
-std::pair<scenes, sceneData> explorer_t::handle(SDL_Event& event) {
+std::pair<scenes, sceneData> explorer_t::handle(const SDL_Event& event) {
   SDL_Point point;
   switch (event.type) {
     case SDL_KEYDOWN:

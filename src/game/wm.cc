@@ -89,7 +89,7 @@ std::pair<scenes, sceneData> wm::update() {
   return current->update();
 }
 
-std::pair<scenes, sceneData> wm::handle(SDL_Event& event) {
+std::pair<scenes, sceneData> wm::handle(const SDL_Event& event) {
   if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
     if (current == pause.get()) {
       if (resume == explorer.get()) {

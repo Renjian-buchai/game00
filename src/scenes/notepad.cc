@@ -68,6 +68,6 @@ void notepad_t::render() {
   SDL_RenderCopy(context->mainRenderer, entry, nullptr, &entryRect);
 }
 
-std::pair<scenes, sceneData> notepad_t::handle(SDL_Event& event) {
+std::pair<scenes, sceneData> notepad_t::handle(const SDL_Event& event) {
   return std::make_pair(scenes::notepad, currentData);
 }

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d0/dd7/shitcord_8cc" kind="file" language="C++">
+    <compoundname>shitcord.cc</compoundname>
+    <includes refid="d1/da8/shitcord_8hh" local="yes">scenes/shitcord.hh</includes>
+    <includes local="yes">SDL_image.h</includes>
+    <includes refid="d3/d0e/game_8hh" local="yes">game.hh</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>SDL.h</label>
+      </node>
+      <node id="11">
+        <label>SDL_image.h</label>
+      </node>
+      <node id="13">
+        <label>SDL_mixer.h</label>
+      </node>
+      <node id="14">
+        <label>SDL_ttf.h</label>
+      </node>
+      <node id="8">
+        <label>enum.hh</label>
+        <link refid="d9/d05/enum_8hh"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>game.hh</label>
+        <link refid="d3/d0e/game_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>scenes/explorer.hh</label>
+        <link refid="d4/d7c/explorer_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>scenes/init.hh</label>
+        <link refid="dd/d82/init_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>scenes/notepad.hh</label>
+        <link refid="d4/d54/notepad_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>scenes/pause.hh</label>
+        <link refid="d4/d90/pause_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>scene.hh</label>
+        <link refid="d5/dd8/scene_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scenes/shitcord.hh</label>
+        <link refid="d1/da8/shitcord_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>wm.hh</label>
+        <link refid="d3/d51/wm_8hh"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/scenes/shitcord.cc</label>
+        <link refid="d0/dd7/shitcord_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="9">
+        <label>cstdint</label>
+      </node>
+      <node id="16">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="10">
+        <label>variant</label>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/da8/shitcord_8hh" kindref="compound">scenes/shitcord.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL_image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d0e/game_8hh" kindref="compound">game.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="de/deb/classshitcord__t_1aac03a23af4132dd92108d20b30a6be0d" kindref="member">shitcord_t::shitcord_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d51/classgame" kindref="compound">game</ref>*<sp/>_context)<sp/>:<sp/><ref refid="df/db1/classscene" kindref="compound">scene</ref>(_context)<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>IMG_Load(</highlight><highlight class="stringliteral">&quot;res/UI/backgrounds/shitcord.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>background<sp/>=<sp/>SDL_CreateTextureFromSurface(context-&gt;mainRenderer,<sp/>surface);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="de/deb/classshitcord__t_1a46798c707ed5dce9b324cdaa17db5c71" kindref="member">shitcord_t::~shitcord_t</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="de/deb/classshitcord__t_1a9e1bba8daf615bf68d9e3f5616a02163" kindref="member">shitcord_t::update</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7" kindref="member">scenes::shitcord</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kindref="member">shitcord_t::render</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/><ref refid="de/deb/classshitcord__t_1a18f38f0c4bb56eeffdd3ef8657626081" kindref="member">background</ref>,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">std::pair&lt;scenes,<sp/>sceneData&gt;<sp/><ref refid="de/deb/classshitcord__t_1a0ea2efbb16cd3134848f2c9b58326755" kindref="member">shitcord_t::handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Event&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="d9/d05/enum_8hh_1a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7" kindref="member">scenes::shitcord</ref>,<sp/>std::monostate());</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">SDL_Texture*<sp/><ref refid="de/deb/classshitcord__t_1a94654f5d652fb31631e2ff17e5c3776b" kindref="member">shitcord_t::generateOptions</ref>(</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;std::string,<sp/>3&gt;<sp/>options)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>surface<sp/>=<sp/>IMG_Load(</highlight><highlight class="stringliteral">&quot;res/UI/shitcordOptions.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>SDL_Renderer*<sp/>surfaceRenderer<sp/>=<sp/>SDL_CreateSoftwareRenderer(surface);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kindref="member">render</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(options[i]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kindref="member">render</ref><sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kindref="member">render</ref><sp/>+=<sp/>std::to_string(i<sp/>+<sp/>1)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>options[i]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(options[2]<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kindref="member">render</ref><sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;3.<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>options[2];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>SDL_Surface*<sp/>optionText<sp/>=</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>TTF_RenderUTF8_Solid_Wrapped(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a63c1e94224ab226955bba8717c64bdc0" kindref="member">font</ref>,<sp/><ref refid="de/deb/classshitcord__t_1a04b3dbd430b42e009e6c47122c69e696" kindref="member">render</ref>.c_str(),</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{0xe0,<sp/>0xe1,<sp/>0xcc,<sp/>SDL_ALPHA_OPAQUE},<sp/>1248);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/>optionTexture<sp/>=</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(surfaceRenderer,<sp/>optionText);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>SDL_Rect<sp/>bounds{16,<sp/>16,<sp/>optionText-&gt;w,<sp/>optionText-&gt;h};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(optionText);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>SDL_RenderCopy(surfaceRenderer,<sp/>optionTexture,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;bounds);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>SDL_DestroyTexture(optionTexture);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>SDL_Texture*<sp/>returnTexture<sp/>=</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SDL_CreateTextureFromSurface(<ref refid="df/db1/classscene_1a1659b1da41590a2ac67f9927beb823ea" kindref="member">context</ref>-&gt;<ref refid="d0/d51/classgame_1a7d010ea5627621067a7686f330d5e104" kindref="member">mainRenderer</ref>,<sp/>surface);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>SDL_FreeSurface(surface);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>returnTexture;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/scenes/shitcord.cc"/>
+  </compounddef>
+</doxygen>

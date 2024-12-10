@@ -26,7 +26,7 @@ enum class \mbox{\hyperlink{classintro__t_ac0868c571d3b553a94ecf27c0ac63ee6}{cen
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classintro__t_ad12e48028d1cc4b1c288dab77dbe193d}{intro\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}})
+\mbox{\hyperlink{classintro__t_ad12e48028d1cc4b1c288dab77dbe193d}{intro\+\_\+t}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}})
 \begin{DoxyCompactList}\small\item\em Construct a new intro t object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classintro__t_a56e63618edf895c263cda8a8c8ef45e6}{\texorpdfstring{$\sim$}{\string~}intro\+\_\+t}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the intro t object. \end{DoxyCompactList}\item 
@@ -34,7 +34,7 @@ std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scen
 \begin{DoxyCompactList}\small\item\em Updates scene info. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classintro__t_add93912d666cc242e170f15e7e03a808}{render}} () override
 \begin{DoxyCompactList}\small\item\em Renders slides. \end{DoxyCompactList}\item 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classintro__t_adda2b278aae9bae71b89194313bc23a9}{handle}} (SDL\+\_\+\+Event \&event) override
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ \mbox{\hyperlink{classintro__t_a87ef6743a3237d0a5d12b45d18d139ec}{handle}} (const SDL\+\_\+\+Event \&event) override
 \item 
 void \mbox{\hyperlink{classintro__t_a104f915a0a592c0db524a70ffc666a60}{slide\+Show}} (size\+\_\+t time, bool \&click, size\+\_\+t skip\+Grace=500)
 \begin{DoxyCompactList}\small\item\em Performs the slideshow logic. \end{DoxyCompactList}\item 
@@ -47,7 +47,7 @@ void \mbox{\hyperlink{classintro__t_a427b58b3e041bb4672278b9e422b8292}{centre\+R
 \item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a5d4681a41f14704a05c4f84569888061}{load\+Texture}} (const char \texorpdfstring{$\ast$}{*}path)
 \begin{DoxyCompactList}\small\item\em Loads texture based on path. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classscene_a1012571c9524a29524b8b9d680715e90}{scene}} (\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
+\mbox{\hyperlink{classscene_ad7ef1968aa37f2e796fec45026b9ade0}{scene}} (const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*}game\+Context)
 \begin{DoxyCompactList}\small\item\em Construct a new scene object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classscene_aa97c9c1f46aa44e63223a737fcdcb496}{\texorpdfstring{$\sim$}{\string~}scene}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -63,7 +63,7 @@ bool \mbox{\hyperlink{classintro__t_a1543b2b845c6999165123b34608fcf25}{skip}}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classscene}{scene}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_ae9987da046dc0255632015f0e42a546c}{context}}
+const \mbox{\hyperlink{classgame}{game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classscene_a1659b1da41590a2ac67f9927beb823ea}{context}}
 \begin{DoxyCompactList}\small\item\em Game context. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -168,8 +168,8 @@ Centres rect.
 \index{intro\_t@{intro\_t}!handle@{handle}}
 \index{handle@{handle}!intro\_t@{intro\_t}}
 \doxysubsubsection{\texorpdfstring{handle()}{handle()}}
-{\footnotesize\ttfamily \label{classintro__t_adda2b278aae9bae71b89194313bc23a9} 
-std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ intro\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classintro__t_a87ef6743a3237d0a5d12b45d18d139ec} 
+std\+::pair$<$ \mbox{\hyperlink{enum_8hh_a72e129a3b1e399b1f98da21557f0fd8a}{scenes}}, \mbox{\hyperlink{enum_8hh_ae5fd02a37eaf8afa38cba1e723317dab}{scene\+Data}} $>$ intro\+\_\+t\+::handle (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -181,7 +181,7 @@ std\+::pair$<$scenes, scene\+Data$>$
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classscene_a56dec35146b15669e3cf054ced2f4be2}{scene}}.
+Implements \mbox{\hyperlink{classscene_ac8586aac663647453efaaa03bb8bf0e0}{scene}}.
 
 \index{intro\_t@{intro\_t}!render@{render}}
 \index{render@{render}!intro\_t@{intro\_t}}

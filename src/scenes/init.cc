@@ -165,7 +165,7 @@ void intro_t::render() {
   slideShow(SDL_GetTicks64(), skip);
 }
 
-std::pair<scenes, sceneData> intro_t::handle(SDL_Event& event) {
+std::pair<scenes, sceneData> intro_t::handle(const SDL_Event& event) {
   skip = event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE;
   return std::make_pair(scenes::intro, std::monostate());
 }

@@ -76,6 +76,6 @@ class pause_t : public scene {
    * @return std::pair<scenes, sceneData>Returns the scene to be changed to,
    * and the data that scene should contain
    */
-  std::pair<scenes, sceneData> handle(SDL_Event& event) override;
+  std::pair<scenes, sceneData> handle(const SDL_Event& event) override;
 };
 #endif

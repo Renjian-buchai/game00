@@ -10,7 +10,7 @@ scene \- Interface class for scenes\&.
 .PP
 \fR#include <scene\&.hh>\fP
 .PP
-Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, \fBpause_t\fP, and \fBshitcord_t\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -19,7 +19,7 @@ Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP
 .br
 .RI "Loads texture based on path\&. "
 .ti -1c
-.RI "\fBscene\fP (\fBgame\fP *gameContext)"
+.RI "\fBscene\fP (const \fBgame\fP *gameContext)"
 .br
 .RI "Construct a new scene object\&. "
 .ti -1c
@@ -35,7 +35,7 @@ Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP
 .br
 .RI "Renders textures\&. "
 .ti -1c
-.RI "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (SDL_Event &)=0"
+.RI "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > \fBhandle\fP (const SDL_Event &)=0"
 .br
 .RI "Handles events\&. "
 .in -1c
@@ -43,7 +43,7 @@ Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP
 
 .in +1c
 .ti -1c
-.RI "\fBgame\fP * \fBcontext\fP"
+.RI "const \fBgame\fP * \fBcontext\fP"
 .br
 .RI "Game context\&. "
 .in -1c
@@ -52,7 +52,7 @@ Inherited by \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP
 Interface class for scenes\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "scene::scene (\fBgame\fP * gameContext)"
+.SS "scene::scene (const \fBgame\fP * gameContext)"
 
 .PP
 Construct a new scene object\&. 
@@ -69,7 +69,7 @@ Construct a new scene object\&.
 Destroy the scene object\&. Usually called only when wm is destroyed 
 .SH "Member Function Documentation"
 .PP 
-.SS "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > scene::handle (SDL_Event & )\fR [pure virtual]\fP"
+.SS "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > scene::handle (const SDL_Event & )\fR [pure virtual]\fP"
 
 .PP
 Handles events\&. Called in \fBwm::handle()\fP
@@ -82,7 +82,7 @@ std::pair<scenes, sceneData> Returns the scene to be changed to, and the data th
 .PP
 
 .PP
-Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, \fBpause_t\fP, and \fBshitcord_t\fP\&.
 .SS "SDL_Texture * scene::loadTexture (const char * path)"
 
 .PP
@@ -104,7 +104,7 @@ SDL_Texture* Loaded texture
 .PP
 Renders textures\&. Called in \fBwm::render()\fP 
 .PP
-Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, \fBpause_t\fP, and \fBshitcord_t\fP\&.
 .SS "virtual std::pair< \fBscenes\fP, \fBsceneData\fP > scene::update ()\fR [pure virtual]\fP"
 
 .PP
@@ -118,10 +118,10 @@ std::pair<scenes, sceneData> Returns the scene to be changed to, and the data th
 .PP
 
 .PP
-Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, and \fBpause_t\fP\&.
+Implemented in \fBexplorer_t\fP, \fBintro_t\fP, \fBnotepad_t\fP, \fBpause_t\fP, and \fBshitcord_t\fP\&.
 .SH "Member Data Documentation"
 .PP 
-.SS "\fBgame\fP* scene::context"
+.SS "const \fBgame\fP* scene::context"
 
 .PP
 Game context\&. 

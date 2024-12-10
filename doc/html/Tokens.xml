@@ -62,6 +62,16 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>shitcord_t</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>intro_t::slide</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -119,6 +129,16 @@
     </TokenIdentifier>
     <Path>d9/d03/classnotepad__t.html</Path>
     <Anchor>a4416b91e1e20a180f9a00855b6f9c459</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>background</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a18f38f0c4bb56eeffdd3ef8657626081</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -209,7 +229,7 @@
       <Scope>scene</Scope>
     </TokenIdentifier>
     <Path>df/db1/classscene.html</Path>
-    <Anchor>ae9987da046dc0255632015f0e42a546c</Anchor>
+    <Anchor>a1659b1da41590a2ac67f9927beb823ea</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -487,13 +507,24 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>generateOptions</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a94654f5d652fb31631e2ff17e5c3776b</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>handle</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>explorer_t</Scope>
     </TokenIdentifier>
     <Path>d5/db0/classexplorer__t.html</Path>
-    <Anchor>add68d9bf9c0e52805f4bb714b1133882</Anchor>
+    <Anchor>a81d4adbe69a07633bf402dafffcac4d9</Anchor>
     <DeclaredIn>explorer.hh</DeclaredIn>
   </Token>
   <Token>
@@ -504,7 +535,7 @@
       <Scope>intro_t</Scope>
     </TokenIdentifier>
     <Path>d9/dea/classintro__t.html</Path>
-    <Anchor>adda2b278aae9bae71b89194313bc23a9</Anchor>
+    <Anchor>a87ef6743a3237d0a5d12b45d18d139ec</Anchor>
     <DeclaredIn>init.hh</DeclaredIn>
   </Token>
   <Token>
@@ -515,7 +546,7 @@
       <Scope>notepad_t</Scope>
     </TokenIdentifier>
     <Path>d9/d03/classnotepad__t.html</Path>
-    <Anchor>ad98a24e386e2a0363a44e67054988160</Anchor>
+    <Anchor>ac830adac821c1a0312bfc76e7d9b1a2e</Anchor>
     <DeclaredIn>notepad.hh</DeclaredIn>
   </Token>
   <Token>
@@ -526,7 +557,7 @@
       <Scope>pause_t</Scope>
     </TokenIdentifier>
     <Path>dc/daa/classpause__t.html</Path>
-    <Anchor>a267e138e3c13edfb2e0c57cb9100ceac</Anchor>
+    <Anchor>adde6ed8cc11b8464ca58018423ac25ea</Anchor>
     <DeclaredIn>pause.hh</DeclaredIn>
   </Token>
   <Token>
@@ -537,8 +568,19 @@
       <Scope>scene</Scope>
     </TokenIdentifier>
     <Path>df/db1/classscene.html</Path>
-    <Anchor>a56dec35146b15669e3cf054ced2f4be2</Anchor>
+    <Anchor>ac8586aac663647453efaaa03bb8bf0e0</Anchor>
     <DeclaredIn>scene.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>handle</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a0ea2efbb16cd3134848f2c9b58326755</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -548,7 +590,7 @@
       <Scope>wm</Scope>
     </TokenIdentifier>
     <Path>df/d1c/classwm.html</Path>
-    <Anchor>a7f282167450e97df5792d589c9ced058</Anchor>
+    <Anchor>a08290ca96dc53c185d114f2beae1f7a6</Anchor>
     <DeclaredIn>wm.hh</DeclaredIn>
   </Token>
   <Token>
@@ -856,6 +898,17 @@
       <Name>render</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a04b3dbd430b42e009e6c47122c69e696</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>render</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
       <Scope>wm</Scope>
     </TokenIdentifier>
     <Path>df/d1c/classwm.html</Path>
@@ -940,8 +993,29 @@
       <Scope>scene</Scope>
     </TokenIdentifier>
     <Path>df/db1/classscene.html</Path>
-    <Anchor>a1012571c9524a29524b8b9d680715e90</Anchor>
+    <Anchor>ad7ef1968aa37f2e796fec45026b9ade0</Anchor>
     <DeclaredIn>scene.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>shitcord</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>wm</Scope>
+    </TokenIdentifier>
+    <Path>df/d1c/classwm.html</Path>
+    <Anchor>a5b53423d16a28cc8c0eec221572fb454</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>shitcord_t</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>aac03a23af4132dd92108d20b30a6be0d</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1116,6 +1190,17 @@
       <Name>update</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a9e1bba8daf615bf68d9e3f5616a02163</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>update</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
       <Scope>wm</Scope>
     </TokenIdentifier>
     <Path>df/d1c/classwm.html</Path>
@@ -1260,6 +1345,17 @@
     <Path>df/db1/classscene.html</Path>
     <Anchor>aa97c9c1f46aa44e63223a737fcdcb496</Anchor>
     <DeclaredIn>scene.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~shitcord_t</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>shitcord_t</Scope>
+    </TokenIdentifier>
+    <Path>de/deb/classshitcord__t.html</Path>
+    <Anchor>a46798c707ed5dce9b324cdaa17db5c71</Anchor>
+    <DeclaredIn>shitcord.hh</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1550,6 +1646,26 @@
     </TokenIdentifier>
     <Path>d9/d05/enum_8hh.html</Path>
     <Anchor>a72e129a3b1e399b1f98da21557f0fd8aaec1b81965109165de6b38cd92c1e39f9</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>shitcord</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7</Anchor>
+    <DeclaredIn>enum.hh</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>shitcord</Name>
+      <APILanguage>c</APILanguage>
+      <Type>econst</Type>
+    </TokenIdentifier>
+    <Path>d9/d05/enum_8hh.html</Path>
+    <Anchor>a72e129a3b1e399b1f98da21557f0fd8aa0e4178350d613ed584eb8c1d1b2acdb7</Anchor>
     <DeclaredIn>enum.hh</DeclaredIn>
   </Token>
   <Token>

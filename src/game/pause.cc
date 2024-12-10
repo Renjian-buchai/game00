@@ -34,7 +34,7 @@ void pause_t::render() {
   SDL_RenderCopy(context->mainRenderer, exitState, nullptr, nullptr);
 }
 
-std::pair<scenes, sceneData> pause_t::handle(SDL_Event& event) {
+std::pair<scenes, sceneData> pause_t::handle(const SDL_Event& event) {
   SDL_Point mousePosition = {event.motion.x, event.motion.y};
 
   resumeState =
